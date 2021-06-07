@@ -16,6 +16,89 @@
 <body>
 <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-06-07">2021-06-07</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.infoq.cn">InfoQ - 促进软件开发领域知识与创新的传播</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">TiKV + SPDK，探索存储的性能极限</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/bHP6xu9EChRzE0ZOTafW?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>现代软件的结构建立在一层一层抽象之上，在大部分时候，这样的“抽象”意味着对调度细节的隐藏和对性能的损耗。应用不制定查询计划，而将制定查询计划的任务交给数据库；数据库不直接写入磁盘，而由操作系统来决定写入的时机和量；操作系统也不会直接在磁片 / 颗粒上操作，而是批量发送指令再由磁盘的控制器来决定执行的方案。在大部分时候，这些调度交由知识更加丰富的一方来进行决策，所以表现地也还不错；而隐含于其中的性能损耗（比如使用系统调用时的额外开销）对性能不敏感的应用来说也无关紧要。
+
+可惜的是，数据库恰巧是个反例 —— 在这篇文章中，将会讲述现代储存结构中一系列抽象的弊端，以及本次 Hackathon 期间 🐏️🔪️队通过在 TiKV 中引入 SPDK 工具来克服这些问题的努力。
+
+问题背景
+
+对于数据库而言，直接可用的存储抽象是从文件系统开始的，通过创建文件、对文件进行写入和读取来间接地读写硬盘。从应用发起相关的系统调用开始，直到数据落在磁盘、颗粒上，大致需要以下几个步骤：
+
+
+操作系统收到系统调用；
+
+文件系统的抽象层（VFS），页缓存等机制在此时发挥作用；
+
+文件系统的具体实现；
+
+对块设备的读写，IO 调度器、设备映射（device mapper）等功能在此时发挥作用；
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">千亿数据扛不住，三思后还是从MySQL迁走了……</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/mkkh94U5dl6E87gH8vI4?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>前言
+线上某IOT核心业务集群之前采用MySQL作为主存储数据库，随着业务规模的不断增加，MySQL已无法满足海量数据存储需求，业务面临着容量痛点、成本痛点问题、数据不均衡问题等。
+
+400亿该业务迁移MongoDB后，同样的数据节省了极大的内存、CPU、磁盘成本，同时完美解决了容量痛点、数据不均衡痛点，并且实现了一定的性能提升。
+
+此外，迁移时候的MySQL数据为400亿，3个月后的现在对应MongoDB集群数据已增长到1000亿，如果以1000亿数据规模等比例计算成本，实际成本节省比例会更高。迁移MongoDB后，除了解决业务痛点问题，同时也促进了业务的快速迭代开发，业务不在关心数据库容量痛点、数据不均衡痛点、成本痛点等问题。
+
+当前国内很多mongod文档资料、性能数据等还停留在早期的MMAP_V1存储引擎，实际上从MongoDB-3.x版本开始，MongoDB默认存储引擎已经采用高性能、高压缩比、更小锁粒度的wiredtiger存储引擎，因此其性能、成本等优势相比之前的MMAP_V1存储引擎更加明显。
+一、业务迁移背景
+该业务在迁移MongoDB前已有约400亿数据，申请了64套MySQL集群，由业务通过shardingjdbc做分库分表，提前拆分为64个库，每个库100张表。主从高可用选举通过依赖开源orchestrator组建，MySQL架构图如下图所示：
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">怎样节省 2/3 的 GPU？爱奇艺 vGPU 的探索与实践</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/r6ffGQdvozfv8C5zc3ET?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>随着人工智能技术的发展，爱奇艺内部越来越多的服务使用深度学习模型和技术来驱动，为我们的用户提供更加智能和便捷的在线视频观看体验。其中在线类的服务，通常单个容器实例需要独占一个 GPU，以实现在毫秒/秒级延时内完成例如视频、图片、语音、文本的深度学习模型推理请求；为了保证响应延时，请求通常单独进行，无法对请求做batch以提升计算效率，且不同请求间隔随机，会导致这些服务的 GPU 计算资源的利用率通常较低（如图1所示）。且在线类服务请求量在一天或者一定时间周期内存在波峰波谷的现象，进一步降低了 GPU 的利用率。鉴于GPU本身高昂的价格，较低的 GPU 利用率浪费了大量计算资源，增加了 AI 服务的成本。
+
+
+图1:在线推理服务 GPU 利用率统计
+
+在此背景下，最直接的解决方案是将多个服务部署在同一张 GPU 卡上，在保证服务质量的前提下通过 GPU 共享来提升 GPU 的利用率。目前英伟达官方的 GPU 共享技术主要有两种方案：
+
+（1）vGPU ；（2）MPS。
+
+接下来我们将简单对比下两种方案。
+
+Nvidia vGPU方案
+Nvidia的vGPU方案采用虚拟化的技术，基于 SR-IOV 进行 GPU 设备虚拟化管理，在驱动层提供了时间分片执行的逻辑，并做了一定的显存隔离，这样在对显卡进行初始化设置的时候就可以根据需求将显卡进行划分。其中时间分片调度的逻辑可以是按实例均分，或者是自定义比例，显卡的显存需要按照预设的比例进行划分。Nvdia的vGPU方案在实施中有下面两点限制：
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-06-06">2021-06-06</time></h2>
     <ul class="sources card">
       <li class="source">
@@ -83,483 +166,345 @@
       </li>
       <li class="source">
         <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://docs.rsshub.app">iDaily 每日环球视野</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">梵高博物馆重开</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/2cc5Fl">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>阿姆斯特丹梵高博物馆，一名游客正在观看梵高代表作《向日葵》。6月5日，梵高博物馆时隔6个月恢复开放，首个展览名为「留在此间」（Here to Stay），呈现过去10年新购入馆藏，包括梵高、德加、蒙克等艺术家的画作和私人物品。荷兰从6月5日开始第三阶段解封，重新开放博物馆等文化场所，餐厅、酒吧营业延长至22点。当天荷兰新增确诊2121例，死亡9例，累计确诊166.1万例，死亡17675例，人口疫苗接种率达到40.3%。摄影师：François Walschaerts</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">普京警告美国重蹈苏联覆辙</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/52550z">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>俄罗斯总统 Vladimir Putin 与全球主要通讯社高层举行视频会议，圣彼得堡。6月4日，Putin 在圣彼得堡国际经济论坛上警告「美国正在重蹈苏联的错误」，他表示「霸权帝国往往认为自己实力强大，能够通过威胁、恐吓、收买等方式对待其他国家，但是问题会积累得越来越多，直到有一天无法应付。美国现在正自信而坚定地走在苏联的老路上」。Putin 亦批评美国通过美元制裁俄罗斯的行为，俄罗斯财政部已宣布将减持国家主权财富基金中的所有美元资产，改为增持黄金、欧元和人民币资产。摄影师：iDaily Media</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">G7财长支持全球最低企业税率</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/bcfaf7">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>七国集团财长会议第2日，美国财政部长 Janet Yellen 与欧元集团主席 Paschal Donohoe 举行双边会谈，伦敦。6月5日，G7 财长峰会后发表联合公报，宣布支持美国提出的「全球设立最低15%企业税」倡议，明确跨国公司需要同时在总部所在国和运营所在国纳税，并支持各国对利润率超过10%的企业征收20%以上税率。按照 G7 财长达成的协议，法国等欧洲国家也将取消征收数字税，改为采用全球税收分配方案向跨国互联网公司征税。摄影师：Alberto Pezzali</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">日本取消东奥闭幕晚宴</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/710nnU">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>东京新宿区一辆宣传看板车上的防范新型变异毒株广告。6月4日，日本政府宣布取消原定8月8日举行的东京奥运会闭幕宴会。当天日本首次发现「C36」新冠变异毒株，确诊者为一名从北非回国的约50岁男子。「C36」新冠变异毒株具有印度变异毒株部分特征，迄今已蔓延至英国、美国等34个国家。东京过去一周日均确诊近500例，其中82.6%感染了高传染性变异毒株。距离东京奥运会开幕还有47天，日本人口疫苗接种率仅9.2%。摄影师：Ryoichiro Honda</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">首尔宗庙君主灵位迁移</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/885bs4">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>首尔宗庙准备进行翻修工程，49件朝鲜王朝君主和王妃的灵位被迁移到昌德宫暂时保存。首尔宗庙是世界上现存最古老的皇家儒教祠庙之一，1394年由朝鲜太祖李成桂下令修建，庙内供奉着朝鲜王朝长达400年间共19位君主和30位王妃的灵位。因主殿建筑出现漏雨需要修缮，朝鲜君主灵位自1870年来首次迁往其它宫殿暂存。预计翻修工程将持续至2022年完工。摄影师：iDaily Media</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">刚果火山观测系统丑闻</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/5874t3">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>远眺云雾笼罩的尼拉贡戈火山，刚果民主共和国。6月5日，刚果东部火山观测站工作人员公布一封致总统公开信，指责管理部门挪用公款、拖欠薪资，并强调这是导致观测站未能预测火山爆发的核心原因。公开信称，观测站从2020年10月起就进入网络中断状态，无法正常监测火山活动。5月尼拉贡戈火山剧烈喷发共造成至少32人遇难，40万人被紧急撤离。摄影师：Alexis Huguet</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">2022世界杯预选赛</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/ef426W">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>2022年世界杯亚洲区预选赛期间，也门球迷们正在观看也门队对战沙特阿拉伯队，萨那。6月5日，也门国家足球队以0:3的比分败于沙特队，目前在小组赛中排名垫底。第22届世界杯足球赛将于2022年11月21日至12月18日在卡塔尔举行，亚洲区预选赛共有46支队伍参赛，角逐4.5个决赛晋级席位。中国国家足球队5月30日在预选赛中以7:0大胜关岛，目前积分排名小组第二，下一场将对战菲律宾队。摄影师：Yahya Arhab</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">云南昆虫主题展</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/919LEF">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>昆明动物博物馆举办「拯救地球的昆虫」科普展，学生们正在仔细观看蝴蝶标本，中国云南省。6月5日是世界环境日，2021年主题为「生态系统恢复」。昆明将于10月举办联合国《生物多样性公约》缔约方会议，预计会上将制定全球未来10年生物多样性保护计划。云南省是中国生物多样性最丰富的省份，面积占全国4.1%，而拥有全国超过一半物种，包括19333种高等植物和2273种脊椎动物，并可找到除海洋和沙漠以外所有生态系统类型。摄影师：Li Jiaxia</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://www.v2ex.com/">V2EX-最新主题</a></h3>
           <section class="articles-per-source">
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">安卓有能打开 39w 以字体以上的写作类 app 吗？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781699">
+                <summary class="article-expander__title">应该放到节点导航的 Apple 分类之下</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781775">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
-                    <span>dzjx: 
-除外纯纯写作。苹果用 ulysses 。安卓找了一圈居然没有…付费也可。</span>
+                    <span>cht1995: 否则 Vapor 可能不会让人一下联想到 Server-Side Swift</span>
                   </div>
                 </a>
               </details>
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">二进制差异(BSDiff/VCDiff)静态托管方案讨论</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781696">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>chinvo: 
-现在项目采用全量更新, 每次检查更新先请求 项目.manifest, 里面有最新版本的 ID, 然后请求 项目 /版本 /版本.manifest 获取文件列表, 文件列表是一个 相对路径 - hash 的 map, 更新时逐一对比 hash, hash 不匹配就到对应路径下载文件.
-/-
- |- 项目.manifest
- |- 项目
-    |- 版本 1 (空目录)
-    |- 版本 2 (空目录)
-    |- 版本 3
-    |  |- 版本.manifest
-    |  |- 0
-    |  |  |- 00
-    |  |  |- ...
-    |  |- 1
-    |  |- ...
-    |  |- f
-
-现在想要改成二进制差异更新, 目前想到的设计方案就是额外增加差异存储目录, 更新时检查 项目 /本地版本-最新版本 /差异.manifest 是否存在, 存在就进行差异更新, 不存在就按原有模式更新.
-/-
- |- 项目.manifest
- |- 项目
-    |- 版本 1 (空目录)
-    |- 版本 2 (空目录)
-    |- 版本 3
-    |- 版本 1-版本 2 (空目录)
-    |- 版本 1-版本 3
-    |- 版本 2-版本 3
-    |  |- 差异.manifest
-    |  |- 0
-    |  |  |- 00
-    |  |  |- ...
-    |  |- 1
-    |  |- ...
-    |  |- f
-
-不知道各位有没有更好的方案.
-另外差异存几个版本合适呢?</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">「深圳」「FinTech」 招聘 iOS 开发（资深、高级）</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781695">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>Shawdon: 
-简介
-「极简钱包」是「极简汇率」孵化的一个项目，致力于帮助用户更简单、方便地投资跨国资产和进行理财。
-我和 CEO 都是交易所出身，所以我们先从加密货币着手。我们目前只面向海外用户走合规路径，所以大家看到这里的时候不用考虑法律法规上风险，现在国外已经有越来越多的传统金融机构在进场加密货币这一块，包括前一段时间在 Nasdaq 上市的 Coinbase，是整个行业的一个重要里程碑，也给行业带来很大信心。我们主要做的是 fiat-crypto-fiat，跟传统交易所有很大不同，这样能大大消除用户的学习成本和进场门槛。
-当然我们也在对接传统金融领域，像股票(美股、港股的交易及打新)和基金以及其他衍生品，目前还在和一些合作机构在洽谈并达成了一些合作意向。
-你能获得什么
-其它虚的懒得说了，直接上重点。对于报酬这块，我们提供 20-40k*16。如果你足够优秀当然也不受这个限制，不过大家还是根据自己的实力提期望我去争取，狮子大开口也会影响我们对你的好感度。
-大佬们有什么需求也可以尽管提。
-我们想找什么样的伙伴
-TL;DR
-正常的工作态度、责任心和沟通合作那些就不说了，期望你
-靠谱。能成为整个 iOS 项目的 owner，对项目和产品中的问题能提出自己的见解。
-技术扎实。这样在沟通技术问题的时候大家都能在一个频道上；在完成需求的同时能保持代码高的可读性、可维护性和可复用性。
-积极主动。对项目和产品中的问题能提出自己的见解。
-擅于解决问题。遇到技术问题时 Google 往往能命中关键词，同时自己多去尝试解决再寻求他人帮助。
-我们不提倡加班，也根据情况可以部分时间远程办公。团队氛围好，包容技术的多样性。
-Longer
-岗位职责
-负责 iOS App 的设计与开发；
-负责基础模块和组件的研发和维护；
-关注性能，提升客户端用户体验。
-任职要求
-全日制大学本科及以上学历，计算机或相关专业，3 年以上 iOS 开发经验；
-扎实的 Objective-C/Swift 语言基础，理解 Objective-C Runtime 的运行机制和内存管理机制，熟悉 iOS 应用安全；
-熟练掌握 iOS 平台下的高性能编程及性能调优；
-良好的编程风格，扎实的数据结构算法基础，熟悉常见的设计模式；深入理解面向对象编程思想，具有较强的设计能力；
-具有较强的分析和解决问题的能力；热爱互联网新技术，了解并探索业界技术动向；
-有强烈的责任心和团队精神，善于沟通和合作；
-具有良好的英语听说读写能力者优先，至少能读英文文档；
-具有 FinTech 和 Blockchain 相关开发经验者优先。
-倘若你有意愿
-欢迎大佬们砸简历到邮箱：ZHhAeGJhbmsucGx1cw&#x3D;&#x3D;
-大家也可以留 WeChat，我来加各位。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">如何修复 deepin 启动引导？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781694">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>SergeGao: 
-背景： 电脑装了 win10 和 deepin 双系统，原本是 legacy 引导，默认启动 deepin，启动的时候有 windows 选项可以选择进入 win，周末没事把硬盘分区表从 MBR 转换为了 GPT，引导方式从 legacy 改为了 uefi，然后就进不了 deepin 了，现在默认启动就是 win10，bios 设置里启动项里也没有 deepin 可以选
-尝试了参考这篇文档教程修复，现在 bios 设置里多出来一个 ubuntu 的启动项，设置使用这个 ubuntu 启动项启动，但是启动的还是 win10
-https://wiki.deepin.org/wiki/%E4%BF%AE%E5%A4%8D%E5%90%AF%E5%8A%A8
-diskgenius 里硬盘分区截图如下，现在应该怎么修复呢？</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">zerotier 组了两个局域网，可有一个没法访问。</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781690">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>PbCopy111: 
-我家里有两条宽带，A 移动路由器是 192.168.1.1，B 联通路由器是 192.168.2.1 。
-每一条宽带当中，都有一台 openwrt 的树莓派，运行了 zerotier 服务，A 移动是 10.10.10.2，B 联通是 10.10.10.3 。
-在 zerotier 的网站里，Managed Routes 的规则我也写上了。
-10.10.10.0/24 (LAN)
-192.168.1.0/24 via 10.10.10.2
-192.168.2.0/24 via 10.10.10.3
-同时 10.10.10.2 和 10.10.10.3 我也都勾选了 bridge 模式。
-那么问题来了。
-我用其他网络，可以访问 B 局域网里的任意机器，在 B 网络里，可以访问 A 网络 10.10.10.2，但不能访问其他机器，包括给他分配为的 192.168.1.X 网段。
-是不是 zerotier 不支持两个网段的转发啊？？</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">客户端还是后端</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781688">
+                <summary class="article-expander__title">KVM 虚拟机卡顿问题</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781774">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
-                    <span>810244966: 
-本人大三，还是六月初开始准备不考研了，准备找工作，想着是现在学学技术，找暑假的提前批或者秋招。但不知道找安卓的活还是后端的活，安卓和后端都会些，看到网上说是客户端的人少职位少，后端岗位多也卷，有老哥知道今年的形势吗？想去大一点的厂的话学哪个比较好呢？</span>
+                    <span>KasuganoSoras: 
+我有一台服务器，CentOS 7 系统，用于开虚拟机，但是基本上每个开出来的 Windows 虚拟机都有一个问题，就是很卡，系统登录要 2 分钟，开个 VS 2017 要 3 分钟，开个 3dsmax 要 5 分钟。
+基本上各种操作都会慢半拍，鼠标偶尔也会卡，任务管理器里面看到 C 盘占用率经常 100%，以为是硬盘问题，但是用 CrystalDiskMark 测试感觉也不算太拉胯，能达到正常机械盘的水平。
+
+物理机硬件：E5-2698 v3 双路，256G 内存，4 块 2T 西数蓝盘组的 RAID6
+虚拟机配置：32 核心（ host-passthrough，手动指定 NUMA 节点到第一颗 CPU ），64G 内存，100G 硬盘。
+硬盘配置：SCSI 磁盘，raw 格式，缓存 writeback，IO 模式 threads
+实在是搞不明白到底哪里有问题
+PS：物理机没有显卡，有可能是这个原因么？</span>
                   </div>
                 </a>
               </details>
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">[Coupang Eats] 上海/北京内推. PE， QA，移动端， PM，期待各位的加入</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781687">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>w99wjacky: 
-韩国电商 coupang，薪资给得起。
-分股票，已经上市
-965，工作地 上海或北京或首尔
-
-是 Eats 团队在招聘
-
-PE，QA，移动端，PM 都有空缺
-
-职级 L5-1 ~ L6
-
-薪资范围 40W ~ 120W(上限肯定不止)
-
-要求 5 年工作经验及以上
-
-
-
-内推邮箱 fan.liu@coupang.com
-我的 WX:dzk5d2VuMQ&#x3D;&#x3D; (base64)
-多一条路，多一个机会。
-965 企业文化不鼓励加班
-技术氛围佳，大佬云集
-待遇优厚，带股权
-所有的岗位列表：
-注意选择地区，选择 shanghai / beijing 。 这个链家包括韩国的岗位
-
-coupang 的面试就一句话，代码。通过代码表现各个候选人的优势。因为招聘的都是工程师，最终的产物还是代码，所以代码作为面试的评价依据我觉得是客观的。
-第一轮，算法，iOS 二题选一。算法不要求有最优解，但一定要走通测试用例。
-而且，解答完候选人必须能够介绍自己的代码。这轮目前已经弱化了。
-第二轮，advanced coding 。既问题解决，还是代码。与具体产品中可能遇到的实际问题为题目。
-第三轮，advanced coding，这一轮有可能会遇到一些开放性的问题。问题方案肯定有，开放性题目，考察模块化思想。接口设计，可维护性等。看你能力。别小看这题，路有千万种，完全看你的解决方案和说服能力。
-第四轮，模块化和架构。和上面一致，但会更开放。
-有的候选人会有电话面试，就是了解一下 iOS 开发的基础。
-coupang 的面试好处是代码贯穿全部。所以对候选人的评价不仅仅是面试官，后面还有一个 debrief 。所有人都会看你写的代码。
-有的公司最终评价完全有面试官主观决定，我觉得 coupang 还是很客观的。也没有面试官问一些奇奇怪怪的东西。
-现在 coupang 正在快速成长，岗位多多，有需要的可以联系我，内推。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">[实习] [微软亚洲研究院] 基于机器学习的爬虫检测实习生</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781683">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>nomeguy: 微软亚洲研究院-网络研究组招收研究实习生啦~
-微软亚洲研究院 (MSRA)-网络研究组 (Networking Research Group)
-https://www.microsoft.com/en-us/research/group/networking-research-group-2/
-&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
-岗位： [基于机器学习的爬虫检测-全职实习生, 1 名] 
-1 、工作职责：
-- 收集 Azure 云平台租户的 Web 日志，利用深度学习、聚类等技术进行日志分析，实现对爬虫攻击行为的画像；
-- 挖掘日志中的 HTTP 协议字段、鼠标轨迹、设备指纹等特征，制定检测规则，训练 ML 模型，从而对 Azure WAF 安全防火墙进行改进；
-- 参与维护本组在 GitHub 上的开源项目。
-2 、职位要求：
-- 熟悉 AI 、机器学习、深度学习（如 CNN 、LSTM ）、数据挖掘、网络安全中的一个或多个领域，有相关项目经验；
-- 熟悉 Go 、Javascript (React) 、Python 中的一门或多门语言，有较强的工程能力，熟练掌握 git，代码格式清晰规范，善于团队协作；
-- 有一定英文学术论文阅读能力，能够根据论文进行系统实现；
-- 较强的沟通能力和逻辑表达能力。
-3 、具有以下条件者优先：
-- 在 GitHub 较为活跃，有自己的开源项目，或参与过知名开源项目；
-- 发表过学术论文；
-- 可以连续实习不少于 6 个月。
-&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
-工作时间：每周 5 天，3 个月以上，能够尽快入职
-工作地点：北京市海淀区丹棱街 5 号（疫情期间可远程办公）
-如有意向请发 [中文简历 PDF ] 至：nrg-intern-recruit@microsoft.com
-简历中需标明平均分，及专业或年级排名及排名对应的总人数
- [注意] 请务必采用学校邮箱（ edu 域名）发送简历，其他邮箱（如 163 、qq 、gmail 、outlook 、hotmail 等）发送会进入公司垃圾邮件，无法被 HR 看到
-邮件标题&amp;简历 PDF 文件名格式：基于机器学习的爬虫检测-姓名-学校-本|硕|博-年级-V2EX</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">[offer 比较] 应届生 前端岗位 + Nodejs 后端</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781679">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>lanz0519: 
-第一家 上周才入职实习  早上 8.30-9.00  晚上 5.30 工时 6.5 小时  转正之后薪资 8000-9000 两个月试用八折,主要任务是前端开发，维护别人的屎山
-第二家 今天刚谈好 早上 9.00 到晚上 8 。00  工时 8 小时  转正 11k 三个月试用 8.5 折  主要任务是后端 node 开发
-第一家公司主要业务是医院的软件，近期很多老员工离职，原因是出差太频繁并且领导承诺没有兑现，但是目前又有人说后面不会出差了。承诺就比如加班调休、补贴、调薪，大部分都没有兑现
-第二家公司主要业务好像也是医院相关，是四月刚成立的公司，天使轮两天一千万，已经到账，  九月准备下一轮融资， 创始人经历都很厉害（四个美国知名大学博士）
-坐标南京，普通二本应届生有过竞赛经历，希望万能的兄弟们给给意见</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Evernote 在 PC Chrome 无法登陆：抱歉，我们加载 Evernote 网页版时遇到了一些问题。
-尝试重新加载页面</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781677">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>vinsec: 
-国际版账户 客户端软件能正常登陆访问 Safari 也 OK 就 Chome 出现这个问题
-清理了 Cookie 也没用 有遇到过这个问题的么</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">求古典大佬听听这是哪一首曲子？听起来像莫扎特的风味，但是找不到</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781676">
+                <summary class="article-expander__title">ios 有没有什么办法可以实时查看银行卡余额，小控件那种最好</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781773">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
-                    <span>aheadlead: 在新浪乐居的实景看房听到的 BGM 。。估计应该不是新浪原创的吧。
-https://infocdn.3dnest.cn/21a65022_NKRP_b6f9/2021-03-29-11-16-01/resources/20210329162709_8e1362f2-9068-11eb-bc43-00163e32905a.mp3</span>
+                    <span>zeroze:</span>
                   </div>
                 </a>
               </details>
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">广州现在省内出行，需要做核酸吗</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781675">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>zhongpingjing: 过段时间需要去广州，会不会办完事不让走</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">直播投诉电信销号流程</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781674">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>xiaoming1992: 
-背景:5 个月前办理了电信宽带，200M，捆绑 3 张电信卡，共计 138 元每月。由于搬了住地，所以需要注销原住地的宽带，今天去办理注销业务，被告知，注销后宽带及电话将被立即停用，但费用按照整月收取，下月 3 号账单出来后到公众号（还是小程序？）清缴剩余费用。
-刚刚拨打了投诉电话，诉求是以下二选一：
-申请注销时立即销号，收费截止至当日，缴清费用后即完成销号流程；
-申请销号时仅作记录，一次性缴清当月费用后，号码及宽带能继续使用到月底，次月自动销号。
-回复说 48 小时内联系我，到时候再来回帖。
-其实还想说，办理宽带时绑定了银行卡自动扣费，可是一直扣费失败（银行卡余额充足），多次联系电信和银行，都说自己没问题，是对方的问题，最后每次缴费都得手动充话费。。。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">你们一周燃脂多少千卡？每天的目标设定的是多少嘞，想参考下</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781672">
+                <summary class="article-expander__title">Ubnt 的 ER-X 小路由双 WAN 模式负载均衡+按规则选择出口的方案问题</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781772">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(1 min)</span>
-                    <span>AllenHua: 
+                    <span>ca1123: 我有
+1. 国内家宽
+2. 国际出口
+3. ER-X 小路由
+需要在 ER-X 上实现按 IP 选择合适的出口, 这样下面的机器国内国外的资源都可以访问了.
+我看到这个帖子里面讲了电信联通的负载均衡. 和我需要的很接近了. 
+https://www.chiphell.com/thread-2027724-1-1.html
+读了这个帖子我大概知道
+- 可以分网口拨号
+- 可以按照一定规则给网口分流量
+我有三个问题:
+1. 这个帖子类似的方法有老哥试验过么? 有坑么?
+2. 国内 /国外的 IP 如何区分?
+3. DNS 怎么解决?
+另外有老哥懂的话, 可以给我提供远程支持么? 我愿意按时间支付费用. 300/h</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">618，求推荐手机，最近有什么优惠吗</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781771">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Flowing: 
+给父母用
+价格：2000 以内
+要求：拍照好一些，使用方便些。Android 手机。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">迫于快递丢了，求推荐免插电摄象头</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781770">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>jkwc: 
+求推荐一款可以直接贴楼道墙上用 WiFi 看门口的摄象头，下次再丢快递就方便找了…
+不需要频繁换电池…平时有人敲门也可以实时看到…出于安全考虑如果能禁用外网访问更好（仅内网查看储存）…
+预算几百吧…不知道有没有合适的…谢谢</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">数据库缓存问题</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781769">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>lonelygod365: 
+请问在 mysql 做了读写分离，且加入了缓存机制的拓扑里，缓存部分应该是单台服务器还是多台？ 是一个多台组成的集群吗？ 如果是多台，那客户端请求如何快速判断想要的读数据是否在某个缓存服务器上呢？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">提问, hadoop namenode 启动无法创建进程 id</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781768">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>israinbow: Starting namenodes on [hostname]
+hostname: /hadoop-3.2.2/bin/../libexec/hadoop-functions.sh: line 1848: /tmp/hadoop-admin-namenode.pid: Permission denied
+hostname: ERROR:  Cannot write namenode pid /tmp/hadoop-admin-namenode.pid.
+无法创建 pid, 导致 stop-dfs 无法关闭 namenode, 但是 jps 还能看到 namenode 的进程号, 于是乎 kill 命令关闭, 隔壁 yarn 也无法创建 pid, 但是 stop-yarn 却能关掉
+网上冲浪一圈也没找到答案, 故来此地提问
+细节:
+hadoop3.2.2 centos8 stream
+执行 start-dfs 的是普通管理员账户
+集群运行没问题, 文件操作没问题, yarn 跑着也没问题.
+需要附加信息请直接问, 介于当前时间深夜所以回复要到白天了, 请谅解.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">求指教！ Jme_ter 压力测试 TPS 一直上不去的原因是什么？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781767">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>jsdi: 有谁知道 Jme_ter 压力测试 TPS 一直上不去的原因是什么吗？
+一个秒杀项目，对秒杀接口做压测
+TPS 一直维持在几百，按理说不应该呀。我优化的应该还可以了，这个请求没有从 MYSQL 查询任何数据，先从 redis 查看是否有剩余库存，有的话订单信息压入消息队列，不需要等消息被消费，直接响应 ”排队中“。
+怎么看效率都不低吧，怎么 TPS 一直上不去
+目前的想法是和网络带宽 或者 测试方法 有关，但是不知道怎么优化。有大神指定一下吗！谢谢</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Mac 外接显示器避坑指南</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781766">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>hoar: 
+先说结论（重点）：
+1 、外接显示器一定要选择物理分辨率 4K 以上，16：9 的显示器，这样才会开启 HIDPI，显示的字体效果才会接近原本的 mac 屏幕。否则要么字体模糊要么字体小到你看花眼。2 、如果显示器只有 HDMI 接口的选择 4K60HZ 的转接头。预算充足可以选择自带 typec 反向充电的显示器
+楼主踩坑过程：
+今年 3 月为了写代码更有效率，考虑买个 AOC 的某型号带鱼屏。看中的原因是带 typec 反向充电，接口相当齐全。以前连接的显示器还需要加一个 C to hdmi 转接头，索性换了。到手了之后第一次傻眼，不是商品描述写的 4k 带鱼屏吗，结果定睛一看是 准 4k 3440 1440 分辨率， 不过好在 github 上有强制开启 hidpi 分辨率的脚本，我 2017mbp 用一段时间还不错。直到我换了 M1 mbp，彻底傻眼，无法开启 HIDPI，原始分辨率真的眼睛看花，而且也有无法识别显示器无法输出 RGB 的情况。无奈抱着侥幸的心理挂在小黄鱼上看有没有人收，运气比较好，被同城一个哥们买走了，比买的时候少了 600，能接受。今日下单了 LG 27UL850，这下应该就没有问题了。
+显示器推荐：
+LG 的 4k 显示器，从 1500 到 4000 这个区间，最具性价比的应该是 UL650，缺点是少了 typeC 接口。UL850 跟它参数差不多，但多了 typec，价格却贵了不少，我给 V 友推荐的就这两个吧，其他的显示器品牌不甚了解，lg 毕竟是官方推荐。杂牌 4k 可能 M 系列芯片会有识别不出的情况，因为跟 intel 版本的驱动是不一样的，不知后续会不会更改。当然，自家的显示器是支持最好的，不差钱儿直接上 ultrafine 5k 或 pro xdr display 。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Apple 官翻的电脑实际的产品质量、性能、体验怎么样？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781765">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>bhc003: 看到官方翻新的机器比全新要便宜很多，但不了解具体的使用情况，请有过经历的兄台分享下。另外，Apple 官方虽然只承诺 1 年的质保，但站在三包法的角度，计算机产品包含一年质保及主要部件两年保证，对于翻新设备是否涉及？
+虽然 M1 加持的电脑上市一段时间，铺天盖地的评测视频对 M1 的性能跑分赞不绝口，但我对 M1 的态度还是忐忑不安，毕竟全新的设计，经过市场的验证的时间还很短暂，此芯片也并未走完其整个生命周期，仍对它抱有不确定的认知。所以，我还会对英特尔的芯片心驰神往，也在我更新迭代的考虑中，毕竟目前仅作伏案使用，并不涉及编程或设计类等占用大量系统资源的操作。
+如果可以，也请用过 M1 设备的兄台，谈谈使用感受，是否在使用中遇到软硬件、体验等不尽人意的情况。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">三墩附近求租，想要租个两室一厅的</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781764">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>gkinxin:  [位置] 最好是以下小区-&gt;卸紫家园、秀里华亭附近、蒋村地铁口附近、中海西溪华府附近、德翠公寓附近
+ [预算]  3500 以内
+ [入住时间]  20 号左右
+ [房间要求] 两室一厅
+ [长租短租] 长租
 
-最近夏天了，感觉更需要运动了，昨天居然创下了新纪录，一天燃脂 1200+千卡。
-楼主菜鸡，目前每天的活动目标还是 350 千卡。
-你们一周燃脂多少千卡，每天设定的目标又是多少呢</span>
+不要是中介，有房源的朋友留个绿色软件。</span>
                   </div>
                 </a>
               </details>
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">现在的听歌识曲功能都太拉垮了吧</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781669">
+                <summary class="article-expander__title">个人深圳实习三个月数据统计</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781761">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(1 min)</span>
-                    <span>Raven316: 用 mbp 的听歌识曲，只要主播说了一句话，有一点点游戏噪音，就匹配不上；还有昨天去听音乐会，用的网易云的听歌识曲，现场又没噪音，久石让的音乐都识别不出来，无语</span>
+                    <span>Co1a: 
+学习
+在读什么
+深入理解计算机系统30%
+计算机网络：自顶向下 40%
+高性能 MySQL              20%
+分布式系统概念与设计 5%
+深入理解 Linux 内核     5%
+在看什么
+#115
+在做什么
+PingCAP Talent Project 路径（一）完成了 50%
+HackerRank
+Submissions：55
+SQL(Basic)
+Go(Basic)
+LeetCode
+Puzzle：63
+工作
+数据采集模块爬虫开发、测试、优化
+数据库存储过程调优、编写、测试
+后端逻辑实现、测试、优化
+少量前端页面编写
+截止到 6 月初，累计工作了526个小时，总收入10,501CNY 。
+总结
+好难</span>
                   </div>
                 </a>
               </details>
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">[实习] [微软亚洲研究院] Azure 智能云防火墙算法研发实习生</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781663">
+                <summary class="article-expander__title">求助！新 Mac 的 iCloud 不同步</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781759">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(1 min)</span>
-                    <span>nomeguy: 微软亚洲研究院-网络研究组招收研究实习生啦~
-微软亚洲研究院 (MSRA)-网络研究组 (Networking Research Group)
-https://www.microsoft.com/en-us/research/group/networking-research-group-2/
-&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
-岗位： [ Azure 智能云防火墙算法研发-全职实习生, 1 名] 
-1 、工作职责：
-- 收集 Azure 云平台租户的 Web 日志，利用 Fuzzy 测试、灰盒测试等技术进行日志分析，实现对 WAF 防火墙防护规则的智能分析；
-- 维护智能防火墙安全规则调度算法，以实现恶意网络流量的监控、分析；
-- 构建基于微服务的分布式智能防火墙监控平台；
-- 参与维护本组在 GitHub 上的开源项目。
-2 、职位要求：
-- 熟悉 Linux 、数据挖掘、计算机网络、网络安全、微服务、分布式架构中的一个或多个领域，有相关项目经验；
-- 熟悉 Go 、Python 、C/C++中的一门或多门语言，有较强的工程能力，熟练掌握 git，代码格式清晰规范，善于团队协作；
-- 有一定英文学术论文阅读能力，能够根据论文进行系统实现；
-- 较强的沟通能力和逻辑表达能力。
-3 、具有以下条件者优先：
-- 在 GitHub 较为活跃，有自己的开源项目，或参与过知名开源项目；
-- 发表过学术论文；
-- 可以连续实习不少于 6 个月。
-&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;&#x3D;
-工作时间：每周 5 天，3 个月以上，能够尽快入职
-工作地点：北京市海淀区丹棱街 5 号（疫情期间可远程办公）
-如有意向请发 [中文简历 PDF ] 至：nrg-intern-recruit@microsoft.com
-简历中需标明平均分，及专业或年级排名及排名对应的总人数
- [注意] 请务必采用学校邮箱（ edu 域名）发送简历，其他邮箱（如 163 、qq 、gmail 、outlook 、hotmail 等）发送会进入公司垃圾邮件，无法被 HR 看到
-邮件标题&amp;简历 PDF 文件名格式：Azure 智能云防火墙算法研发-姓名-学校-本|硕|博-年级-V2EX</span>
+                    <span>hanliu: 
+其实是 MBP2018，抹盘重装最新系统。
+在设置里打开了 iCloud 的文稿和桌面。访达的侧边栏也出现了文稿和桌面。但是，iCloud 里一直是空白的，啥都没有。看起来没有开始同步。
+有彭于晏知道是咋回事吗？可以强制开始同步吗？
+ps，照片倒是已经同步了； nsurlsessiond 这个进程一直在下载，好像是 iCloud 相关的进程，它在干啥？</span>
                   </div>
                 </a>
               </details>
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">Mac 自带的输入法 如何打① ？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781662">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>Gawain:</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">腾讯云 618 大促，轻量单核 2G5M 带宽 76 元/1 年起，轻量无忧计划续费同价</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781660">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>freecloud: 
-腾讯云 618 大促，轻量单核 2G5M 带宽 76 元 /1 年起，轻量无忧计划续费同价  
-[腾讯云 618 大促活动部分配置]
-76 元 /1 年起，存量用户：85 元 /1 年起，产品首单特惠
-230 元 /3 年起，存量用户：259 元 /3 年起，产品首单特惠  
-轻量，双核 /4G 内存 /6M 带宽 /1200G 月流量 /80G 硬盘，可选机房：广州 /上海 /北京 /成都，新拓用户：422 元 /1 年起，存量用户：475 元 /1 年起，产品首单特惠
-1263 元 /3 年起，存量用户：1422 元 /3 年起，产品首单特惠  
-轻量，四核 /8G 内存 /8M 带宽 /1500G 月流量 /100G 硬盘，可选机房：广州 /上海 /北京 /成都，新拓用户：798 元 /1 年起，存量用户：898 元 /1 年起，产品首单特惠
-2390 元 /3 年起，存量用户：2689 元 /3 年起，产品首单特惠  
-云主机，单核 /2G 内存 /1M 带宽 /50G 硬盘，可选机房：上海 /北京 /南京，新拓用户：76 元 /1 年起，存量用户：85 元 /1 年起，产品首单特惠
-230 元 /3 年起，存量用户：259 元 /3 年起，产品首单特惠  
-云主机，双核 /4G 内存 /3M 带宽 /50G 系统盘+100G 数据盘，可选机房：上海 /北京 /南京，新拓用户：453 元 /1 年起，存量用户：511 元 /1 年起，产品首单特惠
-1352 元 /3 年起，存量用户：1521 元 /3 年起，产品首单特惠  
-云主机，四核 /8G 内存 /5M 带宽 /50G 系统盘+200G 数据盘，可选机房：上海 /北京 /南京，新拓用户：1024 元 /1 年起，存量用户：1151 元 /1 年起，产品首单特惠
-2567 元 /3 年起，存量用户：2888 元 /3 年起，产品首单特惠  
-[轻量无忧计划]
-1，终身续费同价； 2，首年域名免费； 3，专属技术社群  
-轻量无忧计划配置 1：1 核 2G，4M 带宽，50G SSD 硬盘，500G 月流量，可选机房：广州 /上海 /北京 /成都 /南京，费用：90 元 /6 个月，180 元 /一年  
-轻量无忧计划配置 2：2 核 4G，6M 带宽，80G SSD 硬盘，1200G 月流量，可选机房：广州 /上海 /北京 /成都 /南京，费用：336 元 /6 个月，672 元 /一年  
-[轻量其他配置]
-19.2 元 /月起（代理商新拓用户）  
-轻量可选配置 2：1 核 2G，30M 带宽，50G SSD 硬盘，2048G 月流量，可选机房：中国香港 /新加坡 /东京 /硅谷 /莫斯科，费用：27.2 元 /月起（代理商新拓用户）  
-轻量可选配置 3：2 核 4G，30M 带宽，80G SSD 硬盘，3072G 月流量，可选机房：中国香港 /新加坡 /东京 /硅谷 /莫斯科，费用：53.6 元 /月起（代理商新拓用户）  
-[大数据云主机]
-0.67 元 /1 小时起（不含带宽等其他费用，竞价实例价格可能会有变动，价格仅供参考）  
-[人工智能深度学习]
-1.44 元 /1 小时起（不含带宽等其他费用，竞价实例价格可能会有变动，价格仅供参考）
-1650 元 /1 月起，存量用户：1850 元 /1 月起，可选机房：北京 /上海 /广州  
-[代付打折流程]
- 用自己账户正常购买或续费，付款的时候选择代理商支付 -&gt; 支付折扣款给我们 -&gt; 代理商代付 -&gt; 交易完成  
-[联系方式]
-联系 QQ：8 5 9 7 3 5 3 0 
-[注]
-1，因活动的时效性，价格、折扣或代金券等优惠可能会发生变动。
-2，腾讯云合作伙伴折扣，不能与推广返佣叠加。
-3，因为数据太多，难免出错。配置和价格仅供参考。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">求救 macos 更新总是下载一会提示错误</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781659">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>Skkkkkkk: 用的是家里的移动宽带的 wifi 每次更新几百兆就会卡住报错 提示&quot;下载所选更新时错误。请检查您的互联网连接并再试一次&quot; 但是连接手机热点下载就不会出现问题 求助大家如何解决</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">陌生人非故意的操作导致你收到伤害，你会怎么办？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781658">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>yixinlove: 昨天遇到一个比较糟心的事，老妈在隔壁小区内被一条狗吓着了，没什么大事，但是昨天一天都处于惊吓状态下。
-比较糟心的事并没有得到狗主人的诚意道歉，等我过去的时候她直接走了。
-事情经过：
-10:00 左右，老妈去隔壁小区找朋友。那栋楼下有一个左拐进电梯的路，入口比较窄。在快要左拐时突然有一条大狗冲出来，导致老妈被吓了一大跳。
-这条狗有牵狗绳，后面有人牵着，但是狗跑在前面，人在后面。
-期间老妈被吓着坐在路边，说了那个人几句。从老妈后续的描述是那人没道歉，并且在听我老妈说”我打电话给我儿子“后反响很激烈，问我妈”到底想怎么样“
-10:13 老妈打电话给我，我急忙下楼。因为她情绪比较激动，并没有说清楚具体地方，我只能先下楼。
-10:15 我打电话给老妈，问具体地点。还是没描述清楚，只说了 4 栋、超市对面，我只好去找。
-10:25 左右，我找到我妈，只看到那个狗主人的背影，她牵狗进电梯。我看到电梯停留在 18 楼。当时我们直接找了大堂物业，物业反馈已经告知楼栋管家，但是当天刚好管家休息。物业说了会直接查监控，并且告知管家。我直接回家等。
-10:39，楼栋管家打电话给我，说已经知道此事，并且在查监控，让我等一下。我告知看到人上了 18 楼。
-11:08，打电话给楼栋管家，询问查监控的进度。回复说还没查到，并且管家知道 18 楼有一户人家是养了狗，狗的特征和我描述类似。她说已经打电话给业主，但是业主跟她说”没吓到人，只在电梯碰到一个小孩“。我直接报警。
-11:19 警察到了，一起找物业调监控，包括事发地点监控，以及电梯监控。确认是 18 楼业主，且物业已经知道是哪个业主。从监控看到事情是：
-&gt;&gt;  狗突然从拐角冲出来，从我妈身边经过，确实有狗绳，且并没有和人接触，但是由于突然并且距离较近，老妈被吓着了。狗主人有跟我妈说什么，面对面的说话，不超过 1 分钟，就走了。可能是我妈一直在说，她走了后有返回来，继续对着我妈说话，然后直接回去了。
-12:00 多一点，警察直接用手机打电话给业主，询问此事。她承认确有此事，只是说法不一样。她表达的意思是：
-1. 有一开始就道歉，但是她认为是我妈胆小，她又不是故意为之，道歉了就好了
-2. 因为我妈一直说，她也有火气，就吵起来了
-3. 她表达她很尊敬老人，且是信佛的，狗狗也是听着佛经长大的。并说明狗是合规，办了手续的
-4. 听到我妈打电话给儿子，第一反应是说我们要找事，表达”我不欺事，但也不怕事“。且说等了我很久，因为她需要上班开会，直接走了
-警察表达的意思是：不说这么多，从监控来看她确实被吓着人了，而且你狗狗也没牵好，现在人家就是要求你道歉，你直接在手机上道歉。并且以后要好好牵好狗。
-期间一直是警察在跟她说，开的外放。我虽然听到她的话，但是由于不知道如何反驳，且怕打扰警察问话，一直没开口说话。因为当时几个人在说话，我没听清楚是否说了”对不起“，但是警察说了是道歉了的，这事就完结了，然后走了。
-之后我妈一天都在惊吓中，中、晚饭也没吃。幸好今天看起来没什么大碍。
----------------------------------------------------------------
-以上描述都是按照事实描述，没有主观情绪。
-下面说下我后来的反思（可能带有个人情绪）：
-1. 那人说的”等了很久“，但是从我接到我妈电话，到具体到达，大概 10 分钟不到，感觉并不是很久。且我后面看到她背影，刚好进电梯锁门，我和她只差了 2 秒不到
-2. 管家打电话给她时明显说了谎，说是”只碰到一个小孩“
-3. 跟警察说的话表达了她尊敬老人、信佛，是一个很和善的人。但是从视频监控来看，以及我妈的感官，一直在表达”我道歉了，你只是被吓着了，还想怎么样“
-所以觉得这个人，毫无道歉诚意，且很会说话。而我，第一次经历这事，处理不是很成熟。平时也是两点一线，只会写代码，都不知道如何去找到她的漏洞，去反击，只能事后复盘才知道怎么处理（也可能自我 YY，下次遇到这种事还不知道能处理好）
-其实我也知道这种事很难界定责任，但是我的要求很低，只需要一句诚心的道歉，可是从上面事情来看很难得到。而如果去走打官司，一是太折腾，感觉自己伤害也不大，二是感觉打官司还不一定赢。
-分享这个事，主要看看 V 友们如果遇到这种事，或者类似这种事，你们会怎么处理？或者说，如何自己安慰自己，不受这种气？而且这种事，很难做到”诚心“。
-事情描述太长，没办法，主要是想讲清楚背景，请多担待。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">在没有任何前提下，完成目标和解决问题哪个更重要？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781656">
+                <summary class="article-expander__title">SerenityOS 这个操作系统看起来不错哈</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781758">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
                     <span>exc:</span>
@@ -569,87 +514,416 @@ https://www.microsoft.com/en-us/research/group/networking-research-group-2/
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">深圳招聘 | IT 开发-金融科技</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781655">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>ITrecruit1: 大家好，我是 Lucy@FinTech 社区，今天为大家带来深圳的 IT 开发-金融科技招聘信息。欢迎添加微信 fintech78，加入 FinTech 社区，提认知，攒人脉，求职招聘，投资有术！
-公司：国际知名金融科技公司，极客文化，22 天年假，不加班
-地点：深圳
-
-01 前端开发
-月薪：RMB 30-50k
-关键词：前端开发，3-5 年，本科及以上
-推荐奖：5000
-职位描述
-在分布式环境中创建 web 应用程序；
-与交易员和其他团队开发人员协同合作，并了解用户需求；
-管理单个项目的优先级，推动项目进度和交付最终成果。
-岗位要求
-3 - 5 年及以上前端开发经验，精通 VueJS 或者 ReactJS，了解 AngularJS. 了解所用前端框架的核心原理;
-熟悉 HTML/CSS/JavaScript/TypeScript，手写 CSS 和 Javascript/TypeScript 的能力，了解 HTML5 常用特性，ES6 规范，擅长页面布局和重构，浏览器运作原理，浏览器兼容和页面渲染执行效率，Chrome 调试；
-
-02 前端开发 Leader
-月薪：RMB 40-60k
-关键词：前端技术架构设计开发，8-10 年，本科及以上
-推荐奖：1 万
-职位描述
-负责前端技术架构的设计和开发工作；
-负责前端团队的组建和持续建设；
-关注技术动向，研究新技术并攻关技术难题；
-岗位要求
-8 年及以上前端开发经验，精通 VueJS 或者 ReactJS，了解 AngularJS. 了解所用前端框架的核心原理
-精通 HTML/CSS/JavaScript/TypeScript，手写 CSS 和 Javascript/TypeScript 的能力，了解 HTML5 常用特性，ES6 规范，擅长页面布局和重构，浏览器运作原理，浏览器兼容和页面渲染执行效率，Ch…</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">发现一个 UI 很优秀的安卓应用， Flutter 可以达到这种体验吗？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781654">
+                <summary class="article-expander__title">开启了双重认证， Apple ID 被篡改密码？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781756">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(1 min)</span>
-                    <span>he110comex: 界面优美；
-动画流畅；
-功能大体上齐全；
-https://play.google.com/store/apps/details?id&#x3D;mydiary.journal.diary.diarywithlock.diaryjournal.secretdiary&amp;hl&#x3D;zh&amp;gl&#x3D;US
-有没有小而美的 Flutter 应用推荐？
-另，iOS 上的富文本编辑器（包括插入图片）的体验是否难以达到 Android 的水平？（例如 OneNote 、Evernote 、DayOne 这些知名的都不怎么样）</span>
+                    <span>moonkiller: 1.发现异常
+今天用 iPhone 下载一个之前下载过的 App 时
+让我重新输入密码（记得之前下载过的 App 时只需要指纹验证就行啊）
+然后我输了两遍密码都不对
+打开电脑访问 iCloud 官网
+尝试登录 iCloud，还是提示我密码错误
+
+2.尝试找回，正常流程失败
+于是点击到找回密码界面，准备找回密码
+结果没成功，输入账户后，iCloud 只是模糊提示我“暂时无法完成”
+
+3.在邮件里找回了密码
+赶紧打开了自己邮箱搜索了下
+发现上周五有一封 iCloud 密码已更改的邮件
+里面有个链接说如果不是本人修改，可以点击申诉
+于是从邮件里的链接点进去重新设置了密码
+登录 iCloud 发现头像好像变了（是个美女头像？），但之前也不关注头像，这点不太确定
+
+4.复盘问题
+我的 Apple ID 明明开启了双重认证
+这个在我找回密码后已经再次确认了（登录网页 iCloud 时需要我再输入 6 位验证码）
+
+那么我的 Apple ID 密码是怎么被篡改的密码？
+修改 Apple ID 密码时不需要邮箱验证码或者二次验证吗？
+
+我自己猜测可能泄露的途径：
+a.之前维修手机时，告诉过别人 Apple ID 密码
+b.chrome 浏览器一直记录了登录密码
+c.iPhone 越狱了
+d.iPhone 上安装了第三方的应用市场（比如爱思助手）
+
+而且篡改我 Apple ID 密码目的是什么？
+如果只是偷盗数据，登录转移不就行了？
+看了下也没有锁我的设备，
+我还需要检查哪些安全隐患？</span>
                   </div>
                 </a>
               </details>
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">对比一下你们的办公桌</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781653">
+                <summary class="article-expander__title">分享一个 M1 Mac 在 DELL 显示器上启用 RGB 模式的方法</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781754">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>ZRS: 
+方法来自：
+https://www.youtube.com/watch?v&#x3D;Z1EqH3fd0V4
+简单总结如下：
+1 、打开/Library/Preferences/，找到com.apple.windowserver.displays.plist文件。
+2 、将该文件复制出来，使用以下命令将 binary 格式转换成 xml 格式供编辑。
+$plutil -convert xml1 com.apple.windowserver.displays.plist
+
+3 、在文件中寻找所有PixelEncoding将值改为0，Range改为1。
+
+4 、保存文件，使用以下命令将 xml 格式转换回 binary 格式，并检查文件的合法性。
+$plutil -convert binary com.apple.windowserver.displays.plist
+
+$plutil -lint com.apple.windowserver.displays.plist
+
+5 、寻找以下文件夹中是否存在以com.apple.windowserver.displays开头的文件，如果有则删除。
+~/Library/Preferences/
+~/Library/Preferences/ByHost
+
+6 、重启就可以使用 RGB 模式输出了。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">江苏电信宽带 知乎 ipv6 tls 连接超时</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781753">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(2 min)</span>
-                    <span>youliabc: 
-/囧</span>
+                    <span>haoxingxing: 
+IPv6 访问超时
+~$ curl https://www.zhihu.com -v --ipv6
+*   Trying 240e:978:5404:0:35:::443...
+* TCP_NODELAY set
+* Connected to www.zhihu.com (240e:978:5404:0:35::) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: /etc/ssl/certs
+* TLSv1.3 (OUT), TLS handshake, Client hello (1):
+（无响应）
+
+~$ curl https://www.zhihu.com -v --ipv6 --tls-max 1.2
+*   Trying 240e:978:5404:0:38:::443...
+* TCP_NODELAY set
+* Connected to www.zhihu.com (240e:978:5404:0:38::) port 443 (#0)
+* ALPN, offering h2
+* ALPN, offering http/1.1
+* successfully set certificate verify locations:
+*   CAfile: /etc/ssl/certs/ca-certificates.crt
+  CApath: /etc/ssl/certs
+* TLSv1.2 (OUT), TLS handshake, Client hello …</span>
                   </div>
                 </a>
               </details>
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">Klib 新版：优雅地在 Apple Books 中回顾笔记</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781652">
+                <summary class="article-expander__title">请问： ios 里的 bark 推送服务器很不稳定吗？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781752">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>ghmum: 之前写了一个脚本在服务器上监控网页，想通过短信通知自己，在 V2EX 问，被推荐使用 bark，试用了一下感觉非常好用
+但今天发现访问推送的链接，发出请求后没有响应，ping 服务器也超时，而且手机也没有收到推送，然后发现因为这个错过了监控的网页的一个信息
+请问一下，bark 的服务器很不稳定吗？会时常出现这种无法访问的情况吗</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">请问前端怎么保护接口密钥？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781750">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>shadowfish0: 
+比如现在有一个功能，是要发个邮件，那前端应该是通过接口把这个请求给后端，但是肯定要进行一下鉴权吧，不然随便谁通过接口都可以发邮件，我现在就用的私钥+timestamp md5 加密的办法来做这个鉴权，但是前端密钥都是明文给出的，又感觉不太安全</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">有没有 Mac 的监控系统，监控到有某个短信（iMessage）则自动转发发到邮箱</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781749">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(1 min)</span>
-                    <span>quietjosen: 
-背景：Klib 支持从 Apple Books 中导入标注。
-有时，我们在 Klib 中回顾某本书中的标注时，有时会希望重新打开书，看看这条标注的上下文。
-之前，只能通过在 Apple Books 中搜索的方式，来找到这条标注。
-现在，只需要一次点击，Klib 可以自动在 Apple Books 中打开这本书、并跳转至标注对应的位置：
+                    <span>zealinux: 
+主要是甲方只给了一个登录账号，绑定我的手机，每次登录会有短信验证码。
+但使用这个账号是公司其他几个同事。
+那么有办法，让 iMessage 某个号码的短信自动转发到公司几个同事的邮箱？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">NUC8i5BEH type-c 坏了</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781746">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>littlewing: 一直都是用 type-c 线直接连接显示器，应该是走的 DP，今天机器负载高风扇转得比较快，同时显示器黑屏了几次，下午再用的时候，就再也没画面了
+用 HDMI 连接正常，用 type-c 就没信号，开机 BIOS 也不显示
+之前在小黄鱼买的，也没发票，不知道能不能找 intel 保修，序列号查了下保修到明年 8 月</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">手机 DCIM\.qqpim_guid 目录是啥作为？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781745">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>wdssmq: 
+还有「 DCIM.tmfs 」</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">平安集团 HRX 团队招聘</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781744">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>soroslee: 产品经理，解决方案顾问，前后端研发、测试，hc 多多，有意者请发送个人简历到 280432760@qq.com ，邮件中注明 V2EX 内推。
+北京 上海 深圳办公，具体看岗位安排</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">iPhone 为什么不能直接投屏到 MacBook 上?</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781743">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(2 min)</span>
+                    <span>ottawa8821: 
+功能讨论：为什么苹果不做一个 iphone 可以投屏到 macbook 笔记本上？
+搜了网上几个方案，一个是用数据线➕quicktime(额，这个方案我没有实现成功，没有获取到来源)
+另一个是用第三方 app：airserver，试用了之后，发现 iphone,macbook 上色域完全不一样（ iphone 上好一点，可能也是硬件不同，iphone 的 ppi 本来就高）
+哈哈，最后说下为啥有这个需求呢，其实本人是韩剧爱好者，需要用韩剧 tv （手机 app ）看韩剧，有弹幕，喜欢在稍微大点的屏幕观看，所以才会有此功能（投屏）需求。
+顺带问下，目前还有其他投屏方案吗？苹果不加此功能的原因会是啥？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">有偿找个老哥辅导网络安全</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781741">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>MuseA5: 主要会设计到 crypto, sql/xss, web security 之类的. 有意向的麻烦联系 Telegram: @MuseA_5</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">一个方便摘录公众号文章段落生成分享卡片的小工具</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781740">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>qiayue: 摘要卡 card.nali.net 
 
-是不是很方便？欢迎 升级一试
-Klib 是什么？
-上面的介绍，可能略显突兀，需要介绍一下背景。
-Klib 是 我开发的 读书笔记管理工具，运行在 macOS 平台，目前已支持从 Kindle 、Apple Books 、微信读书、多看等多个平台导入标注，还可以将标注导出至印象笔记，或者复制为 Markdown 格式，进而输出到你自己使用的文档管理应用中。
-更多介绍，请参考：Klib 使用教程
-另外，如果在用苹果设备的话，使用 Apple Books 看自有电子书，还是挺方便的。尤其，书籍、阅读进度、读书笔记多端自动云同步，还能使用 Klib 方便地管理标注。</span>
+目前只实现了点击选择段落，后面会实现自由选择任意文字。
+效果示例：
+
+使用场景：
+分享某个文章中的某些段落到朋友圈，
+写公众号文章时引用公众号文章段落。
+
+复制工具地址 card.nali.net 或者扫码即可使用
+
+欢迎提出使用意见</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">mac 和 iPad 地图显示国内细节过少</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781739">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>MrCurly: 
+发现 ipad 和 mac 上的地图显示国内的细节特别少，放大到街上都不显示街边的店，基本只显示路名，其他国家就正常显示建筑物信息。iPhone 上就可以正常显示，这是国内有什么规定么？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Mumble（开源的 VOIP 项目）客户端的选择</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781738">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>Orciorc: 
+目前在做一个关于语音通话的项目，初步选定 Mumble 作为基础。
+（其开源地址为 https://github.com/mumble-voip/mumble ）
+关于客户端，希望将客户端用于树莓派之类的开发版上，故选用 CLI 化的客户端。目前测试了barnard，不得不说，很久未更新的项目坑就是多，经多次调试 microphone 不工作，对方无法听到声音（不是硬件问题，使用 sox 测试耳麦正常）……
+有老哥接触过相关项目吗？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Kindle 导出的个人笔记为什么有的是直接显示原文，有的是显示“点击以显示原文”</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781737">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>movq: 
+这样的话导出笔记体验很不好，我不可能手动“Tap to view highlight in the book”，然后把原文复制出来</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">请问目前主流的前端数据可视化框架有什么</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781735">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>zxCoder: 
+比较稳定
+（有问题能找到比较多解决方案的</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">坐标深圳，四年工作经验，求职 UI 设计～～</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781734">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>spdanny: 
+求职 UI 设计
+个人作品链接： https://www.zcool.com.cn/work/ZNTI1ODE0MjQ&#x3D;.html
+求勾搭 qaq</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Mac mini m1 用微信的时候总是识别不了摄像头</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781733">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>kevinsnow: 
+Mac mini m1, big sur 11.4，用的 Logitech C922
+用 FaceTime 和其他 APP 的时候都可以，只是微信识别不了，之前好像还可以，不知道什么时间开始就不行了。。重装了好多次微信都不行，有没有人遇到一样的问题的？
+
+一直是按照上面的显示，不知道为啥。已经在权限那边把微信使用摄像头打钩了。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">有个已实名的阿里云国际版账户，有对应的注册邮箱，余额大概 2700 刀，有有兴趣的朋友吗？公司停摆不打算使用了。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781732">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>isChange:</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">在公司项目开发中，数据库是怎么管理的？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781731">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>raaaaaar: 
+前提
+后端
+Go 语言
+在校学生，还没有接触到具体的公司规范，但是在学校里一个还不错的技术部门里体验了两年。
+问题
+建表是提前在程序运行前就建立好吗？还是直接在程序中初始化？
+最近开始用到了数据库设计工具，提前设计好了后直接就生成 SQL 了，所以我想知道，你们是提前就把表初始化了，还是在运行时初始化呢？
+如果提前建立好，怎么自动化这个过程呢？
+经常会有线上 BUG，要重新初始化数据库，那么怎么自动化呢？直接让运维写个脚本，然后到时候 call 他让他重启吗？
+你们在开发过程中，会写数据库的设计文档吗？
+如果要写的话，是用的什么工具来管理的呢？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">各位大佬看看我这个思路有没有有没有问题</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781730">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>jsdi: 最近在设计一个秒杀系统。秒杀操作的执行逻辑是：
+1 、从 redis 中读取当前秒杀商品的剩余库存（因为 redis 是单线程的，这里不会产生并发问题）
+2 、如果库存大于 0，把秒杀请求存进 rabbitmq 消息队列，保证 rabbitmq 中的每个请求都会被成功消费（生成订单）。也就是如果有 100 个秒杀商品，那么消息队列中只会有 100 个秒杀请求。
+3 、如果库存小于 0，直接返回秒杀结束
+这样设计有没有问题？针对秒杀减库存下订单这个操作又没有更好的解决方案？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">[深圳] EDA 软件 Linux C++ 算法&amp;开发</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781728">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>jaslip: 
+简介
+坐标深圳，ASML 的仿真软件子公司。
+欧洲外企，不用 996， 氛围比较和谐，各种福利齐全，还有补充医疗报销。非常遵守国家法规，国家假没休折算三倍工资， 加班费都照常给。
+工作职责
+算法岗做仿真算法，比较专业的领域，有同事带。前同事被华为高价挖走了，才有新的坑。
+普通开发岗主要 qt 做前端界面
+要求
+熟悉 Linux 的 C++开发 ，有图形学，cuda，分布式架构相关经验更好。
+社招 3-5 年 以及 校招均可
+联系方式
+负责推荐，不是 HR，有兴趣我可以直接发 JD
+278528220@qq.com 简历写明应聘职位。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">1 核 2G1M 一年 26，全场 3 折</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781727">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>daxiami: 
+天翼的机器，全场 3 折,代付
+V：vps12580
+活动地址
+https://www.ctyun.cn/h5/activity/enterprise/business
+有需要的大佬，可以联系，也可来代理。
+2020 年 8 月之后注册的用户都能参加购买，不限制企业和新老用户。
+有 1 年和 3 年，代付，具体联系 V 。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">这周就要面亚马逊了？有点慌，有前辈的经验在这分享吗？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/781726">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>way2explore2: 因为近几年的面试，算法都没问过，所以有好多东西要准备。
+而且，其实很想尽快离开现在公司，但听说亚马逊面试周期很长。 :(</span>
                   </div>
                 </a>
               </details>
@@ -661,61 +935,6 @@ Klib 是 我开发的 读书笔记管理工具，运行在 macOS 平台，目前
   <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-06-05">2021-06-05</time></h2>
     <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.infoq.cn">InfoQ - 促进软件开发领域知识与创新的传播</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">滴滴出行小程序体积优化实践</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/TZ7Y90zCvvEOcN0hgCkc?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>背景
-
-微信对小程序包体积的要求是总体积不得超过20M，主包及单个分包体积不得超过2M。支付宝对于小程序包体积的计算方式虽和微信略有区别，不过整体也大同小异。
-
-18年至19年初时，滴滴出行小程序里承载的业务只有网约车，且业务需求较少，在主包内都能够搞定。而在下半年时，为了将微信钱包/支付宝九宫格入口迁移至小程序，小程序开始新增诸如公交/代驾/车服/单车/顺风车等众多业务线，同时网约车的业务需求也要做全面的补齐，业务量和代码量一起爆炸式增长。
-
-滴滴出行包含了丰富多样的出行业务，包含了快车/专车/出租车/豪华车/拼车/单车/代驾/顺风车/公交/车生活等众多业务线。整个滴滴出行小程序的最重要，使用最高频的页面是首页与订单详情页，首页中承载了各个业务线的需求表达，各个业务线的订单详情页则承载了具体的出行订单展示逻辑。此外还有各种功能页面比如个人中心，营销页面，设置，历史行程。
-
-按照滴滴出行的产品逻辑，所有业务线的需求表达逻辑都在首页承载，为了良好的切换体验，在首页采用了单页顶导的方案进行业务线展示。即每个业务线在首页中提供一个需求表达组件，当用户切换顶导业务线后，切换出对应的业务线组件。
-
-在这种设计下，所有的业务线的需求表达逻辑都集中在首页这个单一页面中，导致在业务迭代过程中，承载首页的主包体积迅速增长，很快触碰了小程序平台的单包2M上限，对后续的业务迭代与发展带来巨大阻碍。因此，对于包体积的控制是我们在小程序开发过程中面临的一大难题。
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">干货 | 携程 Web CI/CD 实践</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/V5NBFgrCIVMpXVazuGQE?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>一、背景
-在携程的日常Web开发生命周期中，本地代码开发阶段可通过NFES框架（携程内部一个支持SSR框架，其中还包含许多公共基础业务模块及UI组件）来快速完成项目需求。但开发完代码之后常常会遇到如下几点问题：
-
-
-环境问题：Web/Node资源本地构建/测试环境和生产环境差异化大，导致有些问题无法及时发现 
-
-QA流程：Web/Node端提交代码流程没有规范的QA环节，代码质量不可控
-
-构建流程：资源本地构建与镜像构建是独立的，版本易混淆 
-
-代码开发完后的各个步骤比较分散，难集中管理
-
-二、目标
-通过引入CI/CD解决方案，建立完善的准备环境/测试/资源构建/镜像构建一整个流程的链路，使它可帮助项目以更快的速度和更高的质量来交付。
-三、实现与实践
-NFES 的 Web CI/CD 的实现，简单来说就是通过管道化 (GitDev Pipeline) 的执行过程来完成持续集成和持续交付，这篇文章先不涉及持续部署。
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
       <li class="source">
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://docs.rsshub.app">iDaily 每日环球视野</a></h3>
@@ -797,28 +1016,6 @@ NFES 的 Web CI/CD 的实现，简单来说就是通过管道化 (GitDev Pipelin
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">法国即将第三阶段解封</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/010yW3">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>从巴黎蒙帕纳斯大楼顶部眺望埃菲尔铁塔。法国将于6月9日进入防疫解封第三阶段，缩短宵禁时间，允许餐馆、咖啡厅和酒吧恢复室内营业，并重新开放国际游客入境。6月4日，法国政府公布最新入境防疫规定，低风险国家旅客只需提供疫苗接种或核酸阴性证明即可免隔离入境，高风险国家旅客则需入境后隔离7天。6月4日，法国新增确诊6953例，死亡84例，累计确诊570.1万例，死亡11万例，人口疫苗接种率达到40.1%。摄影师：Chesnot</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">墨西哥钝口螈宠物</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/f32q48">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>汉堡动物收容所，一只墨西哥钝口螈（Axolotl）趴在水族箱中，德国。墨西哥钝口螈是一种原产于墨西哥的两栖类动物，以昆虫或小鱼为食，因头部长有6根形似龙角的外腮又被称为「六角恐龙」。这种动物拥有伤口自愈能力，受伤后能够在数月内长出新的肢体和器官，因此常被作为宠物饲养或用于科学研究。受人类盗猎、栖息地减少等威胁，墨西哥钝口螈现存数量仅不到1000只，被列为极度濒危物种。摄影师：Marcus Brandt</span>
-                  </div>
-                </a>
-              </details>
-            </article>
         </section>
       </li>
       <li class="source">
@@ -854,31 +1051,6 @@ NFES 的 Web CI/CD 的实现，简单来说就是通过管道化 (GitDev Pipelin
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
                     <span>iOS开发中一般用UILabel来展示文字、UIImageView用来显示图片、UIButton用于简单的图文点击响应事件，稍复杂一点的可以借助NSAttributedString来实现图文混排需求，又或者将图文内容转换为HTML由WKWebView（UIWebView）来展示。然而以上方案都有各自的局限性
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">继进入紧急状态后，美国再次提升优先级，将黑客攻击与恐怖袭击并列</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/qmsXbSH9vAwlx7dOpx81?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>在美国多家关键机构接连遭勒索软件入侵后，美国司法部决定把黑客袭击与恐怖袭击并列为其优先调查事项。
-
-
-6 月 3 日，美国司法部发布了一份应对勒索软件的内部指引，决定把这类黑客袭击与恐怖袭击并列为其优先调查事项。
-
-据路透社报道，目前具体说明已经于周四发布至全国各地的检察官办公室。指导方针概述了调查勒索攻击的协调方法，其中还包括一项规定，即此类调查必须与华盛顿特区司法部刚刚成立的反勒索软件特别工作组进行“集中协调”。
-
-“我们以前在恐怖主义方面使用过这种模型，但从未用于勒索软件”，美国司法部官员表示。
-
-美国司法部向媒体给出了完整的备忘录内容。
-
-
-
-这份简短的指导文件还提到，“为了确保建立起这样一套能够覆盖美国国内乃至全球范围的案例与调查体系，也为了切实勾勒出当前国家与经济安全面临的现实威胁态势，我们必须加强并集中内部追踪力量。”
 点击查看原文&gt;</span>
                   </div>
                 </a>
@@ -1059,78 +1231,6 @@ You can support CSS-Tricks by being an MVP Supporter.</span>
                     <span>I just joked that we’re basically getting everything we want in CSS super fast (mostly referring to container queries, my gosh, can you imagine they are actually coming?). Now we might actually get parent selectors?! As in .parent:has(.child) { …
 The post Can I :has() appeared first on CSS-Tricks.
 You can support CSS-Tricks by being an MVP Supporter.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://docs.rsshub.app">iDaily 每日环球视野</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">NASA 金星探测计划</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/caf0Kh">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>一张「麦哲伦」号和「先驱者」号探测器拍摄的金星（Venus）照片。6月2日，NASA 宣布将在2028年至2030年向金星发射2个新探测器，其中一个命名为「达芬奇+」（Davinci+），主要使命是探索金星大气层形成、演化和地貌特征，另一个探测器名为「真理号」（Veritas），主要用于探索金星地质结构并绘制金星表面地图。这是 NASA 时隔近30年首次启动金星探测任务，2个任务将分别获得5亿美元预算。摄影师：NASA</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">美国公布疫苗捐赠计划</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/5ebgv7">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>美国总统 Joe Biden 公布新冠疫苗捐赠计划，华盛顿白宫。6月3日，Biden 宣布美国将立刻向海外捐赠首批2500万剂新冠疫苗，包括辉瑞、莫德纳和强生疫苗。600万剂直接分配给加拿大、墨西哥、印度、韩国等美国盟友国家，1900万剂疫苗将通过世卫组织 COVAX 机制分配，其中亚洲分配700万剂、拉丁美洲分配600万剂、非洲分配500万剂。Biden 宣称捐赠疫苗是为了「拯救生命并成为全球榜样」。至6月4日，中国已累计向超过80个国家捐赠疫苗逾2200万剂。摄影师：Evan Vucci</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">G7跨国税收协议分歧</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/e20KX4">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>英国财政大臣 Rishi Sunak 与美国财政部长 Janet Yellen 在G7财长会议前举行双边会晤，伦敦。6月3日，英美两国财长在会谈中讨论了跨国税收等核心议题。美方提议将全球最大的100家企业列为跨国税收协议征税对象，而非仅针对科技行业巨头；以及设立全球最低企业税率为15%，避免跨国公司转移利润至避税港。英国财长对美国的提议表示认可，但是坚持认为科技巨头必须向经营所在国缴纳更高税款。摄影师：Chris J. Ratclffe</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">货运龙飞船发射</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/685Niu">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>一枚 SpaceX 猎鹰9号火箭搭载货运龙飞船发射升空，美国肯尼迪航天中心。6月3日下午13时29分，货运龙飞船执行第22次空间站补给任务，共携带3.3吨物资和设备，预计6月5日凌晨5时抵达并与「和谐号」节点舱对接。货运龙飞船将在空间站停留1个月，计划7月初携带太空实验标本返回地球。本次任务使用的升级版货运龙飞船可重复使用5次。摄影师：Paul Hennessy</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">中共一大新纪念馆开放</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/bd23Pa">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>中国共产党第一次全国代表大会纪念馆开放，上海。6月3日，中共一大纪念馆经过逾600天的扩建修缮后正式开放，包括中共一大会址、宣誓大厅和新建展馆，展厅面积扩展至3700平方米。新基本陈列展主题为「伟大的开端」，展出1168件中国共产党建立初期革命实践的相关文物及资料，展现中国共产党的诞生历程。核心展品包括72种不同版本《共产党宣言》及原版《新青年》期刊等。摄影师：Zhang Hengwei</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">伊朗炼油厂火灾事故</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/6eefsG">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>伊朗德黑兰南部一座炼油厂发生起火事故。6月2日晚上19时30分，伊朗国有石化公司一座炼油厂的天然液化气管道发生泄漏爆炸，导致厂内18个储油罐着火。本次大火经过20小时的扑救后熄灭，共造成11人受伤。这座炼油厂于1968年投入生产，产量达25万桶/天。炼油厂运营者表示「本次事故不存在人为破坏的可能性」，伊朗政府已下令对事故原因进行调查。摄影师：Vahid Ahmadi</span>
                   </div>
                 </a>
               </details>
@@ -2150,35 +2250,9 @@ Removed: href for each source in cache. The value was never used so it&#x27;s no
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-05-08">2021-05-08</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://github.com/osmoscraft/osmosfeed/releases">Release notes from osmosfeed</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">v1.5.0</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.5.0">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>Added: Atom feed generator
-Added: Customizable site title
-Added: Copy all files from static directory to the root of the site.
-Changed: Favicon, css, and js assets now existing at site root level.
-Chore: Excluded testing files from repo.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-06-06T08:57:57.528Z">2021-06-06T08:57:57.528Z</time>
+    <time id="build-timestamp" datetime="2021-06-07T00:41:19.766Z">2021-06-07T00:41:19.766Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.10.2</a></span>
   </footer>
   <script src="index.js"></script>

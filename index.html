@@ -16,12 +16,91 @@
 <body>
 <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-07-05">2021-07-05</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.infoq.cn">InfoQ - 促进软件开发领域知识与创新的传播</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">FlutterBoost3.0发布preview版本</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/8EJtV30eTYmSMC39o0Na?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>在经历了近两个月的开发以及内部测试与线上灰度，FlutterBoost3.0的preview版本终于与大家见面了，与beta版本相比，这个版本在不大动主体结构的基础上，增加了以下能力：
+
+1.重构生命周期，确保生命周期语义准确
+2.双端一致性近一步对齐
+3.增加自定义的启动参数
+4.实现页面返回传参方案
+5.支持页面透明能力
+6.增加自定义事件发送机制
+7.增加前置拦截器
+8.提供更完善的文档与例子
+
+由于篇幅有限，就不对以上能力一一展开了。如果对具体实现感兴趣的话，可以通过源码和文档来了解相应的功能，我们今天先来聊一聊生命周期部分的设计与实现、文档与用例和社区建设。
+页面生命周期设计
+FlutterBoost3.0有两个和页面相关的概念，一个是BoostContainer，另一个是BoostPage。每个BoostContainer在Native层都会有一个与之对应的容器，比如在Android端，这个容器可能是FlutterBoostActivity或者FlutterBoostFragment，而在iOS端，这个容器则指的是FBFlutterViewContainer。每个BoostContainer都会有一个与之对应的Navigator，因而一个BoostContainer可以包含多个BoostPage，这个设计也被我们称之为双重栈。细心的同学可能已经发现了，当我们需要打开一个Flutter页面时，有一个额外的参数withContainer，这个参数设置为false时，表示打开页面时不需要打开一个新容器，而这个参数如果被设置为true，则会在打开页面的同时，去打开一个新容器。
+
+
+在开发业务的过程中，我们常常需要知道一个Flutter页面的可见性，比如我们写了一个Flutter页面，里面有一个VideoWidget，我们希望VideoWidget在页面可见的时候播放，在页面不可见的时候暂停。对页面可见性变化的监听是FlutterBoost需要提供的核心能力之一，因此我们提供了一个名为PageVisibilityObserver的API，用于专门监听页面可见性变化。
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">全链路压测体系建设方案的思考与实践</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/JDcXIWIMffvTUj26X0ke?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>在阿里淘宝 双11 的过程中，长期以来都是在生产环节做全链路压测的，通过实践我们发现在生产环境中做压测，实际上会和一个 IT 组织的结构、成熟度、流程等紧密相关，所以我们把全链路压测从简单的制作范围内脱离出来，变成整个业务连续性的方案。
+
+本文分四个方面为大家阐述：第一，整个全链路压测的意义，为什么要在生产环节上做全链路压测；第二，关于落地的技术点和解决方案；第三，生产过程中做全链路压测流程上的建议，考虑到每个组织的承受度不一样，给大家提供一些建议；第四，如何在第三方实现整个在生产环境中做业务连续性包括压测的结果。
+全链路压测的意义 
+
+
+上图显示了三个问题，实际上是不同的 IT 组织在和测试交流的时候，这三个问题是比较有代表性的。
+
+1. 很多测试同行说他们线下也做过性能测试，但是到了线上之后还是存在很多问题，因为不太可能会在线下模拟一个跟线上 1：1 的环境。在有很多第三方接口的情况下，大家也很少会去模拟线上整个场景。因此我们在线下做了很多测试工作后，总结出了为什么很多从线下容量推导到线上容量的公司却最终效果不是很好，就是这样的原因。
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-07-04">2021-07-04</time></h2>
     <ul class="sources card">
       <li class="source">
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://www.infoq.cn">InfoQ - 促进软件开发领域知识与创新的传播</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Data Mesh的原则和逻辑架构</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/jcjgis60UyWQ4V5T8I15?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>我们渴望通过数据来增强和改善商业和生活的各个方面，这驱使我们在大规模管理数据方面进行范式转变。尽管过去十年的技术进步已解决了数据量和数据处理计算的规模问题，但它们无法解决其他方面的规模问题：数据格局的变化，数据来源的泛滥，数据用例和用户的多样性 ，以及对变化的响应速度。Data Mesh解决了这些问题，它由以下四个原则组成：面向领域的去中心化数据所有权和架构，数据即产品，自助服务数据基础设施即平台，联合治理。每个原则都驱动着技术架构和人员组织结构的新的逻辑视图。
+
+当前，许多企业面临的挑战在于如何在技术架构和人员组织层面形成数据驱动、运用数据建立竞争优势以及规模化地利用数据驱动价值，“从单体数据湖到分布式数据网格”对上述痛点有深入的理解（我鼓励您先阅读该文章）。它提供了一种替代的观点，该观点吸引了许多组织的注意力，并给我们带来了一个不同前景的希望。虽然这篇文章描述了这种观点，但它在很多设计和实现的细节上留下了让人想象的空间。我并不想在本文中过分规范这些，以至于扼杀了大家实现Data Mesh的想象力和创造力。但是，我认为作为推动范式向前发展的垫脚石，本文只负责在架构层面规范它的定义。
+
+本文是上述文章的后续， 它通过列举Data Mesh的基本原则和这些原则驱动的高级逻辑架构，总结出了Data Mesh方法。在我之后写文章深入研究Data Mesh核心组件的详细架构之前，建立高级逻辑模型是非常必要的。因此，如果您正在为Data Mesh寻求确切的工具和方法，那么本文可能会让您感到失望。如果您正在寻求简单且无关技术细节的模型来建立描述该方法的通用语言，请快来。
+合理划分数据
+数据到底是什么？这个问题的答案取决于您问谁。从现阶段的视角来看， 我们将数据分为业务数据和分析型数据。业务数据位于业务微服务背后的数据库中，它具有事务性，能够记录当前状态并且满足业务应用的需求。分析型数据是一段时间内业务事实形成的聚合视图，它的数据模型通常被用来支持历史数据分析或未来趋势预测， 也用于机器学习的模型训练或生成分析报告。目前，技术、架构和组织结构的现状都反映了业务与分析数据平面的差异，它们集成在一起但是又相互独立存在。这种差异使架构变得脆弱。对于那些试图连接这两个平面，想要将数据从业务数据平面流转到分析平面然后再返回到业务数据平面的人来说，不断失败的ETL（提取，转换，加载）流程以及日益复杂的数据管道迷宫是一个很常见的现象。
+
+图1：合理划分数据
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">《“逃离北上广”的开发者：困扰和突围》中国技术开放日·长沙站</summary>
@@ -39,33 +118,870 @@
       </li>
       <li class="source">
         <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.v2ex.com/">V2EX-最新主题</a></h3>
+          <h3 class="source-name"><a class="source-name__link" href="https://css-tricks.com">CSS-Tricks</a></h3>
           <section class="articles-per-source">
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">求推荐声音比较清脆的机械键盘</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787400">
+                <summary class="article-expander__title">The Fourteenth Fourth</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://css-tricks.com/the-fourteenth-fourth/">
                   <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>KKLeon: 
-目前只用过一款 ikbc c87 的茶轴，感觉声音比较闷，敲起来 duangduang 的感觉有点吵，关键是昨天发现它突然就不能用了。不知道有没有那种声音很脆的机械键盘，就像打字机那种的清脆悦耳的机械键盘呢？</span>
+                    <span class="article-reading-time">(6 min)</span>
+                    <span>It’s CSS-Tricks birthday! Somehow that keeps coming around every year. It’s that time where I reflect upon that past year. It’s like the annual vibe check. 
+I’m writing this just days after my current home state of Oregon has …
+The post The Fourteenth Fourth appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://docs.rsshub.app">iDaily 每日环球视野</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">中国航天员太空行走</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/ea767l">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>中国航天员刘伯明从天和核心舱进入太空，准备执行太空行走任务。7月4日，中国航天员刘伯明和杨洪波首次开启空间站舱门进入外太空，进行全景摄像机抬升操作，并为机械臂安装脚限位器以及舱外工作台。2名宇航员身穿中国自主研发的「飞天」舱外航天服，内置生命保障、饮水与食物供给系统，能够连续维持进行8小时舱外活动。摄影师：Fan Wei</span>
                   </div>
                 </a>
               </details>
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">用现有冰箱做以旧换新更换冰箱， 618 下单至今未收到货</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787399">
+                <summary class="article-expander__title">日本伊豆山泥石流</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/891JkV">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>日本静冈县连日暴雨引发伊豆山山体滑坡，房屋被泥石流冲毁。7月3日，日本关东地区遭遇强降雨天气，距离东京100公里的伊豆山发生大规模泥石流灾害，导致超过130栋房屋被冲毁，至少2人遇难、约20人下落不明。当地政府已发布疏散令并出动1000名救援人员参与搜救。日本过去10年平均每年发生1500起山体滑坡事件，比2010年以前增长50%。摄影师：iDaily Media</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">阿桑奇50岁生日</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/ec62od">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>维基解密创始人 Julian Assange 的支持者们在伦敦议会广场举办 Assange 50岁生日庆祝活动，英国。7月3日，Assange 连续第3年在伦敦贝尔马什监狱内度过生日。英国伦敦地方法院于2021年1月以「Assange 存在精神健康问题」为由驳回美国的引渡请求，但要求他必须留在狱中等待美方上诉结果。如果 Assange 被引渡到美国，他将面临「入侵政府电脑」、「违反间谍法」等18项指控，最高判处175年入狱。摄影师：Andy Rain</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">美军撤出阿富汗最大基地</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/6994SS">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>一名阿富汗废品商人正在收购美军撤离巴格拉姆空军基地后的废弃物品，帕尔旺省。7月2日，驻阿富汗美军部队正式撤离巴格拉姆基地，并将基地管理权移交给阿富汗政府军。这意味着美国撤军行动进入最后阶段。巴格拉姆基地是阿富汗境内最大的美军基地，亦是美国反恐军事行动的地区作战中心。美国总统 Joe Biden 表示阿富汗撤军正在进行中，但是不会在几天内结束。白宫发言人表示阿富汗撤军行动将在8月底前完成。摄影师：Hedayatullah Amid</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">联合国秘书长访西班牙</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/8a8kM4">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>西班牙国王费利佩六世举行午宴欢迎来访的联合国秘书长 Antonio Guterres，马德里王宫。7月2日，西班牙国王费利佩六世与联合国秘书长讨论了新冠疫情相关议题，并呼吁富裕国家向贫困国家分享新冠疫苗。西班牙是遭受新冠疫情打击最严重的欧洲国家之一，累计人口确诊比例高达8.19%，每100万人中有1730人死于新冠疫情。7月2日，西班牙单日新增确诊12563例，单日死亡28例，人口疫苗接种率达到55.3%。摄影师：Carlos Alvarez</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Fiat 500 诞生64周年</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/8b0Ivs">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>意大利热那亚举行第一届 Fiat 500 全球车主聚会（Fiat 500 World Wide Meeting），一名车主载着家人前往活动现场。本次活动从7月2日持续至4日，特别为纪念 Fiat 500 汽车诞生64周年而举办，共吸引全球21个国家约3400名车主参加。Fiat 500 是意大利菲亚特车厂1957年推出的一款平价小型汽车，迄今仍是欧洲最受欢迎的城市车型之一，累计销量超过300万辆。摄影师：Marco Bertorello</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">北约最大规模黑海军演</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/0576Fh">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>北约在黑海地区举行联合军演，一架罗马尼亚空军 F16 战机在空中模拟拦截一架「敌军」C-27 运输机，黑海。本次军演从6月28日持续至7月10日。这是北约组织有史以来在黑海举行规模最大的一次军事演习，共出动32个国家的5000名士兵、30艘军舰和40架飞机。俄罗斯政府公开指责本次军演为挑衅行为。7月3日，俄罗斯在黑海开展「空军轰炸敌舰」演习作为回应。摄影师：Robert Ghement</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">鲸鱼游弋深圳近海</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/93bmMK">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>一只布氏鲸（Bryde&#x27;s whale）在深圳大鹏湾浮出水面，中国广东省。6月29日，深圳大鹏湾海域时隔16年首次出现鲸鱼，初步确认是一只约8米长的未成年布氏鲸，它频繁浮出水面进行觅食，推测是在追赶鱼群时误入近海。布氏鲸是唯一在赤道附近暖水海域常年生活的须鲸，属于国家一级保护动物。摄影师：iDaily Media</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.v2ex.com/">V2EX-最新主题</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">楼上高空抛物了，怎么才能从一堆视频里自动识别出抛物的视频？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787512">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
-                    <span>lazyrm: 
-618 下单
-6 月 25 回收旧冰箱
-预计 6 月 28 号送件（首次预计配送）
-预计 7 月 3 日送件（本地配送告知我，冰箱未到，遂更改配送时间）
-预计 7 月 7 日送件（京东单方面更改时间）
-冰箱送货日一直跳票。没冰箱得日子很难过。求有经验者支有效处理方式。</span>
+                    <span>chole: 用的小米的视像头，抛物的画面有拍到，已把相应时间段的视频导出，视频内容基本都是静态画面。因为视频有大概三个小时，而抛物的画面仅仅一两秒，有什么方法可以方便找出出现画面移动的视频么？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">年经问题：转博 vs 就业</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787511">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Zepp: 如题。楼主本硕都是牛校，但奈何人既菜又懒，在同学之间一直都是泛泛之辈。现在研二正在某大厂实习中。
+很多人说为了高薪而读博是不现实的，但正巧我追求的不是高薪，而是 WLB，我并不希望用年轻时的健康换取钱财。现在实习的公司是天天加班到九点的，我知道这可能不算晚，但我就是讨厌六点后不能自由支配时间。
+还有很多人说要对科研充满热情才应该读博，这点就说到我的痛处上了。我本来就是一个比较懒惰的人，加上小导师科研能力也比较有限，真读起博来能做出多少成果很值得怀疑。虽说大导师不看重论文，所以毕业要求较低，但好不容易读个博，要是划水过去也太没意思了吧。
+以上是背景和一些碎碎念，希望朋友们能回答几个问题，帮助我做出选择。或者根据你们的人生经历给出宝贵的建议。
+1. 有没有六点下班的互联网大厂，或者其中的某些部门？
+2. 博士毕业后就业方向会更窄吗？我听说互联网公司招博士生时会要求研究方向比较 match 才行，但本科 /硕士生就无所谓。
+3. 博士 title 在工作晋升乃至人情交际上，起到的作用大吗？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">mac 都换上 arm 芯片了，现在安卓的模拟器有希望接近 iOS 模拟器了吗</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787510">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>tomato1111: 如题，架构都一样了，m1 mac 上的安卓模拟器可以像真机一样流畅了吗？ 现在用的还是 x86 的 mac，开发只能用 x86 镜像的模拟器，arm 那玩意太卡了。。。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">关于空调是换还是修，请各位老哥给点建议</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787508">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>yejianmail: 
+现在客厅一个松下 2 匹挂机，开机后过一会故障灯闪烁只能送风了，当时受限于空间选择了这款 2 匹的松下挂机，机器 2017 年下单，京东三方店铺 5k 的价格入手，整机保修三年，这会已经过保。打了松下客服电话给安排了师傅上门，用遥控板诊断故障码 H11，师傅说是外机主板坏了需要更换，要 1300 的样子，我付了 100 定金，维修后这个主板保修一年。我感觉维修收费太高，现在买个像美的这类的一线品牌就 2000 多，还带 6 年保修，请大家给点意见是换新还是修划算，因为感觉如果再坏都快修不起了</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">想找一句话的出处</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787507">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>firejoke: 
+突然想到一句话，&quot;并肩高处，才是风景&quot;
+google bibg baidu 都搜了，大多都是引用，没有出处。
+想知道这个句子最开始出自哪里，有哪位大文豪知道吗？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Chrome 更新以后，发现翻页键不好用了</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787506">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>786375312123: 
+不知道什么时候更新了 Chrome，然后现在发现浏览网页的时候，如果用鼠标点击了文字，就会有光标留在那，其实不管是文字，还是图片，都有光标出现。然后如果这个时候用鼠标滚轮向上向下滚几下，然后再键盘上按向上翻页或者向下翻页，会发现 Chrome 的定位会出问题了。翻页的起始点是光标停留的位置，而不是当前页面（用鼠标滚轮滚动后的页面）。
+试了 edge，没有这个问题。
+有什么办法可以修复吗？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">[视频特效渲染] 一个在 FFmpeg 里支持 OpenGL GLSL 渲染视频的 filter，并且支持自定义 Shader</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787504">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>numberwolf: 
+之前接了新业务视频剪辑、编辑产品，然后主要负责服务端的渲染合成能力。
+这里为了解决 FFmpeg 对于图形 图像视频特效渲染的薄弱点，结合了 OpenGL 进来，支持自定义 shader 文件，直接用自己的 shader 渲染；
+并且现在支持了 lut 贴纸能力。
+项目地址： https://github.com/numberwolf/FFmpeg-Plus-OpenGL
+这个是 FFmpeg 里编译的，同时我也写了一个 web 端的 shader 预览应用，和这个 FFmpeg-Plus-OpenGL Shader 通用.
+https://www.zzsin.com/shaderplus.html
+大家有这方面需求的同学可以使用，有问题可以给我提 ISSUE 或者一起维护~</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Apple 王府井，竟然有盲人工作人员</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787503">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>swordspoet: 
+周末去了趟 Apple 王府井，在负一层当我咨询一位工作人员的时候，发现工作人员却对着空气说话，然后我才反应过来他是盲人，桌子底下安安静静躺着一条导盲犬。这位工作人员可以熟练地使用 iPhone 的辅助功能与其他人沟通，我见识浅了，这样的公司还是值得尊敬的。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">迫于实在是心疼女朋友，求问 V 友们，全国哪家做筛查过敏源的好医院？回答不胜感激，我的币全给各位大佬。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787501">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>Danmo:</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">聊聊今天关于产品的胡思乱想</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787500">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>madlifer: 今天的一个想法：
+为什么产品经理没有一个 Github ？ 
+为什么没有多个 PM 在一起实现一个项目，比如一个人做架构，一个人负责交互部分，一起创造一个项目
+为什么没有一个可以产品、UI 、研发一起组队创造产品的项目
+为什么没有一个覆盖且解决了共同创业各个阶段问题的项目？
+
+对，我们需要一个平台
+一个平台覆盖如下流程
+流程 ：想法提出 → 想法讨论扩充 → 产品原型  → 产品 Demo 实现  →  产品投资
+一个平台提供以下功能
+团队招募、需求兼职、任务分配、创业团队模型，股权分配，天使投资，全步骤给予创业者帮助
+
+我叫它：“理想国” ，一个充满理想主义的创业协作平台
+
+----------------------
+
+另外一个想法：
+社区对比 IM，他的优势是什么？
+社区最重要的是运营，尤其是起步阶段，流量注入很重要
+如果说独立站不容易引流，但百度贴吧已经死成这 B 样了，为什么没转化独立社区？
+KOL 对于以他为领袖的社区需求是否被压制了？
+社区最大的问题是没有利益点，KOL 不愿意生产内容，兴趣+电商的模式能否让社区进行重新复活？
+社区需不需要复活，到底需不需要社区？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">[Web 端 HEVC/H.265 播放器] h265web.js web 端的 HEVC/H.265 播放器</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787499">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>numberwolf: 
+我主要搞音视频开发，这个项目主要是跑在 Web 端浏览器上的，我会写前端但非专业 FE，这个项目主要是针对音视频播放器能力开发的。
+地址： https://github.com/numberwolf/h265web.js
+目前支持 H.265 的 FLV/MP4/TS/M3u8 点播
+直播支持 HLS 直播
+这个播放器我属于一直维护过来的一个状态，目前已经在内外使用。
+大家有需求的可以用起来，有问题可以给我提 ISSUE 。
+因为使用软解码能力（浏览器上无法做硬解码加速 与 汇编优化）,故设备电脑配置性能 会 影响播放器性能.
+视频帧率最好</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">求问，往 Excel 表内插入对应图片名的图片，最快的方法有哪些？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787498">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>fox1751: 
+非程序员，有个问题困扰很久了，今天突然想起来在大 V 站问问看。
+Excel 表，A 列是图片名，要在 B 列插入对应的图片。图片保存在本地文件夹内且命名规范。
+目前是用 VBA 循环插入图片解决的，但是效率比较慢，几千张图片的话就要一两分钟以上了。
+不知道程序员来看这个问题的话，是否有更快的解决思路。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">关于无线耳机选购，希望得到你的靠谱推荐</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787497">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>ufan0: 
+常听 Avicii 的音乐，希望推荐一款适合听电音的耳机。
+对降噪无感；
+续航无要求；
+无线蓝牙耳机；
+2k 以内；
+适合电音。
+希望得到你的靠谱推荐，谢谢🙏。
+XM3/4 头戴式的有，闷，音质听起来不如 400 的塞子，不考虑了。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">求助： Safari 的 CSS 护眼模式</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787494">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>bao3: 
+我不知道怎么形容，Safari 的夜间模式但是很多网页底色是白色，让我晚上关灯之后觉得特别刺眼。后来发现 Safari 的设置-- 高级 -- 样式表，是支持 CSS 的。于是我就自己手写个小文件，我不会写代码，所以自己查 css 自己拼凑了一下。
+发在这里，是求大神完善一下。。。还多我确实不会实现。切勿嘲笑，抠脚大汉硬拗的
+PS：刚才发帖的时候才发现，Safari 可以直接从 mac store 安装扩展，可以通过 user script 改底色，不过我这个拼凑的 css 可以摆脱 扩展使用，我还挺喜欢。
+* {
+    text-shadow: none !important; 
+/* 下面是文字颜色 */
+    color: #667B83 !important;
+/* 下面是边框颜色 */  
+    border-color: #596E75 !important;
+
+/* 接下来就是背景颜色了 */
+    background-color: #022B35 !important;
+
+}
+a {
+    /* 这里是超链接的高亮颜色 */
+    color: #93A1A1 !important;
+    text-shadow: none !important; 
+    font-weight: bold;
+    cursor: context-menu;
+    text-decoration:none;
+    outline:0;
+}
+::selection {
+    /*background-color: #EEE8D6; */
+    background-color: #FFA;
+    color: #000000;
+}
+img {
+/*图片加滤镜*/
+    filter:brightness(50%) opacity(50%) ;
+}
+input {
+-webkit-appearance:none;
+display:block;
+text-decoration:none;
+border: 1px solid #ccc;
+border-radius: 4px;
+outline-color: invert ;
+outline-style: none ;
+outline-width: 0px ;
+
+}
+
+input[type&#x3D;&quot;text&quot;]:focus{
+  border:1px solid #ff7496;
+  border-radius: 4px;
+  border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+input::-webkit-input-placeholder{
+  color: #6a6f77;
+}
+button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+button {
+display: outline-block;
+* display:outline;
+position: relative;
+outline:0;
+}
+
+table.gridtable {
+    font-family: verdana,arial,sans-serif;
+    font-size:11px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+}</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">一个 jni 相关问题，希望大佬可以解惑</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787492">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>userGyl: 流程是在 cpp 中调用 jni.cpp 再调用 java，报错
+JNI DETECTED ERROR IN APPLICATION: JNI GetMethodID called with pending exception java.lang.ClassNotFoundException: Didn&#x27;t find class on path: DexPathList[[directory &quot;.&quot;],nativeLibraryDirectories&#x3D;[/system/lib64, /system_ext/lib64, /system/lib64, /system_ext/lib64]]
+下面贴一下调用代码
+//通过 jvm 获取 env 的方式
+JNIEnv *get_env(int *attach) {
+if (javaVM &#x3D;&#x3D; NULL) return NULL;
+*attach &#x3D; 0;
+JNIEnv *jni_env &#x3D; NULL;
+int status &#x3D; javaVM-&gt;GetEnv((void **) &amp;jni_env, JNI_VERSION_1_6);
+if (status &#x3D;&#x3D; JNI_EDETACHED || jni_env &#x3D;&#x3D; NULL) {
+JavaVMAttachArgs vmAttachArgs;
+vmAttachArgs.version &#x3D; JNI_VERSION_1_6;
+vmAttachArgs.name &#x3D; NULL;
+vmAttachArgs.group &#x3D; NULL;
+status &#x3D; javaVM-&gt;AttachCurrentThread(&amp;jni_env, &amp;vmAttachArgs);
+if (status }
+return jni_env;
+}//对应 java 文件声明的 native 函数
+extern &quot;C&quot;
+JNIEXPORT void JNICALL
+.._XJni_Heart(JNIEnv *ev, jobject t) {
+int attach &#x3D; 0;
+JNIEnv *env &#x3D; get_env(&amp;attach);
+const char *javaPath&#x3D;&quot;包名 /XJni&quot;;
+jclass clazz &#x3D; env-&gt;FindClass(javaPath); //debug 显示返回为 null
+jmethodID mid &#x3D; env-&gt;GetMethodID(clazz, &quot;CallJavaHeart&quot;, &quot;()V&quot;);
+jobject jobject &#x3D; env-&gt;AllocObject(clazz);
+env-&gt;CallVoidMethod(jobject, mid);
+if (attach &#x3D;&#x3D; 1) {
+del_env();
+}
+}
+
+网上的一些解决方案试过了，但是无效，希望有大佬可以帮忙看看，非常感激</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">程序员与料理包</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787491">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>kop1989: 
+这周末去医院，大门旁边就是同学家里亲戚开的中餐连锁，正巧撞见同学和行政总厨（就是连锁的厨师长）在喝酒，推脱不过，遂加入其中。
+三言两语，就聊到了中餐的标准化和“料理包”。
+行政总厨很自豪地说，虽然咱菜不多，但你无论去哪家吃都是一样的味道。因为连锁中餐的标准化程度已经非常高了，后厨一线的基本都不是“厨子”，而是“操作员”。操作员几乎没有发挥空间，顶多是判断油温，根据配菜上来的温度决定是否多颠两下勺。
+行政总厨的原话是：“就这菜，你去练俩小时你也行。”
+话题转而就聊到了“操作员”的成本和待遇。很自然而然的就发散到了我这个大龄程序员身上。
+“你们程序员工资那么高，是不是权限很大。”
+“其实以现在来讲，一线程序员也只是‘操作员’而已，面对的也都是各种各样的料理包。”我尽量简明扼要的说。
+“那看来各行各业都这德性，巴不得最后着手干活的人是牲口。”我同学附和道。
+但不同的是，大师傅的弟子们最起码知道用料理包是不得已而为之，充满了妥协与遗憾。但程序员并非如此，很多程序员认为用‘料理包’是宇宙真理，以自己用了 /会用更多的味的‘料理包’当作鄙视链的谈资，甚至以能够背诵‘料理包’的配料表而自豪。————这句话在我嗓子眼里酝酿了两圈，最终还是被一大口散丹压回了肚子里。
+散丹（就是羊肚的某个部位）火大了，一点都不脆。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">一个 jni 相关问题，希望解惑。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787490">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>userGyl: 流程是在 cpp 中调用 jni.cpp 再调用 java，报错
+ JNI DETECTED ERROR IN APPLICATION: JNI GetMethodID called with pending exception java.lang.ClassNotFoundException: Didn&#x27;t find class  on path: DexPathList[[directory &quot;.&quot;],nativeLibraryDirectories&#x3D;[/system/lib64, /system_ext/lib64, /system/lib64, /system_ext/lib64]]
+下面贴一下调用代码
+//通过 jvm 获取 env 的方式
+JNIEnv *get_env(int *attach) {
+    if (javaVM &#x3D;&#x3D; NULL) return NULL;
+    *attach &#x3D; 0;
+    JNIEnv *jni_env &#x3D; NULL;
+    int status &#x3D; javaVM-&gt;GetEnv((void **) &amp;jni_env, JNI_VERSION_1_6);
+    if (status &#x3D;&#x3D; JNI_EDETACHED || jni_env &#x3D;&#x3D; NULL) {
+        JavaVMAttachArgs vmAttachArgs;
+        vmAttachArgs.version &#x3D; JNI_VERSION_1_6;
+        vmAttachArgs.name &#x3D; NULL;
+        vmAttachArgs.group &#x3D; NULL;
+        status &#x3D; javaVM-&gt;AttachCurrentThread(&amp;jni_env, &amp;vmAttachArgs);
+        if (status //对应 java 文件声明的 native 函数
+extern &quot;C&quot;
+JNIEXPORT void JNICALL
+Java_com_hik_netsdk_SimpleDemo_XJni_Heart(JNIEnv *ev, jobject t) {
+    int attach &#x3D; 0;
+    JNIEnv *env &#x3D; get_env(&amp;attach);
+    const char *javaPath&#x3D;&quot;包名 /XJni&quot;;
+    jclass clazz &#x3D; env-&gt;FindClass(javaPath);  //debug 显示返回为 null
+    jmethodID mid &#x3D; env-&gt;GetMethodID(clazz, &quot;CallJavaHeart&quot;, &quot;()V&quot;);
+    jobject jobject &#x3D; env-&gt;AllocObject(clazz);
+    env-&gt;CallVoidMethod(jobject, mid);
+    if (attach &#x3D;&#x3D; 1) {
+        del_env();
+    }
+
+}
+网上的一些解决方案试过了，但是无效，希望有大佬可以帮忙看看，非常感激</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">apache 证书不匹配</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787488">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>johnnyR: 
+主机有两个域名 111.com 、222.com ，访问 222.com 可以跳转到 https://www.222.com ，访问 www.222.com 也可以跳转到 https://www.222.com ；但访问 https://111.com 出现证书不匹配。肯定不匹配，又不是你的。怎么解决呢？我想解析到主机的域名都跳转至 https://www.222.com</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">求问下。。。亲儿子 Pixel 手机。。。谷歌浏览器无故弹出网页。。。求解决办法。。。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787487">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>squallsdjl: 本来想着都 2021 了，这种问题 google 应该有比较傻瓜的办法吧。。。。但是去全网搜了，什么缓存，各种安全设置，清空，升级，恢复基本设置（但是没有 100%重置手机）。什么都尝试了，但是还是会跳出网页直到标签页面变成“:D”，我真的感觉被嘲笑了。。。大家有遇到这种情况的么？怎么排查呢？求助（这个 pixel 手机其实是我备用机，主要拿来测试的，并不会去日常什么内容都去打开之类。。。也是奇怪怎么中的招）</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">组织技术分享交流活动（线上）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787486">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>YuanJiwei: 今年两月份，通过 V2EX 认识了一些喜欢分享的朋友，然后基本每周都组织技术交流。不同层次的朋友，得到了不同收获。有感兴趣的小伙伴，可以加入我们。
+加入标准：一年内,  做一场技术分享,或者组织一次 peer 活动（读代码 or 写代码）。这样才能持续汇聚一些乐于分享交流的朋友。
+了解我们过往的记录： https://github.com/xueyushu/programmer
+了解一些录屏的记录： https://space.bilibili.com/562148289
+现在主要以前端为主, 以 JavaScript （ TypeScript ）技术栈为主，未来可能会慢慢拓展到后端，和其他语言，有兴趣的朋友可以组织一下。
+微信(eXVhbnNkdQ&#x3D;&#x3D;)
+备注：微信需要 base64 解码</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Golang darwin/amd64 平台中解析 IP Packet Header 得到的报文长度错误</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787485">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>zeyexe: 
+直接贴代码，这是从 198.18.255.1 Ping 8.8.8.8（原始 IP 不是这个）返回的 IP 报文：
+package main
+
+import (
+&quot;encoding/binary&quot;
+&quot;fmt&quot;
+&quot;golang.org/x/net/ipv4&quot;
+)
+
+func main() {
+
+// https://en.wikipedia.org/wiki/IPv4#Total_Length
+var hdrBytes &#x3D; []byte{
+69, 0, // Version |IHL| DSCP| ECN
+0, 84, // Total_Length
+125, 47, // Identification
+0, 0, // Flags | Fragment Offset
+63,      // Time To Live
+1,       // Protocol
+85, 169, // Header Checksum
+8, 8, 8, 8, // Source IP Address
+198, 18, 255, 1, //Destination IP Address
+}
+header, err :&#x3D; ipv4.ParseHeader(hdrBytes)
+if err !&#x3D; nil {
+fmt.Printf(&quot;Parse failed. err: %v\n&quot;, err)
+}
+fmt.Printf(&quot;header: %v\n&quot;, header)
+fmt.Printf(&quot;header.TotalLen: %d\n&quot;, header.TotalLen)
+
+realTotalLen :&#x3D; binary.BigEndian.Uint16(hdrBytes[2:4])
+fmt.Printf(&quot;realTotalLen: %d\n&quot;, realTotalLen)
+
+totalLenByBigEndian :&#x3D; binary.BigEndian.Uint16(hdrBytes[2:4])
+fmt.Printf(&quot;totalLenByBigEndian: %d\n&quot;, totalLenByBigEndian)
+
+totalLenByLittleEndian :&#x3D; binary.LittleEndian.Uint16(hdrBytes[2:4])
+fmt.Printf(&quot;totalLenByLittleEndian: %d\n&quot;, totalLenByLittleEndian)
+
+}
+
+
+这段是解析 IP 报文 Header 的代码，在 Linux 和 Windows 执行得到的 header.TotalLen 都是 84，但是 darwin/amd64 就是 21524 。
+按照相关规范，IP 报文 Header 字段均以大端序包装。这个看起来在 darwin 用了小端序解析。但是就算用小端序，这个值也应该是 21504 。
+看 Go 解析的代码，原来还在解析时加上了 hdrlen 自身的 20 长度，这个似乎有点问题。我不了解那么多关于平台相关的，但是网络 IP 报文应该和平台无关吧。
+
+switch runtime.GOOS {
+case &quot;darwin&quot;, &quot;ios&quot;, &quot;dragonfly&quot;, &quot;netbsd&quot;:
+h.TotalLen &#x3D; int(socket.NativeEndian.Uint16(b[2:4])) + hdrlen # 这里加了 Header 长度
+h.FragOff &#x3D; int(socket.NativeEndian.Uint16(b[6:8]))
+case &quot;freebsd&quot;:
+if freebsdVersion 
+然后 2 年前就有人提出这个问题了，但是还是没人修复。难道没人用 Mac 做 TCP/IP 网络编程吗。
+Ref: https://github.com/golang/go/issues/32118</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">determine the command to be executed by host 应该是理解成“由 host 来决定执行的命令”还是“决定由 host 来执行的命令”</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787484">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>zxCoder:</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">有没有一些国内外的“平凡”播主在人生意义上 启迪了你？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787483">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>JamesChen: 为了克服虚无主义，尼采认为“艺术创造价值，与压抑生命意志的真理相比，艺术比真理更有价值；更甚者，艺术乃是最高形态的强力意志，它是生命的最高表现”，暂且不论其观点对于克服虚无主义的实际效用，至少能从中获得一个启示，就是：认识自己，并把自己对生命 /意义的理解，通过自己的行为 /作品表现出来，对于普罗大众而言，也是克服虚无主义的一个相对有效的路子。
+与之相对的，现在大环境的人不少随波逐流，且有些媚俗，一切行为 /作品向流量靠齐，忽略自己的人格完整性发展。比如 B 站的玩软色情的 up 主、我们圈子里的刷 stars 的开源项目作者、各处刷脸的“偶像”等等，浮躁社会。
+在这个背景下，那些通过上述方式，尝试克服虚无主义的人就更加稀有，我个人也就越发“珍惜”这类人的出现。
+比如这个 youtuber （ https://www.youtube.com/c/%E9%A2%A8%E5%AD%90loveandpeace/videos ），每个视频基本就吉他弹唱，播放量也就 50~200，但也能坚持数年日更视频，不搞其他虚的。没有些对自我的认识，自我克服虚无主义的理解，估计很难这么坚持。
+又或者一席 /一条里推荐的一些艺术家 /手艺人 /作家 /学者等，虽然不可否认 部分人都是小 /大“土豪”或已功成名就，有“资本”这么追求自我，但不影响我们这些小人物对照这些人，来启迪自我。
+这些人都让我尊敬，也滴滴答答地影响了我对各种事物地看法。
+那么对于各位大佬而言，你们有知道各领域内，相对不浮躁，不媚俗，通过自己的行为 /作品来追求自我人生意义，并对你有启迪意义的播主（或其他职业）吗？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">求助，我的 MBP 就是不肯连我的 5G SSID</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787482">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>MilkyWayne: 
+家里有 2 个 SSID，分别是 5G 和 2.4G 的，2 个 SSID 的名字完全不一样。
+我是苹果全家桶用户，所有设备都是连在 5G 的 SSID 上的，当然 Apple Watch 只能连 2.4G 。同时我也启用了钥匙串。
+然后就发现我的 iPhone 和 MBP 都会时不时的去连 2.4G 的 SSID 。即使：
+我在所有设备上都点了“忽略 2.4G 的 SSID”。
+我在 MBP 的“网络偏好设置”-“高级”-“首选网络”里面删除了 2.4G 的 SSID 。
+我在钥匙串中删除了所有 2.4G SSID 的记录。
+仍然，我的 MBP 有一半以上的几率是连在 2.4G 上的…..
+求助，是否还有其他设置可以解决这个问题？感谢！</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">[装机问题请教-谜之诡异]—非常蛋疼的一次装机经历</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787481">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>KKLeon: 
+前几天装机 cpu 莫名其妙就被搞坏了(猜测可能是旧的电源把 cpu 烧了)，无奈只能 Intel 送修，拿到新换的 CPU 之后，可以正常点亮了，但是新的问题接踵而至
+硬件信息：
+主板：华硕 B560M 重炮手 非 wifi
+CPU：Intel 11700K
+内存：十铨 16G*2 3200
+问题描述如下：
+机械键盘(上来就卒)：IKBC C87 机械键盘插上之后 2 个键盘灯一直亮，但是按键没有任何反应，插到笔记本上也-是如此。
+薄膜键盘(半死不活)：下午又去电脑店 10 块钱买了一把破键盘回来，第一次插上可以顺利使用，但是这个时候鼠 标还是不能用，进入 bios 做了一番设置后，关机调整了一下机箱跳线，现在再插上键盘死活识别不出来，键盘换到笔记本上可以正常用
+鼠标 1(罗技 M100-上来就卒)：2 个月前跟 IKBC C87 一块收起来的罗技 M100 鼠标，插上去就一直没有识别到过。
+鼠标 2(网吧战神-中途猝死)：一开始插到我的笔记本上鼠标的灯亮可以使用，插到台式机上一直没反应，然后拔掉又重新插到笔记本上，发现灯不亮了，难道是烧了？
+所有的键盘都是直接插到后置的主板 usb 接口，换了所有的 usb2.0 usb3.0 接口都不行。
+刚才尝试清除 CMOS 信息，也还是不行
+实在是太诡异了，大佬们请问我这是什么问题</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">windows terminal 如何记住上次打开的窗口</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787480">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>saysnowball:</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">写数据字典有什么好用的软件吗？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787479">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>wzx155:</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">如何离开急躁的心境</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787476">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Co1a: 
+以前在学校的时候还能闷着头刷 Leetcode 刷到两三点，现在看两个文档就看不动了，该怎么跳出？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">为什么滴滴每次启动都要获取 root 权限？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787475">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>kerb15: 
+细思极恐</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">你在生产代码里写过的最复杂的类型是啥</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787474">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Leviathann: 作为一个可以玩类型体操的语言，除了可以获得类似 Java 、C#的防笔误、智能提示等优点，应该还可以做得更多</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">unittest discover 无法找到测试文件,因为一个模块内全局变量??</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787473">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>JasperHale: 
+楼主非专业 python 开发,今天遇到个完全没头脑的问题,请赐教!.
+今天 unittest 单元测试一直找不到测试文件,一行一行排查.
+结果居然是使用 geoip2.database 模块内一个全局变量 read &#x3D; geoip2.database.Reader(geoipfile)
+只要有这个全局变量,测试文件就找不到,geoipfile 没影响...这是咋回事啊??😵😵😵... 
+test_ip.py
+import unittest
+
+from .geoip import location
+
+class Test_lib(unittest.TestCase):
+    def test_locations(self):
+        ips &#x3D; [&#x27;23.250.80.1&#x27;, &#x27;24.199.128.3&#x27;, &#x27;31.173.152.1&#x27;, &#x27;186.115.160.2&#x27;]
+        adds &#x3D; locations(ips)
+        self.assertEqual(len(adds), 4)
+
+geoip.py
+#!/usr/bin/python3
+
+import geoip2.database, logging
+
+geoipfile &#x3D; &quot;./GeoLite2-City.mmdb&quot;
+read &#x3D; geoip2.database.Reader(geoipfile)
+
+def locations(ips: list[str]) -&gt; list:
+
+    s &#x3D; location()
+    next(s)
+    return [s.send(x) for x in ips]
+
+
+def location() -&gt; list:
+    ip &#x3D; &quot;1.0.0.1&quot;
+    while True:
+        try:
+            response &#x3D; read.city(ip)
+            a &#x3D; [ip, response.location.longitude, response.location.latitude]
+        except Exception as e:
+            logging.exception(e)
+            a &#x3D; []
+        ip &#x3D; yield a</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">自己通过 xcode 连接数据线安装到 iPhone 上的 APP 有过期时间吗</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787470">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>noobma: 使用 flutter 开发了一个公司内部使用的 APP，就几个人用，打算通过 xcode 直接 build 安装到手机上，就是不知道会不会出现 APP 哪天忽然过期了使用不了了，我又不在公司的无法重新打包，就无法使用了的情况。
+我没有成为苹果开发者，就是通过 apple id 账号登录的 xcode，在 xcode 的 Preferences -&gt; Accounts -&gt; Manage Certificates 弹窗里面的信息只有 Date Created 信息，Status 也是空的。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">深圳有没有养龟的呀</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787468">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>nil333: 最近心里又痒了 想养乌龟了 不知道那个鱼鸟市场稳一点的 求推荐</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">头戴式耳机+戴眼镜&#x3D;夹眼镜腿怎么破?</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787467">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>8e47e42: 如题问, QC35/H9i/索尼大法的都夹</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">有没有同时用过 orbi 和 linksys 的 mesh 路由器的朋友？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787466">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>razios: 
+家里用过 orbi rbr50，将近两年还是很满意的。
+不太了解 linksys mx5300 的，有对比过的朋友吗？
+主要是稳定性和信号覆盖两方面</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">BigSur 下面有 jitouch 的替代品吗？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787465">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>coolxll:</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">IDM 能够实现多套配置共存，或者多个版本共存吗</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787464">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>ghmum: 俺在使用 IDM 的时候，下载不同的东西需要进行不同的配置，有时候需要使用代理，有时候不需要使用
+有时候要改 UA，有时候不需要
+故想问一下，IDM 能够实现多套配置共存吗？方便切换</span>
                   </div>
                 </a>
               </details>
@@ -177,517 +1093,6 @@
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">古巴雪茄厂朗读文化</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/77exVR">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>一名专业朗读者正在为制作雪茄的工人们朗读报纸内容，哈瓦那。古巴雪茄厂设置朗读者的历史可追溯至1865年，最初是工人们发起的一种自我教育方式，主要阅读报纸新闻和小说数据。这项历史传统在2012年被列为古巴文化遗产。目前古巴全国约有200个专业朗读者，每个雪茄厂的朗读者由员工投票选出，阅读内容包括报纸、小说、诗歌、散文等。2020年古巴雪茄全球销售额同比减少4%至5.97亿美元，中国取代西班牙成为古巴雪茄最大出口市场。摄影师：Ismael Francisco</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.v2ex.com/">V2EX-最新主题</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">PHP 有没有什么方便迁移的集成环境？每次重装系统都很烦</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787398">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>woaiqiqi: 每次重装系统后 都要重新安装环境 然后再把项目一个一个的建立站点 建立数据库 然后导入数据
-系统出问题 只要不是特别严重的问题 我都从来不敢重装系统 就怕又要重复一遍上面的步骤 因为我是做外包的 本地环境存着不少历史项目
-程序文件还好说 ide 程序打开一次就好 麻烦的点就在于建立站点 配置域名 建立数据库 导入数据这些步骤上
-有什么集成环境 可以扔在 D 盘里面 重装系统之后只要重新运行  原来的站点和数据库配置都还在的吗？</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">分压卷压缩时怎么生成 zip， z01， z02 的文件格式？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787397">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>moonkiller: Mac 平台上
-我分卷压缩时生成的格式都是.zip.001 、zip.002 这种文件格式
-比较烦人的是这样在 windows 或安卓上因为识别不到文件名后缀
-对于用惯了直接点击解压的用户，实在太不友好了
-最近注意到有人的 zip 分卷是.zip+一堆.z01 、.z02 的格式
-https://www.zhihu.com/question/343984016
-这样的好处是直接就能双击 zip 文件解压了
-但怎么生成这样压缩格式啊？
-我试了 Mac 上好几个压缩软件，压出来的都是.zip.001 、zip.002</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">目前户外产品科技树如何？有哪些专业的咨询或者交流站呢？顺便赶上时间了问问那个排汗短袖比较好～</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787396">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>intellectual: 
-有时候总是被一些问题困扰，比如家里地板上咋好多细小的杂毛？后来慢慢了解了户外，又了解了一点点面料知识。所以猜测是衣服上的短纤维掉落。之前无脑优衣库，结果发现罪魁祸首嫌疑最大的可能就是优衣库。之前一直就买纯棉的，因为觉得化纤衣服不好么，后来才知道化纤更多资料，打开了新世界。
-之前从知乎，值得买，8264 了解到类似大概这样的东西：
-防水：gtx event，看介绍说 event 会比 gtx 要透气一些，不过 event 似乎找不到商品，太少太少了，范儿 gtx 无敌了
-排汗：coolmax dri-fit climaCool airism 不过这些感觉咨询也都不透明，他们就自己吹自己，到现在也不知道那个好，消费者都在瞎子摸象
-保暖棉：p 棉 c 棉 知道一些，说 p 棉最顶级，c 棉差一些，别的 3M 新雪丽啥的都没看见在户外能立住脚
-还有抓绒的 p 绒 ，p 绒里面也是跟上面玩法一样三六九等，且每个等的差异巨大
-给人的感觉，似乎中文圈的户外知识断档了还是整体户外技术停滞了还是咋？
-特别不喜欢这种比如自己花大价钱买了个其实也就营销出来的东西，就想知道的多一点。现在夏天了，想买个吸湿排汗凉感透气的短袖啥的，真是越看越抓瞎。外加自己不想多花钱，像一开始就买最好的那种然后可以舒舒服服用好久。就更选择困难证了。
-比如这次想买排汗，似乎 coolmax 在各种地方显得最牛，然后有个叫 coolmax pro 的 coolmax extreme 是最高档。我想啊，这么高档的东西应该有识货的吧，结果淘宝一搜，一只手都数得出来...这样到底是这个东西 NB 到商家不敢用呢，还是智商税？反正很蹊跷。。。另外一直关注的某些户外品牌，之前还出 coolmax 的，近两年则出越来越少，换成自己家的保密名字的排汗，也不知道是靠堆料打响名气，然后减配开始圈钱，还是 coolmax 不行了。
-别的一些个人案例，比如最近两年买的 windstopper+800 蓬羽绒服，比之前前前后后买了 4 件的羽绒服都要好，当然也都更贵，其实一比，算是省钱了。后来 59 买的抓绒感觉也并不比 199 买的 p 绒差，就是这么玄。
-不知道 v2 有没有了解相关的户外大佬，介绍介绍，就算是国外的站，也可以带着翻译插件看看。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">pixel 有什么换机数据迁移的工具推荐</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787393">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>idrawer: 从 pixel 2 xl 到 pixel 3，恢复出厂重新初始设置的时候应用数据没有同步过去，进入系统之后使用 Google 自带的 set up my device 却显示 no device found, 试了各种方法无果。想要找一个好用的第三方迁移工具，或者可行的解决方案</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">20210704 午夜俱乐部</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787392">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Spoience: 
-晚上经常会想起一些令自己后悔的事，还有自己放弃的一些关系，但是最后后悔的也是自己🙃</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">请问 Mac 有没有什么常驻观察网速的工具</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787391">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>ZRS: 
-istat menus 只拿来看网速感觉有点太重了
-希望能有轻便开源的常驻状态栏的工具</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">请教各位大佬一个 shell 的脚本相关问题</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787389">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>cx524541577: 
-首先感谢各位大佬观看以及解答（鞠躬感谢各位大佬.jpg ）
-其次阐述一下我的问题：
-（前提：非专业程序员『特小白的那种』，剪辑音频行当，想要写一个脚本替代重复工作）
-脚本功能如下：
-1.获取文件名称
-2.获取当前时间
-3.时间+文件名称为文字
-4.检查当前目录下是否有相同目录
-5.如果没有则执行创建，如果有相同名称文件目录则提示后返回第一步操作
-6.创建文件夹后打开该文件夹
-7.在时间+文件名称目录下创建固定目录
-8.结束进程
-代码如下：
-#!/bin/bash
-read -p &quot;请输入工程名称:&quot; name
-echo &quot;$name&quot;
-time&#x3D;&quot;date +%Y%m%d&quot;
-touch &quot;${time}${name}&quot;
-问题如下：
-请问各位大佬为什么我的脚本代码在终端执行时执行到 echo &quot;$name&quot;就结束了？
-这样创建变量文件夹不对吗？
-请问有什么好的 shell 教程推荐吗？
-感谢各位大佬阅读及回复（不知道为什么排版有些混乱，烦请见谅）</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">X86 OpenWRT/ R4S/ 华硕梅林 那个好？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787388">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>mifar: 
-要加一个智能路由器系统，想不好时 X86 OpenWRT 还是友善科技的 R4S 或者华硕的梅林固件更省事》？</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">[广州-央企-持续内推] 七险二金，公积金高，年终高，岗位多，福利多，支持视频面试</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787386">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>v2lhr: 
-基本要求：学历一本，一本，一本及以上！！！
-公司基本情况：
-位于广州国际生物岛，地铁上盖，国际级园区和一线江景写字楼；
-固定 13 薪，年终奖另外算，正常 6 个月起；
-工资当月发，年终奖农历前发；
-双休，时薪性价高（个人感觉年包对比广州中厂有竞争力）
-顶配 7 险 2 金，公积金 12%且按年薪算；
-项目激励+每月多项补贴（交通 /电脑 /高温 /资质 /租房 /过节费等等）；
-5 个食堂（其中一个是麦当劳）+ 办公室零食 + 每月家庭级蔬菜和下午茶 + 丰富过节礼品；
-班车+公租房+公司人才房购房通道+广州中小学入学指标；
-每年 20-30 天带薪探亲假；
-20+个经费支持协会，运动生活全覆盖；
-更多内部情况，请留 WX 私聊。
-投递方式：
-点我投递
-WX 私聊投递（全程反馈进度和交流）
-投递岗位数：每个人可以投两个岗位，建议分不同部门投递
-PS：招聘岗位非常多，不止开发，不止开发，不止开发，欢迎推荐给你有需要的朋友看看
- [查看岗位]  [投递]  [分享]</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">大佬们， IKBC C87 机械键盘突发故障，有懂的吗</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787384">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>KKLeon: 
-IKBC C87 机械键盘，2 个月前收起来之后就一直没用过。这两天组装了新电脑，插上之后没反应，查到笔记本电脑也是没反应，但是右上角的 2 个 LED 灯（一共就那 2 个）一直亮的，并且亮度很高，有知道是啥情况的吗？难道键盘这东西放着不动还会放坏么？</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">ip6tables 怎么设置仅放行同一网络（同一前缀）的请求</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787383">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>takeshima: 以前 ipv4 的话，只需要放行指定的几个内网的 ip 段就行了，但是 ipv6 的话统统都是公网，有什么办法能仅放行同一局域网下的请求吗，每次重连前缀都会变的，不可能每次连接后都改一次 ip6tables 。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">有没有杭州靠谱的橱柜、榻榻米定制</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787381">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>fingers: 求有经验的老哥推荐，比较担心甲醛问题</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">我骑电动车与汽车发生交通事故，责任认定同等责任，我该承担哪些责任？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787380">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>klgd: 
-我的电动车后转向灯被撞坏，人轻伤，目前医疗费 200 多
-对方汽车前面有点划痕
-请教一下，同等责任，我应该承担哪些责任？对方应该承担哪些责任？</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">怎么安全地在 web 前端存储私钥？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787379">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>JasonLaw: 
-最近在看安全方面的知识，为了防止重放攻击，我查阅了一些资料。
-基于 HTTPS 对外提供 API，十万个为什么，求 web 安全高手指教 - V2EX
-also24 的回复说得非常棒。
-单向的 https 只能保证你请求的银行真的是银行，但银行无法确定你是你。
-加了 token 才能让银行知道你是你，但是银行不知道你带的东西是你自己带的，还是别人塞进你包里的。
-加上 nonce 和签名，才能让银行知道这些东西全都是你带的，别人没有夹带，但是银行不知道这个你，是否是用 1 年前的你克隆出来的。
-加上时间戳，银行才能确定面前的你确实是当前时间点真实存在你，东西也是你带的东西。
-最后，稀奇古怪的加密又是什么呢？
-答：你带的东西是一个保险箱~
-但是我有一个疑问，产生签名是需要密钥的，那怎么安全地在 web 前端存储私钥呢？</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">阿卡西斯的 USB4 固态硬盘盒</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787377">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>sleven: 雷电 3 、USB4 （ 40Gbps ）的固态硬盘盒大都不便宜，发现东南亚的电商平台 Lazada 上居然有阿卡西斯的旗舰店，而且卖的 USB4 移动硬盘盒比国内同款便宜很多。
-阿卡西斯淘宝旗舰店上的 900 多，618 的时候也要 700 多，而 Lazada 上的现在换算下来才 500 出头。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">macOS 色彩</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787376">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>cattyhouse: macOS 号称色彩准确， 那么，开了 True Tone 和 Night Shift 会影响色彩么？ 你们都是怎么做的呢？</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Mac 如何让硬盘不休眠？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787375">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>EIlenZe: 
-主机
-已经在“节能”里面 关闭了硬盘休眠，还是会休眠。
-所以不知道 是 Mac 上面还要设置什么东西，还是 WD 硬盘天生就会自动“熄灭”...</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">有没有同时懂 Spring Boot 和 OKR 的大神？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787374">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>OldActorsSmile: 
-最近在自学 Spring Boot，用 OKR 方式给自己制定了计划
-同时懂 Spring Boot 和 OKR 的大神们帮忙看看这个计划是否有可优化的地方
-O：掌握 Spring Boot 框架，熟练地开发 API 接口和 Mongodb 数据库
-
-KR1：两倍速快速看完 SpringBoot web 入门视频，对整个框架有大体的认识
-KR2：跟着 Spring Boot 视频教程实践一遍代码
-KR3：将某个做过的项目后端用 Spring Boot 重构</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">cloudera 这家公司到底在做什么业务呢？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787373">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>sjmcefc2: 
-感觉很没落啊，cdh 好像也卖掉了</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">现在是入手 6700XT 的好时机么</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787370">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>vinsec: 
-某宝上排名前 2 的两家第三方店铺，看着有一些销量，评价也还行。
-目前蓝宝石 6700XT 超白金 大概卖 5200 左右 不知道这价一个月内还有没有啥下降的空间
-看京东自营 6k 的价格一直很稳定</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">刚来宁波大家有推荐的工作么</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787369">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>jack1998: 双非一本机械制造及其自动化专业，在镇海有没有靠谱的工作呀，各位 v 友介绍下，初来乍到</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">有没有同学分享一下 ros 防火墙脚本啊？尤其是 ipv6 的</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787368">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>shudongin: 
-用了一天，才发现整个防火墙全是空的。
-谢谢。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">大伙推荐个红包提醒的安卓软件？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787365">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>lakie: 无广告无毒的，正常能提醒就行。
-XX 管家卫士试过了，效果不太好，有些手机有效有些又不行。或者软件自带一堆乱七八糟东西。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">不懂就问：淘宝店铺购买联想拯救者系列，比如 R9000P，靠谱吗？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787364">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>xpangjia: 
-之前发了帖子求 V 友们最近机子，提到了拯救者这一类机子，很多今年都因为显卡的原因，官方基本没货，京东少量货，3060 、3070 根本就没货。因此，也在了解哪里可以购买到，该如何加装内存、硬盘升级。
-刚好在 b 站看到有淘宝店铺发测评视频，评论看到竟然各个卡都有货。比如下面：
-R7000P R7-5800H 16G 512G RTX3050TI 6899 （性价比非常高）
-R7000P R7-5800H 16G 512G RTX3060 8399 元
-R9000P R7-5800H 16G 512G RTX3060 9449 元
-R9000P R7-5800H 16G 512G RTX3070 11399 元
-Y9000P I7 11800H 16G 512SSD RTX3060 9599 热销
-Y9000P I7 11800H 16G 512SSD RTX3070 12099
-Y9000K R7 5800HX 16G 1TB RTX3060 11699
-R9000P R7 3050TI   R7000P R7/R5 3050TI  Y7000P I7/I5 3050TI R7000R5/R7 3050  Y7000I5/I7 3050 全系列现货
-下单选标准套餐（双肩包+游戏鼠标+游戏背光键盘+键盘膜+鼠标垫+擦机布+福利内胆包+网线）！
-想请问下，这些都是官方正版全新机吗？淘宝店铺这些会不会出现二手机、瑕疵机、翻新机？
-另外请问下：拯救者 R9000P 、Y9000P 官方出厂的配置，最高是不是只能到 16G 内存，512G 存储？</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">定向流量是根据什么统计的？查询详单的时候发现出现一些未安装 app 的定向流量使用</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787361">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>antalwang: 今天查询手机号上网详单的时候发现，记录里频繁出现“vivo 手机定向”和“学习强国定向”的流量使用记录，可是我手机是 iphone，也没有安装过学习强国 app （之前安装过），请问是为什么会出现相关的流量使用记录？不是我的卡被复制了吧...</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">给光猫加个散热片</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787360">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>guanyin8cnq12: 搞了一天，给光猫加了个散热片，不过貌似效果不理想啊。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">为什么买了几年的 Macbook Air 越用越卡而买了几年的 iPhone7 还是很流畅</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787359">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>foreverstandbyu: 几年前买的 Macbook Air 越用越卡这个还有救吗～～</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">大宝贝 253 前来报到</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787358">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>manachannbu: 
-  大家好鸭，我是你们的大宝贝 253，你们可以叫我“爱我噻”。
-
-  虽不是闭月羞花，沉鱼落雁，却也生得清秀洒脱。
-1 ）刷抖音
- 
-2 ）看知乎
-
-3 ）微信读书
-
-4 ）京东读书
-
-5 ）写代码
-
-6 ）看动漫
- 
-7 ）学网课
- 
-8 ） Word
-
-9 ） PowerPoint
-
-10 ） Excel
-
-  如上所述，我大宝贝 253 基本能满足大家的日常办公需求。
-我也会更加努力，让大家能有更好的使用体验。
-  好了，今天就说到这里，你们的大宝贝要去休息了，大家再会。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">有没有一个英语单词能表达“自己瞎搞搞”的意思，比如这个工具没有文档，我自己通过搜索引擎，别人的博客，源码，以及不断尝试，但有一些尝试都是错误的方向，搞...</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787357">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>zxCoder: 
-英语词汇匮乏，突然想起这个表达，有没有什么简单的说法</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">请教一个技术问题，麻烦大佬解答下</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787356">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>fiypig: 有个平台用户发布商品存入商品表 1，后台发布商品存入商品表 2，这样如果做订单的话，可以做到一个订单表里吗。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">i7-10700 不支持 centos7.6 吗,安装直接黑屏</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787354">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>snuglove: 
-新到手一台机器,配置是华硕 B460m 主板 cpu 是 i7-10700 没有显卡,装 win10 是正常的,装 centos7.6 时点击完 install 就没画面了.第一次遇到,不知道这是怎么了....</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">被阿里实习工资恶心到了</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787351">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(2 min)</span>
-                    <span>CrabExcavator: 
-阿里今年实习工资硕士比本科生高 50，本人是硕士才发现拿的是本科生的工资。感觉比直接不要我还恶心。关键本人研究生方向和该部门是强相关，明显的和其他实习生不是一个 level，不知道怎么调整心态了，希望前辈们能给我支个招。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
         </section>
       </li>
     </ul>
@@ -699,6 +1104,92 @@ R9000P R7 3050TI   R7000P R7/R5 3050TI  Y7000P I7/I5 3050TI R7000R5/R7 3050  Y70
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://www.infoq.cn">InfoQ - 促进软件开发领域知识与创新的传播</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">AQS介绍和原理分析（下）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/e33bb319c93e5be2b2078288e?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>AQS介绍和原理分析
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">云原生负载均衡和网关应用实践</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/a294a86ff8b66bfa8b90fca2a?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>作者｜王师，火山引擎云原生研发工程师
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">科创人|容联七陌CEO陈光：90后街舞少年的CEO修炼手册</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/91beb0ff30a04a1ebd825b934?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>套路寒暄过后，没忍住唐突一问：贵庚？
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Vitalik Buterin眼中的区块链信任模型</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/c16f7a22d24cdc3c12cc782a5?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>大多区块链应用最有价值的属性之一就是“免信任” (trustlessness)，即应用能够以预期的方式保持运行而无需依赖特定参与者以特定形式行事，即使他们将来的相关利益可能产生变化并使其做出意料之外的举动。区块链应用从来都不是完全的免信任化，但是某些应用确
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">为技术系统打“疫苗”，爱奇艺攻防演练平台的探索实践</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/abe2820554510dd654d07198f?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>在日益复杂的技术架构下，实现系统的反脆弱，成为了一个程序员向架构师提升之路上的必修课。
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Cisco VPC peer-gateway 对直连BFD邻居建立的影响</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/74fb467fb39042cfe2622f164?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>作者简介：冯亚伟，去哪儿网 NETOPS，2014年7月加入去哪儿网，拥有丰富的网络运维经验，现负责公司IDC和骨干传输网络的运维工作。
+
+本文探讨了Cisco VPC peer-gateway 对直连BFD邻居建立的影响
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Flink+ 数据湖 Iceberg 的体验</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/b1d4b85d60884b7ee2cc0177e?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>在使用 Flink 做实时数仓以及数据传输过程中，遇到了一些问题：比如 Kafka 数据丢失，Flink 结合 Hive 的近实时数仓性能等。Iceberg 0.11 的新特性解决了这些业务场景碰到的问题。对比 Kafka 来说，Iceberg 在某些特定场景有自己的优势。
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">售价超百万的特斯拉新车当街起火，马斯克曾狂夸其安全性</summary>
@@ -736,19 +1227,11 @@ R9000P R7 3050TI   R7000P R7/R5 3050TI  Y7000P I7/I5 3050TI R7000R5/R7 3050  Y70
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">跨越边界生长，打造数字化时代人才 | DTDS全球数字人才发展峰会</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/ue5qVm9LlisXvLAaIgFi?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">用 Docker 工具管理 WebAssembly 应用程序</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/35a1768670434c5ba703ff2f0?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
-                    <span>新冠疫情、美股熔断、中美贸易战……人类历史上百年难遇的黑天鹅事件，在过去一年半间多次上演。
- 
-不过人类生来可能就有面对苦难百折不回的能力，疫情反而让直播、零售、在线教育等行业获得井喷式发展；中美贸易战也让以芯片、操作系统、5G为代表的核心技术受到国家层面的支持和关注。这一切的背后，看似“老生常谈”的企业数字化转型，从未像今天一样具有如此的迫切性和时代意义——当很多企业因为历史包袱过重、人才和管理制度欠缺等这样那样原因，在过去面对企业数字化转型踟蹰不前时，在今天的内外环境交织下，坐在“牌桌”上的企业，只有赌上手里信息化的全部底牌，才有胜算，否则就要下桌。
- 
-这些底牌是什么？是信息化对企业业务、技术、组织、人才、知识等诸多维度的不断解构与重塑；是信息化战略下，企业洞察力、领导力、执行力的提升和深度适配；是通过信息化转型，企业能否真正实现对个人、组织、社会的赋能和成就。
- 
-只不过有时候理想和现实存在偏差：今天的企业数字化转型虽然被时代浪潮裹挟着看似如火如荼，实则依旧存在盲目试错、无所适从等问题。麦肯锡全球研究院对25年来数字化进程的追踪及调研显示：仅14%的企业转型取得持续进展、变革成功的组织仅3%。
- 
-细细考量这14%、3%成功率的背后，还有更多令人沮丧的现实：所处行业整体水平的差距，企业客观条件的差异，产业环境和政策的差别...都让有些鸿沟变得似乎难以逾越。
+                    <span>开发者可以通过 DockerHub 和 CRI-O 等 Docker 工具在 WasmEdge 中部署、管理和运行轻量级 WebAssembly 应用程序。
 点击查看原文&gt;</span>
                   </div>
                 </a>
@@ -756,57 +1239,11 @@ R9000P R7 3050TI   R7000P R7/R5 3050TI  Y7000P I7/I5 3050TI R7000R5/R7 3050  Y70
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">不止Docker：8款容器管理开源方案</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/YE7LJiEI4rOPGRaCJE08?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">JAVA 设计模式系列——工厂模式</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/2999609ac38f866e5c9cbac9d?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
-                    <span>Docker诞生于2013年，并普及了容器的概念，以至于大多数人仍然将容器的概念等同于“Docker容器”。
-
-作为第一个吃螃蟹的人，Docker设置了新加入者必须遵守的标准。例如，Docker有一个大型系统镜像库。所有的替代方案都必须使用相同的镜像格式，同时试图改变Docker所基于的整个堆栈的一个或多个部分。
-
-在此期间，出现了新的容器标准，容器生态系统朝着不同方向发展。现在除了Docker之外，还有很多方法可以使用容器。
-
-在本文中，我们将介绍以下内容：
-
-
-将Chroot、cgroups和命名空间作为容器的技术基础
-
-定义Docker所基于的软件堆栈
-
-说明Docker和Kubernetes需要坚持和遵守的标准
-
-介绍替代解决方案，这些解决方案尝试使用具有更好更安全的组件来替换原始Docker容器。
-
-容器的软件堆栈
-像Chroot 调用、 cgroups 和命名空间等 Linux 特性帮助容器在与所有其他进程隔离的情况下运行，从而保证运行时的安全性。
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">如何打造稳定、好用的 Android LayoutInspector？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/bdcFkoTpJh2wRvTMmw72?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>一、背景
-Android 开发者在日常的开发中，经常需要用到查看视图的功能，Android Studio 开发团队为我们提供了 LayoutInspector 插件。在较新的版本提供了 LiveLayoutInspector，支持 3D，但是不管是 LayoutInspector 还是 LiveLayoutInspector 都非常难用。比如：
-
-
-速度极慢，遇到复杂的布局经常超时
-
-某些情况无法选中指定的 View
-
-
-本文将围绕 LayoutInspector 的痛点，分析问题并修复，最终将 LayoutInspector 变成一个稳定、好用的插件。
-二、加速 Dump View Hierarchy
-2.1 问题描述
-
-
-开发复杂业务的同学在使用 LayoutInspector 时都遇到过上图所示的错误：由于 View 树结构复杂超时。网上也有其他相关的解决办法，原理就是修改 timeout 的值，目前默认值是 20s，所以改成 1min，大概率是可以的了。
-
-为了更好的解决这个问题，比如是否能加速？我们看一下整个 LayoutInspector 抓取的流程。梳理流程之前，我们需要找到功能的入口。
+                    <span>JAVA 设计模式系列——工厂模式
 点击查看原文&gt;</span>
                   </div>
                 </a>
@@ -823,7 +1260,7 @@ Android 开发者在日常的开发中，经常需要用到查看视图的功能
                 <summary class="article-expander__title">Zero-Width Space</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://css-tricks.com/zero-width-space/">
                   <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(5 min)</span>
+                    <span class="article-reading-time">(6 min)</span>
                     <span>The name zero-width space is antithetical, but it’s not without uses. In text, maybe you’d use it around slashes because you want to be sure the words are treated individually but not have any physical space around the slash:…
 The post Zero-Width Space appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.</span>
                   </div>
@@ -859,89 +1296,6 @@ The post The Trick to Enable Printify Shipping Notifications for Orders in WooCo
       </li>
       <li class="source">
         <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://docs.rsshub.app">iDaily 每日环球视野</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">猎鹰9号拼单发射</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/3f7P5Q">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>SpaceX 猎鹰9号火箭搭载88颗小型卫星发射升空，美国佛州。6月30日，猎鹰9号火箭执行第二次小卫星拼单发射任务，成功将85颗商业卫星和3颗「星链」卫星部署至525公里高度的太阳同步轨道。本次拼单发射的卫星来自7个国家和地区，其中包括5颗美国太空部队军用卫星，每200千克载荷发射成本仅为100万美元。2021年1至6月，SpaceX 已累计执行20次太空发射任务，下半年还有至少2次载人发射和10次商业发射任务。摄影师：SpaceX</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">拜登视察迈阿密倒塌公寓</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/9f1fE5">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>美国总统 Joe Biden 与第一夫人视察迈阿密公寓倒塌事故现场，佛罗里达州。7月1日，Biden 承诺联邦政府将为幸存者提供灾后援助，并彻底调查事故原因。本次事故发生于6月24日凌晨，一栋12层海滨公寓突然部分垂直坍塌，导致18人死亡，至少145人下落不明。警方初步调查认为事故原因可能与公寓钢筋混凝土支撑结构老化受损有关。美国联邦政府已向佛州应急管理局拨款2000万美元，并增派460名救援人员参与搜救。摄影师：Susan Walsh</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">戴安娜王妃60岁诞辰</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/c6ciFG">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>英国威廉王子和哈里王子一同揭幕一座戴安娜王妃青铜塑像，伦敦肯辛顿宫花园。7月1日是戴安娜王妃的60岁诞辰。两位王子于2017年委托一名英国雕塑家创作这座雕塑，刻画了王妃被3个不同种族的孩子围绕的场景，表现她生前致力于人道主义事业的形象。这是哈里王子自2020年1月辞去王室职务后首次与威廉王子一同出席公开活动。两位王子在声明中表示，「我们希望这座雕像被视为戴安娜王妃生命和遗产的象征，用爱、力量和个性让世界更美好」。摄影师：Dominic Lipinski</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">泰总理亲迎外国游客</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/574nIU">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>泰国总理巴育亲赴普吉岛机场欢迎首批外国游客。7月1日，泰国普吉岛正式向完成疫苗接种的外国游客开放，首批免隔离入境游客共347人，来自新加坡、以色列、阿联酋和卡塔尔4个国家的入境航班。每名旅客需要进行疫苗与核酸检测，并在手机上安装疫情防控 App 以追踪行程。泰国政府预测普吉岛将在未来3个月接待12.9万名外国游客。旅游业是泰国的经济支柱产业，年收入占 GDP 比例超过12%。摄影师：iDaily Media</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">法墨合作打击文物走私</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/a75Qb2">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>法国外交部长 Jean-Yves Le Drian 与墨西哥外交部长 Marcelo Ebrard 签署一份关于合作打击文物走私的协议，巴黎。7月1日，法墨两国就文物走私问题达成政府间合作协议，内容包括「尽最大可能阻止对墨西哥重要历史文物的商业交易」。墨西哥政府曾于2019年和2021年两次就争议文物拍卖向法国政府提出交涉，但是均以失败告终。墨西哥是美洲三大古文明的发源地，也是文物遭盗窃走私最严重的国家之一。摄影师：Yoan Valat</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">2021太平洋岛国峰会</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/e76Bfd">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>日本首相菅义伟以视频方式出席太平洋岛国峰会（PALM），东京。7月2日，第9届太平洋岛国峰会以线上形式召开，帕劳、斐济、巴布亚新几内亚、图瓦鲁等14个太平洋岛国代表出席。菅义伟表示，日本将继续与太平洋岛国开展抗疫、经贸、安全等领域合作，并承诺向该地区国家提供300万剂新冠疫苗援助。菅义伟呼吁太平洋岛国合作推动「自由开放印太」战略，此举被视为日本试图遏制中国在该地区的影响力增长。摄影师：iDaily Media</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">香港20年最大毒品走私案</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/847O5s">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>中国香港海关展示一批缴获的大批量可卡因。6月30日，香港海关宣布破获20年来最大一宗空运走私可卡因案件。根据案情通报，海关人员6月22日在机场拣选一批由巴西抵港的空运货物作检查，在2个大型油压装置中检获约110公斤可卡因毒品，预计市值约1.3亿港元。两名犯罪嫌疑人已于6月26日被捕，最高面临500万元罚款及终身监禁。摄影师：Anthony Wallace</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://www.smashingmagazine.com/">Articles on Smashing Magazine — For Web Designers And Developers</a></h3>
           <section class="articles-per-source">
             <article>
@@ -968,11 +1322,12 @@ The post The Trick to Enable Printify Shipping Notifications for Orders in WooCo
           <section class="articles-per-source">
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">《数字化转型背后的技术力量》中国技术开放日·长沙站</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/video/EwrtQebZXixjOTw2ECF6?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">推荐系统提供web服务的2种方式(二十四)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/56ae3d634c1e094b3bc0a9535?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
-                    <span>系统地讲解了企业数字化转型的要素和相关能力，提出构建满足企业数字化转型的技术要求的五种能力分别是服务用户、自主研发、数据运营、安全防控和平台共享。
+                    <span>写在前面：
+大家好，我是强哥，一个热爱分享的技术狂。目前已有 12 年大数据与AI相关项目经验， 10 年推荐系统研究及实践经验。平时喜欢读书、暴走和写作。
 点击查看原文&gt;</span>
                   </div>
                 </a>
@@ -980,12 +1335,11 @@ The post The Trick to Enable Printify Shipping Notifications for Orders in WooCo
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">《持续学习，学以致用，终身成长》中国技术开放日·长沙站</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/video/ImSCOkM4dds3Qu3oJKJh?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">6 张图带你搞懂微服务</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/17ee4abd52b9ecf35398cba17?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
-                    <span>乔新亮结合自身的真实经历，用朴实的语言真诚地给大家分享了职业生涯中的一些决策和思考感悟，并从中抽象出做事哲学和人生态度。在面临非常关键但又痛苦的转型期时，重度抑郁症突如其来，“活过来”后，却更能感受到活着的美好。
-几次职业生涯的选择，在大家听来轻描淡写，实际每次都很“煎熬”。“我会很认真地做分析，把自己的职业生涯当成客户，然后一个个去做分析，再去做决定。”乔新亮最后还鼓励大家要活得真实、尽情享受拼搏的时光，其认为，享受痛苦是感受高级快乐的必经之路。
+                    <span>虽说 微服务 早已是一个老生常谈的话题了，在 infoq 或者 thoughtworks 上可以找到很多案例，不过可惜的是其中相当比例的案例是失败的案例，究其原因，除了 技术门槛 之外，主要是因为很多人脱离了实际情况，只是为了微服务而微服务。
 点击查看原文&gt;</span>
                   </div>
                 </a>
@@ -993,95 +1347,11 @@ The post The Trick to Enable Printify Shipping Notifications for Orders in WooCo
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">Hadoop 数据仓库建设实践（理论结合实践）</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/453a957d21df1dd162a81ee19?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">云原生领域的一些技术展望</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/87405b77673898655930006a6?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
-                    <span>​数据的重要性和战略意义毋庸置疑，目前业界也都在热火朝天地将大数据战略落地和用于实战。在这个过程中，我们首要的问题就是数据平台的搭建了。
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Qunar DNS体系建设</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/21fa839458438d453be61fc99?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>通过对 DNS 系统的不断改造和功能完善，Qunar 终于建造了一套自己的 DNS 智能管理系统，并且提供了一系列功能，满足业务的各种需求。希望通过这次分享，能给同事做运维的同学带来启发，也希望能够和同行业多多交流。
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">AI技术在银行内部反欺诈中应用的新思路</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/eb0960022e26fa221ffc11e00?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>我们是索信达控股旗下的金融人工智能实验室团队，微信公众号（datamargin)将不定期推送原创AI科学文章。我们的作品都是由实战经验丰富的AI科学技术人员或资深顾问精心准备，志在分享结合实际业务的理论应用和心得体会。
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">新一代设计编排运维套件分享</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/56158a048d54671ab34a4d497?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>急迫需要一种工具能够把人力从运维中解放出来，降低运维成本，运维子系统这种自动化运维产品套件因孕而生。
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Flink 1.13，State Backend 优化及生产实践分享</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/20cbd1bd8d171d44bb39a785e?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>本文由社区志愿者佳伟整理，唐云(茶干) 在 5 月 22 日北京站 Flink Meetup 分享的 《State Backend Flink – 1.13 优化及生产实践分享》。
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">百度搜索稳定性问题分析的故事（上）</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/78adc33fb16caa49bdadecd1a?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>本文立足于大家所熟悉的百度搜索系统本身，为大家介绍其可用性治理中关于“稳定性问题分析”方面使用的精细技术，以历史为线索，介绍稳定性问题分析过程中的困厄之境、破局之道、创新之法。希望给读者带来一些启发，更希望能引起志同道合者的共鸣和探讨。
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">字节跳动异构场景下的高可用建设实践</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/0f11f4857b903c9581fa749f1?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>​
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">并发王者课-铂金05：致胜良器-无处不在的“阻塞队列”究竟是何面目</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/decc841fddee594f59c6eceb0?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>在线程的同步中，阻塞队列是一个绕不过去的话题，它是同步器底层的关键。所以，我们在本文中将为你介绍阻塞队列的基本原理，以了解它的工作机制和它在Java中的实现。本文稍微有点长，建议先了解大纲再细看章节。
+                    <span>云原生（Cloud Native）的概念最早出现于2010年，Paul Fremantle的一篇博客中提出“云原生”应用应该具有的一些特性。其中包括：分布式、动态插拔、弹性、多租户、自服务、精确计量及计费、增量部署和测试。后来，Pivotal的Matt Stine于2013年在其推特上推广
 点击查看原文&gt;</span>
                   </div>
                 </a>
@@ -1168,36 +1438,6 @@ The post Hack the “Deploy to Netlify” Button Using Environment Variables to 
   <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-06-30">2021-06-30</time></h2>
     <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.infoq.cn">InfoQ - 促进软件开发领域知识与创新的传播</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">聊聊知乎订单系统迁移</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/7218604bd7aadf94cae6dde93?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>本文主要介绍知乎订单系统后端语言栈的转型升级过程，包括其间踩过的一些坑和遇到的一些问题。一来是想通过本篇文章为其它应用服务转型提供借鉴经验，二来是总结对于订单系统的理解。
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">看完这篇项目设计规约，你应该就能构建良好的项目工程结构了</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/bb4763eb7a26327065a1aac5b?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>默认上层依赖下层,箭头关系表示直接依赖(比如开放接口可以依赖于Web层,也可以直接依赖于Service层)
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
       <li class="source">
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://css-tricks.com">CSS-Tricks</a></h3>
@@ -1383,19 +1623,6 @@ The post System *Things appeared first on CSS-Tricks. You can support CSS-Tricks
                     <span class="article-reading-time">(3 min)</span>
                     <span>Sara digs into a bug I happened to have mentioned back in 2012 where fluid type didn’t resize when the browser window resized. Back then, it affected Chrome 20 and Safari 6, but the bug still persists today in Safari …
 The post Working around the viewport-based fluid typography bug in Safari appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Positioning Overlay Content with CSS Grid</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://css-tricks.com/positioning-overlay-content-with-css-grid/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(8 min)</span>
-                    <span>Not news to any web developer in 2021: CSS Grid is an incredibly powerful tool for creating complex, distinct two-dimensional modern web layouts.
-Recently, I have been experimenting with CSS Grid and alignment properties to create component layouts that …
-The post Positioning Overlay Content with CSS Grid appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.</span>
                   </div>
                 </a>
               </details>
@@ -1905,31 +2132,9 @@ Thank you @PiyushLosalka</span>
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-06-05">2021-06-05</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://yuancheng.work">远程.work</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">SmartApps Studio招聘兼职远程工作泰语翻译及用户运营</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://yuancheng.work/2321.html">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>工作职责:1、负责公司语言学习课程及相关资料的泰语翻译2、收集泰国用户的建议并及时反馈给产品负责人；3、负责泰 […]</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-07-04T00:21:37.584Z">2021-07-04T00:21:37.584Z</time>
+    <time id="build-timestamp" datetime="2021-07-05T00:20:46.394Z">2021-07-05T00:20:46.394Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.11.0</a></span>
   </footer>
   <script src="index.js"></script>

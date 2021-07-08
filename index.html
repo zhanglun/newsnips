@@ -16,12 +16,138 @@
 <body>
 <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-07-08">2021-07-08</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.infoq.cn">InfoQ - 促进软件开发领域知识与创新的传播</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">架构师（2021年7月）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/minibook/6x5A8b7idYJ5frY0kMbH?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>卷首语：浅谈架构现状：设计越来越复杂，行业缺乏系统性思考
+采访嘉宾 | 黄浩
+从之前单纯的高流量到现在高流量、高并发，企业面对的业务场景越来越多，对系统的各项要求也越来越高，这意味着对系统架构的要求也越来越高。
+在过去很长的时间里，集中式单体架构是主流。单体架构设计难度小、响应时间快，但系统吞吐量小、扩展性也比较差，在面对新的业务挑战时，显得力不从心。随着云计算的发展，高系统容量和高可用性的分布式架构越来越受欢迎。但越流行就越好吗？现在架构领域都面临着哪些问题？近日，InfoQ 采访了在分布式架构领域拥有二十年从业经验的阿里巴巴资深技术专家黄浩，来谈谈他所看到的架构现状和挑战。
+新架构模式的技术局限
+架构领域在经历了模块化编程、面向事件设计、面向接口设计等一系列发展后，1996 年，Garnter 提出了 SOA 概念，将应用程序的不同功能单元（称为服务）进行拆分，并通过这些服务将不同接口和协议联系起来。现在，SOA 已经被很少提及，大家提到最多的是往往微服务。
+分布式架构系统使模块重用度更高，开发和发布速度变得更快。但新的架构模式在解决问题的同时，也会带来新的问题。分布式架构首先就面临着高复杂度的问题，这主要体现在以下三个方面：
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">图算法在斗鱼反作弊中的实践</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/NhX7CKcIbT3cVmY08Nrr?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>斗鱼作为个人直播平台，长期以来除了普遍存在的灰黑产，虚假流量也是流量风控的重灾区。本文将介绍图算法在斗鱼反作弊中的业务实践，主要内容包括：
+
+
+斗鱼流量风控业务场景
+
+斗鱼图算法体系
+
+图算法风控建模
+
+模型实战
+
+
+斗鱼流量风控场景介绍
+
+
+斗鱼的场景比较特殊，因为其风控业务面对的主体大部分是主播。对于主播，实际上会有一些虚假的流量，表面上看虚假流量可以提高主播的排面，实际上主播也可能会通过这些流量获得很多的利益。比如，在薪酬上或者榜单上都会有一定的体现。所以这一块的虚假流量是我们平台上相对的一个重灾区，这里列举了灰黑产刷的比较多的几块内容，一个就是主播的人气，一个是主播的关注，还有主播的经验，以及还有挂贵宾这几块。其他的斗鱼的场景，比如一些营销活动、拉新活动，实际上也是有相关的，这些则是所有平台上会共同面临的一些问题，这次分享主要就是怎样通过图算法去识别这种刷流量的黑产。
+斗鱼图算法体系
+这里从整体框架和算法演进的过程介绍斗鱼的图算法的体系。
+1. 图算法整体架构
+
+
+上图就是目前我们的图算法的整体架构。最底层是图的一些算子，这些算子包含图的最基本的一些操作，如邻居采样、随机游走和子图抽取等，我们在底层会做这些算子的开发和效率的优化，在有了这些算子之后，在算子上面就是一些标准的图算法，比如在图的构建这一块，现在有基于知识图谱的图的构建和基于行为同步性的图构建，还有通过KNN的方式去做临近图的构建。在图传播方面包括常用的标签传播算法，在图分割方面包括联通子图、高位子图和涉及发现的一些算法。在图嵌入方面主要是节点的插入，有基于拓扑结构的Node2Vec、加入属性信息的EGES、还有通过标签信息和随机性共同考虑去做的图剪辑的算法。现在图算法的应用在斗鱼场景主要就是风控这一块。风控这一块主要运用场景就是做黑产的团伙的挖掘。另外应用方向是会做一些图Embedding，并将它的结果会作为特征去输入到下游的一些其他任务中。另外，在推荐场景下，我们也有一些图上推荐向量召回的应用。以上就是目前我们图算法的框架。
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-07-07">2021-07-07</time></h2>
     <ul class="sources card">
       <li class="source">
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://www.infoq.cn">InfoQ - 促进软件开发领域知识与创新的传播</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">不含TPM芯片？抱歉，你的电脑不能升级Windows 11</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/TTzc291S55ZGWzWNAxzh?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>如果你最近一直在关注科技新闻的话，可能已经听说微软最新一代Windows 11操作系统列出的最低硬件要求引发了不小的骚动。新的基础硬件要求之一是TPM 2.0芯片。但究竟什么是TPM 2.0呢，为什么微软需要它来运行新一代Windows？
+
+TPM（Trusted Platform Module，可信平台模块），它是一种安装在计算机主板上，用来提升安全性的芯片。在这篇文章中，我们深入研究了这个鲜为人知的组件，给出了一些常见问题的答案，例如它的用途、如何查看你的计算机是否已安装它，以及在哪里获取它。
+什么是TPM芯片？
+
+TPM是计算机主板上的一个微型芯片，在硬件级别上提供与安全相关的一些特性。它本质上是一个加密安全处理器，能够执行生成加密密钥、以防篡改方式提供基于软件和硬件的混合身份验证等操作。
+
+现在的计算机通常都在主板上安装了一个独立的TPM芯片。如果你要组装自己的PC，你还可以单独购买一个附加模块，安装在支持它的主板上。但并非所有主板都支持TPM芯片或配备相应的连接器，这块我们将在后面讨论。
+
+除了独立的物理芯片之外，TPM还可以采用其他形式来实现，但普通用户就不用深入研究了。有些TPM实现可以作为固件或物理附件集成到主CPU中，也存在完全运行在软件中的纯虚拟TPM，上述两者都不如独立芯片那么安全，不过前者还是两者中更可行的选项，因为同容易被黑客入侵和更改的环境相比，前者使用了离散且可信的环境。
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">才两年技术就已过时？微软100亿美元的云合同没了</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/YPiSa6OG4y79K139fLI5?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>将100亿美元的JEDI云计算合同给到微软20多个月后，美国国防部在当地时间7月7日宣布正式取消该合作，后续计划将此分拆给微软和亚马逊两家公司。
+ 
+美国国防部在声明中表示，由于需求的不断变化、云计算行业能力的提升和进步，JEDI合同已经无法满足如今发展的需要。对此，微软方面表示理解并尊重撤销合同的决定。受此消息影响，微软股价盘中微跌约0.5%，亚马逊则收盘大涨4.69%。
+ 
+充满争议的合同
+ 
+JEDI，全称“Joint Enterprise Defense Infrastructure”，即“联合企业国防基础设施”，美国国防部希望借助这套架构，对美军指挥系统进行一次划时代的升级。该计划中，美国国防部希望与一家企业合作来构建自己的云设施JEDI Cloud。JEDI Cloud 将为所有级别的用户提供快速、响应迅速、灵活和自适应的云服务。
+ 
+2018年，微软、亚马逊、IBM、Oracle和Google等多家公司报名参与了 JEDI 项目的竞标。无论谁拿下这份合同，都有可能在政府的其他类似项目中占据一席之地。如果一家公司能够通过该项目证明他们的能力，那么很有可能改变云市场的竞争格局。
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">一矢多穿：多目标排序在爱奇艺短视频推荐中的应用</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/5T4AUkARGJNWupk7etIG?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>短视频具有内容丰富、信息集中、用户粘性大的特点，如何提高短视频分发的效率和推荐精准度，有效提升消费时长、留存等关键业务指标，是推荐系统的核心能力和建模目标。
+
+本文主要分享在短视频推荐场景下，爱奇艺基础推荐团队在排序模型多目标优化方面的历史和进展。第一部分主要介绍多目标建模的业务背景，第二部分介绍爱奇艺在短视频推荐业务多目标建模方向尝试和实践的多种方案，最后是简单的总结和在多目标建模方向的规划。
+背景
+在爱奇艺短视频推荐业务中，主要流量形态由两个部分组成：
+
+(1) 爱奇艺APP 底Tab的随刻视频以及顶导航的热点模块
+
+(2) 爱奇艺随刻APP 首页短视频流推荐页面
+
+
+
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">你做的数据运营，90%都是无用功</summary>
@@ -46,6 +172,661 @@
             </article>
         </section>
       </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://css-tricks.com">CSS-Tricks</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">A Look at Building with Astro</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://css-tricks.com/a-look-at-building-with-astro/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(8 min)</span>
+                    <span>Astro is a brand new framework for building websites. To me, the big thing is that it allows you to build a site like you’re using a JavaScript framework (and you are), but the output is a zero-JavaScript static site. …
+The post A Look at Building with Astro appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">The Web’s Worst Default</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://css-tricks.com/the-webs-worst-default/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(4 min)</span>
+                    <span>There are a lot of great defaults when it comes to browsers and the web. Think about all the accessibility features that are baked into HTML so that you don’t have to do weird stuff, like this example from Manuel…
+The post The Web’s Worst Default appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.v2ex.com/">V2EX-最新主题</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">iQDNS - 个性化 DNS 服务已上线，支持 iOS 用户无需安装，随心而解，为你而析。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788195">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>johnsonwil: iQDNS 个性化服务（与公共 DNS 没有速度上的区别 一视同仁）如下：自定义域名， 过滤器（广告 隐私 追踪器） ，病毒拦截，日志统计，DNS 级黑白名单，Host 文件（ DNS 自定义解析 例如可以把 Google 解析到你想要解析的反代上），阻止某些服务的网络活动（例如王者荣耀）并且还有自选节点（例如 A I 节点），并且还有赠送安全 CDN 解析线路（速度慢 平常别用 但高级安全级别 非常隐私） 目前内测中，已经上线隐私规则到 i 节点进行测试，还有 easylist adguard dnsfliter 乘风规则 视频直播规则 小型视频播放站等高达 12 个规则供你选择，如果你有自己想用的规则也可以随时上传 兼容 ublock 即可。dns 级过滤 不损伤性能。
+
+注意，我们坚持 DNS 解析纯净的宗旨 所以该功能不会上线到公共 dns，不过后期会开通一条专门用于过滤的公共线路。
+想要使用的请进电报随时 pm 我 看到就回复。
+
+我们的 dns 速度由双节点南北分流保证，解析速度平均为 29ms，并且利用云筛选算法以及边缘节点的超大缓存库和热点域名提前解析来保证不管国内国外的域名都能得到极快的速度。dns 纯净不代表可以 fq，不过确实可以因此访问部分 ip 未屏蔽或者使用 cdn 的站点，dns 纯净代表了安全 隐私 0 拦截 还有 dns 分流带来的肉眼可见的速度提升。举个例子 a 节点解析到了黑龙江 但是你在上海 使用 iqdms 就可以根据你的地理位置并且依托 iqdns 强大的边缘节点预缓存缓存库来分配给你最近的 cdnip 。这就是纯净 dns 的意义。
+個性化請聯繫下方
+t.me/phdwilson
+
+t.me/joinchat/OClGFRxK1JY0ZjQ1
+
+
+DNS 地址如下
+A 节点
+DOH 地址： https://a.passcloud.xyz/dns-query
+DOT 地址：tls://a.passcloud.xyz:5432
+DOQ 地址：quic://a.passcloud.xyz
+
+i 节点
+DOH 地址： https://i.passcloud.xyz/dns-query
+DOT 地址：tls://i.passcloud.xyz:5432
+DOQ 地址：quic://i.passcloud.xyz
+
+ios 用戶无需安装任何软件，请使用描述文件。
+https://ios.passcloud.xyz</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">我说的有问题吗？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788194">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Tempo: 
+有些少数群体确实不地道，但是绝大部分的人还是希望被平等对待的。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">贝壳找房 bug 系列： vr 模式看房自动旋转 bug</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788191">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>ThreeBody: 最近用贝壳找房找房子，没想到一个体量这么大的资格找房 APP 各种各样的问题，让我有种这公司没有测试，功能开发好就算了
+app 内反馈了几个问题后面更新了几次都没修复过的，那就公开反馈吧
+这个 bug 反馈了两次，客服都只在内部工单上回复都是已有解决方案，实际上一直没修复。
+表现为浏览房源过程中，如果是侧躺着看手机的话，vr 看房画面一定会翻转，无论手机设置是否旋转。
+自动翻转造成的问题是我必须又要将手机旋转一次，竖着看手机，才能正常使用 vr 模式看房
+微云文件分享:贝壳 vr 自动旋转屏幕 bug.mp4 下载地址:https://share.weiyun.com/dCCXPwzV 文件大小:42.0M</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">请教下大家 iPhone 下公交没刷上卡，下次做公交上车还刷吗？现在提示行程中 我哭</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788189">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>revival83: iPhone 下公交没刷上卡，下次做公交上车还刷吗？现在提示行程中 我哭</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">请教各位大佬。oppo reno5pro+有办法刷海外吗？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788188">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>ruoyutx: 目前已知次机型外欧洲，澳洲换了个马甲 find neo 上线，外观，配置均一致，但是没有放出刷机包。我在想，次包是否通用。或者有没大佬知道此机型的刷机包，真的不想用国内特色 rom 了。恶心至极</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">[广州/深圳] [字节跳动] lark 存储/高级工程师招人啦 hc 多多</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788187">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>eloisland: [岗位职责]
+1. 研发基础存储组件和服务(包含 MysQL 、KV 存储、对象存储、图存储、文档存储等);全面服务飞书各业务线, 深度参与到存储架构升级的设计和落地过程中;
+2. 解决超大规模系统的稳定性问题;深入系统底层, 和业务架构深入协作, 是互联网架构师成长的沃土; 通过灵活的架构设计来满足多元的部署需求;
+3. 解决大规模实时协作场景下数据存储樸型、分布式协作数据结构、存储稳定性和平滑扩展等领域难题。
+
+[岗位要求]
+1. 3 年及以上服务端 Go/C++开发经验，对分布式系统有持之以恒的兴趣和热情;
+2. Linux 系统知识扎实,精通任意一种语言的多线程、网络编程、分布式开发;
+3. 深入了解数据库原理,熟练掌握分布式存储、计算的关键技术并有实战经验;
+4. 熟读过 rocksdb/redis/mongodb/hbase/tidb/cockroachdb/scylladb/neo4jetcd 任一源代码优先;
+5. 开源系统、大厂分布式系统、ACM 、国内一线技术竞赛获奖经验加分。
+弹性上班，无 pua，团队技术氛围浓厚，同事关系简单好相处
+广州 深圳考虑机会的小伙伴快来看看～
+合适的 xdm 快快滴！
+[投递方式]
+邮箱：emhhb2thaS5rQGJ5dGVkYW5jZS5jb20&#x3D;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Boss 直聘上 HR 一般是怎么决定打招呼的？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788185">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>wellwell: 
+有想法跳槽，BOSS 直聘上更新了状态，没几天 HR 消息堆满。外包，中厂大厂的 HR 消息应有尽有。
+我记得去年 2-6 月毕业找工作的时候根本没这么多，都是我主动去问的。是因为我写了一年 Sql 和 Crud 变牛逼了吗？我要开始普且信了：）</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">偏远地区单片机通讯方式选择</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788184">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>sxszzhrrt: 
+单片机在偏远地区如何选择通讯方式，nodemcu 连接传感器，通过 sim800 回传，可以吗？有没有更好的方案？通讯协议如何选择？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">分享一款自己写的开源 Hexo 流程图插件 hexo-filter-kroki</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788183">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>miao1007: 
+一款流程图插件，基于在线渲染服务，实现本地 md 编写标记文本，网页渲染成品图片。
+特点
+无需本地安装 graphviz 等包，直接使用 kroki 的在线渲染服务，可渲染 plantuml 等 20 款流程图
+不依赖任何外部 css/js，node_module 也没有大量依赖，支持 plantuml 的全局主题配置
+Github Action 测试 ok
+安装
+npm install --save hexo-filter-kroki
+
+使用
+直接在 md 中加入流程图的类型即可
+&#x60;&#x60;&#x60;plantuml
+your diagram
+&#x60;&#x60;&#x60;
+
+插件会读取其中的内容，发送给 kroki 渲染服务，并返回渲染后的图片。
+支持的格式
+blockdiag
+bpmn
+bytefield
+seqdiag
+actdiag
+nwdiag
+packetdiag
+rackdiag
+c4plantuml
+ditaa
+erd
+graphviz
+mermaid
+nomnoml
+plantuml
+svgbob
+vega
+vegalite
+wavedrom
+项目地址
+https://github.com/miao1007/hexo-filter-kroki</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">现在还有哪些第三方 rom 下载渠道？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788182">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>kerb15: 
+目前知道并且还在用的只有移动叔叔论坛了</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">[技术交流] 大家所在的公司都是如何做 DAO 层的单元测试的？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788180">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>louchenabc: 
+先分享下我在 DAO 层单元测试的经验：
+[Java 开发实战] 高级工程师的自我修养之单元测试（一）：DAO 层测试
+大家所在的公司都是如何做 DAO 层的单元测试的呢？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">研究了 macos 的相簿文件管理模式</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788178">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>levinit: 
+macos 相簿
+相簿使用本地的数据库模式对图片 /视频（下统称文件）进行管理，可灵活地组织文件，可以为同一文件添加多个标签，归属于多个相簿，分配到多个项目。
+但是注意：
+文件两份问题
+相簿会将文件完全复制一份到.photoslibrary文件（实际是一个目录，只是在访达赋予了特别的显示模式）中，于是有了两份源文件！（为什么不出一种保留源文件位置的模式呢）。
+于是原来的文件留着意义变得奇怪？？？因为相簿中的文件不是对原文件的引用而是独立的复制个体，对相簿中文件的修改不会影响原文件，反之同理。如果维护两处，大量的修改行为就会使得管理凌乱，徒增时间精力。那还是删掉原来那份吧……
+同时意味着，要么不用相簿管理（因为两处存放互不同步，甚至查阅也是用相簿也没多大意义），如果使用相簿，那就把这个相簿当成原来的图片 /视频父目录使用。
+对于需要在其他系统中使用，参看下一条。
+目录层次破坏问题
+直接使用导入模式文件会破坏文件原有的目录层次结构，就不能导出恢复原来的目录结构，而且其.photoslibrary的格式文件是其他软件不能读取的，相簿文件内部的分类、标签、相簿对于其他系统毫无意义。
+也就是你入了坑就别想那么轻易地出来，apple 全家桶是最好的归宿，windows ？ android ？ Linux ？ chromeos ？你就到处这 n 张没有目录层次的文件自己去慢慢重新组织吧！
+如果对文件的目录层次的存放有明确的需求，如果有多平台 /软件查询管理的需求：
+不要在”导入项目“中直接拖入多个目录，目录层次直接没了。
+“我的相簿”下新建的相簿同上，导出无目录层次（所有文件只在一个目录中）
+删除相簿并不会删除相簿中的文件（因为一个文件可以从属于多个相簿，相簿中的文件指示一个文件来源的引用），因此一个相簿并不适合当成一个目录使用。
+从相簿中删除并不会删除图片 /视频并不会删除该文件（右键菜单中显示为从该相簿移除该相片 /视频）），原理同上。欲删除某图片 /视频，可在“图库”中找到该文件（或搜索找到），删除之（右键菜单中显示为删除该相片 /视频）。
+最佳模式：一定要在”我的相簿“中拖入目录，或者在我的相簿下新建的文件夹中拖入目录，这样可以直接把其中的文件夹往访达或桌面上拖拽导出来，仍然保持着原有的目录层次。
+导出目录是会在目录下创建同名子目录，将原来的文件放到子目录中（……）
+示例：原有 dir1 目录，其中有文件 a b，则到处后生成 dir 目录，其下还有一个 dir 目录，目录下才是 a b 两个文件。
+删除文件夹会删除其中所有文件。
+另，在相簿中查看会发现每个文件夹下会自动创建一个相簿，根据以上叙述，欲删除其中的文件应该直接删除该文件夹而不是删除这个相簿。
+########
+结论，这特么没法用，我的 linux，windows，android，我的其他工具，网盘在线工具（ icloud 除外）直接懵逼……简直是不给其他系统和软件玩
+当然你完全用 apple 全家桶，或许没啥问题……</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">今天笔记本无法开机 一直从下午弄到现在</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788177">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>EIlenZe: 
+下午的时候，刚准备出门，重启了一下电脑就开不了机了.
+蓝屏报错
+提示：错误代码 0xc0000001
+
+查了很多很多网上的资料，又试了很多办法，就的的确确解决不了。
+编了大半天，在快要编辑完的时候，就又还是不甘心，就又在网上找。
+https://riverye.com/2019/11/03/修復-BIOS-Boot-Sequence-找不到-Windows-10/
+跟着这篇文章，调整了磁盘的名字 居然就好了
+（说实话 也不知道是不是这么一回事 但感觉是 如果是的话 希望下一个人不用折腾那么久了）</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">看不懂外卖平台的“好友拼单”功能逻辑</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788176">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>zpole: 
+事情的起因是这样的，楼主最近接到了给团队成员订每周下午茶的工作。之前负责的同事是通过腾讯投票功能提供有限的几款产品让大家选择的，也没法订制糖度、配料等细节。而我这次尝试使用“好友拼单”功能，将美团的拼单链接分享到群里让同事们自由选择。我们组之前的惯例是提前一两天将选择发出来的，以免有人忘了点。我这次也萧规曹随，在头天下午将拼单链接发出。同事们反馈都很不错。然而，当我在当天晚上查看这个拼单的时候，我发现拼单已经在不知道什么时候被关闭了，而且之前同事选择的产品也无法查看。这就让我很尴尬了，只能重新发一个腾讯投票，在群里给大家道歉。。。组内风评严重受损。。。
+事后，我又做了几次实验，分别将美团、饿了么和乐乐茶、一点点等小程序的拼单链接发给我的朋友，两人点单但不付款，结果如下：
+几个小时后，所有链接均失效。没有一家具体告知了到底多久会失效。
+美团和饿了么使用 app 进行拼单时，拼单发起人会被要求停在停留在拼单页面上，并提示退出会导致拼单取消。。。此时手机必须保持打开并停留在这个页面上的状态，以免杀后台导致拼单取消。像我这种需要这个拼单长时间存在的需求，难道我一整天都不能使用手机了？我对此咨询了美团的客服，对方肯定了这个说法。。。相反，几家小程序均可以自由退出。
+当拼单失效后，美团和小程序们无法看到之前的选择。饿了么仍可以查看失效前的拼单列表。
+最奇葩的是美团，在拼单失效后的一段时间后，我发现这个拼单又被开放了且又有同事进去选单了。然而之前的选单都消失了。再过了一会儿，拼单又失效了。。。搞毛啊。
+在和美团客服的沟通中，对方一开始表示拼单只能存在 15 分钟，在我提出质疑后她又问我什么时候看到失效的。然后她做了个简单的减法（而且还算错了），信誓旦旦的和我说能存活这么久。你 tm 逗我呢。。。在我继续追问下，她提出去帮我咨询，然后回复我说只要不退出就会一直存在。然而这仍然和我的观察不符合。虽然我没有在美团里按取消，但放在后台过久后应该已经被结束进程（或者墓碑）了。在这种情况下，我仍然能通过微信上的分享链接进行正常的分单选购。总之，客服也拿不出具体的失效规则。
+我觉得这个功能不该做成这样啊，至少有几点可以改进：
+美团和饿了么要可以自由退出和返回拼单而不导致其取消。
+延长拼单有效时间并注明失效时间。
+允许查看失效拼单点的产品。
+这些应该是很基础的吧，为啥都没有做好。。。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">用 Walle 做 CI/CD , 构建 Node.js 项目, 在 npm install 的时候会出现问题</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788174">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>kenshin912: Docker-compose 起了个 Walle 服务 , 挂载了宿主机上的 JDK , Maven , Node.js 的目录进 Walle 容器.
+Maven 编译 Jar 包已经弄好了 , 剩下的就是前端 , 可是只要 npm install 就会出现各种奇怪的错误 , 看了下报错的解决方案 , 几乎都是和 node_modules 这个目录有关系 , 怎么都无法顺利 npm install .
+而且我还有个疑问 , 即使我顺利的让它 npm install 了, 也不能每次编译都 npm install 一次吧? 尝试用 ln -sfn 把 node_modules 软链接过来也会报错.
+我真的是服了. 本地拉了个 Jenkins 容器 , 随便折腾一下 , npm install 就很顺利 , run build 更顺利 ...
+用 Walle 主要看重它方便回滚 , Jenkins 我自己还要写脚本还要设置.
+有没有用 Walle 的大佬 , 让我看看你们的 Node.js 项目是怎么做的自动构建的呢?
+或者说 , 我是不是应该把 npm run build 的事情丢给开发 , 让他们 build 好了推到 gitlab 上得了 ? 感觉会被公司的开发打死...</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">美团搜索算法专家(北京)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788173">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>hitzhaowenqiang: **主要职责**
+1.负责到家(外卖 /闪购 /医药 /团好货)场景搜索方向的算法优化工作
+2.包括各种召回策略、相关性模型、粗排模型、精排模型和机制策略的建模和优化
+3.结合产品和业务的需求，持续改善搜索用户体验，提升业务指标
+**技能要求**
+熟悉人工智能领域前沿技术， 对以下至少一个领域有深入理解：搜索、推荐、广告算法，深度学习，自然语言处理，计算机视觉， 统计机器学习，计算经济学，博弈论
+工作地点：北京朝阳区美团太极信息产业园
+
+职位年薪：80 - 150 万
+薪酬福利薪资结构：月薪*15.5 薪
+薪酬福利与补贴：五险一金
+股票期权：可谈
+试用期及试用期薪资情况：6 个月试用期，薪资不打折
+薪资其他说明：薪资是一个区间，具体薪资看定级
+联系方式：微信 a-zuang</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">34 寸带鱼屏，用过的都说好吗？（windows 系统，不买很贵的， 2K*2 的那种）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788171">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>Newyorkcity: 感谢分享使用体验
+话说不分屏的时候用浏览器啊，使用普通的软件全屏化后，这么宽不会觉得很乖很别扭吗？是过了一段时间能自然适应？那会不会让我反而不适应公司的双屏 24 寸显示器了？
+另外是不是壁纸特别难找，需要自己剪切过？有这方面的工具吗
+多谢</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">小白提问：如何把自己的 Win10 系统制作成单个 ISO 文件</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788170">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>kebamt: 
+为了使💻变得更好用做了很多个性化配置和设定，花了很长时间使其变得更好的为自己服务，Windows 系统很容易出故障或者感染病毒，如果由于出现一些问题面临系统重装可能会造成很大的个人时间损失，所以想问问大家有没有办法把自己的系统封装成单独一个 ISO 文件（就像官方拿出来发布的那种，双击就可以安装的那种），尝试过用 Win10 自带备份，但太拉垮了，谢谢大家</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Timer 的声音怎么调都调不大是怎么回事？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788169">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>forgottencoast: 其它声音（包括 Alarm 的）都很大，就是 Timer 倒计时结束以后的声音很小，怎么调都调不大。
+请问如何解决？
+iPhone 12，iOS 14.6 。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">请问现在是买 Mac Mini M1 的好时机吗？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788167">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>incur:</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">请问平时使用什么工具来进行简单的数学计算的？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788166">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(3 min)</span>
+                    <span>raaaaaar: 
+经常会有一些简单的数学计算，加减乘除什么的，你们平时都是用的什么工具呢？
+我有时直接浏览器 console 或者 win+搜索 python，要的是迅速，就像平时写一些随笔什么的，直接 data:text/html, 
+ 就打开了。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Office Insider 更新了视觉刷新</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788165">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>Kawnnor:</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">通过 PHP 跳转的文件 开启防盗链后无法被使用</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788163">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>NatsumeMio: 有一个网站 https://www.XXXXX.com/index.php/sharingpath/XXXXX.webm 通过这种方法来取的视频文件然后在主站上播放。之后我填入主站域名后开启了 Ngnix 的防盗链，无论在什么地方都是无法拜访，显示我设置的 404 。
+然后我测试 https://www.XXXXX.com/XXXXXXXX/XXXXX.webm 如果是实际路径里的文件都能正常的的在主站上拜访，也能达成防盗链的效果。
+如果我想让第一个接口在开启防盗链的情况下正常使用，应该做些什么更改？请各位熟悉 Ngnix 和 php 大神能给一个解决思路吗，十分感谢。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">看 react hooks 项目看不懂 是不是证明基础不够，先补补 js 基础</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788162">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>shilianmlxg: 看到一些 vue3.0 composition api 的组件 和 react 的 hooks 组件 都觉得有点晕，扯不清。
+是不是 js 基础不彳亍。
+以前没系统学过 js
+现在听一个大佬的 看《 JavaScript 设计模式与开发实践》
+但是看到张鑫旭的 10 问 10 答，说的前端入门级别码农，不看继承一样风生水起，直接 跳过，因为在这个阶段你看不懂。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Macbook 使用耳机左右声道不平衡是 feature？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788161">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>fffang: 
+耳机：索尼人妻
+每次修改音量都会自动调节声道</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">时至如今（2021 年 7 月），携号转网实际体验如何，有没有已办过的人说说呢？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788159">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>rainfox: 现在电信家庭套餐很实惠，但是家人基本上都是移动、联通的卡，所以电信套餐里面唯一使用到的就只有 ITV 和宽带，现在想把部分电话携号转网到电信，不知道现在实际用起来的体验上是否很大差别？
+之前那些转网后 短信验证码偶尔无法接收、和无法在支付宝和微信等三方平台上充值等问题是否已解决？希望有 V 友能现身谈谈携号转网后的体验，以及携号转网前后需要注意等相关事项，非常感谢！</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">如何让自己变得坚定,执着? 能告诉我你的信仰是什么吗?或者你始终坚信的东西.</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788158">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>sciel1211: 恐惧,焦虑,竞争,无时不刻都在身边.想要看看各位心中的灯塔都是什么样的,让我们在黑暗的夜里彼此都能照亮.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">麻烦问下有育碧成都的老哥吗，育碧成都最近有坑吗？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788157">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>PEIENYKYK: 
+想问下最近有没有坑，后端开发，主力 Python/Golang 双开，JavaScript 也会写一些
+想要了解我（ blog ）： https://www.yemilice.com/
+想要了解我（ github ）： https://github.com/Alexanderklau
+我的具体详情可以 v 我 ：YWxleGxhdTEzNjg&#x3D;
+在这家公司待了 3 年了，也是该离开找自己的时候了</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">[深圳][AfterShip][内推][不加班][不加班][不加班] 互联网出海电商 SaaS B 轮，薪资对标一线，各种岗位都有</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788156">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>zhengsidao: 
+先放一篇 B 轮融资的公告:
+https://mp.weixin.qq.com/s/-Tv_2McS5qw8q6mgCpXW9w
+再来一篇搬家公告:
+https://mp.weixin.qq.com/s/3mjQZL9YAtPdgs09TSkLsw
+全球领先的国际电商 SaaS 平台 AfterShip 爱客科技（以下简称为“ AfterShip ”）今天宣布完成 6600 万美元的 B 轮融资，该轮融资由老虎环球基金领投，高瓴创投跟投，光源资本担任独家财务顾问。此次融资将用于扩大其国际业务团队，开发新产品以及进一步拓展美国市场。
+AfterShip 于 2012 年在香港成立，致力于为全球电商买卖提供更高效的软件基础设施。公司旗下丰富的产品矩阵有 AfterShip 、Automizely 、Postmen 和 Returns Center 等，涵盖商家市场推广、营销运营、订单管理、发货打单、物流追踪、退换货服务等各个业务环节，以智能化的 SaaS 解决方案为海外超过 10 万家电商企业快速成长提供支持。
+备注:
+薪资水平和一线看齐
+公司不加班: 一般七点半左右走的差不多，周末双休
+一般有一次旅游，20 年去的泰国，21 年因为疫情没去改成团建
+公司环境和氛围趋向于谷歌，人数不多，小而美(近期要搬去新的办公室了今年九月份)
+轮次早，未上市
+---- 这里是分割线
+其实我是内部员工...帮忙招收简历嘻嘻~~~
+如果有意向详细了解的话，可以发简历到 zhengsidao1785@gmail.com ，24 小时内回复。
+如果有意向详细了解的话，可以发简历到 zhengsidao1785@gmail.com ，24 小时内回复。
+如果有意向详细了解的话，可以发简历到 zhengsidao1785@gmail.com ，24 小时内回复。
+招聘的详细岗位和 JD 可以看: https://hr.aftership.com/</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">集思广益，求一个名字</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788155">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>overflow99: 基于 nodejs 框架+vue3 开发了一个项目，包含类似 nginx 代理转发，修改 host，设置 cookie 。用于快捷切换不同环境。希望是一个英文名字，谢谢大伙</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">迫于马上装修，智能网关 插座 开关 怎么选？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788154">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>Guidoo: 
+要支持 homekit</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">有大佬用 Redis Cluster 存储图片吗？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788153">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>daimaosix: 目前有一个 Redis Cluster 闲置了 6 个节点，想用来存图片，大小基本不超过 500KB，有大佬实践过吗？会有什么坑吗？
+还有一个问题：如果存储图片，内存占用的大小跟图片大小是一致的吗？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">麻烦大家帮忙推荐一下家用服务器的硬件搭配呗</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788151">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Danswerme: 
+之前在云服务器上架设了几个游戏的私服和朋友玩，发现花费有点高体验也不佳；于是准备自己组一台游戏服务器放家里。
+预算 5000 以内，目前手里有 D4 16Gx3 内存条和两块 500G 的 nvme m.2 固态。不要机架式服务器，太吵了，这次是放家里的，希望比较安静。
+另外游戏服务端有 Linux 平台的也有 Window 平台的，且服务端源码来源五花八门，安全性欠佳，所以打算运行在虚拟机里。那么是用 ESXI 还是 UNRAID 呢？或者其他的虚拟化系统？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">不重构的项目不是好项目，我能这么理解吗？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788150">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>heheda11: 
+引用 wiki
+在软件工程学里，重构代码一词通常是指在不改变代码的外部行为情况下而修改源代码，有时非正式地称为“清理干净”。
+
+我听闻过在大厂中，一个项目会经历过无数次的重构</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">有没有什么方法能够检测手机上已安装的 APP 中有哪些支持 fcm 的？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788149">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>lzsqq754318010: 
+最近一个月从 ios 换到 MIUI （ eu 版），这才发现原来 Android 党天天说推送比不过 iOS 并不是夸大其词。iOS 上通知虽然泛滥吧，但我可以主动忽略它，顶多碍眼一些罢了，可在国内用 Android 你就要担心通知是不是漏了？ fcm 有没有 disconnected ？新安装的 APP 支不支持 fcm 亦或是 mipush ？需不需要打开自启动开关？所以装国内 APP 时也尽可能选择 play 版，可奈何 play 版也不一定就能走 fcm... 于是就问问大家有没有什么方便的办法能够知道一款 APP 是否接入 fcm 推送？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">不懂就问 有啥正当途径能看到机械工业出版社的电子书么?</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/788148">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>wangxin13g: 
+年初的时候买了微信读书的年费会员,看了大半年算是把年费会员的钱看回本了。现在有好几本机械工业出版社翻译的书想看，不太想买纸质书了。家里已经没地方放了。问下各位老哥哪能看到正版的电子书啊</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.smashingmagazine.com/">Articles on Smashing Magazine — For Web Designers And Developers</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">An Introduction To Figma Interactive Components</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://smashingmagazine.com/2021/07/introduction-figma-interactive-components/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(13 min)</span>
+                    <span>Interactive Components in Figma allows designers to create a component with states (hover, active, clicked, focus) and make it interactive so that every copy of the component will inherit those same interactions by default. Let’s explore how it can reduce the time and effort needed to create interactions for your mock-ups.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
     </ul>
   </section>
   <section class="daily-content">
@@ -57,20 +838,11 @@
           <section class="articles-per-source">
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">专访融云杨攀：音视频技术的下半场，在于开发者服务生态</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/6aHHdKs2Ct5xm5jCOa18?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">区块链互操作性：大规模应用的关键</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/b728b890892c9a20177274bb6?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
-                    <span>采访嘉宾 | 杨攀
-编辑 | Tina
-
-音视频的大时代正在加速到来。
-
-经历了 2016 年的直播风口，2018 的短视频风口，以及疫情后更大的线上场景爆发潮，音视频已经成为了各个行业的基础设施。会议、教学、销售等各种场景都被搬到了线上，音视频应用领域战成了一片红海。与之前相比，最近这波爆发下的场景涉及到的技术更为复杂，不再仅是基于 CDN 的推拉流，而是以实时交互的 RTC 技术为主。
-
-今年初，火爆的音频聊天应用 Clubhouse 宣布完成 C 轮融资，估值达到了 40 亿美元。伴随着 Clubhouse 优异表现，开始出现越来越多的语聊房产品，风口下谁能快速完成搭建率先推出类似功能，谁就能赢取大批用户。激烈竞争下尤其考验到各家的技术能力，像融云这样的位列实时音视频技术第一阵营的服务商也迅速浮出水面。
-
-为探讨音视频技术发展以及未来趋势，InfoQ 采访了融云联合创始人兼 CTO 杨攀。他将在 2021 全球互联网通信云大会（WICC）发表《以通信为核心的开发者服务生态探索》的演讲。
+                    <span>“我们将留下分散的孤立区块链集合，每个区块链都由薄弱的节点网络支持，并且容易受到攻击、操纵和集中化。”
 点击查看原文&gt;</span>
                   </div>
                 </a>
@@ -78,20 +850,11 @@
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">赴哈佛、耶鲁、MIT 理工科研究生集体被拒，留美之路愈发艰难</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/UjVicJmelU4D3K3FjUT2?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">灵魂拷问：我们该如何写一个适合自己的状态管理库？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/3b6699a458b30d11fea8cdb57?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
-                    <span>近两年，中国赴美学子逐年增多，留美华人基数大幅增长，加之中美摩擦持续，成为留美事件频发的重要原因。
-
-
-7 月 6 日，中国日报早间新闻报道，近日有 500 多名中国理工科研究生申请赴美签证时被拒，拒签理由均为不符合美“《移民和国籍法》第 212 条 (f) 款及第 10043 号总统令”。近期学生们发出联名信，要求美方切实解决歧视打压中国学生的问题。
-
-早前，美国高校为保障良好的国际学术交流氛围以及学校的学费收入向美政府谏言。然而，拜登政府表面上试图顺应美高校要求吸收大量中国留学生的呼声，其实仍旧延续打压中国理工科研究生和学者的错误政策，严重损害中国留学人员的合法权益。
-
-此次 500 多名中国理工科研究生申请赴美攻读硕士或博士，主要学习方向为电气电子工程、计算机、机械、化学、材料科学、生物医学等理工类专业。绝大部分学生办理签证的时间是在美新政府上台后，他们拟就读的高校不乏世界一流大学，包括哈佛大学、耶鲁大学、加州大学伯克利分校、麻省理工学院、约翰斯·霍普金斯大学等，且这些学生优秀学生中超过四分之一获得了美方奖学金。
-
-一批优秀的华人留学生集体被拒签，透露出赴美深造的艰辛。但其实，赴美留学被集体打压的事件近两年愈发常见。
+                    <span>说到状态管理库，想必前端同学随口都能说出好几个来，社区里的轮子一个接一个数不胜数。今天不是讲某个库的技术细节，而是跟大家聊一聊实现一个状态管理库的过程，以及我在这个过程中的一些思考。
 点击查看原文&gt;</span>
                   </div>
                 </a>
@@ -99,35 +862,11 @@
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">成千上万套未加验证保护的数据库暴露于互联网</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/pKJiDzEVxM9L9vhjPsOd?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">字节跳动有状态应用云原生实践</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/3611469864417e95f2d12853f?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
-                    <span>当今，数据库可以说是网络空间中每一项技术的实现基石。随着世界各地越来越多边缘智能设备接入互联网，敏感数据暴露的风险也在随之提升。过去几年，大规模数据泄露事件越来越司空见惯，百万甚至千万条记录的大规模泄露事件层出不穷。泄露的原因之一，就是直接接入互联网的数据库存在安全性差 / 未经验证保护的问题。
-
-
-最近，RedHunt 实验室对网上公开的数据库状况进行了研究，结果令人震惊：
-
-
-21387 个未经验证保护 / 公开的 MongoDB 数据库
-
-20098 个暴露的 elasticsearch 实例
-
-20528 个非安全 Redis 数据库
-
-25575 个暴露在外的 Memcached 服务器
-
-1977 个非安全 CouchDB 实例
-
-3340 个 Cassandra 数据库暴露在互联网上
-
-570 个暴露在互联网上的 RethinkDB 数据库
-
-1846 个非安全 HBase 实例
-
-
-通过对攻击面管理（ASM）门户“NVADR”的统计数据进行研究，RedHunt 实验室发现约 40% 的暴露问题涉及未受验证保护内容的意外公开。除了其中常见的源代码 repo、内部文档、查询系统 / 门户以及仪表板之外，最受关注也是最具安全影响的当然是未经验证保护的数据库。这些暴露在外的数据库不仅常被发现，而且往往会极大影响并增加相关组织的攻击面。
-
+                    <span>本文整理自爱奇艺技术沙龙中同名演讲，主要介绍了字节跳动有状态应用的业务场景、有状态应用云原生化过程中在状态管理、基础能力增强和自动化运维三个方面的挑战和应对，以及有状态应用云原生化之后的收益。
 点击查看原文&gt;</span>
                   </div>
                 </a>
@@ -135,24 +874,11 @@
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">万字长文讲透低代码</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/gh6HUCBsJ32QuCUDaTOs?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">JAVA 九种排序算法详解（下）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/c3d76fb5aa3da5f4ec9c88649?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
-                    <span>来源 | 授权转载自微信公众号“冷技术热思考”，经过不改变原意的删改
-
-
-业界说低代码是“高级外包”倒也没说错，虽然我觉得既然用的是低代码应该叫“低级外包”更合适。
-
-
-低代码这个概念今年极火，争议也极大。有些人力捧，觉得以后“人人都是程序员”，也有不少人嗤之以鼻，还有很多人认为低代码是新瓶装旧酒，早已有之，或者无非就是个高级外包。
-
-本文希望对这个当前动荡不安的领域做一点“不草就”的综合说明，想说清楚七大问题：低代码和无代码（也称零代码）是什么关系、怎么判断一个低代码平台是否专业、国内是否有专业的低代码平台、低代码是不是新瓶装旧酒、低代码真的搞不定专业的企业应用吗、低代码不适合开发哪些应用、低代码是不是银弹。
- 
-本文对低代码相关的很多迷信和错误观点都做了比较客观的分析，希望能对促进这个行业的正确认知有帮助。
-低代码和无代码是两回事
- 
-第一步得把低代码和无代码分清楚，因为这俩差异巨大，但现在业界经常混为一谈，导致很多很多问题，比如双方争论但指的不是同一个事情，厂商的口径乱，行业报告的结果不能看。
+                    <span>JAVA 九种排序算法详解（下）
 点击查看原文&gt;</span>
                   </div>
                 </a>
@@ -160,22 +886,11 @@
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">数千员工受影响，IBM 邮件系统迁移或酿成“灾难”</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/OS906Ar7URMxTcteaoZi?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">记某百亿级mongodb集群数据过期性能优化实践</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/98daf7330a3107fa0bf1edc9c?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
-                    <span>据科技媒体 the register 报道，IBM 为全公司制定的一项电子邮件系统迁移计划已经严重偏离轨道，导致众多员工无法正常使用电子邮件或安排日历活动。
-
-目前，这一糟糕状况已经持续多日，并且多位 IBM 员工将这项为期 18 个月的邮件系统迁移视为一场“灾难”。
-IBM 电子邮件服务出问题了
-
-据悉，IBM 电子邮件服务在过去四、五天中一直断断续续，这对每位员工的影响也不尽相同。
-
-事实上，部分员工的情况会略好一些——一位消息人士指出，其电子邮件在宕机两天后又莫名其妙地回来了。
-
-再有，虽然 Outlook、Verse（IBM 的网络邮件）以及 Notes 都不稳定，但 Slack 却仍能正常工作。
-
-一位消息人士称，“Outlook 跟新系统无法匹配，IBM Notes 也不能正常使用，Verse 在线邮件更是全面失效。每个人都或多或少受到了影响，而且目前没有什么好的解决办法。”
+                    <span>百亿级数据量mongodb集群，不扩容情况下，完美解决数据过期引起的性能瓶颈问题。
 点击查看原文&gt;</span>
                   </div>
                 </a>
@@ -183,24 +898,11 @@ IBM 电子邮件服务出问题了
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">优秀开发者应该避免的五个错误</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/OqyHJtorgQRAeAt7f0Sd?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">区块链时代下，企业如何打造数据要素的“新竞争力”？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/f89e42cccd8bc54a21450ba14?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
-                    <span>本文最初发布于Rafael Quintanilha的个人博客，经原作者授权由InfoQ中文站翻译并分享。
-
-伟大的数学家 Carl Jacobi 曾说过“反过来想，一定要反过来想”。在他看来，逆向分析问题有助于找到最佳解决方案。有鉴于此，伯克希尔·哈撒韦公司传奇合伙人查理·芒格在哈佛大学做了一场精彩的分享，主题是关于探讨“怎样才能不成功”。由此，这让我开始思考——有什么最简单的方法能让你成为一名糟糕的开发者？你接下来将要看到的这些原则很主观，不尽全面，也没什么顺序。不过，如果你遵循这些原则，那么我敢保证你会成为一名糟糕的开发者。
-
-我之所以把它们称为“原则”，是因为我在本文不关心技术问题。记住，反向思考。简言之，知道不要做什么后就更容易搞清楚究竟要做什么了，而且更稳妥。因此，请留意下面这些原则，并决定自己想成为哪种开发人员。
-从来不做自己的代码存在Bug的假设
-
-
-虚荣，绝对是我最喜欢的原罪。——阿尔·帕西诺，《魔鬼代言人》
-
-
-软件开发是为数不多让你有机会经常犯错的领域。如果错误的影响不大，那么待在这样的领域挺不错。
-
-不过，别忘了，你可以成为公司最好的开发人员，只要相比之下，你比其他人犯的错少就行。但是，你所犯的错误的绝对数量可能还是不小，这在所难免。好消息是，这没什么问题——机器通信需要很高的准确性，1万行的代码库，一句错误就可能出现严重的问题。
+                    <span>数字经济时代企业围绕数据要素的竞争力成为生存与发展的关键。
 点击查看原文&gt;</span>
                   </div>
                 </a>
@@ -208,20 +910,11 @@ IBM 电子邮件服务出问题了
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">为什么计算机专业的学生应该为开源项目做贡献？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/jmD2zNmGqevIO6IyMd9d?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">百度搜索稳定性问题分析的故事（下）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/19165bfaec6bd984da63a26f3?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
-                    <span>本文最初发布于acm.org网站，经原作者Diomidis Spinellis授权，由InfoQ中文站翻译并分享。作者声明保留所有权利。
-
-
-出于许多现实的、历史的和一些空泛的原因，编程可能是所有计算机科学、信息学、软件工程和计算机工程课程的必修课。
-
-数十年来，这项技能都是计算机专业毕业生与其他学科同学的典型区分点所在。本文提出的观点认为，在21世纪，编程熟练度既不能涵盖市场对计算机毕业生的技能要求，也不能像过去那样带来强大的职业竞争力。
-
-因此，我建议学校应该鼓励计算机专业的学生通过他们的课程活动为开源软件项目贡献代码。我已经在软件工程课程中实践和打磨这种方法超过15年了，在我的课程里开源贡献是强制的打分点（注2）。
-
-基于这方面的经验，我会在本文中解释为什么做出这种贡献的能力可以反映现代编程技能的一般水平，并介绍学生可以从这些活动中学到什么，具体说明如何将开源贡献练习嵌入到课程中，并总结一些在课程中获得成功的实践。
+                    <span>本文立足于大家所熟悉的百度搜索系统本身，为大家介绍其可用性治理中关于“稳定性问题分析”方面使用的精细技术，以历史为线索，介绍稳定性问题分析过程中的困厄之境、破局之道、创新之法。希望给读者带来一些启发，更希望能引起志同道合者的共鸣和探讨。
 点击查看原文&gt;</span>
                   </div>
                 </a>
@@ -229,20 +922,11 @@ IBM 电子邮件服务出问题了
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">零停机迁移 Postgres的正确方式</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/4ItZutBNTidCzDmyVjJ8?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">数据结构——平衡二叉树（AVL）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/fb3472b8cf9eb93a8f4b2db5e?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
-                    <span>在这篇博文中，我们会介绍如何在零停机时间的前提下，使用Bucardo将Postgres数据库迁移到一个新实例上。我们将介绍如何避免常见的陷阱，比如数据丢失、性能下降和数据完整性故障等。我们已成功使用这一流程将我们的Postgres数据库从9.5版迁移到Amazon RDS上的12.5版，但该流程不只适用于RDS，也不依赖AWS独有的任何内容。这种迁移策略应该能适用于任何自托管或托管的Postgres。
-分析
-
-在本文中，我们将讨论将多个Web应用程序（如微服务）从一个数据库迁移到另一个的过程。现代软件架构由多个应用程序（或微服务）组成，而每个应用程序都有多个运行实例以增强扩展性。为了将你的应用程序移动到新的数据库，你必须首先确保两个数据库中的数据是同步的，并在任何给定时间点保持同步，否则你的客户端迟早会丢失数据，甚至陷入无效状态。
-
-一个简单的解决方案是停止旧数据库的写入操作，获取快照，将其恢复到新的数据库，然后在新数据库中恢复操作。这种方案需要的停机时间太久，不适合生产环境。我们提到这一点只是为了做参考，因为这是确保你不会丢失任何数据的最简单方法，但用它的话，你可能会失去一些客户。
-
-更现实的方法是在两个数据库之间设置一个近乎实时的双向复制，这样在理想情况下，应用程序可以同时向两者读取和写入，而不会注意到任何差异。你可以用这种方法一次一个实例地逐步移动你的应用程序，过程中不会停机，且不会影响用户。
-
-由于我们希望应用程序能写入两个数据库，我们需要进行多主复制（multi-master replication）。在谷歌上搜索“Postgres中的多主复制”可以找到大量解决方案，每种方案都有自己需要注意的优缺点。
+                    <span>数据结构——平衡二叉树（AVL）
 点击查看原文&gt;</span>
                   </div>
                 </a>
@@ -250,33 +934,11 @@ IBM 电子邮件服务出问题了
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">干货 | 携程门票H5转小程序实践</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/fZYqIOxRJQZiwyau9xMP?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">java算法易筋经：常见java-API使用技巧</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/04a83125c6fc1a2fc08e14a27?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
-                    <span>一、背景
-自微信小程序出来后，互联网进入一个新的纪元。由于手机的容量有限，每个人不可能装太多APP ，总有一些APP大家都装，称之为超级APP，它们集成越来越多的功能，其中以小程序尤为突出。小程序巨大的流量红利不容小视，这也是小程序越来越火的部分原因。
- 
-我们团队一直致力于推进react多端一致，在进入小程序一致性研发工作之前，RN和web已经实现了大部分的跨端工作。彼时（2020年8月）小程序的研发多以原生为主、迭代周期很长，且代码书写和结构与RN、web开发有着巨大区别；为了提高研发效率、完善多端一致的技术路线，将现有代码以较小改动转成小程序代码势在必行。
-二、各个跨端转换框架对比
-结合当时小程序开发场景以及内部的一些限制，跨端框架需要满足“能够与原生项目混合”的要求，主要包括：
-
-
-在原生项目中使用转换后的页面
-
-在原生项目的分包中运行完整的转后的项目
-
-在原生项目中使用转换后的自定义组件，且在包体积等方面都需要考虑
-
-
-结合我们之前做的一些调研，部分对比（有兴趣的朋友可以自行了解这些跨端转换框架）如下：
- 
-
-
-
-对比维度
-
-KBone
+                    <span>​​​​摘要：算法练习的本质也在于锻炼编程思维，强化程序员的内力。因此给自己后面会持续更新的算法技巧内容简称算法易筋经。
 点击查看原文&gt;</span>
                   </div>
                 </a>
@@ -284,19 +946,36 @@ KBone
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">掌握这个开源工具，更快速地构建计算机视觉模型</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/UZkPqmAfKuFZzYbvDdTZ?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">5分钟带你了解微前端（内含大量代码示例）</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/e7351be6298782e60b2cc946b?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
-                    <span>本文最初发表于 Towards Data Science 博客，经原作者 Eric Hofesmann 授权，InfoQ 中文站翻译并分享。
-
-最近几年，开源工具在满足端到端平台的许多需求方面取得了很大进步。从模型架构开发到数据集管护（Dataset curation），再到模型训练和部署，它们都可以扮演一个不可思议的角色。有了充分的挖掘，你就能发现一个开源的工具，可以支持大量的数据和模型生命周期。工具间的紧密集成是实现近乎无缝工作流的最好方法。本文将对PyTorch Lightning Flash与数据集可视化和模型分析工具FiftyOne之间的集成进行了深入研究。
-
-Lightning Flash 是一个在 PyTorch Lighting 基础上构建的新框架，它提供了快速原型、基线、微调和深度学习解决业务和科学问题的任务集合。尽管 Flash 很容易上手，但是不管你有多少深度学习经验，你都可以通过 Lightning 和 PyTorch 修改已有的任务来寻找适合你的抽象层次。为更快地推进，Flash 的代码是可扩展的，内建支持任何硬件的分布式训练和推理。
-
-Flash 可以让你的第一个模型变得非常简单，但是要继续改进，你需要知道你的模型的性能和改进方法。FiftyOne 是一个开源工具，由 Voxel51 开发，用来建立高质量数据集和计算机视觉模型。它提供了优化数据集分析管道的构件，允许你亲自操作数据，包括可视化复杂的标签、评估模型、探索感兴趣的场景、确定失败模式、查找注释错误、管护训练数据集等。
-
-有了 Flash+ FiftyOne，你就可以加载资料集，训练模型，然后分析下列所有计算机视觉任务的结果：
+                    <span>微前端是一种类似于微服务的架构，它将微服务的理念应用于浏览器端，将 Web 应用从整个的「单体应用」转变为多个小型前端应用的「聚合体」。
+各个前端应用「原子化」，可以独立运行、开发、部署，从而满足业务的快速变化，以及分布式、多团队并行开发的需求。
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">微服务错误码设计实践</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/a4814f11f4bc20fa97c49697d?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>错误码在系统里面是一个很小的模块，但又是一个必须的模块。设计一个适合业务和团队高效迭代的错误码方案需要考虑哪些问题？在实践过程中又有哪些坑？
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">程序员跳槽指南</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/1cbf744f24f258f51b09a426c?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>找工作是件非常重要的事情，它直接影响你1~2年，间接影响你3~5年的人生。⼀个潜在的机会会让你少奋斗很多年，而一次冲动的离职，会让你和千万财富错失交臂。
 点击查看原文&gt;</span>
                   </div>
                 </a>
@@ -313,7 +992,7 @@ Flash 可以让你的第一个模型变得非常简单，但是要继续改进�
                 <summary class="article-expander__title">Body Toggle</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://css-tricks.com/body-toggle/">
                   <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
+                    <span class="article-reading-time">(2 min)</span>
                     <span>I appreciate the clarity of this trick that Mikael Ainalem posted over on Reddit:
 It’s a one-liner that toggles the class on the  so you can mock up different states and toggle between them on click.
 &lt;body onclick&#x3D;&quot;this.classList.toggle(&quot;active&quot;);&quot;
@@ -328,7 +1007,7 @@ The post Body Toggle appeared first on CSS-Tricks. You can support CSS-Tricks by
                 <summary class="article-expander__title">I’ve got one question about Jetpack for you.</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://css-tricks.com/ive-got-one-question-about-jetpack-for-you/">
                   <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
+                    <span class="article-reading-time">(2 min)</span>
                     <span>And maybe an optional follow-up if you’re up for it.
 Automattic, the makers of Jetpack and many other WordPress-y things, have sponsored my site (me &#x3D; Chris Coyier; site &#x3D; CSS-Tricks) for quite a while. I use Jetpack myself, …
 The post I’ve got one question about Jetpack for you. appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.</span>
@@ -341,7 +1020,7 @@ The post I’ve got one question about Jetpack for you. appeared first on CSS-Tr
                 <summary class="article-expander__title">The Dilemma of Naming Font Size Variables</summary>
                 <a class="article-summary-link article-summary-box-outer" href="https://css-tricks.com/the-dilemma-of-naming-font-size-variables/">
                   <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(8 min)</span>
+                    <span class="article-reading-time">(14 min)</span>
                     <span>Normally, a project will have a set of pre-determined font sizes, usually as variables named in such a way that seeks some semblance of order and consistency. Any project of considerable size can use something like that. There are always …
 The post The Dilemma of Naming Font Size Variables appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.</span>
                   </div>
@@ -468,720 +1147,6 @@ The post The Dilemma of Naming Font Size Variables appeared first on CSS-Tricks.
       </li>
       <li class="source">
         <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.v2ex.com/">V2EX-最新主题</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">搞了一通宵做的设计，大家看看还 low 不 low?</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787987">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>superliwei: 
-虽然是正经的协作工具，但还是想搞点非主流，搞了一通宵。
-这是最新版：
-
-这是旧版：
-
-之前 v 友反馈： https://v2ex.com/t/787213
-提个建议，首页的效果图，有点低端啊
-弄一堆游戏截图，不够高大上，很随意的感觉。
-
-应该弄点主要应用场景下的截图吧，比如探讨产品 探讨架构什么的截图，也好很多。
-
-@xiaotianhu</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">遇事脑子乱，说话缺乏逻辑怎么救</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787986">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>stonefaker11: （在校生）最近遇到一些事，处理的时候感觉脑子很乱，像脑子里有千丝万缕的线，理不清，表达的时候缺乏逻辑，处理的情况和自己预想不一样。
-我太考虑别人感受，总觉得这样不合别人意，那样不合别人意，别人就不想和你做朋友了，自己又脑子乱，拿不准自己的意见，所以性格软弱，导致处理事情，老是被态度强硬的人推着走。
-分享一下自己的感受，大佬们给我点评论和建议……谢谢大伙</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">[上海静安] Infra / DevOps 运维工程师。25K - 35K 15 薪（全职）</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787985">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>xcmkxcmk81: 我们是一只国外归来的创业团队，创始团队来自耶鲁，伦敦商学院，前 Uber，腾讯，阿里。一个实时互动的在线社交以及活动参与平台，现招运维工程师。 有兴趣请加 WX：aWNleHVjaGVu (江湖规矩，你懂的)
-关于公司：
-已经拿到多家顶尖美元基金的投资，创始团队来自伦敦商学院，滑铁卢，耶鲁大学；并且有着清一色 90 后的核心团队，来自腾讯、阿里、Uber 、最右的年轻管理者，以及在 3D 内容、社交网络领域深耕的年轻创业者。95 后 CEO，曾是上市公司业务负责人 /副总裁、BAT 最年轻的管理者
-有理想的产品：我们始终相信好的产品要为更多人的幸福生活服务。随着 AI 对生产力不断地提升，旧的社会关系不断地重构，我们相信人类会回归人性，进入一个“趣缘”社会，大家会和有共同爱好的人一起生活在虚拟世界。在未来的世界里，我们会因为自己的独特被珍视，而不是一颗流泪就会生锈的螺丝钉
-拒绝 996：我们相信“谋定而后动”，花更多时间做正确的决策、让工作更高效
-践行激进坦诚：上一代的礼貌是面子，这一代的礼貌是真实；缺点让人更立体、真诚让人更亲切，所以让我们做自己
-在这里，拒绝政治，专注产品
-Infra / DevOps 运维工程师
-职位描述：
-1. 负责管理超大规模容器云平台，支撑海量的业务，长期优化平台资源，为持续建设、优化弹性等提供解决方案；
-2. 负责自动化体系的建设。如快速部署变更、自动恢复、自适应容灾等，提升技术效能；
-3. 负责研发全流程的效率提升，实现覆盖研发生命周期的 CI/CD 标准化流程。
-职位要求：
-1. 大学本科以上，计算机及相关专业，三年以上系统架构设计、应用和开发经验；
-2. 熟练掌握 Ansible/Terraform ；
-3. 具有监控及自动化部署平台研发背景者优先，具有大规模集群调度和架构设计经验优先；
-4. 掌握 Kubernetes 等编排服务框架以及能对它们进行二次开发优先；
-5. 熟悉 Docker 相关开源技术，及相关的操作系统基础支持（文件系统，Cgroups 等），掌握 Docker 源码者优先；
-6. 对网络及基础设施层有一定的了解和知识储备，熟悉 Linux 系统和 Shell ；
-7. 积极乐观，责任心强，工作认真细致，具有良好的团队沟通与协作能力。
-加分项：
-1. 了解 Application 前后台开发流程。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">关于 HR 拒绝支付 N+1 补偿的记录稿</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787984">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>monsterlin: 
-首先这是一片关于裁员与赔偿问题的文章，关于具体的交谈和大家交流下
-坐标：杭州余杭
-张三
-张三 2020/12 月入职公司 B，并且签订新的合同，到 2021/07 因为项目原因公司决定裁员，此时是正式员工
-HRBP 在 2021/07/05 与张三交谈赔偿，赔偿给 1，无 N+1，未妥协
-HRD 在 2021/07/06 与张三交谈赔偿，赔偿给到 0.5+1，并工作到 07/15
-请注意文字游戏：0.5+1，此 0.5 为 7 月张三正常上班，打卡，公司说让你工作到 15，这就是 0，5
-由此说明，公司赔偿的还是 1，我认为这个 7 月的 15 天和赔偿没有半毛钱的关系，这就是正常的考勤
-但是公司确认为这就是赔偿，认为这是 0.5
-公司这么克扣赔偿：HRD 解释为公司穷，项目没挣钱，所以给的 1
-但是在劳动法规定，公司未提前 1 个月通知裁员的事情，其次，公司也没有执行 N+1 的赔偿
-但是公司以没钱作为原因，拒绝支付劳动法规定的应有的赔偿
-张三让 HRD 找老板谈，具体在等待中....
-张三不知道这个薪资是老板规定的 HR 单方面的任务..
-HR 一直打感情牌～说多为公司想想，公司也困难啥的～
-李四
-李四 19/07 入职公司 A，但是 2020/07 公司成立新的公司 B，要求员工自己提离职，并且签订新的合同 B
-李四和张三在同一家公司，但是李四签订新的合同就是张三一样的合同
-李四和张三因为这个事情一起被裁员，HR 解释，现在和公司 A 没一点关系
-公司 A 和公司 B 本来老板，人员组成都是一模一样，只是老板单方面创办新的公司
-那司龄怎么算？李四是否可以要求 HR 把之前的公司 A 的司龄算上
-陈述
-李四和张三目前是同一家公司 B，并且与同一时间，HR 谈裁员的事情
-这个时候是否要以争到底？
-公司是否是在刻意的为难坑骗员工？
-是否需要维权？需要注意点什么？
-李四和张三如果谈论裁员的赔偿事情，是否存在违反公司保密协议，公司保密协议未明确指出
-李四和张三是否可以一起参与维权？
-那关于上述的经历，那合理合法合规的解决方案应该是什呢？
-最后
-截止到现在，协商未果..</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">发布你的服务到 Meepo 网络!</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787983">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>e3rp4y: 
-# on linux
-$ sudo snap install meepo
-
-# on macOS
-$ brew install PeerXu/tap/meepo
-$ meepo serve
-
-$ curl -x socks5h://127.0.0.1:12341 http://61x3lztpltjn60h2m99861eyz4nixaeraxprnkc9p767a3lsi65.mpo/
-Welcome to Meepo Network!
-
-想了解更多的用法?
-欢迎来Meepo 主页了解更多!</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">iPhone 12 偶尔黑屏死机是正常的吗</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787982">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>wilhexm: 
-一台白色 iPhone 12 国行 128G，之前老婆在用，抱怨过偶尔黑屏死机，必须强制重启才行。拿去天才吧硬件检测说没问题。618 给她换了一台 256，然后我拿过来用，用了半个月，今晚插上电充电结果也黑屏了，按任何键都没反应，强制重启才起来。我之前用另一台 12 没有这个问题，老婆新换的 12 也没这个问题。这种能让天才吧维修吗？不过半个月左右才出现一次，在天才吧估计很难复现。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">人生第一套房，求避坑指南和建议</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787980">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>turtlekey: 
-感谢自己
-有时候真觉得生活不可思议，两年前的大四，自己为七千元的学费顶着烈日在七八月的杭州送起了外卖，两年后的现在，自己开始考虑一百多万的房子了。生活真是刺激呀，感谢幸运之神的眷顾和自己的努力✨。
-房子情况
-无女主人。
-坐落于江浙小县城，99 平，121 万，暂不考虑车位。
-两梯四户，中间套，顶楼八楼，不靠马路。
-明年五月正式交房，到时办房产证。
-实际约年底竣工，到时可装修。
-通过中介购买，一手房（扫房大户手中的房子，还未办房产证）。
-自己非本地人，房子非刚需，房票套现为主要动力。
-说不定以后会定居于此呢。
-提问
-房市会崩吗？
-靠马路边（双向四车道）的房子会很吵吗？
-顶楼有何可能的暗病？
-能帮我算算月供吗（公积金只能贷二十万，二十年，首付 30%）？
-房子后期还会有哪些费用？例如契税等。
-中介有何套路？
-还价技巧。
-其他。
-你们的避坑指南······
-先谢谢各位 V 友🍗</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">wifi 伪漫游实践</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787979">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>guanyin8cnq12: 换了新猫 hs8145x6，配合 wr703，做的伪漫游 。
-按照之前的方案，https://v2ex.com/t/783256#reply1 。
-效果还行吧。
-比之前 hs8545m5 + wr703 要灵敏多了。新猫应该做了一些优化。
-见图，用 wifiman app 测试。https://imgur.com/a/8H4phNm</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">[上海] 解决异地恋 - 4 年经验前端 toB 方向（第一学历专科 英文口语很好）有合适的公司推荐下么 谢谢</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787977">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>suwei1996728: 个人工作经历：
-目前在一家云服务 c 轮公司在职前端,因为女朋友在上海,异地恋。 想跳槽去上海 有合适的岗位内推么 谢谢 
-掌握技能：
-熟悉- React 、TypeScript 、webpack 、es6 等
-这是我的个人简历网站 - https://mynameissuwei.github.io/suwei-/ 
-如果有意烦请回复邮箱或者留下微信，我会发送简历，感谢。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">前一段时间某东买了一个马拉松电池 以为换了一个电池我的 iphone7 可以再战几年 然并。。出现高温卡 低电量直接关机情况</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787976">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>xoxo419: 
-不知道是电池还是手机的问题 还是两个都有问题吧。。。
-用的第一个月电池和手机也都表现还正常
-但是现在第二个月 iphone7 就会出现下面问题
-如果高温情况下 手机就变的很卡 无法操作
-手机电量剩余 20% 就直接关机了</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">老电脑利用方案</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787974">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>rioshikelong121: 
-目前公司用一台 win 笔记本，个人用 MBP M1，家里还有一台 6 年前的老电脑，想着要不要利用一下装个 Linux ？ 平时开的机会不多。
-需求就是记录下笔记，看看网页，跑跑轻量的前端开发环境就可以。这个配置 win10 到时不卡，但是长期用 WSL2 内存应该不太够，因为 WSL2 有内存泄漏的问题。是否有必要装个 Linux ? 哪个发行版比较适合新手呢。之前装过 deepin 和 Unbuntu, 没有什么特殊的倾向，最好不折腾的。
-ProcessorIntel(R) Core(TM) i5-4210H CPU @ 2.90GHz   2.90 GHz
-Installed RAM12.0 GB
-500 GB SSD + 500 GB HDD</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">今晚刚发布的 switch oled mode 大家怎么看？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787972">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>wananzz:</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">有没有面向开发者的音乐试听的服务？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787969">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>john990: 
-最近项目中需要一个音乐试听的功能，试听时间在 30 秒以上，最好可以指定试听的开始时间，搜索了下没找到比较满意的。
-有人用过类似的服务吗？
-提供 API 或 SDK, 没有版权争议，最好是国外的。
-谢谢～</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">[字节][北京]急招 Android/iOS 开发工程师</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787968">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>yojoc: base 北京 教育 K12
-职位描述
-1 、负责公司教育产品的研发，编写高质量的代码；
-2 、和产品经理配合，深度参与手机产品需求讨论，功能定义等；
-3 、设计良好的代码结构，不断迭代重构。
-https://job.tou tiao.com/s/e gdvW5f</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">贝壳找房 bug 系列：小区房源列表出现无法关闭得遮挡</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787967">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>ThreeBody: 最近用贝壳找房找房子，没想到一个体量这么大的资格找房 APP 各种各样的问题，让我有种这公司没有测试，功能开发好就算了
-app 内反馈了几个问题后面更新了几次都没修复过的，那就公开反馈吧
-小区房源列表莫名其妙出现一个关注小区的黑色遮挡，无法关闭。
-https://share.weiyun.com/OWDc7jna</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">上海 10+ 年工作经验，求团队收留，本身擅长技术管理 + 全栈</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787966">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>justin2006: 10 年+工作经验，技术管理+全栈相结合
-可以做架构（从 startup 到每天数亿 pv 的大型网站）
-可以带团队（带过最大的团队是 60 来个人）
-可以当 PM （敏捷项目管理经验 3 年，用的是 Scrum ）
-可以写代码（多半是写核心代码或者 fix 比较复杂的 bug ）
-
-业余爱好：
-在 github 上研究各种新鲜的玩意
-最近一直在研究小程序，业余帮腾讯的小程序系统做了个代码优化的东西
-偶尔会为一些知名的项目做做 contributor
-在国内一些技术社区撰稿写技术方向的连载
-参加国内外各种技术峰会
-还时不时还会受邀上去讲点有的没的
-大概就是这样，有没有人收留？在上海的也欢迎找我喝茶聊天，大家讨论讨论技术方面的话题哈
-我的邮箱是：
-justin_2006@foxmail.com</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">自荐 macOS 看图软件，适合看套图，支持 M1</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787964">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>wl879: 
-Picture View
-一款轻巧的 macOS 图片浏览应用。体积小巧（ 7.8MB ），可以方便快捷的查看图片，不会产生任何缓存，适合替代默认看图应用。多种的查看模式，方便快捷的操作设计，支持查看 EXIF 信息，支持防止系统休眠
-支持瀑布流看图，还不产生缓存，看完就走，再也不怕看图一分钟，加载三分钟的问题
-
-官网：https://wl879.github.io/apps/picview/
-还请多多试用，多多反馈</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">这个时间点用教育优惠套现划算吗？新 M1 iPad Pro 标配大概 5500 的样子会不会卖不出去？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787963">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Elethom:</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">用了三年的 iPhoneXR 今天去直营店换了新电池，感觉还能再战 2 年</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787962">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>duhb: 
-LZ 在上海，预约的五角场 Apple，本来以为天才吧很难预约，没想到上周末预约的上面时间很宽松啊，我期间还修改了一次当天的时间点也是没问题。因为我的电池健康度还有 82%，到店之后先检测了一番，小哥还想让我等等再更换，我说大老远跑来的，换了得了，于是签字开搞。机子拿走到拿回到手里大概期间等了两个半小时，还可以接受。关键还把我的扬声器一起给免费换了，感觉就还挺不错的。
-期间 Apple 小哥主动找我聊天几次，好像想让我看看有没有什么要买的，他可以给我介绍让我可以在这里买，我没打算买新设备，就随便寒暄了几句；感觉换完电池后又可以坚挺两年了，哈哈哈。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">新款 switch 发布了！等等党的胜利</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787961">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>vacker: https://www.nintendo.co.jp/hardware/detail/switch-oled/index.html
-
-
-我 618 京东 1999 买了个国行，是不是哭晕在厕所😭</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">想问大家的 Android 手机还在用 ColorNote 彩色笔记吗？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787960">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>mj520ex: 
-想问大家的安卓手机还在用 ColorNote 彩色笔记吗？
-最近，整理便签太多，在网上也没有看到云端数据怎么保存？有人懂的能讲解一下啊… （数据保存哪里去了，最后安全么？）</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">分享一个字体抽离打包的 webpack loader</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787959">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>xiaoming1992: 
-地址: font-packer-webpack-loader
-我们项目中有时可能会用到特殊字体, 但为了那么几个字引入一个好几 M 的字体文件实在是浪费，手动提取又很麻烦。
-这个 loader 就是为了解决这个问题。欢迎三连(star issue pr)
-Usage
-yarn add -D font-packer-webpack-loader
-// webpack.config.js
-
-const SRC &#x3D; path.resolve(&quot;src&quot;)
-
-module.exports &#x3D; {
-  // ...
-  module: {
-    rules: [
-      // ...
-      {
-        test: /\.ttf(\?.*)?$/i,
-        include: SRC,
-        use: [
-          // 正常 .ttf 文件需要的 loader
-          {
-            loader: &quot;url-loader&quot;,
-            options: {
-              limit: 8192,
-              name: &quot;assets/fonts/[name].[contenthash:5].[ext]&quot;,
-            },
-          },
-          // 在下面新增本 loader
-          {
-            loader: &quot;font-packer-webpack-loader&quot;,
-            options: {
-              texts: [
-                &quot;这是可选的、需要额外提取的文本&quot;,
-              ],
-              filesOrDirs: [
-                // 可选
-                // 示例是 src 目录, 你可以配置任何文件或目录, 会将该 文件 /目录 中的文本提取到 .ttf 文件中
-                SRC,
-              ],
-            },
-          },
-        ],
-      },
-    ],
-  },
-}</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">一般前后端分离的代码仓库，前端和服务端的文件夹怎么取名字呢？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787958">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>Cbdy: 
-假设是前后端放在一个仓库（也可以说说不放在一个仓库怎么加后缀前缀区分），大家一般用什么名字组合呢？
-文件夹名
-Web 前端
-static
-web
-webapp
-public
-www
-client
-front-end
-frontend
-front
-fe
-...
-服务端
-api
-apis
-server
-serve
-service
-web
-back-end
-backend
-back
-be
-...</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">编程久了是不是动手能力就提升了</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787957">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>fiypig: 没用过的后端框架，一查就能上手撸，比如 uniapp，一查就重构个小程序，这个是属于有难度还是没难度的啊。敲了 lumen 几天，我可以说我会 laravel 吗，用 uniapp uview 几天，我可以说我会了吗。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">那些一起写过的代码 – 7 年编码环境变化记（https://gangdaomeimei.cn/?p&#x3D;567）</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787956">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>fiht: 
-翻了翻我的照片，发现 7 年很快就过去了，我也从当时懵懂无知的少年变成了一个懵懂无知的职场人士。和大家分享一下我的桌面变迁。
-https://gangdaomeimei.cn/?p&#x3D;567</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">m1 mba 使用 IDEA 开启服务后内存占用 30 40 G</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787955">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>sqmwin: 
-卡成幻灯片，怎么解决 ，目前只有大退后重进
-如图</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">随想一则</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787953">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Raven316: 
-https://music.163.com/song?id&#x3D;639945&amp;userid&#x3D;53272106
-短促而终将消逝的生命，一场注定孤独的旅行，爱可能就像浓重乌云缝隙的那一缕微弱的阳光，超脱凡尘俗世的一切痛苦、背叛、伤害，若隐若现、似有似无的温柔，也可能并不是直接发源于一种美好愿望的感情，而是基于一种更加坚不可摧的内核，即理性、价值观与自我，基于遵循外界强加的逻辑枷锁的生活方式注定不可能长久，也注定会陷入迷惘，在他 70 岁的某一刻，他睁大了双眼，仿佛是第一次看到这个世界，许多问题仿佛永远得不到解答也不需要解答，带着对来生和天堂的盼望，疲倦而习惯地进入黑暗的梦乡，那里更加有安全感。仿佛躲在一个外面布满机枪和大炮的碉堡，由它们来抵抗一切伤害，在碉堡里孤独地舔舐着自己的伤口，渴望一种遥不可及的安全和受保护的感觉，想在一个人的身边像婴儿一般地睡着，回到母体内对世界的想象，梦幻、纯真而完美。强大而成功的人的孤独痛苦不会被人在意，甚至普通人或者处于困境中的人，他们的伤口也不会有人在意，因此实际上就是没有任何人会在意任何人的感受，永远带着面具，在另一个人的面前犹犹豫豫吞吞吐吐的诉说自己的烦恼，连真实表达自己的勇气都没有，你又怎么能要求他去解决现实生活中的问题，去跟随自己的内心，塑造自己的灵魂和自我，去直面生活中的一切困难和障碍，去，真正的爱一个人，照顾一个人一辈子呢。脱离时间和空间的桎梏，也许在几亿年后的某一天，人类已经灭绝，然而这一刻的温馨也已经永恒。每个人都有自己的脆弱、敏感和挣扎，又哪会有一个人坚强到足以理解世界上任何一个人的内心呢，穿越极致的痛苦和折磨，反而获得一种超脱的灵性和永恒。我会想获得第二次生命吗？可能不想，除非能和我爱的人们再次相聚，再一次爱抚，再一次亲吻，再一次一起陷入甜蜜的梦境，再一次一起度过一个淅沥的雨夜，再一次一起在夏午的凉席上酣睡，再一次给他们带来温暖和抚慰。世界上最坚硬的东西是什么？可能不是金刚石，也许就是人性中亘古不融的坚冰，脱去一层壳，下面还有一层壳，再下面还有一层，以至于会让人觉得它就是无穷无尽的，而真实的东西并不存在。循环往复，坚定恒久，同一个主题演绎着漫长人生的所有片段，苦修者毫无一丝肉欲的纯洁，不辜负任何一份爱与期待，深刻真挚虔诚热烈持久，严谨顽固而一丝不苟，完整、完美，统一而伟大。其实也许结局并不重要，甚至和某个人的关系也是这样，只要能让他 /她幸福，在一起，或者不在一起，又有什么关系呢，短促的真实也胜于长久的虚假。可能很多事情其实并不困难，需要付出的只是一点点勇气，而这种勇气则基于在坚固的逻辑台阶上轻盈的跳跃，一连串复杂而精确的逻辑链条给予我们完成现实世界中任何事情的神奇能力。基于伪造或者撒谎的理性是注定失败的，任何一分刻意的谎言都会损害自己的逻辑认知功能，同样，为自己的邪恶留下任何一点空间也意味着自己价值观和伦理道德体系的不完美，不管再怎么精心编造，苦心竭虑的去混淆，现实终会在你意想不到的时刻让你突然陷入彻底的迷惘和痛苦。因此实际上这个世界上有两种东西是最让人难以置信和接受的，一是无法相信理性真的存在，二是无法相信伦理道德真的存在，所以不同的人会有不同的脆弱和不同的永远无法克服和解脱的痛苦，所以幸福近在身边却似乎永远遥不可及。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">b 站大会员年激活码 110</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787952">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>wyc414: 
-建行信用卡首刷礼，用不到，出了回血， 是激活码，微信交易。 不知道出多少合适，我看了下，官网原价 233，
-现在 110 出
-VX :TJphotographer66</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">v 站的记事本使用有什么限制吗？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787951">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>sciel1211: 另外文章笔记可以添加一个 h1-h3 的标题目录功能吗？方便跳转。
-想要将自己的笔记，整理到这里来，以后常驻 v 站，前来咨询一下哈~</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">关于算法与离散数学之间的关系以下内容说的对么？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787950">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>huzhikuizainali: 我既不懂离散数学，也不懂算法，在一段离散数学的书评中看到以下内容。不知道他讲的是否有道理。想听听大家的意见。
-
-一言蔽之，谁都可以对着算法书『抄』出一段算法来，但如果你不理解该算法背后的数学意义，你就不算理解这段算法的行为特性，而这种一知半解很可能会给你带来麻烦。 这也是为什么所有严肃的算法书，第一部分总是先教数学——《 taocp 》，作者还专门出了一本书，讲述计算机科学所必须的数学知识，名叫《具体数学》；又或者以数学章节作起点——《 algorithms 》；最低限度，它会包括一个数学附录——《 introduction to algorithms 》,旧版是将数学知识放前面，后来改作附录了。 所以说，埋头钻研各类算法的奇技淫巧之前，不妨先把离散数学先学好，后面学习算法知识，自然是事半功倍，牙好胃也好，吃嘛嘛香！ ----------------------- 2011.1.31 更新 MIT 课程 Mathematics for Computer Science 6.042J/18.062J （ 2010，Spring ）提供的阅读资料，内容基本是这本书的精炼版本，也是一个很好的参考，可以在以下链接找到。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">怎么让一个任务在发起后的第 6 个小时，自动执行？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787949">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>uiosun: 
-详细提问：
-场景是游戏，日活跃用户 1.5 万。
-每个用户会发起多个“X 小时后执行 Y 任务”，X 范围 1~72 ； Y 包含且不限于“种地”、“建房”、“赶路”等动作；
-服务器性能有限。
-目前已启用的解决办法：
-Redis 开启 Key 失效 Event，服务以长连接监听事件推送。
-考虑到意外，DB 也构建了一张“任务表”，用于存储任务结束时间戳，玩家每次登录时，检测存在的时间戳数据，如果有，则自动执行并清理时间戳数据（ Redis 回调时，也会清理时间戳数据）。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">阿里小程序云(目前)完全免费，甚至包括云存储</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787946">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Eyon: 而且还有免费的 CDN，只不过限制在 1MB 以内，要不你们谁撸个图床吧。
-没人撸就等我这段时间忙完了撸 ......
-阿里小程序云
-https://www.aliyun.com/product/miniappdev</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">从小米 11 MIUI12.5 换回 iPhone xr ios14.6，感觉 ios 顿顿的</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787945">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>freeing: 
-之前从 xr 换到小米安卓用了好久，最近小米安卓有点腻又换回来了，刚换回来 2 天，就感觉 ios 明显比小米的安卓要顿一点，经过比较，大概是因为 ios 的动画太慢了，比小米安卓的动画速度慢，例如点开桌面文件夹的速度，特别明显，ios 慢半拍，让我有一种手机顿顿的的感觉，又想换回去了</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">深圳终于开始关注无障碍设施了</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787944">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Tempo: 
-能够做到什么程度呢
-之前在睡前消息的评论区写了一大段相关问题，看的人好像还挺多。
-还有残疾人教育，法律要求无差别，学校不干，举报不了了之。害，一个一个解决吧……</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">你是如何克服“信息茧房”获取新的知识的？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787943">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>jimmyismagic: 
-人总是不自觉的陷入信息茧房中，尤其是年龄慢慢变大时。
-年轻的时候还好点，对这个世界有好奇心。
-我们该如何让自己时刻保持新鲜感？
-你是如何寻找这个世界隐秘的角落的？</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">v2ex 日常被迫，求成都电费超级优惠</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787942">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>69partner: 
-成都缴电费有没有优惠的地方</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">[内推][广州]小迈科技 招聘 前端 / 后端 / 测试 / 产品 / 设计 / 运营 大量 HC !</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787941">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>iClarence: 
-HC 比较多，JD 就不一一写出来了，简单写几个岗位的
-前端
-岗位要求:
-1 、1-3 年以上工作经验，具有扎实的计算机基础知识 
-2 、熟悉 W3C 标准及规范，熟悉 Web 语义化，掌握盒模型、常用布局以及浏览器兼容性 
-3 、对前端性能、可访问性、可维护性有较深的理解 
-4 、对前端工程化和模块化有一定的了解，至少熟悉一种以下流行框架（ React/Vue/AngularJs ） 
-5 、熟悉前端调试及排错方法，对计算机网络、web 服务有一定的理解 
-6 、熟悉 linux 、有前端框架设计经验、nodejs 开发经验优先 
-7 、工作积极主动，具备较强责任心，有较强的团队意识，抗压能力强。
-
-薪资 10k-20k
-后端
-岗位要求:
-1 、3 年以上 JAVA 软件开发经验，日活 100W 以上优先，有实际的架构设计经验，有互联网行业相关开发经验优先； 
-2 、熟练运用 Java，熟悉 SpringCloud 、SpringBoot 、Spring 、Mybatis 等框架，对主流框架源码有一定了解，能快速掌握主流开发框架； 
-3 、熟悉 Mysql 开源数据库，并能根据业务需求进行数据库设计与优化； 
-4 、熟悉 JVM 优化、RPC 、缓存、消息队列、负载均衡、Nginx 等； 
-5 、熟悉 git 、jenkins 、Maven 原理及日常使用。 
-6 、熟悉常见设计模式，有系统架构搭建经验，具备良好的编码实践，善于重构代码和有 CodeReview 习惯的优先。 
-7 、掌握基础的分布式系统设计，熟悉微服务与高可用架构设计，有高并发环境下数据库调优经验者优先，主导过大型系统设计者优先。&quot;
-
-薪资 15k-25k
-还有 运营、设计（游戏类）、产品等大量 HC
-有兴趣的可发简历到 wwwClarence@163.com 或者 评论留微信我主动加</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">公司的 web 项目怎么实现热更新，不需要停服就能实现发版</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/787940">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>longmeier90: 
-之前用户少都是公司内部人使用，随便新增一个什么功能，直接就是拉一下代码，重启 web 服务也没问题。最近公司使用的人多了以后，发现这种方式不太适用啦。
-我就想有用什么方式改造一下能够实现热更新或者是发版不停服，让用户无感知发版。难道是启动两套服务，做个负载，一个一个的重启？没这样搞过，不知道这种模式会不会有什么坑之类的，或者有什么更好的实现方法没有。
-各位大佬给个建议！&#x60;&#x60;&#x60;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://www.smashingmagazine.com/">Articles on Smashing Magazine — For Web Designers And Developers</a></h3>
           <section class="articles-per-source">
             <article>
@@ -1208,11 +1173,11 @@ HC 比较多，JD 就不一一写出来了，简单写几个岗位的
           <section class="articles-per-source">
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">分布式磁盘 KV 存储 - Kvrocks</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/8749041a192bbc195a5184207?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">🏆【算法数据结构专题】「线程锁算法专项」初探CLH队列锁机制原理分析</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/da830b5ad264a53c2ced9f9c4?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
-                    <span>Kvrocks 是基于 RocksDB 之上兼容 Redis 协议的 NoSQL 存储服务，设计目标是提供一个低成本以及大容量的 Redis 服务，作为 Redis 在大数据量场景的互补服务，选择兼容 Redis 协议是因为简单易用且业务迁移成本低。目前线上使用的公司包含: 美图、携程、百度等
+                    <span>SMP(Symmetric Multi-Processor)，即对称多处理器结构，指服务器中多个CPU对称工作，每个CPU访问内存地址所需时间相同。其主要特征是共享，包含对CPU，内存，I/O等进行共享。
 点击查看原文&gt;</span>
                   </div>
                 </a>
@@ -1220,95 +1185,12 @@ HC 比较多，JD 就不一一写出来了，简单写几个岗位的
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">垃圾回收器的前世今生</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/89a5b1ea8cca49338cfbbc0c7?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">推荐系统的人工调控策略(二十八)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/eb9456d9c2743e7a4a5dbc7d9?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
                   <div class="article-summary-box-inner">
                     <span class="article-reading-time">(0 min)</span>
-                    <span>CMS与G1的简单比对。垃圾回收器的发展，从串行到并行，最后归于并发。
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">疯了吧！这帮人居然用 Go 写“前端”？（一）</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/50a5df20d2298b54e67443dac?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>无一例外，谈到前后端分离“必定”是 RESTful API，算是定式了。但我们知道 REST 在资源划分上的设计总是与 UI 大相径庭，大量专用、特异、古怪的接口就像永远拾不尽的菌菇，你费力铲除它们，但一场雷雨便又枯树复披。
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">基于MaxCompute快速打通数据仓库和数据湖的湖仓一体实践</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/77c288dd77bb862821ef49210?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>本文为2021年阿里云峰会，阿里云开发者大会大数据与AI一体化开发平台分论坛，如何基于MaxCompute快速打通数据仓库和数据湖的湖仓一体实践演讲翻译稿。
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">必看！史上最全云原生全景图解读攻略来啦</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/977aa7861f84d01e60275051a?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>如果你研究过云原生应用程序和相关技术，大概率你遇到过 CNCF 的云原生全景图。这张全景图技术之多、规模之大无疑会让人感到震惊，那么我们该如何去理解这张图呢？
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">聊聊数据仓库中维度表设计的二三事</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/3c9bdc1ce9f120f3f707bd03b?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>大家好，我是云祁！今天和大家聊聊数据仓库中维度表设计的那些事。
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Nacos配置中心交互模型是 push 还是 pull ？你应该这么回答</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/4f6f53e6f24b965d0c33b3a69?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>推 还是 拉  你弄清楚了吗？
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Serverless 崛起背后的五大挑战</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/75e63f595c8e90cbea4385e96?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>众所周知，云计算的出现改变了传统 IT 架构和运维方式，而以容器、微服务为代表的技术更是在各个层面不断升级云服务的技术能力，它们将应用和环境中的很多通用能力变成了一种服务。​Serverless 架构的出现，同样带来了跨越式的变革。
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">多标签分类中的损失函数与评价指标</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/42bb9839d31c994e001b0162b?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>各位朋友大家好，欢迎来到月来客栈。在前面的一篇文章[1]中笔者介绍了在单标签分类问题中模型损失的度量方法，即交叉熵损失函数。同时也介绍了多分类任务中常见的评价指标及其实现方法[2]。在接下来的这篇文章中，笔者将会详细介绍在多标签分类任务中两种常见
+                    <span>写在前面：
+大家好，我是强哥，一个热爱分享的技术狂。目前已有 12 年大数据与AI相关项目经验， 10 年推荐系统研究及实践经验。平时喜欢读书、暴走和写作。
 点击查看原文&gt;</span>
                   </div>
                 </a>
@@ -1598,30 +1480,6 @@ The post Hack the “Deploy to Netlify” Button Using Environment Variables to 
                     <span class="article-reading-time">(3 min)</span>
                     <span>I got this exact question in an email the other day, and I thought it would make a nice blog post because of how wonderfully satisfying this is to do in CSS these days. Plus we can sprinkle in polish …
 The post How do you make a layout with pictures down one side of a page matched up with paragraphs on the other side? appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">When a Click is Not Just a Click</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://css-tricks.com/when-a-click-is-not-just-a-click/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(15 min)</span>
-                    <span>The click event is quite simple and easy to use; you listen for the event and run code when the event is fired. It works on just about every HTML element there is, a core feature of the DOM API.…
-The post When a Click is Not Just a Click appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Fixing a Bug in Low-Resolution Mode</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://css-tricks.com/fixing-a-bug-in-low-resolution-mode/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(4 min)</span>
-                    <span>I was working on a bug ticket the other day where it was reported that an icon was sitting low in a button. Just not aligned like it should be. I had to go on a little journey to figure …
-The post Fixing a Bug in Low-Resolution Mode appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.</span>
                   </div>
                 </a>
               </details>
@@ -2136,31 +1994,9 @@ Thank you @PiyushLosalka</span>
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-06-08">2021-06-08</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.smashingmagazine.com/">Articles on Smashing Magazine — For Web Designers And Developers</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">From AVIF to WebP: A New Smashing Book By Addy Osmani</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://smashingmagazine.com/2021/06/image-optimization-book-release/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(8 min)</span>
-                    <span>It’s here! For the last year, we’ve been working with Addy Osmani on a new Smashing Book all around image optimization. And now it’s here. Meet “Image Optimization”, our deep-dive guide to understand how to deliver high-quality images on the web fast.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-07-07T00:22:37.481Z">2021-07-07T00:22:37.481Z</time>
+    <time id="build-timestamp" datetime="2021-07-08T00:20:46.716Z">2021-07-08T00:20:46.716Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.11.0</a></span>
   </footer>
   <script src="index.js"></script>

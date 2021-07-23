@@ -4,17 +4,7 @@
       "title": "Release notes from osmosfeed",
       "feedUrl": "https://github.com/osmoscraft/osmosfeed/releases.atom",
       "siteUrl": "https://github.com/osmoscraft/osmosfeed/releases",
-      "articles": [
-        {
-          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.0",
-          "author": null,
-          "description": "Added: support an experimental template for YouTube feed 📺 Demo | Source\n\nAggregate content from any YouTube channel rss url https://www.youtube.com/feeds/videos.xml?channel_id=<replace_with_channel_id>\nVideos are embedded via iframe and loading accelerated by youtube-lite-embed\nAds are reduced thanks to YouTube's policy for embedded videos 🙃\nWorks on mobile devices with butter smooth horizontal scroll.\nCaveat: the template works only with YouTube content. You cannot mix textual RSS feed or other video sources such as Vimeo.\nChanged: Default HTML template meta tag adjusted to match convention\nChanged: sources in template data is now ordered by last update timestamp (as opposed to alphabetical)\nThank you @PiyushLosalka",
-          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.0",
-          "publishedOn": "2021-06-23T05:57:59.000Z",
-          "wordCount": 370,
-          "title": "v1.11.0"
-        }
-      ]
+      "articles": []
     },
     {
       "title": "CSS-Tricks",
@@ -22,12 +12,39 @@
       "siteUrl": "https://css-tricks.com",
       "articles": [
         {
+          "id": "https://css-tricks.com/?p=344960",
+          "author": "Chris Coyier",
+          "description": "Eric, again not mincin’ no words with blog post titles. This is me:\nThe most common CSS declaration organization technique I come across is none whatsoever.\nAlmost none, anyway. I tend to group them by whatever dumps out of my …\nThe post Organize your CSS declarations alphabetically appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
+          "link": "https://ericwbailey.design/writing/organize-your-css-declarations-alphabetically/",
+          "publishedOn": "2021-07-22T22:33:29.000Z",
+          "wordCount": 965,
+          "title": "Organize your CSS declarations alphabetically"
+        },
+        {
+          "id": "https://css-tricks.com/?p=344580",
+          "author": "Nathan Babcock",
+          "description": "We’re going to walk through the technical process of hooking into Google Drive’s API to source content on a website. We’ll examine the step-by-step implementation, as well as how to utilize server-side caching to avoid the major pitfalls to avoid …\nThe post Using Google Drive as a CMS appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
+          "link": "https://css-tricks.com/using-google-drive-as-a-cms/",
+          "publishedOn": "2021-07-22T14:44:26.000Z",
+          "wordCount": 2790,
+          "title": "Using Google Drive as a CMS"
+        },
+        {
+          "id": "https://css-tricks.com/?p=344330",
+          "author": "Chris Coyier",
+          "description": "Hashnode is a free platform for developer blogging. Say you’ve just finished an ambitious project and want to write about 10 important lessons you’ve learned as a developer during it. You should definitely blog it—I love that kind of blog post, myself. Making a jump into the technical debt of operating your own blog isn’t a small choice, but it’s important to own your own content. With Hashnode, the decision gets a lot easier. You can blog under a site you entirely own, and at the same time, reap the benefits of hosted software tailor-made for developer blogging and be part of a social center around developer writing.\nThe post Hashnode: A Blogging Platform for Developers appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
+          "link": "https://css-tricks.com/hashnode-a-blogging-platform-for-developers/",
+          "publishedOn": "2021-07-22T14:39:09.000Z",
+          "wordCount": 967,
+          "title": "Hashnode: A Blogging Platform for Developers"
+        },
+        {
           "id": "https://css-tricks.com/?p=344950",
           "author": "Chris Coyier",
           "description": "Remember Tyler Hall’s personal story of a UX moment where the popup sharing context menu on iOS had no visible indication that the content inside was scrollable? The thing his mom wanted to do seemed impossible iOS isn’t alone here …\nThe post Yet Another Mobile Context Menu With No Indication it Can Scroll appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
           "link": "https://css-tricks.com/yet-another-mobile-context-menu-with-no-indication-it-can-scroll/",
           "publishedOn": "2021-07-21T21:08:17.000Z",
-          "wordCount": 513,
+          "wordCount": 546,
           "title": "Yet Another Mobile Context Menu With No Indication it Can Scroll"
         },
         {
@@ -45,7 +62,7 @@
           "description": "Turning website design files into a combination of HTML, CSS and JavaScript is the bread and butter of many front-end web development jobs, but there’s a part of this work that doesn’t neatly fit in to tutorials on any specific …\nThe post A Step-By-Step Process for Turning Designs Into Code appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
           "link": "https://css-tricks.com/a-step-by-step-process-for-turning-designs-into-code/",
           "publishedOn": "2021-07-21T14:37:07.000Z",
-          "wordCount": 4131,
+          "wordCount": 4527,
           "title": "A Step-By-Step Process for Turning Designs Into Code"
         },
         {
@@ -63,7 +80,7 @@
           "description": "Eric doesn’t mince words, especially in the title, but also in the conclusion:\nIn modern web design and development, displaying an image is a highly intentional act. Alternate descriptions allow us to explain the content of the image, and in \n…\nThe post Your Image Is Probably Not Decorative appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
           "link": "https://www.smashingmagazine.com/2021/06/img-alt-attribute-alternate-description-decorative/",
           "publishedOn": "2021-07-20T20:02:06.000Z",
-          "wordCount": 1646,
+          "wordCount": 1644,
           "title": "Your Image Is Probably Not Decorative"
         },
         {
@@ -72,16 +89,16 @@
           "description": "I watched Kevin Powell’s video where he was able to recreate a nice typewriter-like animation using CSS. It’s neat and you should definitely check it out because there are bonafide CSS tricks in there. I’m sure you’ve seen other CSS …\nThe post Typewriter Animation That Handles Anything You Throw at It appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
           "link": "https://css-tricks.com/typewriter-animation-that-handles-anything-you-throw-at-it/",
           "publishedOn": "2021-07-20T15:03:40.000Z",
-          "wordCount": 3182,
+          "wordCount": 3263,
           "title": "Typewriter Animation That Handles Anything You Throw at It"
         },
         {
           "id": "https://css-tricks.com/?p=344404",
           "author": "Chris Coyier",
-          "description": "Putting images on websites is incredibly simple, yes? Actually, yes, it is. You use <img and link it to a valid source in the src attribute and you’re done. Except that there are (counts fingers) 927 things you could (and …\nThe post Images are hard. appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
+          "description": "Putting images on websites is incredibly simple, yes? Actually, yes, it is. You use <img> and link it to a valid source in the src attribute and you’re done. Except that there are (counts fingers) 927 things you could (and …\nThe post Images are hard. appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
           "link": "https://css-tricks.com/images-are-hard/",
           "publishedOn": "2021-07-19T20:51:07.000Z",
-          "wordCount": 965,
+          "wordCount": 970,
           "title": "Images are hard."
         },
         {
@@ -90,7 +107,7 @@
           "description": "The Scroll-Linked Animations specification is an upcoming and experimental addition to CSS. Thanks to the @scroll-timeline at-rule and animation-timeline property this specification provides, you can control the time position of regular CSS Animations by scrolling.\nIn this post, we’ll take …\nThe post Practical Use Cases for Scroll-Linked Animations in CSS with Scroll Timelines appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
           "link": "https://css-tricks.com/practical-use-cases-for-scroll-linked-animations-in-css-with-scroll-timelines/",
           "publishedOn": "2021-07-19T14:43:29.000Z",
-          "wordCount": 2139,
+          "wordCount": 2177,
           "title": "Practical Use Cases for Scroll-Linked Animations in CSS with Scroll Timelines"
         },
         {
@@ -108,7 +125,7 @@
           "description": "Let’s build a fully functioning and settable “analog” clock with CSS custom properties and the calc() function. Then we’ll convert it into a “digital” clock as well. All this with no JavaScript!\nHere’s a quick look at the clocks …\nThe post Of Course We Can Make a CSS-Only Clock That Tells the Current Time! appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
           "link": "https://css-tricks.com/of-course-we-can-make-a-css-only-clock-that-tells-the-current-time/",
           "publishedOn": "2021-07-16T14:43:01.000Z",
-          "wordCount": 5103,
+          "wordCount": 5143,
           "title": "Of Course We Can Make a CSS-Only Clock That Tells the Current Time!"
         },
         {
@@ -128,33 +145,6 @@
           "publishedOn": "2021-07-15T14:40:03.000Z",
           "wordCount": 2258,
           "title": "How to Get a Pixel-Perfect, Linearly Scaled UI"
-        },
-        {
-          "id": "https://css-tricks.com/?p=344249",
-          "author": "Temani Afif",
-          "description": "I recently illustrated how we can achieve complex CSS animations using cubic-bezier() and how to do the same when it comes to CSS transitions. I was able to create complex hover effect without resorting to keyframes. In this article, I …\nThe post Build Complex CSS Transitions using Custom Properties and cubic-bezier() appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
-          "link": "https://css-tricks.com/build-complex-css-transitions-using-custom-properties-and-cubic-bezier/",
-          "publishedOn": "2021-07-14T14:31:02.000Z",
-          "wordCount": 1964,
-          "title": "Build Complex CSS Transitions using Custom Properties and cubic-bezier()"
-        },
-        {
-          "id": "https://css-tricks.com/?p=344407",
-          "author": "Chris Coyier",
-          "description": "Most of us grumble when running across a frustrating UX experience online (like not being able to complete a transaction because of a misplaced button). We might pen a whiny tweet. Jason Grigsby is like I’m going to write 2,000 …\nThe post A Bashful Button Worth $8 Million appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
-          "link": "https://cloudfour.com/thinks/a-bashful-button-worth-8-million/",
-          "publishedOn": "2021-07-14T14:25:08.000Z",
-          "wordCount": 2673,
-          "title": "A Bashful Button Worth $8 Million"
-        },
-        {
-          "id": "https://css-tricks.com/?p=344316",
-          "author": "Chris Coyier",
-          "description": "As a day-job, React-using person, I like to stay abreast of interesting React news. As such, I save a healthy amount of links. Allow me to dump out my latest pile. Most of this is about React but not all …\nThe post Links on React and JavaScript appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.",
-          "link": "https://css-tricks.com/links-on-react-and-javascript/",
-          "publishedOn": "2021-07-13T19:57:10.000Z",
-          "wordCount": 1003,
-          "title": "Links on React and JavaScript"
         }
       ]
     },
@@ -164,12 +154,26 @@
       "siteUrl": "https://www.smashingmagazine.com/",
       "articles": [
         {
+          "id": "https://smashingmagazine.com/2021/07/time-schedule-professional-trafft/",
+          "author": "hello@smashingmagazine.com (Matthew Talebi)",
+          "description": "Are you running a business and have too many things going on at once? Meetings, bugs, customer feedback, new clients in addition to your already tight deadlines? Let’s face it, time management is hard, and it becomes even more difficult in the trying times we are in.",
+          "link": "https://smashingmagazine.com/2021/07/time-schedule-professional-trafft/",
+          "publishedOn": "2021-07-22T12:30:00.000Z",
+          "wordCount": 2582,
+          "title": "Adding Time To Your Schedule As A Professional",
+          "enclosure": {
+            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/75bfca56-7f2b-488f-b9eb-7fa00d930444/5-time-scheduling.png",
+            "length": "0",
+            "type": "image/png"
+          }
+        },
+        {
           "id": "https://smashingmagazine.com/2021/07/color-tools-resources/",
           "author": "hello@smashingmagazine.com (Cosima Mielke)",
           "description": "Do you need a little inspiration boost? We’ve collected some useful color tools and resources that we’ve discovered lately — to help you get the most out of your creativity. We’ve also just recently covered [CSS auditing tools](https://www.smashingmagazine.com/2021/03/css-auditing-tools/), [CSS generators](https://www.smashingmagazine.com/2021/03/css-generators/), [accessible front-end components](https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/), [front-end boilerplates](https://www.smashingmagazine.com/2021/06/useful-frontend-boilerplates-starter-kits/) and [VS code extensions](https://www.smashingmagazine.com/2021/05/useful-vs-code-extensions-web-developers/) — you might find them useful, too.",
           "link": "https://smashingmagazine.com/2021/07/color-tools-resources/",
           "publishedOn": "2021-07-21T13:00:00.000Z",
-          "wordCount": 3060,
+          "wordCount": 3058,
           "title": "Color Tools And Resources",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/17380a77-f247-450e-be45-2b2e139f7a33/cool-backgrounds.png",
@@ -197,7 +201,7 @@
           "description": "By adding visual elements to your tests, you can gain more options to add meaningful ways in maintaining a high level of quality for your app. Colby Fayock explains how.",
           "link": "https://smashingmagazine.com/2021/07/maintaining-end-to-end-quality-visual-testing/",
           "publishedOn": "2021-07-19T10:30:00.000Z",
-          "wordCount": 4488,
+          "wordCount": 4494,
           "title": "Maintaining End-To-End Quality With Visual Testing",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/565523e3-0845-4042-9cd1-b3e48c75519d/maintaining-end-to-end-quality-visual-testing.jpg",
@@ -211,7 +215,7 @@
           "description": "Web app accessibility appears difficult because it seems that there is little information on the subject available online. Let’s take a closer look at the accessible use of framework features, concrete Vue.js traits, as well as community initiatives and vetted patterns.",
           "link": "https://smashingmagazine.com/2021/07/three-insights-vuejs-accessibility/",
           "publishedOn": "2021-07-16T13:00:00.000Z",
-          "wordCount": 4804,
+          "wordCount": 4800,
           "title": "Three Insights I Gained While Researching Vue.js Accessibility",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c3908803-4ddc-4820-8f4e-85e11b4ebbb7/three-insights-vuejs-accessibility.jpg",
@@ -225,7 +229,7 @@
           "description": "There are two strategies for incrementally building websites that are growing in popularity: Incremental Static Regeneration and Distributed Persistent Rendering. What’s the difference? Let’s figure it out.",
           "link": "https://smashingmagazine.com/2021/07/isr-dpr-explained/",
           "publishedOn": "2021-07-15T14:00:00.000Z",
-          "wordCount": 1078,
+          "wordCount": 1064,
           "title": "ISR vs DPR: Big Words, Quick Explanation",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/8e4090b9-8bd9-4d5a-aaed-5177c46a6803/isr-dpr-explained.jpg",
@@ -267,7 +271,7 @@
           "description": "In JavaScript, attaching an event listener to constantly fire a callback on scroll can be performance-intensive. But there is a better way with Intersection Observer.",
           "link": "https://smashingmagazine.com/2021/07/dynamic-header-intersection-observer/",
           "publishedOn": "2021-07-13T12:00:00.000Z",
-          "wordCount": 3254,
+          "wordCount": 3252,
           "title": "Building A Dynamic Header With Intersection Observer",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/67cc7303-3dc9-4d67-b0f4-b6f77783380f/dynamic-header-intersection-observer.jpg",
@@ -295,7 +299,7 @@
           "description": "CSS refactoring is not an easy task — it needs to be done in a way that doesn't create problems. First we need to analyze the existing codebase, audit CSS codebase health, discover weaknesses, agree on the approach, and convince management to invest time and resources into the process.",
           "link": "https://smashingmagazine.com/2021/07/refactoring-css-introduction-part1/",
           "publishedOn": "2021-07-12T13:30:00.000Z",
-          "wordCount": 3615,
+          "wordCount": 3616,
           "title": "Refactoring CSS: Introduction (Part 1)",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/b8b722a7-791f-433e-8d76-f0382d387e82/refactoring-css-introduction-part1.jpg",
@@ -309,7 +313,7 @@
           "description": "Accessibility is often overlooked or bolted on to the end of a project. Let’s figure out how to implement and advocate for accessibility from the inception of a project to the release or handoff and beyond.",
           "link": "https://smashingmagazine.com/2021/07/strong-case-for-accessibility/",
           "publishedOn": "2021-07-09T10:30:00.000Z",
-          "wordCount": 2964,
+          "wordCount": 2949,
           "title": "Making A Strong Case For Accessibility",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/9c226eaa-3251-4d02-9ade-96a88ad759fc/strong-case-for-accessibility.jpg",
@@ -323,7 +327,7 @@
           "description": "Even though Vue.js claims to have an approachable minimalist framework that can be incrementally adaptable, it can be a little bit overwhelming when starting as a Vue.js newbie. In this article, we’re looking at ways to make writing Vue.js a breeze.",
           "link": "https://smashingmagazine.com/2021/07/tools-practices-speed-up-vuejs-development-process/",
           "publishedOn": "2021-07-08T11:00:00.000Z",
-          "wordCount": 4788,
+          "wordCount": 4781,
           "title": "Tools And Practices To Speed Up The Vue.js Development Process",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/83768020-8004-41f2-b9a9-14b86c18eb4d/tools-practices-speed-up-vuejs-development-process.jpg",
@@ -337,7 +341,7 @@
           "description": "Interactive Components in Figma allows designers to create a component with states (hover, active, clicked, focus) and make it interactive so that every copy of the component will inherit those same interactions by default. Let’s explore how it can reduce the time and effort needed to create interactions for your mock-ups.",
           "link": "https://smashingmagazine.com/2021/07/introduction-figma-interactive-components/",
           "publishedOn": "2021-07-07T11:00:00.000Z",
-          "wordCount": 4063,
+          "wordCount": 4060,
           "title": "An Introduction To Figma Interactive Components",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/1a8390d0-26c0-4476-bc00-19e8c89b60c5/introduction-figma-interactive-components.jpg",
@@ -365,7 +369,7 @@
           "description": "In this article, Ahmad Shadeed explains what HSL is, how to use it, and shares some of the useful use-cases and examples that you can use right away in your current projects.",
           "link": "https://smashingmagazine.com/2021/07/hsl-colors-css/",
           "publishedOn": "2021-07-05T10:30:00.000Z",
-          "wordCount": 1590,
+          "wordCount": 1591,
           "title": "Using HSL Colors In CSS",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/73607a1e-fe7f-47ea-aada-df79342d823a/hsl-colors-css.jpg",
@@ -379,7 +383,7 @@
           "description": "With so many tools and approaches, email still has quite a few pain points, both for developers and email marketers. Email is difficult because it has too many aspects to set and a few instances with no common rules to follow.",
           "link": "https://smashingmagazine.com/2021/07/email-testing-flow/",
           "publishedOn": "2021-07-02T10:30:00.000Z",
-          "wordCount": 4204,
+          "wordCount": 4213,
           "title": "Email Testing Flow As It Should Be",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/57a53d31-9651-4d88-b2fe-f8de70c08da1/email-testing-flow.jpg",
@@ -393,7 +397,7 @@
           "description": "When writing front-end tests, you’ll find a lot of pitfalls along the way. Let’s explore common mistakes developers make, and how to avoid them. Testing doesn’t need to be painful, after all.",
           "link": "https://smashingmagazine.com/2021/07/frontend-testing-pitfalls/",
           "publishedOn": "2021-07-01T12:30:00.000Z",
-          "wordCount": 4770,
+          "wordCount": 4774,
           "title": "It’s A (Front-End Testing) Trap! Six Common Testing Pitfalls And How To Solve Them",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/dc1434b9-70c3-4fb2-821e-2128e3373246/frontend-testing-pitfalls.jpg",
@@ -407,7 +411,7 @@
           "description": "The web is single-threaded. This makes it increasingly hard to write smooth and responsive apps. Workers have a bad rep, but can be an important and useful tool in any web developer's toolbelt for these kinds of problems. Let’s get up to speed on Workers on the Web!",
           "link": "https://smashingmagazine.com/2021/06/web-workers-2021/",
           "publishedOn": "2021-06-30T12:00:00.000Z",
-          "wordCount": 4733,
+          "wordCount": 4748,
           "title": "The State Of Web Workers In 2021",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/379e4510-b4ab-4fde-9a5d-122738be19b2/web-workers-2021.jpg",
@@ -421,7 +425,7 @@
           "description": "Let’s welcome July with some fresh desktop wallpapers. Designed by artists and designers from around the world, they are available with and without a calendar. Enjoy!",
           "link": "https://smashingmagazine.com/2021/06/desktop-wallpaper-calendars-july-2021/",
           "publishedOn": "2021-06-30T09:30:00.000Z",
-          "wordCount": 3728,
+          "wordCount": 3727,
           "title": "The Many Shades Of July (2021 Desktop Wallpapers Edition)",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/814b3b6e-1510-4c12-8504-433157173355/july-21-against-the-current-preview-opt.png",
@@ -463,7 +467,7 @@
           "description": "In this article, Manuel explains why Emmet is one of his favorite productivity tools for writing HTML and CSS, and how you can create custom Emmet snippets in Visual Studio Code to help you improve your front-end workflows even more.",
           "link": "https://smashingmagazine.com/2021/06/custom-emmet-snippets-vscode/",
           "publishedOn": "2021-06-28T10:30:00.000Z",
-          "wordCount": 2536,
+          "wordCount": 2533,
           "title": "Creating Custom Emmet Snippets In VS Code",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/b7ff6227-3a15-4237-8e58-aa783fc9c485/custom-emmet-snippets-vscode.jpg",
@@ -477,7 +481,7 @@
           "description": "This article explains how we can connect different types of content in a Next.js application. With this technique, we can add any kind of one-to-one, one-to-many, or even many-to-many relationship to our projects.",
           "link": "https://smashingmagazine.com/2021/06/creating-multi-author-blog-nextjs/",
           "publishedOn": "2021-06-25T11:30:00.000Z",
-          "wordCount": 5446,
+          "wordCount": 5445,
           "title": "Creating A Multi-Author Blog With Next.js",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/28d0f286-9b01-4f8d-aede-01248ba3491d/creating-multi-author-blog-nextjs.jpg",
@@ -491,7 +495,7 @@
           "description": "This article is a case study of how a UX audit affects a UI. It explains how a famous educational platform can be analyzed edX against Jakob Nielsen’s usability guidelines. To get started, Mark Lankmiller shares all of the criteria and metrics he used for his UX audit.",
           "link": "https://smashingmagazine.com/2021/06/ux-audit-edtech-platform-case-study/",
           "publishedOn": "2021-06-25T10:00:00.000Z",
-          "wordCount": 3541,
+          "wordCount": 3543,
           "title": "How To Run A UX Audit For A Major EdTech Platform (Case Study)",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/d5116c31-3d66-47b0-aa81-1a6759c68b92/ux-audit-edtech-platform-case-study.jpg",
@@ -505,7 +509,7 @@
           "description": "In the dynamic and unpredictable environments in which we work, even the most carefully crafted solutions can have a short shelf life. When we accept that our work is impermanent and our problem-solving abilities are limited, our goal can shift from delivering full solutions to developing tools that empower our users to adaptively design for themselves.",
           "link": "https://smashingmagazine.com/2021/06/design-thinking-problem-solving-strategy/",
           "publishedOn": "2021-06-24T14:00:00.000Z",
-          "wordCount": 4180,
+          "wordCount": 4176,
           "title": "The Rise Of Design Thinking As A Problem Solving Strategy",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/e5ea9274-2ff4-49d8-b259-a5f0904cec77/design-thinking-problem-solving-strategy.jpg",
@@ -526,20 +530,6 @@
             "length": "0",
             "type": "image/png"
           }
-        },
-        {
-          "id": "https://smashingmagazine.com/2021/06/automating-screen-reader-testing-macos-autovo/",
-          "author": "hello@smashingmagazine.com (Cameron Cundiff)",
-          "description": "Automated testing is an important part of any software project, including testing for accessibility. There are already tools for linting and integration testing accessibility, but what about end-to-end testing with real assistive technology? Since I hadn’t seen this before, I set out to build Auto VO, a driver for the VoiceOver screen reader.",
-          "link": "https://smashingmagazine.com/2021/06/automating-screen-reader-testing-macos-autovo/",
-          "publishedOn": "2021-06-23T09:30:00.000Z",
-          "wordCount": 1411,
-          "title": "Automating Screen Reader Testing On macOS Using Auto VO",
-          "enclosure": {
-            "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/c81018b9-c45e-4c21-9762-dff84dd2682c/automating-screen-reader-testing-macos-autovo.jpg",
-            "length": "0",
-            "type": "image/jpg"
-          }
         }
       ]
     },
@@ -549,12 +539,93 @@
       "siteUrl": "https://docs.rsshub.app",
       "articles": [
         {
+          "id": "https://m.idai.ly/se/f79aKT",
+          "author": null,
+          "description": "2020东京奥运会倒计时1天，飞行表演队在空中画出奥运五环喷气云，东京。7月22日，东京奥组委宣布解雇开幕式导演小林贤太郎，原因为「导演曾参与制作模仿犹太人大屠杀的搞笑视频」。另一名负责开幕式作曲的音乐人于本周辞任，由其创作的4分钟乐曲亦被取消。东京奥组委透露将有包括日本天皇、首相在内的950人出席观看现场开幕式。当天东京都新增确诊1832例，创下6个月内最高纪录。摄影师：Kai Pfaffenbach",
+          "link": "https://m.idai.ly/se/f79aKT",
+          "publishedOn": "2021-07-22T08:59:00.000Z",
+          "wordCount": 161,
+          "title": "东京奥运倒数1日"
+        },
+        {
+          "id": "https://m.idai.ly/se/4b54J9",
+          "author": null,
+          "description": "美国总统 Joe Biden 访问俄亥俄州一个电工培训中心。7月21日，Biden 宣称上任6个月迄今美国经济出现40年最快增速，创造美国史上最多的工作岗位，预计2021年美国 GDP 增速将达到7%以上，成为全球唯一经济增长预期超过疫情前的发达国家。当天美国参议院对 Biden 提出的基建法案进行程序性投票，最终因共和党议员全体反对而未能启动辩论。摄影师：Jonathan Ernst",
+          "link": "https://m.idai.ly/se/4b54J9",
+          "publishedOn": "2021-07-22T07:59:00.000Z",
+          "wordCount": 161,
+          "title": "拜登称美国经济超疫情前"
+        },
+        {
+          "id": "https://m.idai.ly/se/610gFR",
+          "author": null,
+          "description": "美日韩副外长举行三方会议，东京。7月21日，美日韩三国副外长就气候变化、新冠疫情及地区安全局势等议题进行讨论，三方一致同意加强合作推动朝鲜半岛实现无核化，并提及「台湾海峡稳定」的重要性。当天中国外交部发言人赵立坚强调，台湾、涉港、涉疆问题都是中国的内部事务，不容任何外部势力干涉。美国国务院宣布副国务卿 Wendy Sherman 计划于7月25至26日访问中国天津，与中国外长王毅、外交部副部长谢锋举行会谈。摄影师：Kazuhiro Nogi",
+          "link": "https://m.idai.ly/se/610gFR",
+          "publishedOn": "2021-07-22T06:59:00.000Z",
+          "wordCount": 161,
+          "title": "美日韩副外长会晤"
+        },
+        {
+          "id": "https://m.idai.ly/se/7e9373",
+          "author": null,
+          "description": "俄「质子-M」火箭搭载「科学号」（Nauka）实验舱发射升空，拜科努尔航天发射场。7月21日，俄罗斯「科学号」实验舱成功送入近地轨道，预计8天后与空间站对接。新实验舱重20.35吨，长13米、直径2.8米，气密空间达到70.1立方米，是迄今空间站最大的舱体模块。「科学号」实验舱外装有机械臂和2块太阳能帆板，内部提供居住间、卫生间和制氧净水系统，基本上具备宇航员生命保障和科学实验的全部功能。摄影师：Roscosmos",
+          "link": "https://m.idai.ly/se/7e9373",
+          "publishedOn": "2021-07-22T06:57:00.000Z",
+          "wordCount": 161,
+          "title": "俄发射科学号实验舱"
+        },
+        {
+          "id": "https://m.idai.ly/se/055ZYf",
+          "author": null,
+          "description": "郑州市遭遇史上最大暴雨侵袭，车辆被淹没在积水中，中国河南。7月22日，河南洪涝灾害遇难人数上升至33人，失踪8人，影响全省超过300万人口，直接经济损失约12.2亿元。中国人民解放军中部战区相继派出约8500名解放军官兵、武警和民兵参与抢险救援，国家防总已紧急调派翼龙无人机搭建空中应急通信平台协助救灾。摄影师：iDaily Media",
+          "link": "https://m.idai.ly/se/055ZYf",
+          "publishedOn": "2021-07-22T06:55:00.000Z",
+          "wordCount": 161,
+          "title": "郑州特大暴雨灾害"
+        },
+        {
+          "id": "https://m.idai.ly/se/4dac9d",
+          "author": null,
+          "description": "贾玛清真寺因防疫封锁而取消「宰牲节」祷告活动，新德里。7月21日，印度穆斯林连续第二年在防疫措施期间迎来宰牲节，政府禁止大规模祷告仪式并限制集会人数。当天印度新增确诊41697例，死亡510例，人口疫苗接种率仅24.1%。亚洲开发银行最新报告指出，亚洲发展中经济体经济增长率将低于预期，主要原因是新冠疫情反弹，其中印度2021年 GDP 增长预测值下调至10%。摄影师：Arvind Yadav",
+          "link": "https://m.idai.ly/se/4dac9d",
+          "publishedOn": "2021-07-22T06:53:00.000Z",
+          "wordCount": 161,
+          "title": "印度宰牲节疫情封锁"
+        },
+        {
+          "id": "https://m.idai.ly/se/bbayAD",
+          "author": null,
+          "description": "也门穆斯林在卡希拉古堡（Al-Qahira citadel）举行宰牲节集体祷告，塔伊兹。长期内战和经济封锁导致也门货币严重贬值，2021年7月官方货币汇率跌破1美元兑1000里亚尔。由于1只羊的价格高达15万里亚尔（约150美元），也门穆斯林不得不选择价格较低的鸡作为宰牲节祭品。2021年迄今也门基本食品价格上涨25%，约80%人口生存依赖国际援助。摄影师：Ahmad Al-Basha",
+          "link": "https://m.idai.ly/se/bbayAD",
+          "publishedOn": "2021-07-22T06:51:00.000Z",
+          "wordCount": 161,
+          "title": "也门宰牲节物价危机"
+        },
+        {
+          "id": "https://m.idai.ly/se/38essc",
+          "author": null,
+          "description": "纽约曼哈顿城区建筑群被雾霾笼罩，美国。7月21日，纽约市迎来局部降雨和雷暴天气，帮助驱散西部山火产生的烟尘，空气污染指数已下降至24。美国国家跨部门消防中心（NIFC）数据显示，目前13个州仍有78处大规模山火，延烧面积达5450平方公里，比2020年同期增加42%。各州政府已出动超过2万名消防员和后勤人员参与灭火。摄影师：Spencer Platt",
+          "link": "https://m.idai.ly/se/38essc",
+          "publishedOn": "2021-07-22T06:49:00.000Z",
+          "wordCount": 161,
+          "title": "美国西部山火持续"
+        },
+        {
+          "id": "https://m.idai.ly/se/04d1tP",
+          "author": null,
+          "description": "孩子们在圣地亚哥海洋世界观赏白鲸，美国加利福尼亚州。白鲸是一种广泛分布于北极和亚北极海域的群居鲸类，特征是鼓起突出的头部，并且能够发出复杂多变的叫声。全球野生白鲸数量约20万只，面临主要威胁为人类捕猎、栖息地减少及海洋污染。美国各州政府从7月中旬开始放宽防疫限制，圣地亚哥海洋世界从7月19日开始取消线上预约限制，并推出赠票活动吸引游客。摄影师：Daniel Knighto",
+          "link": "https://m.idai.ly/se/04d1tP",
+          "publishedOn": "2021-07-22T06:47:00.000Z",
+          "wordCount": 161,
+          "title": "加州海洋馆白鲸"
+        },
+        {
           "id": "https://m.idai.ly/se/3b6L0n",
           "author": null,
           "description": "哈勃望远镜停止运行34天后重启拍摄的第一批观测图像。哈勃望远镜从6月13日开始出现计算机系统故障，经过长达一个月排查后确定故障出现于电源控制单元。NASA 决定让哈勃望远镜完整切换至备份硬件，终于在7月17日成功重启恢复运行。哈勃望远镜于1990年4月24日发射升空，是人类观测视野最广的太空望远镜，迄今已运行31年，完成超过150万次太空观测。摄影师：NASA",
           "link": "https://m.idai.ly/se/3b6L0n",
           "publishedOn": "2021-07-21T09:59:00.000Z",
-          "wordCount": 167,
+          "wordCount": 161,
           "title": "哈勃望远镜恢复运行"
         },
         {
@@ -563,7 +634,7 @@
           "description": "美国蓝色起源公司「新谢泼德号」火箭（New Shepard）助推器发射后返回着陆，得克萨斯州。7月20日，「新谢泼德号」火箭系统完成第一次载人发射任务，太空舱将4名乘客送至107公里高度的太空区域，体验约4分钟失重环境。本次载人任务乘客包括蓝色起源公司创始人 Jeff Bezos 及其弟弟、82岁前飞行员 Wally Funk 以及18岁高中生、荷兰富商之子 Oliver Daemen。摄影师：Blue Origin",
           "link": "https://m.idai.ly/se/cf6gTt",
           "publishedOn": "2021-07-21T08:57:00.000Z",
-          "wordCount": 167,
+          "wordCount": 161,
           "title": "蓝色起源首次载人飞行"
         },
         {
@@ -572,7 +643,7 @@
           "description": "美国西部山火产生的烟尘扩散至纽约市，自由女神像矗立在雾霾中。7月20日，美国西部山火浓烟飘散范围超过4800公里，至少4000万美国人口遭受影响。当天纽约市空气质量指数升至171，面临近14年来最严重空气污染。美国国家跨部门消防中心数据显示，目前13个州至少有80起大型山火仍在持续，导致航班出现大面积延误。摄影师：Spencer Platt",
           "link": "https://m.idai.ly/se/1d1gWl",
           "publishedOn": "2021-07-21T05:55:00.000Z",
-          "wordCount": 167,
+          "wordCount": 161,
           "title": "纽约遭遇山火雾霾"
         },
         {
@@ -581,7 +652,7 @@
           "description": "日本首相菅义伟与英国国防大臣 Ben Wallace 举行会晤，东京。7月20日，英国国防大臣与日本防卫相召开联合新闻发布会，宣布英国计划2021年底前在印太海域常态部署2艘军舰，并宣称两国「坚决反对使用武力改变现状的企图，重视维护自由开放的亚太地区」。英国「伊丽莎白女王」号航母打击群将于9月抵达日本进行联合军演，目前该航母1600名船员中已有超过100人确诊感染新冠病毒。摄影师：Franck Robichon",
           "link": "https://m.idai.ly/se/21eqGl",
           "publishedOn": "2021-07-21T05:53:00.000Z",
-          "wordCount": 167,
+          "wordCount": 161,
           "title": "英国印太常态部署军舰"
         },
         {
@@ -590,7 +661,7 @@
           "description": "伊斯兰教宰牲节第一天，朝圣者们绕着克尔白圣殿祷告，沙特阿拉伯麦加。7月20日，全球穆斯林迎来伊斯兰教三大节日之一「宰牲节」，该节日旨在纪念先知易卜拉欣向真主献祭儿子以证明虔诚的故事。按照传统，穆斯林信徒在这一天宰杀牲畜并将肉分送给穷人。受新冠疫情影响，沙特政府仅允许已接种疫苗的本国朝圣者进入麦加朝觐。当天沙特新增确诊1273例，死亡14例，累计确诊51.2万例，死亡8103例，人口疫苗接种率为53%。摄影师：iDaily Media",
           "link": "https://m.idai.ly/se/309QoO",
           "publishedOn": "2021-07-21T05:51:00.000Z",
-          "wordCount": 167,
+          "wordCount": 161,
           "title": "伊斯兰教宰牲节首日"
         },
         {
@@ -599,89 +670,8 @@
           "description": "韩国一所中学体育馆被改为新冠疫苗接种中心，大邱市。7月20日，韩国海军亚丁湾护航编队因集体感染新冠病毒而提前返航，301名船员中已确诊266例。这是韩国疫情爆发以来最严重的一起军队集体感染事件，该国国务总理和国防部长公开向民众道歉。当天韩国新增确诊1784例，刷新日增纪录，第4波疫情在过去10天显著升温，目前人口疫苗接种率仅为31.5%，大幅落后于70%接种目标。摄影师：Kim Jun-beom",
           "link": "https://m.idai.ly/se/4e30AD",
           "publishedOn": "2021-07-21T05:49:00.000Z",
-          "wordCount": 167,
+          "wordCount": 161,
           "title": "韩国第4波疫情升温"
-        },
-        {
-          "id": "https://m.idai.ly/se/9d30rv",
-          "author": null,
-          "description": "意大利乌尔比诺公爵宫，一幅文艺复兴画家 Pietro Perugino 蛋彩画《天使加百列》正在展出。本次展览名为《拉斐尔的老师：佩鲁吉诺》，共展出超过20幅 Perugino 作品，呈现这位文艺复兴全盛期艺术家的生活背景和创作历程，以及对他的学生、文艺复兴三杰之一拉斐尔的重要影响。展期持续至10月17日。摄影师：Roberto Serra",
-          "link": "https://m.idai.ly/se/9d30rv",
-          "publishedOn": "2021-07-21T05:47:00.000Z",
-          "wordCount": 167,
-          "title": "佩鲁吉诺专题展"
-        },
-        {
-          "id": "https://m.idai.ly/se/d01IMY",
-          "author": null,
-          "description": "第15届莫斯科国际航空航天展览会（MAKS-2021），一架俄罗斯「Checkmate」隐形战斗机原型机正在展出。7月20日，俄罗斯首次公开展出第五代单发轻型多用途隐形战斗机「Checkmate」，这款飞机由苏霍伊设计局设计，最大战斗载荷7.4吨，最高飞行速度2马赫，相当于2倍音速。这款战机预计2023年首次试飞，2026年开始交付，国际售价约为2500万至3000万美元，主要目标客户为印度、越南及非洲国家，被视为美国 F-35 战机的强力竞争对手。摄影师：Sergei Fadeichev",
-          "link": "https://m.idai.ly/se/d01IMY",
-          "publishedOn": "2021-07-21T05:45:00.000Z",
-          "wordCount": 167,
-          "title": "俄5代战机首亮相"
-        },
-        {
-          "id": "https://m.idai.ly/se/eb7ygY",
-          "author": null,
-          "description": "前苏联第一艘核动力潜艇「K-3 Leninsky Komsomol」号正在进行修复，准备送入军事博物馆作为历史展品陈列，俄摩尔曼斯克州。「K-3」号曾经是第一艘成功抵达北极点的苏联潜艇，它的动力系统采用2座水冷核反应堆，全长107米，潜航深度达300米，服役时间从1958年持续至1988年。这艘潜艇将成为俄罗斯海军荣誉博物馆的核心展品，该博物馆预计于2024年建成开放。摄影师：Lev Fedoseyev",
-          "link": "https://m.idai.ly/se/eb7ygY",
-          "publishedOn": "2021-07-21T05:43:00.000Z",
-          "wordCount": 167,
-          "title": "前苏联第一艘核潜艇"
-        },
-        {
-          "id": "https://m.idai.ly/se/372YT7",
-          "author": null,
-          "description": "韩国诞生的首只大熊猫「福宝」庆祝一岁生日，龙仁爱宝乐园。这只大熊猫幼崽出生于2020年7月20日，是旅韩大熊猫「乐宝」和「爱宝」在韩国诞下的第一只幼崽，目前体重已增至40公斤。7月20日，韩国爱宝乐园为福宝举行一周岁庆生活动并通过直播向公众展示。园方为福宝准备了胡萝卜、竹子、苹果和窝头作为抓周道具，并发布记录福宝成长过程的写真散文集。摄影师：iDaily Media",
-          "link": "https://m.idai.ly/se/372YT7",
-          "publishedOn": "2021-07-21T05:41:00.000Z",
-          "wordCount": 167,
-          "title": "旅韩大熊猫1周岁生日"
-        },
-        {
-          "id": "https://m.idai.ly/se/2a64O3",
-          "author": null,
-          "description": "郑州火车站周边道路，交通警察站在积水中疏导交通，中国河南省。7月20日，郑州遭遇史上最大暴雨侵袭，下午4点至5点单小时降雨量达到201.9毫米，全市多地区停水停电，地铁部分隧道出现积水导致列车停驶。武警河南省总队已出动数百名官兵前往郑州市各险情发生地抢险救援。国家防总7月20日20时启动防汛Ⅲ级应急响应，派出工作组紧急赶赴现场协助开展抗洪抢险工作。摄影师：iDaily Media",
-          "link": "https://m.idai.ly/se/2a64O3",
-          "publishedOn": "2021-07-20T09:59:00.000Z",
-          "wordCount": 167,
-          "title": "郑州史上最大暴雨灾情"
-        },
-        {
-          "id": "https://m.idai.ly/se/ad44h6",
-          "author": null,
-          "description": "中国奥运代表团正式入住东京奥运村。7月19日，中国奥运代表团第4批团队抵达东京，包括女排、跳水、篮球、射击等14个比赛项目的超过250名成员。本届奥运会中国共派出431名运动员参赛，竞技30个大项、225个小项比赛，为迄今规模最大、项目最多的一届。中国队运动员平均年龄25.4岁，293人为首次参加奥运赛事。摄影师：Franck Robichon",
-          "link": "https://m.idai.ly/se/ad44h6",
-          "publishedOn": "2021-07-20T08:59:00.000Z",
-          "wordCount": 167,
-          "title": "东京奥运会倒数3天"
-        },
-        {
-          "id": "https://m.idai.ly/se/bd5fmk",
-          "author": null,
-          "description": "美国总统 Joe Biden 与约旦国王 Abdullah II 举行会晤，华盛顿白宫。7月19日，约旦国王抵达华盛顿特区开始为期3周的访美之行，亦成为 Biden 总统上任以来会见的第一位阿拉伯国家领导人。双方讨论了经贸军事合作、巴以局势、叙利亚难民等议题。Biden 称赞约旦是美国在中东的坚定盟友，美国将继续为约旦军备现代化提供援助。美国是约旦的第一大援助国，2015年迄今美国累计向约旦提供15亿美元军事援助，目前约旦境内约有3000名美军士兵驻扎。摄影师：Susan Walsh",
-          "link": "https://m.idai.ly/se/bd5fmk",
-          "publishedOn": "2021-07-20T07:59:00.000Z",
-          "wordCount": 167,
-          "title": "约旦国王访问美国"
-        },
-        {
-          "id": "https://m.idai.ly/se/df0ac5",
-          "author": null,
-          "description": "中国长征二号丙运载火箭搭载4颗卫星发射升空，西昌卫星发射中心。7月19日，长征二号丙火箭成功将「遥感三十号」10组3颗卫星和1颗商业微纳卫星送入预定轨道。本次任务标志着「遥感三十号」系列30颗卫星全部组网完成。新卫星将主要用于开展电磁环境探测及相关技术试验。这是长二丙火箭在2021年第3次发射，首次采取高空开伞方案，进一步验证整流罩落区控制精度，为火箭回收技术研发提供重要参考。摄影师：Li Jieyi",
-          "link": "https://m.idai.ly/se/df0ac5",
-          "publishedOn": "2021-07-20T06:59:00.000Z",
-          "wordCount": 167,
-          "title": "遥感三十号组网完成"
-        },
-        {
-          "id": "https://m.idai.ly/se/e2fa1P",
-          "author": null,
-          "description": "阿纳海姆会展中心举办「超越梵高」沉浸式体验展，美国加利福尼亚州。本次展览通过数字投映方式展现梵高的画作和手稿，包括《星夜》、《向日葵》等代表作以及艺术家写给弟弟的私人信件，共投映超过4万亿像素数字文件。受新冠疫情影响，本次展览采取线上预约购票制，同时观展人数限制50名。7月19日，美国单日新增确诊24266例，死亡121例，累计确诊3501万例，死亡62.5万例，人口疫苗接种率约55.6%。摄影师：Mario Anzuoni",
-          "link": "https://m.idai.ly/se/e2fa1P",
-          "publishedOn": "2021-07-20T06:57:00.000Z",
-          "wordCount": 167,
-          "title": "梵高沉浸式艺术展"
         }
       ]
     },
@@ -691,346 +681,328 @@
       "siteUrl": "https://www.v2ex.com/",
       "articles": [
         {
-          "id": "790964",
-          "author": "spadger",
-          "description": "spadger: \n有阿里的同学吗？能不能给看看什么问题.",
-          "link": "https://www.v2ex.com/t/790964",
-          "publishedOn": "2021-07-21T23:18:13.000Z",
+          "id": "791194",
+          "author": "dhou45",
+          "description": "dhou45: \n发现旧的 apple watch 苹果也给送了三个月的 fitness plus, 就试用了下, 说说感受. 本人平常有不规律健身, 主要是一周两三次室外跑步 /骑车, 然后就早上去公寓健身房小撸一下铁再去上班. 因为试用 fitness plus, 就改成了去健身房的单车或者跑步机.\n首先, 查找想要的教程很麻烦, 没有一个很好的导航. 可能按照苹果强势的产品设计逻辑, 出现在 banner 位以及首页下滑两下之内能到达的教程就是你所需要用的, 其他的给故意藏到了深处.\n下载下来的项目在最最最下面, 每个视频都上 GB 了, 并不是每个人都会在 Wi-Fi 很好的家里或者健身房用在线播放的好吗..\n有点感觉太聒噪了.. 不知道大家什么便好, 我健身的时候喜欢听听音乐或者就听二倍速的 podcast, 有个人在旁边叨逼叨就感觉很烦..\n虽说苹果会更新健身视频, 但是感觉这都发布一年了吧, 可选择的还是太少了, 找来找去就那么几个\n说个 zz 不正确的, 感觉很多 trainer 都太符合白左的口味了...每个人表情都那么用力过猛, 很明显的假 high, 我是一点没有被他们 motivated 到, 反而浑身各种不舒服.. 想找个跑步的男 trainer, 感觉三个都是 gaygay 的那种, 还有一个是娘炮型的健硕黑哥哥..",
+          "link": "https://www.v2ex.com/t/791194",
+          "publishedOn": "2021-07-22T21:11:05.000Z",
+          "wordCount": 260,
+          "title": "apple fitness plus 试用感受"
+        },
+        {
+          "id": "791193",
+          "author": "10bkill1p",
+          "description": "10bkill1p: 最近很喜欢听老歌，特别是张学友的歌，希望有朝一日能去一次 live 现场",
+          "link": "https://www.v2ex.com/t/791193",
+          "publishedOn": "2021-07-22T18:23:30.000Z",
+          "wordCount": 146,
+          "title": "20210722 午夜俱乐部"
+        },
+        {
+          "id": "791192",
+          "author": "luin",
+          "description": "luin: 苦于自己过保的 Yale 智能门锁经常把自己锁在门外（触摸屏幕没有反应）...想问问大家有什么质量可靠的指纹锁吗？\n需求：\n1. 质量可靠，不会因为失灵把自己锁在外面。\n2. 指纹锁，识别可靠（不需要考虑老人小孩）。\n3. 最好是推拉的，拿快递的时候推拉的比转动的应该方便一些。\n目前看中的是三星的 P50，感觉互联网品牌是不是质量会相对差一些？而且也不需要什么特别的功能。看了几个品牌的淘宝评价，几乎每一个都有被锁在门外的差评，不知道真假...觉得还是看看大家自用的感受会靠谱一些。感谢！",
+          "link": "https://www.v2ex.com/t/791192",
+          "publishedOn": "2021-07-22T17:36:03.000Z",
+          "wordCount": 154,
+          "title": "有质量可靠的指纹锁推荐吗？"
+        },
+        {
+          "id": "791191",
+          "author": "wyfyw",
+          "description": "wyfyw: 貌似设备无法识别\nhttps://www.reddit.com/r/iPadPro/comments/npv0im/thunderboltusb4_connection_to_m1_mac/\n有没有其他人试过。\n苹果真是奇葩",
+          "link": "https://www.v2ex.com/t/791191",
+          "publishedOn": "2021-07-22T17:01:12.000Z",
           "wordCount": 103,
-          "title": "阿里千牛手机 APP 服务断了快 24 小时了"
+          "title": "iPad Pro 2021 用 Thunderbolt 线连接 Macbook Air M1，可以高速传输文件嘛？貌似设备无法识别"
         },
         {
-          "id": "790963",
-          "author": "mir2",
-          "description": "mir2: \n第一次遇到,app 没有限制网络连接,昨天都能用,今天大把的 app 都是无法刷新和网路开小差,但是有个别的 app 还有网,比如手机浏览网页都是正常的...",
-          "link": "https://www.v2ex.com/t/790963",
-          "publishedOn": "2021-07-21T22:34:38.000Z",
-          "wordCount": 116,
-          "title": "wifi 网络正常,但是大部分 app 不能联网是为什么"
+          "id": "791190",
+          "author": "yagamil",
+          "description": "yagamil: \n个人的小破站. 比如第二个关键词, 基本每天都有一个这样的关键嵌入进来.\n\n有些还明目张胆说 关键词 seo 请联系 xxxx 这样的 字样\n请问这类关键词如何做到的?",
+          "link": "https://www.v2ex.com/t/791190",
+          "publishedOn": "2021-07-22T16:47:54.000Z",
+          "wordCount": 114,
+          "title": "个人网址的百度的搜索关键词是怎么被他人打入这样的广告?"
         },
         {
-          "id": "790961",
-          "author": "SharonPan",
-          "description": "SharonPan: \n\n关于 FydeOS 和燧炻创新\nFydeOS 是燧炻创新（ Fyde Innovations ）打造的基于 Chromium 开源项目的操作系统产品。燧炻创新是目前世界上为数不多的专注 Chromium OS 开源项目的厂商。2020 年，Chrome OS 成为了世界第二大桌面操作系统。FydeOS 是目前行业内仅有的达到商用级别的全功能第三方 Chromium OS 操作系统产品；预装 FydeOS 的计算机设备可以拥有近似于 Google Chromebook 的使用体验，并可以无障碍地在中国大陆地区使用。FydeOS 配合定制化云集管平台以及附属云服务，打造安全可控的软硬件一站式解决方案，目前正在服务众多海内外行业客户。\n关于燧炻创新及我们是如何工作的\n燧炻创新于 2015 年成立于英国伦敦，经历了漫长的技术积累，目前处在快速增长期。秉承「 small & beautiful 」和「 WLB matters 」的风格，燧炻创新十余人一起经历了这五年的历练并存活至今。从最初的原型验证到今天在操作系统市场上占据一席之地，燧炻相信几个人的力量依然可以发出足够大的声音，改变一个行业的格局。\n公司成立之初便与 V2EX 结下不解之缘。目前团队中几位核心员工均由 V2EX 社区认识 FydeOS 并最终加入我们。不少人也在这里看着我们这几年的成长，再次一并谢过。\n关于「 small & beautiful 」以及「 WLB matters 」，分享几个或许和其它互联网技术公司不太一样的特质：\n不打卡，不精细管理，不写各种总结。\n在燧炻「弹性工作时间」的实施状况可以是下午四点半可以去接孩子放学，晚上陪家人吃饭。只要按时来开会、提交 commit 、消掉 Bugzilla 上的任务。\nSlack 是公司唯一的即时沟通软件，技术岗位所有工作相关内容只在 Sl…",
-          "link": "https://www.v2ex.com/t/790961",
-          "publishedOn": "2021-07-21T17:11:46.000Z",
-          "wordCount": 592,
-          "title": "[北京/武汉/深圳/远程] FydeOS | 燧炻创新多岗位招聘 2021v5 | 新增 HC"
-        },
-        {
-          "id": "790960",
-          "author": "cathedrel",
-          "description": "cathedrel: \n系统的时间一直是在慢慢的变慢，现在跟标准时间已经差了 4 分钟了，我想使用“网络时间”，但是在不管我怎么选定，关闭之后再打开时间设置的界面那这个“网络时间”一定是没选上的，是因为普通用户的设置不算数还是必须有其他我还不知道的设定方式？？\ni.imgur.com/OA1nnD2.png",
-          "link": "https://www.v2ex.com/t/790960",
-          "publishedOn": "2021-07-21T16:44:04.000Z",
-          "wordCount": 168,
-          "title": "Manjaro 怎么设置“使用网络时间”？必须切换到 root 下面去设定吗？"
-        },
-        {
-          "id": "790959",
-          "author": "tomkwok",
-          "description": "tomkwok: 小弟用的是美区 Apple Music，一直都有挂梯子使用。前两天发现 Mac 上的 Apple Music 三个 tabs 完全空白，但是曲库仍然可以正常播放，网页版和 iOS 端也能正常使用，请问大家有没有遇到同样状况？",
-          "link": "https://www.v2ex.com/t/790959",
-          "publishedOn": "2021-07-21T16:17:14.000Z",
-          "wordCount": null,
-          "title": "Apple Music on Mac 一片空白"
-        },
-        {
-          "id": "790958",
-          "author": "leverestfish",
-          "description": "leverestfish: \n不需要 OCR 的，都是完全电子版的 PDF 文件。\n最好是用脚本的比如 python，尝试过 pdfminer 感觉性能很弱鸡，鲁棒性也不够（也可能是我用的不对？在一个 1 核 2G 的云服务器上跑 50 页左右的，经常被强制 KILL ）；\n实在不行也可以用软件，但是必须要能批量（手头文件很多）\n谢谢大噶，被一个小需求烦死了，感觉市面上解决方案不多。",
-          "link": "https://www.v2ex.com/t/790958",
-          "publishedOn": "2021-07-21T16:09:07.000Z",
-          "wordCount": 148,
-          "title": "请教关于高效批量 PDF 转 TXT"
-        },
-        {
-          "id": "790957",
-          "author": "Euthpic",
-          "description": "Euthpic: \n背景:\n我们现有的缓存同步方案基于 canal 和 kafka,db 更新时 canal 拉取 binlog 发消息到 kafka,然后多个业务方各自消费消息.\n缺点:\n1.缺少统一的调度,消费者零散地散落在各个项目里,消息堆积时不好扩容.\n2.同一条消息(对同一张表的一条操作记录)会下发到多个消费者(不同的业务逻辑),浪费网络资源.同时 binlog 的消息是全量下发(所有表的操作记录推到同一个 topic),消费者还得各自筛选自己需要的消息,浪费 cpu 资源.\n3.消费者之间可能有依赖关系,但是业务逻辑是解耦的,不能相互调用,因此无法感知到依赖的资源是否已经到位.\n所以我们计划把这些消费者整合到同一个项目里面统一管理,统一调度.\n深思熟虑了 5 分钟之后,我感觉可能遇到这些问题:\n1.如何协调消费者之间的依赖关系?如果直接把它们丢到一个串行的方法里面,那么调用链就很长,消息延迟就很严重,有些消费者本来没有前置依赖,但却要白白等前面的消费者执行完,不合理.如果都是异步去调用它们的话,就无法感知到依赖关系.\n2.消息消费的速度会不会受到影响?以前一条消息开了很多消费者去消费,现在整合到一起,调用链变长了.\n所以想问问大家有没有现成的开源框架是解决这类问题的?\n我们开发的语言是 scala 和 java,mq 是 kafka,当然消息源最好也能支持其他 mq",
-          "link": "https://www.v2ex.com/t/790957",
-          "publishedOn": "2021-07-21T16:08:24.000Z",
-          "wordCount": 123,
-          "title": "求一个基于 kafka 的消息消费框架"
-        },
-        {
-          "id": "790956",
+          "id": "791189",
           "author": "0576coder",
-          "description": "0576coder: \n这段时间差不多看完了这本书\n\n我感觉这本书最大的问题是章节都是不同的人编写，缺少一些连贯性，比如讲线程的时候提到了线程池，然后线程池又放在后面章节讲，有一张草草的讲了 ForkJoinPool，然后隔了两章才讲 Executor，而且不是同一个人写的。\n还有里面对于一些概念的解释跟语言描述，没做到通俗易懂。比如讲 synchronize 实现，还有 Object 自带的等待通知模式跟 Condition，有点散\n最让我难受的是讲 java 内存模型跟 AQS 那两个章节，真的写的不是很好。\n不知道大家有没有更好的书推荐\n还有 JVM 相关的书，大家有推荐的吗",
-          "link": "https://www.v2ex.com/t/790956",
-          "publishedOn": "2021-07-21T16:07:03.000Z",
-          "wordCount": 185,
-          "title": "Java 并发编程不推荐看《 Java 并发编程的艺术》"
-        },
-        {
-          "id": "790954",
-          "author": "mosliu",
-          "description": "mosliu: \n为什么\n8 月单位宽带到期不再续了，要求从社会上办理\n需要什么\n准备新办宽带，不太熟悉，不知道有没有了解相应渠道的老哥么？能办的合适一点么，要是有途径，应该有许多人有同样的需求，串联一下业务不小\n联系方式\nwx 同 id",
-          "link": "https://www.v2ex.com/t/790954",
-          "publishedOn": "2021-07-21T15:50:39.000Z",
-          "wordCount": 96,
-          "title": "8 月准备新办宽带，有相应渠道的老哥么"
-        },
-        {
-          "id": "790952",
-          "author": "zbinlin",
-          "description": "zbinlin: \n看到 ://www.v2ex.com/t/789383 关于微信占用空间的讨论，刚好我手机里存储空间也告急了，想清理下，就查看了下微信的空间占用情况。\n通过系统的 App 详情那里查看到 App site 为 379 MB 、User data 为 6.20 GBa，然后查看了微信自带的 Manage Storage 统计，Wechat Storage Used 为 5.8 GB，其中 Chat Histories 占用 1.8 GB 。\n然后我粗略地统计了 /data/data/com.tencent.mm/ 下各文件夹的占用情况（总共占用 3.9 GB，这里只列出占用比较大的目录）\n42M./cache\n528M./files\n1.9G./MicroMsg\n120M./app_webview_com_tencent_mm\n17M./app_tbs\n11M./app_webview_com_tencent_mm_tools\n584M./app_webview_com_tencent_mm_sandbox\n97M./app_tbs_64\n186M./tinker\n37M./app_x5webview\n105M./app_xwalk_2852\n178M./app_xwalk_2691\n102M./lib-0\n\n3.9 + 1.8 ~= 5.8，基本符合 Storage 里的统计。\n以下是 ./MicroMsg 的目录统计：\n299M./MicroMsg/expansions\n1.2G./MicroMsg/54******************************\n1.1G./MicroMsg/54******************************/image2\n12M./MicroMsg/54******************************/avatar\n65M./MicroMsg/54******************************/EnMicroMsg.db\n88M./MicroMsg/54******************************/appbrand\n307M./MicroMsg/webview_tmpl\n6.8M./MicroMsg/appbrand\n1.5M./MicroMsg/webcompt\n40M./MicroMsg/luckymoney\n14M./MicroMsg/CheckResUpdate\n\n这里面在我的账号（54******************************）下，发现 image2 这个文件夹占的比重最大，里面应该是一些图片。\n将其 pull 到电脑上查看，发现其中的一个群组里的图片占多数，但将该群的聊天记录清除后，其占用大小依然不变。",
-          "link": "https://www.v2ex.com/t/790952",
-          "publishedOn": "2021-07-21T15:38:41.000Z",
-          "wordCount": 333,
-          "title": "微信占用空间简析"
-        },
-        {
-          "id": "790950",
-          "author": "429463267",
-          "description": "429463267: \n现有一个生产集群，由于数据量太大，遇到性能瓶颈，而且未来数据量还会继续扩大，打算将数据分集群拆开，尽量保证已部署的几十个 spark 服务不做修改或少量修改。\n其中，spark 读写 ES 采用的是 ES 9200 端口，写多读少，ip 是写死的内网 ip，已上生产。\n所以，目前的想法是，将现有的 ES 集群拆分为多个，假定为 5 （ ES-cluster1 、ES-cluster2 、ES-cluster3 、ES-cluster4 、ES-cluster5 ） 个新集群。\n那么，拆完以后，不同的 index pattern 会落到不同集群上，拆分过程可能会很繁琐，估计会使用迁移工具完成。\n于是需要一个 API gatway 之类的服务来分发 spark 发来的 http 请求，使得相应的请求映射到正确的新集群上。\n接着，我调研了市面上可用的方案如下：\n1.https://opster.com/configuration/multi-cluster-load-balancer-configuration/\n2.Kong https://github.com/kong/kong\n3.https://github.com/traefik/traefik\n2 3 之间同类产品对比如下：\nhttps://zhuanlan.zhihu.com/p/61014955\n8 款开源的 Kubernetes Ingress Controller/API Gateway 推荐 · Service Mesh|服务网格中文社区\nhttps://www.servicemesher.com/blog/nginx-ingress-vs-kong-vs-traefik-vs-haproxy-vs-voyager-vs-contour-vs-ambassador/\ningress 控制器那么多，到底该选哪一个？累觉不爱。 - 知乎\nhttps://zhuanlan.zhihu.com/p/302452502\n初步结论，暂定选择 kong 或者 traefix 来实现，但还在纠结选哪个。\n请各位大佬指点迷津。",
-          "link": "https://www.v2ex.com/t/790950",
-          "publishedOn": "2021-07-21T15:20:04.000Z",
-          "wordCount": 210,
-          "title": "请教个问题：存储海量数据的多个 ES 集群之间，如何实现负载均衡，网关分流"
-        },
-        {
-          "id": "790949",
-          "author": "Bechbaliq",
-          "description": "Bechbaliq: 每月到手将近 20，但还是过得平平淡淡，开心不起来，感觉自己有心理疾病\n有喜欢的女孩子，不过条件天差地别，给她发信息也没搭理我\n我也不想干开发了，找不到工作的意义，每天就跟行尸走肉似的\n身边没个交心的朋友，从来都是一个人",
-          "link": "https://www.v2ex.com/t/790949",
-          "publishedOn": "2021-07-21T15:19:35.000Z",
-          "wordCount": 377,
-          "title": "发现工资对我意义不大"
-        },
-        {
-          "id": "790948",
-          "author": "codingbody",
-          "description": "codingbody: \nAnki 官网",
-          "link": "https://www.v2ex.com/t/790948",
-          "publishedOn": "2021-07-21T15:19:15.000Z",
-          "wordCount": 138,
-          "title": "Anki 打不开了，客户端也无法同步了。"
-        },
-        {
-          "id": "790947",
-          "author": "jatsz2020",
-          "description": "jatsz2020: 我记得几个月前，好像卖了一阵子桂圆，然后下市了，后来是荔枝上市下市。最近怎么又有桂圆上市了？？",
-          "link": "https://www.v2ex.com/t/790947",
-          "publishedOn": "2021-07-21T15:12:38.000Z",
-          "wordCount": null,
-          "title": "刚来深圳，看到最近上市的桂圆有点糊涂了"
-        },
-        {
-          "id": "790946",
-          "author": "zololiu",
-          "description": "zololiu: \n貌似是刚出道的新笔记，还没深度体验。刚注册，第一眼直觉像 Notion，感兴趣的可以体验一下。\ncloverapp.com",
-          "link": "https://www.v2ex.com/t/790946",
-          "publishedOn": "2021-07-21T14:55:58.000Z",
-          "wordCount": 155,
-          "title": "分享一个看上去有点像 Notion 的笔记 Clover。"
-        },
-        {
-          "id": "790945",
-          "author": "HankLu",
-          "description": "HankLu:",
-          "link": "https://www.v2ex.com/t/790945",
-          "publishedOn": "2021-07-21T14:48:15.000Z",
-          "wordCount": 201,
-          "title": "请问怎么把使用外接电源时和使用电池时的 win10 的真实亮度设置成一致的真实亮度？\r\n系统： windows10 20H2 非原装\r\n硬件：小新 air15 锐龙 2020。"
-        },
-        {
-          "id": "790944",
-          "author": "taka8rie",
-          "description": "taka8rie: \n耳机是二代 AirPods，在使用 Photo Booth 录视频的时候，发现在倒计时的时候，在 AirPods 听着数字的提示变成了特别大声的噪音。使用有线耳机或者外放则没这个问题。各位有出现过这种情况吗？",
-          "link": "https://www.v2ex.com/t/790944",
-          "publishedOn": "2021-07-21T14:47:08.000Z",
-          "wordCount": 120,
-          "title": "m1 Photo Booth 连接 AirPods 的时候，倒计时变成噪音。"
-        },
-        {
-          "id": "790943",
-          "author": "moqiguzhu",
-          "description": "moqiguzhu: \n求贤若渴，求简历。\n目前上班地点在 tit，不久之后会搬到琶洲微信新大厦。\n工作强度适中，大概 995，周末绝不加班，有事说一声可以早走，比较弹性。\n大家有什么希望继续了解的，楼下更新。",
-          "link": "https://www.v2ex.com/t/790943",
-          "publishedOn": "2021-07-21T14:43:42.000Z",
-          "wordCount": 96,
-          "title": "[广州] 微信安全招算法工程师/安全策略工程师"
-        },
-        {
-          "id": "790942",
-          "author": "fenlanks",
-          "description": "fenlanks: \n官网所有岗位均可内推：\n社招官网链接\n内推说明啊；\n永劫无间游戏热招岗位：",
-          "link": "https://www.v2ex.com/t/790942",
-          "publishedOn": "2021-07-21T14:30:39.000Z",
-          "wordCount": null,
-          "title": "[网易] [内推] 永劫无间岗位热招，网易所有岗位均可内推"
-        },
-        {
-          "id": "790941",
-          "author": "lscexpress",
-          "description": "lscexpress: 价位在六千左右，我是写 php 的。上一部电脑用的是 MacBook pro，太太贵了，想便宜的来。我看过红米 RedMIBook 感觉还行，不知道用来写代码坑不坑？",
-          "link": "https://www.v2ex.com/t/790941",
-          "publishedOn": "2021-07-21T14:27:29.000Z",
-          "wordCount": null,
-          "title": "码农求推荐笔记本"
-        },
-        {
-          "id": "790940",
-          "author": "meowhuang",
-          "description": "meowhuang: 因为 14 用着发现有个 bug 一直很困扰。\n想着能不能通过越狱后降回 13",
-          "link": "https://www.v2ex.com/t/790940",
-          "publishedOn": "2021-07-21T14:23:41.000Z",
-          "wordCount": 119,
-          "title": "iPhone 越狱后可以随意降级吗"
-        },
-        {
-          "id": "790939",
-          "author": "HaEx",
-          "description": "HaEx: \n问题稍微有点复杂：\nhost 中某个 container 部署了 clxsh ；\n希望 host 所有外部流量都经过 container ；\n希望路由到 host 的所有外部流量都经过 container;\n求解法",
-          "link": "https://www.v2ex.com/t/790939",
-          "publishedOn": "2021-07-21T14:19:23.000Z",
-          "wordCount": 178,
-          "title": "一个 Docker 网络配置问题"
-        },
-        {
-          "id": "790937",
-          "author": "weishao666",
-          "description": "weishao666: \n有一个学习英语的方法，先讲了记忆的原理，小孩学习语言迅速的原理，然后讲要抛开书写与阅读，听发音联系画面，有人知道这是什么方法么？之前收藏了要看来着，弄丢了",
-          "link": "https://www.v2ex.com/t/790937",
-          "publishedOn": "2021-07-21T14:16:57.000Z",
-          "wordCount": 110,
-          "title": "求之前在贴吧看的英语学习的方法"
-        },
-        {
-          "id": "790935",
-          "author": "dream4ever",
-          "description": "dream4ever: \n15 年毕业进入一家非互联网公司，做了一年大领导想出来的“大项目”结果最后不了了之，之后开始做 Web 开发方面的业务，最开始什么都不会，那段时间就拼命学，一边学一边在工作中实践。\n经过两三年的锻炼之后，算是入了 Web 开发的门，但是从那之后到现在，成长速度就慢下来了，这两年更是感觉自己进入了职业倦怠期。有新的工作任务，当然要完成，就是感觉自己总是拖拖拉拉的，没有自我驱动力，Web 开发方面的任务也都不难，所以靠前两年打下来的基础 + Google + Stack Overflow 都能完成，但是感觉自己的水平基本上就停在那里了。\n现在的状态，就是能用 Vue.js + Node.js + MongoDB 完成前后端的功能开发，但是基础方面还是比较薄弱，常常需要 Google 。项目需求稍微难一点，就发现自己的代码乱糟糟的，感觉应当是可以用设计模式、软件架构、算法之类的知识改进一下，但也只是停留在“想”的层面，懒得去做。\n在极客时间上也买了不少课程，但是看完的没几门，主动用到工作中的就更少了。虽然大体知道自己该朝着什么方向提升，但就是行动不起来，有什么方法能够改变现状呢？或者说自己就是这样的人了？定型了？",
-          "link": "https://www.v2ex.com/t/790935",
-          "publishedOn": "2021-07-21T14:02:35.000Z",
-          "wordCount": 190,
-          "title": "感觉进入了职业倦怠期"
-        },
-        {
-          "id": "790934",
-          "author": "peterzhang0602",
-          "description": "peterzhang0602: \n有遇到的吗，排除线的问题",
-          "link": "https://www.v2ex.com/t/790934",
-          "publishedOn": "2021-07-21T14:01:24.000Z",
-          "wordCount": 117,
-          "title": "mbp m1 连接 LG C1 55 寸电视帧率迷之 30 帧"
-        },
-        {
-          "id": "790933",
-          "author": "kwanzaa",
-          "description": "kwanzaa: RT\nhttps://github.com/microsoft/CBL-Mariner\n其实毫不意外",
-          "link": "https://www.v2ex.com/t/790933",
-          "publishedOn": "2021-07-21T13:53:47.000Z",
-          "wordCount": 223,
-          "title": "M$ 开源了内部使用的 Linux 发行版本： CBL-Mariner"
-        },
-        {
-          "id": "790931",
-          "author": "goodfeeling",
-          "description": "goodfeeling: 找了好久发现只能 C#加密了，有没有其他的方法？",
-          "link": "https://www.v2ex.com/t/790931",
-          "publishedOn": "2021-07-21T13:44:10.000Z",
-          "wordCount": 91,
-          "title": "大佬们，萌新有个问题， C++如何加密 Excel，"
-        },
-        {
-          "id": "790930",
-          "author": "LOVOQ",
-          "description": "LOVOQ: 手拉手出一条济南联通宽带，公网。默认 300M 下 30M 上的规格，啥都不叠加 33.33 元 /月。\n目前已续费至 2022/10，全网可查。\n打算 1000 劳务费+实时余额+包年费用，约 1700 元出这条宽带。（ 1700 元包含包年至 2022/10 的费用，以及未在包年内的实时余额。不包含预期施工费用。包年到 2022 年的冻结款加余额约七百，以联通公司实时计算为准）。\n目前叠加了 20 元 100M 上行叠加包，10 元 300M 提 500M 下行叠加包，以及 iptv10 元 /月，折合 73.33 元 /月（ 40 元附加费用需要另外存到实时余额）。以上均为绝版叠加包，均可退，退了就没了。目前上行包已绝版，下行包需要月租 199+，请自行衡量。\n2022/10 后可通过特殊渠道 400 元包年，过户时会说明。协议结束期为 2029 年，手厅可查。\n没人感兴趣月底我就直接拆机了，心动不如行动。",
-          "link": "https://www.v2ex.com/t/790930",
-          "publishedOn": "2021-07-21T13:38:53.000Z",
-          "wordCount": 216,
-          "title": "打算出一条济南联通 300M 单宽，年租 400 元。"
-        },
-        {
-          "id": "790929",
-          "author": "hahaayaoyaoyao",
-          "description": "hahaayaoyaoyao: \nlyx 版(需要下载 lyx)\npdf 版\n感觉这本书还是不错的, 解释了我之前很多的疑惑",
-          "link": "https://www.v2ex.com/t/790929",
-          "publishedOn": "2021-07-21T13:25:28.000Z",
-          "wordCount": null,
-          "title": "看完了《算法 第四版》, 分享一下我的笔记"
-        },
-        {
-          "id": "790927",
-          "author": "proxychains",
-          "description": "proxychains: \n关于阿里云“IP 地理位置库”产品事宜，经双方调查与磋商，阿里云计算有限公司（以下简称阿里云）与北京天特信科技有限公司（以下简称 IPIP.NET ）联合声明如下：\n一、近日，IPIP.NET 创始人高春辉先生对阿里云 IP 地理位置库产品提出控诉。获悉此事后，阿里云立即展开调查。调查发现，确有员工在该产品开发过程中存在违反公司规范的行为。这种行为，是阿里云坚决反对的。\n二、对此，阿里云决定：\n1 、立即下架、整改 IP 地理位置库产品。\n2 、依据《阿里员工纪律制度》，对相关员工进行严肃处理。\n3 、加强内控流程机制建设，强化内控体系，竭力避免类似事情再次发生。\n4 、向 IPIP.NET 及高春辉先生致以诚挚歉意。\n三、双方就此达成谅解，并将积极探索进一步合作的可能性。\n四、感谢大家对我们的关注，感谢大家对阿里云的监督和警醒，我们未来会做得更好。\n阿里云计算有限公司\n2021 年 7 月 21 日 \n北京天特信科技有限公司\n2021 年 7 月 21 日",
-          "link": "https://www.v2ex.com/t/790927",
-          "publishedOn": "2021-07-21T12:54:25.000Z",
-          "wordCount": 218,
-          "title": "偶然看到了阿里云关于前一阵子 ipip.net 事件的声明"
-        },
-        {
-          "id": "790926",
-          "author": "xcmkxcmk81",
-          "description": "xcmkxcmk81: \n我们是一只国外归来的创业团队，创始团队来自耶鲁，伦敦商学院，前 Uber，腾讯，阿里。一个实时互动的在线社交以及活动参与平台，现招后端工程师。 有兴趣请加 WX：aWNleHVjaGVu (江湖规矩，你懂的)\n我们的工程团队的构成非常的多元化，有各个不同学历，专业背景的小伙伴（非科班），为了同一个目标，而走到了一起。\n前端(Vue)开发 \n职位描述：\n你将会是项目的主要开发人员之一，负责很多核心功能模块的设计与搭建，希望你有扎实的编程基础；\n根据产品需求和设计图完成兼容性良好的前端页面开发，包括 PC 端主流浏览器，移动端的 WEB 页面开发；\n编写可重用的前端组件，负责前端界面编写和调试；\n积极探索研究 WEB 前端技术的发展，丰富 WEB 交互方式，提升用户体验。\n职位要求：\n有过 Vue/TypeScript 开发大型项目的经验；\n精通各种 Web 前端技术(XHTML/HTML5/XML/CSS/Javascript/Ajax 等)；\n熟悉 Web 性能优化，浏览器兼容器, 有移动 Web 开发经验和作品；\n熟练或精通 Canvas/SVG 的优先；\n有过声网 Agora/即构 Zego 音视频开发经验的优先；\n掌握前端常用的构建工具，webpack/gulp/rollup 等；\n有自己的技术博客、开源项目者的优先；\n有极强的自主完成任务，解决问题的能力。\n加分项：\n了解后端开发流程，和数据库方面的知识。",
-          "link": "https://www.v2ex.com/t/790926",
-          "publishedOn": "2021-07-21T12:34:24.000Z",
-          "wordCount": null,
-          "title": "[上海静安] 前端开发 (Vue)。30K - 40K 15 薪（全职）"
-        },
-        {
-          "id": "790925",
-          "author": "Wonderful05",
-          "description": "Wonderful05: \nhttps://imgur.com/iCfNHyD",
-          "link": "https://www.v2ex.com/t/790925",
-          "publishedOn": "2021-07-21T12:29:21.000Z",
-          "wordCount": 198,
-          "title": "观专升本有感，说说自己的经历"
-        },
-        {
-          "id": "790924",
-          "author": "aliyunarticle",
-          "description": "aliyunarticle: 校招来了，阿里云云原生面向 2021 年 11 月-2022 年 10 月应届毕业生招聘：java 研发工程师、c/c++研发工程师、基础平台研发工程师。感兴趣的可以直接把自己的简历发送到邮箱 feng.jin@alibaba-inc.com\n我们是谁？云原生致力于打造世界上最先进、稳定的云原生基础设施，是阿里云最核心的部门之一。\n我们的目标是让云成为成本最低，效率最高，稳定性最强的应用运行环境，在这里我们设计超大规模容器与调度系统，发挥出云的极致弹力；我们构建高性能微服务架构，提供云端应用无限扩展的能力，我们打造标准易用的 PAAS 平台，让云研发变得简单、可靠。\n在这里，你会参与到容器、K8S 、MQ 、Service Mesh 、Arms 等最前沿的技术与产品的技术研发和探索中来；你也会参与 CNCF TOP 和 SIG 联席主席，K8S OPERATER 创始人等组成的国内最顶尖云原声技术团队一同协作\n岗位要求：1 、本科及以上学历，计算机，数学，电子工程、通信相关专业；\n2 、具备扎实的数据结构和计算机系统基础 精通一种开发语言；\n3 、对基础软件充满热情，有成功研究型或实战型项目技术成果落地者优先；\n4 、快速学习，不断突破技术瓶颈，乐于探索未知领域；\n5 、良好团队合作精神，能够做到严谨、皮实，乐观。",
-          "link": "https://www.v2ex.com/t/790924",
-          "publishedOn": "2021-07-21T12:27:32.000Z",
+          "description": "0576coder: \n这三段代码其实是一致的\n        //生成随机数流\n        Stream randoms = Stream.generate(Math::random);\n        \n        Stream randoms2 = Stream.generate(() -> Math.random());\n        \n        Stream randoms3 = Stream.generate(new Supplier() {\n            @Override\n            public Double get() {\n                return Math.random();\n            }\n        });\n\n后面两段我都能理解，第一段为什么 Math 的静态方法也算是可以当做 Supplier 接口的实现者，我有点想不通",
+          "link": "https://www.v2ex.com/t/791189",
+          "publishedOn": "2021-07-22T16:35:19.000Z",
           "wordCount": 161,
-          "title": "阿里云云原生面向 2021 年 11 月-2022 年 10 月应届毕业生招聘"
+          "title": "关于 Java 的 Supplier<T>接口的疑问，为什么可以传入静态方法"
         },
         {
-          "id": "790922",
-          "author": "xmge",
-          "description": "xmge: 最近想到要做一个人生规划，而不是随波逐流，然后看到一句话说人生规划中，最重要的是职业规划，可我的职业规划是不上班，，，，那怎么规划职业生涯呢？？？",
-          "link": "https://www.v2ex.com/t/790922",
-          "publishedOn": "2021-07-21T12:14:49.000Z",
-          "wordCount": null,
-          "title": "你的职业生涯的目标是什么呢？"
+          "id": "791187",
+          "author": "yyh325",
+          "description": "yyh325: \n用外接屏幕没有反光问题，但有时候需要直接用到笔记本屏幕，如果此时头顶有灯的话，严重干扰视线。查了一下解决方法：\n1，贴膜 2，移除光源 3，大幅调高屏幕亮度",
+          "link": "https://www.v2ex.com/t/791187",
+          "publishedOn": "2021-07-22T16:22:40.000Z",
+          "wordCount": 196,
+          "title": "mbp m1 屏幕反光这个问题有解吗"
         },
         {
-          "id": "790921",
-          "author": "xcmkxcmk81",
-          "description": "xcmkxcmk81: \n我们是一只国外归来的创业团队，创始团队来自耶鲁，伦敦商学院，前 Uber，腾讯，阿里。一个实时互动的在线社交以及活动参与平台，现招后端工程师。 有兴趣请加 WX：aWNleHVjaGVu (江湖规矩，你懂的)\n关于公司：\n已经拿到多家顶尖美元基金的投资，创始团队来自伦敦商学院，滑铁卢，耶鲁大学；并且有着清一色 90 后的核心团队，来自腾讯、阿里、Uber 、最右的年轻管理者，以及在 3D 内容、社交网络领域深耕的年轻创业者。95 后 CEO，曾是上市公司业务负责人 /副总裁、BAT 最年轻的管理者\n有理想的产品：我们始终相信好的产品要为更多人的幸福生活服务。随着 AI 对生产力不断地提升，旧的社会关系不断地重构，我们相信人类会回归人性，进入一个“趣缘”社会，大家会和有共同爱好的人一起生活在虚拟世界。在未来的世界里，我们会因为自己的独特被珍视，而不是一颗流泪就会生锈的螺丝钉\n拒绝 996：我们相信“谋定而后动”，花更多时间做正确的决策、让工作更高效\n践行激进坦诚：上一代的礼貌是面子，这一代的礼貌是真实；缺点让人更立体、真诚让人更亲切，所以让我们做自己\n在这里，拒绝政治，专注产品\n后端开发 (Golang)\n职位描述：\n你将会是项目的主要开发人员之一，负责很多核心功能模块的设计与搭建，希望你有扎实的编程基础；\n参与平台的微服务架构搭建与开发；\n提升系统性能和研发效率，保证高并发高可用。\n职位要求：\n本科及以上学历，计算机、通信等相关专业；\n扎实的计算机技术基础，熟练掌握 Go/Python/Java 等 1 至 2 种以上语言； 熟悉 Linux 系统，较强的解决问题能力；\n熟悉主流消息中间件(MQ/Kafka/Redis)的使用和特性；\n熟悉常用数据库 MySQL/MongoDB/Cassandra 等技术特点，并掌握常用性能优化技巧，有大规模系统设计和开发经验者优先；\n熟悉互联网分布式架构，良好的业务架构设计能力，熟悉行业常见的架构方案；\n熟悉 RPC 原理和开源框架如 gRPC/Dubbo/Thrift ；\n有过视频，音频，直播，游戏开发经验者优先；\n对可扩展性、稳定性、性能、质量有特别的执着，若有高可用、高性能 Web 实践经验更佳；\n加分项：\n熟悉 Docker 、Kubernetes 及相关云原生系统；\n了解主流 IaC 技术(Ansible/Terraform)。",
-          "link": "https://www.v2ex.com/t/790921",
-          "publishedOn": "2021-07-21T12:11:51.000Z",
+          "id": "791186",
+          "author": "chuwux",
+          "description": "chuwux: 米哈游 2022 届~~秋季校园招聘正式开始啦！ 700+Offer （可内推哦）\n米哈游内推！内推！内推！重要事情说三遍！\n社招持续进行中～通过内推链接查看各个岗位具体要求，一键投递简历，offer 快人一步，各位优秀的老爷们小姐姐们小哥哥们，简历赶紧投起来吧\n面向对象\n校招全职岗位\n2022 届毕业生(毕业时间为 2021 年 9 月 1 日-2022 年 8 月 31 日)\n校招实习岗位\n2023 届毕业生(毕业时间为 2022 年 9 月 1 日-2023 年 8 月 31 日)\n*中国大陆以毕业证为准，非中国大陆地区以学位证为准\n2022 届秋招内推链接： https://app.mokahr.com/recommendation-apply/mihoyo/24513?recommendCode=AEVIP&codeType=1&hash=%23%2Fjobs%3Fpage%3D1\n社招内推链接： https://app.mokahr.com/recommendation-apply/mihoyo/26460?recommenderId=936494&hash=%23%2Fjobs%3Fzhineng%3D22500\nPS：移动端显示请在微信客户端打开链接，复制链接发送到微信文件传输助手，然后点击链接即可打开\nPS：内推简历优先筛选哦，欢迎大家评论转发推荐给需要的小伙伴。\na 、优秀的薪酬福利：\n行业 Top 薪酬激励，六险二金 16 薪，1 年两次调薪窗口，10 天带薪年假，旅游基金，豪华年节福利，定期体检，免费晚餐，不限量零食饮料，丰富多彩的节日礼品…… 最优秀的你值得最高的回报，米哈游期待你的到来。\n通勤相遇，尽享班车 ，福利不停，我在 miHoYo，等你一起拯救世界。\nb 、关于米哈游\n米哈游成立于 2012 年，业务主要集中在国产动漫文化下的移动、PC 及主机领域。作为研发商，陆续推出《崩坏学园 2 》、《崩坏 3 》、《未定事件簿》、《原神》等优秀产品,并制作了虚拟角色https://testerhome.com/yoyo\">@yoyo 鹿鸣_Lumi 。\n米哈游以极高的游戏制作品质、忠实的玩家群体、漂亮的全球化营收数据，悄然挑战和改写着游戏的业态。在游戏领域之外，米哈游围绕多款原创 IP，推出了动画、漫画、音乐、小说、周边等多元产品，打造动漫游戏全产业链，向成为一家世界一流的国产动漫公司迈进。\n米哈游总部位于中国上海，并在新加坡、美国、加拿大、日本、韩国等国家与地区进行全球化布局。目前,公司员工超过 3000 人,多数来自世界顶尖高校和知名互联网公司。\n程序&技市类\n游戏客户端开发\nNLP 深度学习研究员\n游戏服务器开发\n图形工程师\n构建工程师\n图形算法工程师\n渲染开发\n图像算法工程师\n引擎开发\n数据开发\n游戏测试开发\nJawa 后端开发\n游戏测试\nGolang 后端开发\n场景测试\nWeb 前端开发(信息化)\n运维开发\nWeb 前端开发(平台)\n动作生或研究员\nweb/APP 测试工程师\n强化学习研究员\n测试工程师〔信息化)\n数字人深度学习研究员\n产品经理实习生〔运维向)\n图形学研究员〔深度学习方向)\nWeb 前端开发实习生〔信息化》\n项目管理\nJawa 后端开发实习生(信息化)\n项目管理(信息化)\n美术表现类\n角色原画师\n3D 角色设计师\n怪物原画师\n3D 场景设计师\n场景原画师\n硬表面模型师\n机械原画师\n关卡美术设计师\n美直插画师\n游戏动画师\n二维动画原画师\nCG 动画师\n城市规划设计师\n游戏特效师\n游戏 UI 设计师\nCG 特效师\n视觉设计师\n音效设计师\n产品 UE 设计师\n视频设计师\n周边设计师\n分镜师\n角色原画实习生\n灯光师\n场景原画实习生\n技术美术〔材质贴图)\n3D 角色实习生\n技术美术〔程序化生成)\n3D 场景实习生\n技术美术〔场景)\n游戏 UI 实习生\n技术美术(动画)\n3D 特效实习生\n3D 培训生\n视觉设计实习生\n原画综合培训生\n视频设计实习生\n产品 UI 实习生\n 产品策划类\n系统策划\n数值策划\n关卡战斗策划\n交互策划(UE)\n文案第划 /编剧\n游戏与平台运营类\n游戏与平台运营\n用户研究\n市场商务类\n市场商务\n市场数据分析\n营销策划\n境外发行类\n境外培训生\n网页产品实习生\n境外社群实习生\n综合管理类\nHR 招聘\nHR 培训\n雇主品牌文案\n财务会计\n法务专员\n采购专员\nBP(算法团队)\nBP(游戏业务)\nBP(平台)",
+          "link": "https://www.v2ex.com/t/791186",
+          "publishedOn": "2021-07-22T16:18:48.000Z",
+          "wordCount": 177,
+          "title": "米哈游 2022 届~~秋季校园招聘正式开始啦！ 700+Offer（可内推哦）"
+        },
+        {
+          "id": "791183",
+          "author": "Marlinzzz",
+          "description": "Marlinzzz: 是由于我用的是 App Store 版本的原因吗？",
+          "link": "https://www.v2ex.com/t/791183",
+          "publishedOn": "2021-07-22T15:46:47.000Z",
           "wordCount": 1,
-          "title": "[上海静安] 后台开发(Golang)。30K - 40K 15 薪（全职）"
+          "title": "Mac QQ 怎么不支持快速登录"
         },
         {
-          "id": "790920",
-          "author": "Wonderful05",
-          "description": "Wonderful05: \nrt，是我的字太多有 mg 词吗，我自查了没有啊貌似....\n还是什么其他的原因呢？",
-          "link": "https://www.v2ex.com/t/790920",
-          "publishedOn": "2021-07-21T12:11:32.000Z",
-          "wordCount": 96,
-          "title": "想要在职场话题发帖需要 1000 天？"
+          "id": "791182",
+          "author": "find456789",
+          "description": "find456789: \n这两者，除了音标的发音有区别， 在一些 表达方式上，也有一些差距\n我目前的想法是，选择美式， 因为很多互联网上的大项目、大公司、。。。 都是美国人弄的\n所以学美式，可能会好一些\n想听听大家的意见\n谢谢",
+          "link": "https://www.v2ex.com/t/791182",
+          "publishedOn": "2021-07-22T15:43:40.000Z",
+          "wordCount": 244,
+          "title": "程序员学英语，应该选英式， 还是美式？"
         },
         {
-          "id": "790916",
-          "author": "coderstory",
-          "description": "coderstory: \n题目是 10 个线程 对应 20 个账号\n每个线程执行 100 次 任意 2 个账号之间的金额交易\n代码实现中遇到了死锁\n假设线程 A 对 账户 A 账户 B 执行交易 （ A 转钱到 B ）\n线程 B 对账户 B 和账户 A 执行交易（ B 转钱到 A ）\n我代码写的是先锁一个账号 判断账号余额是否足够，然后锁另一个账户 最后执行转账\n但是同时有 2 个线程执行了 2 个相同账户的反向操作时，就会死锁了。\npackage cn.bobmao.logic.service;\n\nimport java.util.ArrayList;\nimport java.util.List;\nimport java.util.Random;\nimport java.util.concurrent.CountDownLatch;\nimport java.util.concurrent.ExecutorService;\nimport java.util.concurrent.Executors;\nimport java.util.concurrent.atomic.AtomicInteger;\n\npublic class Test {\n    class Account {\n        int index;\n        int balance = 100;\n\n        public Account(int index) {\n            this.index = index;\n        }\n    }\n\n    public static void main(String[] args) throws InterruptedException {\n        new Test().run();\n    }\n\n    public voi…",
-          "link": "https://www.v2ex.com/t/790916",
-          "publishedOn": "2021-07-21T11:05:38.000Z",
-          "wordCount": 468,
-          "title": "Java 新手 求解 死锁要怎么处理"
+          "id": "791181",
+          "author": "wszgrcy",
+          "description": "wszgrcy: \n准确来说,应该并不是因为端口转发限制的......\n因为在我没启动 moonlight 之前\nlinux 主机去 traceroute win 主机是都能访问的\n但是一旦进行连接后(主机找到了,选择串流的游戏 /桌面)\n再 traceroute 就失败,同时也会报 552 也就是端口转发规则 48010 48000\n很费解,是不是 nvidia 已经封了这个方式?我目前是都升到最新版本用的\n对了是局域网.没做任何转发限制(之前能 traceroute 通应该也证明了这一点吧...)\n发现占用端口的是这个程序nvcontainer.exe杀掉后再连接还是会启动",
+          "link": "https://www.v2ex.com/t/791181",
+          "publishedOn": "2021-07-22T15:27:30.000Z",
+          "wordCount": 180,
+          "title": "moonlight-stream 卡在 552 报错"
         },
         {
-          "id": "790915",
-          "author": "TuYanzheng",
-          "description": "TuYanzheng: \n现在需要给学校做一个社团管理系统，要求包括档案管理等功能。因为是高中，所以也不用大体量。\noa 系统，如果只需要小改也行。",
-          "link": "https://www.v2ex.com/t/790915",
-          "publishedOn": "2021-07-21T10:48:20.000Z",
+          "id": "791180",
+          "author": "yagamil",
+          "description": "yagamil: rf_model.feature_importances_[0]=0.1\n不过重新查看其值, 似乎没有修改成功.",
+          "link": "https://www.v2ex.com/t/791180",
+          "publishedOn": "2021-07-22T15:20:30.000Z",
+          "wordCount": 166,
+          "title": "训练出随机森林的模型后,能否手工修改它的特征权重 rf_model.feature_importances_"
+        },
+        {
+          "id": "791179",
+          "author": "levon",
+          "description": "levon: 应该不是插件的问题，访客模式下访问也崩溃，有时候只在地址栏输入网址都崩溃（还没回车），好难啊",
+          "link": "https://www.v2ex.com/t/791179",
+          "publishedOn": "2021-07-22T15:16:15.000Z",
+          "wordCount": 97,
+          "title": "chrome 打开油管网站就闪崩，版本 91，后面升级为 92 也一样"
+        },
+        {
+          "id": "791178",
+          "author": "leiakun",
+          "description": "leiakun: Cloudflare 和京东云合作改善 Cloudflare 网络在中国的体验，各位大佬能帮忙测试一下吗？\n1.1.1.1 以后 DNS 查询直接在中国大陆内了，不知道 DOH 能不能在国内使用。\nhttps://blog.cloudflare.com/upgrading-the-cloudflare-china-network/",
+          "link": "https://www.v2ex.com/t/791178",
+          "publishedOn": "2021-07-22T15:16:11.000Z",
+          "wordCount": 259,
+          "title": "Cloudflare 升级在中国的网络，并改善 DNS 服务"
+        },
+        {
+          "id": "791177",
+          "author": "jianhuo",
+          "description": "jianhuo: 可以感染 win10 以前系统，不知道谁传染的，很厉害",
+          "link": "https://www.v2ex.com/t/791177",
+          "publishedOn": "2021-07-22T15:13:41.000Z",
+          "wordCount": 103,
+          "title": "谁听说过 sysmgr 病毒，在 c 盘下，"
+        },
+        {
+          "id": "791176",
+          "author": "xiaoao",
+          "description": "xiaoao: 我有一个国区一个美区\n主账号美区\n下载墙内 app 用国区\n如题\n谢谢各位彦祖",
+          "link": "https://www.v2ex.com/t/791176",
+          "publishedOn": "2021-07-22T15:13:15.000Z",
+          "wordCount": 113,
+          "title": "请问 icloud 扩容什么姿势价格最低？"
+        },
+        {
+          "id": "791175",
+          "author": "kor",
+          "description": "kor: 每次用微信公众号看账单太麻烦了",
+          "link": "https://www.v2ex.com/t/791175",
+          "publishedOn": "2021-07-22T15:07:35.000Z",
+          "wordCount": 173,
+          "title": "现在还有哪些银行卡有短信提醒，或者是导出账单功能"
+        },
+        {
+          "id": "791170",
+          "author": "mikulch",
+          "description": "mikulch: \n群建了比较长的时间了，都是 v 站会员。最开始是准备讨论技术问题，后来逐渐话题趋于综合。目前准备吸纳一些「志同道合」的新鲜血液。\n群的主题主要是以下几个：\n生活美食，美景分享。（重点）\n职场吐槽。\n聊天打屁。\n技术问题解答。\n排解生活中的苦闷。\n群员具有以下特征：\n活跃会员基本在 30 岁上下。\n前端居多。\n名片都按照城市和技术栈分了类。\n大部分都比较好交流。\n喜欢发沙雕图和宠物图片。\n虽然偶尔都会吐槽，但是整体还是积极向上的。\n群内规范如下：\n禁止 zz\n禁止 sq\n禁止恶心，恐怖信息。\n禁止无限制的负能量和抱怨。\n注意看群公告。\n提倡客观冷静和谐，反对极端情绪化对立。\n根据以上信息，如果觉得群的主题和群员的画像和自己的意向相符合的话，可以扫码入群哈。\n另外，群每隔一段时间会清理一次僵尸粉。如果加了群了觉得不合适，退了就行。\n如果没有退，就是当的保持一下活跃度，比如多帮助群里面的人解决技术问题等等。",
+          "link": "https://www.v2ex.com/t/791170",
+          "publishedOn": "2021-07-22T14:45:26.000Z",
+          "wordCount": 122,
+          "title": "一个存在了挺久的分享美景美食的 v2 wx 群，近期吸纳一些新会员。"
+        },
+        {
+          "id": "791169",
+          "author": "MakHoCheung",
+          "description": "MakHoCheung: go 因为有协程，所以高并发是它的一大优势，但是我看博客，别人说 groutine 的底层也是线程池，这样跟 Java 也一样，为什么 go 在高并发这块就很厉害呢（我不知道 Java 在高并发这块是不是比 go 弱，我没做过什么高并发项目）。发散一下就是 Java 的 NIO +线程池（现实例子就是 netty ）跟 go 在高并发这块差距是不是巨大？",
+          "link": "https://www.v2ex.com/t/791169",
+          "publishedOn": "2021-07-22T14:45:05.000Z",
+          "wordCount": 510,
+          "title": "关于 Java 和 go 高并发的话题"
+        },
+        {
+          "id": "791168",
+          "author": "chencc48111",
+          "description": "chencc48111: \n老板让我们用一个低代码平台重构我们的项目, 项目挺复杂, 用的还是你们听都没听过的 用友 低代码平台, 官网连客户案例都没有, 最怕这些中型公司的低代码平台, 全是坑, 说实话, 就是垃圾, 用低代码平台开发复杂系统, 比用 java 还复杂 3 倍, 功能还简陋 5 倍. 学个 vue 还有点用, 学它? 就算低代码以后会成主流, 连轮不到用友吧? 大概 2 年后自己公司都不会维护了.",
+          "link": "https://www.v2ex.com/t/791168",
+          "publishedOn": "2021-07-22T14:44:20.000Z",
+          "wordCount": 240,
+          "title": "低代码重构复杂系统?"
+        },
+        {
+          "id": "791167",
+          "author": "haokuderen",
+          "description": "haokuderen: 拱墅万达附近的单身公寓和二室有推荐吗？",
+          "link": "https://www.v2ex.com/t/791167",
+          "publishedOn": "2021-07-22T14:42:43.000Z",
+          "wordCount": 100,
+          "title": "杭州租房求助"
+        },
+        {
+          "id": "791165",
+          "author": "LinusChen",
+          "description": "LinusChen: import pandas as pd\nimport openpyxl\n#用来保存结果的列表\ntwo = []\nurltwo = []\nurltwoo = []\nthree = []\nurlthree = []\nurlthreee = []\n\nfour = []\nurlfour = []\nurlfourr = []\nfive = []\nurlfive = []\nurlfivee = []\nletters = \"abcdefghijklmnopqrstuvwxyz\"\n#几位数，自己定\nttwo = [a+b for a in letters for b in letters]\ntthree = [a+b+c  for a in letters for b in letters for c in letters]\nffour = [a+b+c+d  for a in letters for b in letters for c in letters for d in letters]\nffive = [a+b+c+d+e  for a in letters for b in letters for c in letters for d in letters for e in letters]\n#域名后缀\nhz = \"logistics.com.br\"\nhz2 = \"comex.com\"\n#开始\nfor k2 in ttwo:\n    url2 = [k2 + hz]\n    url22 = [k2 + hz2]\n    urltwo.append(url2)\n    urltwoo.append(url22)\n    two = urltwo + urltwoo\n \nfor k3 in tthree:\n    url3 = [k3 + hz]\n    url33 = [k3 + hz2]\n    urlthree.append(url3)\n    urlthreee.append(url33)\n    three = urlthree + urlthreee\n\nfor k4 in ffour:\n    url4 = [k4 + hz]\n    url44 = [k4 + hz2]\n    urlfour.append(url4)\n    urlfourr.append(url44)\n    four = urlfour + urlfourr\nfor k5 in ffive:\n    url5 = [k5 + hz]\n    url55 = [k5 + hz2]\n    urlfive.append(url5)\n    urlfivee.append(url55)\n    five = urlfive + urlfivee\n#导出结果\ndata = {'两个字母': two,'三个字母': three,'四个字母': four,'五个字母':five}\nframe = pd.DataFrame(data)\nframe.to_excel(\"E:\\BaiduNetdiskWorkspace\\个人\\python\\猜域名.xlsx\")",
+          "link": "https://www.v2ex.com/t/791165",
+          "publishedOn": "2021-07-22T14:37:31.000Z",
+          "wordCount": 426,
+          "title": "小白初学 Python ，有没有大佬可以帮忙简化一下代码"
+        },
+        {
+          "id": "791163",
+          "author": "meowhuang",
+          "description": "meowhuang: \n想请大家帮忙测试一下 iOS 15 是否修复了这个 Bug 。\n简单描述一下 Bug : 和无障碍中的缩放控制器有关。\n1· 如果点击缩放控制器，可以移动已放大区域\n2· 如果点击缩放控制器以外的其他地方，不应该影响已放大区域\nBUG: iOS 14 中不满足第二条。也就是控制器以外的其他地方依然可以影响已缩放区域缩放范围\n如何帮忙测试：打开缩放控制器 (iOS 14)：\n设置 \n辅助功能 \n缩放 \n打开缩放开关（这时会立即启用缩放。你可以三指同时双击屏幕，关闭）\n缩放控制器\n打开显示控制器开关\nBug 详细信息，我发了一个博客记录如下：\nhttps://www.huangwei.icu/2021/07/22/ios-%e8%a7%86%e8%a7%89%e6%97%a0%e9%9a%9c%e7%a2%8d-%e7%bc%a9%e6%94%be%e5%8a%9f%e8%83%bd/",
+          "link": "https://www.v2ex.com/t/791163",
+          "publishedOn": "2021-07-22T14:23:54.000Z",
+          "wordCount": 222,
+          "title": "求更新 iOS 15 的朋友帮忙测试一个无障碍的 Bug"
+        },
+        {
+          "id": "791162",
+          "author": "sekfung",
+          "description": "sekfung: \n用整型查询不是更快吗？\n比如类型有\"01\" \"02\"，这里衍生另一个问题，既然都是字符串，为何不用\"1\", \"2\",还浪费空间\n是出于什么考虑？我想到的有几个原因\n防丢精度防出错，比如前端传个 long 型 雪花 id\n\"01\"有前导 0, 表明该字段最大值为 99\n还有其他什么血泪教训吗？",
+          "link": "https://www.v2ex.com/t/791162",
+          "publishedOn": "2021-07-22T14:23:37.000Z",
           "wordCount": null,
-          "title": "有什么社团管理系统的轮子"
+          "title": "为什么大多数系统数据表设计，类型字段都喜欢用字符串而不是整型"
+        },
+        {
+          "id": "791161",
+          "author": "ElDanno",
+          "description": "ElDanno: \n如题。想问问大家是怎么看待实习生的。\n面的后台卡发岗，实习了好几周了，开发没干到，文字工作倒干了不少，已经熟读并背诵外包功能介绍文档了哈哈哈。感觉公司或者说 leader 也不是很看重对实习生培养，很多实习生干杂活，都想早点跑路。\n和家人抱怨 jd 货不对板然后被教育实习生就是干杂活，没人愿意带实习生。然后我玻璃心碎了 hhhhh 。不过马上就跑路了，心态躺平了。\n打了一堆文字，后面想想算了，虽然我不觉得他们会上 v2ex，但是还是保全自己。",
+          "link": "https://www.v2ex.com/t/791161",
+          "publishedOn": "2021-07-22T14:09:38.000Z",
+          "wordCount": 231,
+          "title": "想问问大家是怎么看待实习生的？"
+        },
+        {
+          "id": "791160",
+          "author": "xuweifeng1987",
+          "description": "xuweifeng1987: v 站很少有人养鱼吗，兰寿、泰狮等等的\n建了个 qq 群，627885720\nps：自从我 5 月份养鱼以来，以前一直很瘦的，现在竟然开始胖了，缓解压力神器！！！",
+          "link": "https://www.v2ex.com/t/791160",
+          "publishedOn": "2021-07-22T14:07:55.000Z",
+          "wordCount": null,
+          "title": "杭州有没有养鱼的 v 友，搞了个本地交流群~"
+        },
+        {
+          "id": "791159",
+          "author": "petelin",
+          "description": "petelin: 抖音后端，直播核心钱包团队（春晚红包）（直播送礼）招人 招人！！！\n欢迎校招生私信简历，有私必回，直接推 hr 的 leader ！ 社招也要，上船的好时机！\n入职请吃饭\n邮箱：ODU5NTk4NzMyQHFxLmNvbQ== (qq)",
+          "link": "https://www.v2ex.com/t/791159",
+          "publishedOn": "2021-07-22T14:02:01.000Z",
+          "wordCount": 126,
+          "title": "抖音后端，直播核心钱包团队（春晚红包）（直播送礼）招人 招人！"
+        },
+        {
+          "id": "791156",
+          "author": "meisen",
+          "description": "meisen: \n首先说下个人观点：浅色 YYDS，深色更疲劳更累\n浅色模式书签栏\n\n深色模式书签栏\n\n请戴眼镜的同学，头画圈（类似“O”）看上图里 YouTube 的 Logo，是否发现浅色和深色有所变化？\n也请不近视的同学帮忙看下有无区别。",
+          "link": "https://www.v2ex.com/t/791156",
+          "publishedOn": "2021-07-22T13:39:46.000Z",
+          "wordCount": 168,
+          "title": "发现浅色（亮色）和深色（暗色）对戴近视眼镜人的影响"
+        },
+        {
+          "id": "791155",
+          "author": "evemoo",
+          "description": "evemoo: \n阿里云轻量服务器：\n有公网 IP + 安全组端口全开 + 打上 Fullcone 补丁 。\n\n服务器配置：\n192.168.1.222 是 NS 的 局域网地址。\n\n\n\nVirtualbox 虚拟机：\n有线桥接模式，连上后能互相 ping 通。\n\n客户端配置：\n\n防火墙配置：\n\n\n\n存在问题：\nNintendo Switch 将网关设置成虚拟机 IP 后，网络测试结果为服务器地址，但 NAT 类型没有提升到 A 。",
+          "link": "https://www.v2ex.com/t/791155",
+          "publishedOn": "2021-07-22T13:35:13.000Z",
+          "wordCount": null,
+          "title": "虚拟机 + Wireguard 的 NAT 问题"
+        },
+        {
+          "id": "791154",
+          "author": "wuwukai007",
+          "description": "wuwukai007: \nnput_data = [\n    ['格力', '格力电器'],\n    ['格力', '美的', '格力电器', '美的集团'],\n    ['中国民生投资股份有限公司', '中民投'],\n    ['格力', '格力电器', '格力集团'],\n    ['工银', '中信证券', '工行', '中国工商银行'],\n    ['建行', '建设银行', '北大光华'],\n    ['中国银行', '工行', '工商银行', '港交所'],\n    ['中行', '建行', '工行', '中金', '工商银行', '中国银行', '建设银行'],\n    ['农行', '建设银行', '建行', '中行'],\n    ['中国民生投资股份有限公司', '上海金融法院', '中民投', '启信宝']\n]\n输出:\n            {('格力', '格力电器'): 3,\n             ('美的', '美的集团'): 1,\n             ('中民投', '中国民生投资股份有限公司'): 2,\n             ('格力', '格力集团'): 1,\n             ('工银', '中国工商银行'): 1,\n             ('建行', '建设银行'): 3,\n             ('中行', '中国银行'): 2,\n             ('工银', '工商银行'): 2}\n\n\nfrom itertools import chain\nfrom collections import defaultdict\n\ndata = list(chain(*nput_data))\nres = [set(i) for i in data]\n\ncount = defaultdict(int)\nfor index,row in enumerate(res):\n    for index2,i in enumerate(res):\n        if row.issuperset(i) and row != i:\n            count[(data[index2],data[index])] += 1\n            break",
+          "link": "https://www.v2ex.com/t/791154",
+          "publishedOn": "2021-07-22T13:17:12.000Z",
+          "wordCount": 601,
+          "title": "Python 碰到一题，大家有没有更好的解法"
+        },
+        {
+          "id": "791152",
+          "author": "songdg",
+          "description": "songdg: 譬如一个时序的数组，最近的 100 个数据不变，大于 100 的根据与当前的距离逐渐变小。",
+          "link": "https://www.v2ex.com/t/791152",
+          "publishedOn": "2021-07-22T13:08:36.000Z",
+          "wordCount": 160,
+          "title": "有什么算法能使一列数组中较远数据逐渐变小"
+        },
+        {
+          "id": "791151",
+          "author": "fabiannnnnnnnnn",
+          "description": "fabiannnnnnnnnn: \n如题 想求一些不错的 gitbook 推荐\njava 、服务端、计科、架构、面经都可以",
+          "link": "https://www.v2ex.com/t/791151",
+          "publishedOn": "2021-07-22T13:06:34.000Z",
+          "wordCount": 124,
+          "title": "求不错的 gitbook 推荐"
+        },
+        {
+          "id": "791150",
+          "author": "nomeguy",
+          "description": "nomeguy: 微软亚洲研究院-网络研究组招收研究实习生啦~\n微软亚洲研究院 (MSRA)-网络研究组 (Networking Research Group)\nhttps://www.microsoft.com/en-us/research/group/networking-research-group-2/\n========================\n岗位： [基于 SONiC 开源云网络操作系统的安全机制研发-全职实习生, 若干名] \n1 、工作职责：\n- SONiC 是微软推出的下一代开源云网络操作系统，为大型数据中心的交换机设备提供统一的底层操作系统支持；\n- 参与 SONiC 中某些模块的研发，如 Redis DB 、SNMP 、BGP 、DHCP 、IPv6 等等；\n- 检测 SONiC 操作系统本身的安全需求（ Spec ）与底层交换机设备实际部署的安全规则（ ACL ）之间的冲突，利用算法分析网络配置之间的不一致问题；\n- 参与开发公司在 GitHub 上的开源项目。\n2 、职位要求：\n- 熟悉计算机网络（ TCP/IP 协议栈）、云原生（ Docker，K8s ）、路由交换设备、云数据中心网络、网络安全中的一个或多个领域，有相关项目经验；\n- 熟悉 Linux C/C++、Python 、Go 中的一门或多门语言，有较强的工程能力，熟练掌握 git，代码格式清晰规范，善于团队协作；\n- 有一定英文学术论文阅读能力，能够根据论文进行系统实现；\n- 较强的沟通能力和逻辑表达能力。\n3 、具有以下条件者优先：\n- 在 GitHub 较为活跃，有自己的开源项目，或参与过知名开源项目；\n- 发表过学术论文；\n- 可以连续实习不少于 6 个月。\n========================\n工作时间：每周 5 天，3 个月以上，能够尽快入职\n工作地点：北京市海淀区丹棱街 5 号（疫情期间可远程办公）\n如有意向请发 [中文简历 PDF ] 至：nrg-intern-recruit@microsoft.com\n简历中需标明平均分，及专业或年级排名及排名对应的总人数\n [注意] 请务必采用学校邮箱（ edu 域名）发送简历，其他邮箱（如 163 、qq 、gmail 、outlook 、hotmail 等）发送会进入公司垃圾邮件，无法被 HR 看到\n邮件标题&简历 PDF 文件名格式：基于 SONiC 开源云网络操作系统的安全机制研发-姓名-学校-本|硕|博-年级-V2EX",
+          "link": "https://www.v2ex.com/t/791150",
+          "publishedOn": "2021-07-22T13:01:17.000Z",
+          "wordCount": null,
+          "title": "[实习] [微软亚洲研究院] 基于 SONiC 开源云网络操作系统的安全机制研发实习生"
+        },
+        {
+          "id": "791149",
+          "author": "espaul64",
+          "description": "espaul64: \n在暗色模式下，系统偏好设置->桌面->选择动态桌面，桌面会自动变成「深色（静态）」的，还要再从菜单中选择「动态」。从 Catalina 到 Big Sur 都是这样，这是 bug 吗？",
+          "link": "https://www.v2ex.com/t/791149",
+          "publishedOn": "2021-07-22T12:58:56.000Z",
+          "wordCount": null,
+          "title": "为什么 Mac 在暗色模式下选动态桌面会自动变成静态的"
+        },
+        {
+          "id": "791148",
+          "author": "avalon8",
+          "description": "avalon8: 大概待两个月，住在高新区望江台，有 V 友可以找我来玩啊哈哈",
+          "link": "https://www.v2ex.com/t/791148",
+          "publishedOn": "2021-07-22T12:44:58.000Z",
+          "wordCount": 91,
+          "title": "来合肥出差了，合肥有啥好玩的"
+        },
+        {
+          "id": "791146",
+          "author": "h404bi",
+          "description": "h404bi: \n最近找到了可以获取 Microsoft Edge 的 Offline Installer （不需要管理员权限安装的 exe 包体，跟官网提供的 enterprise msi 包体不同）的一个 API：\ncurl -XPOST \"https://msedge.api.cdp.microsoft.com/api/v1.1/internal/contents/Browser/namespaces/Default/names/msedge-stable-win-x64/versions/91.0.864.54/files?action=GenerateDownloadInfo&foregroundPriority=true\" -d '{\"targetingAttributes\":{}}'\n\n除了 Offline Installer 外，还有增量包体。应该是 MicrosoftEdgeUpdate 程序调用的 API，用来检查和下载更新。一个返回示例：\n[{\"FileId\":\"MicrosoftEdge_X64_91.0.864.54_91.0.864.41.exe\",\"Url\":\"http://msedge.f.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/cfa50eb3-534c-46d0-a913-a39d579988b7?P1=1627558634&P2=404&P3=2&P4=HwucV0KjBP5sgCX2JFNT1DJwRmSPPyB6s1Uz1alehA9pHlFW%2bG9u1aD1nouRZDtTluLU1qtiwL2tYXfKmm4dfA%3d%3d\",\"SizeInBytes\":8344976,\"Hashes\":{\"Sha1\":\"pYhI3UY0IAQf7ko9D4e…",
+          "link": "https://www.v2ex.com/t/791146",
+          "publishedOn": "2021-07-22T12:16:37.000Z",
+          "wordCount": 288,
+          "title": "一个疑似 base64 编码的数据求解"
         }
       ]
     },
@@ -1045,7 +1017,7 @@
           "description": "职位描述：1. 根据不同级别，不同教学内容的需求，设计教学环节，教学流程；2. 撰写英语课程教学内容，包括词汇 […]",
           "link": "https://yuancheng.work/2366.html",
           "publishedOn": "2021-07-16T09:37:25.000Z",
-          "wordCount": 97,
+          "wordCount": 96,
           "title": "SmartApps Studio招聘兼职远程工作Lingola急招兼职线上英语教研"
         },
         {
@@ -1074,184 +1046,184 @@
       "siteUrl": "https://www.infoq.cn",
       "articles": [
         {
-          "id": "https://www.infoq.cn/article/GOVeqCj4WL30dG6dBerw?utm_source=rss&utm_medium=article",
-          "author": "郭蕾",
-          "description": "在 GMTC 北京上，我听了蚂蚁金服玉伯老师的分享。玉伯 2008 年加入阿里，在这期间，他和团队一起折腾过 KISSY、SeaJS、Ant Design、AntV 等开源项目，现在我们都喜欢用的语雀也是他团队的产品。\n\n他说他的人生观是敢想敢说、敢做敢当、简单真诚、自由活着。整个演讲，他娓娓道来，特别地真诚，也很实在。我把 PPT 放到文末链接了，如果你想看可以直接去下载。\n\n下面是我根据他演讲内容的总结，他没聊具体的技术，但聊到了整个行业的方向，以及一些技术趋势，挺有意思的，希望能给你一些启发吧。\n\n1、现在行业里，大概有三种声音。第一种是说，前端技术卷，论点是前端的轮子多，重复工作多（大量 CRUD），技术创新越来越难。第二种是说，前端发展难，比如有的人说，前端高 P 很少，前端的晋升很难。第三种是从企业的角度说，前端工程师难招，整个行业都在喊，前端招聘难，甚至在某些公司，前端外包人数已超过正式前端了。\n\n2、先不谈玉伯的观点，我听到这里的时候，就想起了几年前罗振宇在跨年演讲上的一句话，大概意思是这样的。“总有人问，今年经济到底好不好。想论证好，有一堆事实。想论证不好，也有一堆事实。”\n点击查看原文>",
-          "link": "https://www.infoq.cn/article/GOVeqCj4WL30dG6dBerw?utm_source=rss&utm_medium=article",
-          "publishedOn": "2021-07-21T20:16:12.000Z",
+          "id": "https://www.infoq.cn/article/tZILQ2c5euoSHDxVrxJ0?utm_source=rss&utm_medium=article",
+          "author": "Abhishek Kapoor",
+          "description": "正确实现的微服务较单体应用有很多优势。许多组织都希望将他们的单体应用程序代码换成微服务代码。但事实证明，迁移到微服务并非易事。你应该问的第一个问题是，你真的需要微服务吗？单体存在的许多问题都可以使用模块化的单体架构轻松解决。一旦你确定自己真的需要微服务，就必须制定一套将单体应用转换为微服务的计划。本文介绍了一些模式，可以帮助你创建所需的计划。\n \n在我们具体讨论这些拆分单体的模式之前，我们先来谈谈不应该做的一些事情。\n不要做大爆炸重写\n\n大爆炸重写（Big Bang Rewrite），顾名思义，是说我们必须在许多微服务中重写整个单体应用的代码，并一次性将它们都部署到生产环境中。Martin Fowler说过的一句话非常正确：\n\n\n大爆炸重写唯一能保证的就是大爆炸！\n\n\n大爆炸重写都是很危险的。大爆炸重写需要漫长的开发时间，因为你必须对单体应用程序中的所有内容重新编码。此外，在微服务架构的开发过程中，你必须冻结单体应用中新的开发工作，因为单体应用中所做的所有更改都必须复制到微服务中。对于大多数公司来说，冻结应用程序开发工作可能存在风险，因为他们必须根据业务环境的变化随时调整软件。\n \n对于一个组织来说，从单体逐渐转向微服务的路径一定是更好的选项。下面列举的一些可用设计模式可以帮助你逐步从单体架构转向微服务架构。\n点击查看原文>",
+          "link": "https://www.infoq.cn/article/tZILQ2c5euoSHDxVrxJ0?utm_source=rss&utm_medium=article",
+          "publishedOn": "2021-07-23T08:00:00.000Z",
           "wordCount": 3,
-          "title": "玉伯：前端的现状之痛及未来趋势"
+          "title": "从单体迁移到微服务的几种模式"
         },
         {
-          "id": "https://www.infoq.cn/article/sc7p5DIOVwaWF7QrhvqA?utm_source=rss&utm_medium=article",
-          "author": "Simon Willison",
-          "description": "我上周在Twitter上发起了一个关于API端点的讨论。相比一次返回100个结果，并要求客户端对所有页面进行分页以检索所有数据的API，这些流式传输大量数据的端点可以作为替代方案：\n\n\n假设这种流式传输端点有了高效的实现，那么提供流式HTTP API端点（例如一次性提供100,000个JSON对象，而不是要求用户在超过1000个请求中每次分页100个对象）有任何意想不到的缺陷吗？——Simon Willison（@simonw），2021年6月17日\n\n\n我收到了很多很棒的回复。我试过在推文上把这些想法浓缩进一个，但我也会在这里将它们综合成一些见解。\n批量导出数据\n\n我花在API上的时间越多（尤其是处理Datasette和Dogsheep项目时），我就越意识到自己最喜欢的API应该可以让你尽可能快速、轻松地提取所有数据。\n\nAPI 一般可以通过三种方式提供这种功能：\n\n\n单击“导出所有内容”按钮，然后等待一段时间，等它显示包含可下载zip文件链接的电子邮件。这并不是真正的API，主要因为用户通常很难甚至不可能自动执行最初的“点击”动作，但这总比没有好。谷歌的Takeout是这种模式的一个著名实现。\n点击查看原文>",
-          "link": "https://www.infoq.cn/article/sc7p5DIOVwaWF7QrhvqA?utm_source=rss&utm_medium=article",
-          "publishedOn": "2021-07-21T16:49:16.000Z",
+          "id": "https://www.infoq.cn/article/ACSYxGABpoTSHMCIlJTw?utm_source=rss&utm_medium=article",
+          "author": "闲鱼技术",
+          "description": "背景\n闲鱼作为一款垂直交易社区APP，拥有复杂多样的业务场景：涉及c2c、回收寄卖、租房租赁、见面交易、验货担保等，复杂多变的交易模式。比如验货流程：\n\n\n涉及39个状态机节点\n\n横跨10+应用系统\n\n涉及6个业务部门的合作\n\n涉及接口几十个\n\n\n需要保证每个接口、每个场景切实可行，稍微有一点点问题，就会涉及到人民币的味道，实际工作中，我们遇到各种各样的问题，比较棘手的问题如下\n问题\n业务先赢的快速迭代模式下，全靠人工主力进行测试验证，测完新功能，还得回归老功能，一个小需求也须要好几个人日，版本PTM也要回归好几遍，ROI并不乐观，以下2个问题比较突出：\n\n\n交易业务强依赖中台，沟通成本高，跨团队协作难，迭代效率低，测试环境下如何自洽？\n\n复杂多样交易模式下，如何支撑需求稳步迭代上线以及日常回归验证？\n点击查看原文>",
+          "link": "https://www.infoq.cn/article/ACSYxGABpoTSHMCIlJTw?utm_source=rss&utm_medium=article",
+          "publishedOn": "2021-07-23T07:00:00.000Z",
           "wordCount": 3,
-          "title": "怎样让API快速且轻松地提取所有数据？"
+          "title": "闲鱼如何保障交易链路质量"
         },
         {
-          "id": "https://www.infoq.cn/article/zYGF4FpIVVt5U2omioUu?utm_source=rss&utm_medium=article",
-          "author": "Sha Ma",
-          "description": "本文介绍GitHub如何从单体架构迁移到微服务架构，并对其中一些最佳实践做了详细说明。\n旅程开启\n\nGitHub创建于2008年，其宗旨是为开发人员托管和分享代码提供便利。GitHub的创建者也是开源贡献者，他们在Ruby社区非常有影响力。正因为如此，GitHub的架构深深地扎根于Ruby on Rails。\n\n在公司的整个发展历程中，我们雇佣了世界上最好的Ruby开发人员，帮助我们扩展和优化代码库。如今，我们的平台上已经有超过5000万名开发人员，每年有超过8000万个pull请求合并，全球各大洲有超过1亿个代码存储库。\n\n如你所见，这个单体架构已经带我们走得很远。一个演进了12年的代码库，每天要协调多次部署。我们有一个规模很大的平台，每天处理10亿次API调用，我们还提供了一个高性能的用户界面，专注于完成这项工作。\n内部快速增长\n\n在过去18个月中，GitHub内部经历了快速增长。我们已经有超过2000名员工，为代码库做贡献的工程师数量已经是以前的两倍多。这种增长既包括自身的逐步发展，也包括收购，如Semmle、npm、Dependabot和Pull Panda。\n\n此外，GitHub是一个高度分散的团队，在疫情发生前，我们就有超过70%的员工是在旧金山总部以外的地方办公。GitHub的员工和承包商要跨六大洲展开协作，他们工作的时区各不相同。我们有1000多名内部开发人员，他们有各种各样的开发技能，涉及到许多不同的技术。\n点击查看原文>",
-          "link": "https://www.infoq.cn/article/zYGF4FpIVVt5U2omioUu?utm_source=rss&utm_medium=article",
-          "publishedOn": "2021-07-21T16:20:36.000Z",
+          "id": "https://www.infoq.cn/article/QTJy0J6FGog5QocJYWsC?utm_source=rss&utm_medium=article",
+          "author": "小智",
+          "description": "这可以是一个用爱发电开始的故事，但不应该是一个只靠用爱发电的故事。\n1 一个从社区开始的故事\n1.1 我为什么一直在社区工作？\n过去的 6 年间，我一直在开发者社区工作。从 InfoQ 到掘金，这 6 年的时间遇见过太多形形色色的开发者和技术专家，又跟各个大厂的市场、公关同学建立起了深厚的友谊，这是我这几年最宝贵的一笔财富。\n\n今年 2 月份我选择了裸辞，按说一个年近 30，还着房贷房租，还在装修这个无底洞里往外爬的我，是不应该有这个裸辞的底气的。但我的确就是这么普通却自信，这个自信来源于我的一个认知：\n\n这是技术最好的时代，这是开发者最好的时代，这也是做开发者关系/运营人员最好的时代。\n\n在这样的背景下，我也算是见证了中国开发者社区的飞速发展期。\n\n\n\n从第三方开发者社区的角度看，CSDN、InfoQ、51CTO、思否、掘金，这些或老牌或新兴的开发者社区，其发展势头都非常迅猛，新兴社区甚至有了赶超之势。\n\n\n\n从企业自建开发者社区的角度看，无论是云栖社区、云加社区、华为开发者社区这些有所积累的老牌社区，还是互联网新贵们的另起炉灶，都让社区这个概念更加深入人心。\n\n\n\n从开源、基金会的角度看，Linux 基金会、CNCF 在国内扩张迅猛，本土的 Gitee、木兰协议、开放原子开源基金会也都开始成长起来。\n点击查看原文>",
+          "link": "https://www.infoq.cn/article/QTJy0J6FGog5QocJYWsC?utm_source=rss&utm_medium=article",
+          "publishedOn": "2021-07-22T21:03:58.000Z",
+          "wordCount": 3,
+          "title": "6年开发者社区工作经历，聊聊我眼中的社区、开源与商业"
+        },
+        {
+          "id": "https://www.infoq.cn/article/KNp1ibj40vS8IIZCizMW?utm_source=rss&utm_medium=article",
+          "author": "裴斐",
+          "description": "在分布式体系下，微服务技术在经历多年发展之后渐趋成熟。进入云原生时代，微服务技术在云原生理念的驱动下被赋予了新的使命。在 InfoQ 2020 年微服务技术年终盘点文章中，我们对传统的服务框架和云原生的服务网格分别进行了分析，指出了服务框架的进化与困局，服务网格的进步、分化、落地，并给出了企业微服务架构的演进方向。\n\n本文将延续微服务架构演进这个话题，结合网易数帆旗下轻舟微服务团队在诸多企业业务落地的微服务治理实践，阐述企业应用在不同阶段采用不同的微服务治理策略，以及从服务框架到服务网格实现架构平滑演进的思路与方法。\n服务框架：无侵入 Agent 服务治理\n\n服务框架是传统微服务技术的核心所在。早期微服务技术中的服务注册、发现、调用、治理、观测都离不开服务框架。这也带来了一些问题，比如业务研发者需要明显感知服务框架并掌握其中各项非业务相关技术，框架版本升级困难，框架越来越重难于维护等等。网易的互联网业务比较多元，早期各业务没有统一的微服务技术规范和框架，大部分业务选型了 SpringCloud、Dubbo、gRPC 等开源框架，也有少数业务选择自研 RPC 框架。服务框架在微服务架构下的问题随着业务、团队规模的扩大日益凸显，这也催生了 网易新一代微服务平台 —— 轻舟 的建设落地。\n\n2018 年，我们以 业务无侵入 为核心理念构建了轻舟微服务平台，核心数据面 基于字节码增强技术实现无侵入 Agent 服务治理能力，业务无需修改代码 即可 一键接入微服务治理全家桶 能力，大幅提高了用户业务微服务化改造效率，降低了业务进行服务治理相关能力的研发成本。轻舟微服务平台目前已在网易集团内外诸多企业业务落地。\n\n\n\n点击查看原文>",
+          "link": "https://www.infoq.cn/article/KNp1ibj40vS8IIZCizMW?utm_source=rss&utm_medium=article",
+          "publishedOn": "2021-07-22T18:03:32.000Z",
+          "wordCount": 3,
+          "title": "从服务框架到服务网格，网易轻舟双引擎多模式服务治理演进实践"
+        },
+        {
+          "id": "https://www.infoq.cn/article/3Bo0yuu203dUCCaLUYPU?utm_source=rss&utm_medium=article",
+          "author": "阿里巴巴中间件",
+          "description": "今天，云和云计算技术已经被企业广泛所接受，关于云、云计算、云原生都有非常多的话题，但是我比较想讨论的是在所有云当中真正的主角，就是我们的应用。\n\n因为当企业应用上云后，这些应用的高可用能力有可能提升了一部分，但仍存有许多问题；而当我们探讨上云后这些应用的运维效率，却未必有很大的提升，因为所有的运维都是基于基础设施进行的，而云计算是一个比较大的基础设施的改变；如果我们再问，上云后整个应用的开发速度是不是得到了极大的提升，这个时候很多人都要说，并不。\n因此，今天主要探讨的就是如何利用云原生相关的技术帮助我们的应用去做优化，从传统应用转变成现代化应用。\n非典型的典型——云上众生相\n我们先采取一个从个体再到整体的形而上的方式，来看一个比较典型的企业案例。\n\n\n\n点击查看原文>",
+          "link": "https://www.infoq.cn/article/3Bo0yuu203dUCCaLUYPU?utm_source=rss&utm_medium=article",
+          "publishedOn": "2021-07-22T18:01:28.000Z",
+          "wordCount": 3,
+          "title": "如何利用云原生技术构建现代化应用"
+        },
+        {
+          "id": "https://www.infoq.cn/article/p9vG2G9T49KpvHrckFwu?utm_source=rss&utm_medium=article",
+          "author": "刘勤龙,黄扬",
+          "description": "2019 年网易轻舟使用 sockmap+sk redirect 来优化轻舟 Service Mesh 的延迟，2020 年开始，我们逐步对 eBPF Service、Cilium NetworkPolicy，Cilium 容器网络进行实践，到 2021 年中旬，网易轻舟对外部客户提供了 Cilium 整体解决方案。\n\n本文会深入介绍 Cilium，并澄清一些认知误区，然后给出网易轻舟是如何使用 Cilium 的。目前国内这方面深入解析材料较少，如果您也正在探究，希望这篇文章能给您带来帮助。\neBPF 容器网络探索背景\n\n目前容器网络方案仍然呈现着百花齐放的态势，这主要是由于不同的 CNI 各有优势。开源的原生 CNI 具备较广的使用场景，即插即用。其中支持 overlay 方式的几个方案（openshift-sdn、flannel-vxlan、calico-ipip），能更好地适配 L2/L3 的网络背景，而 underlay 方式的几个方案（calico-bgp、kube-router、flannel-hostgw），则在性能上更趋近于物理网络，在小包场景中性能明显好过 overlay 类型方案。此外，许多主流云厂商基于还会自建 VPC 能力，实现 VPC-based CNI ，这类 CNI 与集群交付场景深度耦合，但也赋予了容器网络 VPC 的属性，具备更强的安全特性。\n\n此外，业界还有大量针对 CNI 或四层负载均衡的优化措施，例如：\n\n\n优化封装协议，基于 vxlan 有更好的兼容性，基于 ipip 协议则能提升一定的带宽能力（部分云厂商如 AWS 并不支持 ipip 协议的包）\n\n使用 IPVS 替换 kube-proxy 解决大规模环境里，Service 带宽降低和数据路径下发时间变长\n点击查看原文>",
+          "link": "https://www.infoq.cn/article/p9vG2G9T49KpvHrckFwu?utm_source=rss&utm_medium=article",
+          "publishedOn": "2021-07-22T15:42:40.000Z",
+          "wordCount": 5,
+          "title": "网易轻舟对 CIlium 容器网络的探索和实践"
+        },
+        {
+          "id": "https://www.infoq.cn/article/vQlNKLTwUON2ztp9BWrg?utm_source=rss&utm_medium=article",
+          "author": "腾讯云",
+          "description": "在当前，随着新一轮技术浪潮的兴起，以传统计算机技术为基础的信息时代正逐步过渡到由人工智能、云计算等关键技术驱动，各领域趋向融合的信息新时代。在这一背景下，数据库技术也正朝着崭新的方向不断发展。前不久刚结束的 ACM SIGMOD 2021 大会上，就涌现出很多值得关注的前沿技术热点。\n\n为了让更多的数据库从业者能了解数据库领域的最新研究成果，熟悉行业前沿发展趋势，近日，腾讯云数据库联合深圳计算机学会数据科学与工程（DSE）专委会，举办了一场围绕 SIGMOD 2021 与数据库前沿研究热点的线上研讨会分享活动。\n\n深圳大学计算机与软件学院、深圳计算科学研究院秦建斌老师，南方科技大学数据库团队负责人唐博老师，南方科技大学数据库团队晏潇老师，腾讯金融云数据库 TDSQL 资深研究员、腾讯云数据库专家工程师李海翔，以及主持人腾讯云数据库高级工程师赵展浩，多位学术专家与研究者在直播中各抒己见。以下是分享回顾。\n\n\n\n精华抢先看\n \n秦建斌：\n\n在更大规模数据的驱动下，将持续催生数据 driven 的 AI+ 数据库结合等新应用。同时，数据规模的不断增大，也使得数据治理变得愈发重要，我更加倾向于关注整个数据从创建到分析利用的整个生命周期。\n点击查看原文>",
+          "link": "https://www.infoq.cn/article/vQlNKLTwUON2ztp9BWrg?utm_source=rss&utm_medium=article",
+          "publishedOn": "2021-07-22T15:01:32.000Z",
           "wordCount": 4,
-          "title": "GitHub 如何从单体架构迁移到微服务架构？"
+          "title": "十四年后重返中国，SIGMOD 背后的数据库技术变迁"
         },
         {
-          "id": "https://www.infoq.cn/article/B0dpMASUNf3LBB8y2Svq?utm_source=rss&utm_medium=article",
-          "author": "Tina,核子可乐",
-          "description": "Julia 编程语言掀起了一股新的热潮。\n\n\n7 月 19 日，由 Julia 高性能编程语言初创团队建立的 Julia Computing 公司，宣布完成由 Dorilton Ventures 领投的 2400 万美元 A 轮融资（折合人民币约 1.6 亿）。参与此次融资的还包括 Menlo Ventures、General Catalyst 以及 HighSage Ventures 等。此外，前 Snowflake CEO 兼前微软服务器及工具业务总裁 Bob Muglia，也将正式加入 Julia Computing 董事会。\n\nJulia 编程语言最初由麻省理工学院（MIT）立项开发，目前在全球用户中拥有 2900 多万次下载量，具有 3.4 万颗星，已经有数千位开源开发者为 Julia 及其 6000 多个注册软件包贡献力量。全球超过 1500 所高校已经在使用 Julia 并教授相关知识，包括麻省理工、斯坦福大学、加州大学伯克利分校等世界一流学府。目前全球已经有超过 1 万家公司使用 Julia 语言，其中包括阿斯利康、贝莱德、谷歌、英特尔、微软、Moderna、辉瑞、NASA、联邦航空管理局以及纽约联邦储备银行等重量级用户。\n\n自 2012 年正式亮相以来，Julia 社区规模也呈指数级增长。Julia 帮助科学家及工程师们解决各类大规模数据科学问题，消除了只能使用高级语言（例如 Python、Matlab 或 R 语言）进行测试与建模环节、并使用其他高性能低级语言（例如 C 或 C++）进行生产与扩展的割裂问题。\n\nJulia Computing 将利用这笔资金进一步开发并改进旗下高安全性、高性能水平的 JuliaHub 云平台，同时着力拓展 Julia 生态系统。JuliaHub 能够帮助数据科学家及工程师以更快速度轻松开发、部署并扩展 Julia 程序及模型。\n\nDorilton Ventures 投资负责人 Daniel Freeman 评论道，“Julia 代表的是一项真正具有变革性的业务，具有巨大的成功潜力。”\n点击查看原文>",
-          "link": "https://www.infoq.cn/article/B0dpMASUNf3LBB8y2Svq?utm_source=rss&utm_medium=article",
-          "publishedOn": "2021-07-21T16:05:00.000Z",
+          "id": "https://www.infoq.cn/article/gGrkZ8yo5cFHUomiWI7W?utm_source=rss&utm_medium=article",
+          "author": "凌敏",
+          "description": "约翰逊政府目前正对这项收购交易展开“国家安全”审查，未来几周内将作出决定。\n\n被闻泰科技收购后，英政府暂停资助 NWF\n\n据英国《每日电讯报》当地时间 7 月 20 日晚间报道，在中企安世半导体（Nexperia）提出收购英国最大芯片生产商 Newport Wafer Fab（NWF）后，按照英国政府的指示，英国研究与创新署（UKRI）已经暂停了对 NWF 的资助。据了解，UKRI 现在是英国国内最主要的研发资助机构，每年总预算超过 60 亿英镑。\n\n本月稍早前，就有市场消息传出闻泰科技全资子公司安世半导体将以约 6300 万英镑（约合人民币 5.6 亿元）的价格收购 NWF，彼时闻泰科技方面回应道：“不予置评”。\n\n7 月 6 日，闻泰科技发布的一份公告证实了此次收购交易。公告显示，7 月 5 日，公司全资子公司安世半导体与 NWF 母公司 NEPTUNE 6 LIMITED（以下简称“NEPTUNE”）及其股东签署了有关收购协议。本次交易完成后，闻泰科技将间接持有 NWF 100% 权益。\n\n\n\n点击查看原文>",
+          "link": "https://www.infoq.cn/article/gGrkZ8yo5cFHUomiWI7W?utm_source=rss&utm_medium=article",
+          "publishedOn": "2021-07-22T13:59:52.000Z",
           "wordCount": 3,
-          "title": "开源编程语言Julia融资1.6亿，人气10倍速飙升"
+          "title": "英国最大芯片厂NWF遭政府停止拨款，或与被中企闻泰科技收购有关"
         },
         {
-          "id": "https://www.infoq.cn/article/9CKfEWBxWHw9tU5fAmDr?utm_source=rss&utm_medium=article",
-          "author": "刘燕",
-          "description": "太空这么大，地球富豪们想去看看。\n\n贝索斯成功上天\n\n57岁，身家2023亿美元的全球首富贝索斯的太空梦想终于实现了。\n\n\n\n\n美国时间7月20日上午8点12分，亚马逊创始人贝索斯所搭载的“新谢泼德号”在得克萨斯州西部沙漠中的一个发射场起飞。\n\n8点22分，太空舱在降落伞的牵引下安全着陆。这次太空之旅大约持续了近11分钟。\n\n贝索斯旗下公司“蓝色起源”将贝索斯等四位乘客送到了距离地球表面100公里(62英里)以上的高空。\n\n7月20日正好是阿波罗11号登月52周年，这个日子显然经过了精心挑选。\n\n点击查看原文>",
-          "link": "https://www.infoq.cn/article/9CKfEWBxWHw9tU5fAmDr?utm_source=rss&utm_medium=article",
-          "publishedOn": "2021-07-21T14:09:46.000Z",
+          "id": "https://www.infoq.cn/article/3dVaAU5qArvFjMy29MsF?utm_source=rss&utm_medium=article",
+          "author": "张俊宝",
+          "description": "开源生态正在经历前所未有的繁荣。\n\n今年 3 月，“开源”首次被明确列入国民经济和社会发展五年规划纲要。纲要提到，加快布局量子计算、量子通信、神经芯片、DNA 存储等前沿技术，加强信息科学与生命科学、材料等基础学科的交叉创新，支持数字技术开源社区等创新联合体发展，完善开源知识产权和法律体系，鼓励企业开放软件源代码、硬件设计和应用服务。\n\n对开源社区的支持，对完善开源底层基础设施的规划以及对企业开源的鼓励，为开源生态的长远发展和繁荣注入一剂强心针。二季度以来，开源领域也发生了一些大事，如阿里云开放关系型数据库PolarDB for PostgreSQL的源代码，蚂蚁金服开源自研分布式数据库OceanBase等。PolarDB系列产品支撑了天猫多年双十一的稳定进行，OceanBase也经历了蚂蚁金服和阿里巴巴金融业务的多次大考。至此，阿里、腾讯、华为等大厂深度参与了开源，开源生态已经进入企业级的主流。\n\n技术的发展要解决业务问题。上云容易“下”云难，早期上云享受到云服务的企业，如今需要在多云环境下进行业务数据的处理，需要对海量的数据进行实时处理、分析和反馈。多云环境下，如何解决多源数据异构、大数据技术栈蔓生、满足实时处理需求的同时简化技术栈的难题摆在了技术公司的面前。云厂商们共建数据库生态的姿态，促进了开源数据库的发展和繁荣，也映射了业务公司的迫切诉求。\n\n分布式数据库和大数据的结合顺势而生。新一代HTAP，开始成为分布式数据库与大数据栈融合的热门实践，PingCAP已经发布了面向企业级核心场景、具备完整 HTAP 能力的分布式数据库 TiDB 5.0 版本，OceanBase 也发布了 HTAP 分布式数据库方向的 3.0 版本。\n\n\nHTAP 能解决什么问题？\n\n开源数据库的发展方向是什么？\n\n中国技术企业如何顺利出海？\n\n……\n\n点击查看原文>",
+          "link": "https://www.infoq.cn/article/3dVaAU5qArvFjMy29MsF?utm_source=rss&utm_medium=article",
+          "publishedOn": "2021-07-22T13:00:09.000Z",
           "wordCount": 3,
-          "title": "贝索斯花1.8亿完成11分钟太空旅行，马斯克发表情包调侃：他只是到太空边缘一游"
+          "title": "一场开源数据库的精酿啤酒节，会有多少种味道？"
         },
         {
-          "id": "https://www.infoq.cn/article/aHivlBuSFFQuFjIVRYw1?utm_source=rss&utm_medium=article",
-          "author": "Gunjan",
-          "description": "机器学习和编码是相辅相成的。如果没有编码，数据科学家就无法使用机器学习模型。因此，机器学习工程师至少要对一门编程语言有全面的了解。这篇文章深入介绍了适合机器学习的五种编程语言，并帮助您确定哪种语言最适合您。\n1.Python\n \nPython 是一种流行的面向对象的语言，创建于 1989 年，并于 1991 年发布。Guido van Rossum 作为 Python 的创造者而广为人知。根据一份报告显示，Python 是最受欢迎的三大编程语言之一。\nPython 的用途\n \n\nWeb 开发：Python 可用于开发更快的 Web 应用，其库帮助 Web 应用开发更加快速和简单。Django 和 Flask 是其中两种著名的框架，这些工具使得 Web 应用从零开始开发变得非常方便，并且提供了可扩展性。\n点击查看原文>",
-          "link": "https://www.infoq.cn/article/aHivlBuSFFQuFjIVRYw1?utm_source=rss&utm_medium=article",
-          "publishedOn": "2021-07-21T10:11:17.000Z",
-          "wordCount": 3,
-          "title": "机器学习工程师需要掌握哪些编程语言？"
+          "id": "https://www.infoq.cn/article/OEcfh1vwtqEjJtNUGzSR?utm_source=rss&utm_medium=article",
+          "author": "Ewen Callaway",
+          "description": "蛋白质结构预测技术正在走向大众。广大科学家很快就能用上准确预测蛋白质3D形状的软件。\n\n7月15日，总部位于伦敦的DeepMind公司发布了该公司深度学习神经网络AlphaFold 2的一个开源版本，并在《自然》期刊的一篇论文中描述了其方法。该网络在去年的蛋白质结构预测竞赛中取得了领先地位。\n\n\n机器学习软件预测的人类白细胞介素12蛋白与其受体结合的结构。\n\n与此同时，一个学术团队受AlphaFold 2的启发开发了自己的蛋白质预测工具，该工具已经受到了很多科学家的欢迎。他们的系统称为RoseTTaFold，其性能接近AlphaFold 2，具体信息发布在7月15日发表的《科学》期刊的一篇论文中。\n\n伊利诺伊州芝加哥大学的计算生物学家Jinbo Xu（他没有参与这两个项目）说，这些工具的开源性质意味着科学界应该能够在前沿技术的基础上开发出更强大、更有用的软件。\n从结构到功能\n\n蛋白质由氨基酸串组成，折叠成3D形状的氨基酸决定了这些蛋白质在细胞中的功能。几十年来，研究人员一直使用X射线晶体学和冷冻电子显微镜等实验技术来确定蛋白质结构。但是这样的方法既费时又费钱，而且一些蛋白质不适合这样的分析。\n点击查看原文>",
+          "link": "https://www.infoq.cn/article/OEcfh1vwtqEjJtNUGzSR?utm_source=rss&utm_medium=article",
+          "publishedOn": "2021-07-22T10:27:14.000Z",
+          "wordCount": 4,
+          "title": "成功破解困扰生物学界50年的蛋白质折叠难题，DeepMind的AlphaFold 2已宣布开源！"
         },
         {
-          "id": "https://www.infoq.cn/article/1b1xze82HfsSd168M2k7?utm_source=rss&utm_medium=article",
-          "author": "Piotr Staniów",
-          "description": "是时候弃用Enzyme.js了。\n\n\n当然这只是一种观点，并非事实，但我认为整个React生态系统和社区踏出这一步后都会变得更好。\n \n2019年，我在AWS CloudWatch UI团队工作时，是引入React Testing Library的幕后推手。那时我经常热情地倡导大家用它来取代Enzyme。让人们提起兴趣去学习（又一个！）做同样事情的新JavaScript库当然绝非易事。但当我离开亚马逊时，我觉得这一运动是很成功的，并且RTL在我团队的项目中越来越受到关注。\n \n全世界使用React的公司还有很多，他们也会因为放弃Enzyme而受益匪浅！在这篇文章里，我们就来诚实地讨论一下React世界在过去5年中发生了怎样的变化，以及为什么Enzyme应该被弃用。\n\n\n本文最初发布于Piotr Staniow博客，经原作者授权由InfoQ中文站翻译并分享。\n点击查看原文>",
-          "link": "https://www.infoq.cn/article/1b1xze82HfsSd168M2k7?utm_source=rss&utm_medium=article",
-          "publishedOn": "2021-07-21T10:00:00.000Z",
-          "wordCount": 3,
-          "title": "是时候说再见了，Enzyme.js"
+          "id": "https://xie.infoq.cn/article/44143b89ce9c43816fca88eb6?utm_source=rss&utm_medium=article",
+          "author": "数据与智能",
+          "description": "写在前面：\n大家好，我是强哥，一个热爱分享的技术狂。目前已有 12 年大数据与AI相关项目经验， 10 年推荐系统研究及实践经验。平时喜欢读书、暴走和写作。\n点击查看原文>",
+          "link": "https://xie.infoq.cn/article/44143b89ce9c43816fca88eb6?utm_source=rss&utm_medium=article",
+          "publishedOn": "2021-07-21T20:34:38.000Z",
+          "wordCount": 4,
+          "title": "结构化流-Structured Streaming（八-上）"
         },
         {
-          "id": "https://www.infoq.cn/article/PyVSPkgWxHYf6hsadBiZ?utm_source=rss&utm_medium=article",
-          "author": "吴迪、孙丽川、郭帅",
-          "description": "作者｜吴迪、孙丽川、郭帅\n\n机器学习和深度学习技术在很多领域扮演着越来越重要的角色，以资金适配领域来说，它们在成本节约、推荐排序、收入机会和风险监控等方面可以带来明显的好处。但目前，机器学习和深度学习技术在资金适配方面的应用和探索仍缺乏一些经验。因此，消费分期产品“好分期”团队编写此文进行实践记录，同时也希望大家能提供一些宝贵意见。\n业务流程简介\n以下是好分期业务的大致流程图，资金方是服务的源头，目前好分期对接数十家资金方，每个资金方对用户的审核规则各有不同。好分期的作用主要是为用户进行适配、挑选最合适的资金方，因此需要在前期进行用户数据收集和分析，从而形成用户画像，通过各种计算方法为用户匹配最合适的资金方。\n\n资金适配的痛点及应用挑战\n高效、便捷、最大化的利益是用户关心的重点，资金适配的主要任务就是满足用户的需求，但好分期在实践的过程中还是碰到了一些痛点。\n\n首先，随着接入的资金方越来越多，通过传统的计算方式来从众多资金方中挑选出最适合用户的资金方，变得越来越困难。\n\n其次，传统路由模式中，所有用户共用一套资金体系，虽然支持手动配置，但是效果十分机械化，无法对每个用户进行针对性适配。\n点击查看原文>",
-          "link": "https://www.infoq.cn/article/PyVSPkgWxHYf6hsadBiZ?utm_source=rss&utm_medium=article",
-          "publishedOn": "2021-07-21T00:13:35.000Z",
-          "wordCount": 3,
-          "title": "机器学习在好分期资金适配中的应用实践"
-        },
-        {
-          "id": "https://www.infoq.cn/article/YxaVJ3LqxOuCVLp1vZhk?utm_source=rss&utm_medium=article",
-          "author": "张雅文",
-          "description": "疫情之下，“云办公”需求呈爆发式增长，推动RTC（实时音视频）行业迅速发展。进入后疫情时代，在线会议成为企业高效办公的标配。数据显示，协作时间占员工工作时间的50%-80%。针对项目讨论或与客户进行沟通的小型协作空间数量未来将大幅增长。越来越多的企业衍生出线上线下协同开会的混合式会议需求，随之而来的问题是如何有效应对企业会议室复杂场景的开会难题。\n\n多样性场景，在线会议挑战重重\n \n传统在线会议产品更侧重于在企业内部沟通使用，形态上以专用设备和PC端居多。而当前的在线会议不再局限于内部，跨企业沟通需求呈爆发式增长。在线会议的接入场景也延伸到传统办公场景之外，用户希望不管从Windows、IOS、安卓端甚至是电话的形式都可以轻轻松松接入在线的一个会议。\n \n除终端以外，会议室本身也涵盖多种复杂的会议场景。如针对中小型会议室，要求聚焦于能完成相互之间沉浸式的互动讨论；针对大型会议室用户则希望能实现和远端清晰、无障碍的沟通，此外还有超大型会议室、培训室甚至开放办公空间等拥有不同需求的场景。\n \n另外，不同行业的在线会议也存在不同的需求。比如，教育行业的双师教学场景下，在线会议要求做到多端接入，实现沉浸式的协作讲学；医疗行业的远程问诊场景下，则需要保证优质的传输质量，实现医生和病人的实时互动。如何满足不同行业场景下的多样化需求，也是在线会议面临的一大挑战。\n点击查看原文>",
-          "link": "https://www.infoq.cn/article/YxaVJ3LqxOuCVLp1vZhk?utm_source=rss&utm_medium=article",
-          "publishedOn": "2021-07-20T23:58:06.000Z",
-          "wordCount": 3,
-          "title": "云视频会议“黑科技”，开放才是“硬”道理"
-        },
-        {
-          "id": "https://xie.infoq.cn/article/3264e566d8f129b4d2135c669?utm_source=rss&utm_medium=article",
-          "author": "石云升",
-          "description": "行为经济学家丹尼尔·卡尼曼是2002年诺贝尔经济学奖得主，他的著作《思考，快与慢》认为，人对体验的记忆由两个因素决定：高峰时（最高与最低）与结束时候的感觉，这就是峰终定律。\n点击查看原文>",
-          "link": "https://xie.infoq.cn/article/3264e566d8f129b4d2135c669?utm_source=rss&utm_medium=article",
-          "publishedOn": "2021-07-20T18:43:24.000Z",
-          "wordCount": 3,
-          "title": "如何抓住用户体验的关键时刻？"
-        },
-        {
-          "id": "https://xie.infoq.cn/article/18ccd8fe7b9019a2d2cb2d484?utm_source=rss&utm_medium=article",
-          "author": "网易云信",
-          "description": "在媒体内容传播行业中，视频作为信息传播的载体，其重要性占比越来越高。通常，为了应对不同的播放场景，视频需要修改封装容器格式、编码格式以及分辨率、码率等媒体流属性，这些处理的过程我们统称其为视频转码。\n点击查看原文>",
-          "link": "https://xie.infoq.cn/article/18ccd8fe7b9019a2d2cb2d484?utm_source=rss&utm_medium=article",
-          "publishedOn": "2021-07-20T17:26:06.000Z",
+          "id": "https://xie.infoq.cn/article/fb7ab3d647bda58ff8a35d6d1?utm_source=rss&utm_medium=article",
+          "author": "DorisDB",
+          "description": "好未来选择了DorisDB来支撑实时数据的分析应用。实现了数据秒级查询响应能力，构建了一个统一、快速、高效、灵活的实时数仓。\n点击查看原文>",
+          "link": "https://xie.infoq.cn/article/fb7ab3d647bda58ff8a35d6d1?utm_source=rss&utm_medium=article",
+          "publishedOn": "2021-07-21T20:20:55.000Z",
           "wordCount": 5,
-          "title": "技术实践 | 网易云信视频转码提速之分片转码"
+          "title": "好未来 x DorisDB：全新实时数仓实践，深入释放实时数据价值"
         },
         {
-          "id": "https://www.infoq.cn/article/iDAc5S8RcZuT9vMf2RmB?utm_source=rss&utm_medium=article",
-          "author": "启明星辰",
-          "description": "零信任的出现将网络防御范围从广泛的网络边界转移到单个或小组资源，同时它也代表新一代的网络安全防护理念，打破默认的“信任”，秉持“持续验证，永不信任”原则，即默认不信任网络内外的任何人、设备和系统，基于身份认证和授权，重新构建访问控制的信任基础，确保身份可信、设备可信、应用可信和链路可信。\n\n\n零信任是一种安全体系架构，它打破了传统的认证即信任、边界防护、静态访问控制、以网络为中心等防护思路，建立起一套以身份为中心，以识别、持续认证、动态访问控制、授权、审计以及监测为链条，以最小化实时授权为核心，以多维信任算法为基础，认证达末端的动态安全架构。\n零信任安全体系建设的愿景\n\n1、依托IAM技术、终端环境感知技术，重构企业身份体系和身份策略，推动网络人员身份的可信任；\n\n2、改变传统的认证方式，构建先认证后连接和持续认证机制，提升网络的防护能力；\n\n3、结合终端、EDR、业务行为、网络态势等因素，建立持续信任评估机制和模型，支撑动态自适应访问控制权限管理，保护业务和数据的安全性；\n\n4、支撑远程办公、大数据中心、云安全平台等多种场景的安全防护。\n\n然而，零信任安全体系的落地之旅，不仅仅是简单的产品部署，它是一项复杂的工程，涉及组织管理、技术、成本等多项因素，在实际落地过程中存在着技术层面、管理层面、投入与落地周期等困境。\n点击查看原文>",
-          "link": "https://www.infoq.cn/article/iDAc5S8RcZuT9vMf2RmB?utm_source=rss&utm_medium=article",
-          "publishedOn": "2021-07-20T17:01:05.000Z",
+          "id": "https://xie.infoq.cn/article/160c906fd3d4aa94e0ab2fda6?utm_source=rss&utm_medium=article",
+          "author": "北游学Java",
+          "description": "由于线程的创建和销毁对操作系统来说都是比较重量级的操作，所以线程的池化在各种语言内都有实践，当然在 Java 语言中线程池是也非常重要的一部分，有 Doug Lea 大神对线程池的封装，我们使用的时候是非常方便，但也可能会因为不了解其具体实现，对线程池的配\n点击查看原文>",
+          "link": "https://xie.infoq.cn/article/160c906fd3d4aa94e0ab2fda6?utm_source=rss&utm_medium=article",
+          "publishedOn": "2021-07-21T20:08:52.000Z",
           "wordCount": 3,
-          "title": "零信任落地的现实困境"
+          "title": "盘点Java线程池配置的常见误区，你中了几个？"
         },
         {
-          "id": "https://www.infoq.cn/article/GIRTlTFy4r66w9kmY1Kg?utm_source=rss&utm_medium=article",
-          "author": "acco",
-          "description": "对许多API来说，Webhooks是一种辅助手段。有了Webhook系统，系统B可以通过注册来接收有关系统A某些更改的通知。当系统A发生更改时，它通常以发出HTTP POST请求的形式将更改推送到系统B。\n \nWebhook旨在消除或减少不断轮询数据的需求。但根据我的经验，Webhooks也带来了一些挑战。\n \n一般来说，你不能只依靠Webhooks来保持两个系统的一致性。我曾参与开发的集成最后都得通过轮询来增强Webhook，实现一致性。这种情况是由于一些缺陷造成的。\n \n首先，系统故障时会存在风险。是的，发送方通常会重试未交付的Webhook，并做一些指数回退。但这些保证往往是松散或不清晰的。从灾难中恢复后，你的系统可能最后要处理的就是大量备份的Webhooks。\n \n其次，Webhooks是短周期的。它们太容易处理不当或丢失了。如果你在部署代码更改后意识到你对一个JSON字段进行了粗指处理并将null插入了到你的数据库中，你是没办法重播Webhook的。或者，你可以在管道带外处理这个Webhook请求——就像数据库插入一样。但这样你就要冒着失败并失去这个Webhook的风险。\n点击查看原文>",
-          "link": "https://www.infoq.cn/article/GIRTlTFy4r66w9kmY1Kg?utm_source=rss&utm_medium=article",
-          "publishedOn": "2021-07-20T16:51:46.000Z",
+          "id": "https://xie.infoq.cn/article/b84c7e9eb157f8fab1a9d3e7f?utm_source=rss&utm_medium=article",
+          "author": "阿里云大数据AI技术",
+          "description": "本文整理自戴尔科技集团软件工程师周煜敏在 Flink Forward Asia 2020 分享的议题《Pravega Flink Connector 的过去、现在和未来》\n点击查看原文>",
+          "link": "https://xie.infoq.cn/article/b84c7e9eb157f8fab1a9d3e7f?utm_source=rss&utm_medium=article",
+          "publishedOn": "2021-07-21T17:26:52.000Z",
+          "wordCount": 6,
+          "title": "Pravega Flink connector 的过去、现在和未来"
+        },
+        {
+          "id": "https://xie.infoq.cn/article/d18548286d06e314d12db3afd?utm_source=rss&utm_medium=article",
+          "author": "Faye",
+          "description": "我们一起来认识一下Web Workers吧\n点击查看原文>",
+          "link": "https://xie.infoq.cn/article/d18548286d06e314d12db3afd?utm_source=rss&utm_medium=article",
+          "publishedOn": "2021-07-21T16:30:21.000Z",
+          "wordCount": 6,
+          "title": "聊聊 Web Workers 吧"
+        },
+        {
+          "id": "https://xie.infoq.cn/article/6861ad5b1ed37f81df9f36c1f?utm_source=rss&utm_medium=article",
+          "author": "awen",
+          "description": "垃圾收集算法和垃圾收集器扫盲\n点击查看原文>",
+          "link": "https://xie.infoq.cn/article/6861ad5b1ed37f81df9f36c1f?utm_source=rss&utm_medium=article",
+          "publishedOn": "2021-07-21T15:21:41.000Z",
+          "wordCount": 5,
+          "title": "我看JAVA 之 垃圾回收GC"
+        },
+        {
+          "id": "https://xie.infoq.cn/article/2fa7435febac2fd9fb1db8e47?utm_source=rss&utm_medium=article",
+          "author": "尔达Erda",
+          "description": "本文会先简单介绍一下前端路由原理，以及 React-Router 的基础使用，接着会主要分享 Erda-UI 项目在路由上实践的一些拓展功能。\n点击查看原文>",
+          "link": "https://xie.infoq.cn/article/2fa7435febac2fd9fb1db8e47?utm_source=rss&utm_medium=article",
+          "publishedOn": "2021-07-21T15:05:03.000Z",
           "wordCount": 3,
-          "title": "有时/events比Webhooks更好用"
+          "title": "浅谈：前端路由原理解析及实践"
         },
         {
-          "id": "https://xie.infoq.cn/article/4bb4757179a895f7b0ae56cf4?utm_source=rss&utm_medium=article",
-          "author": "我爱娃哈哈😍",
-          "description": "如何保障服务器承受住亿级流量？你知道哪几种方式吗？对于限流，你知道有几种算法吗？收藏下，加深记忆。\n点击查看原文>",
-          "link": "https://xie.infoq.cn/article/4bb4757179a895f7b0ae56cf4?utm_source=rss&utm_medium=article",
-          "publishedOn": "2021-07-20T14:27:58.000Z",
+          "id": "https://xie.infoq.cn/article/30beb08098cc374bfd433150a?utm_source=rss&utm_medium=article",
+          "author": "信码由缰",
+          "description": "了解面向资源的架构 (ROA)、其价值以及最佳实践。\n点击查看原文>",
+          "link": "https://xie.infoq.cn/article/30beb08098cc374bfd433150a?utm_source=rss&utm_medium=article",
+          "publishedOn": "2021-07-21T11:48:06.000Z",
           "wordCount": 3,
-          "title": "如何保障服务器承受亿级流量（12）【限流】"
+          "title": "面向资源的架构(ROA)概述"
         },
         {
-          "id": "https://xie.infoq.cn/article/ddc1d6629770a866d37dea721?utm_source=rss&utm_medium=article",
-          "author": "greatersecurity",
-          "description": "本文聊聊做安全防护时需要考量的点。\n点击查看原文>",
-          "link": "https://xie.infoq.cn/article/ddc1d6629770a866d37dea721?utm_source=rss&utm_medium=article",
-          "publishedOn": "2021-07-20T13:30:36.000Z",
-          "wordCount": 3,
-          "title": "容器安全检查列表"
+          "id": "https://xie.infoq.cn/article/f9bf1cf3b446a0b90f71f4031?utm_source=rss&utm_medium=article",
+          "author": "U+2647",
+          "description": "Redis 的服务模式主要有三种，分别是单机模式、主从模式、集群模式。在不同的模式下当机器发生故障时，Redis 应对故障的方法也是不一样的\n点击查看原文>",
+          "link": "https://xie.infoq.cn/article/f9bf1cf3b446a0b90f71f4031?utm_source=rss&utm_medium=article",
+          "publishedOn": "2021-07-21T10:50:46.000Z",
+          "wordCount": 4,
+          "title": "Redis 的集群容错与故障转移"
         },
         {
-          "id": "https://xie.infoq.cn/article/ac9399e98a59832d144b0c712?utm_source=rss&utm_medium=article",
-          "author": "鲸品堂",
-          "description": "对于运营商自身来说，5G业务和网络的复杂度，以及其IT和网络支撑能力碎片化、支撑界面不清、支撑工具缺乏等现状，均驱动运营商来重构其现有的“5G+”的专网运营支撑体系。\n点击查看原文>",
-          "link": "https://xie.infoq.cn/article/ac9399e98a59832d144b0c712?utm_source=rss&utm_medium=article",
-          "publishedOn": "2021-07-20T13:08:57.000Z",
-          "wordCount": 3,
-          "title": "打造全景5G专网运营能力，差异化赋能行业生态"
-        },
-        {
-          "id": "https://xie.infoq.cn/article/9132b0fa2c52f75085e67d5c8?utm_source=rss&utm_medium=article",
+          "id": "https://xie.infoq.cn/article/1dda070047ba304082901dc5b?utm_source=rss&utm_medium=article",
           "author": "华为云开发者社区",
-          "description": "​​​​​​​​​​​​​​摘要：互联网玩家为了让Python这样的简单易学、社区API丰富的语言可以在嵌入式领域用上，逐渐开始了一轮Python上嵌入式的迁移，这样就有了今天的主角——MircoPython。\n点击查看原文>",
-          "link": "https://xie.infoq.cn/article/9132b0fa2c52f75085e67d5c8?utm_source=rss&utm_medium=article",
-          "publishedOn": "2021-07-20T11:29:20.000Z",
+          "description": "​​​​​​​​​​​​​​摘要：语义分割的数据集是比较大的，因此训练的时候需要非常强大的硬件支持。\n点击查看原文>",
+          "link": "https://xie.infoq.cn/article/1dda070047ba304082901dc5b?utm_source=rss&utm_medium=article",
+          "publishedOn": "2021-07-21T09:52:20.000Z",
           "wordCount": 3,
-          "title": "什么是MircoPython？"
-        },
-        {
-          "id": "https://xie.infoq.cn/article/66e41fe9315b47e9c911414d2?utm_source=rss&utm_medium=article",
-          "author": "万俊峰Kevin",
-          "description": "在 go-zero 的分布式缓存系统分享里，Kevin 重点讲到过一致性hash的原理和分布式缓存中的实践。本文来详细讲讲一致性hash的原理和在 go-zero 中的实现。\n点击查看原文>",
-          "link": "https://xie.infoq.cn/article/66e41fe9315b47e9c911414d2?utm_source=rss&utm_medium=article",
-          "publishedOn": "2021-07-20T11:09:15.000Z",
-          "wordCount": 3,
-          "title": "一文搞懂一致性hash的原理和实现"
-        },
-        {
-          "id": "https://xie.infoq.cn/article/0fe9c376877f6772f64a705a4?utm_source=rss&utm_medium=article",
-          "author": "Apache Flink",
-          "description": "本文整理自 360 政企安全集团的大数据工程师苏军以及刘佳在 Flink Forward Asia 2020 分享的议题《基于 Flink 的 PB 级数据即席查询实践》，文章内容为：\n点击查看原文>",
-          "link": "https://xie.infoq.cn/article/0fe9c376877f6772f64a705a4?utm_source=rss&utm_medium=article",
-          "publishedOn": "2021-07-20T11:02:00.000Z",
-          "wordCount": 8,
-          "title": "360 政企安全集团基于 Flink 的 PB 级数据即席查询实践"
-        },
-        {
-          "id": "https://xie.infoq.cn/article/06638b8784778eeb7fa33fc13?utm_source=rss&utm_medium=article",
-          "author": "vivo互联网技术",
-          "description": "Lucene的相关使用心得，内容涵盖索引的生成、管理及搜索功能等内容。本文介绍了在轻量级的数据搜索中，深度解析Lucene如何实现全文索引。\n点击查看原文>",
-          "link": "https://xie.infoq.cn/article/06638b8784778eeb7fa33fc13?utm_source=rss&utm_medium=article",
-          "publishedOn": "2021-07-20T09:16:57.000Z",
-          "wordCount": 5,
-          "title": "深度解析 Lucene 轻量级全文索引实现原理"
+          "title": "基于迁移学习的语义分割算法分享与代码复现"
         }
       ]
     }

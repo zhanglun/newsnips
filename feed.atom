@@ -1,30 +1,1122 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-07-22T00:22:46.482Z</id>
+    <id>urn:2021-07-23T00:25:56.839Z</id>
     <title>osmos::feed</title>
-    <updated>2021-07-22T00:22:46.482Z</updated>
+    <updated>2021-07-23T00:25:56.840Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
-        <title type="html"><![CDATA[阿里千牛手机 APP 服务断了快 24 小时了]]></title>
-        <id>790964</id>
-        <link href="https://www.v2ex.com/t/790964"/>
-        <updated>2021-07-21T23:18:13.000Z</updated>
-        <summary type="html"><![CDATA[spadger: 
-有阿里的同学吗？能不能给看看什么问题.]]></summary>
+        <title type="html"><![CDATA[从单体迁移到微服务的几种模式]]></title>
+        <id>https://www.infoq.cn/article/tZILQ2c5euoSHDxVrxJ0?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/tZILQ2c5euoSHDxVrxJ0?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-23T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[正确实现的微服务较单体应用有很多优势。许多组织都希望将他们的单体应用程序代码换成微服务代码。但事实证明，迁移到微服务并非易事。你应该问的第一个问题是，你真的需要微服务吗？单体存在的许多问题都可以使用模块化的单体架构轻松解决。一旦你确定自己真的需要微服务，就必须制定一套将单体应用转换为微服务的计划。本文介绍了一些模式，可以帮助你创建所需的计划。
+ 
+在我们具体讨论这些拆分单体的模式之前，我们先来谈谈不应该做的一些事情。
+不要做大爆炸重写
+
+大爆炸重写（Big Bang Rewrite），顾名思义，是说我们必须在许多微服务中重写整个单体应用的代码，并一次性将它们都部署到生产环境中。Martin Fowler说过的一句话非常正确：
+
+
+大爆炸重写唯一能保证的就是大爆炸！
+
+
+大爆炸重写都是很危险的。大爆炸重写需要漫长的开发时间，因为你必须对单体应用程序中的所有内容重新编码。此外，在微服务架构的开发过程中，你必须冻结单体应用中新的开发工作，因为单体应用中所做的所有更改都必须复制到微服务中。对于大多数公司来说，冻结应用程序开发工作可能存在风险，因为他们必须根据业务环境的变化随时调整软件。
+ 
+对于一个组织来说，从单体逐渐转向微服务的路径一定是更好的选项。下面列举的一些可用设计模式可以帮助你逐步从单体架构转向微服务架构。
+点击查看原文>]]></summary>
         <author>
-            <name>spadger</name>
+            <name>Abhishek Kapoor</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[wifi 网络正常,但是大部分 app 不能联网是为什么]]></title>
-        <id>790963</id>
-        <link href="https://www.v2ex.com/t/790963"/>
-        <updated>2021-07-21T22:34:38.000Z</updated>
-        <summary type="html"><![CDATA[mir2: 
-第一次遇到,app 没有限制网络连接,昨天都能用,今天大把的 app 都是无法刷新和网路开小差,但是有个别的 app 还有网,比如手机浏览网页都是正常的...]]></summary>
+        <title type="html"><![CDATA[闲鱼如何保障交易链路质量]]></title>
+        <id>https://www.infoq.cn/article/ACSYxGABpoTSHMCIlJTw?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/ACSYxGABpoTSHMCIlJTw?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-23T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[背景
+闲鱼作为一款垂直交易社区APP，拥有复杂多样的业务场景：涉及c2c、回收寄卖、租房租赁、见面交易、验货担保等，复杂多变的交易模式。比如验货流程：
+
+
+涉及39个状态机节点
+
+横跨10+应用系统
+
+涉及6个业务部门的合作
+
+涉及接口几十个
+
+
+需要保证每个接口、每个场景切实可行，稍微有一点点问题，就会涉及到人民币的味道，实际工作中，我们遇到各种各样的问题，比较棘手的问题如下
+问题
+业务先赢的快速迭代模式下，全靠人工主力进行测试验证，测完新功能，还得回归老功能，一个小需求也须要好几个人日，版本PTM也要回归好几遍，ROI并不乐观，以下2个问题比较突出：
+
+
+交易业务强依赖中台，沟通成本高，跨团队协作难，迭代效率低，测试环境下如何自洽？
+
+复杂多样交易模式下，如何支撑需求稳步迭代上线以及日常回归验证？
+点击查看原文>]]></summary>
         <author>
-            <name>mir2</name>
+            <name>闲鱼技术</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Organize your CSS declarations alphabetically]]></title>
+        <id>https://css-tricks.com/?p=344960</id>
+        <link href="https://ericwbailey.design/writing/organize-your-css-declarations-alphabetically/"/>
+        <updated>2021-07-22T22:33:29.000Z</updated>
+        <summary type="html"><![CDATA[Eric, again not mincin’ no words with blog post titles. This is me:
+The most common CSS declaration organization technique I come across is none whatsoever.
+Almost none, anyway. I tend to group them by whatever dumps out of my …
+The post Organize your CSS declarations alphabetically appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.]]></summary>
+        <author>
+            <name>Chris Coyier</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[apple fitness plus 试用感受]]></title>
+        <id>791194</id>
+        <link href="https://www.v2ex.com/t/791194"/>
+        <updated>2021-07-22T21:11:05.000Z</updated>
+        <summary type="html"><![CDATA[dhou45: 
+发现旧的 apple watch 苹果也给送了三个月的 fitness plus, 就试用了下, 说说感受. 本人平常有不规律健身, 主要是一周两三次室外跑步 /骑车, 然后就早上去公寓健身房小撸一下铁再去上班. 因为试用 fitness plus, 就改成了去健身房的单车或者跑步机.
+首先, 查找想要的教程很麻烦, 没有一个很好的导航. 可能按照苹果强势的产品设计逻辑, 出现在 banner 位以及首页下滑两下之内能到达的教程就是你所需要用的, 其他的给故意藏到了深处.
+下载下来的项目在最最最下面, 每个视频都上 GB 了, 并不是每个人都会在 Wi-Fi 很好的家里或者健身房用在线播放的好吗..
+有点感觉太聒噪了.. 不知道大家什么便好, 我健身的时候喜欢听听音乐或者就听二倍速的 podcast, 有个人在旁边叨逼叨就感觉很烦..
+虽说苹果会更新健身视频, 但是感觉这都发布一年了吧, 可选择的还是太少了, 找来找去就那么几个
+说个 zz 不正确的, 感觉很多 trainer 都太符合白左的口味了...每个人表情都那么用力过猛, 很明显的假 high, 我是一点没有被他们 motivated 到, 反而浑身各种不舒服.. 想找个跑步的男 trainer, 感觉三个都是 gaygay 的那种, 还有一个是娘炮型的健硕黑哥哥..]]></summary>
+        <author>
+            <name>dhou45</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[6年开发者社区工作经历，聊聊我眼中的社区、开源与商业]]></title>
+        <id>https://www.infoq.cn/article/QTJy0J6FGog5QocJYWsC?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/QTJy0J6FGog5QocJYWsC?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-22T21:03:58.000Z</updated>
+        <summary type="html"><![CDATA[这可以是一个用爱发电开始的故事，但不应该是一个只靠用爱发电的故事。
+1 一个从社区开始的故事
+1.1 我为什么一直在社区工作？
+过去的 6 年间，我一直在开发者社区工作。从 InfoQ 到掘金，这 6 年的时间遇见过太多形形色色的开发者和技术专家，又跟各个大厂的市场、公关同学建立起了深厚的友谊，这是我这几年最宝贵的一笔财富。
+
+今年 2 月份我选择了裸辞，按说一个年近 30，还着房贷房租，还在装修这个无底洞里往外爬的我，是不应该有这个裸辞的底气的。但我的确就是这么普通却自信，这个自信来源于我的一个认知：
+
+这是技术最好的时代，这是开发者最好的时代，这也是做开发者关系/运营人员最好的时代。
+
+在这样的背景下，我也算是见证了中国开发者社区的飞速发展期。
+
+
+
+从第三方开发者社区的角度看，CSDN、InfoQ、51CTO、思否、掘金，这些或老牌或新兴的开发者社区，其发展势头都非常迅猛，新兴社区甚至有了赶超之势。
+
+
+
+从企业自建开发者社区的角度看，无论是云栖社区、云加社区、华为开发者社区这些有所积累的老牌社区，还是互联网新贵们的另起炉灶，都让社区这个概念更加深入人心。
+
+
+
+从开源、基金会的角度看，Linux 基金会、CNCF 在国内扩张迅猛，本土的 Gitee、木兰协议、开放原子开源基金会也都开始成长起来。
+点击查看原文>]]></summary>
+        <author>
+            <name>小智</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[20210722 午夜俱乐部]]></title>
+        <id>791193</id>
+        <link href="https://www.v2ex.com/t/791193"/>
+        <updated>2021-07-22T18:23:30.000Z</updated>
+        <summary type="html"><![CDATA[10bkill1p: 最近很喜欢听老歌，特别是张学友的歌，希望有朝一日能去一次 live 现场]]></summary>
+        <author>
+            <name>10bkill1p</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[从服务框架到服务网格，网易轻舟双引擎多模式服务治理演进实践]]></title>
+        <id>https://www.infoq.cn/article/KNp1ibj40vS8IIZCizMW?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/KNp1ibj40vS8IIZCizMW?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-22T18:03:32.000Z</updated>
+        <summary type="html"><![CDATA[在分布式体系下，微服务技术在经历多年发展之后渐趋成熟。进入云原生时代，微服务技术在云原生理念的驱动下被赋予了新的使命。在 InfoQ 2020 年微服务技术年终盘点文章中，我们对传统的服务框架和云原生的服务网格分别进行了分析，指出了服务框架的进化与困局，服务网格的进步、分化、落地，并给出了企业微服务架构的演进方向。
+
+本文将延续微服务架构演进这个话题，结合网易数帆旗下轻舟微服务团队在诸多企业业务落地的微服务治理实践，阐述企业应用在不同阶段采用不同的微服务治理策略，以及从服务框架到服务网格实现架构平滑演进的思路与方法。
+服务框架：无侵入 Agent 服务治理
+
+服务框架是传统微服务技术的核心所在。早期微服务技术中的服务注册、发现、调用、治理、观测都离不开服务框架。这也带来了一些问题，比如业务研发者需要明显感知服务框架并掌握其中各项非业务相关技术，框架版本升级困难，框架越来越重难于维护等等。网易的互联网业务比较多元，早期各业务没有统一的微服务技术规范和框架，大部分业务选型了 SpringCloud、Dubbo、gRPC 等开源框架，也有少数业务选择自研 RPC 框架。服务框架在微服务架构下的问题随着业务、团队规模的扩大日益凸显，这也催生了 网易新一代微服务平台 —— 轻舟 的建设落地。
+
+2018 年，我们以 业务无侵入 为核心理念构建了轻舟微服务平台，核心数据面 基于字节码增强技术实现无侵入 Agent 服务治理能力，业务无需修改代码 即可 一键接入微服务治理全家桶 能力，大幅提高了用户业务微服务化改造效率，降低了业务进行服务治理相关能力的研发成本。轻舟微服务平台目前已在网易集团内外诸多企业业务落地。
+
+
+
+点击查看原文>]]></summary>
+        <author>
+            <name>裴斐</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何利用云原生技术构建现代化应用]]></title>
+        <id>https://www.infoq.cn/article/3Bo0yuu203dUCCaLUYPU?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/3Bo0yuu203dUCCaLUYPU?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-22T18:01:28.000Z</updated>
+        <summary type="html"><![CDATA[今天，云和云计算技术已经被企业广泛所接受，关于云、云计算、云原生都有非常多的话题，但是我比较想讨论的是在所有云当中真正的主角，就是我们的应用。
+
+因为当企业应用上云后，这些应用的高可用能力有可能提升了一部分，但仍存有许多问题；而当我们探讨上云后这些应用的运维效率，却未必有很大的提升，因为所有的运维都是基于基础设施进行的，而云计算是一个比较大的基础设施的改变；如果我们再问，上云后整个应用的开发速度是不是得到了极大的提升，这个时候很多人都要说，并不。
+因此，今天主要探讨的就是如何利用云原生相关的技术帮助我们的应用去做优化，从传统应用转变成现代化应用。
+非典型的典型——云上众生相
+我们先采取一个从个体再到整体的形而上的方式，来看一个比较典型的企业案例。
+
+
+
+点击查看原文>]]></summary>
+        <author>
+            <name>阿里巴巴中间件</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有质量可靠的指纹锁推荐吗？]]></title>
+        <id>791192</id>
+        <link href="https://www.v2ex.com/t/791192"/>
+        <updated>2021-07-22T17:36:03.000Z</updated>
+        <summary type="html"><![CDATA[luin: 苦于自己过保的 Yale 智能门锁经常把自己锁在门外（触摸屏幕没有反应）...想问问大家有什么质量可靠的指纹锁吗？
+需求：
+1. 质量可靠，不会因为失灵把自己锁在外面。
+2. 指纹锁，识别可靠（不需要考虑老人小孩）。
+3. 最好是推拉的，拿快递的时候推拉的比转动的应该方便一些。
+目前看中的是三星的 P50，感觉互联网品牌是不是质量会相对差一些？而且也不需要什么特别的功能。看了几个品牌的淘宝评价，几乎每一个都有被锁在门外的差评，不知道真假...觉得还是看看大家自用的感受会靠谱一些。感谢！]]></summary>
+        <author>
+            <name>luin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[iPad Pro 2021 用 Thunderbolt 线连接 Macbook Air M1，可以高速传输文件嘛？貌似设备无法识别]]></title>
+        <id>791191</id>
+        <link href="https://www.v2ex.com/t/791191"/>
+        <updated>2021-07-22T17:01:12.000Z</updated>
+        <summary type="html"><![CDATA[wyfyw: 貌似设备无法识别
+https://www.reddit.com/r/iPadPro/comments/npv0im/thunderboltusb4_connection_to_m1_mac/
+有没有其他人试过。
+苹果真是奇葩]]></summary>
+        <author>
+            <name>wyfyw</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[个人网址的百度的搜索关键词是怎么被他人打入这样的广告?]]></title>
+        <id>791190</id>
+        <link href="https://www.v2ex.com/t/791190"/>
+        <updated>2021-07-22T16:47:54.000Z</updated>
+        <summary type="html"><![CDATA[yagamil: 
+个人的小破站. 比如第二个关键词, 基本每天都有一个这样的关键嵌入进来.
+
+有些还明目张胆说 关键词 seo 请联系 xxxx 这样的 字样
+请问这类关键词如何做到的?]]></summary>
+        <author>
+            <name>yagamil</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于 Java 的 Supplier<T>接口的疑问，为什么可以传入静态方法]]></title>
+        <id>791189</id>
+        <link href="https://www.v2ex.com/t/791189"/>
+        <updated>2021-07-22T16:35:19.000Z</updated>
+        <summary type="html"><![CDATA[0576coder: 
+这三段代码其实是一致的
+        //生成随机数流
+        Stream randoms = Stream.generate(Math::random);
+        
+        Stream randoms2 = Stream.generate(() -> Math.random());
+        
+        Stream randoms3 = Stream.generate(new Supplier() {
+            @Override
+            public Double get() {
+                return Math.random();
+            }
+        });
+
+后面两段我都能理解，第一段为什么 Math 的静态方法也算是可以当做 Supplier 接口的实现者，我有点想不通]]></summary>
+        <author>
+            <name>0576coder</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[mbp m1 屏幕反光这个问题有解吗]]></title>
+        <id>791187</id>
+        <link href="https://www.v2ex.com/t/791187"/>
+        <updated>2021-07-22T16:22:40.000Z</updated>
+        <summary type="html"><![CDATA[yyh325: 
+用外接屏幕没有反光问题，但有时候需要直接用到笔记本屏幕，如果此时头顶有灯的话，严重干扰视线。查了一下解决方法：
+1，贴膜 2，移除光源 3，大幅调高屏幕亮度]]></summary>
+        <author>
+            <name>yyh325</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[米哈游 2022 届~~秋季校园招聘正式开始啦！ 700+Offer（可内推哦）]]></title>
+        <id>791186</id>
+        <link href="https://www.v2ex.com/t/791186"/>
+        <updated>2021-07-22T16:18:48.000Z</updated>
+        <summary type="html"><![CDATA[chuwux: 米哈游 2022 届~~秋季校园招聘正式开始啦！ 700+Offer （可内推哦）
+米哈游内推！内推！内推！重要事情说三遍！
+社招持续进行中～通过内推链接查看各个岗位具体要求，一键投递简历，offer 快人一步，各位优秀的老爷们小姐姐们小哥哥们，简历赶紧投起来吧
+面向对象
+校招全职岗位
+2022 届毕业生(毕业时间为 2021 年 9 月 1 日-2022 年 8 月 31 日)
+校招实习岗位
+2023 届毕业生(毕业时间为 2022 年 9 月 1 日-2023 年 8 月 31 日)
+*中国大陆以毕业证为准，非中国大陆地区以学位证为准
+2022 届秋招内推链接： https://app.mokahr.com/recommendation-apply/mihoyo/24513?recommendCode=AEVIP&codeType=1&hash=%23%2Fjobs%3Fpage%3D1
+社招内推链接： https://app.mokahr.com/recommendation-apply/mihoyo/26460?recommenderId=936494&hash=%23%2Fjobs%3Fzhineng%3D22500
+PS：移动端显示请在微信客户端打开链接，复制链接发送到微信文件传输助手，然后点击链接即可打开
+PS：内推简历优先筛选哦，欢迎大家评论转发推荐给需要的小伙伴。
+a 、优秀的薪酬福利：
+行业 Top 薪酬激励，六险二金 16 薪，1 年两次调薪窗口，10 天带薪年假，旅游基金，豪华年节福利，定期体检，免费晚餐，不限量零食饮料，丰富多彩的节日礼品…… 最优秀的你值得最高的回报，米哈游期待你的到来。
+通勤相遇，尽享班车 ，福利不停，我在 miHoYo，等你一起拯救世界。
+b 、关于米哈游
+米哈游成立于 2012 年，业务主要集中在国产动漫文化下的移动、PC 及主机领域。作为研发商，陆续推出《崩坏学园 2 》、《崩坏 3 》、《未定事件簿》、《原神》等优秀产品,并制作了虚拟角色https://testerhome.com/yoyo">@yoyo 鹿鸣_Lumi 。
+米哈游以极高的游戏制作品质、忠实的玩家群体、漂亮的全球化营收数据，悄然挑战和改写着游戏的业态。在游戏领域之外，米哈游围绕多款原创 IP，推出了动画、漫画、音乐、小说、周边等多元产品，打造动漫游戏全产业链，向成为一家世界一流的国产动漫公司迈进。
+米哈游总部位于中国上海，并在新加坡、美国、加拿大、日本、韩国等国家与地区进行全球化布局。目前,公司员工超过 3000 人,多数来自世界顶尖高校和知名互联网公司。
+程序&技市类
+游戏客户端开发
+NLP 深度学习研究员
+游戏服务器开发
+图形工程师
+构建工程师
+图形算法工程师
+渲染开发
+图像算法工程师
+引擎开发
+数据开发
+游戏测试开发
+Jawa 后端开发
+游戏测试
+Golang 后端开发
+场景测试
+Web 前端开发(信息化)
+运维开发
+Web 前端开发(平台)
+动作生或研究员
+web/APP 测试工程师
+强化学习研究员
+测试工程师〔信息化)
+数字人深度学习研究员
+产品经理实习生〔运维向)
+图形学研究员〔深度学习方向)
+Web 前端开发实习生〔信息化》
+项目管理
+Jawa 后端开发实习生(信息化)
+项目管理(信息化)
+美术表现类
+角色原画师
+3D 角色设计师
+怪物原画师
+3D 场景设计师
+场景原画师
+硬表面模型师
+机械原画师
+关卡美术设计师
+美直插画师
+游戏动画师
+二维动画原画师
+CG 动画师
+城市规划设计师
+游戏特效师
+游戏 UI 设计师
+CG 特效师
+视觉设计师
+音效设计师
+产品 UE 设计师
+视频设计师
+周边设计师
+分镜师
+角色原画实习生
+灯光师
+场景原画实习生
+技术美术〔材质贴图)
+3D 角色实习生
+技术美术〔程序化生成)
+3D 场景实习生
+技术美术〔场景)
+游戏 UI 实习生
+技术美术(动画)
+3D 特效实习生
+3D 培训生
+视觉设计实习生
+原画综合培训生
+视频设计实习生
+产品 UI 实习生
+ 产品策划类
+系统策划
+数值策划
+关卡战斗策划
+交互策划(UE)
+文案第划 /编剧
+游戏与平台运营类
+游戏与平台运营
+用户研究
+市场商务类
+市场商务
+市场数据分析
+营销策划
+境外发行类
+境外培训生
+网页产品实习生
+境外社群实习生
+综合管理类
+HR 招聘
+HR 培训
+雇主品牌文案
+财务会计
+法务专员
+采购专员
+BP(算法团队)
+BP(游戏业务)
+BP(平台)]]></summary>
+        <author>
+            <name>chuwux</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Mac QQ 怎么不支持快速登录]]></title>
+        <id>791183</id>
+        <link href="https://www.v2ex.com/t/791183"/>
+        <updated>2021-07-22T15:46:47.000Z</updated>
+        <summary type="html"><![CDATA[Marlinzzz: 是由于我用的是 App Store 版本的原因吗？]]></summary>
+        <author>
+            <name>Marlinzzz</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[程序员学英语，应该选英式， 还是美式？]]></title>
+        <id>791182</id>
+        <link href="https://www.v2ex.com/t/791182"/>
+        <updated>2021-07-22T15:43:40.000Z</updated>
+        <summary type="html"><![CDATA[find456789: 
+这两者，除了音标的发音有区别， 在一些 表达方式上，也有一些差距
+我目前的想法是，选择美式， 因为很多互联网上的大项目、大公司、。。。 都是美国人弄的
+所以学美式，可能会好一些
+想听听大家的意见
+谢谢]]></summary>
+        <author>
+            <name>find456789</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[网易轻舟对 CIlium 容器网络的探索和实践]]></title>
+        <id>https://www.infoq.cn/article/p9vG2G9T49KpvHrckFwu?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/p9vG2G9T49KpvHrckFwu?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-22T15:42:40.000Z</updated>
+        <summary type="html"><![CDATA[2019 年网易轻舟使用 sockmap+sk redirect 来优化轻舟 Service Mesh 的延迟，2020 年开始，我们逐步对 eBPF Service、Cilium NetworkPolicy，Cilium 容器网络进行实践，到 2021 年中旬，网易轻舟对外部客户提供了 Cilium 整体解决方案。
+
+本文会深入介绍 Cilium，并澄清一些认知误区，然后给出网易轻舟是如何使用 Cilium 的。目前国内这方面深入解析材料较少，如果您也正在探究，希望这篇文章能给您带来帮助。
+eBPF 容器网络探索背景
+
+目前容器网络方案仍然呈现着百花齐放的态势，这主要是由于不同的 CNI 各有优势。开源的原生 CNI 具备较广的使用场景，即插即用。其中支持 overlay 方式的几个方案（openshift-sdn、flannel-vxlan、calico-ipip），能更好地适配 L2/L3 的网络背景，而 underlay 方式的几个方案（calico-bgp、kube-router、flannel-hostgw），则在性能上更趋近于物理网络，在小包场景中性能明显好过 overlay 类型方案。此外，许多主流云厂商基于还会自建 VPC 能力，实现 VPC-based CNI ，这类 CNI 与集群交付场景深度耦合，但也赋予了容器网络 VPC 的属性，具备更强的安全特性。
+
+此外，业界还有大量针对 CNI 或四层负载均衡的优化措施，例如：
+
+
+优化封装协议，基于 vxlan 有更好的兼容性，基于 ipip 协议则能提升一定的带宽能力（部分云厂商如 AWS 并不支持 ipip 协议的包）
+
+使用 IPVS 替换 kube-proxy 解决大规模环境里，Service 带宽降低和数据路径下发时间变长
+点击查看原文>]]></summary>
+        <author>
+            <name>刘勤龙,黄扬</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[moonlight-stream 卡在 552 报错]]></title>
+        <id>791181</id>
+        <link href="https://www.v2ex.com/t/791181"/>
+        <updated>2021-07-22T15:27:30.000Z</updated>
+        <summary type="html"><![CDATA[wszgrcy: 
+准确来说,应该并不是因为端口转发限制的......
+因为在我没启动 moonlight 之前
+linux 主机去 traceroute win 主机是都能访问的
+但是一旦进行连接后(主机找到了,选择串流的游戏 /桌面)
+再 traceroute 就失败,同时也会报 552 也就是端口转发规则 48010 48000
+很费解,是不是 nvidia 已经封了这个方式?我目前是都升到最新版本用的
+对了是局域网.没做任何转发限制(之前能 traceroute 通应该也证明了这一点吧...)
+发现占用端口的是这个程序nvcontainer.exe杀掉后再连接还是会启动]]></summary>
+        <author>
+            <name>wszgrcy</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[训练出随机森林的模型后,能否手工修改它的特征权重 rf_model.feature_importances_]]></title>
+        <id>791180</id>
+        <link href="https://www.v2ex.com/t/791180"/>
+        <updated>2021-07-22T15:20:30.000Z</updated>
+        <summary type="html"><![CDATA[yagamil: rf_model.feature_importances_[0]=0.1
+不过重新查看其值, 似乎没有修改成功.]]></summary>
+        <author>
+            <name>yagamil</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[chrome 打开油管网站就闪崩，版本 91，后面升级为 92 也一样]]></title>
+        <id>791179</id>
+        <link href="https://www.v2ex.com/t/791179"/>
+        <updated>2021-07-22T15:16:15.000Z</updated>
+        <summary type="html"><![CDATA[levon: 应该不是插件的问题，访客模式下访问也崩溃，有时候只在地址栏输入网址都崩溃（还没回车），好难啊]]></summary>
+        <author>
+            <name>levon</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Cloudflare 升级在中国的网络，并改善 DNS 服务]]></title>
+        <id>791178</id>
+        <link href="https://www.v2ex.com/t/791178"/>
+        <updated>2021-07-22T15:16:11.000Z</updated>
+        <summary type="html"><![CDATA[leiakun: Cloudflare 和京东云合作改善 Cloudflare 网络在中国的体验，各位大佬能帮忙测试一下吗？
+1.1.1.1 以后 DNS 查询直接在中国大陆内了，不知道 DOH 能不能在国内使用。
+https://blog.cloudflare.com/upgrading-the-cloudflare-china-network/]]></summary>
+        <author>
+            <name>leiakun</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[谁听说过 sysmgr 病毒，在 c 盘下，]]></title>
+        <id>791177</id>
+        <link href="https://www.v2ex.com/t/791177"/>
+        <updated>2021-07-22T15:13:41.000Z</updated>
+        <summary type="html"><![CDATA[jianhuo: 可以感染 win10 以前系统，不知道谁传染的，很厉害]]></summary>
+        <author>
+            <name>jianhuo</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[请问 icloud 扩容什么姿势价格最低？]]></title>
+        <id>791176</id>
+        <link href="https://www.v2ex.com/t/791176"/>
+        <updated>2021-07-22T15:13:15.000Z</updated>
+        <summary type="html"><![CDATA[xiaoao: 我有一个国区一个美区
+主账号美区
+下载墙内 app 用国区
+如题
+谢谢各位彦祖]]></summary>
+        <author>
+            <name>xiaoao</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[现在还有哪些银行卡有短信提醒，或者是导出账单功能]]></title>
+        <id>791175</id>
+        <link href="https://www.v2ex.com/t/791175"/>
+        <updated>2021-07-22T15:07:35.000Z</updated>
+        <summary type="html"><![CDATA[kor: 每次用微信公众号看账单太麻烦了]]></summary>
+        <author>
+            <name>kor</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[十四年后重返中国，SIGMOD 背后的数据库技术变迁]]></title>
+        <id>https://www.infoq.cn/article/vQlNKLTwUON2ztp9BWrg?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/vQlNKLTwUON2ztp9BWrg?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-22T15:01:32.000Z</updated>
+        <summary type="html"><![CDATA[在当前，随着新一轮技术浪潮的兴起，以传统计算机技术为基础的信息时代正逐步过渡到由人工智能、云计算等关键技术驱动，各领域趋向融合的信息新时代。在这一背景下，数据库技术也正朝着崭新的方向不断发展。前不久刚结束的 ACM SIGMOD 2021 大会上，就涌现出很多值得关注的前沿技术热点。
+
+为了让更多的数据库从业者能了解数据库领域的最新研究成果，熟悉行业前沿发展趋势，近日，腾讯云数据库联合深圳计算机学会数据科学与工程（DSE）专委会，举办了一场围绕 SIGMOD 2021 与数据库前沿研究热点的线上研讨会分享活动。
+
+深圳大学计算机与软件学院、深圳计算科学研究院秦建斌老师，南方科技大学数据库团队负责人唐博老师，南方科技大学数据库团队晏潇老师，腾讯金融云数据库 TDSQL 资深研究员、腾讯云数据库专家工程师李海翔，以及主持人腾讯云数据库高级工程师赵展浩，多位学术专家与研究者在直播中各抒己见。以下是分享回顾。
+
+
+
+精华抢先看
+ 
+秦建斌：
+
+在更大规模数据的驱动下，将持续催生数据 driven 的 AI+ 数据库结合等新应用。同时，数据规模的不断增大，也使得数据治理变得愈发重要，我更加倾向于关注整个数据从创建到分析利用的整个生命周期。
+点击查看原文>]]></summary>
+        <author>
+            <name>腾讯云</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[一个存在了挺久的分享美景美食的 v2 wx 群，近期吸纳一些新会员。]]></title>
+        <id>791170</id>
+        <link href="https://www.v2ex.com/t/791170"/>
+        <updated>2021-07-22T14:45:26.000Z</updated>
+        <summary type="html"><![CDATA[mikulch: 
+群建了比较长的时间了，都是 v 站会员。最开始是准备讨论技术问题，后来逐渐话题趋于综合。目前准备吸纳一些「志同道合」的新鲜血液。
+群的主题主要是以下几个：
+生活美食，美景分享。（重点）
+职场吐槽。
+聊天打屁。
+技术问题解答。
+排解生活中的苦闷。
+群员具有以下特征：
+活跃会员基本在 30 岁上下。
+前端居多。
+名片都按照城市和技术栈分了类。
+大部分都比较好交流。
+喜欢发沙雕图和宠物图片。
+虽然偶尔都会吐槽，但是整体还是积极向上的。
+群内规范如下：
+禁止 zz
+禁止 sq
+禁止恶心，恐怖信息。
+禁止无限制的负能量和抱怨。
+注意看群公告。
+提倡客观冷静和谐，反对极端情绪化对立。
+根据以上信息，如果觉得群的主题和群员的画像和自己的意向相符合的话，可以扫码入群哈。
+另外，群每隔一段时间会清理一次僵尸粉。如果加了群了觉得不合适，退了就行。
+如果没有退，就是当的保持一下活跃度，比如多帮助群里面的人解决技术问题等等。]]></summary>
+        <author>
+            <name>mikulch</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[关于 Java 和 go 高并发的话题]]></title>
+        <id>791169</id>
+        <link href="https://www.v2ex.com/t/791169"/>
+        <updated>2021-07-22T14:45:05.000Z</updated>
+        <summary type="html"><![CDATA[MakHoCheung: go 因为有协程，所以高并发是它的一大优势，但是我看博客，别人说 groutine 的底层也是线程池，这样跟 Java 也一样，为什么 go 在高并发这块就很厉害呢（我不知道 Java 在高并发这块是不是比 go 弱，我没做过什么高并发项目）。发散一下就是 Java 的 NIO +线程池（现实例子就是 netty ）跟 go 在高并发这块差距是不是巨大？]]></summary>
+        <author>
+            <name>MakHoCheung</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Using Google Drive as a CMS]]></title>
+        <id>https://css-tricks.com/?p=344580</id>
+        <link href="https://css-tricks.com/using-google-drive-as-a-cms/"/>
+        <updated>2021-07-22T14:44:26.000Z</updated>
+        <summary type="html"><![CDATA[We’re going to walk through the technical process of hooking into Google Drive’s API to source content on a website. We’ll examine the step-by-step implementation, as well as how to utilize server-side caching to avoid the major pitfalls to avoid …
+The post Using Google Drive as a CMS appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.]]></summary>
+        <author>
+            <name>Nathan Babcock</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[低代码重构复杂系统?]]></title>
+        <id>791168</id>
+        <link href="https://www.v2ex.com/t/791168"/>
+        <updated>2021-07-22T14:44:20.000Z</updated>
+        <summary type="html"><![CDATA[chencc48111: 
+老板让我们用一个低代码平台重构我们的项目, 项目挺复杂, 用的还是你们听都没听过的 用友 低代码平台, 官网连客户案例都没有, 最怕这些中型公司的低代码平台, 全是坑, 说实话, 就是垃圾, 用低代码平台开发复杂系统, 比用 java 还复杂 3 倍, 功能还简陋 5 倍. 学个 vue 还有点用, 学它? 就算低代码以后会成主流, 连轮不到用友吧? 大概 2 年后自己公司都不会维护了.]]></summary>
+        <author>
+            <name>chencc48111</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[杭州租房求助]]></title>
+        <id>791167</id>
+        <link href="https://www.v2ex.com/t/791167"/>
+        <updated>2021-07-22T14:42:43.000Z</updated>
+        <summary type="html"><![CDATA[haokuderen: 拱墅万达附近的单身公寓和二室有推荐吗？]]></summary>
+        <author>
+            <name>haokuderen</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hashnode: A Blogging Platform for Developers]]></title>
+        <id>https://css-tricks.com/?p=344330</id>
+        <link href="https://css-tricks.com/hashnode-a-blogging-platform-for-developers/"/>
+        <updated>2021-07-22T14:39:09.000Z</updated>
+        <summary type="html"><![CDATA[Hashnode is a free platform for developer blogging. Say you’ve just finished an ambitious project and want to write about 10 important lessons you’ve learned as a developer during it. You should definitely blog it—I love that kind of blog post, myself. Making a jump into the technical debt of operating your own blog isn’t a small choice, but it’s important to own your own content. With Hashnode, the decision gets a lot easier. You can blog under a site you entirely own, and at the same time, reap the benefits of hosted software tailor-made for developer blogging and be part of a social center around developer writing.
+The post Hashnode: A Blogging Platform for Developers appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.]]></summary>
+        <author>
+            <name>Chris Coyier</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[小白初学 Python ，有没有大佬可以帮忙简化一下代码]]></title>
+        <id>791165</id>
+        <link href="https://www.v2ex.com/t/791165"/>
+        <updated>2021-07-22T14:37:31.000Z</updated>
+        <summary type="html"><![CDATA[LinusChen: import pandas as pd
+import openpyxl
+#用来保存结果的列表
+two = []
+urltwo = []
+urltwoo = []
+three = []
+urlthree = []
+urlthreee = []
+
+four = []
+urlfour = []
+urlfourr = []
+five = []
+urlfive = []
+urlfivee = []
+letters = "abcdefghijklmnopqrstuvwxyz"
+#几位数，自己定
+ttwo = [a+b for a in letters for b in letters]
+tthree = [a+b+c  for a in letters for b in letters for c in letters]
+ffour = [a+b+c+d  for a in letters for b in letters for c in letters for d in letters]
+ffive = [a+b+c+d+e  for a in letters for b in letters for c in letters for d in letters for e in letters]
+#域名后缀
+hz = "logistics.com.br"
+hz2 = "comex.com"
+#开始
+for k2 in ttwo:
+    url2 = [k2 + hz]
+    url22 = [k2 + hz2]
+    urltwo.append(url2)
+    urltwoo.append(url22)
+    two = urltwo + urltwoo
+ 
+for k3 in tthree:
+    url3 = [k3 + hz]
+    url33 = [k3 + hz2]
+    urlthree.append(url3)
+    urlthreee.append(url33)
+    three = urlthree + urlthreee
+
+for k4 in ffour:
+    url4 = [k4 + hz]
+    url44 = [k4 + hz2]
+    urlfour.append(url4)
+    urlfourr.append(url44)
+    four = urlfour + urlfourr
+for k5 in ffive:
+    url5 = [k5 + hz]
+    url55 = [k5 + hz2]
+    urlfive.append(url5)
+    urlfivee.append(url55)
+    five = urlfive + urlfivee
+#导出结果
+data = {'两个字母': two,'三个字母': three,'四个字母': four,'五个字母':five}
+frame = pd.DataFrame(data)
+frame.to_excel("E:\BaiduNetdiskWorkspace\个人\python\猜域名.xlsx")]]></summary>
+        <author>
+            <name>LinusChen</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[求更新 iOS 15 的朋友帮忙测试一个无障碍的 Bug]]></title>
+        <id>791163</id>
+        <link href="https://www.v2ex.com/t/791163"/>
+        <updated>2021-07-22T14:23:54.000Z</updated>
+        <summary type="html"><![CDATA[meowhuang: 
+想请大家帮忙测试一下 iOS 15 是否修复了这个 Bug 。
+简单描述一下 Bug : 和无障碍中的缩放控制器有关。
+1· 如果点击缩放控制器，可以移动已放大区域
+2· 如果点击缩放控制器以外的其他地方，不应该影响已放大区域
+BUG: iOS 14 中不满足第二条。也就是控制器以外的其他地方依然可以影响已缩放区域缩放范围
+如何帮忙测试：打开缩放控制器 (iOS 14)：
+设置 
+辅助功能 
+缩放 
+打开缩放开关（这时会立即启用缩放。你可以三指同时双击屏幕，关闭）
+缩放控制器
+打开显示控制器开关
+Bug 详细信息，我发了一个博客记录如下：
+https://www.huangwei.icu/2021/07/22/ios-%e8%a7%86%e8%a7%89%e6%97%a0%e9%9a%9c%e7%a2%8d-%e7%bc%a9%e6%94%be%e5%8a%9f%e8%83%bd/]]></summary>
+        <author>
+            <name>meowhuang</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[为什么大多数系统数据表设计，类型字段都喜欢用字符串而不是整型]]></title>
+        <id>791162</id>
+        <link href="https://www.v2ex.com/t/791162"/>
+        <updated>2021-07-22T14:23:37.000Z</updated>
+        <summary type="html"><![CDATA[sekfung: 
+用整型查询不是更快吗？
+比如类型有"01" "02"，这里衍生另一个问题，既然都是字符串，为何不用"1", "2",还浪费空间
+是出于什么考虑？我想到的有几个原因
+防丢精度防出错，比如前端传个 long 型 雪花 id
+"01"有前导 0, 表明该字段最大值为 99
+还有其他什么血泪教训吗？]]></summary>
+        <author>
+            <name>sekfung</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[想问问大家是怎么看待实习生的？]]></title>
+        <id>791161</id>
+        <link href="https://www.v2ex.com/t/791161"/>
+        <updated>2021-07-22T14:09:38.000Z</updated>
+        <summary type="html"><![CDATA[ElDanno: 
+如题。想问问大家是怎么看待实习生的。
+面的后台卡发岗，实习了好几周了，开发没干到，文字工作倒干了不少，已经熟读并背诵外包功能介绍文档了哈哈哈。感觉公司或者说 leader 也不是很看重对实习生培养，很多实习生干杂活，都想早点跑路。
+和家人抱怨 jd 货不对板然后被教育实习生就是干杂活，没人愿意带实习生。然后我玻璃心碎了 hhhhh 。不过马上就跑路了，心态躺平了。
+打了一堆文字，后面想想算了，虽然我不觉得他们会上 v2ex，但是还是保全自己。]]></summary>
+        <author>
+            <name>ElDanno</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[杭州有没有养鱼的 v 友，搞了个本地交流群~]]></title>
+        <id>791160</id>
+        <link href="https://www.v2ex.com/t/791160"/>
+        <updated>2021-07-22T14:07:55.000Z</updated>
+        <summary type="html"><![CDATA[xuweifeng1987: v 站很少有人养鱼吗，兰寿、泰狮等等的
+建了个 qq 群，627885720
+ps：自从我 5 月份养鱼以来，以前一直很瘦的，现在竟然开始胖了，缓解压力神器！！！]]></summary>
+        <author>
+            <name>xuweifeng1987</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[抖音后端，直播核心钱包团队（春晚红包）（直播送礼）招人 招人！]]></title>
+        <id>791159</id>
+        <link href="https://www.v2ex.com/t/791159"/>
+        <updated>2021-07-22T14:02:01.000Z</updated>
+        <summary type="html"><![CDATA[petelin: 抖音后端，直播核心钱包团队（春晚红包）（直播送礼）招人 招人！！！
+欢迎校招生私信简历，有私必回，直接推 hr 的 leader ！ 社招也要，上船的好时机！
+入职请吃饭
+邮箱：ODU5NTk4NzMyQHFxLmNvbQ== (qq)]]></summary>
+        <author>
+            <name>petelin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[英国最大芯片厂NWF遭政府停止拨款，或与被中企闻泰科技收购有关]]></title>
+        <id>https://www.infoq.cn/article/gGrkZ8yo5cFHUomiWI7W?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/gGrkZ8yo5cFHUomiWI7W?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-22T13:59:52.000Z</updated>
+        <summary type="html"><![CDATA[约翰逊政府目前正对这项收购交易展开“国家安全”审查，未来几周内将作出决定。
+
+被闻泰科技收购后，英政府暂停资助 NWF
+
+据英国《每日电讯报》当地时间 7 月 20 日晚间报道，在中企安世半导体（Nexperia）提出收购英国最大芯片生产商 Newport Wafer Fab（NWF）后，按照英国政府的指示，英国研究与创新署（UKRI）已经暂停了对 NWF 的资助。据了解，UKRI 现在是英国国内最主要的研发资助机构，每年总预算超过 60 亿英镑。
+
+本月稍早前，就有市场消息传出闻泰科技全资子公司安世半导体将以约 6300 万英镑（约合人民币 5.6 亿元）的价格收购 NWF，彼时闻泰科技方面回应道：“不予置评”。
+
+7 月 6 日，闻泰科技发布的一份公告证实了此次收购交易。公告显示，7 月 5 日，公司全资子公司安世半导体与 NWF 母公司 NEPTUNE 6 LIMITED（以下简称“NEPTUNE”）及其股东签署了有关收购协议。本次交易完成后，闻泰科技将间接持有 NWF 100% 权益。
+
+
+
+点击查看原文>]]></summary>
+        <author>
+            <name>凌敏</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[发现浅色（亮色）和深色（暗色）对戴近视眼镜人的影响]]></title>
+        <id>791156</id>
+        <link href="https://www.v2ex.com/t/791156"/>
+        <updated>2021-07-22T13:39:46.000Z</updated>
+        <summary type="html"><![CDATA[meisen: 
+首先说下个人观点：浅色 YYDS，深色更疲劳更累
+浅色模式书签栏
+
+深色模式书签栏
+
+请戴眼镜的同学，头画圈（类似“O”）看上图里 YouTube 的 Logo，是否发现浅色和深色有所变化？
+也请不近视的同学帮忙看下有无区别。]]></summary>
+        <author>
+            <name>meisen</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[虚拟机 + Wireguard 的 NAT 问题]]></title>
+        <id>791155</id>
+        <link href="https://www.v2ex.com/t/791155"/>
+        <updated>2021-07-22T13:35:13.000Z</updated>
+        <summary type="html"><![CDATA[evemoo: 
+阿里云轻量服务器：
+有公网 IP + 安全组端口全开 + 打上 Fullcone 补丁 。
+
+服务器配置：
+192.168.1.222 是 NS 的 局域网地址。
+
+
+
+Virtualbox 虚拟机：
+有线桥接模式，连上后能互相 ping 通。
+
+客户端配置：
+
+防火墙配置：
+
+
+
+存在问题：
+Nintendo Switch 将网关设置成虚拟机 IP 后，网络测试结果为服务器地址，但 NAT 类型没有提升到 A 。]]></summary>
+        <author>
+            <name>evemoo</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Python 碰到一题，大家有没有更好的解法]]></title>
+        <id>791154</id>
+        <link href="https://www.v2ex.com/t/791154"/>
+        <updated>2021-07-22T13:17:12.000Z</updated>
+        <summary type="html"><![CDATA[wuwukai007: 
+nput_data = [
+    ['格力', '格力电器'],
+    ['格力', '美的', '格力电器', '美的集团'],
+    ['中国民生投资股份有限公司', '中民投'],
+    ['格力', '格力电器', '格力集团'],
+    ['工银', '中信证券', '工行', '中国工商银行'],
+    ['建行', '建设银行', '北大光华'],
+    ['中国银行', '工行', '工商银行', '港交所'],
+    ['中行', '建行', '工行', '中金', '工商银行', '中国银行', '建设银行'],
+    ['农行', '建设银行', '建行', '中行'],
+    ['中国民生投资股份有限公司', '上海金融法院', '中民投', '启信宝']
+]
+输出:
+            {('格力', '格力电器'): 3,
+             ('美的', '美的集团'): 1,
+             ('中民投', '中国民生投资股份有限公司'): 2,
+             ('格力', '格力集团'): 1,
+             ('工银', '中国工商银行'): 1,
+             ('建行', '建设银行'): 3,
+             ('中行', '中国银行'): 2,
+             ('工银', '工商银行'): 2}
+
+
+from itertools import chain
+from collections import defaultdict
+
+data = list(chain(*nput_data))
+res = [set(i) for i in data]
+
+count = defaultdict(int)
+for index,row in enumerate(res):
+    for index2,i in enumerate(res):
+        if row.issuperset(i) and row != i:
+            count[(data[index2],data[index])] += 1
+            break]]></summary>
+        <author>
+            <name>wuwukai007</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有什么算法能使一列数组中较远数据逐渐变小]]></title>
+        <id>791152</id>
+        <link href="https://www.v2ex.com/t/791152"/>
+        <updated>2021-07-22T13:08:36.000Z</updated>
+        <summary type="html"><![CDATA[songdg: 譬如一个时序的数组，最近的 100 个数据不变，大于 100 的根据与当前的距离逐渐变小。]]></summary>
+        <author>
+            <name>songdg</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[求不错的 gitbook 推荐]]></title>
+        <id>791151</id>
+        <link href="https://www.v2ex.com/t/791151"/>
+        <updated>2021-07-22T13:06:34.000Z</updated>
+        <summary type="html"><![CDATA[fabiannnnnnnnnn: 
+如题 想求一些不错的 gitbook 推荐
+java 、服务端、计科、架构、面经都可以]]></summary>
+        <author>
+            <name>fabiannnnnnnnnn</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[实习] [微软亚洲研究院] 基于 SONiC 开源云网络操作系统的安全机制研发实习生]]></title>
+        <id>791150</id>
+        <link href="https://www.v2ex.com/t/791150"/>
+        <updated>2021-07-22T13:01:17.000Z</updated>
+        <summary type="html"><![CDATA[nomeguy: 微软亚洲研究院-网络研究组招收研究实习生啦~
+微软亚洲研究院 (MSRA)-网络研究组 (Networking Research Group)
+https://www.microsoft.com/en-us/research/group/networking-research-group-2/
+========================
+岗位： [基于 SONiC 开源云网络操作系统的安全机制研发-全职实习生, 若干名] 
+1 、工作职责：
+- SONiC 是微软推出的下一代开源云网络操作系统，为大型数据中心的交换机设备提供统一的底层操作系统支持；
+- 参与 SONiC 中某些模块的研发，如 Redis DB 、SNMP 、BGP 、DHCP 、IPv6 等等；
+- 检测 SONiC 操作系统本身的安全需求（ Spec ）与底层交换机设备实际部署的安全规则（ ACL ）之间的冲突，利用算法分析网络配置之间的不一致问题；
+- 参与开发公司在 GitHub 上的开源项目。
+2 、职位要求：
+- 熟悉计算机网络（ TCP/IP 协议栈）、云原生（ Docker，K8s ）、路由交换设备、云数据中心网络、网络安全中的一个或多个领域，有相关项目经验；
+- 熟悉 Linux C/C++、Python 、Go 中的一门或多门语言，有较强的工程能力，熟练掌握 git，代码格式清晰规范，善于团队协作；
+- 有一定英文学术论文阅读能力，能够根据论文进行系统实现；
+- 较强的沟通能力和逻辑表达能力。
+3 、具有以下条件者优先：
+- 在 GitHub 较为活跃，有自己的开源项目，或参与过知名开源项目；
+- 发表过学术论文；
+- 可以连续实习不少于 6 个月。
+========================
+工作时间：每周 5 天，3 个月以上，能够尽快入职
+工作地点：北京市海淀区丹棱街 5 号（疫情期间可远程办公）
+如有意向请发 [中文简历 PDF ] 至：nrg-intern-recruit@microsoft.com
+简历中需标明平均分，及专业或年级排名及排名对应的总人数
+ [注意] 请务必采用学校邮箱（ edu 域名）发送简历，其他邮箱（如 163 、qq 、gmail 、outlook 、hotmail 等）发送会进入公司垃圾邮件，无法被 HR 看到
+邮件标题&简历 PDF 文件名格式：基于 SONiC 开源云网络操作系统的安全机制研发-姓名-学校-本|硕|博-年级-V2EX]]></summary>
+        <author>
+            <name>nomeguy</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[一场开源数据库的精酿啤酒节，会有多少种味道？]]></title>
+        <id>https://www.infoq.cn/article/3dVaAU5qArvFjMy29MsF?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/3dVaAU5qArvFjMy29MsF?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-22T13:00:09.000Z</updated>
+        <summary type="html"><![CDATA[开源生态正在经历前所未有的繁荣。
+
+今年 3 月，“开源”首次被明确列入国民经济和社会发展五年规划纲要。纲要提到，加快布局量子计算、量子通信、神经芯片、DNA 存储等前沿技术，加强信息科学与生命科学、材料等基础学科的交叉创新，支持数字技术开源社区等创新联合体发展，完善开源知识产权和法律体系，鼓励企业开放软件源代码、硬件设计和应用服务。
+
+对开源社区的支持，对完善开源底层基础设施的规划以及对企业开源的鼓励，为开源生态的长远发展和繁荣注入一剂强心针。二季度以来，开源领域也发生了一些大事，如阿里云开放关系型数据库PolarDB for PostgreSQL的源代码，蚂蚁金服开源自研分布式数据库OceanBase等。PolarDB系列产品支撑了天猫多年双十一的稳定进行，OceanBase也经历了蚂蚁金服和阿里巴巴金融业务的多次大考。至此，阿里、腾讯、华为等大厂深度参与了开源，开源生态已经进入企业级的主流。
+
+技术的发展要解决业务问题。上云容易“下”云难，早期上云享受到云服务的企业，如今需要在多云环境下进行业务数据的处理，需要对海量的数据进行实时处理、分析和反馈。多云环境下，如何解决多源数据异构、大数据技术栈蔓生、满足实时处理需求的同时简化技术栈的难题摆在了技术公司的面前。云厂商们共建数据库生态的姿态，促进了开源数据库的发展和繁荣，也映射了业务公司的迫切诉求。
+
+分布式数据库和大数据的结合顺势而生。新一代HTAP，开始成为分布式数据库与大数据栈融合的热门实践，PingCAP已经发布了面向企业级核心场景、具备完整 HTAP 能力的分布式数据库 TiDB 5.0 版本，OceanBase 也发布了 HTAP 分布式数据库方向的 3.0 版本。
+
+
+HTAP 能解决什么问题？
+
+开源数据库的发展方向是什么？
+
+中国技术企业如何顺利出海？
+
+……
+
+点击查看原文>]]></summary>
+        <author>
+            <name>张俊宝</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[为什么 Mac 在暗色模式下选动态桌面会自动变成静态的]]></title>
+        <id>791149</id>
+        <link href="https://www.v2ex.com/t/791149"/>
+        <updated>2021-07-22T12:58:56.000Z</updated>
+        <summary type="html"><![CDATA[espaul64: 
+在暗色模式下，系统偏好设置->桌面->选择动态桌面，桌面会自动变成「深色（静态）」的，还要再从菜单中选择「动态」。从 Catalina 到 Big Sur 都是这样，这是 bug 吗？]]></summary>
+        <author>
+            <name>espaul64</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[来合肥出差了，合肥有啥好玩的]]></title>
+        <id>791148</id>
+        <link href="https://www.v2ex.com/t/791148"/>
+        <updated>2021-07-22T12:44:58.000Z</updated>
+        <summary type="html"><![CDATA[avalon8: 大概待两个月，住在高新区望江台，有 V 友可以找我来玩啊哈哈]]></summary>
+        <author>
+            <name>avalon8</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Adding Time To Your Schedule As A Professional]]></title>
+        <id>https://smashingmagazine.com/2021/07/time-schedule-professional-trafft/</id>
+        <link href="https://smashingmagazine.com/2021/07/time-schedule-professional-trafft/"/>
+        <updated>2021-07-22T12:30:00.000Z</updated>
+        <summary type="html"><![CDATA[Are you running a business and have too many things going on at once? Meetings, bugs, customer feedback, new clients in addition to your already tight deadlines? Let’s face it, time management is hard, and it becomes even more difficult in the trying times we are in.]]></summary>
+        <author>
+            <name>hello@smashingmagazine.com (Matthew Talebi)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[一个疑似 base64 编码的数据求解]]></title>
+        <id>791146</id>
+        <link href="https://www.v2ex.com/t/791146"/>
+        <updated>2021-07-22T12:16:37.000Z</updated>
+        <summary type="html"><![CDATA[h404bi: 
+最近找到了可以获取 Microsoft Edge 的 Offline Installer （不需要管理员权限安装的 exe 包体，跟官网提供的 enterprise msi 包体不同）的一个 API：
+curl -XPOST "https://msedge.api.cdp.microsoft.com/api/v1.1/internal/contents/Browser/namespaces/Default/names/msedge-stable-win-x64/versions/91.0.864.54/files?action=GenerateDownloadInfo&foregroundPriority=true" -d '{"targetingAttributes":{}}'
+
+除了 Offline Installer 外，还有增量包体。应该是 MicrosoftEdgeUpdate 程序调用的 API，用来检查和下载更新。一个返回示例：
+[{"FileId":"MicrosoftEdge_X64_91.0.864.54_91.0.864.41.exe","Url":"http://msedge.f.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/cfa50eb3-534c-46d0-a913-a39d579988b7?P1=1627558634&P2=404&P3=2&P4=HwucV0KjBP5sgCX2JFNT1DJwRmSPPyB6s1Uz1alehA9pHlFW%2bG9u1aD1nouRZDtTluLU1qtiwL2tYXfKmm4dfA%3d%3d","SizeInBytes":8344976,"Hashes":{"Sha1":"pYhI3UY0IAQf7ko9D4e…]]></summary>
+        <author>
+            <name>h404bi</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[成功破解困扰生物学界50年的蛋白质折叠难题，DeepMind的AlphaFold 2已宣布开源！]]></title>
+        <id>https://www.infoq.cn/article/OEcfh1vwtqEjJtNUGzSR?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/OEcfh1vwtqEjJtNUGzSR?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-22T10:27:14.000Z</updated>
+        <summary type="html"><![CDATA[蛋白质结构预测技术正在走向大众。广大科学家很快就能用上准确预测蛋白质3D形状的软件。
+
+7月15日，总部位于伦敦的DeepMind公司发布了该公司深度学习神经网络AlphaFold 2的一个开源版本，并在《自然》期刊的一篇论文中描述了其方法。该网络在去年的蛋白质结构预测竞赛中取得了领先地位。
+
+
+机器学习软件预测的人类白细胞介素12蛋白与其受体结合的结构。
+
+与此同时，一个学术团队受AlphaFold 2的启发开发了自己的蛋白质预测工具，该工具已经受到了很多科学家的欢迎。他们的系统称为RoseTTaFold，其性能接近AlphaFold 2，具体信息发布在7月15日发表的《科学》期刊的一篇论文中。
+
+伊利诺伊州芝加哥大学的计算生物学家Jinbo Xu（他没有参与这两个项目）说，这些工具的开源性质意味着科学界应该能够在前沿技术的基础上开发出更强大、更有用的软件。
+从结构到功能
+
+蛋白质由氨基酸串组成，折叠成3D形状的氨基酸决定了这些蛋白质在细胞中的功能。几十年来，研究人员一直使用X射线晶体学和冷冻电子显微镜等实验技术来确定蛋白质结构。但是这样的方法既费时又费钱，而且一些蛋白质不适合这样的分析。
+点击查看原文>]]></summary>
+        <author>
+            <name>Ewen Callaway</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[东京奥运倒数1日]]></title>
+        <id>https://m.idai.ly/se/f79aKT</id>
+        <link href="https://m.idai.ly/se/f79aKT"/>
+        <updated>2021-07-22T08:59:00.000Z</updated>
+        <summary type="html"><![CDATA[2020东京奥运会倒计时1天，飞行表演队在空中画出奥运五环喷气云，东京。7月22日，东京奥组委宣布解雇开幕式导演小林贤太郎，原因为「导演曾参与制作模仿犹太人大屠杀的搞笑视频」。另一名负责开幕式作曲的音乐人于本周辞任，由其创作的4分钟乐曲亦被取消。东京奥组委透露将有包括日本天皇、首相在内的950人出席观看现场开幕式。当天东京都新增确诊1832例，创下6个月内最高纪录。摄影师：Kai Pfaffenbach]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[拜登称美国经济超疫情前]]></title>
+        <id>https://m.idai.ly/se/4b54J9</id>
+        <link href="https://m.idai.ly/se/4b54J9"/>
+        <updated>2021-07-22T07:59:00.000Z</updated>
+        <summary type="html"><![CDATA[美国总统 Joe Biden 访问俄亥俄州一个电工培训中心。7月21日，Biden 宣称上任6个月迄今美国经济出现40年最快增速，创造美国史上最多的工作岗位，预计2021年美国 GDP 增速将达到7%以上，成为全球唯一经济增长预期超过疫情前的发达国家。当天美国参议院对 Biden 提出的基建法案进行程序性投票，最终因共和党议员全体反对而未能启动辩论。摄影师：Jonathan Ernst]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[美日韩副外长会晤]]></title>
+        <id>https://m.idai.ly/se/610gFR</id>
+        <link href="https://m.idai.ly/se/610gFR"/>
+        <updated>2021-07-22T06:59:00.000Z</updated>
+        <summary type="html"><![CDATA[美日韩副外长举行三方会议，东京。7月21日，美日韩三国副外长就气候变化、新冠疫情及地区安全局势等议题进行讨论，三方一致同意加强合作推动朝鲜半岛实现无核化，并提及「台湾海峡稳定」的重要性。当天中国外交部发言人赵立坚强调，台湾、涉港、涉疆问题都是中国的内部事务，不容任何外部势力干涉。美国国务院宣布副国务卿 Wendy Sherman 计划于7月25至26日访问中国天津，与中国外长王毅、外交部副部长谢锋举行会谈。摄影师：Kazuhiro Nogi]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[俄发射科学号实验舱]]></title>
+        <id>https://m.idai.ly/se/7e9373</id>
+        <link href="https://m.idai.ly/se/7e9373"/>
+        <updated>2021-07-22T06:57:00.000Z</updated>
+        <summary type="html"><![CDATA[俄「质子-M」火箭搭载「科学号」（Nauka）实验舱发射升空，拜科努尔航天发射场。7月21日，俄罗斯「科学号」实验舱成功送入近地轨道，预计8天后与空间站对接。新实验舱重20.35吨，长13米、直径2.8米，气密空间达到70.1立方米，是迄今空间站最大的舱体模块。「科学号」实验舱外装有机械臂和2块太阳能帆板，内部提供居住间、卫生间和制氧净水系统，基本上具备宇航员生命保障和科学实验的全部功能。摄影师：Roscosmos]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[郑州特大暴雨灾害]]></title>
+        <id>https://m.idai.ly/se/055ZYf</id>
+        <link href="https://m.idai.ly/se/055ZYf"/>
+        <updated>2021-07-22T06:55:00.000Z</updated>
+        <summary type="html"><![CDATA[郑州市遭遇史上最大暴雨侵袭，车辆被淹没在积水中，中国河南。7月22日，河南洪涝灾害遇难人数上升至33人，失踪8人，影响全省超过300万人口，直接经济损失约12.2亿元。中国人民解放军中部战区相继派出约8500名解放军官兵、武警和民兵参与抢险救援，国家防总已紧急调派翼龙无人机搭建空中应急通信平台协助救灾。摄影师：iDaily Media]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[印度宰牲节疫情封锁]]></title>
+        <id>https://m.idai.ly/se/4dac9d</id>
+        <link href="https://m.idai.ly/se/4dac9d"/>
+        <updated>2021-07-22T06:53:00.000Z</updated>
+        <summary type="html"><![CDATA[贾玛清真寺因防疫封锁而取消「宰牲节」祷告活动，新德里。7月21日，印度穆斯林连续第二年在防疫措施期间迎来宰牲节，政府禁止大规模祷告仪式并限制集会人数。当天印度新增确诊41697例，死亡510例，人口疫苗接种率仅24.1%。亚洲开发银行最新报告指出，亚洲发展中经济体经济增长率将低于预期，主要原因是新冠疫情反弹，其中印度2021年 GDP 增长预测值下调至10%。摄影师：Arvind Yadav]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[也门宰牲节物价危机]]></title>
+        <id>https://m.idai.ly/se/bbayAD</id>
+        <link href="https://m.idai.ly/se/bbayAD"/>
+        <updated>2021-07-22T06:51:00.000Z</updated>
+        <summary type="html"><![CDATA[也门穆斯林在卡希拉古堡（Al-Qahira citadel）举行宰牲节集体祷告，塔伊兹。长期内战和经济封锁导致也门货币严重贬值，2021年7月官方货币汇率跌破1美元兑1000里亚尔。由于1只羊的价格高达15万里亚尔（约150美元），也门穆斯林不得不选择价格较低的鸡作为宰牲节祭品。2021年迄今也门基本食品价格上涨25%，约80%人口生存依赖国际援助。摄影师：Ahmad Al-Basha]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[美国西部山火持续]]></title>
+        <id>https://m.idai.ly/se/38essc</id>
+        <link href="https://m.idai.ly/se/38essc"/>
+        <updated>2021-07-22T06:49:00.000Z</updated>
+        <summary type="html"><![CDATA[纽约曼哈顿城区建筑群被雾霾笼罩，美国。7月21日，纽约市迎来局部降雨和雷暴天气，帮助驱散西部山火产生的烟尘，空气污染指数已下降至24。美国国家跨部门消防中心（NIFC）数据显示，目前13个州仍有78处大规模山火，延烧面积达5450平方公里，比2020年同期增加42%。各州政府已出动超过2万名消防员和后勤人员参与灭火。摄影师：Spencer Platt]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[加州海洋馆白鲸]]></title>
+        <id>https://m.idai.ly/se/04d1tP</id>
+        <link href="https://m.idai.ly/se/04d1tP"/>
+        <updated>2021-07-22T06:47:00.000Z</updated>
+        <summary type="html"><![CDATA[孩子们在圣地亚哥海洋世界观赏白鲸，美国加利福尼亚州。白鲸是一种广泛分布于北极和亚北极海域的群居鲸类，特征是鼓起突出的头部，并且能够发出复杂多变的叫声。全球野生白鲸数量约20万只，面临主要威胁为人类捕猎、栖息地减少及海洋污染。美国各州政府从7月中旬开始放宽防疫限制，圣地亚哥海洋世界从7月19日开始取消线上预约限制，并推出赠票活动吸引游客。摄影师：Daniel Knighto]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
         </author>
     </entry>
     <entry>
@@ -52,356 +1144,81 @@ The post ECMAScript proposal: JSON modules appeared first on CSS-Tricks. You can
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[玉伯：前端的现状之痛及未来趋势]]></title>
-        <id>https://www.infoq.cn/article/GOVeqCj4WL30dG6dBerw?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/GOVeqCj4WL30dG6dBerw?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-21T20:16:12.000Z</updated>
-        <summary type="html"><![CDATA[在 GMTC 北京上，我听了蚂蚁金服玉伯老师的分享。玉伯 2008 年加入阿里，在这期间，他和团队一起折腾过 KISSY、SeaJS、Ant Design、AntV 等开源项目，现在我们都喜欢用的语雀也是他团队的产品。
-
-他说他的人生观是敢想敢说、敢做敢当、简单真诚、自由活着。整个演讲，他娓娓道来，特别地真诚，也很实在。我把 PPT 放到文末链接了，如果你想看可以直接去下载。
-
-下面是我根据他演讲内容的总结，他没聊具体的技术，但聊到了整个行业的方向，以及一些技术趋势，挺有意思的，希望能给你一些启发吧。
-
-1、现在行业里，大概有三种声音。第一种是说，前端技术卷，论点是前端的轮子多，重复工作多（大量 CRUD），技术创新越来越难。第二种是说，前端发展难，比如有的人说，前端高 P 很少，前端的晋升很难。第三种是从企业的角度说，前端工程师难招，整个行业都在喊，前端招聘难，甚至在某些公司，前端外包人数已超过正式前端了。
-
-2、先不谈玉伯的观点，我听到这里的时候，就想起了几年前罗振宇在跨年演讲上的一句话，大概意思是这样的。“总有人问，今年经济到底好不好。想论证好，有一堆事实。想论证不好，也有一堆事实。”
+        <title type="html"><![CDATA[结构化流-Structured Streaming（八-上）]]></title>
+        <id>https://xie.infoq.cn/article/44143b89ce9c43816fca88eb6?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://xie.infoq.cn/article/44143b89ce9c43816fca88eb6?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-21T20:34:38.000Z</updated>
+        <summary type="html"><![CDATA[写在前面：
+大家好，我是强哥，一个热爱分享的技术狂。目前已有 12 年大数据与AI相关项目经验， 10 年推荐系统研究及实践经验。平时喜欢读书、暴走和写作。
 点击查看原文>]]></summary>
         <author>
-            <name>郭蕾</name>
+            <name>数据与智能</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[[北京/武汉/深圳/远程] FydeOS | 燧炻创新多岗位招聘 2021v5 | 新增 HC]]></title>
-        <id>790961</id>
-        <link href="https://www.v2ex.com/t/790961"/>
-        <updated>2021-07-21T17:11:46.000Z</updated>
-        <summary type="html"><![CDATA[SharonPan: 
-
-关于 FydeOS 和燧炻创新
-FydeOS 是燧炻创新（ Fyde Innovations ）打造的基于 Chromium 开源项目的操作系统产品。燧炻创新是目前世界上为数不多的专注 Chromium OS 开源项目的厂商。2020 年，Chrome OS 成为了世界第二大桌面操作系统。FydeOS 是目前行业内仅有的达到商用级别的全功能第三方 Chromium OS 操作系统产品；预装 FydeOS 的计算机设备可以拥有近似于 Google Chromebook 的使用体验，并可以无障碍地在中国大陆地区使用。FydeOS 配合定制化云集管平台以及附属云服务，打造安全可控的软硬件一站式解决方案，目前正在服务众多海内外行业客户。
-关于燧炻创新及我们是如何工作的
-燧炻创新于 2015 年成立于英国伦敦，经历了漫长的技术积累，目前处在快速增长期。秉承「 small & beautiful 」和「 WLB matters 」的风格，燧炻创新十余人一起经历了这五年的历练并存活至今。从最初的原型验证到今天在操作系统市场上占据一席之地，燧炻相信几个人的力量依然可以发出足够大的声音，改变一个行业的格局。
-公司成立之初便与 V2EX 结下不解之缘。目前团队中几位核心员工均由 V2EX 社区认识 FydeOS 并最终加入我们。不少人也在这里看着我们这几年的成长，再次一并谢过。
-关于「 small & beautiful 」以及「 WLB matters 」，分享几个或许和其它互联网技术公司不太一样的特质：
-不打卡，不精细管理，不写各种总结。
-在燧炻「弹性工作时间」的实施状况可以是下午四点半可以去接孩子放学，晚上陪家人吃饭。只要按时来开会、提交 commit 、消掉 Bugzilla 上的任务。
-Slack 是公司唯一的即时沟通软件，技术岗位所有工作相关内容只在 Sl…]]></summary>
-        <author>
-            <name>SharonPan</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[怎样让API快速且轻松地提取所有数据？]]></title>
-        <id>https://www.infoq.cn/article/sc7p5DIOVwaWF7QrhvqA?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/sc7p5DIOVwaWF7QrhvqA?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-21T16:49:16.000Z</updated>
-        <summary type="html"><![CDATA[我上周在Twitter上发起了一个关于API端点的讨论。相比一次返回100个结果，并要求客户端对所有页面进行分页以检索所有数据的API，这些流式传输大量数据的端点可以作为替代方案：
-
-
-假设这种流式传输端点有了高效的实现，那么提供流式HTTP API端点（例如一次性提供100,000个JSON对象，而不是要求用户在超过1000个请求中每次分页100个对象）有任何意想不到的缺陷吗？——Simon Willison（@simonw），2021年6月17日
-
-
-我收到了很多很棒的回复。我试过在推文上把这些想法浓缩进一个，但我也会在这里将它们综合成一些见解。
-批量导出数据
-
-我花在API上的时间越多（尤其是处理Datasette和Dogsheep项目时），我就越意识到自己最喜欢的API应该可以让你尽可能快速、轻松地提取所有数据。
-
-API 一般可以通过三种方式提供这种功能：
-
-
-单击“导出所有内容”按钮，然后等待一段时间，等它显示包含可下载zip文件链接的电子邮件。这并不是真正的API，主要因为用户通常很难甚至不可能自动执行最初的“点击”动作，但这总比没有好。谷歌的Takeout是这种模式的一个著名实现。
+        <title type="html"><![CDATA[好未来 x DorisDB：全新实时数仓实践，深入释放实时数据价值]]></title>
+        <id>https://xie.infoq.cn/article/fb7ab3d647bda58ff8a35d6d1?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://xie.infoq.cn/article/fb7ab3d647bda58ff8a35d6d1?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-21T20:20:55.000Z</updated>
+        <summary type="html"><![CDATA[好未来选择了DorisDB来支撑实时数据的分析应用。实现了数据秒级查询响应能力，构建了一个统一、快速、高效、灵活的实时数仓。
 点击查看原文>]]></summary>
         <author>
-            <name>Simon Willison</name>
+            <name>DorisDB</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Manjaro 怎么设置“使用网络时间”？必须切换到 root 下面去设定吗？]]></title>
-        <id>790960</id>
-        <link href="https://www.v2ex.com/t/790960"/>
-        <updated>2021-07-21T16:44:04.000Z</updated>
-        <summary type="html"><![CDATA[cathedrel: 
-系统的时间一直是在慢慢的变慢，现在跟标准时间已经差了 4 分钟了，我想使用“网络时间”，但是在不管我怎么选定，关闭之后再打开时间设置的界面那这个“网络时间”一定是没选上的，是因为普通用户的设置不算数还是必须有其他我还不知道的设定方式？？
-i.imgur.com/OA1nnD2.png]]></summary>
-        <author>
-            <name>cathedrel</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[GitHub 如何从单体架构迁移到微服务架构？]]></title>
-        <id>https://www.infoq.cn/article/zYGF4FpIVVt5U2omioUu?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/zYGF4FpIVVt5U2omioUu?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-21T16:20:36.000Z</updated>
-        <summary type="html"><![CDATA[本文介绍GitHub如何从单体架构迁移到微服务架构，并对其中一些最佳实践做了详细说明。
-旅程开启
-
-GitHub创建于2008年，其宗旨是为开发人员托管和分享代码提供便利。GitHub的创建者也是开源贡献者，他们在Ruby社区非常有影响力。正因为如此，GitHub的架构深深地扎根于Ruby on Rails。
-
-在公司的整个发展历程中，我们雇佣了世界上最好的Ruby开发人员，帮助我们扩展和优化代码库。如今，我们的平台上已经有超过5000万名开发人员，每年有超过8000万个pull请求合并，全球各大洲有超过1亿个代码存储库。
-
-如你所见，这个单体架构已经带我们走得很远。一个演进了12年的代码库，每天要协调多次部署。我们有一个规模很大的平台，每天处理10亿次API调用，我们还提供了一个高性能的用户界面，专注于完成这项工作。
-内部快速增长
-
-在过去18个月中，GitHub内部经历了快速增长。我们已经有超过2000名员工，为代码库做贡献的工程师数量已经是以前的两倍多。这种增长既包括自身的逐步发展，也包括收购，如Semmle、npm、Dependabot和Pull Panda。
-
-此外，GitHub是一个高度分散的团队，在疫情发生前，我们就有超过70%的员工是在旧金山总部以外的地方办公。GitHub的员工和承包商要跨六大洲展开协作，他们工作的时区各不相同。我们有1000多名内部开发人员，他们有各种各样的开发技能，涉及到许多不同的技术。
+        <title type="html"><![CDATA[盘点Java线程池配置的常见误区，你中了几个？]]></title>
+        <id>https://xie.infoq.cn/article/160c906fd3d4aa94e0ab2fda6?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://xie.infoq.cn/article/160c906fd3d4aa94e0ab2fda6?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-21T20:08:52.000Z</updated>
+        <summary type="html"><![CDATA[由于线程的创建和销毁对操作系统来说都是比较重量级的操作，所以线程的池化在各种语言内都有实践，当然在 Java 语言中线程池是也非常重要的一部分，有 Doug Lea 大神对线程池的封装，我们使用的时候是非常方便，但也可能会因为不了解其具体实现，对线程池的配
 点击查看原文>]]></summary>
         <author>
-            <name>Sha Ma</name>
+            <name>北游学Java</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Apple Music on Mac 一片空白]]></title>
-        <id>790959</id>
-        <link href="https://www.v2ex.com/t/790959"/>
-        <updated>2021-07-21T16:17:14.000Z</updated>
-        <summary type="html"><![CDATA[tomkwok: 小弟用的是美区 Apple Music，一直都有挂梯子使用。前两天发现 Mac 上的 Apple Music 三个 tabs 完全空白，但是曲库仍然可以正常播放，网页版和 iOS 端也能正常使用，请问大家有没有遇到同样状况？]]></summary>
-        <author>
-            <name>tomkwok</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[请教关于高效批量 PDF 转 TXT]]></title>
-        <id>790958</id>
-        <link href="https://www.v2ex.com/t/790958"/>
-        <updated>2021-07-21T16:09:07.000Z</updated>
-        <summary type="html"><![CDATA[leverestfish: 
-不需要 OCR 的，都是完全电子版的 PDF 文件。
-最好是用脚本的比如 python，尝试过 pdfminer 感觉性能很弱鸡，鲁棒性也不够（也可能是我用的不对？在一个 1 核 2G 的云服务器上跑 50 页左右的，经常被强制 KILL ）；
-实在不行也可以用软件，但是必须要能批量（手头文件很多）
-谢谢大噶，被一个小需求烦死了，感觉市面上解决方案不多。]]></summary>
-        <author>
-            <name>leverestfish</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[求一个基于 kafka 的消息消费框架]]></title>
-        <id>790957</id>
-        <link href="https://www.v2ex.com/t/790957"/>
-        <updated>2021-07-21T16:08:24.000Z</updated>
-        <summary type="html"><![CDATA[Euthpic: 
-背景:
-我们现有的缓存同步方案基于 canal 和 kafka,db 更新时 canal 拉取 binlog 发消息到 kafka,然后多个业务方各自消费消息.
-缺点:
-1.缺少统一的调度,消费者零散地散落在各个项目里,消息堆积时不好扩容.
-2.同一条消息(对同一张表的一条操作记录)会下发到多个消费者(不同的业务逻辑),浪费网络资源.同时 binlog 的消息是全量下发(所有表的操作记录推到同一个 topic),消费者还得各自筛选自己需要的消息,浪费 cpu 资源.
-3.消费者之间可能有依赖关系,但是业务逻辑是解耦的,不能相互调用,因此无法感知到依赖的资源是否已经到位.
-所以我们计划把这些消费者整合到同一个项目里面统一管理,统一调度.
-深思熟虑了 5 分钟之后,我感觉可能遇到这些问题:
-1.如何协调消费者之间的依赖关系?如果直接把它们丢到一个串行的方法里面,那么调用链就很长,消息延迟就很严重,有些消费者本来没有前置依赖,但却要白白等前面的消费者执行完,不合理.如果都是异步去调用它们的话,就无法感知到依赖关系.
-2.消息消费的速度会不会受到影响?以前一条消息开了很多消费者去消费,现在整合到一起,调用链变长了.
-所以想问问大家有没有现成的开源框架是解决这类问题的?
-我们开发的语言是 scala 和 java,mq 是 kafka,当然消息源最好也能支持其他 mq]]></summary>
-        <author>
-            <name>Euthpic</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Java 并发编程不推荐看《 Java 并发编程的艺术》]]></title>
-        <id>790956</id>
-        <link href="https://www.v2ex.com/t/790956"/>
-        <updated>2021-07-21T16:07:03.000Z</updated>
-        <summary type="html"><![CDATA[0576coder: 
-这段时间差不多看完了这本书
-
-我感觉这本书最大的问题是章节都是不同的人编写，缺少一些连贯性，比如讲线程的时候提到了线程池，然后线程池又放在后面章节讲，有一张草草的讲了 ForkJoinPool，然后隔了两章才讲 Executor，而且不是同一个人写的。
-还有里面对于一些概念的解释跟语言描述，没做到通俗易懂。比如讲 synchronize 实现，还有 Object 自带的等待通知模式跟 Condition，有点散
-最让我难受的是讲 java 内存模型跟 AQS 那两个章节，真的写的不是很好。
-不知道大家有没有更好的书推荐
-还有 JVM 相关的书，大家有推荐的吗]]></summary>
-        <author>
-            <name>0576coder</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[开源编程语言Julia融资1.6亿，人气10倍速飙升]]></title>
-        <id>https://www.infoq.cn/article/B0dpMASUNf3LBB8y2Svq?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/B0dpMASUNf3LBB8y2Svq?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-21T16:05:00.000Z</updated>
-        <summary type="html"><![CDATA[Julia 编程语言掀起了一股新的热潮。
-
-
-7 月 19 日，由 Julia 高性能编程语言初创团队建立的 Julia Computing 公司，宣布完成由 Dorilton Ventures 领投的 2400 万美元 A 轮融资（折合人民币约 1.6 亿）。参与此次融资的还包括 Menlo Ventures、General Catalyst 以及 HighSage Ventures 等。此外，前 Snowflake CEO 兼前微软服务器及工具业务总裁 Bob Muglia，也将正式加入 Julia Computing 董事会。
-
-Julia 编程语言最初由麻省理工学院（MIT）立项开发，目前在全球用户中拥有 2900 多万次下载量，具有 3.4 万颗星，已经有数千位开源开发者为 Julia 及其 6000 多个注册软件包贡献力量。全球超过 1500 所高校已经在使用 Julia 并教授相关知识，包括麻省理工、斯坦福大学、加州大学伯克利分校等世界一流学府。目前全球已经有超过 1 万家公司使用 Julia 语言，其中包括阿斯利康、贝莱德、谷歌、英特尔、微软、Moderna、辉瑞、NASA、联邦航空管理局以及纽约联邦储备银行等重量级用户。
-
-自 2012 年正式亮相以来，Julia 社区规模也呈指数级增长。Julia 帮助科学家及工程师们解决各类大规模数据科学问题，消除了只能使用高级语言（例如 Python、Matlab 或 R 语言）进行测试与建模环节、并使用其他高性能低级语言（例如 C 或 C++）进行生产与扩展的割裂问题。
-
-Julia Computing 将利用这笔资金进一步开发并改进旗下高安全性、高性能水平的 JuliaHub 云平台，同时着力拓展 Julia 生态系统。JuliaHub 能够帮助数据科学家及工程师以更快速度轻松开发、部署并扩展 Julia 程序及模型。
-
-Dorilton Ventures 投资负责人 Daniel Freeman 评论道，“Julia 代表的是一项真正具有变革性的业务，具有巨大的成功潜力。”
+        <title type="html"><![CDATA[Pravega Flink connector 的过去、现在和未来]]></title>
+        <id>https://xie.infoq.cn/article/b84c7e9eb157f8fab1a9d3e7f?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://xie.infoq.cn/article/b84c7e9eb157f8fab1a9d3e7f?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-21T17:26:52.000Z</updated>
+        <summary type="html"><![CDATA[本文整理自戴尔科技集团软件工程师周煜敏在 Flink Forward Asia 2020 分享的议题《Pravega Flink Connector 的过去、现在和未来》
 点击查看原文>]]></summary>
         <author>
-            <name>Tina,核子可乐</name>
+            <name>阿里云大数据AI技术</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[8 月准备新办宽带，有相应渠道的老哥么]]></title>
-        <id>790954</id>
-        <link href="https://www.v2ex.com/t/790954"/>
-        <updated>2021-07-21T15:50:39.000Z</updated>
-        <summary type="html"><![CDATA[mosliu: 
-为什么
-8 月单位宽带到期不再续了，要求从社会上办理
-需要什么
-准备新办宽带，不太熟悉，不知道有没有了解相应渠道的老哥么？能办的合适一点么，要是有途径，应该有许多人有同样的需求，串联一下业务不小
-联系方式
-wx 同 id]]></summary>
+        <title type="html"><![CDATA[聊聊 Web Workers 吧]]></title>
+        <id>https://xie.infoq.cn/article/d18548286d06e314d12db3afd?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://xie.infoq.cn/article/d18548286d06e314d12db3afd?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-21T16:30:21.000Z</updated>
+        <summary type="html"><![CDATA[我们一起来认识一下Web Workers吧
+点击查看原文>]]></summary>
         <author>
-            <name>mosliu</name>
+            <name>Faye</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[微信占用空间简析]]></title>
-        <id>790952</id>
-        <link href="https://www.v2ex.com/t/790952"/>
-        <updated>2021-07-21T15:38:41.000Z</updated>
-        <summary type="html"><![CDATA[zbinlin: 
-看到 ://www.v2ex.com/t/789383 关于微信占用空间的讨论，刚好我手机里存储空间也告急了，想清理下，就查看了下微信的空间占用情况。
-通过系统的 App 详情那里查看到 App site 为 379 MB 、User data 为 6.20 GBa，然后查看了微信自带的 Manage Storage 统计，Wechat Storage Used 为 5.8 GB，其中 Chat Histories 占用 1.8 GB 。
-然后我粗略地统计了 /data/data/com.tencent.mm/ 下各文件夹的占用情况（总共占用 3.9 GB，这里只列出占用比较大的目录）
-42M./cache
-528M./files
-1.9G./MicroMsg
-120M./app_webview_com_tencent_mm
-17M./app_tbs
-11M./app_webview_com_tencent_mm_tools
-584M./app_webview_com_tencent_mm_sandbox
-97M./app_tbs_64
-186M./tinker
-37M./app_x5webview
-105M./app_xwalk_2852
-178M./app_xwalk_2691
-102M./lib-0
-
-3.9 + 1.8 ~= 5.8，基本符合 Storage 里的统计。
-以下是 ./MicroMsg 的目录统计：
-299M./MicroMsg/expansions
-1.2G./MicroMsg/54******************************
-1.1G./MicroMsg/54******************************/image2
-12M./MicroMsg/54******************************/avatar
-65M./MicroMsg/54******************************/EnMicroMsg.db
-88M./MicroMsg/54******************************/appbrand
-307M./MicroMsg/webview_tmpl
-6.8M./MicroMsg/appbrand
-1.5M./MicroMsg/webcompt
-40M./MicroMsg/luckymoney
-14M./MicroMsg/CheckResUpdate
-
-这里面在我的账号（54******************************）下，发现 image2 这个文件夹占的比重最大，里面应该是一些图片。
-将其 pull 到电脑上查看，发现其中的一个群组里的图片占多数，但将该群的聊天记录清除后，其占用大小依然不变。]]></summary>
+        <title type="html"><![CDATA[我看JAVA 之 垃圾回收GC]]></title>
+        <id>https://xie.infoq.cn/article/6861ad5b1ed37f81df9f36c1f?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://xie.infoq.cn/article/6861ad5b1ed37f81df9f36c1f?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-21T15:21:41.000Z</updated>
+        <summary type="html"><![CDATA[垃圾收集算法和垃圾收集器扫盲
+点击查看原文>]]></summary>
         <author>
-            <name>zbinlin</name>
+            <name>awen</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[请教个问题：存储海量数据的多个 ES 集群之间，如何实现负载均衡，网关分流]]></title>
-        <id>790950</id>
-        <link href="https://www.v2ex.com/t/790950"/>
-        <updated>2021-07-21T15:20:04.000Z</updated>
-        <summary type="html"><![CDATA[429463267: 
-现有一个生产集群，由于数据量太大，遇到性能瓶颈，而且未来数据量还会继续扩大，打算将数据分集群拆开，尽量保证已部署的几十个 spark 服务不做修改或少量修改。
-其中，spark 读写 ES 采用的是 ES 9200 端口，写多读少，ip 是写死的内网 ip，已上生产。
-所以，目前的想法是，将现有的 ES 集群拆分为多个，假定为 5 （ ES-cluster1 、ES-cluster2 、ES-cluster3 、ES-cluster4 、ES-cluster5 ） 个新集群。
-那么，拆完以后，不同的 index pattern 会落到不同集群上，拆分过程可能会很繁琐，估计会使用迁移工具完成。
-于是需要一个 API gatway 之类的服务来分发 spark 发来的 http 请求，使得相应的请求映射到正确的新集群上。
-接着，我调研了市面上可用的方案如下：
-1.https://opster.com/configuration/multi-cluster-load-balancer-configuration/
-2.Kong https://github.com/kong/kong
-3.https://github.com/traefik/traefik
-2 3 之间同类产品对比如下：
-https://zhuanlan.zhihu.com/p/61014955
-8 款开源的 Kubernetes Ingress Controller/API Gateway 推荐 · Service Mesh|服务网格中文社区
-https://www.servicemesher.com/blog/nginx-ingress-vs-kong-vs-traefik-vs-haproxy-vs-voyager-vs-contour-vs-ambassador/
-ingress 控制器那么多，到底该选哪一个？累觉不爱。 - 知乎
-https://zhuanlan.zhihu.com/p/302452502
-初步结论，暂定选择 kong 或者 traefix 来实现，但还在纠结选哪个。
-请各位大佬指点迷津。]]></summary>
+        <title type="html"><![CDATA[浅谈：前端路由原理解析及实践]]></title>
+        <id>https://xie.infoq.cn/article/2fa7435febac2fd9fb1db8e47?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://xie.infoq.cn/article/2fa7435febac2fd9fb1db8e47?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-21T15:05:03.000Z</updated>
+        <summary type="html"><![CDATA[本文会先简单介绍一下前端路由原理，以及 React-Router 的基础使用，接着会主要分享 Erda-UI 项目在路由上实践的一些拓展功能。
+点击查看原文>]]></summary>
         <author>
-            <name>429463267</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[发现工资对我意义不大]]></title>
-        <id>790949</id>
-        <link href="https://www.v2ex.com/t/790949"/>
-        <updated>2021-07-21T15:19:35.000Z</updated>
-        <summary type="html"><![CDATA[Bechbaliq: 每月到手将近 20，但还是过得平平淡淡，开心不起来，感觉自己有心理疾病
-有喜欢的女孩子，不过条件天差地别，给她发信息也没搭理我
-我也不想干开发了，找不到工作的意义，每天就跟行尸走肉似的
-身边没个交心的朋友，从来都是一个人]]></summary>
-        <author>
-            <name>Bechbaliq</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Anki 打不开了，客户端也无法同步了。]]></title>
-        <id>790948</id>
-        <link href="https://www.v2ex.com/t/790948"/>
-        <updated>2021-07-21T15:19:15.000Z</updated>
-        <summary type="html"><![CDATA[codingbody: 
-Anki 官网]]></summary>
-        <author>
-            <name>codingbody</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[刚来深圳，看到最近上市的桂圆有点糊涂了]]></title>
-        <id>790947</id>
-        <link href="https://www.v2ex.com/t/790947"/>
-        <updated>2021-07-21T15:12:38.000Z</updated>
-        <summary type="html"><![CDATA[jatsz2020: 我记得几个月前，好像卖了一阵子桂圆，然后下市了，后来是荔枝上市下市。最近怎么又有桂圆上市了？？]]></summary>
-        <author>
-            <name>jatsz2020</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[分享一个看上去有点像 Notion 的笔记 Clover。]]></title>
-        <id>790946</id>
-        <link href="https://www.v2ex.com/t/790946"/>
-        <updated>2021-07-21T14:55:58.000Z</updated>
-        <summary type="html"><![CDATA[zololiu: 
-貌似是刚出道的新笔记，还没深度体验。刚注册，第一眼直觉像 Notion，感兴趣的可以体验一下。
-cloverapp.com]]></summary>
-        <author>
-            <name>zololiu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[请问怎么把使用外接电源时和使用电池时的 win10 的真实亮度设置成一致的真实亮度？
-系统： windows10 20H2 非原装
-硬件：小新 air15 锐龙 2020。]]></title>
-        <id>790945</id>
-        <link href="https://www.v2ex.com/t/790945"/>
-        <updated>2021-07-21T14:48:15.000Z</updated>
-        <summary type="html"><![CDATA[HankLu:]]></summary>
-        <author>
-            <name>HankLu</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[m1 Photo Booth 连接 AirPods 的时候，倒计时变成噪音。]]></title>
-        <id>790944</id>
-        <link href="https://www.v2ex.com/t/790944"/>
-        <updated>2021-07-21T14:47:08.000Z</updated>
-        <summary type="html"><![CDATA[taka8rie: 
-耳机是二代 AirPods，在使用 Photo Booth 录视频的时候，发现在倒计时的时候，在 AirPods 听着数字的提示变成了特别大声的噪音。使用有线耳机或者外放则没这个问题。各位有出现过这种情况吗？]]></summary>
-        <author>
-            <name>taka8rie</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[广州] 微信安全招算法工程师/安全策略工程师]]></title>
-        <id>790943</id>
-        <link href="https://www.v2ex.com/t/790943"/>
-        <updated>2021-07-21T14:43:42.000Z</updated>
-        <summary type="html"><![CDATA[moqiguzhu: 
-求贤若渴，求简历。
-目前上班地点在 tit，不久之后会搬到琶洲微信新大厦。
-工作强度适中，大概 995，周末绝不加班，有事说一声可以早走，比较弹性。
-大家有什么希望继续了解的，楼下更新。]]></summary>
-        <author>
-            <name>moqiguzhu</name>
+            <name>尔达Erda</name>
         </author>
     </entry>
     <entry>
@@ -416,169 +1233,6 @@ The post A Step-By-Step Process for Turning Designs Into Code appeared first on 
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[[网易] [内推] 永劫无间岗位热招，网易所有岗位均可内推]]></title>
-        <id>790942</id>
-        <link href="https://www.v2ex.com/t/790942"/>
-        <updated>2021-07-21T14:30:39.000Z</updated>
-        <summary type="html"><![CDATA[fenlanks: 
-官网所有岗位均可内推：
-社招官网链接
-内推说明啊；
-永劫无间游戏热招岗位：]]></summary>
-        <author>
-            <name>fenlanks</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[码农求推荐笔记本]]></title>
-        <id>790941</id>
-        <link href="https://www.v2ex.com/t/790941"/>
-        <updated>2021-07-21T14:27:29.000Z</updated>
-        <summary type="html"><![CDATA[lscexpress: 价位在六千左右，我是写 php 的。上一部电脑用的是 MacBook pro，太太贵了，想便宜的来。我看过红米 RedMIBook 感觉还行，不知道用来写代码坑不坑？]]></summary>
-        <author>
-            <name>lscexpress</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[iPhone 越狱后可以随意降级吗]]></title>
-        <id>790940</id>
-        <link href="https://www.v2ex.com/t/790940"/>
-        <updated>2021-07-21T14:23:41.000Z</updated>
-        <summary type="html"><![CDATA[meowhuang: 因为 14 用着发现有个 bug 一直很困扰。
-想着能不能通过越狱后降回 13]]></summary>
-        <author>
-            <name>meowhuang</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[一个 Docker 网络配置问题]]></title>
-        <id>790939</id>
-        <link href="https://www.v2ex.com/t/790939"/>
-        <updated>2021-07-21T14:19:23.000Z</updated>
-        <summary type="html"><![CDATA[HaEx: 
-问题稍微有点复杂：
-host 中某个 container 部署了 clxsh ；
-希望 host 所有外部流量都经过 container ；
-希望路由到 host 的所有外部流量都经过 container;
-求解法]]></summary>
-        <author>
-            <name>HaEx</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[求之前在贴吧看的英语学习的方法]]></title>
-        <id>790937</id>
-        <link href="https://www.v2ex.com/t/790937"/>
-        <updated>2021-07-21T14:16:57.000Z</updated>
-        <summary type="html"><![CDATA[weishao666: 
-有一个学习英语的方法，先讲了记忆的原理，小孩学习语言迅速的原理，然后讲要抛开书写与阅读，听发音联系画面，有人知道这是什么方法么？之前收藏了要看来着，弄丢了]]></summary>
-        <author>
-            <name>weishao666</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[贝索斯花1.8亿完成11分钟太空旅行，马斯克发表情包调侃：他只是到太空边缘一游]]></title>
-        <id>https://www.infoq.cn/article/9CKfEWBxWHw9tU5fAmDr?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/9CKfEWBxWHw9tU5fAmDr?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-21T14:09:46.000Z</updated>
-        <summary type="html"><![CDATA[太空这么大，地球富豪们想去看看。
-
-贝索斯成功上天
-
-57岁，身家2023亿美元的全球首富贝索斯的太空梦想终于实现了。
-
-
-
-
-美国时间7月20日上午8点12分，亚马逊创始人贝索斯所搭载的“新谢泼德号”在得克萨斯州西部沙漠中的一个发射场起飞。
-
-8点22分，太空舱在降落伞的牵引下安全着陆。这次太空之旅大约持续了近11分钟。
-
-贝索斯旗下公司“蓝色起源”将贝索斯等四位乘客送到了距离地球表面100公里(62英里)以上的高空。
-
-7月20日正好是阿波罗11号登月52周年，这个日子显然经过了精心挑选。
-
-点击查看原文>]]></summary>
-        <author>
-            <name>刘燕</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[感觉进入了职业倦怠期]]></title>
-        <id>790935</id>
-        <link href="https://www.v2ex.com/t/790935"/>
-        <updated>2021-07-21T14:02:35.000Z</updated>
-        <summary type="html"><![CDATA[dream4ever: 
-15 年毕业进入一家非互联网公司，做了一年大领导想出来的“大项目”结果最后不了了之，之后开始做 Web 开发方面的业务，最开始什么都不会，那段时间就拼命学，一边学一边在工作中实践。
-经过两三年的锻炼之后，算是入了 Web 开发的门，但是从那之后到现在，成长速度就慢下来了，这两年更是感觉自己进入了职业倦怠期。有新的工作任务，当然要完成，就是感觉自己总是拖拖拉拉的，没有自我驱动力，Web 开发方面的任务也都不难，所以靠前两年打下来的基础 + Google + Stack Overflow 都能完成，但是感觉自己的水平基本上就停在那里了。
-现在的状态，就是能用 Vue.js + Node.js + MongoDB 完成前后端的功能开发，但是基础方面还是比较薄弱，常常需要 Google 。项目需求稍微难一点，就发现自己的代码乱糟糟的，感觉应当是可以用设计模式、软件架构、算法之类的知识改进一下，但也只是停留在“想”的层面，懒得去做。
-在极客时间上也买了不少课程，但是看完的没几门，主动用到工作中的就更少了。虽然大体知道自己该朝着什么方向提升，但就是行动不起来，有什么方法能够改变现状呢？或者说自己就是这样的人了？定型了？]]></summary>
-        <author>
-            <name>dream4ever</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[mbp m1 连接 LG C1 55 寸电视帧率迷之 30 帧]]></title>
-        <id>790934</id>
-        <link href="https://www.v2ex.com/t/790934"/>
-        <updated>2021-07-21T14:01:24.000Z</updated>
-        <summary type="html"><![CDATA[peterzhang0602: 
-有遇到的吗，排除线的问题]]></summary>
-        <author>
-            <name>peterzhang0602</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[M$ 开源了内部使用的 Linux 发行版本： CBL-Mariner]]></title>
-        <id>790933</id>
-        <link href="https://www.v2ex.com/t/790933"/>
-        <updated>2021-07-21T13:53:47.000Z</updated>
-        <summary type="html"><![CDATA[kwanzaa: RT
-https://github.com/microsoft/CBL-Mariner
-其实毫不意外]]></summary>
-        <author>
-            <name>kwanzaa</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[大佬们，萌新有个问题， C++如何加密 Excel，]]></title>
-        <id>790931</id>
-        <link href="https://www.v2ex.com/t/790931"/>
-        <updated>2021-07-21T13:44:10.000Z</updated>
-        <summary type="html"><![CDATA[goodfeeling: 找了好久发现只能 C#加密了，有没有其他的方法？]]></summary>
-        <author>
-            <name>goodfeeling</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[打算出一条济南联通 300M 单宽，年租 400 元。]]></title>
-        <id>790930</id>
-        <link href="https://www.v2ex.com/t/790930"/>
-        <updated>2021-07-21T13:38:53.000Z</updated>
-        <summary type="html"><![CDATA[LOVOQ: 手拉手出一条济南联通宽带，公网。默认 300M 下 30M 上的规格，啥都不叠加 33.33 元 /月。
-目前已续费至 2022/10，全网可查。
-打算 1000 劳务费+实时余额+包年费用，约 1700 元出这条宽带。（ 1700 元包含包年至 2022/10 的费用，以及未在包年内的实时余额。不包含预期施工费用。包年到 2022 年的冻结款加余额约七百，以联通公司实时计算为准）。
-目前叠加了 20 元 100M 上行叠加包，10 元 300M 提 500M 下行叠加包，以及 iptv10 元 /月，折合 73.33 元 /月（ 40 元附加费用需要另外存到实时余额）。以上均为绝版叠加包，均可退，退了就没了。目前上行包已绝版，下行包需要月租 199+，请自行衡量。
-2022/10 后可通过特殊渠道 400 元包年，过户时会说明。协议结束期为 2029 年，手厅可查。
-没人感兴趣月底我就直接拆机了，心动不如行动。]]></summary>
-        <author>
-            <name>LOVOQ</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[看完了《算法 第四版》, 分享一下我的笔记]]></title>
-        <id>790929</id>
-        <link href="https://www.v2ex.com/t/790929"/>
-        <updated>2021-07-21T13:25:28.000Z</updated>
-        <summary type="html"><![CDATA[hahaayaoyaoyao: 
-lyx 版(需要下载 lyx)
-pdf 版
-感觉这本书还是不错的, 解释了我之前很多的疑惑]]></summary>
-        <author>
-            <name>hahaayaoyaoyao</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Color Tools And Resources]]></title>
         <id>https://smashingmagazine.com/2021/07/color-tools-resources/</id>
         <link href="https://smashingmagazine.com/2021/07/color-tools-resources/"/>
@@ -589,233 +1243,25 @@ pdf 版
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[偶然看到了阿里云关于前一阵子 ipip.net 事件的声明]]></title>
-        <id>790927</id>
-        <link href="https://www.v2ex.com/t/790927"/>
-        <updated>2021-07-21T12:54:25.000Z</updated>
-        <summary type="html"><![CDATA[proxychains: 
-关于阿里云“IP 地理位置库”产品事宜，经双方调查与磋商，阿里云计算有限公司（以下简称阿里云）与北京天特信科技有限公司（以下简称 IPIP.NET ）联合声明如下：
-一、近日，IPIP.NET 创始人高春辉先生对阿里云 IP 地理位置库产品提出控诉。获悉此事后，阿里云立即展开调查。调查发现，确有员工在该产品开发过程中存在违反公司规范的行为。这种行为，是阿里云坚决反对的。
-二、对此，阿里云决定：
-1 、立即下架、整改 IP 地理位置库产品。
-2 、依据《阿里员工纪律制度》，对相关员工进行严肃处理。
-3 、加强内控流程机制建设，强化内控体系，竭力避免类似事情再次发生。
-4 、向 IPIP.NET 及高春辉先生致以诚挚歉意。
-三、双方就此达成谅解，并将积极探索进一步合作的可能性。
-四、感谢大家对我们的关注，感谢大家对阿里云的监督和警醒，我们未来会做得更好。
-阿里云计算有限公司
-2021 年 7 月 21 日 
-北京天特信科技有限公司
-2021 年 7 月 21 日]]></summary>
-        <author>
-            <name>proxychains</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[上海静安] 前端开发 (Vue)。30K - 40K 15 薪（全职）]]></title>
-        <id>790926</id>
-        <link href="https://www.v2ex.com/t/790926"/>
-        <updated>2021-07-21T12:34:24.000Z</updated>
-        <summary type="html"><![CDATA[xcmkxcmk81: 
-我们是一只国外归来的创业团队，创始团队来自耶鲁，伦敦商学院，前 Uber，腾讯，阿里。一个实时互动的在线社交以及活动参与平台，现招后端工程师。 有兴趣请加 WX：aWNleHVjaGVu (江湖规矩，你懂的)
-我们的工程团队的构成非常的多元化，有各个不同学历，专业背景的小伙伴（非科班），为了同一个目标，而走到了一起。
-前端(Vue)开发 
-职位描述：
-你将会是项目的主要开发人员之一，负责很多核心功能模块的设计与搭建，希望你有扎实的编程基础；
-根据产品需求和设计图完成兼容性良好的前端页面开发，包括 PC 端主流浏览器，移动端的 WEB 页面开发；
-编写可重用的前端组件，负责前端界面编写和调试；
-积极探索研究 WEB 前端技术的发展，丰富 WEB 交互方式，提升用户体验。
-职位要求：
-有过 Vue/TypeScript 开发大型项目的经验；
-精通各种 Web 前端技术(XHTML/HTML5/XML/CSS/Javascript/Ajax 等)；
-熟悉 Web 性能优化，浏览器兼容器, 有移动 Web 开发经验和作品；
-熟练或精通 Canvas/SVG 的优先；
-有过声网 Agora/即构 Zego 音视频开发经验的优先；
-掌握前端常用的构建工具，webpack/gulp/rollup 等；
-有自己的技术博客、开源项目者的优先；
-有极强的自主完成任务，解决问题的能力。
-加分项：
-了解后端开发流程，和数据库方面的知识。]]></summary>
-        <author>
-            <name>xcmkxcmk81</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[观专升本有感，说说自己的经历]]></title>
-        <id>790925</id>
-        <link href="https://www.v2ex.com/t/790925"/>
-        <updated>2021-07-21T12:29:21.000Z</updated>
-        <summary type="html"><![CDATA[Wonderful05: 
-https://imgur.com/iCfNHyD]]></summary>
-        <author>
-            <name>Wonderful05</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[阿里云云原生面向 2021 年 11 月-2022 年 10 月应届毕业生招聘]]></title>
-        <id>790924</id>
-        <link href="https://www.v2ex.com/t/790924"/>
-        <updated>2021-07-21T12:27:32.000Z</updated>
-        <summary type="html"><![CDATA[aliyunarticle: 校招来了，阿里云云原生面向 2021 年 11 月-2022 年 10 月应届毕业生招聘：java 研发工程师、c/c++研发工程师、基础平台研发工程师。感兴趣的可以直接把自己的简历发送到邮箱 feng.jin@alibaba-inc.com
-我们是谁？云原生致力于打造世界上最先进、稳定的云原生基础设施，是阿里云最核心的部门之一。
-我们的目标是让云成为成本最低，效率最高，稳定性最强的应用运行环境，在这里我们设计超大规模容器与调度系统，发挥出云的极致弹力；我们构建高性能微服务架构，提供云端应用无限扩展的能力，我们打造标准易用的 PAAS 平台，让云研发变得简单、可靠。
-在这里，你会参与到容器、K8S 、MQ 、Service Mesh 、Arms 等最前沿的技术与产品的技术研发和探索中来；你也会参与 CNCF TOP 和 SIG 联席主席，K8S OPERATER 创始人等组成的国内最顶尖云原声技术团队一同协作
-岗位要求：1 、本科及以上学历，计算机，数学，电子工程、通信相关专业；
-2 、具备扎实的数据结构和计算机系统基础 精通一种开发语言；
-3 、对基础软件充满热情，有成功研究型或实战型项目技术成果落地者优先；
-4 、快速学习，不断突破技术瓶颈，乐于探索未知领域；
-5 、良好团队合作精神，能够做到严谨、皮实，乐观。]]></summary>
-        <author>
-            <name>aliyunarticle</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[你的职业生涯的目标是什么呢？]]></title>
-        <id>790922</id>
-        <link href="https://www.v2ex.com/t/790922"/>
-        <updated>2021-07-21T12:14:49.000Z</updated>
-        <summary type="html"><![CDATA[xmge: 最近想到要做一个人生规划，而不是随波逐流，然后看到一句话说人生规划中，最重要的是职业规划，可我的职业规划是不上班，，，，那怎么规划职业生涯呢？？？]]></summary>
-        <author>
-            <name>xmge</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[上海静安] 后台开发(Golang)。30K - 40K 15 薪（全职）]]></title>
-        <id>790921</id>
-        <link href="https://www.v2ex.com/t/790921"/>
-        <updated>2021-07-21T12:11:51.000Z</updated>
-        <summary type="html"><![CDATA[xcmkxcmk81: 
-我们是一只国外归来的创业团队，创始团队来自耶鲁，伦敦商学院，前 Uber，腾讯，阿里。一个实时互动的在线社交以及活动参与平台，现招后端工程师。 有兴趣请加 WX：aWNleHVjaGVu (江湖规矩，你懂的)
-关于公司：
-已经拿到多家顶尖美元基金的投资，创始团队来自伦敦商学院，滑铁卢，耶鲁大学；并且有着清一色 90 后的核心团队，来自腾讯、阿里、Uber 、最右的年轻管理者，以及在 3D 内容、社交网络领域深耕的年轻创业者。95 后 CEO，曾是上市公司业务负责人 /副总裁、BAT 最年轻的管理者
-有理想的产品：我们始终相信好的产品要为更多人的幸福生活服务。随着 AI 对生产力不断地提升，旧的社会关系不断地重构，我们相信人类会回归人性，进入一个“趣缘”社会，大家会和有共同爱好的人一起生活在虚拟世界。在未来的世界里，我们会因为自己的独特被珍视，而不是一颗流泪就会生锈的螺丝钉
-拒绝 996：我们相信“谋定而后动”，花更多时间做正确的决策、让工作更高效
-践行激进坦诚：上一代的礼貌是面子，这一代的礼貌是真实；缺点让人更立体、真诚让人更亲切，所以让我们做自己
-在这里，拒绝政治，专注产品
-后端开发 (Golang)
-职位描述：
-你将会是项目的主要开发人员之一，负责很多核心功能模块的设计与搭建，希望你有扎实的编程基础；
-参与平台的微服务架构搭建与开发；
-提升系统性能和研发效率，保证高并发高可用。
-职位要求：
-本科及以上学历，计算机、通信等相关专业；
-扎实的计算机技术基础，熟练掌握 Go/Python/Java 等 1 至 2 种以上语言； 熟悉 Linux 系统，较强的解决问题能力；
-熟悉主流消息中间件(MQ/Kafka/Redis)的使用和特性；
-熟悉常用数据库 MySQL/MongoDB/Cassandra 等技术特点，并掌握常用性能优化技巧，有大规模系统设计和开发经验者优先；
-熟悉互联网分布式架构，良好的业务架构设计能力，熟悉行业常见的架构方案；
-熟悉 RPC 原理和开源框架如 gRPC/Dubbo/Thrift ；
-有过视频，音频，直播，游戏开发经验者优先；
-对可扩展性、稳定性、性能、质量有特别的执着，若有高可用、高性能 Web 实践经验更佳；
-加分项：
-熟悉 Docker 、Kubernetes 及相关云原生系统；
-了解主流 IaC 技术(Ansible/Terraform)。]]></summary>
-        <author>
-            <name>xcmkxcmk81</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[想要在职场话题发帖需要 1000 天？]]></title>
-        <id>790920</id>
-        <link href="https://www.v2ex.com/t/790920"/>
-        <updated>2021-07-21T12:11:32.000Z</updated>
-        <summary type="html"><![CDATA[Wonderful05: 
-rt，是我的字太多有 mg 词吗，我自查了没有啊貌似....
-还是什么其他的原因呢？]]></summary>
-        <author>
-            <name>Wonderful05</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Java 新手 求解 死锁要怎么处理]]></title>
-        <id>790916</id>
-        <link href="https://www.v2ex.com/t/790916"/>
-        <updated>2021-07-21T11:05:38.000Z</updated>
-        <summary type="html"><![CDATA[coderstory: 
-题目是 10 个线程 对应 20 个账号
-每个线程执行 100 次 任意 2 个账号之间的金额交易
-代码实现中遇到了死锁
-假设线程 A 对 账户 A 账户 B 执行交易 （ A 转钱到 B ）
-线程 B 对账户 B 和账户 A 执行交易（ B 转钱到 A ）
-我代码写的是先锁一个账号 判断账号余额是否足够，然后锁另一个账户 最后执行转账
-但是同时有 2 个线程执行了 2 个相同账户的反向操作时，就会死锁了。
-package cn.bobmao.logic.service;
-
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Random;
-import java.util.concurrent.CountDownLatch;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.atomic.AtomicInteger;
-
-public class Test {
-    class Account {
-        int index;
-        int balance = 100;
-
-        public Account(int index) {
-            this.index = index;
-        }
-    }
-
-    public static void main(String[] args) throws InterruptedException {
-        new Test().run();
-    }
-
-    public voi…]]></summary>
-        <author>
-            <name>coderstory</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[有什么社团管理系统的轮子]]></title>
-        <id>790915</id>
-        <link href="https://www.v2ex.com/t/790915"/>
-        <updated>2021-07-21T10:48:20.000Z</updated>
-        <summary type="html"><![CDATA[TuYanzheng: 
-现在需要给学校做一个社团管理系统，要求包括档案管理等功能。因为是高中，所以也不用大体量。
-oa 系统，如果只需要小改也行。]]></summary>
-        <author>
-            <name>TuYanzheng</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[机器学习工程师需要掌握哪些编程语言？]]></title>
-        <id>https://www.infoq.cn/article/aHivlBuSFFQuFjIVRYw1?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/aHivlBuSFFQuFjIVRYw1?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-21T10:11:17.000Z</updated>
-        <summary type="html"><![CDATA[机器学习和编码是相辅相成的。如果没有编码，数据科学家就无法使用机器学习模型。因此，机器学习工程师至少要对一门编程语言有全面的了解。这篇文章深入介绍了适合机器学习的五种编程语言，并帮助您确定哪种语言最适合您。
-1.Python
- 
-Python 是一种流行的面向对象的语言，创建于 1989 年，并于 1991 年发布。Guido van Rossum 作为 Python 的创造者而广为人知。根据一份报告显示，Python 是最受欢迎的三大编程语言之一。
-Python 的用途
- 
-
-Web 开发：Python 可用于开发更快的 Web 应用，其库帮助 Web 应用开发更加快速和简单。Django 和 Flask 是其中两种著名的框架，这些工具使得 Web 应用从零开始开发变得非常方便，并且提供了可扩展性。
+        <title type="html"><![CDATA[面向资源的架构(ROA)概述]]></title>
+        <id>https://xie.infoq.cn/article/30beb08098cc374bfd433150a?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://xie.infoq.cn/article/30beb08098cc374bfd433150a?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-21T11:48:06.000Z</updated>
+        <summary type="html"><![CDATA[了解面向资源的架构 (ROA)、其价值以及最佳实践。
 点击查看原文>]]></summary>
         <author>
-            <name>Gunjan</name>
+            <name>信码由缰</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[是时候说再见了，Enzyme.js]]></title>
-        <id>https://www.infoq.cn/article/1b1xze82HfsSd168M2k7?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/1b1xze82HfsSd168M2k7?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-21T10:00:00.000Z</updated>
-        <summary type="html"><![CDATA[是时候弃用Enzyme.js了。
-
-
-当然这只是一种观点，并非事实，但我认为整个React生态系统和社区踏出这一步后都会变得更好。
- 
-2019年，我在AWS CloudWatch UI团队工作时，是引入React Testing Library的幕后推手。那时我经常热情地倡导大家用它来取代Enzyme。让人们提起兴趣去学习（又一个！）做同样事情的新JavaScript库当然绝非易事。但当我离开亚马逊时，我觉得这一运动是很成功的，并且RTL在我团队的项目中越来越受到关注。
- 
-全世界使用React的公司还有很多，他们也会因为放弃Enzyme而受益匪浅！在这篇文章里，我们就来诚实地讨论一下React世界在过去5年中发生了怎样的变化，以及为什么Enzyme应该被弃用。
-
-
-本文最初发布于Piotr Staniow博客，经原作者授权由InfoQ中文站翻译并分享。
+        <title type="html"><![CDATA[Redis 的集群容错与故障转移]]></title>
+        <id>https://xie.infoq.cn/article/f9bf1cf3b446a0b90f71f4031?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://xie.infoq.cn/article/f9bf1cf3b446a0b90f71f4031?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-21T10:50:46.000Z</updated>
+        <summary type="html"><![CDATA[Redis 的服务模式主要有三种，分别是单机模式、主从模式、集群模式。在不同的模式下当机器发生故障时，Redis 应对故障的方法也是不一样的
 点击查看原文>]]></summary>
         <author>
-            <name>Piotr Staniów</name>
+            <name>U+2647</name>
         </author>
     </entry>
     <entry>
@@ -826,6 +1272,17 @@ Web 开发：Python 可用于开发更快的 Web 应用，其库帮助 Web 应�
         <summary type="html"><![CDATA[哈勃望远镜停止运行34天后重启拍摄的第一批观测图像。哈勃望远镜从6月13日开始出现计算机系统故障，经过长达一个月排查后确定故障出现于电源控制单元。NASA 决定让哈勃望远镜完整切换至备份硬件，终于在7月17日成功重启恢复运行。哈勃望远镜于1990年4月24日发射升空，是人类观测视野最广的太空望远镜，迄今已运行31年，完成超过150万次太空观测。摄影师：NASA]]></summary>
         <author>
             <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[基于迁移学习的语义分割算法分享与代码复现]]></title>
+        <id>https://xie.infoq.cn/article/1dda070047ba304082901dc5b?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://xie.infoq.cn/article/1dda070047ba304082901dc5b?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-21T09:52:20.000Z</updated>
+        <summary type="html"><![CDATA[​​​​​​​​​​​​​​摘要：语义分割的数据集是比较大的，因此训练的时候需要非常强大的硬件支持。
+点击查看原文>]]></summary>
+        <author>
+            <name>华为云开发者社区</name>
         </author>
     </entry>
     <entry>
@@ -879,87 +1336,6 @@ Web 开发：Python 可用于开发更快的 Web 应用，其库帮助 Web 应�
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[佩鲁吉诺专题展]]></title>
-        <id>https://m.idai.ly/se/9d30rv</id>
-        <link href="https://m.idai.ly/se/9d30rv"/>
-        <updated>2021-07-21T05:47:00.000Z</updated>
-        <summary type="html"><![CDATA[意大利乌尔比诺公爵宫，一幅文艺复兴画家 Pietro Perugino 蛋彩画《天使加百列》正在展出。本次展览名为《拉斐尔的老师：佩鲁吉诺》，共展出超过20幅 Perugino 作品，呈现这位文艺复兴全盛期艺术家的生活背景和创作历程，以及对他的学生、文艺复兴三杰之一拉斐尔的重要影响。展期持续至10月17日。摄影师：Roberto Serra]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[俄5代战机首亮相]]></title>
-        <id>https://m.idai.ly/se/d01IMY</id>
-        <link href="https://m.idai.ly/se/d01IMY"/>
-        <updated>2021-07-21T05:45:00.000Z</updated>
-        <summary type="html"><![CDATA[第15届莫斯科国际航空航天展览会（MAKS-2021），一架俄罗斯「Checkmate」隐形战斗机原型机正在展出。7月20日，俄罗斯首次公开展出第五代单发轻型多用途隐形战斗机「Checkmate」，这款飞机由苏霍伊设计局设计，最大战斗载荷7.4吨，最高飞行速度2马赫，相当于2倍音速。这款战机预计2023年首次试飞，2026年开始交付，国际售价约为2500万至3000万美元，主要目标客户为印度、越南及非洲国家，被视为美国 F-35 战机的强力竞争对手。摄影师：Sergei Fadeichev]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[前苏联第一艘核潜艇]]></title>
-        <id>https://m.idai.ly/se/eb7ygY</id>
-        <link href="https://m.idai.ly/se/eb7ygY"/>
-        <updated>2021-07-21T05:43:00.000Z</updated>
-        <summary type="html"><![CDATA[前苏联第一艘核动力潜艇「K-3 Leninsky Komsomol」号正在进行修复，准备送入军事博物馆作为历史展品陈列，俄摩尔曼斯克州。「K-3」号曾经是第一艘成功抵达北极点的苏联潜艇，它的动力系统采用2座水冷核反应堆，全长107米，潜航深度达300米，服役时间从1958年持续至1988年。这艘潜艇将成为俄罗斯海军荣誉博物馆的核心展品，该博物馆预计于2024年建成开放。摄影师：Lev Fedoseyev]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[旅韩大熊猫1周岁生日]]></title>
-        <id>https://m.idai.ly/se/372YT7</id>
-        <link href="https://m.idai.ly/se/372YT7"/>
-        <updated>2021-07-21T05:41:00.000Z</updated>
-        <summary type="html"><![CDATA[韩国诞生的首只大熊猫「福宝」庆祝一岁生日，龙仁爱宝乐园。这只大熊猫幼崽出生于2020年7月20日，是旅韩大熊猫「乐宝」和「爱宝」在韩国诞下的第一只幼崽，目前体重已增至40公斤。7月20日，韩国爱宝乐园为福宝举行一周岁庆生活动并通过直播向公众展示。园方为福宝准备了胡萝卜、竹子、苹果和窝头作为抓周道具，并发布记录福宝成长过程的写真散文集。摄影师：iDaily Media]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[机器学习在好分期资金适配中的应用实践]]></title>
-        <id>https://www.infoq.cn/article/PyVSPkgWxHYf6hsadBiZ?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/PyVSPkgWxHYf6hsadBiZ?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-21T00:13:35.000Z</updated>
-        <summary type="html"><![CDATA[作者｜吴迪、孙丽川、郭帅
-
-机器学习和深度学习技术在很多领域扮演着越来越重要的角色，以资金适配领域来说，它们在成本节约、推荐排序、收入机会和风险监控等方面可以带来明显的好处。但目前，机器学习和深度学习技术在资金适配方面的应用和探索仍缺乏一些经验。因此，消费分期产品“好分期”团队编写此文进行实践记录，同时也希望大家能提供一些宝贵意见。
-业务流程简介
-以下是好分期业务的大致流程图，资金方是服务的源头，目前好分期对接数十家资金方，每个资金方对用户的审核规则各有不同。好分期的作用主要是为用户进行适配、挑选最合适的资金方，因此需要在前期进行用户数据收集和分析，从而形成用户画像，通过各种计算方法为用户匹配最合适的资金方。
-
-资金适配的痛点及应用挑战
-高效、便捷、最大化的利益是用户关心的重点，资金适配的主要任务就是满足用户的需求，但好分期在实践的过程中还是碰到了一些痛点。
-
-首先，随着接入的资金方越来越多，通过传统的计算方式来从众多资金方中挑选出最适合用户的资金方，变得越来越困难。
-
-其次，传统路由模式中，所有用户共用一套资金体系，虽然支持手动配置，但是效果十分机械化，无法对每个用户进行针对性适配。
-点击查看原文>]]></summary>
-        <author>
-            <name>吴迪、孙丽川、郭帅</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[云视频会议“黑科技”，开放才是“硬”道理]]></title>
-        <id>https://www.infoq.cn/article/YxaVJ3LqxOuCVLp1vZhk?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/YxaVJ3LqxOuCVLp1vZhk?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-20T23:58:06.000Z</updated>
-        <summary type="html"><![CDATA[疫情之下，“云办公”需求呈爆发式增长，推动RTC（实时音视频）行业迅速发展。进入后疫情时代，在线会议成为企业高效办公的标配。数据显示，协作时间占员工工作时间的50%-80%。针对项目讨论或与客户进行沟通的小型协作空间数量未来将大幅增长。越来越多的企业衍生出线上线下协同开会的混合式会议需求，随之而来的问题是如何有效应对企业会议室复杂场景的开会难题。
-
-多样性场景，在线会议挑战重重
- 
-传统在线会议产品更侧重于在企业内部沟通使用，形态上以专用设备和PC端居多。而当前的在线会议不再局限于内部，跨企业沟通需求呈爆发式增长。在线会议的接入场景也延伸到传统办公场景之外，用户希望不管从Windows、IOS、安卓端甚至是电话的形式都可以轻轻松松接入在线的一个会议。
- 
-除终端以外，会议室本身也涵盖多种复杂的会议场景。如针对中小型会议室，要求聚焦于能完成相互之间沉浸式的互动讨论；针对大型会议室用户则希望能实现和远端清晰、无障碍的沟通，此外还有超大型会议室、培训室甚至开放办公空间等拥有不同需求的场景。
- 
-另外，不同行业的在线会议也存在不同的需求。比如，教育行业的双师教学场景下，在线会议要求做到多端接入，实现沉浸式的协作讲学；医疗行业的远程问诊场景下，则需要保证优质的传输质量，实现医生和病人的实时互动。如何满足不同行业场景下的多样化需求，也是在线会议面临的一大挑战。
-点击查看原文>]]></summary>
-        <author>
-            <name>张雅文</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[The Nine States of Design]]></title>
         <id>https://css-tricks.com/?p=345062</id>
         <link href="https://medium.com/swlh/the-nine-states-of-design-5bfe9b3d6d85"/>
@@ -986,72 +1362,6 @@ The post Your Image Is Probably Not Decorative appeared first on CSS-Tricks. You
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[如何抓住用户体验的关键时刻？]]></title>
-        <id>https://xie.infoq.cn/article/3264e566d8f129b4d2135c669?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://xie.infoq.cn/article/3264e566d8f129b4d2135c669?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-20T18:43:24.000Z</updated>
-        <summary type="html"><![CDATA[行为经济学家丹尼尔·卡尼曼是2002年诺贝尔经济学奖得主，他的著作《思考，快与慢》认为，人对体验的记忆由两个因素决定：高峰时（最高与最低）与结束时候的感觉，这就是峰终定律。
-点击查看原文>]]></summary>
-        <author>
-            <name>石云升</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[技术实践 | 网易云信视频转码提速之分片转码]]></title>
-        <id>https://xie.infoq.cn/article/18ccd8fe7b9019a2d2cb2d484?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://xie.infoq.cn/article/18ccd8fe7b9019a2d2cb2d484?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-20T17:26:06.000Z</updated>
-        <summary type="html"><![CDATA[在媒体内容传播行业中，视频作为信息传播的载体，其重要性占比越来越高。通常，为了应对不同的播放场景，视频需要修改封装容器格式、编码格式以及分辨率、码率等媒体流属性，这些处理的过程我们统称其为视频转码。
-点击查看原文>]]></summary>
-        <author>
-            <name>网易云信</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[零信任落地的现实困境]]></title>
-        <id>https://www.infoq.cn/article/iDAc5S8RcZuT9vMf2RmB?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/iDAc5S8RcZuT9vMf2RmB?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-20T17:01:05.000Z</updated>
-        <summary type="html"><![CDATA[零信任的出现将网络防御范围从广泛的网络边界转移到单个或小组资源，同时它也代表新一代的网络安全防护理念，打破默认的“信任”，秉持“持续验证，永不信任”原则，即默认不信任网络内外的任何人、设备和系统，基于身份认证和授权，重新构建访问控制的信任基础，确保身份可信、设备可信、应用可信和链路可信。
-
-
-零信任是一种安全体系架构，它打破了传统的认证即信任、边界防护、静态访问控制、以网络为中心等防护思路，建立起一套以身份为中心，以识别、持续认证、动态访问控制、授权、审计以及监测为链条，以最小化实时授权为核心，以多维信任算法为基础，认证达末端的动态安全架构。
-零信任安全体系建设的愿景
-
-1、依托IAM技术、终端环境感知技术，重构企业身份体系和身份策略，推动网络人员身份的可信任；
-
-2、改变传统的认证方式，构建先认证后连接和持续认证机制，提升网络的防护能力；
-
-3、结合终端、EDR、业务行为、网络态势等因素，建立持续信任评估机制和模型，支撑动态自适应访问控制权限管理，保护业务和数据的安全性；
-
-4、支撑远程办公、大数据中心、云安全平台等多种场景的安全防护。
-
-然而，零信任安全体系的落地之旅，不仅仅是简单的产品部署，它是一项复杂的工程，涉及组织管理、技术、成本等多项因素，在实际落地过程中存在着技术层面、管理层面、投入与落地周期等困境。
-点击查看原文>]]></summary>
-        <author>
-            <name>启明星辰</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[有时/events比Webhooks更好用]]></title>
-        <id>https://www.infoq.cn/article/GIRTlTFy4r66w9kmY1Kg?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/GIRTlTFy4r66w9kmY1Kg?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-20T16:51:46.000Z</updated>
-        <summary type="html"><![CDATA[对许多API来说，Webhooks是一种辅助手段。有了Webhook系统，系统B可以通过注册来接收有关系统A某些更改的通知。当系统A发生更改时，它通常以发出HTTP POST请求的形式将更改推送到系统B。
- 
-Webhook旨在消除或减少不断轮询数据的需求。但根据我的经验，Webhooks也带来了一些挑战。
- 
-一般来说，你不能只依靠Webhooks来保持两个系统的一致性。我曾参与开发的集成最后都得通过轮询来增强Webhook，实现一致性。这种情况是由于一些缺陷造成的。
- 
-首先，系统故障时会存在风险。是的，发送方通常会重试未交付的Webhook，并做一些指数回退。但这些保证往往是松散或不清晰的。从灾难中恢复后，你的系统可能最后要处理的就是大量备份的Webhooks。
- 
-其次，Webhooks是短周期的。它们太容易处理不当或丢失了。如果你在部署代码更改后意识到你对一个JSON字段进行了粗指处理并将null插入了到你的数据库中，你是没办法重播Webhook的。或者，你可以在管道带外处理这个Webhook请求——就像数据库插入一样。但这样你就要冒着失败并失去这个Webhook的风险。
-点击查看原文>]]></summary>
-        <author>
-            <name>acco</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Typewriter Animation That Handles Anything You Throw at It]]></title>
         <id>https://css-tricks.com/?p=344497</id>
         <link href="https://css-tricks.com/typewriter-animation-that-handles-anything-you-throw-at-it/"/>
@@ -1060,72 +1370,6 @@ Webhook旨在消除或减少不断轮询数据的需求。但根据我的经验�
 The post Typewriter Animation That Handles Anything You Throw at It appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.]]></summary>
         <author>
             <name>Murtuzaali Surti</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何保障服务器承受亿级流量（12）【限流】]]></title>
-        <id>https://xie.infoq.cn/article/4bb4757179a895f7b0ae56cf4?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://xie.infoq.cn/article/4bb4757179a895f7b0ae56cf4?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-20T14:27:58.000Z</updated>
-        <summary type="html"><![CDATA[如何保障服务器承受住亿级流量？你知道哪几种方式吗？对于限流，你知道有几种算法吗？收藏下，加深记忆。
-点击查看原文>]]></summary>
-        <author>
-            <name>我爱娃哈哈😍</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[容器安全检查列表]]></title>
-        <id>https://xie.infoq.cn/article/ddc1d6629770a866d37dea721?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://xie.infoq.cn/article/ddc1d6629770a866d37dea721?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-20T13:30:36.000Z</updated>
-        <summary type="html"><![CDATA[本文聊聊做安全防护时需要考量的点。
-点击查看原文>]]></summary>
-        <author>
-            <name>greatersecurity</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[打造全景5G专网运营能力，差异化赋能行业生态]]></title>
-        <id>https://xie.infoq.cn/article/ac9399e98a59832d144b0c712?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://xie.infoq.cn/article/ac9399e98a59832d144b0c712?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-20T13:08:57.000Z</updated>
-        <summary type="html"><![CDATA[对于运营商自身来说，5G业务和网络的复杂度，以及其IT和网络支撑能力碎片化、支撑界面不清、支撑工具缺乏等现状，均驱动运营商来重构其现有的“5G+”的专网运营支撑体系。
-点击查看原文>]]></summary>
-        <author>
-            <name>鲸品堂</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[什么是MircoPython？]]></title>
-        <id>https://xie.infoq.cn/article/9132b0fa2c52f75085e67d5c8?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://xie.infoq.cn/article/9132b0fa2c52f75085e67d5c8?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-20T11:29:20.000Z</updated>
-        <summary type="html"><![CDATA[​​​​​​​​​​​​​​摘要：互联网玩家为了让Python这样的简单易学、社区API丰富的语言可以在嵌入式领域用上，逐渐开始了一轮Python上嵌入式的迁移，这样就有了今天的主角——MircoPython。
-点击查看原文>]]></summary>
-        <author>
-            <name>华为云开发者社区</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[一文搞懂一致性hash的原理和实现]]></title>
-        <id>https://xie.infoq.cn/article/66e41fe9315b47e9c911414d2?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://xie.infoq.cn/article/66e41fe9315b47e9c911414d2?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-20T11:09:15.000Z</updated>
-        <summary type="html"><![CDATA[在 go-zero 的分布式缓存系统分享里，Kevin 重点讲到过一致性hash的原理和分布式缓存中的实践。本文来详细讲讲一致性hash的原理和在 go-zero 中的实现。
-点击查看原文>]]></summary>
-        <author>
-            <name>万俊峰Kevin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[360 政企安全集团基于 Flink 的 PB 级数据即席查询实践]]></title>
-        <id>https://xie.infoq.cn/article/0fe9c376877f6772f64a705a4?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://xie.infoq.cn/article/0fe9c376877f6772f64a705a4?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-20T11:02:00.000Z</updated>
-        <summary type="html"><![CDATA[本文整理自 360 政企安全集团的大数据工程师苏军以及刘佳在 Flink Forward Asia 2020 分享的议题《基于 Flink 的 PB 级数据即席查询实践》，文章内容为：
-点击查看原文>]]></summary>
-        <author>
-            <name>Apache Flink</name>
         </author>
     </entry>
     <entry>
@@ -1139,72 +1383,11 @@ The post Typewriter Animation That Handles Anything You Throw at It appeared fir
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[郑州史上最大暴雨灾情]]></title>
-        <id>https://m.idai.ly/se/2a64O3</id>
-        <link href="https://m.idai.ly/se/2a64O3"/>
-        <updated>2021-07-20T09:59:00.000Z</updated>
-        <summary type="html"><![CDATA[郑州火车站周边道路，交通警察站在积水中疏导交通，中国河南省。7月20日，郑州遭遇史上最大暴雨侵袭，下午4点至5点单小时降雨量达到201.9毫米，全市多地区停水停电，地铁部分隧道出现积水导致列车停驶。武警河南省总队已出动数百名官兵前往郑州市各险情发生地抢险救援。国家防总7月20日20时启动防汛Ⅲ级应急响应，派出工作组紧急赶赴现场协助开展抗洪抢险工作。摄影师：iDaily Media]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[深度解析 Lucene 轻量级全文索引实现原理]]></title>
-        <id>https://xie.infoq.cn/article/06638b8784778eeb7fa33fc13?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://xie.infoq.cn/article/06638b8784778eeb7fa33fc13?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-20T09:16:57.000Z</updated>
-        <summary type="html"><![CDATA[Lucene的相关使用心得，内容涵盖索引的生成、管理及搜索功能等内容。本文介绍了在轻量级的数据搜索中，深度解析Lucene如何实现全文索引。
-点击查看原文>]]></summary>
-        <author>
-            <name>vivo互联网技术</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[东京奥运会倒数3天]]></title>
-        <id>https://m.idai.ly/se/ad44h6</id>
-        <link href="https://m.idai.ly/se/ad44h6"/>
-        <updated>2021-07-20T08:59:00.000Z</updated>
-        <summary type="html"><![CDATA[中国奥运代表团正式入住东京奥运村。7月19日，中国奥运代表团第4批团队抵达东京，包括女排、跳水、篮球、射击等14个比赛项目的超过250名成员。本届奥运会中国共派出431名运动员参赛，竞技30个大项、225个小项比赛，为迄今规模最大、项目最多的一届。中国队运动员平均年龄25.4岁，293人为首次参加奥运赛事。摄影师：Franck Robichon]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[约旦国王访问美国]]></title>
-        <id>https://m.idai.ly/se/bd5fmk</id>
-        <link href="https://m.idai.ly/se/bd5fmk"/>
-        <updated>2021-07-20T07:59:00.000Z</updated>
-        <summary type="html"><![CDATA[美国总统 Joe Biden 与约旦国王 Abdullah II 举行会晤，华盛顿白宫。7月19日，约旦国王抵达华盛顿特区开始为期3周的访美之行，亦成为 Biden 总统上任以来会见的第一位阿拉伯国家领导人。双方讨论了经贸军事合作、巴以局势、叙利亚难民等议题。Biden 称赞约旦是美国在中东的坚定盟友，美国将继续为约旦军备现代化提供援助。美国是约旦的第一大援助国，2015年迄今美国累计向约旦提供15亿美元军事援助，目前约旦境内约有3000名美军士兵驻扎。摄影师：Susan Walsh]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[遥感三十号组网完成]]></title>
-        <id>https://m.idai.ly/se/df0ac5</id>
-        <link href="https://m.idai.ly/se/df0ac5"/>
-        <updated>2021-07-20T06:59:00.000Z</updated>
-        <summary type="html"><![CDATA[中国长征二号丙运载火箭搭载4颗卫星发射升空，西昌卫星发射中心。7月19日，长征二号丙火箭成功将「遥感三十号」10组3颗卫星和1颗商业微纳卫星送入预定轨道。本次任务标志着「遥感三十号」系列30颗卫星全部组网完成。新卫星将主要用于开展电磁环境探测及相关技术试验。这是长二丙火箭在2021年第3次发射，首次采取高空开伞方案，进一步验证整流罩落区控制精度，为火箭回收技术研发提供重要参考。摄影师：Li Jieyi]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[梵高沉浸式艺术展]]></title>
-        <id>https://m.idai.ly/se/e2fa1P</id>
-        <link href="https://m.idai.ly/se/e2fa1P"/>
-        <updated>2021-07-20T06:57:00.000Z</updated>
-        <summary type="html"><![CDATA[阿纳海姆会展中心举办「超越梵高」沉浸式体验展，美国加利福尼亚州。本次展览通过数字投映方式展现梵高的画作和手稿，包括《星夜》、《向日葵》等代表作以及艺术家写给弟弟的私人信件，共投映超过4万亿像素数字文件。受新冠疫情影响，本次展览采取线上预约购票制，同时观展人数限制50名。7月19日，美国单日新增确诊24266例，死亡121例，累计确诊3501万例，死亡62.5万例，人口疫苗接种率约55.6%。摄影师：Mario Anzuoni]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Images are hard.]]></title>
         <id>https://css-tricks.com/?p=344404</id>
         <link href="https://css-tricks.com/images-are-hard/"/>
         <updated>2021-07-19T20:51:07.000Z</updated>
-        <summary type="html"><![CDATA[Putting images on websites is incredibly simple, yes? Actually, yes, it is. You use <img and link it to a valid source in the src attribute and you’re done. Except that there are (counts fingers) 927 things you could (and …
+        <summary type="html"><![CDATA[Putting images on websites is incredibly simple, yes? Actually, yes, it is. You use <img> and link it to a valid source in the src attribute and you’re done. Except that there are (counts fingers) 927 things you could (and …
 The post Images are hard. appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.]]></summary>
         <author>
             <name>Chris Coyier</name>
@@ -1320,28 +1503,6 @@ The post How to Get a Pixel-Perfect, Linearly Scaled UI appeared first on CSS-Tr
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Build Complex CSS Transitions using Custom Properties and cubic-bezier()]]></title>
-        <id>https://css-tricks.com/?p=344249</id>
-        <link href="https://css-tricks.com/build-complex-css-transitions-using-custom-properties-and-cubic-bezier/"/>
-        <updated>2021-07-14T14:31:02.000Z</updated>
-        <summary type="html"><![CDATA[I recently illustrated how we can achieve complex CSS animations using cubic-bezier() and how to do the same when it comes to CSS transitions. I was able to create complex hover effect without resorting to keyframes. In this article, I …
-The post Build Complex CSS Transitions using Custom Properties and cubic-bezier() appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.]]></summary>
-        <author>
-            <name>Temani Afif</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[A Bashful Button Worth $8 Million]]></title>
-        <id>https://css-tricks.com/?p=344407</id>
-        <link href="https://cloudfour.com/thinks/a-bashful-button-worth-8-million/"/>
-        <updated>2021-07-14T14:25:08.000Z</updated>
-        <summary type="html"><![CDATA[Most of us grumble when running across a frustrating UX experience online (like not being able to complete a transaction because of a misplaced button). We might pen a whiny tweet. Jason Grigsby is like I’m going to write 2,000 …
-The post A Bashful Button Worth $8 Million appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.]]></summary>
-        <author>
-            <name>Chris Coyier</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Frustrating Design Patterns: Broken Filters]]></title>
         <id>https://smashingmagazine.com/2021/07/frustrating-design-patterns-broken-frozen-filters/</id>
         <link href="https://smashingmagazine.com/2021/07/frustrating-design-patterns-broken-frozen-filters/"/>
@@ -1349,17 +1510,6 @@ The post A Bashful Button Worth $8 Million appeared first on CSS-Tricks. You can
         <summary type="html"><![CDATA[Too often dealing with filters can be frustrating. Let’s get them right. That means never freeze the UI on a single input, provide text input fallback and never auto-scroll users on a single input. Here’s why.]]></summary>
         <author>
             <name>hello@smashingmagazine.com (Vitaly Friedman)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Links on React and JavaScript]]></title>
-        <id>https://css-tricks.com/?p=344316</id>
-        <link href="https://css-tricks.com/links-on-react-and-javascript/"/>
-        <updated>2021-07-13T19:57:10.000Z</updated>
-        <summary type="html"><![CDATA[As a day-job, React-using person, I like to stay abreast of interesting React news. As such, I save a healthy amount of links. Allow me to dump out my latest pile. Most of this is about React but not all …
-The post Links on React and JavaScript appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.]]></summary>
-        <author>
-            <name>Chris Coyier</name>
         </author>
     </entry>
     <entry>
@@ -1570,35 +1720,6 @@ The post Links on React and JavaScript appeared first on CSS-Tricks. You can sup
         <summary type="html"><![CDATA[Frontend and design are remarkably complex these days. That’s why we invite kind, smart folks from the community to run [online workshops](https://smashingconf.com/online-workshops/) for all of us to learn together. And we have new ones coming up, and we’d like to kindly welcome you to join in.]]></summary>
         <author>
             <name>hello@smashingmagazine.com (Iris Lješnjanin)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Automating Screen Reader Testing On macOS Using Auto VO]]></title>
-        <id>https://smashingmagazine.com/2021/06/automating-screen-reader-testing-macos-autovo/</id>
-        <link href="https://smashingmagazine.com/2021/06/automating-screen-reader-testing-macos-autovo/"/>
-        <updated>2021-06-23T09:30:00.000Z</updated>
-        <summary type="html"><![CDATA[Automated testing is an important part of any software project, including testing for accessibility. There are already tools for linting and integration testing accessibility, but what about end-to-end testing with real assistive technology? Since I hadn’t seen this before, I set out to build Auto VO, a driver for the VoiceOver screen reader.]]></summary>
-        <author>
-            <name>hello@smashingmagazine.com (Cameron Cundiff)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[v1.11.0]]></title>
-        <id>https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.0</id>
-        <link href="https://github.com/osmoscraft/osmosfeed/releases/tag/v1.11.0"/>
-        <updated>2021-06-23T05:57:59.000Z</updated>
-        <summary type="html"><![CDATA[Added: support an experimental template for YouTube feed 📺 Demo | Source
-
-Aggregate content from any YouTube channel rss url https://www.youtube.com/feeds/videos.xml?channel_id=<replace_with_channel_id>
-Videos are embedded via iframe and loading accelerated by youtube-lite-embed
-Ads are reduced thanks to YouTube's policy for embedded videos 🙃
-Works on mobile devices with butter smooth horizontal scroll.
-Caveat: the template works only with YouTube content. You cannot mix textual RSS feed or other video sources such as Vimeo.
-Changed: Default HTML template meta tag adjusted to match convention
-Changed: sources in template data is now ordered by last update timestamp (as opposed to alphabetical)
-Thank you @PiyushLosalka]]></summary>
-        <author>
-            <name>Release notes from osmosfeed</name>
         </author>
     </entry>
 </feed>

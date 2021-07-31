@@ -1,129 +1,1158 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2021-07-30T00:22:37.387Z</id>
+    <id>urn:2021-07-31T00:22:51.201Z</id>
     <title>osmos::feed</title>
-    <updated>2021-07-30T00:22:37.387Z</updated>
+    <updated>2021-07-31T00:22:51.201Z</updated>
     <generator>osmosfeed 1.11.0</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
-        <title type="html"><![CDATA[关于大规模实时数仓搭建，我有几条心得...]]></title>
-        <id>https://www.infoq.cn/article/yZjBDdG0dYvKB44WE8pt?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/yZjBDdG0dYvKB44WE8pt?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-30T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[现状
-闲鱼作为一款闲置交易APP，在二手交易市场中是当之无愧的佼佼者。闲鱼从2014年诞生到现在七整年间持续增长，在这高速增长的背后带来的是每天近百亿的曝光点击浏览等数据，在这些数据规模如此庞大的背后也会带来诸多关于实时性的问题：
+        <title type="html"><![CDATA[“混合双打”之如何在 Class Components 中使用 React Hooks]]></title>
+        <id>https://www.infoq.cn/article/BEmlZzw1JdJ6WKQQOYYH?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/BEmlZzw1JdJ6WKQQOYYH?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-31T08:00:00.000Z</updated>
+        <summary type="html"><![CDATA[前情提要
 
-用户反馈商品曝光异常，如何快速定位？
+React 在 v16.8.0 版本中推出了 Hook，作为纯函数组件的增强，给函数组件带来了状态、上下文等等；之前一篇关于 React Hooks 的文章介绍了如何使用一些官方钩子和如何自建钩子，如果想要了解这些内容的同学可以访问《看完这篇，你也能把 React Hooks 玩出花》。
 
-产品同学圈了一批商品，如何查看该样本的实时报表？
+本文不会再介绍上文中已提到的部分钩子的基础使用，而是主要着眼解决一些实际开发中的场景。
 
-发现问题总是晚一步，如何在第一时间获取自定义的预警信息？   
+现状
 
- ......
+Class Component 内部复杂的生命周期函数使得我们组件内部的 componentDidMount 越来越复杂和臃肿，独立组件动辄上千行代码；组件嵌套层级越来越深，组件之间的状态复用也变得非常困难。
 
-为了解决上述的这些问题，我们开始了打造闲鱼实时数仓的探索之路。
-预研
-数仓调研
-在开始设计闲鱼的实时数据仓库之前，我们也调研了集团内外的各种数据仓库的设计与架构，一些是比较老的架构设计，另外一些是由于技术突破后进而带来的创新性的解决方案。本文不妨将这些实时数据仓库的新老设计做一下分类：
+Hook 无疑是可选的，他不会对现有项目造成任何冲击和破坏，社区对于它的优势也有过很多讨论；不过目前官方也没有计划移除 Class，而是推荐渐进式的去使用 Hook，在一些新增的组件中优先选用 Hook。那么我们想要在原有以 Class Component 为主的项目中开始使用 Hook，与原有的 Class Component 必然会产生交互，是不是需要将这些 Class Component 重写为 Hook 呢？
 
+将部分复杂的 Class Component 逐步重写为 Hook 应该排在项目迭代的中长期计划中，如果想要在一个迭代中进行大量改造，带来的巨大成本和副作用也是无法估量的。
 
-第一类：从无到有
+那么短期内我们就绕不开 Hook 与 Class 组件的混合使用。
 
-当Apache Storm(开源的分布式实时计算系统)问世后，大数据不在依靠MapReduce这种单一的计算方式，拥有了当日数据当日处理的能力。
+解决方案
 
-第二类：从有到全
-
-以Lambda和Kappa为代表的架构，能够将实时与离线架构结合在一起，一套产品可以实现多种数据更新策略。
-
-第三类：从全到简
-
-以Flink为代表的支持窗口计算的流式框架出现，使离线和实时的逻辑能够统一起来，一套代码实现两种更新策略，避免了因为开发方式不统一导致的数据不一致问题。
 点击查看原文>]]></summary>
         <author>
-            <name>闲鱼技术</name>
+            <name>政采云前端团队</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[闲鱼触达平台的杀器-HermesX]]></title>
-        <id>https://www.infoq.cn/article/8WO6cpBz7cPeUS076Jcx?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/8WO6cpBz7cPeUS076Jcx?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-30T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[讲讲上下文
-如果你是公众号《闲鱼技术》的老粉，也许你还记得，在去年的那个春天,我们给大家介绍了闲鱼PUSH的前世今生，给大家带来了Hermes-爱马仕，它是一个基于PUSH的用户运营系统。在接下来的一年里，我们的Hermes也发生了很多改变，它收到了很多很多热心用户的建议、吐槽还有宝贵的夸赞，我们也基于这些信息做了很多的优化，还有很多正在陆续上线。今天我想借这个机会和大家伙唠唠我们今年的进展（爱马仕升级啦！）
-过去这一年
-作为一个技术同学，我想从三个视角给大家介绍一下目前闲鱼的推送还有哪些地方需要加把劲儿：
-用户宝宝们：推送的内容相关性需要再提升，“有些时候推给我的东西感觉还是没啥兴趣”，“有些时候推送是不是发的有点多了，我其实最近不太想看推送，你说我关通知吧，我还想收到私聊或者订单的通知，不关吧，有些推送我真的不想收到啊”。
+        <title type="html"><![CDATA[“学不动了！”系列之 ES2021 抢先尝]]></title>
+        <id>https://www.infoq.cn/article/O2OmjoJ119LOKQ5O7WEi?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/O2OmjoJ119LOKQ5O7WEi?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-31T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[从 ES2015（ES6）之后，每年，JS 都会在其新标准里添加一些有意思的新特性。
 
-业务大大们：“现在的闲鱼业务这么丰富，潮品、同城、社区....，但我们和目标用户连接不稳定啊（因为我们的Hermes系统是选择最好的内容给用户，每次推送可能都不一样，并没有稳定的通道直接连接用户和行业），这样推送带来的转化不够啊；而且我们希望用户的长留要好，不能光看短期点击的”。
+我们可以看一下已经进入 Stage 4 阶段的提案，这些提案到时候都会进入 ES2021 的标准。
 
-头秃的我：作为Hermes平台的技术owner，我发现系统确实需要升级了，随着触达业务不断复杂，技术架构无法完美支持丰富的业务场景，而且当问题出现时，现有的技术链路无法全链路复现当时的问题。
+（Stage 4 是啥？）TC39 在把提案转换为最后的标准之前，这些提案都会经历 State 1～4 四个阶段。只有到 Stage 4 的提案会被标记为“已完成”，并在将来进入到下一个 ES 标准里。有兴趣的话，可以点击这里查看目前每个 Stage 都有哪些提案。
+
+特性一览
+String.prototype.replaceAll
+
+大家应该都使用过 String.prototype.replace 来替换字符串中的某些匹配给定正则表达式的部分。但是，如果我们所使用的匹配规则不是一个正则表达式，而是一个普通的字符串，只有 第一个 匹配的才会被替换。
+
+const str = 'I like frontend. I like JavaScript.';
+const newStr = str.replace('like', 'love');
+newStr;
+// "I love frontend. I like JavaScript."
+
+
 点击查看原文>]]></summary>
         <author>
-            <name>闲鱼技术</name>
+            <name>微医大前端技术</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[温柔一刀，优雅且彻底地卸载Rancher HA]]></title>
-        <id>https://www.infoq.cn/article/QzBdycRV2010JxWY5qzV?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/QzBdycRV2010JxWY5qzV?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-30T07:00:00.000Z</updated>
-        <summary type="html"><![CDATA[Rancher 从 v2.5 开始，支持将 Rancher HA 安装在任何经过 CNCF 认证的标准 K8s 发行版上，这个集群可以使用上游 Kubernetes，也可以使用 Rancher 的 Kubernetes 发行版之一，也可以是来自 Amazon EKS 等提供商的托管 Kubernetes 集群。无论安装到哪种集群上，Rancher 都推荐使用一个独立的 K8S/K3S 集群作为 Rancher HA 的 Local 集群，这样 Rancher HA 不会和业务集群相互影响。
+        <title type="html"><![CDATA[干货 | Taro虚拟列表最佳实践]]></title>
+        <id>https://www.infoq.cn/article/lBRHSWGBb5JbCcFd2Zzw?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/lBRHSWGBb5JbCcFd2Zzw?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-31T07:00:00.000Z</updated>
+        <summary type="html"><![CDATA[一、背景
+最近组内小程序项目从Taro1迁移到了Taro3，紧跟凹凸实验室的步伐，开发体验确实比版本1好了很多，完全支持React语法，没有了那么多鸡肋的限制，项目的可配置程度也大大放开，充分给予了开发者自由发挥的空间。
 
-如果在独立的 Local 集群上卸载 Rancher HA，一般的做法是将 Local 集群删掉，从而达到卸载 Rancher HA 的目的，这样做的好处是比较简单、数据清理得比较彻底。
+但是由于Taro3是运行时架构，是以牺牲页面部分性能为代价的，这也间接导致了我们的列表页异常卡顿，由于我们的列表页是一次性请求所有数据，然后进行渲染，所以页面节点初始化渲染的时候会渲染很多节点，再加上一些筛选项，不用说用户，卡顿已经让我们自己都忍受不了。此为背景。
 
-但有些用户将 Rancher HA 安装到了某些业务或生产集群上，这样的话，就无法通过移除 Local 集群去卸载 Rancher HA。我们需要找到一个办法可以在不影响 Local 集群运行的情况下卸载掉 Rancher HA。
-
-Rancher 提供了一个卸载 Rancher HA 的工具：system-tools。（https://rancher.com/docs/rancher/v2.x/en/system-tools/）。我们可以借助 system-tools 来将 Rancher HA 生成的 namespace 和其他资源移除。执行remove命令会移除以下资源：
-
-
-Rancher 部署的命名空间，默认名称是cattle-system。
-
-Rancher 通过cattle.io/creator:norman标签标记的serviceAccount、 clusterRoles和clusterRoleBindings。使用 Rancher v2.1.0 或更新版本创建的所有及资源都会被打上cattle.io/creator:norman的标签。
+本文我们会先分析页面卡顿的原因，然后寻找对应的一些解决方案，分析其可行性，最后结合前期的问题解析，给出一套最优的解决方案。
+二、原因分析
+1）页面节点过多，渲染时间变长，阻碍了用户快速操作的需求；
+2）列表setState数据量太大，造成逻辑层与渲染层的通讯时间变长；
+3）修改state，例如点击列表筛选项，列表数据需要重新大量渲染，造成页面卡顿；
+三、解决方案
+方案一：后端分页
+我们第一时间想到让接口分页，这样初始化渲染的时候就不会渲染大量节点，然后监听下拉到底时机，再依次渲染数据；
 点击查看原文>]]></summary>
         <author>
-            <name>RancherLabs</name>
+            <name>携程技术</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[求大佬指教关于网络覆盖的一些问题，之前按照 AC+AP 规划的，准备实践了]]></title>
-        <id>792597</id>
-        <link href="https://www.v2ex.com/t/792597"/>
-        <updated>2021-07-29T23:50:41.000Z</updated>
-        <summary type="html"><![CDATA[kervstk: 
-户型图如下，2 层共计 240 平左右，红色的是 AP 朝向为实际朝向，方块的都是 AP 面板，2 个圆形是吸顶 AP，当初因为要弄智能家居，自己瞎弄的
+        <title type="html"><![CDATA[当你的队友出现这样的代码，而且拒不改正，你可以离职了，说明这公司有点不行了]]></title>
+        <id>792820</id>
+        <link href="https://www.v2ex.com/t/792820"/>
+        <updated>2021-07-30T22:27:48.000Z</updated>
+        <summary type="html"><![CDATA[ericgui: 
+try {
+  // code
+}
+catch (err) {
+  throw new Error(err)
+}
+``]]></summary>
+        <author>
+            <name>ericgui</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[编写高质量可维护的代码：组件的抽象与粒度]]></title>
+        <id>https://www.infoq.cn/article/tyP2o9RB0myHzlDEBATo?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/tyP2o9RB0myHzlDEBATo?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-30T21:00:00.000Z</updated>
+        <summary type="html"><![CDATA[前言
+
+作为一名精致的前端猪猪女孩，也有那么点想让自己的代码同样看起来精致一点。所以在拿到新需求的 UI 设计稿时，经常会面临如下问题：如何拆解页面？如何划分组件才算是合理？好像用于组件拆分的 A 方案和 B 方案在当前业务场景下也都还算合理，那究竟要怎么选择？组件的抽象与粒度貌似是一个老生常谈的问题了～学习了很多前辈的文章，那么今天结合业务场景，也来讲下我的心得～
+
+什么是组件
+
+React 官方文档 (https://react.docschina.org/docs/components-and-props.html)上说：组件，从概念上类似于 JavaScript 函数。它接受任意的入参（即 “props”），并返回用于描述页面展示内容的 React 元素。
+
+Vue 官方文档 (https://cn.vuejs.org/v2/guide/components.html)说：组件是可复用的 Vue 实例，且带有一个名字。我们可以在一个通过 new Vue 创建的 Vue 根实例中，把这个组件作为自定义元素来使用。
+
+其实总的来说，无论什么语言框架，组件就是一段代码片段，它可以实现某些指定的功能或渲染特定的展示效果，我们一般可以通过 import 的方式将其引入到项目代码中。本文接下来将以 React 为例进行相关描述。
+
+组件的抽象
+
+组件抽象的过程就是将通用性代码“提取”或是“抽取”出去的过程，那么问题来了，我们为什么要抽组件呢？
+点击查看原文>]]></summary>
+        <author>
+            <name>政采云前端团队</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[前端简史：你不知道的 ES4]]></title>
+        <id>https://www.infoq.cn/article/tEYNxgjuVpQBOWAZTR1R?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/tEYNxgjuVpQBOWAZTR1R?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-30T20:55:00.000Z</updated>
+        <summary type="html"><![CDATA[不知道大家有没有注意到，在我们应用构建的过程中，都有目标 ES 版本这个选项，通常可以选择 ES3、ES5、ES6 甚至最新的 ES10，但是却没有 ES4 这个版本，这是怎么回事呢？
+
+ES4 简史
+
+通过维基百科其实可以查到，ES4 在 1999 年 2 月就已经开始起草，并且计划在 2008 年 8 月完成。但是发展过程其实并不顺利，ES4 提出了很多惊为天人的新特性，比如：类、严格类型、模块等，大有一副改革 JavaScript 之势，对于当时的 JS 生态来说，兼容成本变得非常之高。
+
+由于过于激进，各浏览器厂商发生了严重分歧，以 Yahoo、Microsoft、Google 为首的大公司，反对 JavaScript 的大幅升级，主张小幅改动；以 JavaScript 创造者 Brendan Eich 为首的 Mozilla 公司，则坚持当前的草案。
+
+在 2008 年 7 月 ES4 发布前，ECMA 临时开会决定，中止 ES4 的开发，废除该版本。并且将其中涉及现有功能改善的一小部分，发布为 ES3.1（后改名为 ES5），而将其他激进想法放入以后的版本（ES.NEXT），由于会议的气氛，该版本的项目代号起名为 Harmony（和谐）。
+
+ES4 草案中有什么
+Classes（类）
+
+类最终是在 ES6 中被实现的，但其实在最早的 ES4 草案中，就有了类的定义：
+
+class Bar {
+  var val = 1
+  const pi = 3.14
+  // A function
+  function f(n) {
+    return n + val * 2
+  }
+  // Getters and setters
+  function set foo(n) {
+    val = n
+  }
+  function get foo() {
+    return val
+  }
+}
 
 
-先说下我想实现的目标
-1 、全屋网络科学（魔法）
-2 、网络全覆盖，最起码实现全屋智能家居都能有网可有
-3 、AP 全部 POE 供电(没留电)
-4 、通过路由或 AC 可以直接控制全屋 AP （屋顶的太高不好够到）
-请大佬指教问题：
-1 、想实现我的要求有什么需要注意的？
-2 、我这个分布是否能基本覆盖？是否存在不合理地方。有好的建议诚心求指导。
-3 、求推荐产品；   路由我想用软路由，但听说 AC 和 AP 必须同品牌，目前我能找到齐全品牌只有 TP-LINKE，但是能查到的信息很少。]]></summary>
+点击查看原文>]]></summary>
         <author>
-            <name>kervstk</name>
+            <name>微医大前端技术</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[感觉 apple tv 上面 plex 画质比 infuse 好……]]></title>
-        <id>792595</id>
-        <link href="https://www.v2ex.com/t/792595"/>
-        <updated>2021-07-29T23:00:09.000Z</updated>
-        <summary type="html"><![CDATA[EdwardKot: 不知道是不是错觉，订阅了一年 infuse，（免费）体验了一个月 plex，偶然在两个 app 切换不知何故 肉眼观感上 plex 貌似更好一点？（ plex server 限制了不转码 交给 plex apple tv 端）]]></summary>
+        <title type="html"><![CDATA[NPM 私库从搭建到数据迁移最后容灾备份的一些解决方案]]></title>
+        <id>https://www.infoq.cn/article/x1tECzDDQXWCjmHqQUZe?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/x1tECzDDQXWCjmHqQUZe?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-30T20:50:00.000Z</updated>
+        <summary type="html"><![CDATA[前言
+
+按照国际惯例，正文开始之前，我们先简单介绍下目前市面上的 NPM 私库开源框架。
+
+
+Verdaccio
+
+Verdaccio 是 Sinopia 开源框架的一个分支。它提供了自己的小数据库，以及代理其他注册中心的能力（例如：npmjs.org 网站)，配置以及部署相对简单，一步到"胃"。如果公司的私包比较少的话或者你想偷懒，可以考虑一下。
+
+
+Cnpmjs.org
+
+大名鼎鼎的 CNPM，想必各位早就感受到了它的速度之“快”，没错，它的 Register 服务就是淘宝镜像 (https://registry.npm.taobao.org/)。主要是基于 Koa、MySQL 和简单存储服务的企业专用 NPM 注册和 WEB 服务，其中最强大的功能就是它的同步模块机制（定时同步所有源 Registry 的模块、只同步已经存在于数据库的模块、只同步 Popular 模块）。
+
+
+Nexus
+
+后端开发的小伙伴应该比较熟悉。Nexus2 主要是用于 Maven/Gralde 仓库的统一管理，而 Nexus3 则添加了 NPM 插件，可以对 NPM 提供支持，其中 NPM 仓库有三种类型，分别是 Hosted（私有仓库）、Proxy（代理仓库）、Group（组合仓库）。
+
+总体来讲，抛开 Nexus，虽然 Cnpmjs.org 在部署过程以及总体设计方案上相对于 Verdaccio 复杂的多，但是它提供更高的拓展性，定制性，可以支持多种业务使用场景。接下来，我们分别从 Cnpmjs.org 容器化部署、数据迁移、OSS 容灾备份等内容，层层展开。
+点击查看原文>]]></summary>
         <author>
-            <name>EdwardKot</name>
+            <name>政采云前端团队</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[离职了，一个女性同事朋友送了我一本书，开熏～]]></title>
-        <id>792594</id>
-        <link href="https://www.v2ex.com/t/792594"/>
-        <updated>2021-07-29T21:14:16.000Z</updated>
-        <summary type="html"><![CDATA[Raven316:]]></summary>
+        <title type="html"><![CDATA[Chrome DevTools 全攻略！助力高效开发]]></title>
+        <id>https://www.infoq.cn/article/tFXsCiO9tyATmoiTUUgG?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/tFXsCiO9tyATmoiTUUgG?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-30T20:20:00.000Z</updated>
+        <summary type="html"><![CDATA[Console 面板
+
+
+此章节请打开 justwe7.github.io/devtools/console/console.html 一起食用
+一方面用来记录页面在执行过程中的信息（一般通过各种 console 语句来实现），另一方面用来当做 shell 窗口来执行脚本以及与页面文档、DevTools 等进行交互
+
+
+组合快捷键按键:Windows: Control + Shift + JMac: Command + Option + J
+首先看一下 console 对象下面都有哪些方法:
+
+
+
+console.clear()
+
+顾名思义，清空控制台
+
+console.log(), info(), warn(), error()
+
+点击查看原文>]]></summary>
         <author>
-            <name>Raven316</name>
+            <name>微医大前端技术</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Shared ESLint Configuration]]></title>
+        <id>https://css-tricks.com/?p=345628</id>
+        <link href="https://katydecorah.com/code/eslint-config/"/>
+        <updated>2021-07-30T20:07:06.000Z</updated>
+        <summary type="html"><![CDATA[Looks like it was almost 9 years ago when Airbnb first published their JavaScript Style Guide. 112k stars on GitHub later, it seems like the de facto preset for Babel / ES Lint. But it’s not the only company …
+The post A Shared ESLint Configuration appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.]]></summary>
+        <author>
+            <name>Chris Coyier</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[初中级工程师如何快速成长和寻求突破]]></title>
+        <id>https://www.infoq.cn/article/J1D8TEfijfJmgYmEsw5y?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/J1D8TEfijfJmgYmEsw5y?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-30T20:00:00.000Z</updated>
+        <summary type="html"><![CDATA[前言
+
+写这篇文章的初衷是因为看到很多刚入职的同学迷茫，没有目标感，看到了一些工作 1~2 年的同学疲于业务开发而没有很大的成长， 也看到了一些同学 2~3 年工作时间变成了框架熟练的“打工人”却没有很好的沉淀和亮点，导致无法进入大厂实现薪资的大幅提升。希望这篇文章能够给这些初中级工程师一些启发。
+
+挑选适合的平台
+
+选择大于努力
+
+如果你拿到下面两个公司的 Offer ，你会如何选择？
+
+
+
+
+A 公司B 公司
+
+规模400 人1000 人
+行业互联网软件服务
+薪资10 K13 K
+前端人数40 人80+ 人
+前端职能独立前端部门跟项目走
+汇报老板专职前端后端
+
+
+
+我相信大部分人都会选择 A 公司，因为你会认同 A 公司更有成长空间，会积累更多的沉淀。
+
+从哪几方面做选择
+
+1.看行业，2010 年以前的电商，这两年教育，社区团购等。
+2.看公司，公司是否大厂，行业内影响力，公司文化是否吻合，和一群靠谱的人工作，结果肯定不会太差。
+3.看岗位，否是职能部门，是否是职能部门主要就是看组织架构中是否有前端部门。很多公司前端开发很多，但是是分散在不同部门里面，汇报老板是后端研发。
+点击查看原文>]]></summary>
+        <author>
+            <name>政采云前端团队</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[请问本地离线视频播放器如何实现自动识别跳过情色相关的画面？]]></title>
+        <id>792819</id>
+        <link href="https://www.v2ex.com/t/792819"/>
+        <updated>2021-07-30T17:59:48.000Z</updated>
+        <summary type="html"><![CDATA[LetCode: 
+粗糙的实现思路：
+基于开源的播放器编写插件，通过它提供的接口读取当前播放画面一段时间内的图片 stream，使用相关的开源图片识别模型判定，疑似度达到某个设定的百分比之后就自动跳过。
+由于没有视频播放处理的编码经验，不知道这个思路可不可行，烦请各位技术大佬指点迷津一下。]]></summary>
+        <author>
+            <name>LetCode</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows 11 已经可以在 Beta 通道更新]]></title>
+        <id>792818</id>
+        <link href="https://www.v2ex.com/t/792818"/>
+        <updated>2021-07-30T17:31:48.000Z</updated>
+        <summary type="html"><![CDATA[Tumblr: 
+据微软 7 月 29 日讯（也就是北京时间的 7 月 30 日了），“我们很得瑟地宣布，我们已经把 Windows 11 全民测试版弄进 beta 通道了！”  
+We are very excited to announce we are releasing Windows 11 Insider Preview Build 22000.100 to Windows Insiders in the Beta Channel! 
+刚刚把工作电脑加进了 beta 通道，已经下载了 51%了，看看会有什么坑。
+另外，据说微软在 Windows 11 中永久解决了蓝屏的问题，因为 BSOD 已经变成Black Screen of Death了。
+随着行业的标准化，将来的 Windows 11 BSOD 和 Mac OS 的五国起码在颜色和闹心程度上变得更统一了。]]></summary>
+        <author>
+            <name>Tumblr</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[是不是能在 Web 服务上引入类似 SSH 的公钥认证的身份验证方式]]></title>
+        <id>792817</id>
+        <link href="https://www.v2ex.com/t/792817"/>
+        <updated>2021-07-30T17:23:00.000Z</updated>
+        <summary type="html"><![CDATA[KirbySD: 当然不是说传统的用户名密码就要淘汰
+在用户能保证自己所使用的私钥安全储存的情况下，以公钥认证来验证身份既能防止暴力破解，也能防止撞库吧
+对于高级用户来说，还能省去手动鉴权的步骤
+至于盗用用户设备，现行基于 cookie 的保持登录状态也不能很好地解决这一问题
+唯一的缺点可能就是一旦私钥泄漏，所有网站立刻完蛋]]></summary>
+        <author>
+            <name>KirbySD</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[WebOTP API]]></title>
+        <id>792815</id>
+        <link href="https://www.v2ex.com/t/792815"/>
+        <updated>2021-07-30T16:25:32.000Z</updated>
+        <summary type="html"><![CDATA[Livid: Chrome 93 的新功能：
+https://developer.chrome.com/blog/cross-device-webotp/]]></summary>
+        <author>
+            <name>Livid</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[M1 的 Macbook Pro 可以拿来做渗透吗？]]></title>
+        <id>792813</id>
+        <link href="https://www.v2ex.com/t/792813"/>
+        <updated>2021-07-30T16:11:11.000Z</updated>
+        <summary type="html"><![CDATA[XIoYi: 
+好不容易等到可以装 ARM 的 Windows 了，于是想买个 M1 的 Macbook Pro，主要工作是拿来做渗透测试，然后问题来了，不知道 ARM 的 Windows 能不能跑经常渗透测试用的 EXE 的工具？
+有没有好心人试过？求解答~]]></summary>
+        <author>
+            <name>XIoYi</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[卡丁车真的很解压，没有尝试过建议尝试一下。]]></title>
+        <id>792811</id>
+        <link href="https://www.v2ex.com/t/792811"/>
+        <updated>2021-07-30T15:52:17.000Z</updated>
+        <summary type="html"><![CDATA[erwin985211: 
+今天团建第一次开。不出意料的连续车祸，但依然很爽，尤其是那种加速急转弯。时间到了依依不舍。]]></summary>
+        <author>
+            <name>erwin985211</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[请教一个群晖局域网速度问题]]></title>
+        <id>792810</id>
+        <link href="https://www.v2ex.com/t/792810"/>
+        <updated>2021-07-30T15:51:22.000Z</updated>
+        <summary type="html"><![CDATA[jingtouhou: 
+自己搭的黑群
+从群晖文件的直接通过浏览器下载文件
+单个下载任务速度始终在 1MB 左右
+如果同时多起几个任务的话
+速度可以叠加大概到 7MB 左右
+如果是上传文件倒是可以到 16MB 左右
+已经关闭加密 协议已经改成下限 smb2 上限 smb3
+通过 iperf3 测试 udp 和 tcp 带宽都在 100 Mbit 左右
+有没有大神知道怎么回事？
+怎么才能让单个任务占满带宽]]></summary>
+        <author>
+            <name>jingtouhou</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[京东会员免费领取万达电影至尊月卡]]></title>
+        <id>792809</id>
+        <link href="https://www.v2ex.com/t/792809"/>
+        <updated>2021-07-30T15:46:06.000Z</updated>
+        <summary type="html"><![CDATA[christin: 
+入口 京东 app 首页-plus 会员-生活特权-万达电影 进入即可领取 共一张会员卡加 4 张优惠券
+话说万达会员卡好用吗]]></summary>
+        <author>
+            <name>christin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[越来越刻薄，脾气越来越差，怎么办？]]></title>
+        <id>792808</id>
+        <link href="https://www.v2ex.com/t/792808"/>
+        <updated>2021-07-30T15:29:31.000Z</updated>
+        <summary type="html"><![CDATA[vvsystem: 1.住在城中村，对面的开着门大声说话、看短视频，说了也没用，让人心烦。
+2.去火车站取个学生票，看到工人确认一个事好几遍，自己竟然抢过工作人员的话，用不耐烦的语气(意识到后立刻减慢语速，微笑，显得自己十分虚伪)转述自己的理解，搞得买票的人连连说不好意思耽误我了。
+3.回到家打开朋友圈，看到几个读心理的同学转发的营销信息，说来说去就是赶紧来学心理学吧，心理学对工作婚姻、家庭、教育下一代非常有帮助，我们这有大咖 xxx，一大堆虚之又虚头衔放在大咖名字下边...心里感到恶心。去搜心理咨询行业现状，发现全是彼此捧臭脚的、带二维码的个体户在评论。火大，想到他们在挣钱，心里更是愤怒。
+4.去逛常常逛的 chouti，帖子的质量不是一般的低，不是禁止评论就是类似这样的评论:中国人真牛 X，我自豪我是中国人。
+5.同样的，在朋友圈看到未来的研究生同学在晒录取通知书，还评论说真高兴恰逢百年 xxx...，纳闷了，一个综合几个榜单排名 200 左右的二本学校、这专业刚被允许招研究生，有什么好自豪的，想起自己要和这样的同学一起读书感觉仿佛自己在自取其辱，恨自己庸人自扰。
+6.最烦的还是第 4 条。]]></summary>
+        <author>
+            <name>vvsystem</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[buildroot 如何重新编译 kernel]]></title>
+        <id>792807</id>
+        <link href="https://www.v2ex.com/t/792807"/>
+        <updated>2021-07-30T15:16:37.000Z</updated>
+        <summary type="html"><![CDATA[liyongjun0803: 
+使用 buildroot 编译系统镜像，我修改了 output/build/linux-4.18.12/ 中的 dts 文件，请问怎么重新编译 kernel?
+
+我试了几种办法都不行，如下：
+make linux-dirclean
+make linux-rebuild
+这样会把 output/build/linux-4.18.12/ 整个目录删掉，我修改的部分也就被删掉了。
+
+有没有大佬熟悉 buildroot 的，支个招。]]></summary>
+        <author>
+            <name>liyongjun0803</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[电信网络是否降速]]></title>
+        <id>792806</id>
+        <link href="https://www.v2ex.com/t/792806"/>
+        <updated>2021-07-30T15:12:47.000Z</updated>
+        <summary type="html"><![CDATA[Xhack: 
+这段时间发现电信网络速度很慢，4g 才 2m   不知道宽带怎么样，大家也这样吗？还是我基站问题]]></summary>
+        <author>
+            <name>Xhack</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如何用Python构建一个决策树]]></title>
+        <id>https://www.infoq.cn/article/NHEwmQkQWG1zcEigP9Jv?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/NHEwmQkQWG1zcEigP9Jv?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-30T15:06:02.000Z</updated>
+        <summary type="html"><![CDATA[本文最初发布于Medium网站，经原作者授权由InfoQ中文站翻译并分享。
+
+决策树是一个经久不衰的话题。本文要做的是将一系列决策树组合成一个单一的预测模型；也就是说，我们将创建集成方法（Ensemble Methods）的模型。
+
+决策树是准确度最高的预测模型之一。想象一下同时使用多棵树能把预测能力提高到多高的水平！
+
+一些集成方法算法的预测能力超过了当今机器学习领域的一流高级深度学习模型。此外，Kaggle参赛者广泛使用集成方法来应对数据科学挑战。
+
+集成方法以相对较低的复杂性提供了更高水平的准确度。决策树模型和决策树组构建、理解和解释起来都很容易。我们将在另一篇文章中谈论宏伟的随机森林，因为它除了作为机器学习的模型外，还广泛用于执行变量选择！我们可以为机器学习模型的预测变量（predictor）选择最佳的候选变量。
+Jupyter笔记本
+
+请查看Jupyter笔记本，了解我们接下来要介绍的构建机器学习模型的概念，也可以参阅我在Medium中写的其他数据科学文章和教程。
+点击查看原文>]]></summary>
+        <author>
+            <name>Anello</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[小弟问一下， mac 输入 set -gx editor xxx，输出了一堆东西是什么意思？]]></title>
+        <id>792805</id>
+        <link href="https://www.v2ex.com/t/792805"/>
+        <updated>2021-07-30T15:04:51.000Z</updated>
+        <summary type="html"><![CDATA[crownzzz: 
++omz_termsupport_preexec:1> [[ '' == true ]]
++omz_termsupport_preexec:3> emulate -L zsh
++omz_termsupport_preexec:4> setopt extended_glob
++omz_termsupport_preexec:7> local -a cmdargs
++omz_termsupport_preexec:8> cmdargs=( env )
++omz_termsupport_preexec:10> [[ env = fg ]]
++omz_termsupport_preexec:44> local CMD=env
++omz_termsupport_preexec:45> local LINE=env
++omz_termsupport_preexec:47> title '$CMD' '%100>...>$LINE%]]></summary>
+        <author>
+            <name>crownzzz</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Conjuring Generative Blobs With The CSS Paint API]]></title>
+        <id>https://css-tricks.com/?p=345256</id>
+        <link href="https://css-tricks.com/conjuring-generative-blobs-with-the-css-paint-api/"/>
+        <updated>2021-07-30T14:54:36.000Z</updated>
+        <summary type="html"><![CDATA[The CSS Paint API (part of the magical Houdini family) opens the door to an exciting new world of design in CSS. Using the Paint API, we can create custom shapes, intricate patterns, and beautiful animations — all with a …
+The post Conjuring Generative Blobs With The CSS Paint API appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.]]></summary>
+        <author>
+            <name>George Francis</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[AI系统如何识别重复数据？]]></title>
+        <id>https://www.infoq.cn/article/wIuju9OK3ilcJ5YmBLf4?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/wIuju9OK3ilcJ5YmBLf4?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-30T14:46:41.000Z</updated>
+        <summary type="html"><![CDATA[当你同时比较两个Salesforce记录或任何其它CRM记录时，你可以很容易地确定它们是否重复。然而，当你有10万条这样的记录时，你几乎不可能一个一个地筛选它们，并进行这样的比较。这就是为什么很多公司开发了各种工具来自动化这些过程，为了做好工作，机器需要识别这些记录之间的相似性和差异性。在本文中，我们将更仔细地研究数据科学家用来训练机器学习系统识别重复的一些方法。
+机器学习系统如何对比记录？
+
+研究人员使用的主要工具之一是字符串度量。当你取数据中的两个字符串时，如果字符串相似，返回一个低值；如果字符串不同，则返回一个高值。这在实践中是如何工作的？让我们来看看下面两个记录：
+
+
+
+
+First Name
+
+Last Name
+
+Email
+点击查看原文>]]></summary>
+        <author>
+            <name>Ilya Dudkin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MacBook 迁移的时候空间不足]]></title>
+        <id>792804</id>
+        <link href="https://www.v2ex.com/t/792804"/>
+        <updated>2021-07-30T14:40:41.000Z</updated>
+        <summary type="html"><![CDATA[liuzhihang: 
+500 G 空间才用一半左右， 用的雷电+迁移助力进行迁移。
+每次都提示空间不足，资源库占用的空间太多了。
+请问有小伙伴遇到过么，是怎么解决的？
+旧电脑是 Intel 新电脑是 M1
+
+实际电脑才占用 300G，另一台 mac 是新电脑。]]></summary>
+        <author>
+            <name>liuzhihang</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[北苑华贸城德扑周末咸鱼局继续凑人]]></title>
+        <id>792802</id>
+        <link href="https://www.v2ex.com/t/792802"/>
+        <updated>2021-07-30T14:36:58.000Z</updated>
+        <summary type="html"><![CDATA[orangex: 
+暂定周日，目前 4-5 人，希望能凑到 6 人，1bb=1 毛，有意 vx：cmFtcGFnaW5nOQ==
+成局不易，好心人一生平安]]></summary>
+        <author>
+            <name>orangex</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[typora 有个 bug 一直没修]]></title>
+        <id>792801</id>
+        <link href="https://www.v2ex.com/t/792801"/>
+        <updated>2021-07-30T14:35:37.000Z</updated>
+        <summary type="html"><![CDATA[v2byy: 
+test:
+如果 markdown 是这种格式的话，在正文一输入中文，就自动跳到 test: 后面了
+实际场景中遇到的是，hexo new 一个 post 的时候，要生成一些 heading，每次输入正文的时候，自动跳到 description 哪一行了。输入英文字母就不会。]]></summary>
+        <author>
+            <name>v2byy</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[PhotoViewer v3.6.0 已发布！近两年以来的重要版本更新！]]></title>
+        <id>792800</id>
+        <link href="https://www.v2ex.com/t/792800"/>
+        <updated>2021-07-30T14:31:51.000Z</updated>
+        <summary type="html"><![CDATA[nzbin: 
+https://github.com/nzbin/photoviewer
+因工作忙碌，精力有限，PhotoViewer 已经很久没做大版本更新了，v3.6.0 算是近两年来比较大的一个优化版本。熬了一周的夜，对很多网友提出的问题集中做了优化。新增 embed mode （嵌入模式），修复很多交互细节问题。]]></summary>
+        <author>
+            <name>nzbin</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Chevereto 图床生成的图片 url 自动带上了 :443 端口这样的字符串，有人知道怎么干掉它吗]]></title>
+        <id>792799</id>
+        <link href="https://www.v2ex.com/t/792799"/>
+        <updated>2021-07-30T14:20:50.000Z</updated>
+        <summary type="html"><![CDATA[AllenHua: 
+
+如上图所示，不希望在 url 里显示 :443]]></summary>
+        <author>
+            <name>AllenHua</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[在去植发之前，想知道大家去的哪里的哪个品牌的植发机构，效果怎么样]]></title>
+        <id>792798</id>
+        <link href="https://www.v2ex.com/t/792798"/>
+        <updated>2021-07-30T14:12:53.000Z</updated>
+        <summary type="html"><![CDATA[FartNoSound: 
+本人遗传父亲的两额角不长头发，而且有点严重，去理发店理发师每次都有点为难。只能剪那种塌下来盖住额角的发型，显得人不精神。发个帖子看看大家的经历，好选择一家值得信赖的植发机构。]]></summary>
+        <author>
+            <name>FartNoSound</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[2.05亿美元！马斯克的脑机接口公司获该领域最大规模融资，下一步将在人类身上进行临床试验]]></title>
+        <id>https://www.infoq.cn/article/JOaIam9xN0bFAIYSJq5b?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/JOaIam9xN0bFAIYSJq5b?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-30T14:05:00.000Z</updated>
+        <summary type="html"><![CDATA[马斯克的脑机接口公司 Neuralink 完成 C 轮融资后，又该有大动作了。
+
+脑机接口公司 Neuralink 完成 2.05 亿美元融资
+
+北京时间 7 月 30 日早间消息，马斯克创立的脑机接口公司 Neuralink 完成 C 轮融资，筹集资金 2.05 亿美元（约合 13.2 亿元人民币）。据了解，这也是该领域迄今为止规模最大的融资。
+
+资料显示，Neuralink 本轮融资由总部位于迪拜的风投公司 Vy Capital 领投，此外还有包括谷歌风投、德丰杰成长基金（DFJ Growth）、Valor Equity Partners、 Craft Ventures、创始人基金（Founders Fund）和 Gigafund 在内的众多企业参与投资。不仅如此，一些高管和企业家也参与了投资。
+
+在这轮融资之前，Neuralink 已于 2019 年 5 月份获得过 5100 万美元 B 轮融资。2017 年，Neuralink 计划融资 2700 万美元，但实际获得 1 亿美元资金。
+点击查看原文>]]></summary>
+        <author>
+            <name>凌敏</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有同行大佬嘛，帮忙看看简历，谢谢。]]></title>
+        <id>792796</id>
+        <link href="https://www.v2ex.com/t/792796"/>
+        <updated>2021-07-30T14:04:03.000Z</updated>
+        <summary type="html"><![CDATA[duhb: 
+我的简历经过了几个版本的优化，总感觉依然不满意。也问了几个在大厂的同行朋友，看了看他们的简历，个人感觉也很一般，有的甚至就短短几行字，试问怎样写一份好的简历？
+下面是我的简历，已做脱敏处理。
+https://www.965.one/2021/06/29/resume/]]></summary>
+        <author>
+            <name>duhb</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[中国队第19枚金牌]]></title>
+        <id>https://m.idai.ly/se/168g8i</id>
+        <link href="https://m.idai.ly/se/168g8i"/>
+        <updated>2021-07-30T14:00:00.000Z</updated>
+        <summary type="html"><![CDATA[中国选手马龙赢得2020东京奥运会乒乓球男子单打金牌，东京体育馆。7月30日，马龙在男单决赛中以4:2的成绩战胜队友樊振东，赢得中国队本届奥运会第19枚金牌。32岁的马龙是中国男子乒乓球队现任队长，亦是首位集奥运会、世锦赛、世界杯、亚运会、亚锦赛、亚洲杯、巡回赛总决赛、全运会男单冠军于一身的乒乓球超级全满贯选手。24岁的樊振东是一名现役军人，2012年入选国家队，目前世界排名第一位。摄影师：Hedayatullah Amid]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[干货 | Flutter控件CustomScrollView原理解析及应用实践]]></title>
+        <id>https://www.infoq.cn/article/Uz3HblaD0EGuBEZrGShk?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/Uz3HblaD0EGuBEZrGShk?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-30T14:00:00.000Z</updated>
+        <summary type="html"><![CDATA[说起移动端跨平台解决方案，Flutter无疑是最近被谈到最多的话题。相对于React Native这样的前端技术栈，Flutter更贴近于客户端的技术栈特性，所以迅速获得大批原移动端开发的热烈拥护，再加上其优秀的渲染性能和友好的开发模式，目前已经在业内被广泛使用。
+
+携程酒店研发从去年底开始对Flutter进行可行性调研，在今年年初陆续完成了酒店详情页和酒店列表页的转Flutter工作，通过这项工作，实现了客户端技术栈的统一，大大提高了研发效率和双端一致性。在Flutter开发的过程中，对CustomScrollView的使用是比较多的，这也是我们开发过程中比较重要和复杂的控件。    
+ 
+
+
+图1  CustomScrollView可承载的子布局类型
+ 
+CustomScrollView是Flutter的SDK提供的实现长列表的控件。它像一个强大的粘合剂，如图1所示在此控件中我们可以将各种不同的布局，比如列表，网格，瀑布流，吸顶组件等，在其里面组合，实现较为复杂的页面。以往在Native的开发中，官方组件没有提供如此强大的组合能力，我们在Native中实现列表中组合不同布局，或者是通过index映射布局类型这种异构的方式，或者需要自己去自定义一个能够组合不同布局的控件，都没有CustomScrollView方便。
+点击查看原文>]]></summary>
+        <author>
+            <name>携程技术</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Pixel 4A 屏幕裂了，广州有手机店可以修吗？]]></title>
+        <id>792795</id>
+        <link href="https://www.v2ex.com/t/792795"/>
+        <updated>2021-07-30T13:42:51.000Z</updated>
+        <summary type="html"><![CDATA[persimmon: RT and 不想寄修]]></summary>
+        <author>
+            <name>persimmon</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[js 能同时监听两个方向键吗， canvas 画图，想控制八方向移动]]></title>
+        <id>792794</id>
+        <link href="https://www.v2ex.com/t/792794"/>
+        <updated>2021-07-30T13:31:48.000Z</updated>
+        <summary type="html"><![CDATA[zxCoder: 
+网上找了个解决方案，效果不太好
+document.onkeydown=function (e){
+    console.log(e.key);
+    switch (e.key){
+        case "ArrowLeft":
+            dx-=5;
+            break;
+        case "ArrowRight":
+            dx+=5;
+            break;
+        case "ArrowUp":
+            dy-=5;
+            break;
+        case "ArrowDown":
+            dy+=5;
+            break;
+    }
+}
+
+document.onkeyup=function (e){
+    console.log(e.key);
+    switch (e.key){
+        case "ArrowLeft":
+            dx=0;
+            break;
+        case "ArrowRight":
+            dx=0;
+            break;
+        case "ArrowUp":
+            dy=0;
+            break;
+        case "ArrowDown":
+            dy=0;
+            break;
+    }
+}
+
+
+window.setInterval(()=>{
+    // ...
+},100);]]></summary>
+        <author>
+            <name>zxCoder</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[evernote 打过折吗？]]></title>
+        <id>792793</id>
+        <link href="https://www.v2ex.com/t/792793"/>
+        <updated>2021-07-30T13:31:12.000Z</updated>
+        <summary type="html"><![CDATA[blackbeardd: 
+挺喜欢用这个软件的，作为一个笔记本觉得挺不错。国内的印象笔记经常打折，便宜的时候，专业版也才几十块钱一年，但是因为数据库在国内，用着总觉得不放心，想转 evernote 。然而去官网看了一下价格以后。。。专业版 9.9 刀 /月，一年不得上百刀，用不起呀。。。所以就想知道 evernote 会不会像印象笔记这样子打折。]]></summary>
+        <author>
+            <name>blackbeardd</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Chromium 跳转到推广链接，最终排查出是 「扩展管理器(Extension Manager)」]]></title>
+        <id>792792</id>
+        <link href="https://www.v2ex.com/t/792792"/>
+        <updated>2021-07-30T13:27:54.000Z</updated>
+        <summary type="html"><![CDATA[input2output: 
+1.发现问题：
+之前访问 taobao, jd, amazon 的时候，会发现第一个 Tab 会闪一下，以为是 Chromium 的 bug，也没在意。
+Desmos，就在我搜索硬盘相关信息时，Desmos 弹窗问我是否确定离开，于是发现不对劲，点击确定，居然发现跳到了 union-click.jd.com 的一个链接
+union-click.jd.com，发现有多次历史，忍不了了，于是开始找原因   
+2.初步搜索
+又把跳转后的链接找来
+https://wdc.jd.com/?cu=true&utm_source=dh.tbyuantu.com&utm_medium=tuiguang&utm_campaign=t_1000537640_&utm_term=...
+
+在 ~/.config/chromium 里用 
+$ grep -Ril "tbyuantu" .
+$ grep -Ril "union-click" .
+
+命令搜索，只找到几个关系不大的文件，关于拓展的信息没有找到
+t_1000537640_ 字段，找到一篇公众号，但与我已用方法相同，只好自己探寻原因  
+3.再次探索
+整理了一下已知信息，既然只在第一个 Tab 里跳转，那我就守株待兔好了
+union-click.jd.com 和 dh.tbyuantu.com 指向了无效的地址
+注：oozo.net 是我的网站，也就是说，它会自动跳回原网站
+gjldcdngmdknpinoemndlidpcabkggco 发出的，而红色的那个则是由 dhdgffkkebhmkfjojejmpbldmpobfkfo 发出的，之所以被取消，是因为我 用 SwitchyOmega 指向了无效代理，它又防止被发现才取消的
+4.整理信息
+由于我对 dhdgffkkebhmkfjojejmpbldmpobfkfo 是比较信任的，虽然鼠标放上去显示来自于它，但导出 har 文件后并没有找到它，也看了一下相关 js 代码，没有什么问题，估计是我使用 dev tools 的方法不正确（dhdgffkkebhmkfjojejmpbldmpobfkfo 里已关闭所有插件）
+gjldcdngmdknpinoemndlidpcabkggco 上，打开
+chrome-extension://gjldcdngmdknpinoemndlidpcabkggco/ct.js
+
+一搜索，就找到了跳转的地址 p.extfun.com，终于破案了
+5.相关信息
+dhdgffkkebhmkfjojejmpbldmpobfkfo  :  Tampermonkey
+gjldcdngmdknpinoemndlidpcabkggco  :  Extension Manager
+chrome-extension://gjldcdngmdknpinoemndlidpcabkggco/ct.js 的存档
+V2EX 上有相同遭遇的帖子]]></summary>
+        <author>
+            <name>input2output</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有交流 nft 的吗]]></title>
+        <id>792791</id>
+        <link href="https://www.v2ex.com/t/792791"/>
+        <updated>2021-07-30T13:12:52.000Z</updated>
+        <summary type="html"><![CDATA[scalaer: 
+今天在 opensea 上传了朋友的作品, 出售手续费就要 28 刀.....
+work
+各位是以什么姿势玩的]]></summary>
+        <author>
+            <name>scalaer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[终于花时间把游戏框架的关卡编辑器弄出来了用 C# 写的，框架用的是 MonoGame]]></title>
+        <id>792790</id>
+        <link href="https://www.v2ex.com/t/792790"/>
+        <updated>2021-07-30T13:02:11.000Z</updated>
+        <summary type="html"><![CDATA[ChrisFreeMan: 
+废话不多说直接上代码吧
+https://github.com/ChrisChou-freeman/LevelEditorByMonoGame
+S 键保存
+G 键显示或者隐藏网格]]></summary>
+        <author>
+            <name>ChrisFreeMan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[大家的年中体检结果都怎么样？身体还好吗？]]></title>
+        <id>792789</id>
+        <link href="https://www.v2ex.com/t/792789"/>
+        <updated>2021-07-30T12:53:33.000Z</updated>
+        <summary type="html"><![CDATA[maninfog: 
+刚体检完，个人的的检测报告显示需要注意的有 2 项：
+尿酸偏高，接近 600 umol/L, 让调整饮食结构，少熬夜。
+慢性咽炎。建议多喝水，少吃辣，不抽烟喝酒。
+目前这两项似乎没给生活带来什么困扰，不过我这个尿酸还是挺吓人的，以后还是要注意下。不知道大家的结果怎么样呢？]]></summary>
+        <author>
+            <name>maninfog</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有什么单词管理软件， 可以自定义语音源、音标、释义 等信息？]]></title>
+        <id>792788</id>
+        <link href="https://www.v2ex.com/t/792788"/>
+        <updated>2021-07-30T12:52:07.000Z</updated>
+        <summary type="html"><![CDATA[piqizhu8: 
+市面上大多数背单词 app 、词典 app 我都用过，这些 app 都偶尔有几个单词， 注释、释义、发音 等不正确、甚至南辕北辙
+只要一个 app 里，出现两次错误，我就不咋信任它了， 感觉很头疼， 谁知道将来还会遇到多少错误的，
+之所以发现错误，是因为刚好这几个单词我认识， 还有很多我不认识的单词， 可能不知不觉中，把我给误导了
+所以才提这个问题
+谢谢]]></summary>
+        <author>
+            <name>piqizhu8</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[编程语言巅峰之战，谁才是真正的王者？]]></title>
+        <id>https://www.infoq.cn/article/JGmaQqGwqaFpiV9rJGV1?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://www.infoq.cn/article/JGmaQqGwqaFpiV9rJGV1?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-30T12:44:32.000Z</updated>
+        <summary type="html"><![CDATA[编程语言排名一直以来都是备受争议的话题，当我们彼此之间讨论的时间不同，角度不同，结果往往就会不同。因此，我们看到很多机构或者组织每年都会发布很多编程语言排行榜，这些排行榜的算法、角度都不尽相同。
+ 
+TOIBE编程语言排行榜就是编程语言流行趋势的一个重要指标，它基于互联网有经验的开发者、课程、第三方厂商数量等数据，每个月更新排名情况。
+ 
+今年是TOIBE编程语言排行榜发布的20周年， TOIBE榜单第一次发布时，排名前三的编程分别是Java、C和C++，而在今年7月的最新榜单中，排名前三的编程语言分别是C、Java和Python。
+ 
+TIOBE编程语言排行榜虽然是比较权威和流行的榜单，但是它的排名结果主要体现了国外开发者的喜好。而目前国内整体 IT 技术发展与国外有很大不同，因此，我们需要一个真实客观反映各种编程语言在国内排名的榜单。
+ 
+因此，InfoQ 特别推出【InfoQ 编程语言排行榜】，征集国内开发者、程序员对编程语言的喜爱情况。在榜单问题设置方面，我们邀请国内的技术专家与编辑同学共同拟定了八个有代表性的问题，同时精心挑选了当前最流行、最受欢迎的编程语言，诚邀您来投上宝贵一票。
+点击查看原文>]]></summary>
+        <author>
+            <name>田晓旭</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[App Store 崩了？]]></title>
+        <id>792787</id>
+        <link href="https://www.v2ex.com/t/792787"/>
+        <updated>2021-07-30T12:42:28.000Z</updated>
+        <summary type="html"><![CDATA[neiltroyer849: 我自己的是崩了，截止发帖前发现同样有大规模用户在微博上报告 app store 崩溃了。但上了🪜却能用？]]></summary>
+        <author>
+            <name>neiltroyer849</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[mybatis batch 插入]]></title>
+        <id>792786</id>
+        <link href="https://www.v2ex.com/t/792786"/>
+        <updated>2021-07-30T12:39:27.000Z</updated>
+        <summary type="html"><![CDATA[cmxzj: 
+使用 mybatis executortype.batch 每批插入 1000 条数据，遇到报错应该怎样日志打印出来报错的那条数据呢，LOG 开的是 INFO，目前想到的是 try catch 插入的方法打印报错的整个 1000 条数据。。]]></summary>
+        <author>
+            <name>cmxzj</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[app store 又挂了？]]></title>
+        <id>792785</id>
+        <link href="https://www.v2ex.com/t/792785"/>
+        <updated>2021-07-30T12:23:46.000Z</updated>
+        <summary type="html"><![CDATA[Qzier: 几台设备都不开 app store 。]]></summary>
+        <author>
+            <name>Qzier</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[分享一个 electron 的工具箱]]></title>
+        <id>792784</id>
+        <link href="https://www.v2ex.com/t/792784"/>
+        <updated>2021-07-30T12:21:16.000Z</updated>
+        <summary type="html"><![CDATA[muwoo: 在 mac 上装了个虚拟机，终于把 rubick 的 windows 版本跑起来了。快来体验尝试吧！一款基于 electron 的开源工具箱。https://github.com/clouDr-f2e/rubick]]></summary>
+        <author>
+            <name>muwoo</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[GitLab - 怎么禁止特定仓库的动态出现在 Activity？]]></title>
+        <id>792783</id>
+        <link href="https://www.v2ex.com/t/792783"/>
+        <updated>2021-07-30T12:19:47.000Z</updated>
+        <summary type="html"><![CDATA[JasonLaw:]]></summary>
+        <author>
+            <name>JasonLaw</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[华硕 koolshare 固件 酸酸乳]]></title>
+        <id>792782</id>
+        <link href="https://www.v2ex.com/t/792782"/>
+        <updated>2021-07-30T12:19:09.000Z</updated>
+        <summary type="html"><![CDATA[raka: 我找不到最新版本的时候华硕官改的酸酸乳插件。。。各位大侠，哪里有下，请指导。]]></summary>
+        <author>
+            <name>raka</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[xshell 对 ssh 客户端进行了优化吗，在 xshell 连接主机后不会自己断开，在 terminal 中 ssh 连主机过段时间显示进程退出，要重新连]]></title>
+        <id>792781</id>
+        <link href="https://www.v2ex.com/t/792781"/>
+        <updated>2021-07-30T12:17:53.000Z</updated>
+        <summary type="html"><![CDATA[proxytoworld:]]></summary>
+        <author>
+            <name>proxytoworld</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[大佬们，用 k8s+Jenkins 去构建 Android 的话 gradle 缓存怎么搞？]]></title>
+        <id>792778</id>
+        <link href="https://www.v2ex.com/t/792778"/>
+        <updated>2021-07-30T12:02:30.000Z</updated>
+        <summary type="html"><![CDATA[mio4kon: 现在是 gradle home 的缓存放在 nfs 服务器上，然后 pod 挂载 gradle 缓存的 pvc，但是多个 pod 并行执行的话会有文件锁直接导致报错。
+现在的想法是每次构建前把 nfs 的缓存目录 copy 到 pod 的 gradle home，但是 gradle home 太大了（ 15g 左右），本机 cp 都要几分钟，影响构建时间，而且如何更新 gradle home 的内容也很麻烦
+大佬们有没有好的解决方案？]]></summary>
+        <author>
+            <name>mio4kon</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Iterm2 在使用 zsh-autosuggestions 时闪烁]]></title>
+        <id>792777</id>
+        <link href="https://www.v2ex.com/t/792777"/>
+        <updated>2021-07-30T11:55:34.000Z</updated>
+        <summary type="html"><![CDATA[LotusChuan: 
+最近从 Terminal.app 转到了 Iterm2，在使用的时候发现输入命令的时候 zsh-autosuggestions 插件会出现自动推荐的命令闪烁的问题。也就是说后面可以自动补全的那段灰色的指令会随着输入闪烁，出现频率特别高。
+在使用 Terminal.app 的时候没有遇到过这种问题。个人感觉应该是渲染问题之类的，但实在是找不到具体原因，有人遇到过类似的问题吗？真不行只能换回 Terminal.app 了]]></summary>
+        <author>
+            <name>LotusChuan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[想给老公入一个文石 Boox Nova3，有用过的 V 友反馈一下使用体验吗？]]></title>
+        <id>792776</id>
+        <link href="https://www.v2ex.com/t/792776"/>
+        <updated>2021-07-30T11:53:59.000Z</updated>
+        <summary type="html"><![CDATA[faustina2018: 
+我老公业余时间热爱读书
+所以 2013 年给他入了 Kindle Paperwhite
+前两年又给他升级成了 Kindle Oasis3
+但他最近喜欢上了微信读书
+觉得微信读书的书目更全 体验更好 也更方便
+无奈 Kindle Oasis3 对微信读书网页版的支持很差（听说 Oasis 之外的 kindle 都还不错，只有 oasis 用起微信读书来很别扭）
+所以我考虑今年七夕给他换一个能安装微信读书的墨水屏阅读器
+目前想要给他换一个功能和体验上和 Kindle Oasis 接近的
+性能稳定、品质有保障的阅读器
+且支持安装各类在线阅读软件
+目前初步选了文石 Boox Nova3
+一方面是因为它本身是微信读书阅读器的代工
+所以兼容上肯定有保障
+另一方面是它 7.3 的屏幕和机身重量也是刚刚好
+目前看网上的各类测评都还不错
+就是不知道长期使用感如何 以及是否存在什么硬伤
+所以来发帖问一下用过的 V 友们体验如何
+如果不够好 是否有更合适的产品推荐
+万分感谢🙏]]></summary>
+        <author>
+            <name>faustina2018</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[电影《怒火重案》很不错]]></title>
+        <id>792775</id>
+        <link href="https://www.v2ex.com/t/792775"/>
+        <updated>2021-07-30T11:46:32.000Z</updated>
+        <summary type="html"><![CDATA[socary: 
+是暑期档最好的一部电影了，
+推荐大家去看看，]]></summary>
+        <author>
+            <name>socary</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[外包项目] Flutter 单个单个页面效果实现]]></title>
+        <id>792773</id>
+        <link href="https://www.v2ex.com/t/792773"/>
+        <updated>2021-07-30T11:42:26.000Z</updated>
+        <summary type="html"><![CDATA[huzhennan2jobs: 有收 Flutter 页面效果实现的没，单个单个页面算钱。。。
+挣点小钱]]></summary>
+        <author>
+            <name>huzhennan2jobs</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[不能通过 cglib 代理类直接设置被代理类的 public 字段的值]]></title>
+        <id>792772</id>
+        <link href="https://www.v2ex.com/t/792772"/>
+        <updated>2021-07-30T11:39:26.000Z</updated>
+        <summary type="html"><![CDATA[git00ll: 
+spring cglib 代理类，无法通过 obj$spring$proxy.name = 'xxx'的方式，为 obj 对象的 name 属性设置值。
+为什么这样呢，cglib 的原理是创建子类，那子类不也可以设置父类的 public 属性吗？求解答]]></summary>
+        <author>
+            <name>git00ll</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有哪些合理合法的大流量应用？]]></title>
+        <id>792771</id>
+        <link href="https://www.v2ex.com/t/792771"/>
+        <updated>2021-07-30T11:36:37.000Z</updated>
+        <summary type="html"><![CDATA[LnTrx: 
+最近出现了很多民用宽带（乃至商宽）没有在合同中限制流量，却因为大流量上传、下载而被“关照”的消息。  
+在没有证据的情况下直接停宽带还是不太合理，所以在这里讨论一下，当今有哪些合理合法的大流量应用？（单月可达 TB 级）  
+抛砖引玉：  
+人工智能、机器学习的数据集。这些数据集达到 100GB 的很普遍，有的单个就突破了 1TB 。下载完成后，还有可能经过处理再上传到其他地方。  
+在线观看超高清视频。b 站 4K 视频的流量可以达到 4GB/h 。一户人家平均每天累计观看 8.5 小时的 4K 视频，月流量就能达到 1TB 。  
+实时监控的异地存储。在一地安装监控，将数据实时传输到云或者另一地保存以提升安全性。由于视频是 24h 连续采集的（如果没开省流等功能），即便码率不高（ 3Mbps 以上），累积下来的上传流量也可达到 1TB 。  
+自建软件源镜像。例如自建 cnpm 仓库，光是在 V2EX 就能搜到很多讨论。这些仓库的建立和同步是很耗费流量的（ 2015 年的 cnpm 就可达 300GB ），全量同步的话达到 TB 级别应该是容易的。]]></summary>
+        <author>
+            <name>LnTrx</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How To Build An E-Commerce Site With Angular 11, Commerce Layer And Paypal]]></title>
+        <id>https://smashingmagazine.com/2021/07/ecommerce-angular11-headless-paypal/</id>
+        <link href="https://smashingmagazine.com/2021/07/ecommerce-angular11-headless-paypal/"/>
+        <updated>2021-07-30T11:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Having an e-commerce store is crucial for any store owner as more and more customers are turning to online shopping. In this tutorial, we shall go through how to create an e-commerce site with Angular 11. The site will use the Commerce Layer as a headless e-commerce API and use Paypal to process payments.]]></summary>
+        <author>
+            <name>hello@smashingmagazine.com (Zara Cooper)</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[俄「科学号」实验舱对接]]></title>
+        <id>https://m.idai.ly/se/c40I72</id>
+        <link href="https://m.idai.ly/se/c40I72"/>
+        <updated>2021-07-30T08:59:00.000Z</updated>
+        <summary type="html"><![CDATA[俄罗斯「科学号」（Nauka）实验舱正在与国际空间站自动对接。7月29日，「科学号」实验舱与空间站成功对接，但是3小时后突然意外启动推进引擎，导致空间站飞行轨道姿态发生45°变化。俄方紧急启动「进步MS-17」飞船和「星辰号」服务舱的推进引擎，以抵消「科学号」引擎推力。目前空间站已恢复正常运行姿态，「科学号」实验舱的燃料也消耗殆尽，俄宇航局仍在排查故障发生原因。摄影师：Oleg Novitsky]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[拜登要求政府雇员接种疫苗]]></title>
+        <id>https://m.idai.ly/se/e8fk8Z</id>
+        <link href="https://m.idai.ly/se/e8fk8Z"/>
+        <updated>2021-07-30T07:59:00.000Z</updated>
+        <summary type="html"><![CDATA[美国总统 Joe Biden 发表新冠疫情主题演讲，华盛顿白宫。7月29日，Biden 公布一系列敦促疫苗接种的新政策，包括美国联邦政府雇员和承包商必须接种疫苗，否则将强制每周进行核酸检测、旅行限制等严格防疫措施。他还建议地方政府为每一名新接种疫苗者提供100美元奖励，并指示国防部将新冠疫苗加入美军必种疫苗清单。7月29日，美国新增确诊92485例，单日死亡398例，人口疫苗接种率为56.7%。摄影师：Saul Loeb]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[日本单日确诊破万]]></title>
+        <id>https://m.idai.ly/se/f0a3Vh</id>
+        <link href="https://m.idai.ly/se/f0a3Vh"/>
+        <updated>2021-07-30T06:59:00.000Z</updated>
+        <summary type="html"><![CDATA[日本首相菅义伟召开新冠疫情发布会，东京。7月29日，日本政府宣布将东京都和冲绳县的紧急事态宣言延长至8月31日，并对神奈川县、埼玉县、千叶县和大阪府4地追加实施紧急事态。当天日本新增确诊10699例，创下迄今最高纪录，东京都单日确诊连续第二天超过3000例，现有病例中约70%为 Delta 变异毒株感染者。菅义伟强调，东京奥运会不是导致确诊病例激增的原因，呼吁民众在家中观看比赛以减少感染风险。摄影师：iDaily Media]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[秘鲁独立200周年]]></title>
+        <id>https://m.idai.ly/se/29341F</id>
+        <link href="https://m.idai.ly/se/29341F"/>
+        <updated>2021-07-30T06:55:00.000Z</updated>
+        <summary type="html"><![CDATA[秘鲁新一任总统 Pedro Castillo 出席就职仪式。7月28日，秘鲁新总统的就职仪式在独立战争纪念碑前举行，当天也是秘鲁脱离西班牙殖民统治宣布独立200周年。现年51岁的 Castillo 来自拥护马克思列宁主义的左翼政党「自由秘鲁党」，是秘鲁史上第一位农民出身的总统。他在就职演说中宣布以抗击新冠疫情为首要任务，承诺打击贪腐、消除社会不平等并完善教育和卫生系统。摄影师：Alberto Orbegoso]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[波音飞船推迟发射]]></title>
+        <id>https://m.idai.ly/se/1c8hd7</id>
+        <link href="https://m.idai.ly/se/1c8hd7"/>
+        <updated>2021-07-30T06:51:00.000Z</updated>
+        <summary type="html"><![CDATA[波音公司「CST-100 Starliner」载人飞船与 Altas-5 重型运载火箭抵达发射台，肯尼迪航天中心。本次测试发射任务原定于7月30日进行，由于俄罗斯「科学号」实验舱在国际空间站发生对接事故而推迟至8月3日。这将是波音载人飞船第2次无人轨道试飞，计划为空间站运送补给物资并在驻留10天后携带样本返回地球。如果试飞成功，波音公司最早将于2021年底启动首次载人飞行任务。摄影师：Joe Skipper]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[朝鲜全国军官大会]]></title>
+        <id>https://m.idai.ly/se/bc2AcV</id>
+        <link href="https://m.idai.ly/se/bc2AcV"/>
+        <updated>2021-07-30T06:47:00.000Z</updated>
+        <summary type="html"><![CDATA[朝鲜最高领导人金正恩主持第一届朝鲜人民军指挥官及政治干部讲习会，平壤。本次大会于7月24日至27日举行，金正恩在会上强调，朝鲜人民军是劳动党的武装力量，一切军事政治活动应体现党的意志和力量，听从党的指挥，践行党的要求。他表示敌对势力正在扩大先发制人打击朝鲜的能力，呼吁全体指挥官和政治干部集中力量做好准备积极应对敌方的任何军事挑衅。韩国央行7月30日发布估测数据，称朝鲜2020年 GDP 增速为-4.5%，面临1997年以来最严重的经济衰退。摄影师：KCNA]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[多伦多梵高热气球]]></title>
+        <id>https://m.idai.ly/se/7ecFzt</id>
+        <link href="https://m.idai.ly/se/7ecFzt"/>
+        <updated>2021-07-30T06:45:00.000Z</updated>
+        <summary type="html"><![CDATA[一只巨大的 Vincent van Gogh 自画像热气球在多伦多滨水区升空，宣传正在举行的「沉浸式梵高艺术展」，加拿大安大略省。这只热气球高28米，原型来自梵高1887年油画《戴灰毡帽的自画像》。由于新冠疫情呈稳定下降趋势，多伦多将从7月31日起进入解封第三阶段，重新开放餐厅、电影院、游乐场等场所营业。7月29日，加拿大单日新增确诊896例，单日死亡5例，人口疫苗接种率达71.5%。摄影师：Kyaw Soe Oo]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[美国防长访问菲律宾]]></title>
+        <id>https://m.idai.ly/se/7c9zcz</id>
+        <link href="https://m.idai.ly/se/7c9zcz"/>
+        <updated>2021-07-30T06:43:00.000Z</updated>
+        <summary type="html"><![CDATA[菲律宾总统 Rodrigo Duterte 会见美国国防部长 Lloyd Austin，马尼拉。7月29日，美国防长 Lloyd Austin 抵达东南亚之行的最后一站，与菲律宾总统进行时长75分钟的会面。双方一致同意协力抗击新冠疫情和跨国犯罪，加强海上安全和贸易投资合作。当天菲律宾防长宣布总统 Duterte 决定撤回「终止菲美《访问部队协议》」的要求，这意味着美军能够继续在菲律宾境内进行军事演习。摄影师：Robinson Ninal]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[王毅会见塔利班代表]]></title>
+        <id>https://m.idai.ly/se/e91f5i</id>
+        <link href="https://m.idai.ly/se/e91f5i"/>
+        <updated>2021-07-30T06:41:00.000Z</updated>
+        <summary type="html"><![CDATA[中国外交部长王毅会见阿富汗塔利班政治委员会负责人、二号人物 Mullah Abdul Ghani Baradar，天津。7月28日，王毅在会晤中表示，中国是阿富汗最大邻国，始终尊重阿主权独立和领土完整，坚持不干涉阿内政，奉行面向全体阿富汗人民的友好政策，希望阿塔同「东伊运」等恐怖组织彻底划清界限并予以坚决有效打击。塔利班方表示，中国一直是阿富汗人民值得信赖的好朋友，决不允许任何势力利用阿领土做危害中国的事情，希望中方更多参与阿和平重建进程。摄影师：Li Ran]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[英国夜行动物主题展]]></title>
+        <id>https://m.idai.ly/se/7faGwL</id>
+        <link href="https://m.idai.ly/se/7faGwL"/>
+        <updated>2021-07-30T06:39:00.000Z</updated>
+        <summary type="html"><![CDATA[英国朗利特野生动物园，游客们正在观看一座猫头鹰造型的巨型稻草塑像。这家动物园正在举办名为「月亮之下」（Under the Moon）的夜行动物主题展，展出8座以英国代表性夜行动物为原型创作的巨型稻草雕塑，分别为猫头鹰、狐狸、鼹鼠、獾、刺猬、蟾蜍、蜗牛和蜘蛛。这些塑像由3位英国本土艺术家设计创作，单件尺寸高达3米，展期持续至9月12日。摄影师：Steve Mytton]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[中国队第18枚金牌]]></title>
+        <id>https://m.idai.ly/se/f25qQI</id>
+        <link href="https://m.idai.ly/se/f25qQI"/>
+        <updated>2021-07-30T04:15:00.000Z</updated>
+        <summary type="html"><![CDATA[中国选手王懿律和黄东萍赢得2020东京奥运会羽毛球混合双打项目金牌，武藏野之森综合体育广场。7月30日，王懿律和黄东萍以2:1战胜队友郑思维和黄雅琼，摘得中国羽毛球队在本届奥运会第一枚金牌，亦是中国队第18枚金牌。中国羽毛球队的两组选手在世界混双排名第一和第二，本届奥运会小组赛中他们均获得全胜纪录，让中国队在半决赛提前锁定冠亚军。摄影师：Rob Carr]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[中国队第17枚金牌]]></title>
+        <id>https://m.idai.ly/se/c1dZY0</id>
+        <link href="https://m.idai.ly/se/c1dZY0"/>
+        <updated>2021-07-30T03:42:00.000Z</updated>
+        <summary type="html"><![CDATA[中国选手朱雪莹赢得2020东京奥运会女子蹦床项目金牌，东京有明体操馆。7月30日，朱雪莹以56.635分的成绩夺冠，为中国队摘得本届奥运会第17枚金牌，另一名中国选手刘灵玲以56.350分获得银牌。两名中国选手在资格赛和决赛中保持稳定发挥，始终包揽前两名位置。朱雪莹1998年出生在北京，10岁开始练习蹦床，15岁入选国家队，这是她首次登上奥运赛场。摄影师：iDaily Media]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[中国队第16枚金牌]]></title>
+        <id>https://m.idai.ly/se/51aGu9</id>
+        <link href="https://m.idai.ly/se/51aGu9"/>
+        <updated>2021-07-30T02:57:00.000Z</updated>
+        <summary type="html"><![CDATA[中国选手汪顺赢得2020东京奥运会游泳男子200米个人混合泳项目冠军，东京水上运动中心。7月30日，汪顺以1分55秒的成绩夺得冠军并刷新亚洲纪录，摘得中国队在本届奥运会第16枚金牌。现年27岁的汪顺已参加3届奥运会，2016年里约奥运会上摘得该项目铜牌。本场比赛过程中，汪顺在蝶泳、仰泳和蛙泳环节结束后排名第二，最后50米自由泳冲刺顺利夺冠。摄影师：Oli Scarff]]></summary>
+        <author>
+            <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[星环研发总监为你揭秘TDH8.0的前因后果 | TDH8.0 使用必读]]></title>
+        <id>https://xie.infoq.cn/article/51a9ef9a5cd1025df2fa0bc3d?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://xie.infoq.cn/article/51a9ef9a5cd1025df2fa0bc3d?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-29T20:45:12.000Z</updated>
+        <summary type="html"><![CDATA[星环科技于2021年3月发布了星环极速大数据平台TDH的8.0版本。相信很多用户都对这款产品非常感兴趣。本系列文章向您逐一介绍TDH8.0全新功能和技术创新。帮助企业级数据平台用户更全面、深入地了解前沿的大数据技术，更好地技术选型。
+点击查看原文>]]></summary>
+        <author>
+            <name>星环科技</name>
         </author>
     </entry>
     <entry>
@@ -140,115 +1169,37 @@ The post GitHub Explains the Open Graph Images appeared first on CSS-Tricks. You
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[给主流 Linux 发行版离线安装补丁的正确姿势是?]]></title>
-        <id>792592</id>
-        <link href="https://www.v2ex.com/t/792592"/>
-        <updated>2021-07-29T17:06:40.000Z</updated>
-        <summary type="html"><![CDATA[Osk: 
-编译安装, 工作量大, 不打包成对应的包(deb/rpm 等)会带来潜在问题等.
-去源里面装下载二进制包, 依赖关系处理可能会变得极为恐怖.
-那么问题来了, 给主流发行版离线打补丁(某个服务或者整个系统)的姿势是?]]></summary>
+        <title type="html"><![CDATA[声网 Agora 音频互动 MoS 分方法：为音频互动体验进行实时打分]]></title>
+        <id>https://xie.infoq.cn/article/696ed87cc3c526bb5d26e00f5?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://xie.infoq.cn/article/696ed87cc3c526bb5d26e00f5?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-29T19:18:50.000Z</updated>
+        <summary type="html"><![CDATA[实时了解你的用户的通话体验
+点击查看原文>]]></summary>
         <author>
-            <name>Osk</name>
+            <name>声网Agora</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[在市面上已经有这么多糟糕的产品做典型的情况下，为什么还有人前仆后继的继续去做更糟糕的产品]]></title>
-        <id>792591</id>
-        <link href="https://www.v2ex.com/t/792591"/>
-        <updated>2021-07-29T17:00:00.000Z</updated>
-        <summary type="html"><![CDATA[tonghuashuai: 想了解下除了商业因素以外还可能有哪些原因呢？]]></summary>
+        <title type="html"><![CDATA[直播时各种背景是怎么实现的？聊一聊虚拟背景背后的技术]]></title>
+        <id>https://xie.infoq.cn/article/8c5ce53c356f24dc3581cdbae?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://xie.infoq.cn/article/8c5ce53c356f24dc3581cdbae?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-29T15:31:16.000Z</updated>
+        <summary type="html"><![CDATA[2020 年一场突如其来的疫情闯进了我们的生活，上网课、在家办公逐渐成为了一种常态，为了更好地保护用户隐私、提升用户体验，各大在线办公软件相继推出了虚拟背景功能，营造学习、办公氛围的同时，又能避免家中环境不够正式的窘境。
+点击查看原文>]]></summary>
         <author>
-            <name>tonghuashuai</name>
+            <name>阿里云视频云</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[20210730 午夜俱乐部]]></title>
-        <id>792589</id>
-        <link href="https://www.v2ex.com/t/792589"/>
-        <updated>2021-07-29T16:26:28.000Z</updated>
-        <summary type="html"><![CDATA[kkocdko: 省教育厅就是不肯早点放出高考录取结果，看到新生群里同学纷纷晒出手头的通知书，总是有种莫名的危机感。
-再一想，从小到大，这样的事，我见过了太多。家人恰好在体制内工作，见到许多命令，许多文件，许多公示的项目，都要一拖再拖。
-这总有许多的缘由，也会有许多的人对我说：你还年轻，你不懂。
-可这真的是“我不懂”么？我只看见众多材料堆积，工作人员在旁侃大山而毫无处理之动机。我只看见一纸公文于侧，相关领导安坐抽烟却莫有签名之意图。问之，不过是“来日方长”而已。]]></summary>
+        <title type="html"><![CDATA[【共识专栏】共识的分类（上）]]></title>
+        <id>https://xie.infoq.cn/article/179fb29a3e3be880d549073d9?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://xie.infoq.cn/article/179fb29a3e3be880d549073d9?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-29T14:56:35.000Z</updated>
+        <summary type="html"><![CDATA[从早期的分布式一致性算法的缓慢发展到现如今区块链共识的百花齐放，共识算法的发展已经走过了四十年左右的时光。不同的共识算法的侧重点不同，因此它们所面临的问题、环境也不一样。本文将从如下几个不同角度对共识算法进行分类
+
+点击查看原文>]]></summary>
         <author>
-            <name>kkocdko</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[M1 Mac mini OS 11.5 Edge 和 Chrome 卡顿至无法正常使用]]></title>
-        <id>792588</id>
-        <link href="https://www.v2ex.com/t/792588"/>
-        <updated>2021-07-29T16:12:40.000Z</updated>
-        <summary type="html"><![CDATA[noparking188: 
-如题，实在受不了吐槽一下，还是就我不幸这样 :(
-Edge 是适配 m1 的最新版，Chrome 亦是
-看 B 站视频会卡爆，基本上每个视频都无法正常观看结束，大部分是一打开就卡了，或者是看一小段就卡了，我现在都复制链接到 Safari 上看
-有时候打开其它网页浏览也会卡顿，完全退出浏览器后，首次打开，加载网页极慢，等个二三十秒半分多钟吧
-我在 Windows 上用 Edge 非常正常，丝滑体验
-已试过重新安装 Edge，无用
-我要等 Monterey 正式推送再看看，还是这样要找售后咯]]></summary>
-        <author>
-            <name>noparking188</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[上海电信出口又有动作了]]></title>
-        <id>792587</id>
-        <link href="https://www.v2ex.com/t/792587"/>
-        <updated>2021-07-29T16:08:28.000Z</updated>
-        <summary type="html"><![CDATA[my2492: 在 X 设备后面又多了一台设备，202.97.93.118 ，目前发现把 hinet 和 kt 的两条线接到这台路由器上了
-这种现象曾经出现过，当时多了 202.97.70.22 和 202.97.70.26 ，把 bbtec 等线路接过去了，后来这个又消失了。每次新建的都是把这些直接拉到上海的运营商的线接过去。
-推测又有新建计划，之前出现这种现象后就新建了新的 I 和 X]]></summary>
-        <author>
-            <name>my2492</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[前端] 分享个最近终于提交到 1.0 版的模拟数据的库~]]></title>
-        <id>792584</id>
-        <link href="https://www.v2ex.com/t/792584"/>
-        <updated>2021-07-29T15:01:14.000Z</updated>
-        <summary type="html"><![CDATA[xuanzizhe: 
-前言
-不知不觉这个库也已经创建有三年多了，因为对应的这种成熟库实在是挺多的，比如国外的 faker.js 、国内的 mockjs，使用者也挺多，所以这个库也就默默无闻的搁在那了，毕竟轮子不需要多，有一两个好用的就可以了，其它的都徒增学习成本，也在情理之中（国人写的库好像有点难推广，也可能时机太晚）。至于现在又把它拿出来，主要还是觉得库本身的设计还算有些优势，扩展性比较好，能满足一些需要自由发挥，或者更精准数据的同学的某些需求，这样能发挥它的一点点作用也就觉得比较安慰没有白写了。
-上地址
-其它的就不多说了，最近把文档也完善了一下，看中文的就好（英文嘛，你懂的~:）。  
-Github: https://github.com/suchjs/such
-文档：https://suchjs.github.io/vp-suchjs
-示例：https://jsbin.com/pulojij/edit?html,output
-欢迎有用得到的 V 友们提供意见，将尽量完善库的功能；或者有兴趣 PR，那就更美了~]]></summary>
-        <author>
-            <name>xuanzizhe</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[为啥突然 npm 突然连不上网络了]]></title>
-        <id>792583</id>
-        <link href="https://www.v2ex.com/t/792583"/>
-        <updated>2021-07-29T15:00:39.000Z</updated>
-        <summary type="html"><![CDATA[zxCoder: 
-刚才想用 vue-cli 创建一个 vue 项目，一直卡住
-然后 npm 安装包也卡住，完全没反应
-设置了淘宝源也不行，电脑代理没问题
-奇怪了，是我的问题吗
-发现 ping registry.npmjs.org  ping 不通
-沉了沉了。。。wsl 的网络问题，啥都 ping 不通]]></summary>
-        <author>
-            <name>zxCoder</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[大厂的 app 是怎么渲染页面的]]></title>
-        <id>792582</id>
-        <link href="https://www.v2ex.com/t/792582"/>
-        <updated>2021-07-29T15:00:27.000Z</updated>
-        <summary type="html"><![CDATA[ljzxloaf: 
-是一次性从后端拿到组装完整的数据再渲染，还是分模块去调不同的业务接口（或者是其他方式？），也就是数据是前端自己组装的还是后端组装的。如果是前端组装的话，怎么动态去改变页面布局，一定要等到发版或者跨平台技术？如果是后端组装的话，怎么样保证数据还没到前端的时候的用户体验。
-脑洞 1: 后端数据组装完成后，用 http stream 先传 metadata，主要是一些模块的元数据，前端先把框架渲染出来，渲染过程中后面的模块数据也接收到了，再渲染具体模块。app 前端只针对模块类型写渲染逻辑和将 metadata 解析成页面的逻辑，不写具体的页面。
-脑洞 2：把这些模块再抽象一层，是不是就成了类似 html 的东西了。像 flutter 这种技术，是不是就是新时代的 js 和 html ？]]></summary>
-        <author>
-            <name>ljzxloaf</name>
+            <name>趣链科技</name>
         </author>
     </entry>
     <entry>
@@ -263,16 +1214,6 @@ The post So you want to self-publish books and courses on programming appeared f
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[大佬们， Mac 上录屏带声音的最优雅解决方案是什么]]></title>
-        <id>792580</id>
-        <link href="https://www.v2ex.com/t/792580"/>
-        <updated>2021-07-29T14:49:22.000Z</updated>
-        <summary type="html"><![CDATA[jakezh:]]></summary>
-        <author>
-            <name>jakezh</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Developer-Friendly Passwordless Auth]]></title>
         <id>https://css-tricks.com/?p=345260</id>
         <link href="https://css-tricks.com/developer-friendly-passwordless-auth/"/>
@@ -281,326 +1222,6 @@ The post So you want to self-publish books and courses on programming appeared f
 The post Developer-Friendly Passwordless Auth appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.]]></summary>
         <author>
             <name>Chris Coyier</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[阿里巴巴] [2022 届] [社招] [校招] 部门内推&组内直招，全程跟进]]></title>
-        <id>792579</id>
-        <link href="https://www.v2ex.com/t/792579"/>
-        <updated>2021-07-29T14:46:47.000Z</updated>
-        <summary type="html"><![CDATA[arfgaerg: 
-[阿里巴巴]  [ 2022 届] 部门内推&组内直招，全程跟进
-校招内推链接（请微信 /支付宝打开）：
-http://alibaba.tupu360.com/campusActivity/getActivityInfo?activityCode=jF9gnmpIyl1G92js7XIjQ00g4znxI3euRHZm2z8EgY4%3D&enter=menu
-也可以直接 微信号 发我邮箱，看到就回，实时答疑
-hu.fwh@alibaba-inc.com
-简历也可以直接发邮箱
-主要内推 测试开发 岗位，其他也可以帮忙内推和跟踪
-部门简介：
-天猫国际，阿里巴巴三大核心战略之一国际化战略中的核心部分，是负责‘全球买、全球卖’中的‘全球买’的主阵地。天猫国际是中国消费升级的首选跨境消费平台，作为阿里巴巴完整的电商生态环境中的重要一环，是阿里经济体 5 年 2000 亿美金进口承诺的主力担当。我们依托淘系电商生态，致力于在全球的品牌和商家同中国庞大的消费者市场之间构建高效率、有温度的消费平台，通过数据和技术能力，为品牌、商家和消费者提供优质服务。在这里：
-1.你将致力于进口相关的电商、供应链领域技术研发；
-2.你将致力于应用人工智能的最新技术，提高自动化和智能化程度，大幅提升业务效率
-3.你将有机会深入到最前沿的大数据电商系统的设计和研发。
-岗位职责：
-测试开发
-岗位职责
-1 、参与互联网软件产品测试的全流程，包括参与需求分析、设计评审，制定测试计划，设计和执行测试用例，进行缺陷跟踪和软件质量分析等；
-2 、通过技术手段保证被测系统的质量，并通过测试流程和方法创新，努力提升研发的质量和效率；
-岗位要求
-1 、2021 年 11 月-2022 年 10 月毕业，本科以上学历，计算机相关专业
-2 、熟悉 c++、java 、python 等至少一种编程语言；熟悉数据结构、常用算法
-3 、熟悉基础的系统结构、操作系统、数据库、网络、分布式系统等知识；
-面向人群：
-毕业时间在 2021 年 11 月 ~ 2022 年 10 月之间的海内外院校毕业生
-招聘流程：
-内推
-素质测评&在线笔试
-简历评估
-面试
-发放 offer]]></summary>
-        <author>
-            <name>arfgaerg</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[有啥免费、开源的类似 lingq、LWT ◆ Learning with Texts 这样的英语学习工具？]]></title>
-        <id>792577</id>
-        <link href="https://www.v2ex.com/t/792577"/>
-        <updated>2021-07-29T14:39:49.000Z</updated>
-        <summary type="html"><![CDATA[find456789: 
-初步体验下来，吸引我的功能就是：       
-1 、导入自定义的英语文章
-我感觉这个功能很棒，我初步搜索后发现  只有：         
-收费的 lingq （对我来说太贵） ，
-都不太满意
-请问还有其他类似的工具，或者软件吗？]]></summary>
-        <author>
-            <name>find456789</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Big Sur 11.5 及 11.5.1， Cap-Lock 键造成输入法及系统严重卡顿]]></title>
-        <id>792576</id>
-        <link href="https://www.v2ex.com/t/792576"/>
-        <updated>2021-07-29T14:33:48.000Z</updated>
-        <summary type="html"><![CDATA[meloyang05: 
-我的 16 寸 mbp 在两个星期前 Big Sur 发布 11.5 RC 版本的时候就升级了，升级后正常使用 1 天后，发现在搜狗输入法下使用 Cap-Lock 键切换大小写有严重的迟滞感，并且造成系统卡顿。
-我刚开始以为是升级后短暂的 bug，于是试试能否重启解决。重启后 Cap-Lock 键造成卡顿的情况消失。但是，一旦机器盒盖进入休眠状态一段时间，机器唤醒后再按 Cap-Lock 键，迟滞和卡顿又回来了，而且，机器睡眠的时间越长，迟滞和卡顿感越明显。
-我于是觉得可能是搜狗输入法和新系统不兼容造成的，于是卸载搜狗输入法使用系统自带输入法。但发现，在系统输入法下，在长时间休眠后使用 Cap-Lock 键进行输入法切换同样有很严重的卡顿感，具体表现为你按下 Cap-Lock 键后连续快速输入几个英文字符，系统是没有反应的，卡顿 1 、2 秒后屏幕上会瞬间蹦出之前输入的内容。
-之后我在活动监视器器和 terminal top 命令中观察了一下按下 Cap-Lock 键后系统的资源占用情况，发现按下 Cap-Lock 键后系统 system 的 CPU 占用率显著升高，且系统休眠时间越长，唤醒后 Cap-Lock 键所造成了的 CPU 资源占用越高。休眠一小时后唤醒，造成的 CPU 占用率在 5%~10%左右，如果休眠一晚上之后唤醒，造成的 CPU 占用率会飙升到 30%以上。此时如果连续快速按 Cap-Lock 键，整个系统甚至会卡住不动 3 、4 秒，这期间 CPU 占用直接飙升到 100%。而且很奇怪的是，这时并没有出现某个进程大量占用 CPU 资源，而是大量后台进程的资源占用整体上升。
-这个问题从 11.5RC 到 11.5 正式版再到 11.5.1 都未被修复，出现类似问题的 V 友可以看看机器出现的行为是否和我描述的比较相似。目前也没有什么比较好的解决办法，我已经通过 CCC 恢复到 11.4 的备份了，再也没出现类似的现象。目前打算是在 11.4 养老了。说实话真的对苹果挺失望的，以现在 macOS 的质量，之后想找到一个稳定可靠的适合工作环境的版本是真的不容易。]]></summary>
-        <author>
-            <name>meloyang05</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Java 求助：为什么线程池中 ExecutorService.submit(Runnable task) 返回 Future<?> 而不是 Future<Void>?]]></title>
-        <id>792575</id>
-        <link href="https://www.v2ex.com/t/792575"/>
-        <updated>2021-07-29T14:30:53.000Z</updated>
-        <summary type="html"><![CDATA[maxwellwenjie894: 
-ExecutorService 有下面这个方法？
-Future submit(Runnable task)
-但是 Future.get() 永远 return null，那下面这种方法声明是不是更好呢?
-Future submit(Runnable task)]]></summary>
-        <author>
-            <name>maxwellwenjie894</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ucloud 云服务器 1h1g1m 只需 47 一年 香港 70 元]]></title>
-        <id>792574</id>
-        <link href="https://www.v2ex.com/t/792574"/>
-        <updated>2021-07-29T14:26:25.000Z</updated>
-        <summary type="html"><![CDATA[yitalin: 
-用他家好久了，稳定的性还是很好，给你们个香港测试 ip：45.249.244.141
-上次看一百多，这次看香港 1h1g1m  70 一年？这还是 Intel 的，amd 更低，内地机器而且看到其他的活动机器价格都降了不少
-香港 485 三年才 4000
-链接 https://aad.tw/97qd 
-内地机器 47 一年。。个人用户也只要 56]]></summary>
-        <author>
-            <name>yitalin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Casdoor: 基于 Go、带 Web UI 界面的开源身份认证平台，支持 GitHub、Google、QQ、微信登录等]]></title>
-        <id>792573</id>
-        <link href="https://www.v2ex.com/t/792573"/>
-        <updated>2021-07-29T14:22:58.000Z</updated>
-        <summary type="html"><![CDATA[Casbin: 
-UI 优先的统一身份认证系统 Casdoor
-Casdoor 是什么？
-Casdoor 是一个基于 OAuth 2.0 / OIDC 的 UI 优先集中认证 / 单点登录 (SSO) 平台，简单点说，就是 Casdoor 可以帮你解决 用户管理 的难题，你无需开发用户登录注册等与用户鉴权相关的一系列功能，只需几个步骤，简单配置，与你的主应用配合，便可完全托管你的用户模块，简单省心，功能强大。
-仓库地址： https://github.com/casbin/casdoor
-演示地址： https://door.casbin.com/
-官网文档： https://casdoor.org/
-Casdoor 目前作为 Casbin 社区项目统一使用的鉴权平台，项目已开源，希望得到大家的一些建议和 Star~，我们会及时跟进反馈并改正问题哒。
-为什么要用 Casdoor ？
-用户管理一直是项目中非常令人头疼的一个问题，不仅要确保安全性，功能是否完整，方便使用也十分重要。目前大多数应用已从过去单一的账号密码登录，逐渐升级为允许通过第三方平台登录，例如 GitHub 、微信、QQ 等。但是这一套逻辑依然需要开发者去实现，大多数功能偏离了业务。
-Casdoor 就是替开发者们解决这个难题，即 提供一套统一的鉴权平台，只需要简单配置便可完全托管用户模块。
-使用的理由也非常简单，总结概括为三句话：
-功能完备，操作简单。作为一个需要完全托管用户模块的项目，功能完备必不可少，Casdoor 支持常见用户模块所需要的各种功能。并且配置简单，上手难度低。
-开源可控，社区活跃。能否快速得到社区的反馈，解决实际应用中出现的问题也十分重要，否则出了 Bug 没人管岂不是尴尬？ Casdoor 有自己的讨论社区 Casnode，也有 QQ 群，均可及时活跃地解决实际应用中的问题。
-性能强大，耦合良好。采用 Golang 开发，并发性支持良好，并且内部模块耦合度低，代码易懂，热插拔性好。
-Casdoor 又有哪些特性？
-支持普通的账户密码注册登录，也支持各种常见的第三方认证，例如 GitHub 、Facebook 、Google 、Wechat 、QQ 、LinkedIn 等等，截止目前共 9 个平台，并在不断听取用户建议对更多的平台提供支持。
-管理方便。Casdoor 内部将模块分为了 5 大类，Organization 、User 、Application 、Token 和 Provider 。可以同时接入多个组织，组织下有不同应用，用户可以通过应用或组织分类，单独管理任何组织、应用或用户的 Token 令牌，轻松管理复杂系统，目前已部署在 Casbin 社区各种系统当作鉴权平台。
-自定义程度高。Casdoor 可以随意修改登录方式，例如是否允许密码或第三方登录，自定义应用的注册项数量，是否启用两步验证，以及是否允许各个 Provider 登录、注册等等，高度可插拔。
-具备 Swagger API 文档。清晰的 API 介绍，无需阅读源代码即可直接方便调用各个 API 接口，提供定制化功能。
-前后端分离架构，部署简单。作为统一认证平台，除了性能，稳定性，新特性之外，易用性也是考量的重要标准，Casdoor 后端使用 Golang 语言开发，前端使用 React.js 框架，使用者只需启动后端服务，并将前端工程文件打包，即可直接使用，操作简单，上手难度低。
-...
-总结
-我们希望 Casdoor 能帮助广大开发者们解决用户管理的难题，更专注主要业务，提高开发效率。
-同时作为一个开源项目，我们也非常希望获得大家的使用建议，帮助我们更好地改善项目质量，从功能、易用性等方面更好地满足大家的需求。
-如果使用过程中有任何疑问，欢迎加入社区 QQ 群交流，提 Issues 。当然，提 PR 也是十分欢迎的！
-QQ 群：645200447]]></summary>
-        <author>
-            <name>Casbin</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[外卖平台会不会控制算法来将店铺曝光给特定范围的用户, 从而获得更多的距离加价的单?]]></title>
-        <id>792572</id>
-        <link href="https://www.v2ex.com/t/792572"/>
-        <updated>2021-07-29T14:19:31.000Z</updated>
-        <summary type="html"><![CDATA[OliverStack: 
-我家做了一段时间的外卖, 其中有个超范围距离加价的计算.即类似:
-当用户位置在本店配送范围外, 按照 0.5rmb/km 这样加价.
-个人觉得加价的单数量较多, 虽然我家单量不多, 外卖只是顺手做的, 平时也就十几二十单.
-一天两天也就算了, 但是一个多月来加价情况很频繁, 而且基本是新客, 有些时候加价的单能占到 60%以上, 一搞活动利润低得要死.
-而且离谱的是按我家 3km 的配送范围, 超范围加价的基本是 3 点几公里, 这距离拿捏地死死的. 下单的用户也较多集中在 2.5~3.5 公里间.
-是大数据, 算法作梗, 还是我多疑了?
-当然不排除其他因素, 这里只做做探讨, 想知道有无懂的 v 友.]]></summary>
-        <author>
-            <name>OliverStack</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[发表特斯拉“杀人”言论20天后，华为自动驾驶功臣苏菁被免职]]></title>
-        <id>https://www.infoq.cn/article/kSY4YMqpWRcKo9K4xEve?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/kSY4YMqpWRcKo9K4xEve?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-29T14:14:54.000Z</updated>
-        <summary type="html"><![CDATA[真· 现实版“祸从口出”... 发表“特斯拉‘杀人’言论”20天后，华为自动驾驶重臣苏菁被免职。
-因批评“特斯拉杀人”，苏箐被免去智能驾驶产品部部长
-
-7月27日，据媒体报道，华为内部一封人事任免文件显示，苏菁被免去智能驾驶产品部部长职务。苏菁将进入预备队接受训战和分配。
-
-据称，这封任免文件由华为公司创始人任正非签批署名。
-
-与此同时，华为宣布，华为消费者业务 BG CTO 卞红林将兼任华为智能汽车解决方案的CTO，并接替苏箐任智能驾驶产品部总裁职位。
-
-当日晚间，华为官方就苏菁的职务调整的原因作出了回应：
-
-“我公司智能汽车解决方案 BU 苏箐在参加外部活动谈及自动驾驶技术与安全时，针对特斯拉发布了不当言论，苏箐已就其个人不当言论进行了深刻检讨，但鉴于其言论造成的不良影响，我公司决定免去苏箐智能汽车解决方案BU智能驾驶产品部部长的职务。”
-
-真· 现实版“祸从口出”.....
-
-点击查看原文>]]></summary>
-        <author>
-            <name>刘燕</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[现在的 Mac QQ 感觉连微信都不如]]></title>
-        <id>792570</id>
-        <link href="https://www.v2ex.com/t/792570"/>
-        <updated>2021-07-29T14:12:27.000Z</updated>
-        <summary type="html"><![CDATA[luhe: 
-M1 MBP，开机 20 天没关，QQ 居然吃了 3.24G 内存，而且非常卡，动不动彩虹加载。
-反观微信，才 800 多 M，注意，两者都是 MAS 版本，微信还是 intel 版。
-不知道 QQ 到底适配 M1 适配了个什么寂寞，而且到现在还没深色模式。
-另外我发现，这个腾讯柠檬清理也蛮离谱，同样是 20 天没关机，吃了我 1.2G 。]]></summary>
-        <author>
-            <name>luhe</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[从不同地方访问同一个 cloudflare ip 显示的地理位置不同，请问 cloudflare ip 是漂移的吗]]></title>
-        <id>792569</id>
-        <link href="https://www.v2ex.com/t/792569"/>
-        <updated>2021-07-29T14:10:08.000Z</updated>
-        <summary type="html"><![CDATA[v2clay: 最近在研究 v 站的 quic 。www.v2ex.com/t/792300#reply25
-发现一问题，通过代理访问 v 显示的地址是 j p
-通过本地 移动 直接访问 v，通过 quic，显示是 h 
-k]]></summary>
-        <author>
-            <name>v2clay</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[有人知道广东亿迅这家公司吗？ HR 说入职签约的是邮电，但是同薪同酬？是不是坑？以后出来有没有影响]]></title>
-        <id>792567</id>
-        <link href="https://www.v2ex.com/t/792567"/>
-        <updated>2021-07-29T14:04:27.000Z</updated>
-        <summary type="html"><![CDATA[ilovemo:]]></summary>
-        <author>
-            <name>ilovemo</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Serverless 时代下大规模微服务应用运维的最佳实践]]></title>
-        <id>https://www.infoq.cn/article/y602eucxGY0Hcps2fZuZ?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/y602eucxGY0Hcps2fZuZ?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-29T14:00:00.000Z</updated>
-        <summary type="html"><![CDATA[微服务架构的优点和痛点
-微服务架构的诞生背景
-
-回到互联网早期时代，也就是web1.0时代，当时主要是一些门户网站，单体应用是当时的主流应用，研发团队相对较小，这时候的挑战在于技术的复杂度，以及技术人员的匮乏。
-
-到了新世纪互联网时代，出现了较大规模的一些应用，比如社交、电商等，流量和业务的复杂度也大幅增加，出现了几百甚至上千人的研发团队，研发团队扩大之后，协作问题成为困扰。SOA 解决方案是互联网的产物，其核心在于分布式、拆分等。但是因为 ESB 这样一些单点的组件，所以没有得到很好的推广。阿里巴巴在当时推出的 HSF、开源的Dubbo 等技术，其实是类似于分布式的一个解决方案，当时就已经有了微服务架构的理念。
-
-微服务架构正式名称的诞生是在移动互联网时代，这时的生活已经实现全面互联网化，各种各样的生活类 APP 涌现，网民以及流量复杂度相对于新世纪互联网时代显著增强。另外，较大规模的研发团队也已成为主流。这时候，大家普遍都对效率有了更高的追求，而不只是原来只有几个巨头需要有这方面的技术。微服务架构以及微服务技术的推出，如 Spring  Cloud、Dubbo 等框架的普及，极大地推广了微服务技术。
-
-现在我们已经进入全面的数字化时代，社会全面互联网化，各种各样的单位（包括政企、相对传统的单位）都需要较强的研发能力。流量的挑战及传统业务复杂度的挑战、研发团队的扩大等，使得大家对效率有了更高的要求。这时候微服务架构得到了进一步的推广和普及。
-
-微服务架构经过这么多年的发展，是经久不衰的一项技术，为什么它能够有这样持续的发展？
-微服务架构的优点
-
-我们来回顾一下微服务架构和单体架构的区别，以及微服务架构的核心优势。
-点击查看原文>]]></summary>
-        <author>
-            <name>阿里巴巴中间件</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何对业务代码中进行抽象和提取公有逻辑呢？]]></title>
-        <id>792566</id>
-        <link href="https://www.v2ex.com/t/792566"/>
-        <updated>2021-07-29T13:58:04.000Z</updated>
-        <summary type="html"><![CDATA[zstone123: 之前写的代码可能比较随意，没有考虑过这个问题。现在遇到的问题是两个接口代码相似度可能超过 80%。
-1.对相同的代码封装为函数，不同的代码用接口去实现。（只是这么一个想法，但具体没啥实现思路
-2.将两个接口合为一个接口。这样的问题是可能会多了许多 if/else 。
-真心向各位请教一下，有什么比较好的做法。]]></summary>
-        <author>
-            <name>zstone123</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[一直觉得 Python 里初始化对象不方便，反序列化配置文件就更不方便，写了一个超小项目，把 dict 数据（嵌套了 list 也可以）, 变成预定义好的数据类型的实例对象]]></title>
-        <id>792565</id>
-        <link href="https://www.v2ex.com/t/792565"/>
-        <updated>2021-07-29T13:55:31.000Z</updated>
-        <summary type="html"><![CDATA[ihawk: 
-objtyping 带类型定义的对象转换器
-由来
-Python 不是强类型语言，开发人员没有给数据定义类型的习惯。这样虽然灵活，但处理复杂业务逻辑的时候却不够方便——缺乏类型检查可能导致很难发现错误，在 IDE 里编码时也没有代码提示。所以开发了这个小工具来解决它。
-基本用法
-首先定义业务类，并通过类变量定义每个字段的类型。
-from typing import List
-
-
-class Person:
-    name: str
-    age: int
-
-
-class Company:
-    name: str
-    revenue: float
-    employees: List[Person]
-
-之所以选择类变量来定义，是因为它最简洁和直观。相比之下，如果在__init__方法中初始化实例变量，是没有办法获取类型定义（ type_hint ）的；如果用 @property 注解或者 getter，setter 方法的话，显然就更复杂了。它们都不如直接定义类变量简单优美。不过使用类变量也有缺点：就是它在这里被当成元数据来使用了，如果真的需要定义类级别共享的变量，无法区分。这个问题可以在后面通过开发自定义注解来解决。
-下一步就可以把符合这个类定义结构的 dict-list 嵌套数据，转化为该类实例对象了：
-from objtyping import objtyping
-
-company1 = objtyping.from_dict_list({
-    'name': 'Apple',
-    'revenue': 18.5,
-    'employees': [{
-        'name': 'Tom',
-        'age': 20
-    }, {
-        'name': 'Jerry',
-        'age': 3…]]></summary>
-        <author>
-            <name>ihawk</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[内推][深圳北京][杜比实验室 Dolby] 安卓 Framework 开发工程师！美资外企福利待遇好，严格 965 不加班，不想再卷的朋友看过来！]]></title>
-        <id>792563</id>
-        <link href="https://www.v2ex.com/t/792563"/>
-        <updated>2021-07-29T13:44:36.000Z</updated>
-        <summary type="html"><![CDATA[erlangshanxia: 
-这个岗位设在深圳，但是如果有现在在北京的朋友，未来打算 relocation 到深圳，也欢迎找我内推！
-公司是杜比实验室，就是近年来音视频领域很火的那个。外企，国内办公室主要在北京和深圳， 深圳办公室在平安金融中心高层，俯瞰深圳，视野非常好！
-有兴趣的朋友找我内推！
-微信 base64: eGlhb3hpb25neGlvbmdfMg==
-下面是 JD，我就不翻译了！
-Bachelor’s or Master’s in Computer Science or Electrical Engineering.
-5+ years’ development experience in mobile/tablet area (C/C++/Java).
-Solid and strong embedded experience of development/debugging on mobile devices.
-Experience in multimedia framework e.g. Stragefight/Nuplayer on Android and an
-understanding the underlying technologies (e.g. codecs, streaming) is a strong plus.
-Experience in ExoPlayer is a plus.
-Experience in app developing on Android or iOS is a plus.
-Experience in Qualcomm audio DSP developing is a plus.
-Strong object oriented software design skills.
-High level written and verbal communication in both general and technology-specific applications.
-Comfortable with fast-paced scrum agile development cycle, multiple projects parallel working environment, willing to shift project priority and commitment.
-Results-oriented with a passion to learn new technologies.]]></summary>
-        <author>
-            <name>erlangshanxia</name>
         </author>
     </entry>
     <entry>
@@ -614,220 +1235,25 @@ Results-oriented with a passion to learn new technologies.]]></summary>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[数据监管越来越严，我们还有什么机会？]]></title>
-        <id>https://www.infoq.cn/article/8aZkKhyKTMTFMAxmWwSx?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/8aZkKhyKTMTFMAxmWwSx?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-29T13:19:38.000Z</updated>
-        <summary type="html"><![CDATA[数据已经成为当今社会不可或缺的生产要素。据IDC统计，2018 年，全球总共创建、捕获、复制和消费了33 ZB （即33 万亿千兆字节）的数据量，2020 年增长到了59ZB，预计到2025 年将达到175ZB。随着数据越来越多，人们越来越重视数据安全、隐私保护等问题，隐私计算因此得到了很大的关注。
- 
-根据KPMG《隐私计算行业研究报告》，国内隐私计算市场规模将快速发展，三年后技术服务营收有望触达100-200亿人民币的空间，甚至将撬动千亿级的数据平台运营收入空间。那当前隐私计算发展情况如何，未来又有哪些机会呢？
- 
-数据合作带来更多收益
- 
-数据孤岛导致沉睡的数据资产无法流通，难以实现商业价值。在星云Clustar CEO 陈沫看来，数据合作带来的收益远大于要为此付出的成本，安全的数据合作可以带来更多收益。隐私计算就是要连接孤岛，产生“1+1>2”的效果。
- 
-隐私计算目前落地应用相对成熟的领域是金融。金融行业是数据价值转化率最高、并且对隐私要求也最高的行业之一。相对于其他行业，金融尤其是银行业，在数据安全和隐私问题上考虑得要更早些。
- 
-过去十年，我国积累的数据百分之七八十都在互联网。相比之下，银行拥有的数据维度是比较少的，这导致银行做营销时难以精准地找到匹配人群。互联网金融的兴起与其拥有的海量数据也不无关系。而具有丰富的风控标签数据的第三方机构提供数据样本的审批周期较长、模型效果难优化等问题。
+        <title type="html"><![CDATA[漏桶算法和令牌桶算法，区别到底在哪里？]]></title>
+        <id>https://xie.infoq.cn/article/4a0acdd12a0f6dd4a53e0472c?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://xie.infoq.cn/article/4a0acdd12a0f6dd4a53e0472c?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-29T11:36:53.000Z</updated>
+        <summary type="html"><![CDATA[漏桶算法和令牌桶算法容易混淆的技术点解读
 点击查看原文>]]></summary>
         <author>
-            <name>褚杏娟</name>
+            <name>华仔</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[如果某人获得了根 ca 的 private key 并公开之，会发生什么呢]]></title>
-        <id>792561</id>
-        <link href="https://www.v2ex.com/t/792561"/>
-        <updated>2021-07-29T13:16:09.000Z</updated>
-        <summary type="html"><![CDATA[ysmood: 
-比如各大机构想更新补丁来更改根 ca 但更新本身就需要联网，那也会被中间人，这难道就无解了吗？如此看来根 ca 能算成典型的 SPOF 了吧？
-目前这些常见的根 ca 都是谁控制的呢？]]></summary>
+        <title type="html"><![CDATA[3分钟带你了解版本控制系统的发展历史]]></title>
+        <id>https://xie.infoq.cn/article/1106657f7e14b0900a492cfd5?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://xie.infoq.cn/article/1106657f7e14b0900a492cfd5?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-29T11:00:38.000Z</updated>
+        <summary type="html"><![CDATA[什么是“版本控制”？我为什么要关心它呢？ 版本控制是一种记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统。在CODE CHINA 中，我们对保存着软件源代码的文件作版本控制，但实际上，你可以对任何类型的文件进行版本控制。
+点击查看原文>]]></summary>
         <author>
-            <name>ysmood</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[最近感觉切换舒服法非常之卡 是 11.5 的锅吗 不是 M1]]></title>
-        <id>792559</id>
-        <link href="https://www.v2ex.com/t/792559"/>
-        <updated>2021-07-29T13:03:59.000Z</updated>
-        <summary type="html"><![CDATA[willyeon99: 不管是搜狗还是自带的，切大写然后输入就会不显示，卡 1 秒才出输入的字。切回中文也一样]]></summary>
-        <author>
-            <name>willyeon99</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[求 Java 入门教程视频]]></title>
-        <id>792558</id>
-        <link href="https://www.v2ex.com/t/792558"/>
-        <updated>2021-07-29T12:52:45.000Z</updated>
-        <summary type="html"><![CDATA[hqw: 
-看了一些视频，都是针对零基础的，学习速度太慢了，各位大佬有没有 Java 教程视频推荐，针对有多年工作经验的程序员的视频]]></summary>
-        <author>
-            <name>hqw</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[iOS 系统自带地图，导航界面在深色模式下，配色方案不正确（路网以浅色显示晃眼睛）]]></title>
-        <id>792557</id>
-        <link href="https://www.v2ex.com/t/792557"/>
-        <updated>2021-07-29T12:43:34.000Z</updated>
-        <summary type="html"><![CDATA[dLvsYgJ8fiP8TGYU: 
-复现步骤
-确认手机处于深色模式下
-用系统自带地图 APP，任意选择起点+终点，开始导航，进入导航界面
-默认缩放比例下，观察到路网以深色显示。符合深色模式下应使用的配色方案。
-两指合拢，或选择显示完整路线，观察到路网以浅色（黄色）显示。不符合深色模式下应使用的配色方案。
-https://i.imgur.com/0AwKrGu.jpg
-所用设备
-iPhone 尝试数次，均能够复现该问题（ iOS 14 ）
-iPad 有一定几率触发，原因不明（ iPadOS 14 ）
-用一部运行 iOS 13 的设备，依然可复现
-原因猜测
-由于旧版 iOS 也可复现该问题，基本排除 iOS 系统升级导致该问题的可能性。
-从一些朋友处得知，此问题出现的时间可能为近两个月（ 2021 年 5-6 月）。本人也是差不多在这个时段发现该问题。
-鉴于 iOS 系统自带地图在大陆地区的导航服务由高德提供，是否可能是高德在近期更新了地图素材渲染机制，但该改动与 iOS 设备间尚存在某种兼容性问题，导致夜间深色模式下，配色渲染不正确？
-从一些朋友处得知，大陆地区以外的用户（数据源不是高德）在使用系统自带地图导航过程中，似乎没有遇到该问题。如果有在海外的 v 友可以测试一下，你所在的地区是否有该问题。]]></summary>
-        <author>
-            <name>dLvsYgJ8fiP8TGYU</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[关于领养宠物以及家人的意见]]></title>
-        <id>792556</id>
-        <link href="https://www.v2ex.com/t/792556"/>
-        <updated>2021-07-29T12:32:59.000Z</updated>
-        <summary type="html"><![CDATA[onlyhy: 如果双方家长都强烈反对领养宠物（很乖的家养柴犬），认为影响以后备孕，完全沟通不了，应该放弃吗？]]></summary>
-        <author>
-            <name>onlyhy</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[求问 iPad Pro 21 12.7 笔记、阅读类应用推荐]]></title>
-        <id>792555</id>
-        <link href="https://www.v2ex.com/t/792555"/>
-        <updated>2021-07-29T12:27:11.000Z</updated>
-        <summary type="html"><![CDATA[Yucxxxxxx: 
-上一款 iPad 还是 air 一代，最近终于趁着返校优惠更新了设备。
-看了一些关于笔记应用的介绍，对于几个热门的笔记 app 有大概了解，但是由于视频毕竟是被动接收型的咨询，所以我还是希望可以通过列出我的需求，来这里咨询一下大家的意见。
-我目前的需求有：
-课堂、网课类笔记
-要求书写流畅。编辑、区域排版方便（比如课后复习需要在两段笔记中间加入新的内容，有重新排版的需求）。分科别类查旧笔记方便。能在笔记中插入图片、ppt 等是加分项。
-阅读 pdf 教材、书籍等
-要求可以进行基本划线等批注操作。方便在空白处记小段笔记。看推荐说 marginnote 可以根据高光部分自动生成思维导图，这个听起来很方便阅读大部头教材的时候日后根据关键词进行复习，但是不知道实际使用起来是否鸡肋？以及如果能支持多种格式是加分项（比如 pdf，mobi 等）。
-不知道根据我上面两部分需求，各位有哪些笔记应用、阅读类推荐？不限个数，非常感谢！]]></summary>
-        <author>
-            <name>Yucxxxxxx</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[上海] [Golang] 食亨 招聘 Golang/ Python 工程师 20-40K]]></title>
-        <id>792554</id>
-        <link href="https://www.v2ex.com/t/792554"/>
-        <updated>2021-07-29T12:21:53.000Z</updated>
-        <summary type="html"><![CDATA[lianggaofeng04: Golang 工程师
-岗位职责：
-1 、负责餐饮业务的数据采集，对亿级别的数据量进行传输链路上的优化设计与稳定维护
-2 、能制定有效的监控并及时响应；承担系统中基石组件的技术攻坚与维护优化
-岗位要求：
-1 .本科以上学历，计算机相关专业；
-2 .熟悉 Linux 环境下的 Golang 语言开发；
-3 .有一定的分布式 /微服务系统的设计与实现经验；
-4 .熟悉 Mysql/Redis/Tidb/Kafka 的应用开发；
-5 .TWPrometheus+Grafana/Sentry,有一定的监控意识与设计实现经验；
-6 .工作认真负责，有优秀的自驱力，具有较强的分析问题与解决问题的能力；
-7 .团队意识佳，有极客精神优先
-
-Python 工程师
-岗位职责：
-1.设计和开发分布式网络爬虫系统，进行多平台信息的抓取和分析工作
-2.参与爬虫核心算法和策略优化，熟悉采集系统的调度策略
-3.配合数仓对数据进行 ETL 工作
-4.实时监控爬虫的进度和警报反馈
- 岗位要求：
-1.熟悉 Linux 系统，掌握 Python/Golang 语言中的一种或多种；
-2.熟悉 scrapy/scrapy-redis 框架，或熟悉别的分布式爬虫方案并有过大规模线上采集的经验，并能独立设计定制化要求的爬虫中间件；
-3.熟悉爬虫原理，熟悉常见的反爬技术，面对线上突发的反爬升级有快速分析能力并能选择合适的备案
-4.掌握 http 协议，熟悉 html 、xpath 等常见的数据抽取技术
-5.熟悉 Redis，Mysql 等常用数据库，能熟练运用消息中间件，如 kafka
-6.有自驱力，对开源爬虫框架有深入研究或有成熟自研分布式框架设计者优先
-
-
-关于食亨： https://www.shihengtech.com/
-行业独角兽，年轻的创业氛围，逗比的开发团队，值得你拥有！
-丰富的各种团建活动：萝莉女仆桌游、真人 CS 冲锋等等等等等，没有你想不到，只有你不敢尝试！ ！
-六险一金，保证你无秃头之忧；
-下午茶零食小甜点让你放松码代码；
-简历投递邮箱：guoge.zhang#shihengtech.com （邮件标题请备注来自 v2ex，方便快速回复 ）]]></summary>
-        <author>
-            <name>lianggaofeng04</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[MongoDB 按题型保持一定比例抽题]]></title>
-        <id>792552</id>
-        <link href="https://www.v2ex.com/t/792552"/>
-        <updated>2021-07-29T12:19:26.000Z</updated>
-        <summary type="html"><![CDATA[dream4ever: 
-后端技术栈用的 Node.js + Mongoose + MongoDB，数据库中的每道题目分属不同的题型（单选 /多选 /判断），现在需要实现的抽题功能如下：
-抽到的各类型题目数量保持在一个比例上，比如每抽 10 道题，就会有 5 道单选，3 道多选，2 道判断。
-能够实现连续抽题不会抽到同一道题。比如用户 A 回答最初的 10 道题都正确，接着再抽取 10 道题，这新的 10 道题不应当和之前的 10 道题有重复的题目。
-以上两点需求，该如何实现呢？谢谢先。]]></summary>
-        <author>
-            <name>dream4ever</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[各位彦祖, Java 多线程问题请教]]></title>
-        <id>792551</id>
-        <link href="https://www.v2ex.com/t/792551"/>
-        <updated>2021-07-29T12:18:26.000Z</updated>
-        <summary type="html"><![CDATA[fadedos: 
-java 多线程问题请教
-问题描述:
-http 请求到后台,一个 list 数据到后台,返回结果的实时性要求比较高
-list 中多条明细,需要根据一定的规则进行筛选 ,比较耗时很久,此处想采用多线程优化
-关键点: 在筛选过程中, 子线程的筛选规则需要查询 表 C 和表 D; 获得值
-筛选 ok,得到值,会添加到明细中,然后分别会落四张表,表 A,表 B,表 C,表 D
-关键点 2: 只要一条明细插入失败,所有的记录进行回滚]]></summary>
-        <author>
-            <name>fadedos</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[魔法环境下的微信圈服务可用性低的问题怎么解决？]]></title>
-        <id>792550</id>
-        <link href="https://www.v2ex.com/t/792550"/>
-        <updated>2021-07-29T12:13:35.000Z</updated>
-        <summary type="html"><![CDATA[Zien: 
-包括但不限于”微信通知延迟“，”微信消息一直刷新“，“微信无法加载图片”，“微信语音 /视频信号差”，“微信扫码反应慢”，“微信加载不出付款码”，“微信读书登录失败”，规则都配置过针对🦢家优化了。
-顺便问下，某宝各种检测服务区，加载图片慢之类的，真的是这些要么完全隔离搞简中特色，要么国际化一点，都不会有这些问题，但就是这种稍微走出去一点又被卡回来的服务真的卡在中间让人很难受，尤其是 AT 这两家用自家服务线路的。]]></summary>
-        <author>
-            <name>Zien</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[这个 nginx 转发怎么写]]></title>
-        <id>792549</id>
-        <link href="https://www.v2ex.com/t/792549"/>
-        <updated>2021-07-29T12:09:43.000Z</updated>
-        <summary type="html"><![CDATA[nutting: location /xxx  转发到  xxx.com
-但是到 xxx.com 以后，我要去掉 xxx
-比如  /xxx/a/b   ------> xxx.com/a/b
-a/b 只是举例，可能还有别的，要一条规则全部匹配]]></summary>
-        <author>
-            <name>nutting</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[谁知道便宜续费 Spotify 的俄罗斯网站？]]></title>
-        <id>792548</id>
-        <link href="https://www.v2ex.com/t/792548"/>
-        <updated>2021-07-29T12:00:08.000Z</updated>
-        <summary type="html"><![CDATA[Zien: 
-保存在 KeePass 里了，结果 KeePas 的密钥文件丢了。。。]]></summary>
-        <author>
-            <name>Zien</name>
+            <name>毛显新</name>
         </author>
     </entry>
     <entry>
@@ -841,162 +1267,15 @@ a/b 只是举例，可能还有别的，要一条规则全部匹配]]></summary>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[印第安座黑洞星系]]></title>
-        <id>https://m.idai.ly/se/e89LXI</id>
-        <link href="https://m.idai.ly/se/e89LXI"/>
-        <updated>2021-07-29T09:59:00.000Z</updated>
-        <summary type="html"><![CDATA[哈勃太空望远镜拍摄的 IC 5063 星系照片。这个星系距离地球约1.56亿光年，天文学家推测该星系中心存在一个超大质量黑洞，而中央区域的尘埃粒子能够散射黑洞发出的辐射光，从而形成光亮和阴影的对比。这一现象有助于天文学家观测和研究黑洞的演化历程。摄影师：NASA]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[火山引擎 RTC 在互娱场景下的最佳实践]]></title>
-        <id>https://www.infoq.cn/article/LsSe5oPGClMmImeAsXol?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/LsSe5oPGClMmImeAsXol?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-29T09:00:00.000Z</updated>
-        <summary type="html"><![CDATA[火山引擎 RTC 脱胎于字节跳动自研的 RTC 技术中台。目前，字节跳动旗下约 40+ 业务产品都由此技术中台提供底层 RTC 服务，其中不乏抖音这样亿级 DAU 的国民应用。
-
-除了互娱场景之外，火山引擎 RTC 也在在线教育、游戏语音、企业通信等领域拓展服务场景。目前，火山引擎 RTC 的月用量已经达到了百亿分钟级别，并仍在快速增长。
-
-本文将分享火山引擎 RTC 在互娱场景下的最佳实践，主要包括千人聊天、直播连麦和云渲染这三个具体场景。
-千人聊天的技术挑战
-千人聊天场景来源于 2021 年初非常火爆的语音沙龙场景。千人聊天场景下，一个频道需要支持多至上千个参与者，频道内所有有麦的用户（主播）都可以就频道话题进行发言。
-
-从技术角度来讲，主播数量的每一点增大都会额外带来巨大的计算量。假设主播数量是 n，且每个主播都开麦，那么，每个主播都要订阅除自己以外所有主播的音频，也就是 (n-1) 路音频。此时，订阅的量级就是 n*（n-1）。当 n=1000 时，运算量就达到了 100 万。并且，频道内的每个用户还会进行各种高频动作，比如进出频道，或者主播上下麦。每个简单的操作，在频道内有极大的人数时，都会触发大量的运算，很容易造成 RTC 服务端的消息风暴。
+        <title type="html"><![CDATA[使用Apache Spark管理、部署和扩展机器学习管道(十一)]]></title>
+        <id>https://xie.infoq.cn/article/73b89875bb8578326eaea4f5c?utm_source=rss&amp;utm_medium=article</id>
+        <link href="https://xie.infoq.cn/article/73b89875bb8578326eaea4f5c?utm_source=rss&amp;utm_medium=article"/>
+        <updated>2021-07-28T21:38:01.000Z</updated>
+        <summary type="html"><![CDATA[写在前面：
+大家好，我是强哥，一个热爱分享的技术狂。目前已有 12 年大数据与AI相关项目经验， 10 年推荐系统研究及实践经验。平时喜欢读书、暴走和写作。
 点击查看原文>]]></summary>
         <author>
-            <name>字节跳动技术团队</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[拜登提出国货计划]]></title>
-        <id>https://m.idai.ly/se/784abe</id>
-        <link href="https://m.idai.ly/se/784abe"/>
-        <updated>2021-07-29T08:57:00.000Z</updated>
-        <summary type="html"><![CDATA[美国总统 Joe Biden 访问宾夕法尼亚州一座汽车制造厂并发表演讲。7月28日，Biden 公布一项新提案，要求联邦政府采购案的「美国制造」比例提升至75%，从而促进国内制造业发展。当天美国参议院以67:32投票结果通过1万亿美元基建法案，其中5500亿美元用于高速公路、机场、水利和宽带网络等基础设施建设。Biden 对两党达成一致表示欢迎，并称赞这是美国近100年以来最重要的长期投资。摄影师：Ryan Collerd]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[OLAP进阶：Excel可直接分析的大数据语义层]]></title>
-        <id>https://www.infoq.cn/article/ThWbypghoz8LULUuzXrX?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/ThWbypghoz8LULUuzXrX?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-29T08:00:00.000Z</updated>
-        <summary type="html"><![CDATA[如何在异构化、割裂化严重的大数据平台上解决数据孤岛的挑战，并支持丰富的 OLAP 分析能力和进阶分析功能，如可计算度量、多对多关系？背后的实现原理和技术难点是什么，以至于用户可以简单地通过 Excel 感受到极其平民化的多维分析体验？本次分享的主要内容包括：
-
-大数据时代下的分析挑战
-
-传统 OLAP 的局限
-
-Kyligence 的解决方案
-
-当中的一些挑战
-
-效果展示
-
-大数据时代下的分析挑战
-1. 数据分析需求灵活多变
-
-
-
-第一个挑战是目前用户分析的需求非常灵活多变。右边这张图是截取自 Gartner 的分析报告。这里描述了数据分析的四个阶段，第一阶段是描述性分析，主要描述发生了什么，一般是固定报表的形式。第二阶段是诊断性分析，来探究数据指标为什么高了还是低了，是哪部分高了，哪部分低了，这时候就需要使用到多维分析以及明细查询。第三个阶段是预测性分析，根据历史数据来预测接下来的走势。第四部分是规范性分析，为了促使指标最优，我们可以做些什么。
-
-我们在实际的客户分析场景中发现，用户不再满足于看固定报表，他还需要分析这些数据，这些指标背后的成因。因此多维分析，灵活查询，明细查询这些需求就在爆发式的增长。同时他们在分析的过程中，希望能够高性能的进行交互式分析，而不是像以前可能执行一条 hive 语句后倒一杯咖啡，然后坐着等结果，这背后对数据分析平台的要求是很高的。
-点击查看原文>]]></summary>
-        <author>
-            <name>DataFunTalk</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[印尼锡纳朋火山喷发]]></title>
-        <id>https://m.idai.ly/se/0eb1w2</id>
-        <link href="https://m.idai.ly/se/0eb1w2"/>
-        <updated>2021-07-29T07:55:00.000Z</updated>
-        <summary type="html"><![CDATA[印尼锡纳朋火山剧烈喷发，烟尘升至4500米高空，北苏门答腊省。7月28日，锡纳朋火山发生持续12分钟的剧烈喷发，当地政府已建议民众避免进入火山周围5公里以内区域。本次喷发暂未影响航班飞行。印尼位于环太平洋地震带，境内共有129座活火山。锡纳朋火山是印尼最活跃的活火山之一，海拔2460米，从2013年开始进入活跃状态，迄今该地区已有3万居民迁离。摄影师：Sastrawan Ginting]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[南京第3轮核酸检测]]></title>
-        <id>https://m.idai.ly/se/f009Ey</id>
-        <link href="https://m.idai.ly/se/f009Ey"/>
-        <updated>2021-07-29T07:53:00.000Z</updated>
-        <summary type="html"><![CDATA[南京一座体育馆被改建为核酸检测方舱实验室，中国江苏省。7月28日，南京启动第3轮全员新冠核酸检测工作，目前已建成6座大型检测实验室，每日检测能力达700万人次。本次南京 Delta 新冠毒株疫情的感染源头为禄口国际机场，目前该市列有4个高风险地区和42个中风险地区。7月28日，南京新增本地确诊18例，累计确诊173例，传播链已蔓延至7个省份。摄影师：Li Bo]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[俄总理视察飞机工厂]]></title>
-        <id>https://m.idai.ly/se/1dbGeN</id>
-        <link href="https://m.idai.ly/se/1dbGeN"/>
-        <updated>2021-07-29T07:51:00.000Z</updated>
-        <summary type="html"><![CDATA[俄罗斯总理 Mikhail Mishustin 视察加加林飞机制造厂，阿穆尔河畔共青城。7月28日，Mishustin 到访苏联时代军工基地，视察当地船舶和飞机制造厂。这家飞机工厂隶属俄罗斯政府控股的联合航空制造集团（UAC），主要负责制造「苏-57」、「苏-35S」以及最新一代「Checkmate」战斗机。俄罗斯是全球第二大武器出口国，占全球出口总额的20%。2020年俄罗斯军备出口订单总额达500亿至550亿美元。摄影师：Dmitry Astakhov]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[法总统承认核试验影响]]></title>
-        <id>https://m.idai.ly/se/233G67</id>
-        <link href="https://m.idai.ly/se/233G67"/>
-        <updated>2021-07-29T07:49:00.000Z</updated>
-        <summary type="html"><![CDATA[法国总统 Emmanuel Macron 访问法属波利尼西亚期间参观一处海洋环境研究机构。7月27日，Macron 上任后首次访问法属波利尼西亚，他在演讲中首次承认法国进行核试验对该前殖民地「欠一笔债」，但是并未正式道歉。1966年至1996年，法国政府在波利尼西亚进行多达193次核试验，导致至少10万人因核辐射致病，迄今仅63人获得赔偿。Macron 承诺向波利尼西亚提供3亿欧元抗疫援助，并提供5000万欧元应对气候变化。摄影师：Eliot Blondet]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[缅甸第2波疫情恶化]]></title>
-        <id>https://m.idai.ly/se/048e0b</id>
-        <link href="https://m.idai.ly/se/048e0b"/>
-        <updated>2021-07-29T07:47:00.000Z</updated>
-        <summary type="html"><![CDATA[两名缅甸年轻人骑电动车路过防疫宣传牌，仰光。7月28日，缅甸军方领导人敏昂莱召开新冠疫情会议，强调该国必须与东盟等友好国家进一步加强抗疫合作，尽快获取更多新冠疫苗。缅甸第二波疫情已持续超过1个月，主要原因是 Delta 变异毒株传播。当天缅甸新增确诊4980例，新增死亡365例，人口疫苗接种率仅3.4%。中国援助缅甸的新一批200万剂新冠疫苗已于7月24日送达，迄今中国对缅供应疫苗达到350万剂，其中250万剂为无偿捐赠。摄影师：iDaily Media]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[印尼成为疫情最重国家]]></title>
-        <id>https://m.idai.ly/se/72cXtA</id>
-        <link href="https://m.idai.ly/se/72cXtA"/>
-        <updated>2021-07-29T07:45:00.000Z</updated>
-        <summary type="html"><![CDATA[印度尼西亚「Umsini」号游轮停靠在望加锡港口，南苏拉威西省。这艘游轮被印尼政府征用作为新冠集中隔离设施，最多可容纳约800名轻症患者。7月28日，印尼单日新增确诊47791例，单日死亡1824例，成为全球目前疫情最严重的国家，人口疫苗接种率仅16.7%。由于疫情反弹造成的经济不确定性，国际货币基金组织（IMF）本周宣布下调印尼2021年 GDP 增长预期至3.9%。摄影师：Manruk]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[荷兰解剖撞船长须鲸]]></title>
-        <id>https://m.idai.ly/se/effN4m</id>
-        <link href="https://m.idai.ly/se/effN4m"/>
-        <updated>2021-07-29T07:43:00.000Z</updated>
-        <summary type="html"><![CDATA[海洋动物专家正在解剖一只死去的长须鲸，荷兰泰尔讷曾。7月27日，泰尔讷曾港口发现一只死去的长须鲸，这只15米长的鲸鱼被卡在一艘货轮的船头，推测死因与货轮撞击有关。荷兰自然生物多样性中心准备将这只鲸鱼的骨架作为新馆藏。长须鲸是全球现存第二大的动物，体长可达25米，现存数量约10万只，已被列为易危物种。摄影师：Remko de Waal]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[中国队第14枚金牌]]></title>
-        <id>https://m.idai.ly/se/377E62</id>
-        <link href="https://m.idai.ly/se/377E62"/>
-        <updated>2021-07-29T06:58:00.000Z</updated>
-        <summary type="html"><![CDATA[中国游泳队张雨霏、杨浚瑄、李冰洁和汤慕涵4人一同赢得2020东京奥运会游泳女子4×200米自由泳接力赛冠军，东京水上运动中心。7月29日，中国游泳队4人组合以7分40秒33的成绩夺冠并打破世界纪录，为中国游泳队摘得该项目第一枚奥运金牌，亦是中国队在本届奥运会上第14枚金牌。本场比赛中国队派出最强阵容，张雨霏为200米蝶泳比赛金牌获得者，杨浚瑄为200米自由泳第4名，李冰洁和汤慕涵分别为400米自由泳铜牌获得者和第5名。摄影师：Odd Andersen]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[中国队第13枚金牌]]></title>
-        <id>https://m.idai.ly/se/d62o2N</id>
-        <link href="https://m.idai.ly/se/d62o2N"/>
-        <updated>2021-07-29T02:46:00.000Z</updated>
-        <summary type="html"><![CDATA[中国选手张雨霏赢得2020东京奥运会女子200米蝶泳项目冠军，东京水上运动中心。7月29日，张雨霏以2分03秒86的成绩夺得冠军，刷新奥运会纪录，摘得中国游泳队本届奥运会首枚金牌，亦是中国队第13枚金牌。1998年出生的张雨霏3岁开始学习游泳，5岁开始接受专业训练，16岁获得青年奥运会金牌，17岁首次打破世界纪录。她主攻自由泳和蝶泳，此前已获得100米蝶泳项目银牌。摄影师：Alexander Hassenstein]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
+            <name>数据与智能</name>
         </author>
     </entry>
     <entry>
@@ -1011,161 +1290,6 @@ The post Safari 15 Opinions appeared first on CSS-Tricks. You can support CSS-Tr
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[华为云提出 “DIGITS”理念，最大化释放数据要素价值]]></title>
-        <id>https://www.infoq.cn/article/XPWgwkcbRf1sZ1yrRi9u?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/XPWgwkcbRf1sZ1yrRi9u?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-28T19:48:31.000Z</updated>
-        <summary type="html"><![CDATA[7月28日，以“数智转型 融合共生”为主题的2021（第六届）中国大数据产业生态大会在北京举行，华为云Marketing部部长董理斌受邀出席并发表主题演讲，对大数据的技术发展趋势和挑战进行交流，并对华为云提出数据技术创新的“DIGITS”理念进行深入分享，持续引领大数据领域的技术创新和行业实践。
-
-董理斌认为，华为云大数据“DIGITS”理念基于数据思维进行系统性的思考和体系化的技术创新，让数据自主有序地流向可以产生最大价值的地方，数尽其用。 具体涵盖数据的决策（Decision）、集成（Integration）、治理（Governance）、智能（Intelligence）、可信（Trustworthy）、搜索&发现（Search&Discovery）等六大要素，基于云原生分布式数据平台，在整个数据生命周期中通过统一治理和内置智能，让用户能够在集成的可信数据中搜索和发现，实现数据驱动的决策。
-
-
-华为云Marketing部部长董理斌发表主题演讲
-从数据资源到数据资产，企业面临四大挑战
-
-随着数据的爆发式增长，数据产业、数据生态建设等都迎来诸多发展机遇，发挥好大数据创新引擎作用，企业数字化转型和产业变革也将迎来重要机遇。董理斌认为，数据价值的发会主要在于从数据资源走向数据资产化，目前，主要存在数据质量、技术平台、数据安全和组织能力等四大挑战：
-点击查看原文>]]></summary>
-        <author>
-            <name>InfoQ编辑部</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[☕️【Java技术之旅】【AbstractQueuedSynchronizer】教你自定义实现自己的同步器]]></title>
-        <id>https://xie.infoq.cn/article/ea2f4b7208127dfb61f677a71?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://xie.infoq.cn/article/ea2f4b7208127dfb61f677a71?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-28T19:38:57.000Z</updated>
-        <summary type="html"><![CDATA[之前的文章中会涉及到了相关AQS的原理和相关源码的分析，所谓实践是检验真理的唯一标准！接下来就让我们活化一下AQS技术，主要针对于自己动手实现一个AQS同步器。
-点击查看原文>]]></summary>
-        <author>
-            <name>李浩宇/Alex</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[插件编排在 Apache APISIX 中的应用与实践]]></title>
-        <id>https://xie.infoq.cn/article/8c52c1e1061fd8ff3ca103f35?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://xie.infoq.cn/article/8c52c1e1061fd8ff3ca103f35?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-28T18:40:57.000Z</updated>
-        <summary type="html"><![CDATA[本文作者琚致远，Apache APISIX PMC，支流科技企业产品与大前端技术负责人。通过阅读本文，您可以了解 Apache APISIX 与基本使用场景，以及在低代码潮流下，Apache APISIX 是如何集成“拖拽”的插件编排能力的。
-点击查看原文>]]></summary>
-        <author>
-            <name>Apache APISIX 中国社区</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Serverless时代已来，华为云的思考、探索和实践]]></title>
-        <id>https://www.infoq.cn/article/agyFWP4AzmQp5CzFs31G?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/agyFWP4AzmQp5CzFs31G?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-28T17:00:56.000Z</updated>
-        <summary type="html"><![CDATA[2009 年，伯克利以独特的视角发布了一篇文献，正式定义了云计算，千行百业的 IT 基础设施由此迈入到新的时代。十年后的 2019 年，伯克利再度出手并预言：
-
-“Serverless 计算将会成为云时代默认的计算范式，并取代 Serverful（传统云）计算模式。”
-
-“Serverless 简化了云计算的编程，代表了程序员生产力的又一次的变革，一如编程语言从汇编时代演变为高级语言时代。”
-
-还有些难以理解？那么我们从大家通常比较关心的收费问题来做一下说明吧！
-
-云计算的最大优势之一，就是客户可以采用单位付费的模式，为他们享受的服务买单。在传统云的计算模式下，最小计费单元是 60 秒，而 Serverless 甚至可以做到 1 毫秒——这就意味着客户所花的每一分钱都用在了实处，用到了极致。
-
-据此，伯克利认为 Serverless 将会在接下来的十年里，迅速地被采用，得到迅猛的发展。
-点击查看原文>]]></summary>
-        <author>
-            <name>华为云</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[使用Docker在无网络环境下搭建深度学习环境]]></title>
-        <id>https://xie.infoq.cn/article/5794bc164e83a6cb69510c02a?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://xie.infoq.cn/article/5794bc164e83a6cb69510c02a?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-28T16:43:43.000Z</updated>
-        <summary type="html"><![CDATA[最近需要在一个特殊的环境下训练模型, 虽然硬件设备都不错, 也可以向服务器拷贝东西, 但是重要的一个问题是, 服务器端没有连接外网, 这导致搭建深度学习模型训练环境的时候, 不能自动通过网络来安装特定的软件了. 虽然说, 可以将代码用到的所有的包都下载...
-点击查看原文>]]></summary>
-        <author>
-            <name>Lart</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[阿里巴巴AI系统建设的思考]]></title>
-        <id>https://www.infoq.cn/article/l2dNeJP1CH8vYQxukKN2?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/l2dNeJP1CH8vYQxukKN2?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-28T15:57:29.000Z</updated>
-        <summary type="html"><![CDATA[最近人工智能得到了爆发式的发展，这个背后的主要的原因，就是因为互联网的发展速度之快，使得我们能够快速的堆积数据，同时加上硬件的快速发展，以及神经网络训练方式的革新，使得我们有能力能够训练比较深的神经网络，产出了能够具有突破人类“智能”的模型，并且广泛落地到了实际应用中。
-
-在这个趋势下，算法以及背后的工程体系更加的收拢，促成了TensorFlow，PyTorch等深度学习框架的诞生和流行，从而使得进行深度学习应用开发的门槛进一步的下降，原有人工智能的算法结构创新，变得并不是那么高不可攀，如何能够将AI的工程化做到更大普惠化，成为人工智能研发的关键。
-
-同时随着Transformer以及Bert等训练方式的创新，大规模预训练模型以及从大模型进行场景化蒸馏进，而产生垂直场景的AI应用，已经渐渐成为人工智能研究标准流程，那么AI的工程如何能够有效支撑超大规模预训练，成为另外一个关键。
-
-因为大规模预训练模型需要耗费大量算力资源，AI工程需要通过云化方式来提高算力的共享，利用云良好的弹性，共享性和互通性来降低研发成本，阿里巴巴机器学习平台PAI就是在这样的需求理解上，构建自己AI系统的建设，提高AI工程化的能力和效率。
-
-我觉得做深度学习框架其实有两个派别的人，一派是做分布式系统的人来做的，另外一派是做算法的人来做的。不同的人的背景不同，所以做这个事情的角度也会不同，从而产生不同门派。TensorFlow属于系统派，而PyTorch属于算法派。像我们这种做系统，特别是做过超大规模分布式系统的人，往往最担心的就是，当你要对一个已部署在成千上万台的计算集群上的平台软件，需要做重大重构的时候，如何保证重构和迁移能够更灵活顺畅的进行。
-点击查看原文>]]></summary>
-        <author>
-            <name>林伟</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[舍弃325亿估值公司CTO职位：写代码才最快乐！管理只会影响我搞研发]]></title>
-        <id>https://www.infoq.cn/article/hO9BbULpzqjiGT42IqId?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/hO9BbULpzqjiGT42IqId?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-28T15:53:20.000Z</updated>
-        <summary type="html"><![CDATA[当地时间7月22日，《2020胡润全球独角兽榜》中排名58位的科技公司HashiCorp 的创始人 Mitchell Hashimoto 发布内部信表示，他将辞去公司 CTO 的职位， 同时退出HashiCorp 董事会，重新成为一名个人程序员。这家以他名字命名的公司如今估值已达52.7亿美元（约合325亿人民币）。
- 
- 
-“我真正喜欢的是编程”
- 
- 
-“我作为一名对基础工具充满热情的工程师创立了 HashiCorp。但作为创始人，我的职责有时不得不远远超出这个范围。这就是成为创始人的代价：你必须做任何需要你做的事情，即使这个角色的一些工作并没有特别激励你。在将 HashiCorp 打造为一家价值数十亿美元公司的近十年的里，我不断重申我仍然是一名工程师，如今我准备更正式地重新专注于这一点。”Hashimoto 在内部信中表示。
- 
-Hashimoto 从12岁开始编程。由于喜欢游戏，他写了一个游戏外挂软件并在网站上售卖，他的父母当时还以为他放学后回到房间是在玩游戏。不过没多久，在收到游戏方通知后，他的售卖网站关闭了。
- 
-“之后，我只是为了好玩而继续编程。”Hashimoto 表示。Hashimoto 曾在几家不同的公司负责过软件工程、DevOps和咨询工作，还创办了两家公司(包括HashiCorp)，创建或参与了75个开源项目，而且该数量还在不断增加。
-点击查看原文>]]></summary>
-        <author>
-            <name>褚杏娟,核子可乐</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[技术解码 | GB28181协议简介及实践]]></title>
-        <id>https://xie.infoq.cn/article/bcd79d5fb6722a42e8e51b888?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://xie.infoq.cn/article/bcd79d5fb6722a42e8e51b888?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-28T15:50:00.000Z</updated>
-        <summary type="html"><![CDATA[GB28181协议是视频监控领域的国家标准，本文将解析如何在FFmpeg中增加对GB28181协议的支持，使其可以与支持GB28181协议的设备进行通信与控制，实现设备的注册、保活以及流媒体的传输。
-点击查看原文>]]></summary>
-        <author>
-            <name>腾讯云音视频</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[一条SQL语句执行得很慢的原因盘点]]></title>
-        <id>https://xie.infoq.cn/article/8076617eff6ab380de5232fc0?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://xie.infoq.cn/article/8076617eff6ab380de5232fc0?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-28T15:37:09.000Z</updated>
-        <summary type="html"><![CDATA[说实话，这个问题可以涉及到 MySQL 的很多核心知识，可以扯出一大堆，就像要考你计算机网络的知识时，问你“输入URL回车之后，究竟发生了什么”一样，看看你能说出多少了。
-点击查看原文>]]></summary>
-        <author>
-            <name>北游学Java</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[PHP没你想的那么差]]></title>
-        <id>https://www.infoq.cn/article/62WbGkDTJ1rgXav261wi?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://www.infoq.cn/article/62WbGkDTJ1rgXav261wi?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-28T14:55:48.000Z</updated>
-        <summary type="html"><![CDATA[PHP现在名声很糟糕，因为它曾经是“可怕”的。本文试着回答一些常见的关于PHP的断言，目的是向非技术人员解释，PHP并不像许多人所说的那么糟糕。
-它是不是鼓励糟糕的实践？
-
-不再是了。过去，许多开发者被书本教授非常糟糕的实践，因此PHP代码的质量非常差。PHP曾经还允许你做一些非常奇怪的事情，使得它非常容易构建，但维护起来却是一场噩梦。
-
-这些不再是常见的问题。随着高质量学习材料的引入，这些材料易学且易获取，一名新的开发人员可以以正确的方式学习PHP。这样就可以避免初级开发者因为不知道构建事物的正确方法而编写一些维护起来非常痛苦的代码。
-
-随着框架的引入，导致许多糟糕体验的大部分通用代码现在都自动完成了；因此，开发人员只需使用框架，框架就可以正确地对其进行编码。
-
-而且，这些年来，一些糟糕的实践是由缺失的特性造成的，导致了一些本不应该被允许的事情被允许。现在大多数情况下，甚至不可能实现以前编写的一些东西来导致这种声誉。
-点击查看原文>]]></summary>
-        <author>
-            <name>Iain Cambridge</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Using Absolute Value, Sign, Rounding and Modulo in CSS Today]]></title>
         <id>https://css-tricks.com/?p=320544</id>
         <link href="https://css-tricks.com/using-absolute-value-sign-rounding-and-modulo-in-css-today/"/>
@@ -1177,39 +1301,6 @@ The post Using Absolute Value, Sign, Rounding and Modulo in CSS Today appeared f
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[中国队第12枚金牌]]></title>
-        <id>https://m.idai.ly/se/f91o7J</id>
-        <link href="https://m.idai.ly/se/f91o7J"/>
-        <updated>2021-07-28T12:49:00.000Z</updated>
-        <summary type="html"><![CDATA[中国选手石智勇赢得2020东京奥运会举重男子73公斤级比赛冠军，东京国际论坛大厦。7月28日，石智勇以抓举166公斤、挺举198公斤、总成绩364公斤成功夺冠，同时打破抓举、挺举2项奥运纪录和总成绩世界纪录，摘得中国队在本届奥运会上第12枚金牌。27岁的石智勇曾在2016年里约热内卢奥运会获得69公斤级金牌。本次比赛抓举环节他以10公斤优势明显领先，挺举环节追平自己创下的198公斤世界纪录，轻松摘得金牌。摄影师：Chris Graythen]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[手写基数排序算法]]></title>
-        <id>https://xie.infoq.cn/article/19bd9ceb175cd5125e1bee038?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://xie.infoq.cn/article/19bd9ceb175cd5125e1bee038?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-28T12:19:45.000Z</updated>
-        <summary type="html"><![CDATA[由于计算机中字符、浮点等都是由整数来表示的，因此基数排序(Radix sort)算法是一种普适性的算法，可以用于整数、字符、浮点数排序。
-点击查看原文>]]></summary>
-        <author>
-            <name>实力程序员</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[如何实现支持百亿级文件的分布式文件存储]]></title>
-        <id>https://xie.infoq.cn/article/6a8e27982179221e8ffbac489?utm_source=rss&amp;utm_medium=article</id>
-        <link href="https://xie.infoq.cn/article/6a8e27982179221e8ffbac489?utm_source=rss&amp;utm_medium=article"/>
-        <updated>2021-07-28T11:04:04.000Z</updated>
-        <summary type="html"><![CDATA[1 前言
-文件系统是最常用的数据存储形式，所以，常用Linux操作系统的用户必然知道ext4、xfs等单机文件系统，用Windows操作系统的用户也都知道NTFS单机文件系统。各种业务场景下，不同的数据都存储于文件系统之上，大量业务逻辑就是基于文件系统而设计和开发的
-点击查看原文>]]></summary>
-        <author>
-            <name>焱融科技</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Creating An Accessible Dialog From Scratch]]></title>
         <id>https://smashingmagazine.com/2021/07/accessible-dialog-from-scratch/</id>
         <link href="https://smashingmagazine.com/2021/07/accessible-dialog-from-scratch/"/>
@@ -1217,26 +1308,6 @@ The post Using Absolute Value, Sign, Rounding and Modulo in CSS Today appeared f
         <summary type="html"><![CDATA[Dialogs are everywhere in modern interface design (for good or for bad), and yet many of them are not accessible to assistive technologies. In this article, we will dig into how to create a short script to create accessible dialogs.]]></summary>
         <author>
             <name>hello@smashingmagazine.com (Kitty Giraudel)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[木卫三发现水蒸气]]></title>
-        <id>https://m.idai.ly/se/66aF3F</id>
-        <link href="https://m.idai.ly/se/66aF3F"/>
-        <updated>2021-07-28T08:59:00.000Z</updated>
-        <summary type="html"><![CDATA[哈勃望远镜拍摄的木星卫星「木卫三」照片。7月26日，《自然天文学》杂志刊登一份最新研究报告，天文学家在哈勃望远镜观测数据中发现木卫三大气中存在水蒸气的证据，推测由该星球表面的冰体升华形成。木卫三是太阳系中最大的天然卫星，表面主要由硅酸盐岩石和冰体构成，最低温度低于-200℃。天文学家推测木卫三地表160公里以下存在一个流动的液态海洋，含水量超过地球上所有海洋总和。摄影师：NASA]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[拜登视察情报部门]]></title>
-        <id>https://m.idai.ly/se/eb8LOL</id>
-        <link href="https://m.idai.ly/se/eb8LOL"/>
-        <updated>2021-07-28T07:59:00.000Z</updated>
-        <summary type="html"><![CDATA[美国总统 Joe Biden 视察国家情报总监办公室（ODNI），弗吉尼亚州。7月27日，Biden 上任后第一次访问美国情报机构并发表演讲，他警告中国和俄罗斯对美国国家安全的威胁日益增大，未来可能成为「致命竞争对手」。Biden 在演讲中再次强调自己曾与习近平单独相处长达25小时，一起旅行超过1.7万英里，表示习近平认真希望中国成为世界上最强大的军事力量以及经济体。摄影师：Saul Loeb]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
         </author>
     </entry>
     <entry>
@@ -1359,30 +1430,6 @@ The post My petite-vue review appeared first on CSS-Tricks. You can support CSS-
         <summary type="html"><![CDATA[Many web design agencies consider it a badge of honor that they win work exclusively through word-of-mouth recommendations. In this article, Paul Boag explains why that is entirely the wrong attitude and what to do about it.]]></summary>
         <author>
             <name>hello@smashingmagazine.com (Paul Boag)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Organize your CSS declarations alphabetically]]></title>
-        <id>https://css-tricks.com/?p=344960</id>
-        <link href="https://ericwbailey.design/writing/organize-your-css-declarations-alphabetically/"/>
-        <updated>2021-07-22T22:33:29.000Z</updated>
-        <summary type="html"><![CDATA[Eric, again not mincin’ no words with blog post titles. This is me:
-The most common CSS declaration organization technique I come across is none whatsoever.
-Almost none, anyway. I tend to group them by whatever dumps out of my …
-The post Organize your CSS declarations alphabetically appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.]]></summary>
-        <author>
-            <name>Chris Coyier</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Using Google Drive as a CMS]]></title>
-        <id>https://css-tricks.com/?p=344580</id>
-        <link href="https://css-tricks.com/using-google-drive-as-a-cms/"/>
-        <updated>2021-07-22T14:44:26.000Z</updated>
-        <summary type="html"><![CDATA[We’re going to walk through the technical process of hooking into Google Drive’s API to source content on a website. We’ll examine the step-by-step implementation, as well as how to utilize server-side caching to avoid the major pitfalls to avoid …
-The post Using Google Drive as a CMS appeared first on CSS-Tricks. You can support CSS-Tricks by being an MVP Supporter.]]></summary>
-        <author>
-            <name>Nathan Babcock</name>
         </author>
     </entry>
     <entry>

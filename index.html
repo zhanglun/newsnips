@@ -16,12 +16,526 @@
 <body>
 <!-- %after-body-begin.html% -->
   <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-08-01">2021-08-01</time></h2>
+    <ul class="sources card">
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.infoq.cn">InfoQ - 促进软件开发领域知识与创新的传播</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">基于DPDK实现VPC和IDC间互联互通的高性能网关</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/XzByQEaDTzS13KQTLE7Y?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>随着云计算和网络技术的不断发展，越来越多的业务有着上云的需求。上云后，业务能够使用云上已有的服务提升开发效率，也可以利用云平台的弹性伸缩特性，及时应对业务的负载变化。实际生产环境中，用户的服务一部分部署在云平台上，另一部分部署在自己的IDC机房。
+
+用户有从VPC访问IDC中服务的需求，且IDC内的服务需要支持负载均衡。为了实现IDC的平滑上云，必须打通VPC网络到IDC机房经典网络间的互联互通，其中最核心的设备是VXLAN网关，用来完成VXLAN网络和VLAN网络间的映射。虽然可以通过交换机完成VXLAN到VLAN的转换，但是业务的负载均衡需求无法满足。因此，360虚拟化团队根据业务需求，决定自研CLOUD-DPVS设备支持负载均衡、VXLAN隧道、BFD探活等功能，来实现VPC网络到IDC网络的互联互通。
+CLOUD-DPVS网关整体架构
+CLOUD-DPVS工作在VXLAN网络和VLAN网络的中间层，来自VPC网络的用户请求被引流到CLOUD-DPVS网关，进行VXLAN解封装和SNAT/DNAT处理后，请求被发送至IDC内服务所在的机器上。回包同样会经过CLOUD-DPVS进行SNAT/DNAT后，进行VXLAN封装发送至VPC，如下图1所示：
+
+
+图1
+CLOUD-DPVS网关整体架构选型
+为了满足高性能，多主部署和负载均衡等需求，360虚拟化团队在经过调研后决定在DPVS的基础上进行开发。
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">全民K歌直播推荐算法实践</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/tGAmEAXUIgZI1bMY1udi?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>直播是社交娱乐app的综合性变现工具，如何培养用户的心智，高效的建立用户和主播的多种连接 ( 点击、观看、关注、常看、常打赏 ) 是直播生态的重要问题之一。为了解决这个问题，各大平台所使用的方法之一是通过个性化推荐系统来促进用户和主播的实时社交。本文主要分享腾讯音乐旗下全民K歌的推荐系统技术及应用。将围绕下面四点展开：
+
+业务背景
+
+推荐系统架构及挑战
+
+召回模型算法设计
+
+精排模型算法设计
+
+业务背景
+直播推荐和其他推荐的比较
+
+
+直播推荐和内容推荐的对比：它们的相同点是都有一个严格的计划经济，在一个流量池体系下寻找用户和主播/用户和item的相关性；不同点在于直播推荐寻找的是最优的转化率模型，而内容推荐更多的是寻找多目标的融合。直播推荐不仅是有量的要求，而且需要让用户平滑地进入直播间来防止直播间过载（主播接待能力同步）。K歌的直播推荐对比虎牙/YY：场景更大而全，用户的量级更大，用户行为和画像更丰富。而虎牙/YY它们的类目是更丰富的。
+推荐系统架构
+
+
+在召回这一层面，有索引召回，比如用户喜欢的伴奏来召回直播间。泛社交召回，还有通过好友和用户感兴趣的人所在的直播间来召回。另外，我们对主播有非常严格的价值评估体系，包括实时直播推流去进行视频理解和音频理解，对主播的历史和实时数据的理解等等。
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-07-31">2021-07-31</time></h2>
     <ul class="sources card">
       <li class="source">
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://www.infoq.cn">InfoQ - 促进软件开发领域知识与创新的传播</a></h3>
           <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">这么多年，我在WPS折腾些什么？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/k0ibBfCYT3c52BNFbdJx?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>2021年是金山全面转型移动互联网的第十年。7月初，金山软件董事长雷军在一封公开信中说，作为一家从通用软件转型而来的老牌技术公司，金山在移动互联网大潮涌起时毅然扔掉枷锁，不畏挑战，最终实现金山办公、游戏业务、金山云三大业务版块成功布局移动互联网。其中，金山办公的背后，是几代WPS人书写了一个坚持梦想并最终取得胜利的励志故事。
+
+近日，InfoQ有幸走进金山办公位于广东珠海的办公园区，参加了一场规模不大、气氛却很活跃友好的技术开放日活动。与我们常见的技术开放日有所不同的是，金山办公特地挪了半天时间，邀请了几位资历深厚的程序员大佬，娓娓道来过去30多年来金山的一些人和事，也让我们开始了解到这些程序员甘于“囿于”此地多年的原因。
+
+以下内容整理自金山技术开放日多位嘉宾的分享：
+不能只单纯盯着收入规模，而是能不能再活30年
+一个为IT圈所熟知的故事是：1988年5月至1989年9月，24岁的求伯君在深圳的旅馆里独自写出了WPS 1.0，用十多万行代码解开了中文排版、中文办公时代的帷幕。
+
+但WPS的发展并非一帆风顺，2002年金山决定将WPS代码全部推倒重写，3年后发布WPS 2005版并宣布个人版免费；2011年是中国智能手机元年，在雷军的一声号令之下，金山办公宣布全力投入移动互联网转型，WPS发布移动版，也因移动互联网再度获得新生；2018年，金山办公发布WPS Office 2019、金山文档等新品，让用户随时随地拿起手边设备就能工作；2019年，WPS for Mac正式发布，填补了WPS Office在苹果生态的最后一块空白。
+
+当时金山办公转向移动互联网战略也面临着巨大压力，据金山办公高级副总裁庄湧讲述， “当时内部争议很大。因为移动这个事，我们也没经验。但是当时内部流行的一句话是，‘理解要执行，不理解也要执行，执行的过程中就会有理解’。于是我们迅速调整心态，有条件也要上，没有条件创造条件也要上。”
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Webpack 的插件机制 - Tapable</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/LcpoP63KdeOsoTt5FvJX?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>前言
+
+用了这么久的 Webpack，你一定对它的生态重要组成部分loader、plugin很好奇吧，你是否尝试过编写自己的插件呢，是否了解过 Webpack 的插件机制呢，什么？没有，那还不赶紧上车学一波！
+
+1、tapable
+
+
+Webpack 就像一条生产线，要经过一系列处理流程后才能将源文件转换成输出结果。这条生产线上的每个处理流程的职责都是单一的，多个流程之间有存在依赖关系，只有完成当前处理后才能交给下一个流程去处理。插件就像是一个插入到生产线中的一个功能，在特定的时机对生产线上的资源做处理。Webpack 通过 Tapable 来组织这条复杂的生产线。Webpack 在运行过程中会广播事件，插件只需要监听它所关心的事件，就能加入到这条生产线中，去改变生产线的运作。Webpack 的事件流机制保证了插件的有序性，使得整个系统扩展性很好。——「深入浅出 Webpack」
+
+
+作为 Webpack 的核心库，tabpable承包了 Webpack 最重要的事件工作机制，包括 Webpack 源码中高频的两大对象（compiler、compilation）都是继承自Tapable类的对象，这些对象都拥有Tapable的注册和调用插件的功能，并向外暴露出各自的执行顺序以及hook类型，详情可见文档
+
+2、tapable 的钩子
+
+const {
+ SyncHook,
+ SyncBailHook,
+ SyncWaterfallHook,
+ SyncLoopHook,
+ AsyncParallelHook,
+ AsyncParallelBailHook,
+ AsyncSeriesHook,
+ AsyncSeriesBailHook,
+ AsyncSeriesWaterfallHook
+ } &#x3D; require(&quot;tapable&quot;);
+
+
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">如何快速实现一个定时器？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/zOK6T1DvzExX9G5jq9rw?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>一、什么是定时器
+
+定时器（Timer）是一种在指定时间开始执行某一任务的工具（也有周期性反复执行某一任务的Timer，我们这里暂不讨论）。它常常与延迟队列这一概念关联。那么在什么场景下我才需要使用定时器呢？
+
+我们先看看以下业务场景：
+
+
+当订单一直处于未支付状态时，如何及时的关闭订单，并退还库存？
+
+如何定期检查处于退款状态的订单是否已经退款成功？
+
+新创建店铺，N天内没有上传商品，系统如何知道该信息，并发送激活短信？
+
+
+为了解决以上问题，最简单直接的办法就是定时去扫表。每个业务都要维护一个自己的扫表逻辑。当业务越来越多时，我们会发现扫表部分的逻辑会非常类似。我们可以考虑将这部分逻辑从具体的业务逻辑里面抽出来，变成一个公共的部分。这个时候定时器就出场了。
+
+二、定时器的本质
+
+一个定时器本质上是这样的一个数据结构：deadline越近的任务拥有越高优先级，提供以下几种基本操作：
+
+1. Add 新增任务
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">深入学习 React 合成事件</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/jMkED5OyzZTa3rvcYUJJ?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>以下分析基于React, ReactDOM 16.13.1版本
+提出问题
+
+我们借鉴一个比较典型的案例开始来分析React事件
+
+export default class Dialog extends React.PureComponent {
+  state &#x3D; {
+    showBox: false
+  };
+  componentDidMount() {
+    document.addEventListener(&quot;click&quot;, this.handleClickBody, false);
+  }
+  handleClickBody &#x3D; () &#x3D;&gt; {
+    this.setState({
+      showBox: false
+    });
+  };
+  handleClickButton &#x3D; (e) &#x3D;&gt; {
+    e.nativeEvent.stopPropagation();
+    this.setState({
+      showBox: true
+    });
+  };
+  render() {
+    return (
+      
+点击我显示弹窗
+        {this.state.showBox &amp;&amp; (
+          
+ e.nativeEvent.stopPropagation()}&gt;我是弹窗
+
+
+从上面的代码里我们不难看出我们想要做一个点击某一个按钮来展示一个模态框，并且在点击除了模态框区域以外的位置希望能够关闭这个模态框。 但是实际运行结果和我们所想的完全不一样，点击了button按钮并没有任何反应，这就需要从React的合成事件说起了，让我们分析完React的合成事件 后能够完全的来解答这个问题。
+
+
+demo地址：https://codesandbox.io/s/event-uww15?file&#x3D;/src/App.tsx:0-690
+
+
+合成事件的特性
+
+React自行实现了一套事件系统，主要特性有以下
+
+
+自行实现了一套事件捕获到事件冒泡的逻辑, 抹平各个浏览器之前的兼容性问题。
+
+使用对象池来管理合成事件对象的创建和销毁，可以减少垃圾回收次数，防止内存抖动。
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">敏感数据加密方案及实现</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/EAMArVeEdjp3ZtjVjgC8?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>前言
+
+现在是大数据时代，需要收集大量的个人信息用于统计。一方面它给我们带来了便利，另一方面一些个人信息数据在无意间被泄露，被非法分子用于推销和黑色产业。
+
+2018 年 5 月 25 日，欧盟已经强制执行《通用数据保护条例》（General Data Protection Regulation，缩写作 GDPR）。该条例是欧盟法律中对所有欧盟个人关于数据保护和隐私的规范。这意味着个人数据必须使用假名化或匿名化进行存储，并且默认使用尽可能最高的隐私设置，以避免数据泄露。
+
+相信大家也都不想让自己在外面“裸奔”。所以，作为前端开发人员也应该尽量避免用户个人数据的明文传输，尽可能的降低信息泄露的风险。
+
+看到这里可能有人会说现在都用 HTTPS 了，数据在传输过程中是加密的，前端就不需要加密了。其实不然，我可以在你发送 HTTPS 请求之前，通过谷歌插件来捕获 HTTPS 请求中的个人信息，下面我会为此演示。所以前端数据加密还是很有必要的。
+
+数据泄露方式
+
+中间人攻击
+
+中间人攻击是常见的攻击方式。详细过程可以参见这里：https://zh.wikipedia.org/wiki/%E4%B8%AD%E9%97%B4%E4%BA%BA%E6%94%BB%E5%87%BB。大概的过程是中间人通过 DNS 欺骗等手段劫持了客户端与服务端的会话。
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">前端需要掌握的设计模式</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/mw4XIgOrNMhTTzyLZpoW?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>提到设计模式，相信知道的同学都会脱口而出，五大基本原则（SOLID）和 23 种设计模式。SOLID 所指的五大基本原则分别是：单一功能原则、开放封闭原则、里式替换原则、接口隔离原则和依赖反转原则。逐字逐句诠释这五大基本原则违背了写这篇文章的初衷，引用社区大佬的理解，SOLID 可以简单概括为六个字，即“高内聚，低耦合”：
+
+
+高层模块不依赖底层模块，即为依赖反转原则。
+
+内部修改关闭，外部扩展开放，即为开放封闭原则。
+
+聚合单一功能，即为单一功能原则。
+
+低知识要求，对外接口简单，即为迪米特法则。
+
+耦合多个接口，不如独立拆分，即为接口隔离原则。
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">如何从 0 到 1 搭建性能检测系统</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/MeTUVtcHMBWSSajuwZ7C?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>前言
+
+前端页面性能对用户留存、用户直观体验有着重要影响，当页面加载时间超过 2 秒后，加载时间每增加一秒，就会有大量的用户流失，所以做好页面性能优化，无疑对网站来说是一个非常重要的步骤。
+
+那如何才能知道一个页面的性能情况呢？知道了页面性能情况后又如何进行优化呢？一个页面的性能指标非常多，面对一大堆性能指标，可能一个老手也一时间不知道从何开始分析。而且不同团队，负责的业务不同，性能分析的指标也不能够一概而论。打个比方说，对于一般的电商网站，一定会有很多图片，那图片加载的性能提升对网站的性能提升作用就比较大。而对于一些由表单组成的中台页面，提升图片加载速度的收益远小于电商网站。
+
+总结来说，不同的团队有着各自不同的业务，业务之间千差万别，性能指标也不能一概而论，所以用一套统一的检测模型覆盖所有场景是不现实的。本文将介绍如何定制一个属于自己团队的性能检测平台。
+先看下政采云的性能检测平台——百策
+
+
+
+在聊性能指标之前，先讲一下 Lighthouse。
+
+Lighthouse
+
+Lighthouse 是一个开源的自动化工具，用于分析和改善 Web 应用的质量。运行 Lighthouse 共有 4 种方式，分别在 Chrome 开发者工具，Chrome 扩展程序，Node CLI 和 Node module。百策主要基于 Node module 方式，在其基础上进行扩展开发，Lighthouse 详细使用参见 Git：https://github.com/GoogleChrome/lighthouse
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">你了解数据安全传输吗？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/lQvsL08YrjB1CNUxXWy4?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>HTTPS 认知
+
+HTTPS 其实是 HTTP + SSL 协议组成的安全协议。
+
+我们知道，从我们输入 URL 到页面呈现的过程是作用于 HTTP 协议的，HTTP 协议保证我们网络传输数据的基础，但是安全性无法保证，而 SSL 协议作用于 Http 协议就能解决安全问题。
+
+HTTPS 保证以下三点：
+
+
+数据内容加密
+
+数据完整性保护（数字摘要、数字签名）
+
+身份认证
+
+
+HTTPS 保证安全性要点：
+
+
+握手阶段：使用 非对称加密技术 对 公钥 进行加密
+
+传输阶段：使用 对称加密技术 对 报文 进行加密
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">【告别复制粘贴】动态模板生成小技巧</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/9eUQCVEd5mtJWexDg7Rq?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>前言
+
+在日常开发中，我们需要不停的新建页面和组件。以 Vue 项目为例，我们在新建一个页面的时候，需要经历一遍又一遍重复的过程：
+
+1、先新建一个文件夹
+2、然后新建一个 .vue 文件，写上 、、
+3、如果页面涉及多个组件，还要新建 component 文件夹，并重复以上两个步骤
+4、最后才是我们的业务代码
+
+假设新建一个页面，并复制粘贴模板代码需要 1 分钟的时间，一个项目如果有 60 个页面，就得花费 1 个小时写这种重复性高、无聊且枯燥的代码。这显然不是我们想看到的，下面给大家分享几个提效小技巧。
+
+基于 Vscode 的 Snippets 自定义代码块
+
+通过 Vscode 的 Snippets 我们可以自定义 Snippets，从而实现快捷生成代码片段。
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">交互式教程！带你深入理解 Git 原理</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/EeCfQhaK96rtWaScoWHp?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>综述
+
+如下图所示，有四个模块。这个独立的我们称之为 远程仓库，其他靠在一起的三个我们称之为 开发环境。
+
+
+
+从独立的这个模块开始说，远程仓库 是你推送你的改动并且希望与他人共享的地方，同样你也可以从中获取到他人的改动。如果你使用过其他的版本控制系统，那这个概念并没有什么新鲜的。
+
+开发环境 是在你本地计算机上的。它的三个部分指的是你的 工作目录 、暂存区 和 本地仓库 。在开始使用 Git 前，我们将先了解有关这些概念的知识。
+
+请选择一个要放置你的 开发环境 的位置。可以转到你的主目录，或者你想放你的项目的任何地方，不需要为你的开发环境创建新文件夹。
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">结合阿里云 FC 谈谈我对 FaaS 的理解</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/Ua8e0pNijgGLSRlFm5Zk?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>进入主题之前，先从背景简述下最近前端界的热点词汇 Serverless，其实，Serverless 这个概念在其他领域已经提出来很久了。
+Serverless
+概念
+
+Serverless 直译为无服务器，代表一种无服务器架构（也被称为“无服务器计算”），并不表示不需要物理服务器，而是指不需要关注和管理服务器，直接使用服务即可，其实就是一种服务外包或者说服务托管，这些服务由第三方供应商提供。
+
+具体来说，Serverless 就是指服务端逻辑由开发者实现，运行在无状态的计算容器中，由事件驱动，完全被第三方管理，而业务层面的状态则记录在数据库或存储资源中。
+
+目前国内一些大型公司如阿里、腾讯、滴滴都已经将 Serverless 逐步在业务中落地（案例分享：2020.06.19 ServerlessDays · China Online (https://cloud.tencent.com/developer/salon/live-1224)）。
+
+Serverless 与 FaaS 的联系
+
+Serverless &#x3D; FaaS + BaaS ，是目前界内比较公认的定义：
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">你不知道的 TypeScript 高级技巧</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/7art3FU6yWDhXYQFss0w?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>前言
+
+在 2020 年的今天，TS 已经越来越火，不管是服务端（Node.js），还是前端框架（Angular、Vue3），都有越来越多的项目使用 TS 开发，作为前端程序员，TS 已经成为一项必不可少的技能，本文旨在介绍 TS 中的一些高级技巧，提高大家对这门语言更深层次的认知。
+
+Typescript 简介
+
+
+ECMAScript 的超集 (stage 3)
+
+编译期的类型检查
+
+不引入额外开销（零依赖，不扩展 js 语法，不侵入运行时）
+
+编译出通用的、易读的 js 代码
+
+
+Typescript &#x3D; Type + ECMAScript + Babel-Lite
+Typescript 设计目标: https://github.com/Microsoft/TypeScript/wiki/TypeScript-Design-Goals
+
+为什么使用 Typescript
+
+
+增加了代码的可读性和可维护性
+
+减少运行时错误，写出的代码更加安全，减少 BUG
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">编写高质量可维护的代码：异步优化</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/m5o8ueJsH9DiPjc1dvRs?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>前言
+
+在现在前端开发中，异步操作的频次已经越来越高了，特别对于数据接口请求和定时器的使用，使得我们不得不关注异步在业务中碰到的场景，以及对异步的优化。错误的异步处理可能会带来很多问题，诸如页面渲染、重复加载等问题。
+
+下面我们就先简单的从 JavaScript 中有大致的哪几种异步类型为切入点，然后再列举一些业务中我们会碰到的场景来逐个分析下，我们该如何解决。
+
+异步实现种类
+
+首先关于异步实现的方式上大致有如下几种：
+
+callback
+
+callback 即回调函数。这家伙出现很早很早了，他其实是处理异步的基本方法。并且回调的概念不单单出现在 JavaScript，你也会在 Java 或者 C# 等后端语言中也能找到他的影子。
+
+回调函数简单的说其实就是给另外一个寄主函数作为传参的函数。在寄主函数执行完成或者执行到特定阶段之后触发调用回调函数并执行，然后把执行结果再返回给寄主函数的过程。
+
+比如我们熟悉的 setTimeout 或者 React 中的 setState 的第二个方法都是以回调函数方式去解决异步的实现。
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">机器学习是科学还是“炼金术”？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/zuQW9BlHRDArvAad706B?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>在实证领域，科学的严谨性是从假设开始塑造的。
+
+
+业界对机器学习研究的科学严谨性的质疑声越来越多了。
+
+在2017年NIPS会议上的一场演讲中，当时就职于谷歌AI的Ali Rahimi和Ben Recht认为ML已经成为了一种炼金术，也就是说从业者使用的方法在实践中表现很好，但在理论层面上对这些方法的理解却相当欠缺。类似地，Keras深度学习库的作者Francois Chollet认为当今的ML从业者都有“货物崇拜”的思想，人们依赖的都是“民间传说和魔法咒语”。
+
+炼金术、货物崇拜、魔法咒语。对于一个发展如此迅速、在现实世界应用越来越广泛的领域来说，这些都是值得关注的批判意见。而且正是这种广泛应用的局面让Rahimi和Recht感到忧心忡忡：
+
+
+如果你构建的是照片共享服务，那么就算用的是炼金术也无所谓。但我们现在正在构建的系统会管理医疗保健和政见发表等事务。我希望我们世界的系统应该建立在严格、可靠、可验证的知识基础上，而不是用什么炼金术来充数。
+
+
+机器学习是一个实证领域：我们根本没有什么理论可以解释为什么某些方法行之有效，而其他方法却行不通，我们甚至不清楚这样的理论是否会存在。但缺乏理论这一事实本身实际上并不是主要问题。即使在实证研究领域，我们也可以用科学严谨的方式取得进展。
+
+我认为科学和炼金术之间的关键区别始于从业者分配给科学假设的角色。
+先做假设
+
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">一文搞定前端代理骚操作！再也不怕线上bug啦！</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/D1GsvmwDY166dXzj4Sdx?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>前言
+
+为什么我们需要一个代理工具？一个灵活好用的代理工具对开发的作用有多大？
+
+一个顺手的代理工具，可以让我们随心所欲的掌控我们的开发环境，当前环境前置服务挂了还要等重启？不！直接切一个可用环境接着我的开发。验证页面不同数据状态的流程还要造数据？不！直接代理修改数据走流程，省劲。特定机型线上问题抓耳挠腮不知如何定位？代理连上查看元素、远程 log 轻松定位问题所在......
+
+使用代理不说能解决所有问题，但是至少可以在解决问题的流程上帮我们省大半的时间，而不是碰到环境问题就在那儿等重启
+
+
+
+
+Whistle 介绍
+
+关于 Whistle 下面引用官方的
+
+
+Whistle(读音[ˈwɪsəl]，拼音[wēisǒu])基于 Node 实现的跨平台 web 调试代理工具，类似的工具有 Windows 平台上的 Fiddler，主要用于查看、修改 HTTP、HTTPS、Websocket 的请求、响应，也可以作为 HTTP 代理服务器使用，不同于 Fiddler 通过断点修改请求响应的方式，Whistle 采用的是类似配置系统 hosts 的方式，一切操作都可以通过配置实现，支持域名、路径、正则表达式、通配符、通配路径等多种匹配方式，且可以通过 Node 模块扩展功能
+
+
+点击查看原文&gt;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
             <article>
               <details class="article-expander">
                 <summary class="article-expander__title">“混合双打”之如何在 Class Components 中使用 React Hooks</summary>
@@ -105,295 +619,777 @@ newStr;
             </article>
         </section>
       </li>
-    </ul>
-  </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-07-30">2021-07-30</time></h2>
-    <ul class="sources card">
       <li class="source">
         <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.infoq.cn">InfoQ - 促进软件开发领域知识与创新的传播</a></h3>
+          <h3 class="source-name"><a class="source-name__link" href="https://docs.rsshub.app">iDaily 每日环球视野</a></h3>
           <section class="articles-per-source">
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">编写高质量可维护的代码：组件的抽象与粒度</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/tyP2o9RB0myHzlDEBATo?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">天猫座三重星系</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/cb3mX3">
                   <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>前言
-
-作为一名精致的前端猪猪女孩，也有那么点想让自己的代码同样看起来精致一点。所以在拿到新需求的 UI 设计稿时，经常会面临如下问题：如何拆解页面？如何划分组件才算是合理？好像用于组件拆分的 A 方案和 B 方案在当前业务场景下也都还算合理，那究竟要怎么选择？组件的抽象与粒度貌似是一个老生常谈的问题了～学习了很多前辈的文章，那么今天结合业务场景，也来讲下我的心得～
-
-什么是组件
-
-React 官方文档 (https://react.docschina.org/docs/components-and-props.html)上说：组件，从概念上类似于 JavaScript 函数。它接受任意的入参（即 “props”），并返回用于描述页面展示内容的 React 元素。
-
-Vue 官方文档 (https://cn.vuejs.org/v2/guide/components.html)说：组件是可复用的 Vue 实例，且带有一个名字。我们可以在一个通过 new Vue 创建的 Vue 根实例中，把这个组件作为自定义元素来使用。
-
-其实总的来说，无论什么语言框架，组件就是一段代码片段，它可以实现某些指定的功能或渲染特定的展示效果，我们一般可以通过 import 的方式将其引入到项目代码中。本文接下来将以 React 为例进行相关描述。
-
-组件的抽象
-
-组件抽象的过程就是将通用性代码“提取”或是“抽取”出去的过程，那么问题来了，我们为什么要抽组件呢？
-点击查看原文&gt;</span>
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>美国航天局（NASA）公布一张哈勃太空望远镜拍摄的「Arp 195」三重星系照片，中央的3个星系在引力作用下相互融合。这是一个位于北天星座天猫座的星系群，距离地球约7.63亿光年。该天体系统包含至少3个星系，宽度约20万光年，其中2个星系已经高度融合，第3个星系的恒星和气体因引力而向外延伸，形成一条长约20光年的潮汐尾（Tidal tail）。摄影师：NASA</span>
                   </div>
                 </a>
               </details>
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">前端简史：你不知道的 ES4</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/tEYNxgjuVpQBOWAZTR1R?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">「科学号」实验舱事故原因</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/d6da7J">
                   <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>不知道大家有没有注意到，在我们应用构建的过程中，都有目标 ES 版本这个选项，通常可以选择 ES3、ES5、ES6 甚至最新的 ES10，但是却没有 ES4 这个版本，这是怎么回事呢？
-
-ES4 简史
-
-通过维基百科其实可以查到，ES4 在 1999 年 2 月就已经开始起草，并且计划在 2008 年 8 月完成。但是发展过程其实并不顺利，ES4 提出了很多惊为天人的新特性，比如：类、严格类型、模块等，大有一副改革 JavaScript 之势，对于当时的 JS 生态来说，兼容成本变得非常之高。
-
-由于过于激进，各浏览器厂商发生了严重分歧，以 Yahoo、Microsoft、Google 为首的大公司，反对 JavaScript 的大幅升级，主张小幅改动；以 JavaScript 创造者 Brendan Eich 为首的 Mozilla 公司，则坚持当前的草案。
-
-在 2008 年 7 月 ES4 发布前，ECMA 临时开会决定，中止 ES4 的开发，废除该版本。并且将其中涉及现有功能改善的一小部分，发布为 ES3.1（后改名为 ES5），而将其他激进想法放入以后的版本（ES.NEXT），由于会议的气氛，该版本的项目代号起名为 Harmony（和谐）。
-
-ES4 草案中有什么
-Classes（类）
-
-类最终是在 ES6 中被实现的，但其实在最早的 ES4 草案中，就有了类的定义：
-
-class Bar {
-  var val &#x3D; 1
-  const pi &#x3D; 3.14
-  // A function
-  function f(n) {
-    return n + val * 2
-  }
-  // Getters and setters
-  function set foo(n) {
-    val &#x3D; n
-  }
-  function get foo() {
-    return val
-  }
-}
-
-
-点击查看原文&gt;</span>
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>从国际空间站拍摄「科学号」实验舱和「联盟号」载人飞船。7月30日，俄宇航员成功进入「科学号」实验舱，报告称「实验舱内一切正常，但是打开舱门时有一个2厘米长的螺栓飞出」。空间站俄罗斯舱段飞行负责人 Vladimir Solovyov 表示，此前「科学号」实验舱发动机意外启动的事故由软件故障导致，目前空间站与实验舱对接机制工作正常。未来6至8个月，俄宇航员还需要执行10次太空行走任务以完成实验舱的所有对接工作。摄影师：Oleg Novitskiy</span>
                   </div>
                 </a>
               </details>
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">NPM 私库从搭建到数据迁移最后容灾备份的一些解决方案</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/x1tECzDDQXWCjmHqQUZe?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">美国追加对古巴制裁</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/4f03mZ">
                   <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>前言
-
-按照国际惯例，正文开始之前，我们先简单介绍下目前市面上的 NPM 私库开源框架。
-
-
-Verdaccio
-
-Verdaccio 是 Sinopia 开源框架的一个分支。它提供了自己的小数据库，以及代理其他注册中心的能力（例如：npmjs.org 网站)，配置以及部署相对简单，一步到&quot;胃&quot;。如果公司的私包比较少的话或者你想偷懒，可以考虑一下。
-
-
-Cnpmjs.org
-
-大名鼎鼎的 CNPM，想必各位早就感受到了它的速度之“快”，没错，它的 Register 服务就是淘宝镜像 (https://registry.npm.taobao.org/)。主要是基于 Koa、MySQL 和简单存储服务的企业专用 NPM 注册和 WEB 服务，其中最强大的功能就是它的同步模块机制（定时同步所有源 Registry 的模块、只同步已经存在于数据库的模块、只同步 Popular 模块）。
-
-
-Nexus
-
-后端开发的小伙伴应该比较熟悉。Nexus2 主要是用于 Maven/Gralde 仓库的统一管理，而 Nexus3 则添加了 NPM 插件，可以对 NPM 提供支持，其中 NPM 仓库有三种类型，分别是 Hosted（私有仓库）、Proxy（代理仓库）、Group（组合仓库）。
-
-总体来讲，抛开 Nexus，虽然 Cnpmjs.org 在部署过程以及总体设计方案上相对于 Verdaccio 复杂的多，但是它提供更高的拓展性，定制性，可以支持多种业务使用场景。接下来，我们分别从 Cnpmjs.org 容器化部署、数据迁移、OSS 容灾备份等内容，层层展开。
-点击查看原文&gt;</span>
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>美国总统 Joe Biden 宣布追加制裁古巴国家警察部队及2名高级官员，华盛顿白宫。7月30日，Biden 在白宫会见古巴裔美国人代表，承诺「美国政府将继续对镇压抗议的古巴官员实施制裁，并考虑向古巴人提供 LTE 无线网络接入以绕过政府监管」。中国外交部发言人当天表示，美国单边制裁封锁是造成古巴药品短缺、能源紧张等问题的根源，应立即全面取消对古巴封锁，停止对古巴干涉。摄影师：Sarah Silbiger</span>
                   </div>
                 </a>
               </details>
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">Chrome DevTools 全攻略！助力高效开发</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/tFXsCiO9tyATmoiTUUgG?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">日本奥运金牌数破纪录</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/eeeVth">
                   <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Console 面板
-
-
-此章节请打开 justwe7.github.io/devtools/console/console.html 一起食用
-一方面用来记录页面在执行过程中的信息（一般通过各种 console 语句来实现），另一方面用来当做 shell 窗口来执行脚本以及与页面文档、DevTools 等进行交互
-
-
-组合快捷键按键:Windows: Control + Shift + JMac: Command + Option + J
-首先看一下 console 对象下面都有哪些方法:
-
-
-
-console.clear()
-
-顾名思义，清空控制台
-
-console.log(), info(), warn(), error()
-
-点击查看原文&gt;</span>
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>日本奥运乒乓球选手石川佳纯的巨型充气人偶在富士电视台总部大楼展出，东京。7月31日，东京奥运会进入第8个比赛日，日本队以17金成绩位列金牌榜第二位，金牌总数已打破该国奥运会纪录。迄今日本所获金牌中有9枚来自柔道项目，其余来自乒乓、击剑、垒球、游泳、滑板等项目。当天日本单日新冠确诊10744例，新增21名奥运相关确诊病例，人口疫苗接种率为38.7%。摄影师：Carl Court</span>
                   </div>
                 </a>
               </details>
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">初中级工程师如何快速成长和寻求突破</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/J1D8TEfijfJmgYmEsw5y?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">土耳其南部山火蔓延</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/58b9sA">
                   <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>前言
-
-写这篇文章的初衷是因为看到很多刚入职的同学迷茫，没有目标感，看到了一些工作 1~2 年的同学疲于业务开发而没有很大的成长， 也看到了一些同学 2~3 年工作时间变成了框架熟练的“打工人”却没有很好的沉淀和亮点，导致无法进入大厂实现薪资的大幅提升。希望这篇文章能够给这些初中级工程师一些启发。
-
-挑选适合的平台
-
-选择大于努力
-
-如果你拿到下面两个公司的 Offer ，你会如何选择？
-
-
-
-
-A 公司B 公司
-
-规模400 人1000 人
-行业互联网软件服务
-薪资10 K13 K
-前端人数40 人80+ 人
-前端职能独立前端部门跟项目走
-汇报老板专职前端后端
-
-
-
-我相信大部分人都会选择 A 公司，因为你会认同 A 公司更有成长空间，会积累更多的沉淀。
-
-从哪几方面做选择
-
-1.看行业，2010 年以前的电商，这两年教育，社区团购等。
-2.看公司，公司是否大厂，行业内影响力，公司文化是否吻合，和一群靠谱的人工作，结果肯定不会太差。
-3.看岗位，否是职能部门，是否是职能部门主要就是看组织架构中是否有前端部门。很多公司前端开发很多，但是是分散在不同部门里面，汇报老板是后端研发。
-点击查看原文&gt;</span>
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>土耳其沿海地区发生森林大火，浓烟形成烟柱，伊丘美勒。7月31日，土耳其爱琴海和地中海沿岸山火灾害进入第3天，迄今17个省份共报告约70场山火，造成4人丧生、超过180人受伤。土耳其政府派出4000名消防员、680辆消防车和38架直升机参与灭火，俄罗斯、乌克兰和阿塞拜疆等国均派出飞机进行协助灭火。目前起火原因仍在调查中，土耳其政府宣称「存在人为故意纵火的可能性」。摄影师：Arsen Khasanov</span>
                   </div>
                 </a>
               </details>
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">如何用Python构建一个决策树</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/NHEwmQkQWG1zcEigP9Jv?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">泰国单日确诊1.9万</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/64cVvR">
                   <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>本文最初发布于Medium网站，经原作者授权由InfoQ中文站翻译并分享。
-
-决策树是一个经久不衰的话题。本文要做的是将一系列决策树组合成一个单一的预测模型；也就是说，我们将创建集成方法（Ensemble Methods）的模型。
-
-决策树是准确度最高的预测模型之一。想象一下同时使用多棵树能把预测能力提高到多高的水平！
-
-一些集成方法算法的预测能力超过了当今机器学习领域的一流高级深度学习模型。此外，Kaggle参赛者广泛使用集成方法来应对数据科学挑战。
-
-集成方法以相对较低的复杂性提供了更高水平的准确度。决策树模型和决策树组构建、理解和解释起来都很容易。我们将在另一篇文章中谈论宏伟的随机森林，因为它除了作为机器学习的模型外，还广泛用于执行变量选择！我们可以为机器学习模型的预测变量（predictor）选择最佳的候选变量。
-Jupyter笔记本
-
-请查看Jupyter笔记本，了解我们接下来要介绍的构建机器学习模型的概念，也可以参阅我在Medium中写的其他数据科学文章和教程。
-点击查看原文&gt;</span>
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>穿着防护服的泰国士兵在机场执行新冠患者运送任务，曼谷。7月31日，泰国单日新增确诊18912例，单日死亡178例，均创下历史新高，疫情仍然呈加速恶化趋势。曼谷市正面临严重医疗床位短缺危机，政府决定将部分新冠患者送回原籍地治疗，并将机场和火车改造为临时隔离设施。由于新冠疫苗供应不足，泰国目前人口疫苗接种率仅17.7%。摄影师：Narong Sangnak</span>
                   </div>
                 </a>
               </details>
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">AI系统如何识别重复数据？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/wIuju9OK3ilcJ5YmBLf4?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">越南疫苗接种率落后</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/2627ld">
                   <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>当你同时比较两个Salesforce记录或任何其它CRM记录时，你可以很容易地确定它们是否重复。然而，当你有10万条这样的记录时，你几乎不可能一个一个地筛选它们，并进行这样的比较。这就是为什么很多公司开发了各种工具来自动化这些过程，为了做好工作，机器需要识别这些记录之间的相似性和差异性。在本文中，我们将更仔细地研究数据科学家用来训练机器学习系统识别重复的一些方法。
-机器学习系统如何对比记录？
-
-研究人员使用的主要工具之一是字符串度量。当你取数据中的两个字符串时，如果字符串相似，返回一个低值；如果字符串不同，则返回一个高值。这在实践中是如何工作的？让我们来看看下面两个记录：
-
-
-
-
-First Name
-
-Last Name
-
-Email
-点击查看原文&gt;</span>
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>河内市一所中学被改为新冠疫苗临时接种点。7月30日，越南单日新增确诊8649例，单日死亡298例，累计确诊13.7万例，死亡1161例，疫情呈加速恶化趋势。越南首都河内从7月24日起进入封城状态，关闭所有非必需品商店，并禁止公共场所2人以上聚集。由于越南政府疫苗采购和接种行动迟缓，该国人口疫苗接种率仅5.2%，是亚洲疫苗接种率最低的国家之一。摄影师：Manan Vatsyayana</span>
                   </div>
                 </a>
               </details>
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">2.05亿美元！马斯克的脑机接口公司获该领域最大规模融资，下一步将在人类身上进行临床试验</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/JOaIam9xN0bFAIYSJq5b?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">荷兰数字艺术展</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/452J72">
                   <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>马斯克的脑机接口公司 Neuralink 完成 C 轮融资后，又该有大动作了。
-
-脑机接口公司 Neuralink 完成 2.05 亿美元融资
-
-北京时间 7 月 30 日早间消息，马斯克创立的脑机接口公司 Neuralink 完成 C 轮融资，筹集资金 2.05 亿美元（约合 13.2 亿元人民币）。据了解，这也是该领域迄今为止规模最大的融资。
-
-资料显示，Neuralink 本轮融资由总部位于迪拜的风投公司 Vy Capital 领投，此外还有包括谷歌风投、德丰杰成长基金（DFJ Growth）、Valor Equity Partners、 Craft Ventures、创始人基金（Founders Fund）和 Gigafund 在内的众多企业参与投资。不仅如此，一些高管和企业家也参与了投资。
-
-在这轮融资之前，Neuralink 已于 2019 年 5 月份获得过 5100 万美元 B 轮融资。2017 年，Neuralink 计划融资 2700 万美元，但实际获得 1 亿美元资金。
-点击查看原文&gt;</span>
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>一件以荷兰画家 Pieter Bruegel the Elder 1563年油画《巴别塔》为题材的艺术装置正在展出，鹿特丹。本次展览名为「大师再现」（Remastered），通过数字技术对荷兰知名艺术家的作品进行二次创作，包括梵高、维米尔、博斯、蒙德里安、伦勃朗等。展览举办地点位于鹿特丹的伊拉斯谟桥下方，面积约1500平方米，分为「游乐场」「地下世界」「洞穴」「天国」等6个主题区域。摄影师：Remko de Waal</span>
                   </div>
                 </a>
               </details>
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">干货 | Flutter控件CustomScrollView原理解析及应用实践</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/Uz3HblaD0EGuBEZrGShk?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">摩洛哥出土史前石器</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/586f4C">
                   <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>说起移动端跨平台解决方案，Flutter无疑是最近被谈到最多的话题。相对于React Native这样的前端技术栈，Flutter更贴近于客户端的技术栈特性，所以迅速获得大批原移动端开发的热烈拥护，再加上其优秀的渲染性能和友好的开发模式，目前已经在业内被广泛使用。
-
-携程酒店研发从去年底开始对Flutter进行可行性调研，在今年年初陆续完成了酒店详情页和酒店列表页的转Flutter工作，通过这项工作，实现了客户端技术栈的统一，大大提高了研发效率和双端一致性。在Flutter开发的过程中，对CustomScrollView的使用是比较多的，这也是我们开发过程中比较重要和复杂的控件。    
- 
-
-
-图1  CustomScrollView可承载的子布局类型
- 
-CustomScrollView是Flutter的SDK提供的实现长列表的控件。它像一个强大的粘合剂，如图1所示在此控件中我们可以将各种不同的布局，比如列表，网格，瀑布流，吸顶组件等，在其里面组合，实现较为复杂的页面。以往在Native的开发中，官方组件没有提供如此强大的组合能力，我们在Native中实现列表中组合不同布局，或者是通过index映射布局类型这种异构的方式，或者需要自己去自定义一个能够组合不同布局的控件，都没有CustomScrollView方便。
-点击查看原文&gt;</span>
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>摩洛哥考古人员展示一批新出土的旧石器时代工具，卡萨布兰卡。7月28日，摩洛哥考古团队宣布在卡萨布兰卡郊外发现一处「阿舍利文化」（Acheulean）旧石器时代遗址，年代距今约130万年。这是迄今已知北非地区最古老的石斧工具发现地，遗址内出土大量史前人类制作的石制切削工具。该发现将北非史前石器的最早出现时间大幅提前近60万年，有助于更准确地判断早期直立人在北非的演变过程。摄影师：Fadel Senna</span>
                   </div>
                 </a>
               </details>
             </article>
             <article>
               <details class="article-expander">
-                <summary class="article-expander__title">编程语言巅峰之战，谁才是真正的王者？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.infoq.cn/article/JGmaQqGwqaFpiV9rJGV1?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
+                <summary class="article-expander__title">中国队第21枚金牌</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/c4cho4">
                   <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>编程语言排名一直以来都是备受争议的话题，当我们彼此之间讨论的时间不同，角度不同，结果往往就会不同。因此，我们看到很多机构或者组织每年都会发布很多编程语言排行榜，这些排行榜的算法、角度都不尽相同。
- 
-TOIBE编程语言排行榜就是编程语言流行趋势的一个重要指标，它基于互联网有经验的开发者、课程、第三方厂商数量等数据，每个月更新排名情况。
- 
-今年是TOIBE编程语言排行榜发布的20周年， TOIBE榜单第一次发布时，排名前三的编程分别是Java、C和C++，而在今年7月的最新榜单中，排名前三的编程语言分别是C、Java和Python。
- 
-TIOBE编程语言排行榜虽然是比较权威和流行的榜单，但是它的排名结果主要体现了国外开发者的喜好。而目前国内整体 IT 技术发展与国外有很大不同，因此，我们需要一个真实客观反映各种编程语言在国内排名的榜单。
- 
-因此，InfoQ 特别推出【InfoQ 编程语言排行榜】，征集国内开发者、程序员对编程语言的喜爱情况。在榜单问题设置方面，我们邀请国内的技术专家与编辑同学共同拟定了八个有代表性的问题，同时精心挑选了当前最流行、最受欢迎的编程语言，诚邀您来投上宝贵一票。
-点击查看原文&gt;</span>
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>中国选手吕小军赢得2020东京奥运会举重男子81公斤级金牌，东京国际论坛大厦。7月31日，吕小军以抓举170公斤，挺举204公斤，总成绩374公斤成功夺冠，打破抓举奥运会纪录，赢得中国队本届奥运会第21枚金牌。37岁的吕小军是81公斤级挺举和总成绩世界纪录保持者，他已连续参加3届奥运比赛，2012年获得第一块奥运金牌，本次夺冠让他成为奥运会有史以来年龄最大的举重冠军。摄影师：Chris Graythen</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">中国队第20枚金牌</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/c4b5nF">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>中国选手卢云秀赢得2020东京奥运会女子帆板 RS:X 级金牌，神奈川县江之岛。7月31日，卢云秀在女子帆板 RS:X 级决赛中夺冠，赢得中国队本届奥运会第20枚金牌。1996年出生的卢云秀从12岁开始帆板运动训练，17岁入选国家队，2019年获得世锦赛冠军，并在本届奥运会项目预赛阶段排名第一。摄影师：Clive Mason</span>
                   </div>
                 </a>
               </details>
             </article>
         </section>
       </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.v2ex.com/">V2EX-最新主题</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">从某不知名国企互联网到京东，值得去吗？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792940">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>zhoudaiyu: 
+Base 北京，运维开发。现在在一家所谓国企互联网干了 3 年了，觉得自己技术已经没法再在这个环境下成长了，而且工资也不尽人意，根本没法和互联网比，工作时长大概是 975，而且公司马上搬家，搬到离我家很远。优点就是虽然工作时长比较长，但是并不累。
+上周收到了京东的口头 Offer，也是运开，工资涨幅大概 30%多，1095 的工作时长，离我家比较近，累肯定是累一点，但是应该能学到不少吧，对以后长期发展是不错的。
+现在有点纠结，其实我是个挺懒的人，不爱跳来跳去的折腾，这边也比较熟了，其实每天不用干啥活，但是去京东就不同了，一切从 0 开始。从来没跳过槽，大家帮忙出出主意吧！</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">有真正的静音 USB 风扇吗，天不是一点热啊</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792939">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>v2clay: 手头有一个 baseus 的海洋风扇，型号 JPD-L86, 用久了，开一档，噪音挺大的。
+加了机油，噪音依旧，有没有比较有效的缓解措施</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">你从 V 站摸鱼的过程中，学到的过哪些对日常生活非常有益的小技巧？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792937">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>zitengdu: 
+我发现平时摸鱼的过程中还真发现了不少小技巧，在平时生活中非常受益。这里我先抛砖引玉下：
+家里和公司分别放一把伞。
+iPhone 使用设置晚上自动关闭 Wi-Fi 和蜂窝，防止晚上掉电。
+各位能分享下更多有意思或有用的小技巧吗？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">可以查询你的常用 password、购物记录、QQ、手机信息等是否被泄露的工具</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792936">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>huangxd1991: 
+用 tg 打开该机器人就能查询
+https://t.me/FreeSGKbot?start&#x3D;SGKSEEYDMA</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">这年头写个漫画爬虫都心力憔悴。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792934">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>3dwelcome: 
+写了个自用小爬虫，追漫画用，每天刷一次，稳定运行了几个月。
+然而，漫画网站是在 cloudflare 上，突然之间就被识别为 BOT，拒绝访问了。可让我非常意外的是，同样的 IP，浏览器访问一点问题都没有！
+在 V2 查了前人资料，说是 TLS 指纹技术。顺藤摸瓜，发现了每个客户端都有指纹，难怪相同的 UA/Cookie，curl 不行，浏览器却可以，因为两者的 SSL 指纹是不一样的。( https://browserleaks.com/ssl 里的 JA3 Hash)
+于是乎，剩下了二个解决方案：
+修改爬虫客户端，模仿浏览器的行为。但问题是，cloudflare 的 tls 指纹算法并没有公开，网上也搜不到相关信息，应该不可能用 JA3 这种开源解决方案。靠猜测编程，是非常不靠谱的行为，遂放弃。
+把 google chrome 当成代理服务器，运行一个网页，用 websocket 和爬虫通讯，然后用 ajax 去访问目标站点。
+用 AJAX 暂时解决了问题，也不知道几个月后，会不会出现新问题。怀念以前 http 不加密一把梭的年代，什么都是明文，简单明了直接。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">流量穿.透的宽带是不是需要更优雅的境外访问方式？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792933">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>cathedrel: 
+确认朋友的宽带是流量穿.透的了，三网都穿，访问国内资源是没什么问题，访问外.网就太痛苦了， $.S 一会儿就断，断了过一会又自动连上，然后再断，香.港方向断的比美国方向还频繁，他自己刷推刷脸书痛苦，跟我语音连线痛苦，我放他家里的一台用来翻回国的小主机连接也痛苦。
+现在可以确认的是他这个地方只有这一家流量穿透的可以用，房子租到明年，另外，这个地方的手机信号差，三家的都差，打电话没什么大问题，但是上网很慢，所以用手机流量不现实。
+请问：对付这种流量穿透的宽带，除$.S 之外哪种扶墙方式可以比较好的应付？从他提供的网络情况来看，最好是能同时向境外节点发出若干个链接进程然后自动用速度最快的一条链接去访问资源，目前有能实现这种需求的类$.S 软件吗？？？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">[不懂就问]JWT 中 header 和 signature 真的有必要存在吗？直接使用 payload 部分对称加密不好吗</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792932">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>copymaster: 
+最近在看 jwt 就觉得很疑惑，毋庸置疑 jwt 使用非常广，但我怎么也没想明白 header 和 signature 这两部分返回给客户端有什么用，到头来还是客户端再发回来后端做校验
+直接使用对称加密，比如 aes，来加密返回给客户端不好吗？客户端修改之后回来再解密肯定出错
+我能想到的使用 jwt 加 salt 而不使用对称加密的唯一原因就是性能考虑，关于这一点我也不是很确定</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">20210801 午夜俱乐部</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792931">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>blackshadow: 最近有点抑郁。 
+很早之前对抗抑郁的办法就是去特别特别热闹的地方呆呆地坐着看人来人往。
+现在变成了，看深夜树洞。看到比自己惨的故事，同情别人，顺便安慰自己。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">一个城市的哪些公共设施可以被利用?</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792930">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>chaleaoch: 譬如 二线城市, 更好. 更有效 或者就可以被利用就可以.
+譬如 图书馆- -
+线上的也可以.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Intel SATG 部门怎么样？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792929">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>bryanw: 小弟本科毕业，刚拿到了上海 intel SSE 的 offer，部门是 SATG （应该是 IAGS 组织架构变动之后的名字），做的大概是云计算方向，有不少开源项目。想问一下大佬们这个部门发展前景怎么样？还想问下英语好的话有肉身翻墙的机会吗？工作内容我是很感兴趣的，但因为 base 给的实在有点低，手上还有几个其他大厂的 offer，所以很纠结。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">公立医院医生开药多与少与医生的收入挂钩吗？记录小孩拉肚去医院发生的事。</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792928">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>z775781: 今天小孩有点拉肚子，去了县里的人民医院，18 线小县城，县人民医院是二级甲等。
+进去查行程码，健康码不看。挂号排队一条龙。
+简单的跟医生沟通过后，医生说可以吃药，也可以打点滴，我们选择了吃药。
+接着就开始开药，刚开始共三种药，分别是：蒙脱石散，络酸梭菌活菌散，抗病毒颗粒（中成药）
+还在一个单子上，写了一个药名，让我们上外面的药店买去。
+打印了缴费的单子，可以直接扫码缴费，我看了单子后，
+其中西药费：34.26  中成药费：25.50
+跟医生沟通，不想用中成药，医生就把中成药去掉了，我以为去掉中成药后，就只剩下西药费了。
+重点来了，这位医生很熟练的接着开了两盒赖氨葡锌颗粒，34.26 元一盒，我先付了钱，去取药后。
+拿药去医生那里，会告知药品的用法用量，然后我看了赖氨葡锌颗粒的成分，主要成分是盐酸赖氨酸 125mg  ,锌 35mg 。经过查询，此药品是补剂。
+就问医生这个赖氨葡锌颗粒是干嘛的，医生说是补锌的，我说我们自己有给娃补锌的产品，医生还说了几句话，具体没印象了。医生最后说的一句是，不需要的话，可以拿去取药处退掉。
+然后我就拿去取药处把药品退掉了，为此我的妻子还给我一顿数落。说我在教医生看病。
+我拿到手的药品为：蒙脱石散，络酸梭菌活菌散。
+最后医生那个写了药名让我去外面药店购买的单子，也没给我，也没有提这个事情。
+一切处理完毕，回家后喂了一次蒙脱石散，喂了一次络酸梭菌活菌散后，孩子也不拉肚子了，晚上又喂了一次。
+看起来是已经不拉肚子了，明天再观察观察。
+经过这个事，特别疑问，医生开药是否与自己的收入挂钩呢，网上查询到的内容是没挂钩的，那么为什么，很多次去医院，医生都很喜欢开特别贵的中成药呢？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">求推荐儿童学习、游戏 APP？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792927">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>ichanne: 
+免费、付费 APP 都可以，学习的游戏的都可以。
+最基本要求就是没有广告，或者付费后能完全关闭广告。
+有些儿童 APP 突然弹出快手的尬视频广告，真的太 low 了。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">想买一台 macbook pro，有三种想法，求分析一下</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792925">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>TAFMT: 
+本人 Java 后端，目前手头 1w，想买一台 mbp 16+512 版本，京东目前要 1.2w  有三种方案(贫穷)...
+京东买 16+256+移动硬盘
+闲鱼淘一台(目前闲鱼在 1w 左右)
+淘宝或者拼夕夕买一台没发票的
+求分析...😕</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">我的 win10 开始按钮是不是被劫持了呢？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792924">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>permaylau: 
+亲爱的 V 友们，最近打开我的电脑，装的 win10 系统，版本为 10.0.19043
+图片见我的博客文章链接：
+https://baidunow.com/post/10624.html
+每次开机总要点击退出，才恢复真正的 WIN10 标志，每次系统开机都是这样，很烦恼。
+但检查了我的软件列表，也没安装异常的软件啊。
+我安装的是 Norton Security 杀毒软件，C 盘扫描了一遍，也没啥病毒啊。
+所以在这里请教大家，这是怎么回事？如何解决？</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">迫于运动，晨跑前需要吃早餐吗，跑步后吃什么？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792923">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>yunyuyuan: 
+之前每天 8:20 起床上班，现在打算 7 点起床跑步，一是为了锻炼，二是为了戒掉熬夜，只要早起就不会晚睡了:)
+各位 v 友是否知道健康晨跑的注意事项，例如晨跑前吃什么，晨跑后休息吃什么，本人体型稍微偏瘦。网上查了下建议晨跑前喝水就行了，不知是否可行</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">[求助] Windows 下 cmd 中 ssh 使用私钥连接腾讯云服务器，提示 Permission denied (publickey)，但是使用软件 MobaXterm 可以连接上，原因及解决方案是什么？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792921">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>ManUnDead: 对于私钥权限的问题，我已经按照网上搜索到的相关博客删除了其他主体的权限，只保留自己登录用户的权限，但是仍然连接不上。
+看了一下 MobaXterm 是会在 temp 文件夹下生成一套类似 Linux 的运行环境的，想知道在使用同一个私钥文件的前提下 cmd 中 ssh 连接不上但是 MobaXterm 中可以连接上的具体原因，还有该如何解决 cmd 连接不上服务器的问题，谢谢大家。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">请问哪里能找到物联网解决方案工程师</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792920">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>ashe900501: 我目前主要做物联网方面的集成工作。涉及到的行业比较多。需要各行各业的物联网解决方案。但没有太多时间编写。希望能找到做相关工作的朋友。帮忙做方案，我会把需求提供出来，然后帮忙做出 ppt 方案。（有偿）
+在网上搜了搜，不知道哪里可以找到这样的朋友。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">聊聊互联网公司监控技术栈选型</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792919">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>Sparkli: 
+最近公司在做监控方面的选型，想了解一下大家的业务场景及监控技术栈 /架构选型
+可以分为三个方向展开
+1.业务监控（链路追踪、慢查询慢调用等）
+其中第三点可以先不考虑，SRE 团队可以接手
+或从 Metrics，Tracing，Logging 展开，一些搭配方案
+或现有三方开源监控全链路解决方案、Open-Falcon 、Nightingale
+由于楼主是新手 初探这个领域，想跟大家交流进步一下 错误之处多多包涵</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">截止目前，高德地图和百度地图谁更胜一筹？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792917">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Apple2023:</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">现在 macOS 11.4 有侧载 ipa 的方法吗？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792916">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>AndyZhuAZ: 
+因为 11.3 封锁侧载，我一直停留 11.2.3，虽然用的没有问题，但是要想听无损 Apple Music 还是得升级 11.4 。不得不考虑升级。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">求万圈推荐上海靠谱 surface 换屏的地方</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792915">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>ccming:</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">严谨的讲, 开发和运维的界限在哪里?</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792914">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>chaleaoch: 上下文是这样的, 有一个朋友给我推荐了一个他们自己做的开源的微服务项目, 其实就是 rpc + fastapi 塔的一个架子. 我说这就是全部吗? kong 呢? 
+他说那不是韵味的事儿吗? 我说 k8s 也算运维你们都不需要知道的吗?
+他说是的.
+我的问题是:
+实际情况呢?
+我应该怎么做呢?
+作为一个后端开发真的不需要了解 envoy istio k8s 这些个吗? 只要做好 RPC 调用就好了?</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">找一款电脑端的粘贴板软件</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792913">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>ling516: 
+支持看历史   然后固定粘贴板前几位
+请问哪款好</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">桌面端有没有对各种分辨率适配的点子呢？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792912">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>kwanzaa: RT
+如字体，UI 等，闲聊谈谈。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">怎么样获取微信读书排行榜的数据</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792911">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>xiaoshuai1999: 
+如题，是这样的，想给女朋友做一个微信读书的提醒功能，如目标是每天一个小时，设置定时任务，如果目标未达标则发送一个邮件到她邮箱里面。
+现在的问题是微信网页版没有这个功能，不知道接口 url，安卓模拟器也不能用</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">poi 读取 excel 内存溢出</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792910">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>git00ll: 
+现象
+excel 文件，约 50M 。java 堆内存给到 512m，采用流式方式读取，出现 oom，Java heap space 。
+问题
+话说流式读取不应该很省内存的吗,为啥 50M 的都读不了。
+源码
+跟踪 poi 代码 发现在
+org.apache.commons.compress.archivers.zip.ZipArchiveInputStream#getNextZipEntry
+
+方法 293 行 new ZipLong(lfhBuf, off);获取到的长度，
+该长度是从文件头部获取的长度，不太理解这个获取到的长度是由什么决定的。
+在方法 org.apache.poi.util.IOUtils#toByteArray(java.io.InputStream, int)中进行读取数据时，堆内存爆了，暂时没找到限制该大小的办法，此大小应该和文件本身的大小有关。
+补充
+问题发生在
+OPCPackage.open(stream) 方法内</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">求教 M1 MacBookpro 关于修改安全策略- 降低安全性设置</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792909">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Rooney1: 当初是使用迁移助理 导入旧 mac 的数据
+最近在使用 ntfs Tuxera 时，提示要启用系统扩展，需要修改安全性设置
+然后就重启-启动安全性实用工具- 安全策略，按步骤操作提示“恢复正在尝试更改系统设置 未找到管理员”
+并且除此外 ，也不能开启 filevault，也没办法更新系统，除非进入恢复模式安装 bigsur，试过恢复模式下重装了 11.5.1 后依旧不行
+求教 如果抹掉全盘和 data 盘 ，重装系统是否能修改安全性设置？正常给 ntfs 启用扩展呢？
+如果不重装， 保留电脑数据和设置的情况下，要怎么解决啊</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">北京 回龙观/清河/天通苑 短租求助</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792908">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>cooljiang: 心理预期价位是 2500 以内，短租 1 个月 时间为：8.15-9.15 （时间可上下浮动 2 天）
+vx：SW5JbXBhc3NlCg&#x3D;&#x3D;</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">接上回 去杭州检车 出结果了 老哥们这车能买吗？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792906">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>powerman: 接上次的帖子 https://www.v2ex.com/t/792186
+目前检车家的结果是 没有重大事故
+稍等 补一下检测的结果</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">如何通过技术赚 ¥1/$1</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792904">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>zfish: 
+以工作坊的形式梳理如何通过技术赚 ¥1/$1 。
+
+视频地址： https://youtu.be/K31U_oWepPY</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">CSS 问题有偿求助。Typecho 博客代码块在 iPhone Safari 等浏览器下的 font-size 比其他平台上的要大</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792903">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>AllenHua: 
+博客情况
+引擎 Typecho
+主题 Initial
+代码高亮插件 CodeStyle
+比如这篇 文章 各个平台上的表现情况
+iPhone 的微信内置浏览器正常
+桌面端浏览器正常
+Android 手机正常
+iPhone Safari 、Edge 、Firefox 、Alook 等浏览器不正常
+iPad Air 3 上的浏览器都正常
+iPhone 内置浏览器上
+
+iPhone 的 Safari 浏览器上
+
+如上，可以看到 nginx 配置的代码块字体看起来明显更大一些，阅读起来很不协调。求路过的前端大佬们帮忙看看调试下。
+解决了请喝杯咖啡。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">谁有做帆布袋的供应商可以推荐一下？</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792900">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>qiuai: 有个帆布袋的单子，需要用到数码印和丝网印。
+需要 14 和 16A 的布料，需要深蓝色和浅蓝色的布。
+每种做 100-200 个。
+需要打样。
+最好是工厂，不想再转手一道。
+VX:15615793932 
+欢迎推荐。
+谢谢</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">serverless 的 1001 种玩法</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792898">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>xiaoshun007: 
+最近在玩 serverless，搞了个公众号（ https://cdn.jsdelivr.net/gh/filess/img6@main/2021/07/23/1627050818770-306f1a1f-3699-4072-8259-ccee060a9d8e.png ）记录和分享学习的过程，有好点子的小伙伴看过来</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Handheld Border Shaders</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792896">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>Livid: 最近发现的 RetroArch 的一个神奇的 shader pack，自带了系统边框，用来渲染单色的 GB 游戏的效果尤其赞。
+
+原帖及下载地址：
+https://forums.libretro.com/t/handheld-border-shaders/2551/18</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">求问一个简单的方案自动获取 EPIC 每周免费游戏</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792895">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>a174871: 
+我之前使用的是一个运行在 GitHub action 上的项目
+链接如下：
+https://github.com/qq1731402057/claim-epic-freebies1
+不幸的是一年多前，epic 似乎采取了某些限制措施导致这种领取方式失效，原作者似乎也并没有再更新了
+现在希望诸位 V 友推荐一个类似的方案，最大的期望就是部署在云而非自己的电脑上；如部署在腾讯云的也可以。</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">大家好呀，我来宣传一波我的公众号，我的公众号：小蜗牛会飞
+日常分享一些 Java 技术知识，欢迎大家关注，万分感谢</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792894">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>soberSnail:</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">万能的 v 友, 下午链接的文章排版不错, 大家见过类似的 wordpress 或者 markdown css 吗?</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792893">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>qanniu: 
+比较喜欢这样的标题 和 QA 排版方法, 但 wordpress 没找到类似主题, markdown css 好像没见过现成的?
+标题排版
+
+QA 排版
+
+原文链接
+https://mp.weixin.qq.com/s/xYU1tEcym2eXtoqHLGwyeA</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">百万字符串检查是否重复有啥好办法不</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792891">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>git00ll: 
+目前是利用 redis set 实现判断，但这么大的数据量与 redis 交互还是有点慢。
+要求精准，不误判，不漏判</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://www.smashingmagazine.com/">Articles on Smashing Magazine — For Web Designers And Developers</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Good Vibes In August (2021 Desktop Wallpapers Edition)</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://smashingmagazine.com/2021/07/desktop-wallpaper-calendars-august-2021/">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(8 min)</span>
+                    <span>New month, new wallpapers! In this post, you’ll find unique and inspiring wallpapers for August 2021. Created with love by the community for the community, they come in versions with and without a calendar for the month.</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+      <li class="source">
+        <section>
+          <h3 class="source-name"><a class="source-name__link" href="https://yuancheng.work">远程.work</a></h3>
+          <section class="articles-per-source">
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">新义互联招聘全职远程工作全栈工程师</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://yuancheng.work/2384.html">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>岗位职责 负责设计开发、优化和改善配置管理平台和其他内部运维平台； 负责设计开发、优化和维护持续集成和持续发布 […]</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">思码逸招聘全职远程工作React前端开发工程师</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://yuancheng.work/2382.html">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>工作职责 在具体使用场景中理解用户使用方式和遇到的问题 通过 Web 前端开发，解决上述问题，带给用户更好的使 […]</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">Integral招聘全职远程工作视觉设计师</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://yuancheng.work/2380.html">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(0 min)</span>
+                    <span>岗位职责 负责与公司视觉相关的创意及设计工作，包含设计、规范、后续执行、升级迭代。 负责公司桌面端网页产品的视 […]</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+            <article>
+              <details class="article-expander">
+                <summary class="article-expander__title">gitlab招聘全职远程工作精通 vue 的前端工程师</summary>
+                <a class="article-summary-link article-summary-box-outer" href="https://yuancheng.work/2378.html">
+                  <div class="article-summary-box-inner">
+                    <span class="article-reading-time">(1 min)</span>
+                    <span>1 、精通掌握 HTML5/ES6/CSS3 等 Web 开发技能，对主流前端框架有深入的理解和见解 2 、精 […]</span>
+                  </div>
+                </a>
+              </details>
+            </article>
+        </section>
+      </li>
+    </ul>
+  </section>
+  <section class="daily-content">
+    <h2 class="daily-heading"><time datatime="2021-07-30">2021-07-30</time></h2>
+    <ul class="sources card">
       <li class="source">
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://css-tricks.com">CSS-Tricks</a></h3>
@@ -472,785 +1468,6 @@ The post Conjuring Generative Blobs With The CSS Paint API appeared first on CSS
                 </a>
               </details>
             </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">秘鲁独立200周年</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/29341F">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>秘鲁新一任总统 Pedro Castillo 出席就职仪式。7月28日，秘鲁新总统的就职仪式在独立战争纪念碑前举行，当天也是秘鲁脱离西班牙殖民统治宣布独立200周年。现年51岁的 Castillo 来自拥护马克思列宁主义的左翼政党「自由秘鲁党」，是秘鲁史上第一位农民出身的总统。他在就职演说中宣布以抗击新冠疫情为首要任务，承诺打击贪腐、消除社会不平等并完善教育和卫生系统。摄影师：Alberto Orbegoso</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">波音飞船推迟发射</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/1c8hd7">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>波音公司「CST-100 Starliner」载人飞船与 Altas-5 重型运载火箭抵达发射台，肯尼迪航天中心。本次测试发射任务原定于7月30日进行，由于俄罗斯「科学号」实验舱在国际空间站发生对接事故而推迟至8月3日。这将是波音载人飞船第2次无人轨道试飞，计划为空间站运送补给物资并在驻留10天后携带样本返回地球。如果试飞成功，波音公司最早将于2021年底启动首次载人飞行任务。摄影师：Joe Skipper</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">朝鲜全国军官大会</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/bc2AcV">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>朝鲜最高领导人金正恩主持第一届朝鲜人民军指挥官及政治干部讲习会，平壤。本次大会于7月24日至27日举行，金正恩在会上强调，朝鲜人民军是劳动党的武装力量，一切军事政治活动应体现党的意志和力量，听从党的指挥，践行党的要求。他表示敌对势力正在扩大先发制人打击朝鲜的能力，呼吁全体指挥官和政治干部集中力量做好准备积极应对敌方的任何军事挑衅。韩国央行7月30日发布估测数据，称朝鲜2020年 GDP 增速为-4.5%，面临1997年以来最严重的经济衰退。摄影师：KCNA</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">多伦多梵高热气球</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/7ecFzt">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>一只巨大的 Vincent van Gogh 自画像热气球在多伦多滨水区升空，宣传正在举行的「沉浸式梵高艺术展」，加拿大安大略省。这只热气球高28米，原型来自梵高1887年油画《戴灰毡帽的自画像》。由于新冠疫情呈稳定下降趋势，多伦多将从7月31日起进入解封第三阶段，重新开放餐厅、电影院、游乐场等场所营业。7月29日，加拿大单日新增确诊896例，单日死亡5例，人口疫苗接种率达71.5%。摄影师：Kyaw Soe Oo</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">美国防长访问菲律宾</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/7c9zcz">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>菲律宾总统 Rodrigo Duterte 会见美国国防部长 Lloyd Austin，马尼拉。7月29日，美国防长 Lloyd Austin 抵达东南亚之行的最后一站，与菲律宾总统进行时长75分钟的会面。双方一致同意协力抗击新冠疫情和跨国犯罪，加强海上安全和贸易投资合作。当天菲律宾防长宣布总统 Duterte 决定撤回「终止菲美《访问部队协议》」的要求，这意味着美军能够继续在菲律宾境内进行军事演习。摄影师：Robinson Ninal</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">王毅会见塔利班代表</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/e91f5i">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>中国外交部长王毅会见阿富汗塔利班政治委员会负责人、二号人物 Mullah Abdul Ghani Baradar，天津。7月28日，王毅在会晤中表示，中国是阿富汗最大邻国，始终尊重阿主权独立和领土完整，坚持不干涉阿内政，奉行面向全体阿富汗人民的友好政策，希望阿塔同「东伊运」等恐怖组织彻底划清界限并予以坚决有效打击。塔利班方表示，中国一直是阿富汗人民值得信赖的好朋友，决不允许任何势力利用阿领土做危害中国的事情，希望中方更多参与阿和平重建进程。摄影师：Li Ran</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">英国夜行动物主题展</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/7faGwL">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>英国朗利特野生动物园，游客们正在观看一座猫头鹰造型的巨型稻草塑像。这家动物园正在举办名为「月亮之下」（Under the Moon）的夜行动物主题展，展出8座以英国代表性夜行动物为原型创作的巨型稻草雕塑，分别为猫头鹰、狐狸、鼹鼠、獾、刺猬、蟾蜍、蜗牛和蜘蛛。这些塑像由3位英国本土艺术家设计创作，单件尺寸高达3米，展期持续至9月12日。摄影师：Steve Mytton</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">中国队第18枚金牌</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/f25qQI">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>中国选手王懿律和黄东萍赢得2020东京奥运会羽毛球混合双打项目金牌，武藏野之森综合体育广场。7月30日，王懿律和黄东萍以2:1战胜队友郑思维和黄雅琼，摘得中国羽毛球队在本届奥运会第一枚金牌，亦是中国队第18枚金牌。中国羽毛球队的两组选手在世界混双排名第一和第二，本届奥运会小组赛中他们均获得全胜纪录，让中国队在半决赛提前锁定冠亚军。摄影师：Rob Carr</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">中国队第17枚金牌</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/c1dZY0">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>中国选手朱雪莹赢得2020东京奥运会女子蹦床项目金牌，东京有明体操馆。7月30日，朱雪莹以56.635分的成绩夺冠，为中国队摘得本届奥运会第17枚金牌，另一名中国选手刘灵玲以56.350分获得银牌。两名中国选手在资格赛和决赛中保持稳定发挥，始终包揽前两名位置。朱雪莹1998年出生在北京，10岁开始练习蹦床，15岁入选国家队，这是她首次登上奥运赛场。摄影师：iDaily Media</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">中国队第16枚金牌</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/51aGu9">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>中国选手汪顺赢得2020东京奥运会游泳男子200米个人混合泳项目冠军，东京水上运动中心。7月30日，汪顺以1分55秒的成绩夺得冠军并刷新亚洲纪录，摘得中国队在本届奥运会第16枚金牌。现年27岁的汪顺已参加3届奥运会，2016年里约奥运会上摘得该项目铜牌。本场比赛过程中，汪顺在蝶泳、仰泳和蛙泳环节结束后排名第二，最后50米自由泳冲刺顺利夺冠。摄影师：Oli Scarff</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.v2ex.com/">V2EX-最新主题</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">当你的队友出现这样的代码，而且拒不改正，你可以离职了，说明这公司有点不行了</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792820">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>ericgui: 
-try {
-  // code
-}
-catch (err) {
-  throw new Error(err)
-}
-&#x60;&#x60;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">请问本地离线视频播放器如何实现自动识别跳过情色相关的画面？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792819">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>LetCode: 
-粗糙的实现思路：
-基于开源的播放器编写插件，通过它提供的接口读取当前播放画面一段时间内的图片 stream，使用相关的开源图片识别模型判定，疑似度达到某个设定的百分比之后就自动跳过。
-由于没有视频播放处理的编码经验，不知道这个思路可不可行，烦请各位技术大佬指点迷津一下。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Windows 11 已经可以在 Beta 通道更新</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792818">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>Tumblr: 
-据微软 7 月 29 日讯（也就是北京时间的 7 月 30 日了），“我们很得瑟地宣布，我们已经把 Windows 11 全民测试版弄进 beta 通道了！”  
-We are very excited to announce we are releasing Windows 11 Insider Preview Build 22000.100 to Windows Insiders in the Beta Channel! 
-刚刚把工作电脑加进了 beta 通道，已经下载了 51%了，看看会有什么坑。
-另外，据说微软在 Windows 11 中永久解决了蓝屏的问题，因为 BSOD 已经变成Black Screen of Death了。
-随着行业的标准化，将来的 Windows 11 BSOD 和 Mac OS 的五国起码在颜色和闹心程度上变得更统一了。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">是不是能在 Web 服务上引入类似 SSH 的公钥认证的身份验证方式</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792817">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>KirbySD: 当然不是说传统的用户名密码就要淘汰
-在用户能保证自己所使用的私钥安全储存的情况下，以公钥认证来验证身份既能防止暴力破解，也能防止撞库吧
-对于高级用户来说，还能省去手动鉴权的步骤
-至于盗用用户设备，现行基于 cookie 的保持登录状态也不能很好地解决这一问题
-唯一的缺点可能就是一旦私钥泄漏，所有网站立刻完蛋</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">WebOTP API</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792815">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Livid: Chrome 93 的新功能：
-https://developer.chrome.com/blog/cross-device-webotp/</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">M1 的 Macbook Pro 可以拿来做渗透吗？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792813">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>XIoYi: 
-好不容易等到可以装 ARM 的 Windows 了，于是想买个 M1 的 Macbook Pro，主要工作是拿来做渗透测试，然后问题来了，不知道 ARM 的 Windows 能不能跑经常渗透测试用的 EXE 的工具？
-有没有好心人试过？求解答~</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">卡丁车真的很解压，没有尝试过建议尝试一下。</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792811">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>erwin985211: 
-今天团建第一次开。不出意料的连续车祸，但依然很爽，尤其是那种加速急转弯。时间到了依依不舍。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">请教一个群晖局域网速度问题</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792810">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>jingtouhou: 
-自己搭的黑群
-从群晖文件的直接通过浏览器下载文件
-单个下载任务速度始终在 1MB 左右
-如果同时多起几个任务的话
-速度可以叠加大概到 7MB 左右
-如果是上传文件倒是可以到 16MB 左右
-已经关闭加密 协议已经改成下限 smb2 上限 smb3
-通过 iperf3 测试 udp 和 tcp 带宽都在 100 Mbit 左右
-有没有大神知道怎么回事？
-怎么才能让单个任务占满带宽</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">京东会员免费领取万达电影至尊月卡</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792809">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>christin: 
-入口 京东 app 首页-plus 会员-生活特权-万达电影 进入即可领取 共一张会员卡加 4 张优惠券
-话说万达会员卡好用吗</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">越来越刻薄，脾气越来越差，怎么办？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792808">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>vvsystem: 1.住在城中村，对面的开着门大声说话、看短视频，说了也没用，让人心烦。
-2.去火车站取个学生票，看到工人确认一个事好几遍，自己竟然抢过工作人员的话，用不耐烦的语气(意识到后立刻减慢语速，微笑，显得自己十分虚伪)转述自己的理解，搞得买票的人连连说不好意思耽误我了。
-3.回到家打开朋友圈，看到几个读心理的同学转发的营销信息，说来说去就是赶紧来学心理学吧，心理学对工作婚姻、家庭、教育下一代非常有帮助，我们这有大咖 xxx，一大堆虚之又虚头衔放在大咖名字下边...心里感到恶心。去搜心理咨询行业现状，发现全是彼此捧臭脚的、带二维码的个体户在评论。火大，想到他们在挣钱，心里更是愤怒。
-4.去逛常常逛的 chouti，帖子的质量不是一般的低，不是禁止评论就是类似这样的评论:中国人真牛 X，我自豪我是中国人。
-5.同样的，在朋友圈看到未来的研究生同学在晒录取通知书，还评论说真高兴恰逢百年 xxx...，纳闷了，一个综合几个榜单排名 200 左右的二本学校、这专业刚被允许招研究生，有什么好自豪的，想起自己要和这样的同学一起读书感觉仿佛自己在自取其辱，恨自己庸人自扰。
-6.最烦的还是第 4 条。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">buildroot 如何重新编译 kernel</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792807">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>liyongjun0803: 
-使用 buildroot 编译系统镜像，我修改了 output/build/linux-4.18.12/ 中的 dts 文件，请问怎么重新编译 kernel?
-
-我试了几种办法都不行，如下：
-make linux-dirclean
-make linux-rebuild
-这样会把 output/build/linux-4.18.12/ 整个目录删掉，我修改的部分也就被删掉了。
-
-有没有大佬熟悉 buildroot 的，支个招。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">电信网络是否降速</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792806">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Xhack: 
-这段时间发现电信网络速度很慢，4g 才 2m   不知道宽带怎么样，大家也这样吗？还是我基站问题</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">小弟问一下， mac 输入 set -gx editor xxx，输出了一堆东西是什么意思？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792805">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>crownzzz: 
-+omz_termsupport_preexec:1&gt; [[ &#x27;&#x27; &#x3D;&#x3D; true ]]
-+omz_termsupport_preexec:3&gt; emulate -L zsh
-+omz_termsupport_preexec:4&gt; setopt extended_glob
-+omz_termsupport_preexec:7&gt; local -a cmdargs
-+omz_termsupport_preexec:8&gt; cmdargs&#x3D;( env )
-+omz_termsupport_preexec:10&gt; [[ env &#x3D; fg ]]
-+omz_termsupport_preexec:44&gt; local CMD&#x3D;env
-+omz_termsupport_preexec:45&gt; local LINE&#x3D;env
-+omz_termsupport_preexec:47&gt; title &#x27;$CMD&#x27; &#x27;%100&gt;...&gt;$LINE%</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">MacBook 迁移的时候空间不足</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792804">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>liuzhihang: 
-500 G 空间才用一半左右， 用的雷电+迁移助力进行迁移。
-每次都提示空间不足，资源库占用的空间太多了。
-请问有小伙伴遇到过么，是怎么解决的？
-旧电脑是 Intel 新电脑是 M1
-
-实际电脑才占用 300G，另一台 mac 是新电脑。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">北苑华贸城德扑周末咸鱼局继续凑人</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792802">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>orangex: 
-暂定周日，目前 4-5 人，希望能凑到 6 人，1bb&#x3D;1 毛，有意 vx：cmFtcGFnaW5nOQ&#x3D;&#x3D;
-成局不易，好心人一生平安</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">typora 有个 bug 一直没修</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792801">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>v2byy: 
-test:
-如果 markdown 是这种格式的话，在正文一输入中文，就自动跳到 test: 后面了
-实际场景中遇到的是，hexo new 一个 post 的时候，要生成一些 heading，每次输入正文的时候，自动跳到 description 哪一行了。输入英文字母就不会。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">PhotoViewer v3.6.0 已发布！近两年以来的重要版本更新！</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792800">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>nzbin: 
-https://github.com/nzbin/photoviewer
-因工作忙碌，精力有限，PhotoViewer 已经很久没做大版本更新了，v3.6.0 算是近两年来比较大的一个优化版本。熬了一周的夜，对很多网友提出的问题集中做了优化。新增 embed mode （嵌入模式），修复很多交互细节问题。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Chevereto 图床生成的图片 url 自动带上了 :443 端口这样的字符串，有人知道怎么干掉它吗</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792799">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>AllenHua: 
-
-如上图所示，不希望在 url 里显示 :443</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">在去植发之前，想知道大家去的哪里的哪个品牌的植发机构，效果怎么样</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792798">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>FartNoSound: 
-本人遗传父亲的两额角不长头发，而且有点严重，去理发店理发师每次都有点为难。只能剪那种塌下来盖住额角的发型，显得人不精神。发个帖子看看大家的经历，好选择一家值得信赖的植发机构。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">有同行大佬嘛，帮忙看看简历，谢谢。</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792796">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>duhb: 
-我的简历经过了几个版本的优化，总感觉依然不满意。也问了几个在大厂的同行朋友，看了看他们的简历，个人感觉也很一般，有的甚至就短短几行字，试问怎样写一份好的简历？
-下面是我的简历，已做脱敏处理。
-https://www.965.one/2021/06/29/resume/</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Pixel 4A 屏幕裂了，广州有手机店可以修吗？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792795">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>persimmon: RT and 不想寄修</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">js 能同时监听两个方向键吗， canvas 画图，想控制八方向移动</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792794">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>zxCoder: 
-网上找了个解决方案，效果不太好
-document.onkeydown&#x3D;function (e){
-    console.log(e.key);
-    switch (e.key){
-        case &quot;ArrowLeft&quot;:
-            dx-&#x3D;5;
-            break;
-        case &quot;ArrowRight&quot;:
-            dx+&#x3D;5;
-            break;
-        case &quot;ArrowUp&quot;:
-            dy-&#x3D;5;
-            break;
-        case &quot;ArrowDown&quot;:
-            dy+&#x3D;5;
-            break;
-    }
-}
-
-document.onkeyup&#x3D;function (e){
-    console.log(e.key);
-    switch (e.key){
-        case &quot;ArrowLeft&quot;:
-            dx&#x3D;0;
-            break;
-        case &quot;ArrowRight&quot;:
-            dx&#x3D;0;
-            break;
-        case &quot;ArrowUp&quot;:
-            dy&#x3D;0;
-            break;
-        case &quot;ArrowDown&quot;:
-            dy&#x3D;0;
-            break;
-    }
-}
-
-
-window.setInterval(()&#x3D;&gt;{
-    // ...
-},100);</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">evernote 打过折吗？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792793">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>blackbeardd: 
-挺喜欢用这个软件的，作为一个笔记本觉得挺不错。国内的印象笔记经常打折，便宜的时候，专业版也才几十块钱一年，但是因为数据库在国内，用着总觉得不放心，想转 evernote 。然而去官网看了一下价格以后。。。专业版 9.9 刀 /月，一年不得上百刀，用不起呀。。。所以就想知道 evernote 会不会像印象笔记这样子打折。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Chromium 跳转到推广链接，最终排查出是 「扩展管理器(Extension Manager)」</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792792">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>input2output: 
-1.发现问题：
-之前访问 taobao, jd, amazon 的时候，会发现第一个 Tab 会闪一下，以为是 Chromium 的 bug，也没在意。
-Desmos，就在我搜索硬盘相关信息时，Desmos 弹窗问我是否确定离开，于是发现不对劲，点击确定，居然发现跳到了 union-click.jd.com 的一个链接
-union-click.jd.com，发现有多次历史，忍不了了，于是开始找原因   
-2.初步搜索
-又把跳转后的链接找来
-https://wdc.jd.com/?cu&#x3D;true&amp;utm_source&#x3D;dh.tbyuantu.com&amp;utm_medium&#x3D;tuiguang&amp;utm_campaign&#x3D;t_1000537640_&amp;utm_term&#x3D;...
-
-在 ~/.config/chromium 里用 
-$ grep -Ril &quot;tbyuantu&quot; .
-$ grep -Ril &quot;union-click&quot; .
-
-命令搜索，只找到几个关系不大的文件，关于拓展的信息没有找到
-t_1000537640_ 字段，找到一篇公众号，但与我已用方法相同，只好自己探寻原因  
-3.再次探索
-整理了一下已知信息，既然只在第一个 Tab 里跳转，那我就守株待兔好了
-union-click.jd.com 和 dh.tbyuantu.com 指向了无效的地址
-注：oozo.net 是我的网站，也就是说，它会自动跳回原网站
-gjldcdngmdknpinoemndlidpcabkggco 发出的，而红色的那个则是由 dhdgffkkebhmkfjojejmpbldmpobfkfo 发出的，之所以被取消，是因为我 用 SwitchyOmega 指向了无效代理，它又防止被发现才取消的
-4.整理信息
-由于我对 dhdgffkkebhmkfjojejmpbldmpobfkfo 是比较信任的，虽然鼠标放上去显示来自于它，但导出 har 文件后并没有找到它，也看了一下相关 js 代码，没有什么问题，估计是我使用 dev tools 的方法不正确（dhdgffkkebhmkfjojejmpbldmpobfkfo 里已关闭所有插件）
-gjldcdngmdknpinoemndlidpcabkggco 上，打开
-chrome-extension://gjldcdngmdknpinoemndlidpcabkggco/ct.js
-
-一搜索，就找到了跳转的地址 p.extfun.com，终于破案了
-5.相关信息
-dhdgffkkebhmkfjojejmpbldmpobfkfo  :  Tampermonkey
-gjldcdngmdknpinoemndlidpcabkggco  :  Extension Manager
-chrome-extension://gjldcdngmdknpinoemndlidpcabkggco/ct.js 的存档
-V2EX 上有相同遭遇的帖子</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">有交流 nft 的吗</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792791">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>scalaer: 
-今天在 opensea 上传了朋友的作品, 出售手续费就要 28 刀.....
-work
-各位是以什么姿势玩的</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">终于花时间把游戏框架的关卡编辑器弄出来了用 C# 写的，框架用的是 MonoGame</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792790">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>ChrisFreeMan: 
-废话不多说直接上代码吧
-https://github.com/ChrisChou-freeman/LevelEditorByMonoGame
-S 键保存
-G 键显示或者隐藏网格</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">大家的年中体检结果都怎么样？身体还好吗？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792789">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>maninfog: 
-刚体检完，个人的的检测报告显示需要注意的有 2 项：
-尿酸偏高，接近 600 umol/L, 让调整饮食结构，少熬夜。
-慢性咽炎。建议多喝水，少吃辣，不抽烟喝酒。
-目前这两项似乎没给生活带来什么困扰，不过我这个尿酸还是挺吓人的，以后还是要注意下。不知道大家的结果怎么样呢？</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">有什么单词管理软件， 可以自定义语音源、音标、释义 等信息？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792788">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>piqizhu8: 
-市面上大多数背单词 app 、词典 app 我都用过，这些 app 都偶尔有几个单词， 注释、释义、发音 等不正确、甚至南辕北辙
-只要一个 app 里，出现两次错误，我就不咋信任它了， 感觉很头疼， 谁知道将来还会遇到多少错误的，
-之所以发现错误，是因为刚好这几个单词我认识， 还有很多我不认识的单词， 可能不知不觉中，把我给误导了
-所以才提这个问题
-谢谢</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">App Store 崩了？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792787">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>neiltroyer849: 我自己的是崩了，截止发帖前发现同样有大规模用户在微博上报告 app store 崩溃了。但上了🪜却能用？</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">mybatis batch 插入</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792786">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>cmxzj: 
-使用 mybatis executortype.batch 每批插入 1000 条数据，遇到报错应该怎样日志打印出来报错的那条数据呢，LOG 开的是 INFO，目前想到的是 try catch 插入的方法打印报错的整个 1000 条数据。。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">app store 又挂了？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792785">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>Qzier: 几台设备都不开 app store 。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">分享一个 electron 的工具箱</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792784">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>muwoo: 在 mac 上装了个虚拟机，终于把 rubick 的 windows 版本跑起来了。快来体验尝试吧！一款基于 electron 的开源工具箱。https://github.com/clouDr-f2e/rubick</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">GitLab - 怎么禁止特定仓库的动态出现在 Activity？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792783">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>JasonLaw:</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">华硕 koolshare 固件 酸酸乳</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792782">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>raka: 我找不到最新版本的时候华硕官改的酸酸乳插件。。。各位大侠，哪里有下，请指导。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">xshell 对 ssh 客户端进行了优化吗，在 xshell 连接主机后不会自己断开，在 terminal 中 ssh 连主机过段时间显示进程退出，要重新连</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792781">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>proxytoworld:</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">大佬们，用 k8s+Jenkins 去构建 Android 的话 gradle 缓存怎么搞？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792778">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>mio4kon: 现在是 gradle home 的缓存放在 nfs 服务器上，然后 pod 挂载 gradle 缓存的 pvc，但是多个 pod 并行执行的话会有文件锁直接导致报错。
-现在的想法是每次构建前把 nfs 的缓存目录 copy 到 pod 的 gradle home，但是 gradle home 太大了（ 15g 左右），本机 cp 都要几分钟，影响构建时间，而且如何更新 gradle home 的内容也很麻烦
-大佬们有没有好的解决方案？</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Iterm2 在使用 zsh-autosuggestions 时闪烁</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792777">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>LotusChuan: 
-最近从 Terminal.app 转到了 Iterm2，在使用的时候发现输入命令的时候 zsh-autosuggestions 插件会出现自动推荐的命令闪烁的问题。也就是说后面可以自动补全的那段灰色的指令会随着输入闪烁，出现频率特别高。
-在使用 Terminal.app 的时候没有遇到过这种问题。个人感觉应该是渲染问题之类的，但实在是找不到具体原因，有人遇到过类似的问题吗？真不行只能换回 Terminal.app 了</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">想给老公入一个文石 Boox Nova3，有用过的 V 友反馈一下使用体验吗？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792776">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>faustina2018: 
-我老公业余时间热爱读书
-所以 2013 年给他入了 Kindle Paperwhite
-前两年又给他升级成了 Kindle Oasis3
-但他最近喜欢上了微信读书
-觉得微信读书的书目更全 体验更好 也更方便
-无奈 Kindle Oasis3 对微信读书网页版的支持很差（听说 Oasis 之外的 kindle 都还不错，只有 oasis 用起微信读书来很别扭）
-所以我考虑今年七夕给他换一个能安装微信读书的墨水屏阅读器
-目前想要给他换一个功能和体验上和 Kindle Oasis 接近的
-性能稳定、品质有保障的阅读器
-且支持安装各类在线阅读软件
-目前初步选了文石 Boox Nova3
-一方面是因为它本身是微信读书阅读器的代工
-所以兼容上肯定有保障
-另一方面是它 7.3 的屏幕和机身重量也是刚刚好
-目前看网上的各类测评都还不错
-就是不知道长期使用感如何 以及是否存在什么硬伤
-所以来发帖问一下用过的 V 友们体验如何
-如果不够好 是否有更合适的产品推荐
-万分感谢🙏</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">电影《怒火重案》很不错</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792775">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>socary: 
-是暑期档最好的一部电影了，
-推荐大家去看看，</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">[外包项目] Flutter 单个单个页面效果实现</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792773">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>huzhennan2jobs: 有收 Flutter 页面效果实现的没，单个单个页面算钱。。。
-挣点小钱</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">不能通过 cglib 代理类直接设置被代理类的 public 字段的值</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792772">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>git00ll: 
-spring cglib 代理类，无法通过 obj$spring$proxy.name &#x3D; &#x27;xxx&#x27;的方式，为 obj 对象的 name 属性设置值。
-为什么这样呢，cglib 的原理是创建子类，那子类不也可以设置父类的 public 属性吗？求解答</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">有哪些合理合法的大流量应用？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/792771">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>LnTrx: 
-最近出现了很多民用宽带（乃至商宽）没有在合同中限制流量，却因为大流量上传、下载而被“关照”的消息。  
-在没有证据的情况下直接停宽带还是不太合理，所以在这里讨论一下，当今有哪些合理合法的大流量应用？（单月可达 TB 级）  
-抛砖引玉：  
-人工智能、机器学习的数据集。这些数据集达到 100GB 的很普遍，有的单个就突破了 1TB 。下载完成后，还有可能经过处理再上传到其他地方。  
-在线观看超高清视频。b 站 4K 视频的流量可以达到 4GB/h 。一户人家平均每天累计观看 8.5 小时的 4K 视频，月流量就能达到 1TB 。  
-实时监控的异地存储。在一地安装监控，将数据实时传输到云或者另一地保存以提升安全性。由于视频是 24h 连续采集的（如果没开省流等功能），即便码率不高（ 3Mbps 以上），累积下来的上传流量也可达到 1TB 。  
-自建软件源镜像。例如自建 cnpm 仓库，光是在 V2EX 就能搜到很多讨论。这些仓库的建立和同步是很耗费流量的（ 2015 年的 cnpm 就可达 300GB ），全量同步的话达到 TB 级别应该是容易的。</span>
-                  </div>
-                </a>
-              </details>
-            </article>
         </section>
       </li>
       <li class="source">
@@ -1275,85 +1492,6 @@ spring cglib 代理类，无法通过 obj$spring$proxy.name &#x3D; &#x27;xxx&#x2
   <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-07-29">2021-07-29</time></h2>
     <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.infoq.cn">InfoQ - 促进软件开发领域知识与创新的传播</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">星环研发总监为你揭秘TDH8.0的前因后果 | TDH8.0 使用必读</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/51a9ef9a5cd1025df2fa0bc3d?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>星环科技于2021年3月发布了星环极速大数据平台TDH的8.0版本。相信很多用户都对这款产品非常感兴趣。本系列文章向您逐一介绍TDH8.0全新功能和技术创新。帮助企业级数据平台用户更全面、深入地了解前沿的大数据技术，更好地技术选型。
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">声网 Agora 音频互动 MoS 分方法：为音频互动体验进行实时打分</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/696ed87cc3c526bb5d26e00f5?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>实时了解你的用户的通话体验
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">直播时各种背景是怎么实现的？聊一聊虚拟背景背后的技术</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/8c5ce53c356f24dc3581cdbae?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>2020 年一场突如其来的疫情闯进了我们的生活，上网课、在家办公逐渐成为了一种常态，为了更好地保护用户隐私、提升用户体验，各大在线办公软件相继推出了虚拟背景功能，营造学习、办公氛围的同时，又能避免家中环境不够正式的窘境。
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">【共识专栏】共识的分类（上）</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/179fb29a3e3be880d549073d9?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>从早期的分布式一致性算法的缓慢发展到现如今区块链共识的百花齐放，共识算法的发展已经走过了四十年左右的时光。不同的共识算法的侧重点不同，因此它们所面临的问题、环境也不一样。本文将从如下几个不同角度对共识算法进行分类
-
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">漏桶算法和令牌桶算法，区别到底在哪里？</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/4a0acdd12a0f6dd4a53e0472c?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>漏桶算法和令牌桶算法容易混淆的技术点解读
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">3分钟带你了解版本控制系统的发展历史</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/1106657f7e14b0900a492cfd5?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>什么是“版本控制”？我为什么要关心它呢？ 版本控制是一种记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统。在CODE CHINA 中，我们对保存着软件源代码的文件作版本控制，但实际上，你可以对任何类型的文件进行版本控制。
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
       <li class="source">
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://css-tricks.com">CSS-Tricks</a></h3>
@@ -1400,23 +1538,6 @@ The post Developer-Friendly Passwordless Auth appeared first on CSS-Tricks. You 
       </li>
       <li class="source">
         <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://docs.rsshub.app">iDaily 每日环球视野</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">中国队第15枚金牌</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/55cq9b">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(1 min)</span>
-                    <span>中国选手陈梦和孙颖莎赢得2020东京奥运会乒乓球女子单打项目金银牌，东京体育馆。7月29日，陈梦在女单决赛中以4:2的成绩战胜队友孙颖莎，赢得中国队第15枚金牌。现年27岁的陈梦是目前世界女乒排名第一位选手，她从5岁练习乒乓球，10岁成为专业运动员，13岁入选国家队。20岁的孙颖莎今日以4:0击败日本选手伊藤美诚，让中国队提前锁定女单金银牌。摄影师：Jung Yeon-Je</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-      <li class="source">
-        <section>
           <h3 class="source-name"><a class="source-name__link" href="https://www.smashingmagazine.com/">Articles on Smashing Magazine — For Web Designers And Developers</a></h3>
           <section class="articles-per-source">
             <article>
@@ -1437,25 +1558,6 @@ The post Developer-Friendly Passwordless Auth appeared first on CSS-Tricks. You 
   <section class="daily-content">
     <h2 class="daily-heading"><time datatime="2021-07-28">2021-07-28</time></h2>
     <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.infoq.cn">InfoQ - 促进软件开发领域知识与创新的传播</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">使用Apache Spark管理、部署和扩展机器学习管道(十一)</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://xie.infoq.cn/article/73b89875bb8578326eaea4f5c?utm_source&#x3D;rss&amp;utm_medium&#x3D;article">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(0 min)</span>
-                    <span>写在前面：
-大家好，我是强哥，一个热爱分享的技术狂。目前已有 12 年大数据与AI相关项目经验， 10 年推荐系统研究及实践经验。平时喜欢读书、暴走和写作。
-点击查看原文&gt;</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
       <li class="source">
         <section>
           <h3 class="source-name"><a class="source-name__link" href="https://css-tricks.com">CSS-Tricks</a></h3>
@@ -2053,53 +2155,9 @@ The post My petite-vue review appeared first on CSS-Tricks. You can support CSS-
       </li>
     </ul>
   </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-07-02">2021-07-02</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.smashingmagazine.com/">Articles on Smashing Magazine — For Web Designers And Developers</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">Email Testing Flow As It Should Be</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://smashingmagazine.com/2021/07/email-testing-flow/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(14 min)</span>
-                    <span>With so many tools and approaches, email still has quite a few pain points, both for developers and email marketers. Email is difficult because it has too many aspects to set and a few instances with no common rules to follow.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
-  <section class="daily-content">
-    <h2 class="daily-heading"><time datatime="2021-07-01">2021-07-01</time></h2>
-    <ul class="sources card">
-      <li class="source">
-        <section>
-          <h3 class="source-name"><a class="source-name__link" href="https://www.smashingmagazine.com/">Articles on Smashing Magazine — For Web Designers And Developers</a></h3>
-          <section class="articles-per-source">
-            <article>
-              <details class="article-expander">
-                <summary class="article-expander__title">It’s A (Front-End Testing) Trap! Six Common Testing Pitfalls And How To Solve Them</summary>
-                <a class="article-summary-link article-summary-box-outer" href="https://smashingmagazine.com/2021/07/frontend-testing-pitfalls/">
-                  <div class="article-summary-box-inner">
-                    <span class="article-reading-time">(16 min)</span>
-                    <span>When writing front-end tests, you’ll find a lot of pitfalls along the way. Let’s explore common mistakes developers make, and how to avoid them. Testing doesn’t need to be painful, after all.</span>
-                  </div>
-                </a>
-              </details>
-            </article>
-        </section>
-      </li>
-    </ul>
-  </section>
 
   <footer>
-    <time id="build-timestamp" datetime="2021-07-31T00:22:51.182Z">2021-07-31T00:22:51.182Z</time>
+    <time id="build-timestamp" datetime="2021-08-01T00:26:11.558Z">2021-08-01T00:26:11.558Z</time>
     <span><a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.11.0</a></span>
   </footer>
   <script src="index.js"></script>

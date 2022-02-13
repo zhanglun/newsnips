@@ -4,7 +4,17 @@
       "title": "Release notes from osmosfeed",
       "feedUrl": "https://github.com/osmoscraft/osmosfeed/releases.atom",
       "siteUrl": "https://github.com/osmoscraft/osmosfeed/releases",
-      "articles": []
+      "articles": [
+        {
+          "id": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.12.1",
+          "author": null,
+          "description": "Fixed: Future articles appeared in the feed\nFxied: Security vulnerability from axios\nThank you: @naari3",
+          "link": "https://github.com/osmoscraft/osmosfeed/releases/tag/v1.12.1",
+          "publishedOn": "2022-02-12T17:46:42.000Z",
+          "wordCount": 271,
+          "title": "v1.12.1"
+        }
+      ]
     },
     {
       "title": "CSS-Tricks",
@@ -12,36 +22,45 @@
       "siteUrl": "https://css-tricks.com",
       "articles": [
         {
+          "id": "https://css-tricks.com/?p=363498",
+          "author": "Chris Coyier",
+          "description": "Kilian Valkhof:\n[…] Mobile Safari increases the default font-size when you switch a website from portrait to landscape. On phones that is, it doesn’t do it on iPad. Safari has been doing this for a long time, as a \n…\nYour CSS reset needs text-size-adjust (probably) originally published on CSS-Tricks. You should get the newsletter.",
+          "link": "https://css-tricks.com/your-css-reset-needs-text-size-adjust-probably/",
+          "publishedOn": "2022-02-12T00:46:40.000Z",
+          "wordCount": 608,
+          "title": "Your CSS reset needs text-size-adjust (probably)"
+        },
+        {
           "id": "https://css-tricks.com/?p=363396",
           "author": "Chris Coyier",
-          "description": "Every now and then, I find that I’ve accumulated a bunch of links about various things I find interesting. Like React and JavaScript! Here’s a list of nine links to other articles about them that I’ve been saving up and …\n9 New React and JavaScript Links for February 2022 originally published on CSS-Tricks. You should get the newsletter and become a supporter.",
+          "description": "Every now and then, I find that I’ve accumulated a bunch of links about various things I find interesting. Like React and JavaScript! Here’s a list of nine links to other articles about them that I’ve been saving up and …\n9 New React and JavaScript Links for February 2022 originally published on CSS-Tricks. You should get the newsletter.",
           "link": "https://css-tricks.com/9-new-react-and-javascript-links-for-february-2022/",
           "publishedOn": "2022-02-11T23:11:28.000Z",
-          "wordCount": 951,
+          "wordCount": 943,
           "title": "9 New React and JavaScript Links for February 2022"
         },
         {
           "id": "https://css-tricks.com/?p=363027",
           "author": "Yair Even Or",
-          "description": "Imagine you have an element with a multi-value CSS property, such as transform: optional custom property values:\n.el {\n  transform: translate(100px) scale(1.5) skew(5deg);\n}\nNow imagine you don’t always want all the transform values to be applied, so some …\nMulti-Value CSS Properties With Optional Custom Property Values originally published on CSS-Tricks. You should get the newsletter and become a supporter.",
+          "description": "Imagine you have an element with a multi-value CSS property, such as transform: optional custom property values:\n.el {\n  transform: translate(100px) scale(1.5) skew(5deg);\n}\nNow imagine you don’t always want all the transform values to be applied, so some …\nMulti-Value CSS Properties With Optional Custom Property Values originally published on CSS-Tricks. You should get the newsletter.",
           "link": "https://css-tricks.com/optional-custom-property-values-trick/",
           "publishedOn": "2022-02-11T15:30:11.000Z",
-          "wordCount": 782,
+          "wordCount": 774,
           "title": "Multi-Value CSS Properties With Optional Custom Property Values"
         },
         {
           "id": "https://css-tricks.com/?p=362285",
           "author": "Chris Coyier",
-          "description": "I was just writing in my “What’s new in since CSS3?” article about recent and possible future changes to CSS colors. It’s weirdly a lot. There are just as many or more new and upcoming ways to define colors than …\nA Whistle-Stop Tour of 4 New CSS Color Features originally published on CSS-Tricks. You should get the newsletter and become a supporter.",
+          "description": "I was just writing in my “What’s new in since CSS3?” article about recent and possible future changes to CSS colors. It’s weirdly a lot. There are just as many or more new and upcoming ways to define colors than …\nA Whistle-Stop Tour of 4 New CSS Color Features originally published on CSS-Tricks. You should get the newsletter.",
           "link": "https://css-tricks.com/new-css-color-features-preview/",
           "publishedOn": "2022-02-10T23:01:55.000Z",
-          "wordCount": 2552,
+          "wordCount": 2732,
           "title": "A Whistle-Stop Tour of 4 New CSS Color Features"
         },
         {
           "id": "https://css-tricks.com/?p=363480",
           "author": "Chris Coyier",
-          "description": "This is a wonderful roundup from Jeremy, who I picture circling January 1, 2022, in red marker on a giant paper calendar back in 2008 and patiently counting the days.\nSee, there was a little smattering of internet drama …\nDevelopers Speculating About the Long-Distant Future: 2022 originally published on CSS-Tricks. You should get the newsletter and become a supporter.",
+          "description": "This is a wonderful roundup from Jeremy, who I picture circling January 1, 2022, in red marker on a giant paper calendar back in 2008 and patiently counting the days.\nSee, there was a little smattering of internet drama …\nDevelopers Speculating About the Long-Distant Future: 2022 originally published on CSS-Tricks. You should get the newsletter.",
           "link": "https://css-tricks.com/developers-speculating-about-the-long-distant-future-2022/",
           "publishedOn": "2022-02-10T21:45:09.000Z",
           "wordCount": 798,
@@ -50,101 +69,92 @@
         {
           "id": "https://css-tricks.com/?p=363079",
           "author": "Thomas Wang",
-          "description": "I recently rewrote one of my projects — Minimal Theme for Twitter — as a Next.js Chrome extension because I wanted to use React for the pop-up. Using React would allow me to clearly separate my extension’s pop-up component and …\nHelpful Tips for Starting a Next.js Chrome Extension originally published on CSS-Tricks. You should get the newsletter and become a supporter.",
+          "description": "I recently rewrote one of my projects — Minimal Theme for Twitter — as a Next.js Chrome extension because I wanted to use React for the pop-up. Using React would allow me to clearly separate my extension’s pop-up component and …\nHelpful Tips for Starting a Next.js Chrome Extension originally published on CSS-Tricks. You should get the newsletter.",
           "link": "https://css-tricks.com/nextjs-chrome-extension-starter/",
           "publishedOn": "2022-02-10T15:24:02.000Z",
-          "wordCount": 1296,
+          "wordCount": 1288,
           "title": "Helpful Tips for Starting a Next.js Chrome Extension"
         },
         {
           "id": "https://css-tricks.com/?p=362991",
           "author": "Chris Coyier",
-          "description": "(This is a sponsored post.)\nCloudinary is a host for your digital assets like images and video. If you don’t already know them, you should, because you can build it into the asset management you almost certainly need to …\nA Chrome Extension for Cloudinary That Helps You Pluck Out Useful Media URLs From Your Library Quickly originally published on CSS-Tricks. You should get the newsletter and become a supporter.",
+          "description": "(This is a sponsored post.)\nCloudinary is a host for your digital assets like images and video. If you don’t already know them, you should, because you can build it into the asset management you almost certainly need to …\nA Chrome Extension for Cloudinary That Helps You Pluck Out Useful Media URLs From Your Library Quickly originally published on CSS-Tricks. You should get the newsletter.",
           "link": "https://css-tricks.com/a-chrome-extension-for-cloudinary-that-helps-you-pluck-out-useful-media-urls-from-your-library-quickly/",
           "publishedOn": "2022-02-10T15:23:31.000Z",
-          "wordCount": 890,
+          "wordCount": 882,
           "title": "A Chrome Extension for Cloudinary That Helps You Pluck Out Useful Media URLs From Your Library Quickly"
         },
         {
           "id": "https://css-tricks.com/?p=362777",
           "author": "Chris Coyier",
-          "description": "Say you have a bitmap graphic — like a JPG, PNG, or GIF — and you wish it was vector, like SVG. What do you do? You could trace it yourself in some kind of design software. Or tools within …\nSVGcode for “Live Tracing” Raster Images originally published on CSS-Tricks. You should get the newsletter and become a supporter.",
+          "description": "Say you have a bitmap graphic — like a JPG, PNG, or GIF — and you wish it was vector, like SVG. What do you do? You could trace it yourself in some kind of design software. Or tools within …\nSVGcode for “Live Tracing” Raster Images originally published on CSS-Tricks. You should get the newsletter.",
           "link": "https://css-tricks.com/svgcode-raster-to-vector/",
           "publishedOn": "2022-02-09T21:39:41.000Z",
-          "wordCount": 830,
+          "wordCount": 822,
           "title": "SVGcode for “Live Tracing” Raster Images"
         },
         {
           "id": "https://css-tricks.com/?p=362940",
           "author": "Dave Seidman",
-          "description": "I was updating my portfolio and wanted to use the forward slash (/) as a visual element for the site’s main layout. I hadn’t attempted to create a slanted container in CSS before, but it seemed like it …\nHow to Make CSS Slanted Containers originally published on CSS-Tricks. You should get the newsletter and become a supporter.",
+          "description": "I was updating my portfolio and wanted to use the forward slash (/) as a visual element for the site’s main layout. I hadn’t attempted to create a slanted container in CSS before, but it seemed like it …\nHow to Make CSS Slanted Containers originally published on CSS-Tricks. You should get the newsletter.",
           "link": "https://css-tricks.com/css-slanted-containers/",
           "publishedOn": "2022-02-09T15:19:47.000Z",
-          "wordCount": 1320,
+          "wordCount": 1312,
           "title": "How to Make CSS Slanted Containers"
         },
         {
           "id": "https://css-tricks.com/?p=363057",
           "author": "Chris Coyier",
-          "description": "There is a code snippet that I see all the time when the media query prefers-reduced-motion is talked about. Here it is:\n@media (prefers-reduced-motion: reduce) {\n  * {\n    animation-duration: 0.01ms !important;\n    animation-iteration-count: 1 !important;\n    transition-duration: 0.01ms !important;\n    scroll-behavior: auto !important;\n  \n…\nNo Motion Isn’t Always prefers-reduced-motion originally published on CSS-Tricks. You should get the newsletter and become a supporter.",
+          "description": "There is a code snippet that I see all the time when the media query prefers-reduced-motion is talked about. Here it is:\n@media (prefers-reduced-motion: reduce) {\n  * {\n    animation-duration: 0.01ms !important;\n    animation-iteration-count: 1 !important;\n    transition-duration: 0.01ms !important;\n    scroll-behavior: auto !important;\n  \n…\nNo Motion Isn’t Always prefers-reduced-motion originally published on CSS-Tricks. You should get the newsletter.",
           "link": "https://css-tricks.com/nuking-motion-with-prefers-reduced-motion/",
           "publishedOn": "2022-02-08T20:55:51.000Z",
-          "wordCount": 1090,
+          "wordCount": 1181,
           "title": "No Motion Isn’t Always prefers-reduced-motion"
         },
         {
           "id": "https://css-tricks.com/?p=362672",
           "author": "Mads Stoumann",
-          "description": "You know how there are JavaScript dialogs for alerting, confirming, and prompting user actions? Say you want to replace JavaScript dialogs with the new HTML dialog element.\nLet me explain.\nI recently worked on a project with a lot of …\nReplace JavaScript Dialogs With the New HTML Dialog Element originally published on CSS-Tricks. You should get the newsletter and become a supporter.",
+          "description": "You know how there are JavaScript dialogs for alerting, confirming, and prompting user actions? Say you want to replace JavaScript dialogs with the new HTML dialog element.\nLet me explain.\nI recently worked on a project with a lot of …\nReplace JavaScript Dialogs With the New HTML Dialog Element originally published on CSS-Tricks. You should get the newsletter.",
           "link": "https://css-tricks.com/replace-javascript-dialogs-html-dialog-element/",
           "publishedOn": "2022-02-08T15:09:40.000Z",
-          "wordCount": 3844,
+          "wordCount": 3942,
           "title": "Replace JavaScript Dialogs With the New HTML Dialog Element"
         },
         {
           "id": "https://css-tricks.com/?p=363380",
           "author": "Chris Coyier",
-          "description": "(This is a sponsored post.)\nHey! Scheduled Functions are cool! Think of them like a CRON job. I want this code to run every Monday at 2pm. I want this code run every hour on the hour. That kind …\nNetlify Has Scheduled Functions originally published on CSS-Tricks. You should get the newsletter and become a supporter.",
+          "description": "(This is a sponsored post.)\nHey! Scheduled Functions are cool! Think of them like a CRON job. I want this code to run every Monday at 2pm. I want this code run every hour on the hour. That kind …\nNetlify Has Scheduled Functions originally published on CSS-Tricks. You should get the newsletter.",
           "link": "https://css-tricks.com/netlify-has-scheduled-functions/",
           "publishedOn": "2022-02-08T15:08:47.000Z",
-          "wordCount": 715,
+          "wordCount": 707,
           "title": "Netlify Has Scheduled Functions"
         },
         {
           "id": "https://css-tricks.com/?p=363102",
           "author": "Chris Coyier",
-          "description": "A little gradient generator tool from Tom Quinonero. You’d think fading one color to another would be an obvious, simple, solved problem — it’s actually anything but!\nTom’s generator does two things that help make a gradient better:\nYou \n…\nUsing Different Color Spaces for Non-Boring Gradients originally published on CSS-Tricks. You should get the newsletter and become a supporter.",
+          "description": "A little gradient generator tool from Tom Quinonero. You’d think fading one color to another would be an obvious, simple, solved problem — it’s actually anything but!\nTom’s generator does two things that help make a gradient better:\nYou \n…\nUsing Different Color Spaces for Non-Boring Gradients originally published on CSS-Tricks. You should get the newsletter.",
           "link": "https://css-tricks.com/color-spaces-for-more-interesting-css-gradients/",
           "publishedOn": "2022-02-07T21:46:18.000Z",
-          "wordCount": 624,
+          "wordCount": 616,
           "title": "Using Different Color Spaces for Non-Boring Gradients"
         },
         {
           "id": "https://css-tricks.com/?p=362616",
           "author": "Stephanie Eckles",
-          "description": "Virtual conferences have changed the game in terms of how a presenter is able to deliver content to an audience. At a live event it’s likely you just have your laptop, but at home, you may have multiple monitors so …\nCSS Scroll Snap Slide Deck That Supports Live Coding originally published on CSS-Tricks. You should get the newsletter and become a supporter.",
+          "description": "Virtual conferences have changed the game in terms of how a presenter is able to deliver content to an audience. At a live event it’s likely you just have your laptop, but at home, you may have multiple monitors so …\nCSS Scroll Snap Slide Deck That Supports Live Coding originally published on CSS-Tricks. You should get the newsletter.",
           "link": "https://css-tricks.com/css-scroll-snap-slide-deck/",
           "publishedOn": "2022-02-07T15:24:44.000Z",
-          "wordCount": 4367,
+          "wordCount": 4397,
           "title": "CSS Scroll Snap Slide Deck That Supports Live Coding"
         },
         {
           "id": "https://css-tricks.com/?p=362799",
           "author": "Ganesh Dahal",
-          "description": "The relatively new WordPress editor, also known as the WordPress Block Editor, always under development via the Gutenberg plugin, has been with us since 2018. You can use the block editor on any WordPress theme, provided the theme …\nA Deep Introduction to WordPress Block Themes originally published on CSS-Tricks. You should get the newsletter and become a supporter.",
+          "description": "The relatively new WordPress editor, also known as the WordPress Block Editor, always under development via the Gutenberg plugin, has been with us since 2018. You can use the block editor on any WordPress theme, provided the theme …\nA Deep Introduction to WordPress Block Themes originally published on CSS-Tricks. You should get the newsletter.",
           "link": "https://css-tricks.com/a-deep-introduction-to-wordpress-block-themes/",
           "publishedOn": "2022-02-04T15:07:04.000Z",
-          "wordCount": 6158,
+          "wordCount": 6150,
           "title": "A Deep Introduction to WordPress Block Themes"
-        },
-        {
-          "id": "https://css-tricks.com/?p=362884",
-          "author": "Chris Coyier",
-          "description": "Pedro Santos suggests:\nUsing naming conventions such that you can learn them once and apply them everywhere\nUnidirectional data flows. Make it easy to follow the app flow.\nNo magic numbers. I’d add they are even worse in CSS\n…\nBuilding a newbie-friendly codebase originally published on CSS-Tricks. You should get the newsletter and become a supporter.",
-          "link": "https://css-tricks.com/building-a-newbie-friendly-codebase/",
-          "publishedOn": "2022-02-03T22:32:58.000Z",
-          "wordCount": 396,
-          "title": "Building a newbie-friendly codebase"
         }
       ]
     },
@@ -159,7 +169,7 @@
           "description": "This installment of *Web Design Done Well* celebrates weird and wacky websites. Sites with sweet, innocent, sometimes pointless purposes. Are they money makers? Game changers? Not necessarily, but they sure are fun, and in ways only the web could really manage.",
           "link": "https://smashingmagazine.com/2022/02/web-design-done-well-perfectly-pointless/",
           "publishedOn": "2022-02-11T12:00:00.000Z",
-          "wordCount": 1691,
+          "wordCount": 1695,
           "title": "Web Design Done Well: Perfectly Pointless",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a885ddca-3e45-4167-8475-3ccd9181e712/web-design-done-well-perfectly-pointless.jpg",
@@ -187,7 +197,7 @@
           "description": "Statoscope is an instrument that analyses your webpack-bundles. Created by Sergey Melukov, it started out as an experimental version in late 2016, which has now become a full-fledged toolkit for viewing, analyzing, and validating webpack-bundles.",
           "link": "https://smashingmagazine.com/2022/02/statoscope-course-intensive-therapy-bundle/",
           "publishedOn": "2022-02-08T10:00:00.000Z",
-          "wordCount": 5262,
+          "wordCount": 5259,
           "title": "Statoscope: A Course Of Intensive Therapy For Your Bundle",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/8c91f031-fdf7-4b31-8a09-b7e0b0d01cc7/statoscope-course-intensive-therapy-bundle.jpg",
@@ -201,7 +211,7 @@
           "description": "While QR codes have many uses and can be leveraged at many touch points, they are just one of dozens of technologies that can improve the customer’s journey. Stanislav Khrustalev shares his advice with a list of things to keep in mind when using QR codes for your business.",
           "link": "https://smashingmagazine.com/2022/02/qr-codes-business-best-practices-pitfalls/",
           "publishedOn": "2022-02-07T14:00:00.000Z",
-          "wordCount": 2793,
+          "wordCount": 2790,
           "title": "Using QR Codes In Your Business: Best Practices And Pitfalls",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/fa41b6d9-f3ce-4b05-a110-21a7bc6c7595/qr-codes-business-best-practices-pitfalls.jpg",
@@ -215,7 +225,7 @@
           "description": "In this second part, Noam suggests a few patterns of how to use the web platform directly as an alternative to some of the solutions that are offered by frameworks.",
           "link": "https://smashingmagazine.com/2022/02/web-frameworks-guide-part2/",
           "publishedOn": "2022-02-04T13:30:00.000Z",
-          "wordCount": 3780,
+          "wordCount": 3776,
           "title": "What Web Frameworks Solve: The Vanilla Alternative (Part 2)",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a3745837-4c65-4b2b-81ab-42e0088633d2/web-frameworks-guide-part2.jpg",
@@ -229,7 +239,7 @@
           "description": "In this article, we’ll look specifically at what we can do to reduce the impact of social media embeds and social sharing widgets — or even some strategies to avoid them altogether. While the spotlight is on reducing the environmental impact, many of these tips will be great for performance too.",
           "link": "https://smashingmagazine.com/2022/02/reducing-web-carbon-footprint-optimizing-social-media-embeds/",
           "publishedOn": "2022-02-03T12:00:00.000Z",
-          "wordCount": 2558,
+          "wordCount": 2571,
           "title": "Reducing The Web’s Carbon Footprint: Optimizing Social Media Embeds",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/686a0218-bea0-4a0e-a2b9-aca40c29d412/reducing-web-carbon-footprint-optimizing-social-media-embeds.jpg",
@@ -243,7 +253,7 @@
           "description": "In this article, Adrian Bece shares more about the benefits and caveats of code-splitting and how page performance and load times can be improved by dynamically loading expensive, non-critical JavaScript bundles.",
           "link": "https://smashingmagazine.com/2022/02/javascript-bundle-performance-code-splitting/",
           "publishedOn": "2022-02-02T10:30:00.000Z",
-          "wordCount": 4512,
+          "wordCount": 4508,
           "title": "Improving JavaScript Bundle Performance With Code-Splitting",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/f721011b-37a8-4c1d-a8b9-b249bf938678/javascript-bundle-performance-code-splitting.jpg",
@@ -271,7 +281,7 @@
           "description": "Do you need a little inspiration boost? Well, then our new batch of desktop wallpapers is for you. Designed by artists and designers from across the globe, they come in versions with and without a calendar for February 2022.",
           "link": "https://smashingmagazine.com/2022/01/desktop-wallpaper-calendars-february-2022/",
           "publishedOn": "2022-01-31T09:00:00.000Z",
-          "wordCount": 2269,
+          "wordCount": 2266,
           "title": "28 Days Of Inspiration (February 2022 Desktop Wallpapers Edition)",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/04d12428-d98f-4633-ad77-fed864da6842/feb-22-magic-of-music-preview-opt.png",
@@ -285,7 +295,7 @@
           "description": "In this article, Noam Rosenthal dives deep into a few technical features that are common across frameworks, and explains how some of the different frameworks implement them and what they cost.",
           "link": "https://smashingmagazine.com/2022/01/web-frameworks-guide-part1/",
           "publishedOn": "2022-01-28T14:00:00.000Z",
-          "wordCount": 2159,
+          "wordCount": 2162,
           "title": "What Web Frameworks Solve And How To Do Without Them (Part 1)",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/7ca7294e-9325-4bab-8617-0bc3d42e3053/web-frameworks-guide.jpg",
@@ -299,7 +309,7 @@
           "description": "This article reveals how something as trivial as administration in both software and As-a-service can be either a booster or bottleneck to a company’s productivity and innovation. It also provides several design aspects that UX practitioners should evaluate when designing the administration experience.",
           "link": "https://smashingmagazine.com/2022/01/software-administration-ux/",
           "publishedOn": "2022-01-26T12:00:00.000Z",
-          "wordCount": 2586,
+          "wordCount": 2584,
           "title": "Don’t Underestimate The Software Administration UX",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a25c6bb8-7778-48e1-b2e8-04cfd46d0765/software-administration-ux.jpg",
@@ -313,7 +323,7 @@
           "description": "What’s new in Chrome, Edge, Safari and Firefox? Patrick Brosset breaks it down with the latest features in DevTools across browsers.",
           "link": "https://smashingmagazine.com/2022/01/devtools-updates-2022/",
           "publishedOn": "2022-01-25T13:00:00.000Z",
-          "wordCount": 2520,
+          "wordCount": 2519,
           "title": "What’s New In DevTools?",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/e516aa85-3b77-418a-9b43-cec06943b129/devtools-updates-2022.jpg",
@@ -341,7 +351,7 @@
           "description": "Joining a team where there are no established design practices may feel disheartening. Does this situation resonate with you? If yes, then read on — as this article is sharing the author’s advice based on his personal experience and it will show you a way (although not easy) of facing the problem in a manner that will bring other benefits, beside order and consistency.",
           "link": "https://smashingmagazine.com/2022/01/from-chaos-to-system-design-teams/",
           "publishedOn": "2022-01-21T14:30:00.000Z",
-          "wordCount": 5316,
+          "wordCount": 5320,
           "title": "From Chaos To System In Design Teams",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/a7ab411a-2903-440e-bbfa-4f7914345165/chaos-to-system-design-teams.jpg",
@@ -355,7 +365,7 @@
           "description": "In this article, Georgii Perepecho explains the most common React Query features that you need to be familiar with when creating a real-life application that is stable when testing.",
           "link": "https://smashingmagazine.com/2022/01/building-real-app-react-query/",
           "publishedOn": "2022-01-20T14:30:00.000Z",
-          "wordCount": 5253,
+          "wordCount": 5249,
           "title": "Building The Real App With React Query",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/bb299a88-9204-4579-bfb0-f9d8dac84014/building-real-app-react-query.jpg",
@@ -383,7 +393,7 @@
           "description": "Every once in a while, we publish [freebies](https://www.smashingmagazine.com/category/freebies) related to different occasions and themes. We hope that with this icon set, everyone will be able to find their own use case for these icons in particular. Today, we present to you three icon sets designed by the creative folks at GraphicSurf — all free for personal and commercial use.",
           "link": "https://smashingmagazine.com/2022/01/freebie-wayfinding-icon-sets-exhibition-concert-museum/",
           "publishedOn": "2022-01-18T12:00:00.000Z",
-          "wordCount": 825,
+          "wordCount": 822,
           "title": "Freebie: Wayfinding Icon Sets (164 Icons, PNG, SVG, AI, EPS)",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/27d4ee4d-0893-4ef6-b48a-435007089494/wayfinding-icon-preview.jpg",
@@ -397,7 +407,7 @@
           "description": "We’ll explore fluid typography principles, use-cases, implementation with CSS clamp() and an interactive fluid typography calculator.",
           "link": "https://smashingmagazine.com/2022/01/modern-fluid-typography-css-clamp/",
           "publishedOn": "2022-01-17T13:00:00.000Z",
-          "wordCount": 4019,
+          "wordCount": 4022,
           "title": "Modern Fluid Typography Using CSS Clamp",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/f12f5a3d-f679-4b6b-b9c2-cb5a9d9166ae/modern-fluid-typography-css-clamp.jpg",
@@ -411,7 +421,7 @@
           "description": "In [Part 1](https://www.smashingmagazine.com/2022/01/ten-tips-aspiring-designer-beginners-part1/), Luis Ouriach shared advice he wished he had when starting out in his career. In this second and last part of this series, Luis continues sharing tips that helped him grow and become a better designer throughout the years.",
           "link": "https://smashingmagazine.com/2022/01/ten-tips-aspiring-designer-beginners-part2/",
           "publishedOn": "2022-01-14T15:00:00.000Z",
-          "wordCount": 3569,
+          "wordCount": 3576,
           "title": "Ten Tips For Aspiring Designer Beginners (Part 2)",
           "enclosure": {
             "url": "http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/5b0e9621-b939-439d-a812-69a4eb7d68ff/tips-aspiring-designer-beginners-part2.jpg",
@@ -427,12 +437,93 @@
       "siteUrl": "https://docs.rsshub.app",
       "articles": [
         {
+          "id": "https://m.idai.ly/se/695rHX",
+          "author": null,
+          "description": "NASA 公布一张哈勃天文望远镜拍摄的仙女座 Arp 282 双星系照片，两个旋涡星系之间因引力作用而出现一条星系物质带。这对星系距离地球约3.2亿光年，照片上方的 IC 1559 星系正在逐渐被吸收至下方的 NGC 169 星系。摄影师：NASA",
+          "link": "https://m.idai.ly/se/695rHX",
+          "publishedOn": "2022-02-12T14:59:00.000Z",
+          "wordCount": 168,
+          "title": "仙女座双星系融合"
+        },
+        {
+          "id": "https://m.idai.ly/se/b26j66",
+          "author": null,
+          "description": "SpaceX 星舰原型机「SN20」完成与重型火箭组装，这是全球迄今最高的火箭发射组合体，星舰飞船垂直高度为50米，重型运载火箭为69米。2月11日，SpaceX 创始人 Elon Musk 宣布可能在3月进行星舰第一次近地轨道试飞，目前正在等待美国航空管理局进行审批。根据 Musk 的设想，星舰未来能在世界任何地方的浮动海上平台进行发射，平均单次发射成本可能低于1000万美元。摄影师：Jim Watson",
+          "link": "https://m.idai.ly/se/b26j66",
+          "publishedOn": "2022-02-12T14:57:00.000Z",
+          "wordCount": 168,
+          "title": "星舰筹备轨道试飞"
+        },
+        {
+          "id": "https://m.idai.ly/se/b08U5B",
+          "author": null,
+          "description": "美日印澳「四方安全对话」（Quad）外长会议在墨尔本举行，澳大利亚。2月11日，美日印澳外长发表联合声明，宣称四国已共同提供超过5亿剂新冠疫苗，成功帮助汤加应对海底火山爆发灾害，并对缅甸危机表达严重关切，对朝鲜试射弹道导弹进行谴责。澳大利亚外交部长称「俄罗斯与中国的合作令人担忧」，美国国务卿 Antony Blinken 则警告俄罗斯可能在冬奥会期间入侵乌克兰。摄影师：Darrian Traynor",
+          "link": "https://m.idai.ly/se/b08U5B",
+          "publishedOn": "2022-02-12T14:55:00.000Z",
+          "wordCount": 168,
+          "title": "美日印澳外长会议"
+        },
+        {
+          "id": "https://m.idai.ly/se/03dOeB",
+          "author": null,
+          "description": "法国总统 Emmanuel Macron 视察一座核涡轮机生产基地，贝尔福。2月10日，法国总统 Macron 宣布计划投入500亿欧元建造最多14个核反应堆，从而大幅减少化石燃料消耗，实现2050年碳中和目标。法国电力集团（EDF）将建造和运营这些新反应堆。法国是全球对核能发电依赖程度最高的国家，现有56座核电站，70%电力供应来自核能发电。摄影师：Jean-Francois Badias",
+          "link": "https://m.idai.ly/se/03dOeB",
+          "publishedOn": "2022-02-12T14:53:00.000Z",
+          "wordCount": 168,
+          "title": "法国提升核能投资"
+        },
+        {
+          "id": "https://m.idai.ly/se/2ac5OJ",
+          "author": null,
+          "description": "孟加拉国首都达卡市一条河道被塑料垃圾覆盖。由于缺少废水处理设施和监管机构，达卡市面临严重的河流污染问题，绝大多数污染物来自生活和工业废水排放，垃圾堵塞进一步导致河流干涸断流。世界银行报告推测，达卡地区河流污染每年对当地造成约28.3亿美元经济损失。摄影师：Zakir Hossain",
+          "link": "https://m.idai.ly/se/2ac5OJ",
+          "publishedOn": "2022-02-12T14:51:00.000Z",
+          "wordCount": 168,
+          "title": "孟加拉首都河流污染"
+        },
+        {
+          "id": "https://m.idai.ly/se/6685Vs",
+          "author": null,
+          "description": "一家冥想工作室的访客在明亮房间里戴着口罩进行冥想，东京。2月12日，日本单日新增确诊9.8万例，单日死亡142例，累计死亡20059例，第5波疫情仍处于高位。日本政府宣布东京、神奈川、千叶等13个都县防疫措施延长至3月6日，并计划在2月底提高加强针接种量至每天100万剂。目前日本第三剂疫苗接种率仅为7.9%。摄影师：Kim Kyung-Hoon",
+          "link": "https://m.idai.ly/se/6685Vs",
+          "publishedOn": "2022-02-12T14:49:00.000Z",
+          "wordCount": 168,
+          "title": "日本新冠死亡破2万"
+        },
+        {
+          "id": "https://m.idai.ly/se/5bdG4k",
+          "author": null,
+          "description": "埃尔福特自然历史博物馆，工作人员正在整理甲壳虫标本收藏，德国图林根州。2022年是该博物馆创立100周年，馆方计划举行一系列展览活动回顾100年来研究成果。埃尔福特自然历史博物馆以丰富的昆虫收藏知名，共收集2万种35万件昆虫标本。馆内还有6.5万件哺乳类、鸟类、爬行类、两栖类动物标本以及各类植物、矿物和化石。摄影师：Martin Schutt",
+          "link": "https://m.idai.ly/se/5bdG4k",
+          "publishedOn": "2022-02-12T14:47:00.000Z",
+          "wordCount": 168,
+          "title": "德国昆虫收藏博物馆"
+        },
+        {
+          "id": "https://m.idai.ly/se/f043C4",
+          "author": null,
+          "description": "俄罗斯堪察加鹰隼繁殖中心，83只来自德国的矛隼（Gyrfalcon）刚刚运达，准备成为首批育种的种鹰。堪察加半岛的盗猎活动一度导致鹰隼接近灭绝，俄政府在2019年提出鹰隼繁殖中心计划，希望恢复堪察加半岛的鹰隼种群规模。这座鹰隼养殖中心占地面积达300公顷，预计2022年春天迎来第一批诞生幼鸟。矛隼是体型最大的隼属猛禽，翼展可达1.6米，飞行时速达到100公里，属于被列入濒危野生动物名录的受保护物种。摄影师：Yelena Vereshchaka",
+          "link": "https://m.idai.ly/se/f043C4",
+          "publishedOn": "2022-02-12T14:45:00.000Z",
+          "wordCount": 168,
+          "title": "俄恢复鹰隼种群"
+        },
+        {
+          "id": "https://m.idai.ly/se/dd6hyk",
+          "author": null,
+          "description": "2022北京冬奥会速度滑冰男子500米决赛，中国选手高亭宇在赛道上保持领先。2月12日，高亭宇以34秒32的成绩夺得速度滑冰男子500米项目冠军，刷新该项目奥运纪录，为中国队赢得本届冬奥会第4枚金牌。这亦是中国男子速滑队有史以来摘得的首枚奥运金牌。高亭宇在决赛中一路领先直至冲过终点线。韩国选手车旼奎以34秒39获得该项目银牌，日本选手森重航以34秒49获得铜牌。摄影师：Vladimir Astapkovich",
+          "link": "https://m.idai.ly/se/dd6hyk",
+          "publishedOn": "2022-02-12T13:52:00.000Z",
+          "wordCount": 168,
+          "title": "北京冬奥中国第4金"
+        },
+        {
           "id": "https://m.idai.ly/se/401sNq",
           "author": null,
           "description": "欧洲南方天文台（ESO）公布一颗新发现的太阳系外类地行星「比邻星d」（Proxima d）的想象图。2月10日，天文学家宣布通过观测数据推算出一颗新的类地行星「比邻星d」。这颗行星围绕太阳系最近恒星「比邻星」运行，距离地球约4.2光年，质量约为地球的26%，是迄今发现的最轻系外行星。推测这颗行星的公转周期为5.12天，具有固态岩石地表，表面温度高达87℃，可能无法支持地球生命生存。摄影师：ESO",
           "link": "https://m.idai.ly/se/401sNq",
           "publishedOn": "2022-02-11T10:59:00.000Z",
-          "wordCount": 159,
+          "wordCount": 168,
           "title": "新类地行星「比邻星d」"
         },
         {
@@ -441,7 +532,7 @@
           "description": "欧空局（ESA）正在研制的一架用于测试卫星导航系统的无人机，荷兰诺德韦克。这架无人机可搭载不同类型的卫星导航接收器，模拟静态、移动、步行、车载等使用模式，从而测试「全球导航卫星系统」（GNSS）的性能和精确度。欧空局最新报告指出，无人机在运输、农业、建筑、传媒、军事等领域的应用不断扩大，至2025年全球无人机市场规模预计达369亿欧元，支持 GNSS 导航功能的无人机产量将达到每年1000万架。摄影师：ESA",
           "link": "https://m.idai.ly/se/a947x6",
           "publishedOn": "2022-02-11T09:57:00.000Z",
-          "wordCount": 159,
+          "wordCount": 168,
           "title": "欧空局研制无人机"
         },
         {
@@ -450,7 +541,7 @@
           "description": "第72届柏林国际电影节在柏林电影宫开幕，德国。2月10日，柏林电影节时隔2年恢复室内举办，受疫情影响展映时间缩短为11天，电影放映厅上座率不超过50%，入场观众必须出示新冠疫苗接种证明。本届电影节将公开展映256部电影，其中18部影片入围主竞赛单元。当天德国新增新冠确诊24.7万例，创下疫情爆发以来最高纪录，单日死亡224例，疫情呈持续恶化趋势，迄今第3针疫苗加强针接种比例达到54.3%。摄影师：Sebastian Reuter",
           "link": "https://m.idai.ly/se/e6d96L",
           "publishedOn": "2022-02-11T03:55:00.000Z",
-          "wordCount": 159,
+          "wordCount": 168,
           "title": "2022柏林电影节开幕"
         },
         {
@@ -459,7 +550,7 @@
           "description": "俄罗斯总统 Vladimir Putin 与哈萨克斯坦总统 Kassym-Jomart Tokayev 举行会晤，莫斯科。2月10日，哈萨克斯坦总统在平息骚乱事件后首次访问俄罗斯，两国领导人就双边关系和地区局势的关键性问题进行讨论。Putin 指出，俄哈是重要的贸易和经济伙伴，2021年双边贸易额达256亿美元，俄中石油管道亦过境哈萨克斯坦，两国在绝大多数全球和地区问题上的立场一致。哈萨克斯坦总统感谢俄方同意设立重要大学分支机构，强调支持俄方关于欧亚地区安全不可分割的立场。摄影师：Mikhail Klimentyev",
           "link": "https://m.idai.ly/se/2ccBDD",
           "publishedOn": "2022-02-11T03:53:00.000Z",
-          "wordCount": 159,
+          "wordCount": 168,
           "title": "哈萨克斯坦总统访俄"
         },
         {
@@ -468,7 +559,7 @@
           "description": "英国首相 Boris Johnson 在波兰总理 Mateusz Morawiecki 陪同下访问一处军事基地，华沙。2月10日，英国政府宣布已向波兰增派350名士兵，并要求另外1000名士兵处于待命状态。英国首相 Boris 警告称「乌克兰局势进入最危机时刻」，呼吁北约成员国团结一致应对俄罗斯军事威胁。当天美国国务院提高乌克兰旅行风险至4级，不建议美国公民前往，美国总统 Joe Biden 则表示美国公民应「立刻离开乌克兰」。摄影师：Daniel Leal",
           "link": "https://m.idai.ly/se/e31v8Q",
           "publishedOn": "2022-02-11T03:51:00.000Z",
-          "wordCount": 159,
+          "wordCount": 168,
           "title": "英国首相访问波兰"
         },
         {
@@ -477,89 +568,8 @@
           "description": "韩国总统文在寅在青瓦台接受媒体采访，首尔。2月10日，文在寅接受美联社、法新社、路透社、新华社等8家国际通讯社的联合采访，回顾其在任内推进的外交和安全政策。文在寅在谈及朝鲜半岛局势时指出，朝鲜恢复核武器或远程导弹试验将导致朝鲜半岛立即陷入危机，他表示韩方愿无条件、通过任何形式与朝方举行会谈，并敦促美国和朝鲜恢复对话。文在寅本届总统任期将于2022年5月结束，他担忧新总统选举结果可能成为韩朝首脑会谈的不确定因素。摄影师：iDaily Media",
           "link": "https://m.idai.ly/se/f50GZs",
           "publishedOn": "2022-02-11T03:49:00.000Z",
-          "wordCount": 159,
+          "wordCount": 168,
           "title": "文在寅望促朝韩对谈"
-        },
-        {
-          "id": "https://m.idai.ly/se/5d78h0",
-          "author": null,
-          "description": "比利时皇家美术博物馆，工作人员正在取下一幅纳粹时期掠夺油画，布鲁塞尔。2月10日，该馆正式将德国艺术家 Lovis Corinth 1913年创作的《花》归还给油画原主人的后裔。这幅油画原本属于一对犹太裔夫妇，二战期间遭到纳粹掠夺，1951年由比利时皇家美术博物馆纳入收藏。目前该美术馆仍有26件藏品被判定为来源不明的二战掠夺艺术品，馆方已经在线上发布艺术品照片和信息以寻找原拥有者。摄影师：Johanna Geron",
-          "link": "https://m.idai.ly/se/5d78h0",
-          "publishedOn": "2022-02-11T03:47:00.000Z",
-          "wordCount": 159,
-          "title": "比利时归还掠夺油画"
-        },
-        {
-          "id": "https://m.idai.ly/se/8d4A51",
-          "author": null,
-          "description": "香港市民们排队接受新冠核酸检测，中国。2月10日，香港新增986例新冠确诊病例，包括985例本土病例和1例输入病例，第5波疫情呈急剧恶化趋势。香港特区政府已宣布进一步收紧防疫措施，2月24日起实施疫苗通行证政策，要求12岁以上人士必须接种新冠疫苗，目前全港人口疫苗接种率约81.8%。中国国务院港澳办表示，中央将全力支持香港抗击第5波疫情，并保障对港蔬菜、鲜活食品和其他日用必需品的供应。摄影师：Peter Parks",
-          "link": "https://m.idai.ly/se/8d4A51",
-          "publishedOn": "2022-02-11T03:45:00.000Z",
-          "wordCount": 159,
-          "title": "香港爆发第5波疫情"
-        },
-        {
-          "id": "https://m.idai.ly/se/564C7A",
-          "author": null,
-          "description": "秘鲁国家自然保护署工作人员正在收集因原油污染而死的海鸟，佩斯卡多雷斯岛。2月9日，秘鲁石油泄漏事故造成的生态影响持续扩大，当地环保部门一天内从大海中打捞出16只死于石油污染的海鸟。据西班牙国家石油公司报告，本次事故共造成超过1万桶原油泄漏，影响范围达105平方公里，近3000人参与清理泄漏石油，目前仅收集约43%漏油，预计清理工作将持续至3月底。摄影师：Sebastian Castaneda",
-          "link": "https://m.idai.ly/se/564C7A",
-          "publishedOn": "2022-02-11T03:43:00.000Z",
-          "wordCount": 159,
-          "title": "秘鲁石油泄漏污染"
-        },
-        {
-          "id": "https://m.idai.ly/se/50fZ6m",
-          "author": null,
-          "description": "保加利亚民众庆祝「养蜂守护神节」（Day of Saint Haralampi），人们围绕十字架形的烛台祷告，布拉戈耶夫格勒市。圣徒 Haralampi 是保加利亚传说中养蜂人的守护者，人们在祈祷仪式中将蜡烛绑在蜂蜜罐上以祈愿健康和丰收。养蜂业是保加利亚的传统产业，该国平均每年生产超过1万吨蜂蜜，其中80%出口至欧洲各国。气候变暖和农药滥用导致欧洲蜜蜂数量大幅减少，保加利亚养蜂业面临减产危机。摄影师：Nikolay Doychinov",
-          "link": "https://m.idai.ly/se/50fZ6m",
-          "publishedOn": "2022-02-11T03:41:00.000Z",
-          "wordCount": 159,
-          "title": "保加利亚养蜂人节"
-        },
-        {
-          "id": "https://m.idai.ly/se/cb64YG",
-          "author": null,
-          "description": "德国霍耶斯韦达动物园进行一年一度的动物盘点工作，工作人员抱着3只南方三带犰狳（Armadillo），萨克森州。三带犰狳是唯一能将身体蜷成球形的犰狳物种，仅分布于南美洲的阿根廷、巴西、巴拉圭和玻利维亚，以甲虫、蚂蚁等昆虫为食。受栖息地减少和人类捕猎威胁，三带犰狳已被列为近危物种。2月10日，霍耶斯韦达动物园宣布该园共有120种967只动物，比2020年增加57只。摄影师：Sebastian Kahnert",
-          "link": "https://m.idai.ly/se/cb64YG",
-          "publishedOn": "2022-02-11T03:39:00.000Z",
-          "wordCount": 159,
-          "title": "德国动物园年度盘点"
-        },
-        {
-          "id": "https://m.idai.ly/se/453Q0h",
-          "author": null,
-          "description": "中国队赢得2022北京冬奥会自由式滑雪空中技巧混合团体银牌，张家口。2月10日，徐梦桃、贾宗洋、齐广璞以324.22分的总成绩获得自由式滑雪空中技巧混合团体决赛第二名，为中国队赢得本届冬奥会第3枚银牌。空中技巧混合团体赛是2022冬奥会的新增项目，美国队以338.34分获得本届金牌，加拿大队以290.98分获得铜牌。目前中国队已累计获得3金3银，位列奖牌榜第7位。摄影师：Ezra Shaw",
-          "link": "https://m.idai.ly/se/453Q0h",
-          "publishedOn": "2022-02-10T12:55:00.000Z",
-          "wordCount": 159,
-          "title": "北京冬奥中国第3银"
-        },
-        {
-          "id": "https://m.idai.ly/se/59cejI",
-          "author": null,
-          "description": "马德里提森-博内米萨博物馆，一幅提森-博内米萨家族（Thyssen-Bornemisza）收藏的法国印象派画家高更1892年油画《玛塔·穆阿》正在展出，西班牙。2月9日，西班牙文化部宣布与提森-博内米萨家族签署一项15年租借协议，每年支付650万欧元确保该家族收藏的329件重要艺术品保留在西班牙境内，并有优先权在租借期结束后购买这批藏品，其中包括莫奈、毕加索、梵高、高更、伦勃朗、鲁本斯等艺术家作品。摄影师：Alejandro Martinez Velez",
-          "link": "https://m.idai.ly/se/59cejI",
-          "publishedOn": "2022-02-10T09:59:00.000Z",
-          "wordCount": 159,
-          "title": "西班牙租借提森藏品"
-        },
-        {
-          "id": "https://m.idai.ly/se/2389LO",
-          "author": null,
-          "description": "美国总统 Joe Biden 邀请主要能源公司高管讨论清洁能源计划，华盛顿白宫。2月9日，Biden 与杜克能源、密歇根天然气公司、艾索伦核电公司、爱迪生电气公司等美国电力供应商 CEO 举行会议，旨在推广「重建美好」基建法案中的清洁能源计划。Biden 宣布美国目标在2035年实现100%清洁能源发电，计划提供税收优惠等措施促进电力公司转型。美国能源署数据显示，目前全美可再生能源发电占比仅13%。摄影师：Andrew Harrer",
-          "link": "https://m.idai.ly/se/2389LO",
-          "publishedOn": "2022-02-10T08:59:00.000Z",
-          "wordCount": 159,
-          "title": "拜登推广清洁电力"
-        },
-        {
-          "id": "https://m.idai.ly/se/7aeEWE",
-          "author": null,
-          "description": "韩国总统文在寅与越南外长裴青山举行会晤，首尔。2月9日，越南外长裴青山抵达首尔开始为期3天访问。2022年是韩越建交30周年，文在寅表示希望将两国关系尽快提升至「全面战略伙伴」关系。裴青山表示越南愿意在经贸、投资、旅游、文化等领域加强与韩国合作，并作为协调国推动韩国与东盟关系发展。韩国是越南的第一大境外投资国，2021年前11个月双边贸易额达703.8亿美元，同比增长20%。摄影师：iDaily Media",
-          "link": "https://m.idai.ly/se/7aeEWE",
-          "publishedOn": "2022-02-10T07:59:00.000Z",
-          "wordCount": 159,
-          "title": "越南韩国强化合作"
         }
       ]
     },
@@ -569,364 +579,364 @@
       "siteUrl": "https://www.v2ex.com/",
       "articles": [
         {
-          "id": "833342",
-          "author": "uhoo",
-          "description": "uhoo: 之前请教各位推荐路由的，于是入了一个 n1 组单臂路由\n猫 桥接 后台 192.168.1.1\nn1 后台 192.168.1.2\nAP 后台 192.168.1.3\n现在只能用 ipv6 上网，请问 n1 的 lan 是不是要配置下 dns 和网关，目前都是留空的，不太懂，网上的教程都没有提到这部分，请各位赐教",
-          "link": "https://www.v2ex.com/t/833342",
-          "publishedOn": "2022-02-12T00:03:45.000Z",
-          "wordCount": 170,
-          "title": "n1 单臂路由 无法访问 ipv4 网络"
+          "id": "833499",
+          "author": "HelloWorldMC",
+          "description": "HelloWorldMC: \n服务器是 2020 年 7 月份开的，停服俩月导致玩家流失来这拉点人，qq 群：184185490 ，欢迎大家加入服务器娱乐！我们有专门的国内线路保证国内玩家的延迟稳定！我们活动很多，差不多每个节日都会出活动让大家参与。我们的服规很少，只要不破坏不作弊我们都欢迎，喜欢玩生电啥的我们也都欢迎！上个服务器配置：\n\n再来个 qq 群二维码：\n\n再上点服务器的建筑和活动：",
+          "link": "https://www.v2ex.com/t/833499",
+          "publishedOn": "2022-02-12T22:05:17.000Z",
+          "wordCount": 148,
+          "title": "Java 正版服欢迎大家！立足美利坚，服务全球华人！"
         },
         {
-          "id": "833341",
-          "author": "mokong",
-          "description": "mokong: \n《水印相机-简单好用》\n下载链接： https://apps.apple.com/cn/app/qq/id1607957232\n使用说明： https://www.yuque.com/morgan-wang/lyxhfw/mgh3ba\n新增功能：\n支持编辑图片\n允许选择多个水印场景\n水印支持拖动调整位置\n改身份证水印为文字水印，同时新增全屏防盗水印\n新增切换语言选项\n新增关于 APP",
-          "link": "https://www.v2ex.com/t/833341",
-          "publishedOn": "2022-02-11T23:32:22.000Z",
-          "wordCount": 100,
-          "title": "《水印相机-简单好用》第二版更新了"
+          "id": "833498",
+          "author": "wsWmsw",
+          "description": "wsWmsw: \n习惯使用Ctrl-p、Ctrl-n、Ctrl-b、Ctrl-f控制方向，但是每次要选取的时候不得不切换到Shift加上下左右键，或者Shift-Option加左右键。另外除了Ctrl-h、Ctrl-d的单字符删除，是否还有和Option加退格键相同功能的片段删除的组合键？",
+          "link": "https://www.v2ex.com/t/833498",
+          "publishedOn": "2022-02-12T19:19:44.000Z",
+          "wordCount": 93,
+          "title": "Mac 怎么配合组合方向键进行片段选取？"
         },
         {
-          "id": "833339",
-          "author": "vcfghtyjc",
-          "description": "vcfghtyjc: \n今天终于决定了去哪个组。同时就要拒绝剩下的组。感觉选组的时候花了他们很多时间，结果现在又拒绝了他们，感觉特别愧疚。\n之前找工作的时候拒绝别的公司的 offer 时候也有同样的感受。\n大家有没有类似的体验？是怎么调整心态的？",
-          "link": "https://www.v2ex.com/t/833339",
-          "publishedOn": "2022-02-11T22:43:31.000Z",
+          "id": "833497",
+          "author": "281x1h2ez12",
+          "description": "281x1h2ez12: 好多年苹果用户了，mbp 、ipad 也都感觉不错。昨天突然发现 12 pro max 拿在手里特别不适应，感觉不戴壳都比带壳的 xs max 重，仔细一看还厚了一些。感觉 2018 年的 xs max 有点老 macbook 楔形设计的感觉，看起来薄很多。12 pro max 像新款 mbp ，边框比较方。官网上参数上看的确如此，但没想到实际手感这么不适应。感觉如果不是 xs max 有点用久了怕哪天坏，都有想再买一个 xs max 备用了。可能手感因人而异吧。不太需要那么高性能的相机和处理器，需求就是大屏幕、越轻薄越好。而且 13\n pro max 好像也差不多厚重。感觉苹果想每年慢慢加一丢丢重量、让用户去适应。",
+          "link": "https://www.v2ex.com/t/833497",
+          "publishedOn": "2022-02-12T19:06:38.000Z",
+          "wordCount": 204,
+          "title": "iPhone 12 pro max 比 xs max 厚重"
+        },
+        {
+          "id": "833496",
+          "author": "adminisqq",
+          "description": "adminisqq: \n** 应聘 PHP 开发⼯程师\n** / 男 / 1990 / 籍贯张家界 / 已在长沙落户买房\n9 年开发经验 / 担任过项目组长 / 项目经验丰富\n离职状态 / 一周后到岗 / 应聘 PHP 开发工程师\n全日制专科（计算机应用技术）/ 非全日制本科在读（计算机科学与技术）\n期望发展方向 / PHP / DevOps / Golang / 项目管理（ PMP 在考）\n联系方式 d2VjaGF0IGh1eXVhbmluZw==（ Base64 ）\n工作经历\n湖南木屋网络科技有限公司 [SaaS 系统研发]（ 2018.5 – 2021.11 ）\n2019 - 2021 从 0 到 1 设计、研发 “氢鱼数字食堂” 系统（产品线组长），上架应用市场，产值 500 万+\n2018 - 2020 年参与、构建 “社区团购 ERP” 系统，疫情期间公司盈利 1000 万+\n开发、迭代公司核心产品 “生鲜供应链系统 ERP” 系统，顺利融资千万级别\n独立研发公司内部系统，CMS （客户成功系统）、SSO （单点登录）、小程序授权托管平台\n摩森特(北京)科技有限公司 [SaaS 系统研发]（ 2017.3 – 2018.4 ）\n组织团队参与 “摩森特云服务平台” 的设计与开发（产品线组长），后完成与投资公司对赌\n担任核心项目负责人，带领团队保质保量、攻坚克难完成开发任务\n平台对接中国移动 BOSS 系统、与中国移动达成合作\n外派、驻场银行部署私有化项目及定制化开发\n北京市一网天行科技有限公司 [项目研发、实施、交付]（ 2015.6 – 2017.3 ）\n担任项目经理、研发职位，独立负责 30+ 项目对接、研发，保质保量完成公司、客户需求\n负责与客户沟通，挖掘、完善需求、合理分配开发任务、监控项目质量及进度\n有外派、驻场、实施交付经验，与客户保持良好沟通，完成客…",
+          "link": "https://www.v2ex.com/t/833496",
+          "publishedOn": "2022-02-12T19:03:10.000Z",
+          "wordCount": 398,
+          "title": "9 年 PHP 开发经验，求职长沙 PHP 岗位"
+        },
+        {
+          "id": "833495",
+          "author": "xipuxiaoyehua",
+          "description": "xipuxiaoyehua: 看了一些拼车的帖子有感，拼车应当是为了降低订阅费用而不是不花钱或者赚钱吧\n比如奶飞 tuerqi 就 25 一月。人均就算 6 补整数，一个季度也不过 18 然而好多所谓的开车动不动三四十，就是为了自己不掏钱甚至能赚，一个月缺那几十块钱吗\n顺便一些常用价钱参考：\n奶飞：tuerqi 总约 25 人均约 5-6/月 bajisitan 总约 40 人均 8/月 baxi 人均 15/月 五人车\n迪士尼：美、港、台人均约 80/年 tuerqi 或者 baxi 人均订阅 50/年 六人车\n油罐：yindu 人均约 30/年 agenting 人均约 23/年 六人车\n声破天：feilvbin 约 5/月\n亚马逊视频：tuerqi 约 15/年 yindu 约 30/年 四人车\nApple One：美国约 32/月\nHBOMax：agenting 约 40/年\n希望大家不要上一些无良车主的车 以上价钱基本都是向上取整过的，不存在车主会亏的情况",
+          "link": "https://www.v2ex.com/t/833495",
+          "publishedOn": "2022-02-12T17:49:16.000Z",
+          "wordCount": 202,
+          "title": "关于流媒体家庭共享拼车价格的想法"
+        },
+        {
+          "id": "833494",
+          "author": "ysicing",
+          "description": "ysicing: 我粘贴一下原文：\n“拉屎时，就是刚刚坐下的时候，你还不会完全进入状态，还不是一个正在拉屎的人，而是要从一个即将拉屎的人，转变成一个正在拉屎的人。你不会立刻拿出手机或报纸。大概要花一分钟的时间，你才会开始拉，然后就会进入舒适期。当你到达那个时刻，一切都会变得很美好。\n拉屎是一种非凡的体验，能让你有一种奇妙的感觉，甚至可以说意义深远。我觉得上帝让人类这样拉屎，是想让我们知道脚踏实地，让我们学会谦卑。不论你是谁，我们都一样要拉屎。碧昂丝要拉屎。教皇要拉屎。英国女王也拉屎。拉屎的时候，我们都得放下架子和优雅，忘记自己有多出名或多富有。所有那些都不重要了。\n人再没有比在拉屎时更真诚的时刻了。那个时候你会意识到，我是我。这就是我。你尿尿的时候可能不会想什么，但是拉屎的时候不一样。你有没有在一个婴儿拉屎的时候直视过他的眼睛？他在那时会到达自我觉醒的一瞬间。而去外面上那个公共厕所，会毁掉这一切。下雨啊，苍蝇啊，属于你的那一瞬会被夺走。没人该被夺走那宝贵的一瞬。那天蹲在厨房地板上拉屎的时候，我的感觉是，哇哦，没有苍蝇，没有压力，感觉太棒了，我真的很喜欢这样的感觉。”\n后面还写作者沉浸在这美妙时刻，扭头发现几米之外就是自己的曾外婆，在厨房坐着。曾外婆眼睛看不到了，但是闻到了臭味，于是出声询问，挨个喊家里人的名字，作者很慌，但是没办法按下暂停键，只能选择安静缓慢地拉完哈哈哈哈哈哈哈哈哈哈哈哈真的好好笑！\n以及，这本书很好看，关于种族歧视提供了非常独特的叙事视角，另外讨论婚姻和家暴的部分我也很喜欢。",
+          "link": "https://www.v2ex.com/t/833494",
+          "publishedOn": "2022-02-12T17:41:23.000Z",
+          "wordCount": 92,
+          "title": "《天生有罪》里这段拉屎的描述好好笑！"
+        },
+        {
+          "id": "833493",
+          "author": "hertzry",
+          "description": "hertzry: \n上帝打开一扇门\n去年 9 月，我从一所双非院校来到帝都的 985 读直博研究生，心想着要做出一番成就，至少拿个优秀博士论文，然而现实从开学的第一个月就和我想的不一样。\n本科读的是生物科学，抱着自己有一点计算机基础，申请了生物信息学的夏令营。我承认从一开始我的动机就是不纯的，能保研又何苦考研呢？尽管后来保研失利，但最后还是考上了，原本只是试一试，因为只有不到 3 个月的时间有夏令营 offer ，学校给了过初试就录取的承诺。\n我却把它关上了\n这样耍小聪明的后果开了学就慢慢展现出来了。专业的技能我一点都不会，主要涉及机器学习，照着代码能把任务跑起来，但原理我一点都不懂。我慢慢开始怀疑自己的能力和这门专业的合理性。与实验科学相比，我称它为虚无缥缈的。当时我的一腔热血还在实验科学，觉得计算科学没有意义。一股脑直接和导师聊了转硕的事，女朋友也很支持我去追逐自己的初心，这个时候我还没有考虑我们两个人的事。\n之所以现在开始纠结，是因为最近重新审视了一下自己的身份。实验室毕业的博士，工作很好找，月薪可以拿到 30k 。如果我能拿到 30k ，感觉和女朋友可以在一线城市幸福地生活着，几年攒个首付，买个小房子什么的，两个人的压力都会小很多。做实验的人，找工作都不容易，更别说 30k 。硕士出来十几 k ，再申请更好 985 的普通博士更是难，写到这里简直要哭了，还想再去实验科学闯一闯。\n我该怎么办\n纠结这些也没什么用的，要先毕业，以后的事情都不好说。只是如果我不这么任性，几乎没有悬念，5 年之后就可以拿 30k ，而现在能看到的是 2 年之后一个不知所措的硕士。\n太困了，写不下去了，舍友还在外放网剧打游戏，无语……",
+          "link": "https://www.v2ex.com/t/833493",
+          "publishedOn": "2022-02-12T17:30:56.000Z",
+          "wordCount": 186,
+          "title": "上帝打开一扇门，我却把它关上了"
+        },
+        {
+          "id": "833492",
+          "author": "smallWang",
+          "description": "smallWang: \n5 月份能签合同&搬家\n在钱江世纪城站附近\n能养猫（需要房东同意）  通风好、采光好\n预算 3k (如果非常满意可以加钱) ，在钱江世纪城地铁站附近就可 比如丽晶国际  (只有这个地方能满足我和我女朋友的上班了\n大概率会买车，然后需求停车位 || 周围有充电桩\n厨房的地方能大一点最好 有天然气更好  冰箱不能太小(半人高的那种)\n水池啥的要高（我和女朋友都很高）床尽可能大一点、衣柜也可以大一些\n能提供基础家具、家电非人为损坏的维修、报修甚至报销\n空调、宽带都有如果有更多的设施那就是极好的了\n洗衣机大一点极好(我现在这个洗衣机贼小)\n有别的需求我在补充\n大佬们有符合条件的么",
+          "link": "https://www.v2ex.com/t/833492",
+          "publishedOn": "2022-02-12T17:06:56.000Z",
+          "wordCount": 125,
+          "title": "[杭州租房 钱江世纪城]"
+        },
+        {
+          "id": "833491",
+          "author": "mlhadoop",
+          "description": "mlhadoop: \nhttps://www.officialmuskx2.com/tesla.htm#instruction",
+          "link": "https://www.v2ex.com/t/833491",
+          "publishedOn": "2022-02-12T16:49:18.000Z",
+          "wordCount": 207,
+          "title": "btc 双倍返？"
+        },
+        {
+          "id": "833490",
+          "author": "jaywhen",
+          "description": "jaywhen: \n迫于感觉考研失败，最近在准备春招，之前写 React demo 都是用的 Hooks ，没有了解过类式组件。想问问老哥们工作中类式组件用得多吗，面试会问到这方面的内容吗?",
+          "link": "https://www.v2ex.com/t/833490",
+          "publishedOn": "2022-02-12T16:26:11.000Z",
           "wordCount": 165,
-          "title": "拒绝别人感觉很难受怎么办？"
+          "title": "2022 年，学习 React 还需要学 class component 吗?"
         },
         {
-          "id": "833338",
-          "author": "lemonda",
-          "description": "lemonda: 有点像 鹿班 和 Canva\n用户添加图片和文字\n设定不同尺寸下的图片和文字排布方式\n自动抠图和内容识别\n用户对结果进行修正\nCDN 根据设备返回不同的图片",
-          "link": "https://www.v2ex.com/t/833338",
-          "publishedOn": "2022-02-11T20:16:35.000Z",
-          "wordCount": 105,
-          "title": "响应式的图片 CDN"
-        },
-        {
-          "id": "833337",
-          "author": "lixuanyy",
-          "description": "lixuanyy: \n纯后端 crud 程序员，工作在小公司，比较轻松也不加班。自己的时间比较多，所以就想学学 swiftui 写点小东西方便自己用，但是在网上也没有找到啥好的 swiftui 教程。之前没有接触过 iOS 开发，所以对这方面那是一脸懵逼呀！看官方文档吧又都是英文的，小弟这憋足的英语水平也能看得懂，就是很费劲。所以！各位大哥请赐教！",
-          "link": "https://www.v2ex.com/t/833337",
-          "publishedOn": "2022-02-11T19:06:41.000Z",
-          "wordCount": 132,
-          "title": "[swiftui]后端 crud 程序员想学 swiftui,可以在哪里学,应该怎么学？"
-        },
-        {
-          "id": "833335",
-          "author": "levelworm",
-          "description": "levelworm: \n看了下大家对公众号买卖知识的讨论，很有感触。当然这个感触和相关的讨论并没有直接的关系。\n作为终身学习的信奉者，我现在越来越觉得，现代信息社会资源极其丰富，这对于终身学习来说，坏处比好处大。现在只要打开油管或者 B 站，相关的算法都能给我推荐一整屏的有趣的学习资源，让人不禁跃跃欲试。\n但是对于普通人来说，这无非是一种“Tutorial Hell”。所谓 Tutorial Hell 指的是不断的尝试新的东西，但是每次浅尝而止。视频网站提供这么多信息，当然主观上并不是让读者掉入这个陷阱，但是客观上来看，除非是意志力比较强大的人，否则很容易东边试一试，做两个项目，西边再试一试，最后其实并没有深入任何一个知识点。\n所以我觉得对于我们这些意志力薄弱，兴趣又比较广泛，智商也一般的人来说，比较好的学习途径就是先找到一个感兴趣的地方（视频对于探路还是很有帮助的），写出一个超出入门级别的目标，然后就屏蔽掉所有视频网站，仅限完全无关的娱乐（不登陆加隐私浏览就可以避免强相关的推送），仅仅依靠书本的文献来进行第一阶段的学习。这当中肯定会遇到做不出来或者无法理解的事情，这时候就靠自己想亦或上论坛咨询他人。直到达成这个目标之前，都不允许自己切换目标，除非遇到特殊情况，比如说求职需要学习其他的知识，或者是学的东西需要的生理素质不满足（学滑雪但是摔伤了）。\n世上最难是坚持。我深知自己这辈子都难以坚持，所以也只能想办法尽量排除外界的干扰，和大家共勉。",
-          "link": "https://www.v2ex.com/t/833335",
-          "publishedOn": "2022-02-11T18:11:06.000Z",
-          "wordCount": 101,
-          "title": "观“公众号”的讨论有感"
-        },
-        {
-          "id": "833334",
-          "author": "Tardis07",
-          "description": "Tardis07: \n已经测试的软件如下，对方都无法听到\n腾讯会议，“共享屏幕”-“同时共享电脑声音”\nYY 语音，“播放伴奏”-“当前伴奏”\n还有其他可以测试的软件吗，大家都用的什么解决方案呢",
-          "link": "https://www.v2ex.com/t/833334",
-          "publishedOn": "2022-02-11T17:05:26.000Z",
-          "wordCount": 167,
-          "title": "如何在语音聊天的时候同时分享电脑上正在播放的声音"
-        },
-        {
-          "id": "833332",
-          "author": "Vitta",
-          "description": "Vitta: \n我在 edge 里把账号里的密码全清空了，但是 authenticator 里面还是有保存的密码，怎么删掉完？",
-          "link": "https://www.v2ex.com/t/833332",
-          "publishedOn": "2022-02-11T16:39:48.000Z",
-          "wordCount": 97,
-          "title": "authenticator 里面保存的密码怎么全删了？"
-        },
-        {
-          "id": "833331",
-          "author": "wangyzj",
-          "description": "wangyzj: 摸着彦祖的香足过河\n该不该用，怎么用，会有什么问题\n避免踩坑",
-          "link": "https://www.v2ex.com/t/833331",
-          "publishedOn": "2022-02-11T16:32:22.000Z",
-          "wordCount": 91,
-          "title": "有规模使用微前端架构的老哥吗？请进来讲一下经验吧"
-        },
-        {
-          "id": "833330",
-          "author": "emma3",
-          "description": "emma3: \n请问早期的型号能不能以胖 AP 方式工作？配置容易吗能不能脱离 AC 单独工作？ CLI 无所谓，关键要有手册。\n新型号 mist 系列呢？好配置不？没玩过怕踩坑。",
-          "link": "https://www.v2ex.com/t/833330",
-          "publishedOn": "2022-02-11T16:29:49.000Z",
-          "wordCount": 114,
-          "title": "有大神玩过 juniper 的无线 AP 吗？"
-        },
-        {
-          "id": "833328",
-          "author": "sumulige",
-          "description": "sumulige:",
-          "link": "https://www.v2ex.com/t/833328",
-          "publishedOn": "2022-02-11T16:21:55.000Z",
-          "wordCount": 98,
-          "title": "本人从事 Java 工作 4 年了，做过的项目一直没有什么亮点突出。最近想咨询各位同行前辈么，帮忙推荐几个有突出亮点的开源微服务分布式项目，自己想关注一下，为..."
-        },
-        {
-          "id": "833327",
-          "author": "zddwj",
-          "description": "zddwj: \n前两天电脑主板坏了拿去维修，今天去提电脑的时候，售后的工作人员给我的 bitlocker 恢复密钥拍了照片，由于之前没有这方面的经验，当时也是想着赶紧按他的流程提机器走人，没考虑这方面的问题，回来之后才想起来这个问题，假如售后克隆了我的磁盘，然后又搞到了我的恢复密钥，但是没有我的 windows 账户密码，这种情况会造成数据泄露的风险吗？（虽然遇到坏人只是小概率事件，但总归心里有些不爽。）",
-          "link": "https://www.v2ex.com/t/833327",
-          "publishedOn": "2022-02-11T16:09:02.000Z",
-          "wordCount": 157,
-          "title": "[请教] windows bitlocker 仅通过恢复密钥能解密磁盘吗？"
-        },
-        {
-          "id": "833324",
-          "author": "Lnz",
-          "description": "Lnz: \n14 寸 Macbook Pro 遇到扬声器问题，播放视频的时候，有微信语音电话进来扬声器会异响\n具体情况见这个视频： https://www.bilibili.com/video/BV1Xq4y1F7ma/\n有人遇到过吗,用系统的诊断程序没有异常",
-          "link": "https://www.v2ex.com/t/833324",
-          "publishedOn": "2022-02-11T15:19:56.000Z",
-          "wordCount": 104,
-          "title": "14 寸 Macbook Pro 遇到扬声器问题"
-        },
-        {
-          "id": "833323",
-          "author": "ojh",
-          "description": "ojh: \n本人没去过大厂，V 站也经常看到大厂可以拓宽视野，想问下大厂工作能怎么拓宽视野？能提供什么历练呢，是能让你见识到很多最佳实践、困难问题的解决方案吗",
-          "link": "https://www.v2ex.com/t/833323",
-          "publishedOn": "2022-02-11T15:16:27.000Z",
-          "wordCount": 161,
-          "title": "什么是大厂的视野"
-        },
-        {
-          "id": "833322",
-          "author": "ReZer0",
-          "description": "ReZer0: \n我好气啊！ V 友们还有补救机会嘛？ \n我在想如果有二面机会的话问下公积金比例时顺便说下上次忘记算进去了……",
-          "link": "https://www.v2ex.com/t/833322",
-          "publishedOn": "2022-02-11T15:11:35.000Z",
-          "wordCount": 169,
-          "title": "关于我在报期望薪资时报成税后薪资这一件事。"
-        },
-        {
-          "id": "833321",
-          "author": "wikiwiki6",
-          "description": "wikiwiki6: HDD 的话，目前看 PDD 上 4T 的差不多是 400 ，不知道有什么坑没有，求大佬推荐\nNAS 解决方案的话，目前有一块（ Raspberry pi 4B 4GB ），和一条 USB3.0SATA 转接线\n有几个问题想问问大佬们：\n1.关于软件：本人对 NAS 系统 or 软件上不是特别了解，求推荐一款\n需求（满足越多越好）：离线下载   自动备份  bt  虚拟机  外链分享  协同编辑  SMB 挂载  DDNS   在线解码播放 等（也可以说说自己在用什么软件 or 系统）\n2.硬件上，树莓派 4 长时间大文件传输会不会有断电 /自燃等问题\n转接线读取 HDD 的使用体验怎么样",
-          "link": "https://www.v2ex.com/t/833321",
-          "publishedOn": "2022-02-11T15:10:58.000Z",
+          "id": "833489",
+          "author": "LeeReamond",
+          "description": "LeeReamond: \n需求：客户充值积分，充值金额与积分并不按严格乘法对应，而是充值越多送的越多，比如充值 6 元得 600 积分，充值 10 元得 1200 积分，充值 20 元得 2500 积分这种。数据库里只存了用户激活后获得的积分，没有存实际金额。能否用一句 SQL 查询搜索出指定时间范围内所有用户总充值金额？\n比如如下表\n+----+-------+---------------------+\n| id | value | update_time         |\n+----+-------+---------------------+\n|  1 |   600 | 2022-02-08 15:16:05 |\n|  2 |  1200 | 2022-02-07 03:58:01 |\n|  3 |   600 | 2022-02-06 05:30:40 |\n+----+-------+---------------------+\n\n搜索 6-8 日内总计金额，希望得到的结果是 22 ，有什么写法不用经过业务在 sql 就能解决吗？",
+          "link": "https://www.v2ex.com/t/833489",
+          "publishedOn": "2022-02-12T16:25:36.000Z",
           "wordCount": 219,
-          "title": "求 NAS 解决方案及 HDD 推荐"
+          "title": "SQL 语句求助，下述需求可否用一条语句优雅地实现？"
         },
         {
-          "id": "833320",
-          "author": "robinshen",
-          "description": "robinshen: \n前两天发了一个版本更新的贴，没啥关注。腆着脸再发一个，详细介绍下这个项目的背景、特点、和相关技术栈。希望众 V 友轻喷。🙏\n项目地址： https://github.com/theonedev/onedev\n项目背景\n在一家公司做 DevOps 相关工作，若干年前为了解决我们自己的痛点，开发了这个产品内部使用，饱受好评，我也就继续维护这个产品。行业的关系，公司难有大发展，但也倒不了，所以氛围宽松，基本上只要自己负责的那摊事不出问题，没人管你干什么。感谢公司对我摸鱼的宽容，做这个产品很开心，因为没有产品经理，没有业绩压力，不用处理无效需求，感觉每行代码都在让产品变得更好。也感谢来自客户的持续反馈，让我不至于空中楼阁鬼画符。\n相比 GitHub/GitLab 有什么特点？\n开箱即用的符号跳转\n我们内部的一个需求是代码 Review 或者在线看代码时，要能够方便跳转到符号定义：\n\n这个功能使用 ANTLR 分析主流语言的语法，并提取符号定义进行增量存储，速度快，占用空间小。目前支持 Java, JavaScript, C, C++, CSharp, Go, PHP, Python, CSS, SCSS, LESS and R 。GitHub 前两年加入了这个功能，但是好像只是针对主分支； GitLab 需要在 CI 里做 LSIF 相关配置，并会占用大量空间。\n静态分析结果直接标注在源码上，作为 Review 的辅助信息\n\n当然 GitHub 有很多第三方工具可以做这个事情，但发现的问题都是显示在各个产品自己的网站上，与 Code Review 流程割裂开来了（比如说我们可以直接对某个代码风格问题加 Review 的相关说明等等）。另外这些第三方工具一般都需要额外收费。\nIssue 字段和状态可定制，以及和 CI/CD 的深度集成\n这里 GitHub/G…",
-          "link": "https://www.v2ex.com/t/833320",
-          "publishedOn": "2022-02-11T14:53:34.000Z",
-          "wordCount": 859,
-          "title": "一个人（公司摸鱼+业余时间）开发了五年的开源项目：可用于自建 Git 服务，自带看板和 CI/CD，可替代 GitHub/GitLab（功能级的替代，而非小而美）"
+          "id": "833487",
+          "author": "jookr",
+          "description": "jookr: \n请问全新安装的 nodejs 为啥会报这个错呢？\n科学上网工具会不会有影响？",
+          "link": "https://www.v2ex.com/t/833487",
+          "publishedOn": "2022-02-12T16:15:25.000Z",
+          "wordCount": null,
+          "title": "请问全新安装的 nodejs 为啥会报这个错呢？"
         },
         {
-          "id": "833319",
-          "author": "bigwhite1",
-          "description": "bigwhite1: 1.你是习惯把多个文件拖在一个文件夹里，再“压缩”发送给别人，还是直接把多个文件直接“压缩”，发送给别人？\n2.你是习惯将收到的压缩包直接解压至当前位置，还是解压至***文件夹？\n3.因为经历过直接把压缩包解压到当前位置，出现解压出的一堆文件，所以我一般是解压到***文件夹，但是如果打包的人已经是放在一个文件夹里，那我解压出来的文件夹打开就还是一个文件夹\n4.有没有一种解压缩软件，解压的时候能检测是单个文件夹还是多个文件？解决会出现的这种问题？",
-          "link": "https://www.v2ex.com/t/833319",
-          "publishedOn": "2022-02-11T14:45:18.000Z",
-          "wordCount": 199,
-          "title": "关于“解压”和“解压缩”突然发现一个问题"
+          "id": "833486",
+          "author": "ChuangChang",
+          "description": "ChuangChang: \n女朋友的 Apple ID 密码遗忘，多次登录失败导致 Apple ID 被锁，解除锁定就是通过苹果给绑定邮箱发验证码，可问题是女朋友的绑定邮箱就是 iCloud 邮箱，iCloud 锁定中无法进入 iCloud 结尾的邮箱接受验证码。\n解锁 iCloud 除了给绑定邮箱发送验证码之外还可以通过注册时填写的生日验证，可是女朋友注册账户时生日是乱填写的，无法通过验证。\n跪求解决方案，谢谢了。",
+          "link": "https://www.v2ex.com/t/833486",
+          "publishedOn": "2022-02-12T16:07:42.000Z",
+          "wordCount": 166,
+          "title": "Apple ID 的是 iCloud 邮箱，密码忘记陷入死循环，求解"
         },
         {
-          "id": "833318",
-          "author": "hO0O0",
-          "description": "hO0O0: \n扩展坞好像不能用在连接显示器的 dp - type-c 的结构上。有没有什么办法能在 Mac 上用 G502 ，我接口一个插电源，一个接显示器，不知道能不能行，有没有老哥知道的说说？",
-          "link": "https://www.v2ex.com/t/833318",
-          "publishedOn": "2022-02-11T14:38:03.000Z",
-          "wordCount": 157,
-          "title": "Macbook air 连了显示器，没多余的口连接 G502 鼠标的适配器咋办？"
+          "id": "833485",
+          "author": "jsjcjsjc",
+          "description": "jsjcjsjc: VPS-A 是 GIA+9929,建了网站和 vless&trojan\nVPS-B 是落地鸡,解锁奈飞用的,只建了 vless&trojan\n我把域名 3 个域名 blog.domain.com / a.domain.com / b.domain.com 都指向了 VPS-A\n希望的效果是这样的\n使用 blog.domain.com,就是正常博客\n使用 a.domain.com,就是正常上网代理\n使用 b.domain.com,VPS-A 把流量转发到 VPS-B 进行上网代理,可以看奈飞\n\n试了一下简单版,貌似不行\nhttps://hostloc.com/thread-866922-1-1.html\n后来找到这个,也失败了\nhttps://blog.xmgspace.me/archives/nginx-sni-dispatcher.html\n\n就想问一下,第二种方法可以吗?如果可以的话我再试试....头发都少了不少啊~~",
+          "link": "https://www.v2ex.com/t/833485",
+          "publishedOn": "2022-02-12T15:55:20.000Z",
+          "wordCount": 134,
+          "title": "关于 nginx 流量转发的进阶问题"
         },
         {
-          "id": "833316",
-          "author": "wszgrcy",
-          "description": "wszgrcy: \nCommand+R 进入\n发现有抹除硬盘 重装系统两项\n这里的重装是指的与 windows 那样的,只把纯系统部分重装,其他资料保留的意思?还是相当于你第一次用这个电脑,一切都是干净的?\n如果要清除电脑里的所有数据,是需要先抹除磁盘,再重装吗?",
-          "link": "https://www.v2ex.com/t/833316",
-          "publishedOn": "2022-02-11T14:26:15.000Z",
+          "id": "833484",
+          "author": "bosshida",
+          "description": "bosshida: 小区房，楼上住着一家四口，男的经常不在家，在外打工。女的不用上班，在家带着两个孩子，一个 4 岁多，一个不够 2 岁。大的小孩经常在家里跑跑跳跳，把东西扔地上，晚上十点多也不会停，经常玩到 11 点多。小孩的妈也是晚上 11 点多走来走去。好说歹说都跟楼上说过无数次了，说我家晚上要休息，不要那么吵。楼上有段时间也安静过，但没多久又恢复原样。我们一家三口两大一小正常上班上学，每天早睡早起。\n本人对噪音比较敏感，晚上 10 点，躺床上时，听着楼上总是时不时的发出声音，心里十分烦躁。\n好好跟楼上的沟通试过，大声说话也试过，物业群反应也试过。楼上家总是说他楼上那家也吵的，但他们从来没有投诉过。而且他家小孩教过打过都不听。\n请问有什么办法可以解决问题，可以安静的睡觉？",
+          "link": "https://www.v2ex.com/t/833484",
+          "publishedOn": "2022-02-12T15:51:20.000Z",
+          "wordCount": 294,
+          "title": "楼上晚上睡觉时间总是发出噪音，如何才能安静的睡觉？"
+        },
+        {
+          "id": "833482",
+          "author": "KainyGuo",
+          "description": "KainyGuo: \n情人节马上到了，有位前端开发小哥，实现了一个特效。可以边写代码实时预览，画了个动画爱心。\n最终效果：\n\n实地考察：",
+          "link": "https://www.v2ex.com/t/833482",
+          "publishedOn": "2022-02-12T15:44:44.000Z",
+          "wordCount": 90,
+          "title": "情人节到了，手摸手教女友撸代码心跳代码❤️"
+        },
+        {
+          "id": "833481",
+          "author": "seers",
+          "description": "seers: \nyum reinstall 会替换掉我编译安装的组件吗",
+          "link": "https://www.v2ex.com/t/833481",
+          "publishedOn": "2022-02-12T15:43:45.000Z",
+          "wordCount": 206,
+          "title": "我编译安装了系统组件例如 zlib openssl openssh，现在出于某些原因我想还原成包管理版本，直接 reinstall 可以吗"
+        },
+        {
+          "id": "833480",
+          "author": "troilus",
+          "description": "troilus: \n背景：坐标成都，电信 ZXHN F450 光猫拨号上网，在后台的 [防火墙] 设置选项中关闭了 [启用 IPV6 SESSION ] 选项，因此家里的设备基本上都获取到了 IPV6 地址，并且家里的小服务器可以通过移动联通 4G 公网访问到（打开 HTTP 、HTTPS 网页以及其他端口服务）。\n这个 [启用 IPV6 SESSION ] 选项关闭后所有网内设备就通过 IPV6 暴露到公网了，是否存在了更多的安全隐患？在不将光猫改桥接的情况下能不能像 IPV4 一样设置端口映射仅仅允许必要的设备暴露必要的端口？或者通过其他方式提升安全性。\n公网是否可以通过路由的 WAN IPV6 地址打开路由的设置界面？目前尝试了从公网无法打开，不知道是不是因为封掉了 80 和 8080 端口的原因，还是说路由器本身有相关的配置？能在公网打开感觉也不安全",
+          "link": "https://www.v2ex.com/t/833480",
+          "publishedOn": "2022-02-12T15:41:38.000Z",
+          "wordCount": 248,
+          "title": "请教一下各位大佬关于家用宽带 IPV6 公网的问题"
+        },
+        {
+          "id": "833479",
+          "author": "ZE3kr",
+          "description": "ZE3kr: \n如题。目前所有蜂窝版 Apple Watch 都分为北美版和其他地区版两个版本，只能添加支持的地区的 eSIM 。要想全球用得买两个版本的 Watch ，感觉太不划算了。目前蜂窝版是支持大部分地区紧急呼叫的，那为什么不能支持 2G/3G/UMTS 国际漫游，或者只使用其他地区 eSIM 套餐的 2G/3G/UMTS （不用 LTE ）\n如果今年 Apple Watch Series 8 支持全球全网通那我肯定升级\nApple Watch 运营商",
+          "link": "https://www.v2ex.com/t/833479",
+          "publishedOn": "2022-02-12T15:40:11.000Z",
+          "wordCount": 119,
+          "title": "Apple Watch 蜂窝版什么时候能全球“全网通”？"
+        },
+        {
+          "id": "833478",
+          "author": "Sherman07",
+          "description": "Sherman07: \n想了解下这种情况如何产生的",
+          "link": "https://www.v2ex.com/t/833478",
+          "publishedOn": "2022-02-12T15:26:45.000Z",
+          "wordCount": 140,
+          "title": "使用中国移动 APP 的本机号码一键登录，登录之后是陌生账号？"
+        },
+        {
+          "id": "833477",
+          "author": "placeholder",
+          "description": "placeholder: \n还记得刚出 uwp 的时候，还有 limia 系列的新机在出。\n结果手机也砍了，手机系统也砍了，uwp 也不知道现在还有什么地方在用。\n当初学的时候可激情了，现在也没了",
+          "link": "https://www.v2ex.com/t/833477",
+          "publishedOn": "2022-02-12T15:21:47.000Z",
+          "wordCount": 150,
+          "title": "2022 年了，不知道微软会不会砍掉 uwp"
+        },
+        {
+          "id": "833476",
+          "author": "Kagari",
+          "description": "Kagari: \n总有人说，我可以分清红绿灯啊，怎么就色盲了\n然后色觉正常的人又说，红、绿色盲，是不是分不清红色、绿色啊\nNoNoNo ，电脑上常用的是 RGB 模型，并不说明眼睛就直接是 RGB 传感器，眼睛的感光细胞分为 LMS 三种\n\n图上的三条曲线分别就是三种感光细胞，常见的色盲就是少了某种细胞。所以色盲的实际效果就是对某些波长的颜色分辨率很低，别人覆盖两个传感器两个数据，色盲人群少了一个传感器精度当然比不过正常人。\n和正常人相比，缺少 LMS 分别对应红、绿、蓝色盲\n同时希望各位在选 UI 配色的时候选些经典配色，不要乱改，不然你可能会失去 5%的色盲用户\n色觉正常人士看到这里就可以了，后面聊聊色盲增强\nRGB 和 LMS 可以互相转换，通过数学方法，可以直接模拟色盲图像。\n比如说 Firefox 的色盲模拟模式效果就很好，用取色器对比也很明显。\n在色盲模拟的基础上，色盲增强模式就成为了可能，下面以红色增强举例\n\n正常人：下图过饱和了\n红色盲：下图的那个果和人物缎带变红了，其他变化不大\n真实效果得一只眼正常，另一只眼色盲的人才能评价了(真的有这样的人吗)\nB 站 安卓 app 上线了色盲模式，但是效果实在不行，和我自己搞的效果差不多，估计连开发者自己都不用，可以的话请参考 Win10 的色盲模式效果，色盲模式也算是一个能帮助到少数群体的功能了。",
+          "link": "https://www.v2ex.com/t/833476",
+          "publishedOn": "2022-02-12T15:02:49.000Z",
+          "wordCount": 241,
+          "title": "谈谈我对色盲的理解"
+        },
+        {
+          "id": "833474",
+          "author": "pandaaa",
+          "description": "pandaaa: \n需求\n新手车主，拿本一年，没有开过车，车技为零，希望有安全辅助，越多越好哈哈\n纯代步，有一点操控就行，运动更好，要求不高\n帅！外形要好看，内饰要帅，不帅也行（给钱让步）\n动力够就行，空间没啥要求，一般就前排两个人，对售后有一点要求\n其他\nbase 重庆，有各种上坡和堵车的风险 😢\n预算 15-20w （也可以上浮到 25w 那就贷款了，贷款 3 年无息+手续费还是可以承受（：）\n第一辆车考虑轿车，暂不考虑 suv 和纯电\n写在最前面\n求各位大佬推荐，可以从下面的车里面选，也可以推荐您觉得更合适的，感谢\n可以吐槽，不建议引战，自己买的车，喜欢就是\n下面列的优缺点，完全是我主观，小白一个，有出入可以指出\n比亚迪秦 plus DMi （ 16w+）\nhttps://www.dongchedi.com/koubei/7004882666424111138 买最高配： https://www.dongchedi.com/auto/series/4802/model-51001 120km 旗舰型\n概况(想买的车型)\n\n优点：\n1 、更智能辅助驾驶：L2 自动驾驶辅助\n2 、价格适中：顶配落地 16w\n3 、省油：插混系统 Plugin-in hybird electric vehicle(PHEV)\n4 、空间：轴距更长，空间更大，轴距 2718mm\n5 、续航长，油电加满 1100 公里\n6 、变速箱更高级：E-CVT 无极变速箱\n缺点：\n1 、售前售后比较差\n2 、比亚迪新车型，三大件事故率相对比较高\n3 、车身重：整备质量 1620Kg ，刹车肉\n奥迪 A3L&A3 （ 22w+）\n参考：选购指南\n概况（想买的车型）：\n\n优点：\n1 、品质还可以：个人就喜欢奥迪，品牌信用，就像 sony 大法好一样喜欢（：\n2 、新款 2022 静态 A 级车最帅：内饰帅，外饰帅\n3 、灵活，停车方便，新手友好：主要是轴距短 2680mm\n缺点：\n同级别价格贵：落地至少 22w\n保养和维修较贵：\n1.4t 干式双离合：堵车较多的话，顿挫，换修贵\ncarplay\n沃尔沃 s60 （ 25w+）\n参考： https://www.dongchedi.com/auto/series/1279/model-54518\n挺喜欢沃尔沃的安全和颜值的，看了下 s60 有很大的优惠 20-25 个点的优惠\n概况(想买的车型)\n\n优点：\n1 、沃尔沃安全配置可以\n2 、哈曼卡顿音箱\n3 、灵空间大，真 B 级车\n4 、颜值在线，内饰 ok ，配置丰富\n5 、8 挡手自一体\n缺点：\n落地可能超预算了（贵是我的原因不是车的问题，车是好车）\n大众 cc 猎装（轿跑）（ 25w +）\n参考： https://www.dongchedi.com/auto/series/416/model-47912\n概况(想买的车型)\n\n优点：\n1 、猎装旅行车，颜值在线，空间尚可\n2 、配置 ok\n3 、灵空间较大 2841 mm 轴距\n缺点：\n落地可能超预算了（贵是我的原因不是车的问题，车是好车）\n双离合\n上面几辆车对比\nhttps://www.dongchedi.com/auto/auto_compare/params?carIds=57541,50495,51001,54518",
+          "link": "https://www.v2ex.com/t/833474",
+          "publishedOn": "2022-02-12T14:59:42.000Z",
+          "wordCount": 325,
+          "title": "2022 年初 20 万买什么车？"
+        },
+        {
+          "id": "833473",
+          "author": "xtx",
+          "description": "xtx: \n坐标上海，因为牌照问题，不考虑油车，不看牌子，只要实用好用就行。家里已经有了一辆插电混动轿车，考虑到以后会有小孩子，所以打算买辆 suv ，小区里可以按充电桩，不加预算，25 万是极限了，所以就不考虑 model y 了。这几天网上初步了解一下，有大众 id4 ，小鹏 g3i ，比亚迪宋 plus ev ，上汽飞凡 marvel r ，还有什么推荐么？",
+          "link": "https://www.v2ex.com/t/833473",
+          "publishedOn": "2022-02-12T14:43:38.000Z",
+          "wordCount": 137,
+          "title": "25 万以内，新能源 suv 有什么推荐么？"
+        },
+        {
+          "id": "833471",
+          "author": "AmadeusNo004",
+          "description": "AmadeusNo004: \n请问诸位大佬，nodebb 的后台是否可以做到查看用户修改了自己的发言记录呢？仅修改这一项，正常发言不修改是不会被查看到的",
+          "link": "https://www.v2ex.com/t/833471",
+          "publishedOn": "2022-02-12T14:27:58.000Z",
+          "wordCount": 94,
+          "title": "关于 nodebb 后台查看用户修改发言记录"
+        },
+        {
+          "id": "833470",
+          "author": "dongsuo",
+          "description": "dongsuo: \n如题，老丈人预计二月底三月初来上海，想找一份工作。\n岳父岳母是湖北人，之前在老家一个商场里开店卖衣服，最近老家的商场重新装修，店子开不下去也不想开服装店了，而且我们也需要他们来上海照顾，所以就计划他们近期来上海。\n但是因为年纪还不算很大(岳父今年 54 岁)，所以想在上海找份工作，希望大家能给出一些建议。\n条件：毕竟老年人，我们还是希望他不要把身体熬坏，所以希望轻松一点，薪资 4k 左右就可以，五险一金可以不要。\n一些可能的提议：\n滴滴 ———— 太累了，明确拒绝。\n外卖 ———— 太累了，我们也不希望他去送外卖。\n保安 ———— 可能要三班倒，身体吃不消，另外我也问了一家在招保安的服装厂，明确要求保安年龄不能超过 40 岁。\n营业员 ———— 年纪大了，很多店子倾向于找年纪小一点的女性。\n不知道 v 友们还有没有更好的提议。\n谢谢大家。",
+          "link": "https://www.v2ex.com/t/833470",
+          "publishedOn": "2022-02-12T14:17:57.000Z",
+          "wordCount": 277,
+          "title": "岳父想在上海找一份工作，求建议"
+        },
+        {
+          "id": "833468",
+          "author": "shizukupr",
+          "description": "shizukupr: \n目前状态见下图所示，菜单栏未加载，主界面空白，无法响应包括 cmd+Q 在内的所有快捷键。\n重置\n软链接 python3 -> python  \n将该链接内容覆盖到 vscode 内 code 处并从命令行启动",
+          "link": "https://www.v2ex.com/t/833468",
+          "publishedOn": "2022-02-12T13:47:56.000Z",
           "wordCount": 162,
-          "title": "mac 的重装系统是不留任何数据吗?"
+          "title": "求助： macOS 12.3 beta2， vscode 无法启动，删除重置之后完全无法加载"
         },
         {
-          "id": "833315",
-          "author": "kevinonepiece",
-          "description": "kevinonepiece:",
-          "link": "https://www.v2ex.com/t/833315",
-          "publishedOn": "2022-02-11T14:24:18.000Z",
-          "wordCount": 100,
-          "title": "想找一个类似 apple watch 那样圆环的习惯养成 app"
+          "id": "833467",
+          "author": "littlewing",
+          "description": "littlewing: \nOneDrive 是在 AppStore 下载的最新版本，刚刚装完成的时候是有文件随选设置的，但重启电脑后就没有了\n如图，全新安装后，这里是会有一个 “关闭文件随选” 的设置项的，然后重启电脑，这个设置项就没了。\n而且本来在 home 下的 OneDrive 目录变成了一个符号链接，指向 /Users/littleneko/Library/CloudStorage/OneDrive-个人\nreset 后的状态\n\n\n电脑重启后的状态",
+          "link": "https://www.v2ex.com/t/833467",
+          "publishedOn": "2022-02-12T13:33:24.000Z",
+          "wordCount": 159,
+          "title": "OneDrive macOS 重启后“文件随选”设置消失"
         },
         {
-          "id": "833314",
-          "author": "kkkyrieliu",
-          "description": "kkkyrieliu: \n去年情人节，我做了一个用来给女朋友送礼物的抽奖小工具，反馈非常不错。\n支持自定义页面文案\n支持自定义礼物\n支持指定中奖的礼物\n没错我又来了，去年就推广了一次，并且帮到了 7 位朋友哈哈哈。所以我有自信这个还能帮到更多人！\n扫码查看 demo\n\n使用方式（手把手教学）\n如果是前端程序员应该不需要怎么教了，但是我还是写了非常详细的使用指南（ README ）给有需要的非前端专业人员。\n项目地址：https://github.com/KKKyrie/giftie。\n整活不易，如果对各位有帮助或者启发，点个 star 不过分吧（逃",
-          "link": "https://www.v2ex.com/t/833314",
-          "publishedOn": "2022-02-11T14:23:53.000Z",
-          "wordCount": 126,
-          "title": "又是一年情人节，我做的这个小工具，肯定能让你平稳度过这一天..."
+          "id": "833466",
+          "author": "ssshooter",
+          "description": "ssshooter: \n火星了请见谅\n其实就是 快捷命令 -> serveless function （ vercel ） -> GitHub API -> 自动部署（ vercel ）\n这里有一些实现细节\n顺便抛砖引玉，大家都用快捷命令实现了什么好玩的功能呢？",
+          "link": "https://www.v2ex.com/t/833466",
+          "publishedOn": "2022-02-12T13:33:18.000Z",
+          "wordCount": 178,
+          "title": "在 iPhone 直接更新静态博客的思路"
         },
         {
-          "id": "833313",
-          "author": "monster33",
-          "description": "monster33: \nhttps://sharecuts.cn/shortcut/94",
-          "link": "https://www.v2ex.com/t/833313",
-          "publishedOn": "2022-02-11T14:19:35.000Z",
-          "wordCount": 115,
-          "title": "下载 app store 每日推荐文章的图片的捷径 谁有能用的 找了几个都不行"
+          "id": "833463",
+          "author": "balabalaguguji",
+          "description": "balabalaguguji: \n6 岁样子，预算 1000 内，有过来人推荐下好骑耐用的儿童单车吗？\n网上看了小米的九号儿童单车，但是评论说质量不好。\n推荐下吧",
+          "link": "https://www.v2ex.com/t/833463",
+          "publishedOn": "2022-02-12T13:25:06.000Z",
+          "wordCount": 131,
+          "title": "求推荐儿童单车"
         },
         {
-          "id": "833312",
-          "author": "vcw",
-          "description": "vcw: \n详情参见： https://risingstars.js.org/2021/zh\n前端开发生态真是日新月异，那么 2022 年了，该选用哪组技术栈呢？",
-          "link": "https://www.v2ex.com/t/833312",
-          "publishedOn": "2022-02-11T14:08:47.000Z",
-          "wordCount": 116,
-          "title": "看到这份 2021 年 JavaScript 明星项目列表，我惊呆了"
+          "id": "833462",
+          "author": "daimubai",
+          "description": "daimubai: \n今天洗澡开的热灯，仔细看了下牙齿，肉眼可见的黄，不想还没 25 岁就一口黄牙啊！\n目前计划：\n戒烟！烟龄 5 年左右\n换个电动牙刷 + 美白牙膏\n搜了下站内帖子，都是很久之前的。找到两个关键字，洗牙 & 牙贴\n我之前洗过一次牙，但是洗牙的目的并不是美白，而是洗牙结石。\n牙贴没有用过，有美白作用吗？有副作用吗？\n还有其他的办法吗，激光美白手术？有 V 友解决过这个问题吗，求！！",
+          "link": "https://www.v2ex.com/t/833462",
+          "publishedOn": "2022-02-12T13:15:44.000Z",
+          "wordCount": 237,
+          "title": "V 友们知道怎么把牙齿变白吗"
         },
         {
-          "id": "833311",
-          "author": "dsg001",
-          "description": "dsg001: \n求推荐好方法",
-          "link": "https://www.v2ex.com/t/833311",
-          "publishedOn": "2022-02-11T13:58:32.000Z",
-          "wordCount": 243,
-          "title": "下雨天，笔记本应该怎么防水？"
+          "id": "833461",
+          "author": "fengyiqicoder",
+          "description": "fengyiqicoder: \n\nHi 我是 CloudSticker 的开发者，之前有看到了 MenubarX 这个项目。它启发我把便签这个概念和浏览器做一个结合，所以我自己做了一个新的项目。\nStickerX 是我的一个新项目，它把便签的优雅特性和浏览器的强大扩展性结合了起来，让便签的快捷交互也能用在功能强大的浏览器上。它也有添加一些其他的便签种类，让用户的选择更为丰富。\nP.S: 我很享受开发 StickerX 的过程，希望你在使用过程中也能感受到这份乐趣。❤️\n附上 下载链接:  https://apps.apple.com/app/stickerx/id1605118526",
+          "link": "https://www.v2ex.com/t/833461",
+          "publishedOn": "2022-02-12T13:09:36.000Z",
+          "wordCount": 237,
+          "title": "[限免] 与众不同的 MacOS 浏览器"
         },
         {
-          "id": "833310",
+          "id": "833460",
+          "author": "patx",
+          "description": "patx: \n对 Python 不是很熟悉，碰到这种情况，比如：\n函数 func1 有文件路径的入参，func1 是写入内容到该文件。\n我想写一个单元测试，只想获取入参或者返回值，做后续断言用，但是不覆盖 func1 的功能。\n我看了一下 Mock side_effect 之类的属性，是把函数功能覆盖掉了，有没有更好的方法？",
+          "link": "https://www.v2ex.com/t/833460",
+          "publishedOn": "2022-02-12T13:08:20.000Z",
+          "wordCount": 261,
+          "title": "Python 能否 mock 函数，只获取入参或返回值，不改变函数逻辑？"
+        },
+        {
+          "id": "833459",
+          "author": "mzlogin",
+          "description": "mzlogin: \n有时我会自定义一些 zsh 命令，以便提升某些高频操作的效率。本文记录我给一个自定义命令添加参数自动补全的方法。\n场景\n我自定义了一个 zsh 命令 gmt，执行 gmt <b2>，可以将当前所在的 git 分支 merge 到 <b2> 这个分支。\n它具体完成以下工作：\n切换到 git 分支 <b2>；\n将 <b2> 分支更新到最新；\n询问是否合并，输入 y 则进行分支合并。\n也就是用一条命令完成一个 git checkout b2、git pull origin b2、git merge b1 这样的组合操作。\n用了一段时间，可以省一些事，美中不足的就是有时候分支名称比较长，只能手动输入，没有自动补全。\n期望效果\n输入 gmt ，然后按 <kbd>tab</kbd>，自动提示本地的所有 git 分支名称；\n输入 gmt fe，然后按 <kbd>tab</kbd>，自动补全以 fe 开头的 git 分支名称；\n实现方法\n在 zsh 配置文件中添加如下代码：\ncompdef _git_merge_to_comp git_merge_to\n\n_git_merge_to_comp()\n{\n    local -a git_branches\n    git_branches=(\"${(@f)$(git branch --format='%(refname:short)')}\")\n    _describe 'command' git_branches\n}\n\n注：git_merge_to 是一个自定义的函数，gmt 是这个函数的 alias 。\n这段代码的意思就是使用 _git_merge_to_comp 这个函数来给 git_merge_to 命令做自动补全，自动补全的候选列表是当前项目的所有本地 git 分支名称。\n其中：\ncompdef、_describe 等的用法，可以参考 zsh 的官方文档 Completion System。\ngit_branches=(\"${(@f)$(git branch --format='%(refname:short)')}\") 的意思是，将 git branch --format='%(refname:short)' 命令的输出按行分割后形成一个字符串数组，赋值给 git_branches 变量，这部分可以参考 How to properly collect an array of lines in zsh。\n我的 zsh 配置都上传到了 https://github.com/mzlogin/config-files，有需要可以参考下。\n效果演示\n\n参考\nCompletion System\nHow to properly collect an array of lines in zsh",
+          "link": "https://www.v2ex.com/t/833459",
+          "publishedOn": "2022-02-12T13:04:45.000Z",
+          "wordCount": null,
+          "title": "给 zsh 自定义命令添加参数自动补全"
+        },
+        {
+          "id": "833458",
+          "author": "fishmaster",
+          "description": "fishmaster: \n如题\n在第三步付款信息认证，添加信用卡和地址，点击开始免费试用\n换了IP 、电话号码、卡片信息都不能完成注册。",
+          "link": "https://www.v2ex.com/t/833458",
+          "publishedOn": "2022-02-12T12:58:31.000Z",
+          "wordCount": 159,
+          "title": "GCP 不能注册了？"
+        },
+        {
+          "id": "833456",
+          "author": "lurui45",
+          "description": "lurui45: 有什么方法可以让 Android 电视 /盒子开机启动某个指定 APP 吗？比如直播软件。\n因为老人只看电视直播。\n我试了一个叫“Launch on boot”的软件，好像不起作用。",
+          "link": "https://www.v2ex.com/t/833456",
+          "publishedOn": "2022-02-12T12:50:54.000Z",
+          "wordCount": 152,
+          "title": "android 盒子/电视如何开机启动指定 APP"
+        },
+        {
+          "id": "833455",
+          "author": "wildlynx",
+          "description": "wildlynx: \n手上一台公司配的 HP 笔记本，配置如下：\nintel 10210U CPU\n16GB RAM\n128G SSD 系统盘\n1T SMR 机械硬盘\nSSD 硬盘基本没什么空间，只能在机械硬盘存开发项目。\n使用 VS2017 编译公司一个中型的医疗相关的 C++项目，时不时会 VS 僵死。编译一个修改的 C++小文件也要花很久。编译过程中，CPU 占用率不算高，内存占用也低。另外 SMR 机械硬盘的占用没有超过 50%。\n有人遇到上述的问题吗？",
+          "link": "https://www.v2ex.com/t/833455",
+          "publishedOn": "2022-02-12T12:38:02.000Z",
+          "wordCount": 283,
+          "title": "在 SMR 笔记本硬盘上编译大项目真的很恶心"
+        },
+        {
+          "id": "833454",
+          "author": "dimmib",
+          "description": "dimmib: \n关于交易系统\n任何一个交易系统都不可能保证 100%的胜率，世界上也不存在一个完美的交易系统，但是交易系统却有有效与无效之分。理想状态下，一个有效的交易系统应该至少包含三个相互独立的子系统，类似于初高中物理中所介绍的并联电路，在任一子系统失效的时候，还能保证整个系统的有效运行。通常情况下，一个有效的交易系统都由技术分析、基本面分析、政策分析、比价分析等三个或三个以上子系统构成。其中的技术分析部分，又至少包含图形分析，仓位控制，止损等。而这里将要介绍的指标系统，仅仅包含部分技术分析的要件。\n因此，请不要以任何一个单独的指标买卖信号作为买卖的依据，包括这里介绍的指标。\n指标系统简介\n我的交易体系中技术分析部分主要基于缠中说禅的分析技术。根据我个人对缠论的理解，使用 TradingView 开发了一套分析指标系统。现分享出来供大家使用。\n该指标系统主要针对缠论开发，同时也吸纳了国外一些著名操盘手（比如 Peter Brandt, Mark Minervini ）的分析技术。熟悉缠论的朋友可以最大限度的发挥该指标系统的威力，没看过缠论的朋友也可以利用该指标系统有效的控制交易风险。\n该指标系统包含三个子指标：\n走势指标（ Context Channel ）\n动量周期指标（ Momentum & Cycle ）\n多级别 MACD\n\n1. 走势指标\n技术分析中走势分析是核心，所以这个指标也是三个指标中最复杂的一个指标。其构成部件包括：连续三级别走势通道、笔、线段、趋势线、趋势分析子系统、相对强弱指标、买卖区域、买卖点、均线、前一周（月）高低点等。\n\n该指标最大的特点，在于同时在一张图上包含了三个级别的走势通道，配合下面将要介绍的多级别 MACD 指标，可以方便的进行多级别联立分析。另外通过利用前一周（月）高低点的分析，可以方便的实现缠论 108 课中《 82. 分析结构的心理因素》所说的“把分型与小级别走势类型结合操作”。懂缠论的朋友应该知道这样做的价值和意义。\n2. 动量周期指标\n该动量周期指标属于震荡指标的一种，主要基于经周期调节过后的 RSI 构建，包含动量指标与周期指标两个部分。主要作用在于辅助走势以及买卖点的判断。\n\n3. 多级别 MACD\nMACD 作为指标之王，在缠论中占有重要位置。该指标与传统 MACD 指标不同的地方在于包含了高一级别 MACD 的情况，以及增加了背离点作为可能的背驰点的判定参考。\n\n简单的分析示例\n\n走势类型分为三种：上涨、下跌、盘整，随着 2021 年 7 月第一类卖点的出现，创业板指数已经宣告 2018 年底开始的两中枢上涨走势类型的结束，最终会演化成下跌与盘整中的哪种，还要看接下来企稳反弹的情况。创业板目前所处的位置有最后一个上涨中枢中轴 2750 的支撑以及短线的买入信号，可能有短线企稳的希望。若中枢中轴不能支撑住，接下来还有更强的中枢下沿 2604 以及均线支撑。若无重大意外事件发生（比如俄乌局势大幅恶化、美联储超预期大幅加息等），直接跌破的可能性较小。\n目前更大的问题是，比较第一类卖点与第二类卖点之后下跌两段的力度可以知道，二卖开始的这一段下跌的力度是大于前一段的，这也意味着除非出现小级别反弹转大级别反弹的情况（可能性较小），从一卖之后开启的调整大概率还没有结束。接下来观察的重点是这个调整是演化成向下盘整还是趋势下跌。而观察判断的标准则是看第三类卖点出现的位置。\n指标系统的简单介绍到此为止。之后还会另外开贴介绍更具体的用法，并对实时大盘走势进行分析。\n获取指标系统的方法\n使用该指标系统需要一个 TradingView 账号，免费账户即可。授权使用该指标系统需要知道各位的用户名，请前往我的账户页面随意发送一条私信。[https://www.tradingview.com/u/dimmib/]\n授权可能有延迟，请耐心等待。授权成功后 TradingView 的网页上会有提醒。之后在下图所示位置添加即可。\n\n没有注册过 TradingView 的朋友可以使用我的邀请链接注册，好处是以后如果转入付费用户，我们都可以获得$30 的优惠。（特别说明：即使以后不升级 TradingView 账户，也可以一直使用该指标）\n邀请注册链接：[https://www.tradingview.com/gopro/?share_your_love=dimmib]",
+          "link": "https://www.v2ex.com/t/833454",
+          "publishedOn": "2022-02-12T12:31:19.000Z",
+          "wordCount": 192,
+          "title": "一个基于缠论的 TradingView 指标系统"
+        },
+        {
+          "id": "833453",
+          "author": "logiclee",
+          "description": "logiclee: 看了很多论坛推荐，最后买了个 master 3 ，偶尔会发生漂移卡顿，让人抓狂。\n只有一台 mba 外接显示器 u2720qm ，接收器插在显示器上经常有问题。\nAir 只有两个接口，没办法直接插在电脑上。",
+          "link": "https://www.v2ex.com/t/833453",
+          "publishedOn": "2022-02-12T11:52:12.000Z",
+          "wordCount": 105,
+          "title": "mx master 3 鼠标飘逸卡顿，有办法解决吗？"
+        },
+        {
+          "id": "833451",
           "author": "ChrisFreeMan",
           "description": "ChrisFreeMan:",
-          "link": "https://www.v2ex.com/t/833310",
-          "publishedOn": "2022-02-11T13:50:51.000Z",
-          "wordCount": 95,
-          "title": "视频分享：火影 ending, <wind> ， 激起无数美好的回忆啊，那个追火影追到热血沸腾的少年。"
-        },
-        {
-          "id": "833309",
-          "author": "huihuiy",
-          "description": "huihuiy: 福利补贴丰厚 base 上海    \n个人高端医疗保险包含配偶以及每月 1000 左右的补贴\n薪资 70w 以内\n有意可以加我微信 MTg2MDEyOTc4NTEK  注明 v2ex\n工作职责\n1.负责公司自动化平台建设，利用 DevOps 方法打通 OA 、CMDB 、云平台等系统，实现高效集成；\n2.负责公司 DevOps 落地实施，熟悉 DevOps 工具链和生态系统，具备 DevOps 领域的架构设计与实践经验；\n3.负责开发 DevOps 相关自动化平台，精通 python 开发，熟悉 golang 开发，熟悉 shell 脚本，熟悉 web 应用开发框架； 负责管理、维护、优化公司现有的自动化发布等脚本，能利用 DevOps 方法实现平台化转换\n任职要求\n1.计算机相关专业本科学历及以上学历\n2.具有 6 年以上软件运维管理或者运维开发经验\n3.有金融、互联网相关运维经验者为佳\n4.精通 python 开发，熟悉 golang 开发，熟悉 shell 脚本，精通 DevOps 开发\n5.工作认真、严谨、敬业，能自发的持续快速的学习新技术，追求卓越的产品交付\n6.具备较强的沟通能力、团队协作能力、跨团队协调能力，认真细心，逻辑思维清晰严谨\n7.在云计算平台(华为 /阿里)、Docker 容器化、云数据库、等方面有操作经验者会更佳 工作地址\n8.具备容器化运维、K8S 项目落地经验",
-          "link": "https://www.v2ex.com/t/833309",
-          "publishedOn": "2022-02-11T13:44:52.000Z",
-          "wordCount": 242,
-          "title": "[上海][紧急][DevOps] - 薪资待遇 要 k8s 落地经验以及 Python 精通"
-        },
-        {
-          "id": "833308",
-          "author": "MaiKuraki",
-          "description": "MaiKuraki: \n举报了多少次也没有用\nhttps://i.imgur.com/g9yM61H.png\nhttps://i.imgur.com/d1DkH9j.png",
-          "link": "https://www.v2ex.com/t/833308",
-          "publishedOn": "2022-02-11T13:27:35.000Z",
-          "wordCount": 130,
-          "title": "谷歌搜索 telegram，前面两个都是病毒的推广，一年前就这样了"
-        },
-        {
-          "id": "833307",
-          "author": "huzhikuizainali",
-          "description": "huzhikuizainali: 环境：matlab2015b  win10_64 家庭版\n比如进行矩阵的符号运算。矩阵里面的元素是 c11 ，c12 ，c13 ； c21……\n现在我是如此定义的\n`syms c_11 c_12;\nA=[c_11 c_12];\nB=[c_11;c_12];\nC=B*A`\n但是这样运算出来的结果，显示比较混乱； C =\n[    c_11^2, c_11*c_12]\n[ c_11*c_12,    c_12^2]\n对读者不友好。是否有办法直接显示成印刷体那种字母数字下标的方式，看起来比较轻松。目前我用企图用 latex 命令来解决这个问题。但是有两个痛点：\n1 、无法直接在 matlab 展示印刷体结果，还需要将 latex 代码复制到 latex 在线编辑器展示。\n2 、latex 代码翻译效果不太正确；比如上面的 C\n`latex(C)`\nans =\n\\left(\\begin{array}{cc} {c_{1}1}^2 & c_{1}1\\, c_{1}2\\\\ c_{1}1\\, c_{1}2 & {c_{1}2}^2 \\end{array}\\right)\n\n下标错误，上标冗余\n所以目前是否有两全其美的好办法？最好不用 latex ，直接在 matlab 中显示印刷体结果。\n如果有 python 这方面的经验也欢迎科普。顺便问一句，我记得过去论坛有 matlab 频道。现在怎么消失了？",
-          "link": "https://www.v2ex.com/t/833307",
-          "publishedOn": "2022-02-11T13:25:31.000Z",
-          "wordCount": 141,
-          "title": "matlab 或 Python 是否有方法定义比较美观的字母下标符号？"
-        },
-        {
-          "id": "833306",
-          "author": "lance6716",
-          "description": "lance6716: \nhttps://github.com/lance6716/errhell\n输入：\npackage main\n\nfunc main() {\nreturnErr().try\n}\n\nfunc returnErr() error {\nreturn nil\n}\n\n输出：\npackage main\n\nfunc main() {\n_err0 := returnErr()\nif _err0 != nil {\nreturn\n}\n}\n\nfunc returnErr() error {\nreturn nil\n}\n\n我是期望完成类似 gofmt 一样的程序，让 IDE 调用从而方便生成 if err != nil {...}。当然如果 IDE 甚至 go 自己做的话，解析类型系统更好，生成的代码也会更好。\n求 PR",
-          "link": "https://www.v2ex.com/t/833306",
-          "publishedOn": "2022-02-11T13:24:58.000Z",
-          "wordCount": 359,
-          "title": "尝试通过预处理解决 Go 的 `if err != nil {...}` 问题"
-        },
-        {
-          "id": "833305",
-          "author": "OceanSea",
-          "description": "OceanSea: 如果薪水差不多，考虑房价，物价，生活质量，空气质量，子女教育等，广州和珠海去哪个城市好呢？想听听大家的意见。",
-          "link": "https://www.v2ex.com/t/833305",
-          "publishedOn": "2022-02-11T13:06:01.000Z",
-          "wordCount": 170,
-          "title": "薪水差不多：广州 vs 珠海，选哪个？"
-        },
-        {
-          "id": "833304",
-          "author": "movq",
-          "description": "movq: \n带宽、内存、CPU 大概是什么配置的呢？",
-          "link": "https://www.v2ex.com/t/833304",
-          "publishedOn": "2022-02-11T12:47:19.000Z",
-          "wordCount": 255,
-          "title": "创建一个 200 左右用户的论坛需要什么配置的云服务器"
-        },
-        {
-          "id": "833303",
-          "author": "wikiwiki6",
-          "description": "wikiwiki6: \n软路由，NAS,这种东西，折腾的意义在哪里，我们真的需要吗",
-          "link": "https://www.v2ex.com/t/833303",
-          "publishedOn": "2022-02-11T12:45:32.000Z",
-          "wordCount": 297,
-          "title": "折腾的意义？"
-        },
-        {
-          "id": "833302",
-          "author": "lait",
-          "description": "lait: 今天打滴滴（拼车）回家，发现司机使用滴滴导航的时候，会在我们车前面有大货车的时候，提示「附近可能有大车，注意…」，从这四十分钟的观察来看，还是比较准确的。有没有人注意到这一点呢？不清楚它是的确有相关能力检测出来，还是仅仅在一些路段固定做一下提醒而已？\n大家有了解的嘛？",
-          "link": "https://www.v2ex.com/t/833302",
-          "publishedOn": "2022-02-11T12:44:09.000Z",
-          "wordCount": 104,
-          "title": "滴滴司机端：导航过程中会提示附近可能有大车"
-        },
-        {
-          "id": "833301",
-          "author": "leeggco",
-          "description": "leeggco: \n狸花猫，5 岁了，健康，粘人，抓老鼠能手，未绝育。\n家人过来一起住，反对养猫。\n只能送人了，最好是有小院子的，太活泼了。\n广州，公猫",
-          "link": "https://www.v2ex.com/t/833301",
-          "publishedOn": "2022-02-11T12:32:57.000Z",
-          "wordCount": 128,
-          "title": "自家猫咪领养 赠送"
-        },
-        {
-          "id": "833300",
-          "author": "sillydaddy",
-          "description": "sillydaddy: \n手把手教你解决邻里问题—HOA （ https://posts.careerengine.us/p/5e79450f3ffb106656304b0e ）\n美国置业须知：HOA(屋主协会)及物业费的含义（ http://www.beimeigoufang.com/newsd/newsdetail_14628.html ）\n在购买房屋之前，小区的规则相当于都明确订好了（且有法律强制性），哪怕是不准养宠物这种奇葩规定。每个小区的规则的初始化是建筑商订立的，这点让人眼前一亮。而后随着建筑商手头的产权越来越少，HOA 逐渐获得更多的表决权修改规定。业主可以在购买和入住之前，有充分的选择自由，而一旦选择了，就得遵守————选择自由，承担责任。\n在这种情况下，小区里那种“公说公有理婆说婆有理，没人服气”，或者说“只能靠调解，没有约束力”的乱象，几乎不成问题了。而且解决办法这么简单优雅。否则你单单只是把“不准养宠物”这句话说出来，谁会买你的账呢？！\n这次真的是感到深受震撼，虽然仅仅是轻鸿一瞥。超出了我的想象，哎，他们怎么这么会玩儿？！",
-          "link": "https://www.v2ex.com/t/833300",
-          "publishedOn": "2022-02-11T12:32:15.000Z",
-          "wordCount": 359,
-          "title": "小区还可以这样管？真的被震撼到了。"
-        },
-        {
-          "id": "833299",
-          "author": "DelayNoMay",
-          "description": "DelayNoMay: \n优点就不说了，大家都能想象到，主要是有以下几个缺点。\n1 ，睡眠规律容易被打乱，在卧室办公，桌子旁边就是床，困了就会躺床上睡一会，经常性一睡就半小时，导致晚上睡不着被动熬夜。而且想着第二天不用洗漱打扮通勤啥的，可以 10 点钟醒来直接在床上手机打开 google meeting 开会，开完会还可以睡个回笼觉，就熬得更凶了。凌晨三点睡，10 点醒来也有 7 小时睡眠时间。\n2 ，工作节奏变得很慢，由于是全体居家办公，大家处理事情的效率都慢了一点，这个慢一点，那个慢一点，整个团队工作节奏就很慢了，跟塞车原理一样。\n3 ，跟社会脱节，少了那些在饮水机旁边和半生不熟的同事尬聊的场合，得不到锻炼，社交能力变低，越来越社恐。\n4 ，容易被村子里的老人说闲话，空闲的时候就在村子里溜达，只需要带着手机处理紧急事情，会被误会失业。\n5 ，有纠结要不要搞副业的心态了，但是本人主动性又差而且觉得这样做没有职业道德，于是变得患得患失。而我同事把公司内推当副业搞了，成了兼职猎头，拿了很多内推奖金。",
-          "link": "https://www.v2ex.com/t/833299",
-          "publishedOn": "2022-02-11T12:29:08.000Z",
-          "wordCount": 248,
-          "title": "居家办公已有半年，谈谈感受"
-        },
-        {
-          "id": "833298",
-          "author": "wuqingdzx",
-          "description": "wuqingdzx: \n背景\n我的 OneDrive 存储了从 2012 年至今我所有的照片， 以及读书和工作以来所有的资料， 以及一些密钥的解密文件。\n今天我发现，我的 Onedrive 只有一堆目录，但是目录里的文件全部消失了。\n这显然不是个人操作能够实现的方式（我有数百个目录以及很深的层级），我认为这是 OneDrive 的某种缺陷导致。\n并且，以往我无意中大量删除文件都会收到邮件告警，这次没有收到告警。\n我非常明确在一个月以内，我有使用过存储在 OneDrive 里的 ppt 文件作为演示。\n目前回收站只有最近的一些上传记录，没有以往的数据。\n我猜测是文件随选的锅\n沟通\n目前的沟通是我今天发邮件问微软支持部门，客服回复我说回收站没有就是文件永久丢失。\n计划\n起诉！\n咨询一下各位有相关建议吗？",
-          "link": "https://www.v2ex.com/t/833298",
-          "publishedOn": "2022-02-11T12:21:15.000Z",
-          "wordCount": 472,
-          "title": "请教大家如何起诉微软？"
-        },
-        {
-          "id": "833295",
-          "author": "ljiaming19",
-          "description": "ljiaming19: 公司打算把网页 /邮箱 /企业网盘这些功能全部建在一台放办公室的服务器上 目前只有一根电信企业宽带 不打算上 IPLC 之类的线路 如果服务器不长期挂代理（有风险），怎么合法的收发来自 gmail 这些被封的邮箱的邮件",
-          "link": "https://www.v2ex.com/t/833295",
-          "publishedOn": "2022-02-11T12:11:11.000Z",
-          "wordCount": 248,
-          "title": "国内自建邮箱服务器怎么收发来自 gmail 的邮件"
-        },
-        {
-          "id": "833294",
-          "author": "hualinzhu",
-          "description": "hualinzhu: \nGitHub Link\nhttps://github.com/neozhu/CleanArchitectureWithBlazorServer\nAbout\nBlazor-Server mode web application\nfollowing the principles of clean architecture\nMudBlazor UI Component\nCode generator\nLive Demo\nhttps://mudblazor-s.dotnet6.cn/\nYoutube Video\nhttps://www.youtube.com/watch?v=GyZJl_dG-Pg\n感受\n整个项目大概用了一周时间去开发和重构，当然后面还需要花时间继续完善。用过了 Blazor 开发 web 应用程序，真的再也不想回到用 Jquery,Bootstrap,或是 MVC.",
-          "link": "https://www.v2ex.com/t/833294",
-          "publishedOn": "2022-02-11T12:08:00.000Z",
-          "wordCount": 157,
-          "title": "分享我基于 Blazor 开发的一个开源项目"
+          "link": "https://www.v2ex.com/t/833451",
+          "publishedOn": "2022-02-12T11:47:30.000Z",
+          "wordCount": 191,
+          "title": "不要意思各位，我又来向各位大佬请教了，本人玩 GitHub 两年了，最近一段时间才向一些开源项目勇敢的提 issue，最后被人采纳后很开心，我想知道怎样开始自己的第..."
         }
       ]
     },
@@ -961,12 +971,21 @@
       "siteUrl": "https://www.appinn.com",
       "articles": [
         {
+          "id": "https://www.appinn.com/?p=41355",
+          "author": "青小蛙",
+          "description": "Online converter 是一款免费在线格式转换工具，支持包括文档、电子书、音乐、视频、压缩包等在哪的 80 多种格式，简单快捷，即开即用。@Appinn Online converter 免",
+          "link": "https://www.appinn.com/online-converter/",
+          "publishedOn": "2022-02-12T09:52:41.000Z",
+          "wordCount": 638,
+          "title": "Online converter – 免费在线格式转换工具，支持文档、电子书、音乐、视频、压缩包等 80 种格式"
+        },
+        {
           "id": "https://www.appinn.com/?p=41349",
           "author": "青小蛙",
           "description": "麦当劳汉堡营养计算器是 汉堡研究所 发布的一款网页工具，它用来计算麦当劳常规菜单中主要餐品的六种营养成分数据，供消费者参考。@Appinn 感谢 @乌鸦哥哥 的推荐： 麦当劳有个非常棒的网页：营养计算",
           "link": "https://www.appinn.com/mcdonalds-nutrition-calculator/",
           "publishedOn": "2022-02-11T10:31:18.000Z",
-          "wordCount": 653,
+          "wordCount": 691,
           "title": "汉堡营养计算器"
         },
         {
@@ -975,7 +994,7 @@
           "description": "Fences 是一款经典的 Windows 桌面管理工具，可为电脑桌面创建分区、文件夹快捷入口，具备自动组织、记忆布局、隐藏桌面图标 / 分区等功能，让你的桌面不再混乱。近期已更新至 Fences 4",
           "link": "https://www.appinn.com/fences-4/",
           "publishedOn": "2022-02-11T04:08:27.000Z",
-          "wordCount": 1061,
+          "wordCount": 1132,
           "title": "Fences 4 新版来袭，栅栏式桌面整理快速搞定，从此桌面不再乱糟糟[Windows]"
         },
         {
@@ -993,7 +1012,7 @@
           "description": "Fastcopy 是一款免费、快速的海量、巨量文件复制工具，比 Windows 默认的文件复制功能快许多倍，是复制大量文件，或备份文件时的必备工具。@Appinn FastCopy 与著名的文件传输工",
           "link": "https://www.appinn.com/fastcopy-4-0-5/",
           "publishedOn": "2022-02-08T07:36:45.000Z",
-          "wordCount": 902,
+          "wordCount": 930,
           "title": "FastCopy 4.0.5 发布：免费、高速的大量文件复制工具[Windows]"
         },
         {
@@ -1040,15 +1059,6 @@
           "publishedOn": "2022-01-31T08:23:25.000Z",
           "wordCount": 563,
           "title": "2022 壬寅虎年春节快乐"
-        },
-        {
-          "id": "https://www.appinn.com/?p=41282",
-          "author": "青小蛙",
-          "description": "Upgit 是一款可以将任意文件上传至 GitHub 并能与 Typora 整合使用的命令行小工具，支持 macOS、Linux 与 Windows，可以把它当作 Typora 自定义图片上",
-          "link": "https://www.appinn.com/upgit/",
-          "publishedOn": "2022-01-30T09:33:34.000Z",
-          "wordCount": 734,
-          "title": "由于不满 PicGo 的臃肿，造了个 Typora 自定义图片上传工具：Upgit"
         }
       ]
     },
@@ -1057,6 +1067,24 @@
       "feedUrl": "http://www.infoq.com/cn/feed?token=tsGog8KhrNDkGbHdWoG17yeFdRyuNM2K",
       "siteUrl": "https://www.infoq.cn",
       "articles": [
+        {
+          "id": "https://www.infoq.cn/article/ei0HSGgZFLwQwiHCNQ4S?utm_source=rss&utm_medium=article",
+          "author": "Bilgin Ibryam",
+          "description": "本文最初发表于 RedHat 的开发者站点，经原作者 Bilgin Ibryam 许可，由 InfoQ 中文站翻译分享。\n\n\n“我们建造计算机的方式与建造城市的方式是一样的，那就是随着时间的推移，依然毫无计划，并且要建造在废墟之上。”\n\n\nEllen Ullman 在 1998 年写下了这样一句话，但它今天依然适用于我们构建现代应用程序的方式，那就是，随着时间的推移，我们要在遗留的软件上构建应用，而且仅仅有短期的计划。在本文中，我将介绍一些模式和工具，我相信它们对于遗留应用的现代化以及构建现代事件驱动的系统非常有效。\n应用现代化概述\n\n应用现代化（Application modernization）指的是对现有遗留应用的基础设施（内部架构）进行现代化的过程，以提高新特性的交付速度、改善性能和可扩展性以及为新的使用场景提供功能等等。对应用程序的现代化和迁移类型已经有了很好的分类，如图 1 所示。\n\n\n图 1：三种现代化类型以及可能用到的技术\n点击查看原文>",
+          "link": "https://www.infoq.cn/article/ei0HSGgZFLwQwiHCNQ4S?utm_source=rss&utm_medium=article",
+          "publishedOn": "2022-02-12T10:31:00.000Z",
+          "wordCount": 7,
+          "title": "使用 Kafka、Debezium 和 Kubernetes 实现应用现代化的模式"
+        },
+        {
+          "id": "https://www.infoq.cn/article/95uPwhPAoO8w0dwhHecK?utm_source=rss&utm_medium=article",
+          "author": "褚杏娟",
+          "description": "区块链周报栏目从产业动态、技术进展和政策监管等方面，为您总结了本周区块链领域发生的头条事件，让您更快速了解行业最新动态。\n\n企业动态\n谷歌实验室团队已超700人，将重新聚焦Web3和元宇宙\n2月8日消息，据Insider披露的谷歌实验室相关职级表格信息显示，谷歌将重新聚焦Web3和元宇宙。按照Insider接触到的内部材料，现在谷歌实验室中雇员额度超过700人，里面还有很多行业老手，主要包括部门负责人为克雷·贝沃；希瓦库马尔·文卡塔拉曼（Shivakumar Venkataraman），副总裁，实验室总经理，负责领导专注区块链和其他“下一代分布式计算与数据存储技术”的团队； 布莱德利·霍洛维茨（Bradley Horowitz），产品副总裁，顾问等。\n开发者发现苹果与AR/VR操作系统或名为“realityOS”\n2月9日，有开发者在苹果App Store上传日志和开源代码中发现了对“realityOS”的引用。从曝光来看，realityOS可能是一款AR/VR操作系统，将搭载于苹果传闻中的混合现实头显。此外，代码中出现了模拟器字样，虽然苹果已经删除了该提交。\n\n此前消息，苹果公司首席执行官蒂姆·库克表示，苹果在增强现实领域看到了巨大的潜力。在被问及元宇宙时，苹果公司首席执行官蒂姆·库克表示正在探索新技术。目前，苹果公司正在进行至少两个AR项目，其中包括将于2022年底或2023年发布的增强现实头显，以及稍后发布的一副增强现实眼镜。\n腾讯、蚂蚁等共同立项首个区块链数字藏品国际标准\n2月8日报道，《基于区块链的数字藏品服务技术框架》国际标准项目成功获得立项，该项目由腾讯牵头，联合蚂蚁集团、信通院、北京邮电大学、之江实验室等产学研机构共同提出，并在国际电信联盟（ITU）相关会议上获得立项通过。据悉，这是国际上首个区块链技术在数字藏品领域应用的标准项目。\n点击查看原文>",
+          "link": "https://www.infoq.cn/article/95uPwhPAoO8w0dwhHecK?utm_source=rss&utm_medium=article",
+          "publishedOn": "2022-02-12T10:00:00.000Z",
+          "wordCount": 5,
+          "title": "冰墩墩数字盲盒发售，每个99美元；谷歌实验室团队已超700人，将聚焦Web3和元宇宙  | 区块链周报"
+        },
         {
           "id": "https://www.infoq.cn/article/QRKZDI64X63cpXz9voPw?utm_source=rss&utm_medium=article",
           "author": "辛晓亮",
@@ -1166,17 +1194,8 @@
           "title": "再见丑陋的 SwaggerUI，这款开源的API文档生成神器界面更炫酷，逼格更高！"
         },
         {
-          "id": "https://www.infoq.cn/article/HR1mqpVSBeboCsoofkd8?utm_source=rss&utm_medium=article",
-          "author": "钰湚—付晓岩",
-          "description": "编者按：数字化转型最重要的能力是什么？政策解读能力。\n \n本轮数字化转型最大的特点是不能只站在企业内部视角去看数字化，那样无法观察到数字化变革的全局，容易找不到方向，容易出现自己很勤奋却依然跑输行业的问题。这轮数字化转型背后最大的动力来自时代的变迁，这种时代的变迁集中体现在了国家的一系列政策文件中，如果你正对数字化的奥秘百思不得其解，为什么不考虑认真看看政策呢？政策是集体智慧的结晶，也是经过了深入调研和对大量信息的研判的，并且，是有一定指导性甚至强制性的。政策能够指挥资源的流动，也能给企业带来很多实在，跟着政策大方向走，就是所谓的政策红利。脱离政策方向，不仅跑起来很累，也可能会出问题，前几年大数据爬虫、P2P的教训依然历历在目，技术是中性的，受了罚，技术自己也不知道，但是掌握技术的人就未必了。\n \n数字化转型政策的密集和体系的完整在以往也是不多见的，这是围绕着经济增长模式升级进行的全方位推动，必然涉及所有行业，这一点，大家看看国家统计局针对数字经济做的统计口径调整就明白了。政策从中央到地方、从全局到行业、从文件到法规，发起了一场对数字经济的全面适应性调整，最终没有一个企业会游离其外。所以，不要再闭起门来思考数字化了，更不要只从技术视角看数字化，信息传播如此发达的今天，政策可以轻易传导到每一个从业者的今天，不能再以为自己可以有“小生态”，社会其实只有一个“大生态”，没有真的可以不被影响和渗透的“小生态”。\n \n银行业一直是政策指导性很强的行业，这一点也许跟很多行业有些不同，所以，监管文件对银行行为的影响非常直接。2021年底和2022年初，银行业出台了两份最重要的行业数字化转型指导性文件，分别来自央行和银保监会，数字化转型也将纳入对银行的考核了，这会让很多银行的数字化转型进程加快、加深，本文以架构视角全面解读这两份文件，也希望这种解读方式可以对其他行业有一定的借鉴，毕竟，各个行业都有自己的数字化转型或者十四五发展规划，其作用也跟这两份文件非常相似，对企业的价值也是极大的。\n \n这轮数字化转型是国家政策和企业架构双轮驱动的数字化转型，读完本文，读者可能会更加理解这一点。\n点击查看原文>",
-          "link": "https://www.infoq.cn/article/HR1mqpVSBeboCsoofkd8?utm_source=rss&utm_medium=article",
-          "publishedOn": "2022-02-10T10:44:14.000Z",
-          "wordCount": 3,
-          "title": "以架构视角解读和落实银行数字化转型的两份重磅指导文件"
-        },
-        {
           "id": "https://xie.infoq.cn/article/f7c03a2e75216b80b9c5fc88e?utm_source=rss&utm_medium=article",
-          "author": "卷心菜狗",
+          "author": "乌龟哥哥",
           "description": "人工智能可以做什么呢？它可以写小说，可以拍电影，还可以用大数据计算哪种写法的点击率会比较高。 人工智能可以参与的领域上到探索神秘宇宙，下到遨游浩瀚海洋。甚至是我们生活的方方面面，语音助手，智能家电，AI正一步步融入我们的生活中。\n点击查看原文>",
           "link": "https://xie.infoq.cn/article/f7c03a2e75216b80b9c5fc88e?utm_source=rss&utm_medium=article",
           "publishedOn": "2022-02-10T00:09:48.000Z",
@@ -1211,15 +1230,6 @@
           "title": "try{}catch居然可以隐藏？让我们用函数式接口来实现吧"
         },
         {
-          "id": "https://xie.infoq.cn/article/2c30e63a7183c6ff800e5b439?utm_source=rss&utm_medium=article",
-          "author": "山河已无恙",
-          "description": "君子不妄动，动必有道。君子不徒语，语必有理。君子不苟求，求必有义。君子不虚行，行必有正 ——烽火戏诸侯《剑来》\n点击查看原文>",
-          "link": "https://xie.infoq.cn/article/2c30e63a7183c6ff800e5b439?utm_source=rss&utm_medium=article",
-          "publishedOn": "2022-02-09T05:52:20.000Z",
-          "wordCount": 3,
-          "title": "[JAVA冷知识]为什么动态加载不适合数组？如何动态加载一个数组？"
-        },
-        {
           "id": "https://xie.infoq.cn/article/7e557bf92e666605d4d8052cc?utm_source=rss&utm_medium=article",
           "author": "王小王-123",
           "description": "大家好，我是冰墩墩，今天你又在哪里找我？😊😘🎁👓✨🧐\n点击查看原文>",
@@ -1240,5 +1250,5 @@
       ]
     }
   ],
-  "cliVersion": "1.12.0"
+  "cliVersion": "1.12.1"
 }

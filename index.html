@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-06-24 datetime="2022-06-24T23:25:45.000Z">2022-06-24</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-06-24 datetime="2022-06-24T23:25:45.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-06-25 datetime="2022-06-25T21:17:52.000Z">2022-06-25</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-06-25 datetime="2022-06-25T21:17:52.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -42,44 +42,69 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="862061"
+                        data-accordion-key="862230"
                         open
                       >
-                        <summary class="article-expander__title">刚整了个家用 pve 服务器, 5950x+rx6400, 记录一下 a 卡显卡直通碰到的坑</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862061">
+                        <summary class="article-expander__title">我悟了，折腾什么桌面，最简洁的就是直接放一个 MacBook</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862230">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>zx900930: 
-主板是 MSI MEG x570 unify, 升了最新的 BIOS
-无法进入 pve 安装界面
-这是因为最新的 BIOS 为了支持 Win11, 自动把 TPM 给打开了, 去 BIOS 里关闭 TPM
-如果默认开了 Safe Boot, 也要关掉(有 work around 可以开着 Safe Boot 进行后面的安装可是太麻烦, 建议直接关掉.
-顺便 Resizable BAR 会导致 windows 虚拟机显卡代码 43, 所以最好也关掉.
-当然 IOMMU 和 AMD-V 是必开的这就不用多说了.
-宿主机 pve 7.2
-
-pve 安装时获取完 DHCP 地址就卡死在启动安装 GUI, 看 log 错误是显卡驱动问题导致 xorg 无法启动
-解决办法用 debug 模式安装, 在出错后 ctrl+c 中断, 并执行以下命令
-$ chmod 1777 /tmp 
-$ Xorg -configure   
-$ mv /xorg.conf.new /etc/X11/xorg.conf
-$ nano /etc/X11/xorg.conf # 把所有 Driver &quot;amdgpu&quot; 替换成 &quot;fbdev&quot; 会有多个设备, 全都要改. 
-$ startx
-
-就可以正常打开安装 GUI 进行安装
-安装完毕后宿主机识别不了显卡
-这个简单, 只需要更新一下包就行, 最新的 mesa 驱动里就有最新的 amd 显卡支援
-# 先更新软件包
-sudo apt update &amp;&amp; apt upgrade -y
-
-# 再更新 pciid 数据库
-update-pciids
-
-虚拟机是 debian 11
-
-然后按步就搬显卡直通给虚拟机(这个网上教程一大堆,我只写新 A 卡需要注意的地方)
-直通后虚拟机启动一半停住, 报错
-[drm:psp_sw_init [amdgpu…</span>
+                              <span>Lionad: 
+现在我的配置是：
+升降桌
+脚下台式机，主要打游戏
+32 寸 4k LG ERGO 显示器
+可拆卸的键盘抽屉，里面放着 realforce R3 和 Mx master 2
+桌上放着工作用 MacBook pro intel 2020 用 USB C 连显示器
+由于键盘鼠标都可以切换蓝牙，所以平常可以在工作和娱乐之间切换。
+现在有几个不满的点：
+桌上东西已经不多，但用久了放点其他杂物觉得还是有些乱
+MacBook pro 接 4k 总感觉发热降频，不如直接用内置屏幕，然后插个电源
+用蓝牙键盘鼠标只能坐直或往后靠，不能趴桌上，因为放键盘的托盘要前后移动还吃不住力。一天下来老腰有点受不了。键盘鼠标如果摆桌上就觉得乱
+感觉什么外接屏幕（除了苹果自己的）都没有 MacBook 内置的好，色温和亮度不用操心。我这个要经常根据环境调亮度对比度才不闪瞎眼。调色温太麻烦，直接放弃了，所以会感觉偏冷，眼睛不舒服，尤其是接 PC 时。
+32 寸看时间长了，觉得看电影时还是有点小，想念大电视。
+今天我突然悟了，妈的搞这么多干嘛，不如：
+把除了升降桌之外所有东西都去掉，就搞个 16 寸 MacBook 。这样极致简洁，屏幕又好，坐姿随便，想换地方随时就换。
+配个大电视加游戏主机（ ps5 或 xbox x ），解决其他所有影音游戏需求。
+想想就很爽啊。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862229"
+                        open
+                      >
+                        <summary class="article-expander__title">130 出两个 surge V4 mac 永久授权</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862229">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>kkekhorosho: TG: QGFzdGVyVGF0YXJpY3Vz (base64)</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862228"
+                        open
+                      >
+                        <summary class="article-expander__title">你们的 Linux 系统会使用 apt upgrade 或其它发行版同类命令批量更新软件包吗？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862228">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>dfgxcvbcv: 先说说我的情况，我是只有某个软件出现安全问题或新版本有非常吸引我的功能才会手动通过 apt install 更新，出于稳定性考虑从不使用 apt upgrade 批量更新软件。</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;2
                                   min&hairsp;)</span>
                             </span>
@@ -91,238 +116,29 @@ update-pciids
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="862060"
+                        data-accordion-key="862226"
                         open
                       >
-                        <summary class="article-expander__title">收到了一份来自 GitHub 官方的赞助，开心！</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862060">
+                        <summary class="article-expander__title">研究生选择 直博 or 申研？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862226">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>luin: 
-https://twitter.com/luinlee/status/1540475192526647296
-早上醒来发现 GitHub 赞助了我 $550 ，虽然不多，但是还是很惊喜。
-看 GitHub 的说明（ https://github.blog/2022-06-24-thank-you-to-our-maintainers/ ），这次赞助是给到了 900 多个 GitHub 依赖项目的开发者。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862059"
-                        open
-                      >
-                        <summary class="article-expander__title">一些手机闪光灯及一些电子垃圾的照明质量测试记录</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862059">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>boboliu: 
-引言
-深夜睡不着想 /remake ，突然就想到了手机的闪光灯问题：之前深受索尼的垃圾手电筒之害晚上起夜永远找不到卫生纸，就测了下手上还能开机而且有闪光灯的手机的闪光灯的 CRI 。
-测试使用一台国产的光谱照度计进行（因为买不起进口的）：
-
-手机被放置在由南旗盒子、kindle 、路过的铁盒子堆成的测试台上，灯光对准测试仪的传感器，测试期间关闭所有灯光，多次测试取高值。
-测试记录
-常规组
-常规组选择了一些普通、平凡、无趣的智能手机来进行测试。
-组中有三个苹果，均手动调至最大亮度。
-TL;DR
-iPhone 13 mini
-
-数值很好看，光谱也不像普通的 LED ，可以被称为全光谱 LED 拿去做相机的补光灯了。
-Sony Xperia 5 II
-
-亮度低到离谱，光谱也不好看。索尼罪大滔天搞到百姓怨声载道.jpg
-万普拉斯 8t
-
-亮度大概够照亮你的美了。
-鬼族 16th
-
-今日珠海小厂，亮度差些，但是 CRI 还是可以的。
-P.S. with MoKee ，忘了 bugme 有没有调亮度了，我估计是有的。
-iPhone SE2
-
-亮度是真的强，显色是真的烂。
-本机为正常途径（指 Walmart 有锁机）购买，到手时未拆封未激活，绝非华强北产组装机。
-iPhone SE1
-
-亮度比 SE2 差太多，显色比其他手机差太多，电子垃圾了属于是。
-本机为正常途径（指某冤大头运营商合约机）购买，到手时未拆封未激活，绝非华强北产组装机。
-常规组结果
-Model
-Brightness(lx)
-Ra
-
-
-
-
-🍎13 mini
-4456
-95.8
-
-
-🔒Xperia 5 II
-704.5
-85.5
-
-
-1+ 8T
-3289
-85.8
-
-
-Meizu 16th
-2287
-87.0
-
-
-iPhone SE2
-9158
-67.6
-
-
-iPhone SE1
-4798
-68.8
-
-
-总的来讲，苹果可能是手边能摸到的范围内最好的手电筒。
-娱乐组
-娱乐组中选择了一些更有趣的设备，还有两个手电筒。因为很有趣，所以就不放表格了。
-手电筒并未与手机使用同一高度进行测试，而是手持为它增加了我的上臂的高度，主要原因是测试仪器吃不住那么高的照度——我用不那么娇贵的照度计测过了。
-Nokia 8110 4G 香蕉机
-
-Nokia 为香蕉机选择了一个还说得过去的 LED：毕竟你也不会期待它太多。
-Jelly 2
-
-Jelly 2 的照度有点出乎我的意料，甚至超过了前面测过的所有安卓阵营机。Jelly 2 的设计者大概是有好好想过他们想要的使用场景：一个支持双卡双待的随身小手电。
-Coolpad C558
-
-很烂，顶灯的数据和背面灯几乎一样。
-这个手机作为老年机的诚意显得有些很不足。
-手电筒甲
-
-又不是不能用™
-手电筒乙
-
-亮瞎我的狗眼了.jpg
-BenQ ScreenBar Halo
-
-这个数字是在桌子上测的正常位置挂灯，请不要和前面的手机对比。
-Halo 的这个遥控器是真的非常非常非常非常难用，蠢哭了，不要买。
-总结
-Apple, f**k you. 不过亮度还是很够的。
-要考虑晚上用手机走夜路的话，还是买苹果吧。
-全文转了自己的博文，显然是被允许的。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862058"
-                        open
-                      >
-                        <summary class="article-expander__title">记一次腾 X 社交软件账号莫名被封与解封经历</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862058">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>LeeReamond: 
-平常不怎么用 X 信，因为目前住在海外，也没有国内那套工作常用 X 信的说法。跟国内朋友联络还是更喜欢用 XQ 一些，主要出于功能，以及平台友好的考量。
-事情起因是前几天在 XQ 上加了一个对接的销售客服，正在一边咨询一边询问费用相关，结果突然弹出来一个通知说您的账号由于涉嫌资金欺诈，被强制冻结，解封请前往 xxx 。
-跟对方谈业务结果聊着聊着突然不说话了，实在是给人观感很差，还好后面换到其他平台继续聊倒是没影响工作，但是账号是个人账号就这么封着解不了了。账号也是从很多年前就开始用了，到现在没有 20 年也差不多了，从小到大同学朋友都在里面，封了实在是很麻烦。
-于是按着说明尝试解封，解封之旅实在只能用跌宕起伏来形容，实在是不吐不快。
-先是电脑没法解封，提示您必须用尊贵的手机操作。切换到手机以后又提示想要解封请输入绑定的手机验证码。OP 人在海外，原来绑的国内号码不在身边，号应该还在，但应该卡应该是在家里不知道丢到什么地方了，要找起来很麻烦，难搞！
-于是点切换其他备用方式验证，我心想我以前账号天天弹窗要我输什么密保问题，安全邮箱之类的，这回总算能用上了吧？结果上来就要求你输入完整的包括身份证号在内的个人身份信息，然后又要求你输入过去曾经使用过的密码。我把能记起来的用过的密码输了个遍，包括当时用的网络也是惯常登录的网络，结果最后弹出个窗口，您提供的信息不足以证明你是你，解封失败。
-妈的我就想吐槽就就凭马叔叔您那个人信息收集力度，我看我支付宝密码是多少估计你都要能猜出来了，还能说不知道我是我？简直是睁眼说瞎话。而且平时搞那么多什么安全验证问题，辅助验证邮箱之类的，不填就说我不安全，结果真需要用了全变摆设了现在。
-没办法号还是要解封，只能耐着性子继续操作，于是提示您需要提供您好友的 QQ 号和手机号，让其帮忙验证你是你。无奈登录很久没登录的微信，国内大半夜…</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862056"
-                        open
-                      >
-                        <summary class="article-expander__title">交流下目前企业宽带/专线的行情</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862056">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>fan88: 企业宽带：坐标湖南，目前 100M/500M ，每月 600 。动态公网，不开 80,443 。 每月加 600 升级到固定 IP 。
-专线：50M 对等，1.2 万一年，其他速度以此类推</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862055"
-                        open
-                      >
-                        <summary class="article-expander__title">[应届求职] DevOps / web 全栈方向 [远程]</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862055">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>areyoucrazytom: 
-22 届 3 年制专科, 大数据专业, 专降本失利🥲, 遂来找工;
-意向 DevOps / web 应用全栈开发方向的远程岗位; 对基建和 SRE 方向也感兴趣, 可驻场.
-期望薪资: 税前 9k, 五险一金可自理.
-简历
-我会什么
-B / S 架构 Web 应用开发:
-熟悉 Spring Boot 框架, Vue.js 框架下的单页面应用开发.
-了解 JPA, mybatis, Bee 等 ORM 框架和 Sa-token, Apache Shiro 安全框架的使用.
-了解微服务架构的定义与标准; 了解 Spring Cloud 框架的应用.
-了解发现服务 Eureka server 以及消息队列 Kafka 的使用.
-运维:
-了解 Docker 基本命令的使用.
-熟悉 Linux 系统下的 Java, NodeJs 应用环境搭建; 了解 nginx 基本使用配置.
-了解 Linux 上的 MySQL, PostgreSQL 数据库的部署与使用.
-了解 Hadoop 与生态圈的应用搭建与管理.
-多年 vps 维护经验, 有木马排查 &amp; 修复经验; 了解集群负载均衡的应用, 了解流量转发与 CDN 服务的使用.
-熟悉 Git 使用; 拥有文档编写能力; 掌握信息检索能力; 热衷于学习新技术, 学习能力强.
-掌握 Powershell, Bash 等脚本语言的使用.
-工作经验
-中国电建集团昆明科研勘探设计院, GIS / BIM 方向研发岗.
-参与昆明市智慧水务系统, 线上应用的维护工作, 前后端应用开发.
-技术栈: Spring Boot, Vue, MySQL, MongoDB.
-项目内容: 负责实现客户后期跟进需求, BUG 修复, 业务相关的一些数据采集, 分析处理等工作.
-参与云南省滇中引水工程 “智慧滇中引水” 建设管理信息系统（一期）的程序原型的前后端应用开发, 数据库设计等工作.
-技术栈: 前后端架构分离, Spring Cloud, Vue, MySQL, MongoDB, Redis, Nacos, Docker 等.
-项目内容: 负责一期工程原型系统的开发任务, 测试库, 预发布库的设计等工作, 低代码平台 / 代码生成器的开发等工作.
-开源社区
-修复 YesPlayMusic 软件的一个重大 bug, 还有其他的一些小 bug.
-参与过 style2paints 的早期 (v2, v3, v4) 开发, 测试工作, 包括 logo 的设计.
-参与过 style2paints 作者的另一个项目 PaintingLight, 以及 MangaCraft (现已将功能合并到 s2p 所以删库跑路了).
-参与过 DeepCreamPy 的测试工作.
-参与 VRoid Studio 翻译工作.
-FreeBSD 中文社区成员, 参与过文档攥写和翻译.
-做了其他的一些根本没人看的项目.
-联系方式
-电邮: yya3vslty@mozmail.com
-电报: https://t.me/Nijikawa
-微信: null_no_current_user
-请备注来源🙂</span>
+                              <span>yyy134341: 
+目前在南方某 985 本科，有直博名额、不能保硕，顺利毕业的话本+博共 8 年。
+个人感觉以后还是想挣钱养家糊口 搞工程，感觉对学术很难提起兴趣，我是那种经典对电子设备感兴趣但对 CS 不感兴趣但的同学，喜欢折腾各种设备但暂时还没发现喜欢科研……
+家人支持出国留学（读硕士），让我土博 /申研自己选。如果是出国留学的话，打算在外工作一段时间后回国。
+最近听到几个信息 不知准确与否，来问下大家对这几点什么意见
+博士难毕业 …… 
+我们实验室要求博士 4 年 1 篇 A 区 2 篇 B 区 做人工智能 /数据挖掘 对这个没什么概念 不知道大家身边的有没有对这个目标有什么看法
+博士毕业出就业方向变窄，去科研机构 /学校较多，做工程工作可能和本科生相当
+如果属实，博士毕业搞工程的话是亏了多少
+出国留学硕士毕业在国外工作比国内相当水平的工作工资高
+不知道是否属实，如果是，想知道大家觉得 3 年后的形势依然是这样吗
+土博在读期间有出国交流的机会
+如果属实，想知道有方法可以留在国外工作待一段时间再回国吗
+如果在外工作一段时间后回国会更容易进外企吗…
+大家都说互联网寒冬，对于工业界来说，是手握海研硕士有用还是 985 博士比较吃香？
+目前有以上的困惑，已经纠结了一个月了，不知道如何抉择，球球大家指条明路，谢谢！</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;2
                                   min&hairsp;)</span>
                             </span>
@@ -334,17 +150,82 @@ FreeBSD 中文社区成员, 参与过文档攥写和翻译.
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="862053"
+                        data-accordion-key="862225"
                         open
                       >
-                        <summary class="article-expander__title">请问这样算侵权吗？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862053">
+                        <summary class="article-expander__title">请教 m1 的 mbp16 安装虚拟机的正确姿势</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862225">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>that5: 根据教育部发布的义务教育新课标文件，我整理了小学必背古诗词 75 首和英语词汇出来，都是电子文档淘宝上卖，北师大出版社通过淘宝说侵权了，扣罚 2000 。给的侵权 isbn 是语文书和英语书的号。
-另外我不太清楚 tb 的这个投诉机制，23 日被投诉被下架删除了，24 号还是那个商品链接被投诉，这是什么操作？商品链接我自己都看不到了怎么还可以被投诉呢？
-有懂的同学没，谢谢！
-花钱买了个教训，没想过和阿里争高下，小老百姓也没那精力，就想以后避坑。</span>
+                              <span>makeitwork: 
+刚发了一帖吐槽 mac 的 office 太卡
+有朋友建议安装 win11 使用 office
+折腾了 2 个小时
+终于下载了个 arm 的 pd16 ，安装还要 win11 arm 。。。
+好不容易下齐了 win11 arm ，安装有提示找不到安装盘。。。
+好难搞啊，求各位推荐一个正确安装姿势
+目前还没花钱，如果有必要，花钱支持是可以的</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862224"
+                        open
+                      >
+                        <summary class="article-expander__title">PayPal-15%活动， Switch 日服任亏券约 425 元，新老用户都可以。</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862224">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Cagliostro: 
+PayPal 跟银联搞活动绑定银联卡并确认报名，使用 PayPal 并通过银联卡完成海淘交易，满额享 15%立减。
+其他用途不清楚，但用来充值 Switch 日服的余额不错，正好如今日元汇率低，似乎可以先充值余额留着，等想玩的游戏出了再购买任亏券，今年以确定的任天堂第一方游戏，喷射战士 3 和异度之刃 3 就很值得，也可以留一张等明年的塞尔达 2😂
+报名网址： https://www.paypal.com/c2/webapps/mpp/campaigns/nna/202205upicampaign</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862223"
+                        open
+                      >
+                        <summary class="article-expander__title">看到一篇讨论 5G 的帖子，联想到 8K 视频</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862223">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>ZFLBZTG: 
+我们普通显示屏连 4K 的都很少，更是很难见到 8K 的，连电视也很少有 8K 显示屏 
+  
+人眼也不太能分辨 8K 与 4K 的区别 
+  
+电影码率最高也就 4K ，我从来没见过 8K 的资源 
+  
+实际上 4K 视频就已经能满足 99.9%的需求
+  
+极少有 8K 的流媒体服务 
+  
+8K 占用的资源极大，包括但不限于宽带、硬件解码等各种配置要求 
+  
+YouTube 、B 站上的 8K 视频又意义何在呢？只是单纯的为了科技进步？ 
+  
+我认为 8K 分辨率对于我们普通用户群体来说毫无意义 
+  
+欢迎发散补充 
+  
+*标题中提到的 5G 帖子链接 
+  https://www.v2ex.com/t/861419</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;2
                                   min&hairsp;)</span>
                             </span>
@@ -356,18 +237,418 @@ FreeBSD 中文社区成员, 参与过文档攥写和翻译.
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="862052"
+                        data-accordion-key="862222"
                         open
                       >
-                        <summary class="article-expander__title">求给生成一个正则表达式，年龄大了，脑子不够用了</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862052">
+                        <summary class="article-expander__title">日本 Spotify 车位</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862222">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>wdc63: 
-1 必须是合法数字（前面不能多个 0 ）
-2 范围必须在-1000 到 1000 之间（包括-1000 和 1000 ）
-3 可以是整数，可以是小数，如果是小数位数必须小于等于两位
-例如 0.001 、9999 、-1.010 、01.32 不合法  99.99 、0 、-1.2 合法</span>
+                              <span>zhouweiluan: 月付 13 ，可季可年。
+主页 Telegram 联系～</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862221"
+                        open
+                      >
+                        <summary class="article-expander__title">dagger.js 使用示例[6] $each 指令的基本使用方法</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862221">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>dagger8224: 
+分享一个dagger.js中控制指令$each 的演示示例:
+demo
+dagger.js 支持对数组，对象，字符串，set ，map 等可迭代对象应用$each 指令。您可以将$each 看作是更加智能的 v-for （ Vue ）：dagger.js 中没有使用虚拟 DOM ，而是直接进行更细粒度的增量更新，因此您无需在循环体上声明 key 值。
+欢迎体验并提出宝贵意见，您的支持是对我最大的鼓励！</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862220"
+                        open
+                      >
+                        <summary class="article-expander__title">macOS 13 无法添加蓝牙键盘</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862220">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>bondleung: 
+macOS 13 添加蓝牙键盘的时候，会提示输入 pin ，但显示空白的 pin 码；
+iOS 16 添加同一个键盘的时候，会显示键盘输入 pin 码，有显示四位数的随机码，并可正确连接键盘。
+这是 macOS 的 bug ，有人遇到相同的情况吗？</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862219"
+                        open
+                      >
+                        <summary class="article-expander__title">[上海] 招前端（ts + react，简历可直推），另外（主 vue，也可内推），公司其它职位也可内推</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862219">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>hhtLeon: 公司：米哈游
+  游戏行业 TOP
+  待遇优渥
+  
+有意向的大佬，可加 V
+V：huanghtLeon</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862218"
+                        open
+                      >
+                        <summary class="article-expander__title">大家觉得这个时间点买什么小主机比较好？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862218">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>HansZimmer: 
+之前 6.18 看到 Minisforum HX90 2799 纯主机，配置是 R9 5900HX
+优点是显示器接口丰富，远程居家或者带去公司做一些复杂的工作和图像处理也觉得绰绰有余
+年初买过 5600G 的 X500 ，用起来还行，除了偶尔显示器会黑一下，不知是不是 A 卡的原因，目前重装系统后暂时未复现
+不知还有什么性价比比较好的推荐？
+这不是软文贴。。。我等华尔街峡谷等的花都谢了。。。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862217"
+                        open
+                      >
+                        <summary class="article-expander__title">IconChanger，一键更换 App 图标</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862217">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>yescola: 
+https://github.com/underthestars-zhy/IconChanger
+好用~~~ 但似乎系统自带 App 不能替换？
+“Icon Changer 是基于 MacosIcon 网站的 App 。它会自动识别 mac 中应用文件夹的应用。并提高相关的 Icon ，然后可以一键更换。”
+网页版需要自己搜索，然后下载，再找到 App ，打开属性，然后拖拽。非常繁琐。而 Icon Changer 则可以简化这一步骤。
+此外，IconChanger 的数据和网页版本同步。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862216"
+                        open
+                      >
+                        <summary class="article-expander__title">求搭油管的车</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862216">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>simplesslife: 
+有车的请联系方式我加你</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862215"
+                        open
+                      >
+                        <summary class="article-expander__title">光纤入室（FTTR）怎么走的是传统网线？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862215">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Sauman: 本站无法发图片？我是没有看到选项。。。正题，朋友湖南株洲电信报装，办业务时，业务员说是走暗线，以前埋的网线没用，因为是全光纤，施工全程没看，结果完工验收时，发现还是走埋好的网线接的，就跟传统的光纤户一样，不是光纤到室，设备到是 FTTR 的设置，这算不算是商业欺骗？我买 A 你给我整 B</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862211"
+                        open
+                      >
+                        <summary class="article-expander__title">Swift 新出的 Regex builder DSL 挺有意思的，其他语言有类似的东西吗</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862211">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>TWorldIsNButThis:</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862210"
+                        open
+                      >
+                        <summary class="article-expander__title">极光 IM 的 REST API 没有读取双人私聊聊天记录的接口，那么在极光 IM 的基础上实现私聊聊天记录的最佳实践是什么样呢？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862210">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>gzlock: 
+使用环境是网页聊天(客服用)+App 聊天(用户端)，先假设有客服 A 和用户 B 的私聊会话
+需求是客服需要查看跟用户以往的聊天记录，但是极光 IM 的网页端 sdk 是不支持查看聊天记录的，而 App 端 sdk 也仅支持查看手机 App 本地存储的聊天记录
+极光有提供REST API 读取用户聊天记录接口，但只针对单一用户发出的聊天记录。
+也就是说查看一个双人私聊记录要同时读取客服 A 和用户 B 的聊天记录，再从这两个数组中找出出客服 A 发给用户 B 、用户 B 发给客服 A 的消息，才能组成完整的双人私聊记录，这就很费时费力了。
+也在极光社区咨询过，得到的答复是的确没有直接查看双人私聊记录的 REST API 接口。
+那么问题来了，实现双人私聊记录的最佳实践是什么样呢？
+我想到三个方案：
+在自己服务器上记录双人私聊的聊天内容
+使用聊天室会话代替双人私聊会话
+每个双人私聊会话开设一个两人聊天室会话，将私聊会话的内容转发到聊天室会话，查看聊天室聊天记录等于查看私聊聊天记录
+第一方案是用两个用户 uuid 拼起来的文本文件存放(uuid[].sort().join(&#x27;_&#x27;))，例如
+650ed3f2-061e-48cb-9748-e10af95cbb3a_c339f272-4be1-4e9f-9245-45e3a6ca5abb.txt
+缺点是当聊天量多起来后对服务器的 io 有很大影响。
+第二个方案简单直接不消耗我方服务器资源，直接查看聊天室聊天记录就可以了。
+缺点是极光 IM 的私聊和聊天室功能体验有较大差距，例如私聊支持离线消息，而聊天室是不支持的
+第三个方案也不消耗我方服务器资源，也可以继续使用私聊功能，似乎是一个很好的折中方案？
+大家有什么更好的想法或建议吗？</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862209"
+                        open
+                      >
+                        <summary class="article-expander__title">如何优雅的欺骗游戏加速器？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862209">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Joshuahui: 试了一下，把浏览器的 exe 文件名改成和游戏一样，加速器就会上当。比如把 chrome .exe 改为 epicgameslauncher.exe 。但是文件名和注册表里的不符， 浏览器默认打开之类的功能用不了，快捷方式倒可以改。有没有什么工具，可以把自身命名为游戏文件，将浏览器的流量引向自身然后欺骗加速器代理呢？</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862208"
+                        open
+                      >
+                        <summary class="article-expander__title">显卡虚焊/脱焊一般是什么表现？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862208">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>TsukiMori: 最近自己的电脑出现故障 一开始是在特定情况下有几率发生黑屏 
+比如切换浏览器标签页，或者暂停网页上正在播放的视频时直接黑屏死机（键盘的数字锁和大写锁灯都卡住 不能点亮或熄灭）过一会儿会自己重启
+打游戏的过程中反而不会发生这个故障
+故障发生的频率越来越频繁 最近两天已经是开机都不行了。能过自检 能进 BIOS 和 pe 但是 win10 和 Linux 都是系统加载界面一结束立马黑屏死机 安全模式卸了显卡驱动后可以进桌面
+查了下好像和显卡虚焊的状况有点相似 现在显卡又贵又不好退货 怕直接买显卡回头发现又不是显卡的锅。。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862207"
+                        open
+                      >
+                        <summary class="article-expander__title">实习有一次转正机会，想问一下各位前辈的意见？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862207">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>lllluka1: 
+上海双非学生，非计算机专业自学的前端。
+疫情中找到了一份线上实习，现在已经实习了一段时间，最近 leader 找我聊说可以给我延长实习时间，然后提供一个实习转正的机会，问我有没有这个想法。
+选择实习转正：有机会转正，可以好好实习，后面压力不会那么大。但是由于自己也已经实习了一段时间,也了解了公司部门软件开发人员不多主要是算法,前端开发的话要求也不高，能学到和用到的有限。之前一直以为不会有转正机会。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862206"
+                        open
+                      >
+                        <summary class="article-expander__title">貌似现在记账 App 都开始收费了，所以我打算做一款开源的，用 Flutter 开发的记账 App。希望大家多多支持一下</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862206">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>pengtdyd: 有时间就写，准备半年完成吧。
+简介：
+青柠记账是一个开源的记账项目，致力于做一款清爽、干净、简洁、没有广告的 App ，同时也采用目前主流的技术进行开发，例如：Flutter 、Nestjs 、PostgreSQL 、GraphQL 等
+原型：
+https://www.figma.com/community/file/1122536773250851621
+项目地址（正在开发，未完善。。）：
+https://github.com/feiyu-rs/lime
+项目文档：
+https://github.com/feiyu-rs/whale-docs
+
+希望可以得到一个星星。。。谢谢啦</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862205"
+                        open
+                      >
+                        <summary class="article-expander__title">Face ID 起死回生</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862205">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>365473321: 之前因为疫情戴口罩，每次拿起手机解锁的时候总是解锁失败，后来索性就把面容解锁关掉了，使用密码解锁。后来再次设置面容 ID 的时候就怎么也录入不了了，在‘关于’里也显示面容 ID 故障。今天下午再次尝试录入的时候竟然很顺利的就录入成功了，‘关于’里的故障也消失了！
+现在想想，有可能是因为之前录入的时候周围比较昏暗，导致录入失败，再加上系统版本较低，可能存在 BUG ，所以导致误报错误。今天录入的时候周围就比较明亮
+还不清楚后续会不会复发。不管怎样，失而复得，感觉不错，也给有类似经历得朋友一个参考。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862204"
+                        open
+                      >
+                        <summary class="article-expander__title">米哈游内推，欢迎骚扰</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862204">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>ThanksSirAlex: 社招岗位
+支持 远程面试 ～
+邮箱 510609564@qq.com (备注米哈游内推+岗位+v2ex 即可)
+也可 VX 联系 NTEwNjA5NTY0
+欢迎咨询，我知道的话一定会解答
+附上职位图片
+https://imgur.com/a/CvzZZpE</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862203"
+                        open
+                      >
+                        <summary class="article-expander__title">i225 网卡全双工速度？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862203">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>LionelK: 
+iperf3 双向测试都能达到 2.37G
+但我就是心血来潮想试下测试全双工的速度，查了下 iperf3 不支持全双工测试，于是我在两台机器同时运行服务端和客户端，一测发现只有 1.9G 左右，理论上全双工应该同时跑满 2.37G 吧
+想问下是否正常？</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862202"
+                        open
+                      >
+                        <summary class="article-expander__title">TrueNAS core (FreeNas)对比群晖使用起来怎么样</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862202">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>YongXMan: 
+自己在 ESXI 下安装了一下 TrueNAS ，在用户界面上看，对比群晖，在功能上比较简单，当然看网上 TrueNAS 各种功能强大，这些都是真正作为 NAS 的基础能力和核心竞争力，比如存储压缩、自动去重、高性能、内存缓存等。
+但是对于从群晖转移过来的用户，如果切到 TrueNAS 下，群晖的很多功能就无法使用了，比如：
+docker
+监控套件
+vpn 套件
+photo 套件
+video 套件
+audio 套件
+file 套件
+媒体服务
+安卓、iphone 下都很完整 app
+想问一下，TrueNAS 下，这些需求还存在吗...如何解决的？</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;2
                                   min&hairsp;)</span>
                             </span>
@@ -379,14 +660,15 @@ FreeBSD 中文社区成员, 参与过文档攥写和翻译.
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="862051"
+                        data-accordion-key="862200"
                         open
                       >
-                        <summary class="article-expander__title">有没有计算机领域的类似技能树的知识点梳理？很多概念新入行不太熟悉先后次序</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862051">
+                        <summary class="article-expander__title">求推荐 nvim 配置主题</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862200">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>FuzeTheHostage: 如题。实在不知道从何开始，而且有很多领域。</span>
+                              <span>soberzml: 
+有比较实用没有花里胡哨的配置推荐吗？</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;1
                                   min&hairsp;)</span>
                             </span>
@@ -398,70 +680,41 @@ FreeBSD 中文社区成员, 参与过文档攥写和翻译.
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="862050"
+                        data-accordion-key="862199"
                         open
                       >
-                        <summary class="article-expander__title">各位 v2 上的能人异士啊！</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862050">
+                        <summary class="article-expander__title">openwrt 启用 ipv6 以后，网络下行变慢是什么原理</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862199">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Bssn: 
-给我这个迷茫的 河南 考生推荐几所公立二本吧！[玫瑰]
-河南省二本线 405 ，我考了 478 分…
-未来打算学网络安全，软件工程之类的专业，大家给推荐几所大学(想去南方城市)，要求宿舍条件好点的，学费不是很高的。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862049"
-                        open
-                      >
-                        <summary class="article-expander__title">mac 重装系统一直卡在地球 wifi 选择页面</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862049">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>thet: 
-我的 mac 抹盘重装一直卡在地球页面，试过 command + R ，command + option + R ，重置 NVRAM ，都没有效果。
-也试过 u 盘启动，开机后按长按 option 也不能进入启动盘选择页面。
-启动后总是进入网络恢复页面，如下：
+                              <span>kinboy: # 在网上找了教程设置了路由器启用 ipv6
 
-隔一段时间后就出现地球和感叹号标志，按官网提示是从网络恢复失败。
+# 通过 testipv6.cn 测试站点测试 ipv6 启用成功
 
-mac 是 macbook pro 16 寸 2019 年款
-不知道大家碰到这个问题了吗，不行只能去天才吧看看了。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862048"
-                        open
-                      >
-                        <summary class="article-expander__title">写了一个动态壁纸的命令行工具，可以使用视频或 GLSL 进行着色</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862048">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>venusbox: 预览：
+# 发现网页加载变慢，用 speedtest.cn 测试网速，300M 联通家宽，下行只有 10+Mbps ，上行没有受影响，大概 40+Mbps
 
+# 请教一下大佬这是什么原理，以及如何正确设置</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="862197"
+                        open
+                      >
+                        <summary class="article-expander__title">lineageos OS 下大家用什么方法实现微信双开呀？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862197">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>yanyuechuixue: 手持一台联想 moto ，由于微信语音偶尔会对方听不到声音必须挂了重新打的问题，想一步到位刷 Los ，但有两个微信号，担心是不是没法用，
 
-开源地址：
-https://github.com/bbbbx/ShadeYourDesktop
-使用 OpenGL 实现，视频用 FFmpeg 解码。
-非专职 C++，代码写的不是很好看 😂，目前性能还是一个问题
-Windows 上类似的东西有 https://github.com/bitrate16/Vebro</span>
+谢谢大家！</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;1
                                   min&hairsp;)</span>
                             </span>
@@ -473,18 +726,44 @@ Windows 上类似的东西有 https://github.com/bitrate16/Vebro</span>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="862047"
+                        data-accordion-key="862194"
                         open
                       >
-                        <summary class="article-expander__title">12500H/12700H 在中轻度负载下，关闭小核心能否提高续航？还是会增加总功耗？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862047">
+                        <summary class="article-expander__title">Cloudflare Workers 反向代理+跨域</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862194">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>1014982466: 以 12500H 为例吧，P 核四核八线程+8 个小核 E 核
-我认为似乎降低功耗和提高功耗都说得通？
-可以提高续航：空闲状态下，小核并不能关掉，还和大核电压同步，也不能降压。所以导致小核和 uncore 部分功率降不下去。而且小核能效比并不高，若达到大核类似性能耗电完全不比大核少，要是能关掉，应该可以节省掉小核部分的电力。
-不能提高续航：小核关闭可能导致大核负载变高，使大核消耗更多电力。
-先讨论上网办公中轻度负载吧，即暂时不讨论全核跑满的情况。那种情况说续航也没啥意义。</span>
+                              <span>estk: 
+有时前端在调用一些第三方 API 时会遇到跨域问题，通过反代并在 headers 里配置即可跨域
+async function handleRequest(request) {
+  const urlObj &#x3D; new URL(request.url)
+  let url &#x3D; urlObj.href.replace(urlObj.origin+&#x27;/&#x27;, &#x27;&#x27;).trim()
+  if (0!&#x3D;&#x3D;url.indexOf(&#x27;https://&#x27;) &amp;&amp; 0&#x3D;&#x3D;&#x3D;url.indexOf(&#x27;https:&#x27;)) {
+    url &#x3D; url.replace(&#x27;https:/&#x27;, &#x27;https://&#x27;)
+  } else if (0!&#x3D;&#x3D;url.indexOf(&#x27;http://&#x27;) &amp;&amp; 0&#x3D;&#x3D;&#x3D;url.indexOf(&#x27;http:&#x27;)) {
+    url &#x3D; url.replace(&#x27;http:/&#x27;, &#x27;http://&#x27;)
+  }
+  const response &#x3D; await fetch(url, {
+    headers: request.headers,
+    body: request.body,
+    method: request.method
+  })
+  let respHeaders &#x3D; {}
+  response.headers.forEach((value, key)&#x3D;&gt;respHeaders[key] &#x3D; value)
+  respHeaders[&#x27;Access-Control-Allow-Origin&#x27;] &#x3D; &#x27;*&#x27;
+  return new Response( await response.blob() , {
+    headers: respHeaders,
+    status: response.status
+  });
+}
+addEventListener(&#x27;fetch&#x27;, event &#x3D;&gt; {
+  return event.respondWith(handleRequest(event.request))
+})
+
+使用方法：
+xxx.workers.dev/https://guge.com
+
+可用于反代网页、json 甚至 image 等文件</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;1
                                   min&hairsp;)</span>
                             </span>
@@ -496,74 +775,16 @@ Windows 上类似的东西有 https://github.com/bitrate16/Vebro</span>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="862046"
+                        data-accordion-key="862191"
                         open
                       >
-                        <summary class="article-expander__title">请问大佬们 如何将数据库中的任务给微服务均匀执行？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862046">
+                        <summary class="article-expander__title">在使用 git 时的一些尴尬场景里的修复方案</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862191">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>jackiejkl: 假设一张表里有 1000 条命令，每条命令都需要长时间网络 IO （不怎么消耗本地资源），现有若干个微服务，如何让这些微服务平均的分配并执行这些命令？</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862045"
-                        open
-                      >
-                        <summary class="article-expander__title">有 V 友能推荐一个带转场识别，能纯 CPU 推理（不考虑速度）的番剧补帧工具吗？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862045">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>dfgxcvbcv:</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862044"
-                        open
-                      >
-                        <summary class="article-expander__title">想给 NUC 搭配一个硬盘柜，但是 slimSAS 8088 8643 阵列卡 傻傻分不清楚</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862044">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>MrLonely: 
-按照我目前的浅薄了解，8088 和 8643 似乎是两个形状不同，但实际功能完全一样的连接线。
-这两个线一端接在硬盘柜背板上，一端接在主板的 8088 接口，也就是主板参数上所描述的 slimSAS 。
-如果主板上没有 slimSAS ，通过主板上的 4 个 SATA 去合并出来一个 8643 也是可以的。
-那么是不是可以说这个 8643 只是一个信号聚合端口，在主板来看，它所看到的就是 SATA 控制器后面接着 4 个 SATA 硬盘？
-如果我想给 NUC 配硬盘柜然后把这个硬盘柜直通给 Unraid 虚拟机，我就需要
-找一个 M.2 转 8088 的转接卡
-找一个自带电源和散热的 8088 或者 8643 接口的硬盘柜
-最后我在淘宝上找到了这两个产品。
-一个是乐扩在卖的 M.2 转 8 口 sata 扩展卡。看起来似乎是通过两个 8088 接口实现的。
-另一个就是麦沃硬盘盒。有一款 8 盘硬盘柜，背后是 8088 或者 8644.
-困惑
-但是卖家在宝贝描述里说如果要使用 18T 硬盘的话，需要花费 2000 额外购买一款 2722 火箭卡，插在电脑 PCIe 接口才可以正常使用这个硬盘柜。
-我特地问了卖家，如果我自己的主板上本身就有了 8088 接口，依然需要这样的火箭卡吗？
-对方在看了我发的 超微主板图片之后 https://www.supermicro.com/en/products/motherboard/H12SSL-NT
-斩钉截铁的说，这个超微主板上只有接口并没有卡，一样得要用火箭卡才行。
-这里就让我很困惑了，如果说我的主板上只有 SATA 控制器，没有 SAS 控制器，我要用 SAS 盘，那需要额外的带控制器的 PCIe 卡+8088 接口，这个是可以理解的。
-但是如果我只想让硬盘通过主板自带的 SATA 控制器被识别到，为什么需要一个 6G 缓存，价格 2000 的硬 RAID 卡呢？
-粗暴方案
-按照我从几个 All in One NAS 机箱群里了解到的，最简单粗暴的方法甚至可以是，买一个 PCIe 转 16 个 SATA 口的转接卡，然后再用四根 4SATA 合一的线转成 4 个 8088. 并且这张卡本身也带了 SATA 控制器了。
-是这里有什么我理解错的，还是说卖家客服也是半吊子水平？
-我是通过半人马座 NAS 机箱了解到背板和 8643 这些信息的。但是我倾向于继续使用现存硬件，而不是重新组装一台全新的电脑。如果大家有其他能够实现让 NUC 把 8 块硬盘直通给 Unraid 虚拟机的硬盘柜，也请推荐一下。
-在这里先多谢各位了。</span>
+                              <span>Livid: https://ohshitgit.com
+还有一个简体中文的翻译版本：
+https://ohshitgit.com/zh</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;2
                                   min&hairsp;)</span>
                             </span>
@@ -575,15 +796,16 @@ Windows 上类似的东西有 https://github.com/bitrate16/Vebro</span>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="862043"
+                        data-accordion-key="862190"
                         open
                       >
-                        <summary class="article-expander__title">红米 k40 异常发热，充电慢</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862043">
+                        <summary class="article-expander__title">安卓系智能手表有能出示健康码、行程码的么</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862190">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Donahue: 最近夏天，发现红米 k40 什么都不干，拿在手里都发热。。
-然后还有充电变得慢了，以前充电电流能到 3A, 现在只能到 800ma,这是什么情况</span>
+                              <span>hanssx: 
+给即将上高中的孩子用，因为不想让她带手机，弄个智能手表。
+apple watch 有点贵，而且据说续航不大行？所以目前考虑安卓系，看了 oppo watch2 ，各项都还行，但是不能出示健康码、行程码，差点事儿，不知道还有没有更好选择。</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;1
                                   min&hairsp;)</span>
                             </span>
@@ -595,16 +817,18 @@ Windows 上类似的东西有 https://github.com/bitrate16/Vebro</span>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="862042"
+                        data-accordion-key="862189"
                         open
                       >
-                        <summary class="article-expander__title">现在怎么撸招行积分</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862042">
+                        <summary class="article-expander__title">奇了怪</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862189">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Flowing: 
-生日当天，想撸个十倍积分，抵下经典白的年费
-大佬们，现在都是怎么在生日当天撸积分的？</span>
+                              <span>hxndg: 
+今天遇到一个挺奇怪的事情，因为我成了次密接需要隔离好几天，目前还在隔离中，然后我今天中午吃了饭就爬去床上睡觉，睡之前刷了会手机，然后中途醒了上了几次厕所，一直睡到晚上。
+等到晚上醒了，有朋友发过来微信聊天，正要回复，发现粘贴板有个奇怪的内容：
+“核酸还是建议大家都要做，进一步变通的清零政策必然是建立在全面的核酸检测上。。。“
+奇了怪，我明明就没复制过相关的内容啊</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;1
                                   min&hairsp;)</span>
                             </span>
@@ -616,16 +840,28 @@ Windows 上类似的东西有 https://github.com/bitrate16/Vebro</span>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="862040"
+                        data-accordion-key="862187"
                         open
                       >
-                        <summary class="article-expander__title">今年专业还能选计算机吗？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862040">
+                        <summary class="article-expander__title">基于自己的 PHP 后台框架制作了一个菜鸟学习的好网站！</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862187">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>NESeeker: 
-如题，广东考生省排 5k ＋。
-想请教一下各位前辈，现在形式还适合学计算机吗？</span>
+                              <span>meystack: 
+菜鸟教程网[Pro]免费提供在线基础编程技术教程。
+由于互联网上基础编程教学的文档和视频教程已经有很多了，为什么还要建立菜鸟教程网，
+这是因为基于我个人在十余年的自学编程的道路上、从 2009 年我开始自学了 C/C++、Linux 、Python
+汇编、IDAPro 、PHP 、Java 、Go 语言、Vue 上爬过的坑以及积累的经验，我能深刻的体会到一名新手
+在入门编程的时候，门槛在哪里，痛点在哪里？很多时候知其然不知所以然的困境。。
+至此，菜鸟教程网专业版成立了，本站包括了 HTML 、CSS 、Javascript 、PHP 、C 、Python 等各种基础编程教程。
+并且包含了 Java 、Go 、Ruby 、ElasticSearch 、算法解析等适合新手进阶的编码、服务器运维教程、可帮助新手朋友快速实现就业！
+本站提供了大量的在线实例，通过实例，您可以更好地学习如何建站。
+本站致力于推广各种编程语言技术，所有资源是完全免费的，并且会根据当前互联网的变化实时更新本站内容。
+同时本站内容如果有不足的地方，也欢迎广大编程爱好者在本站留言提供意见。
+如果你是一名刚刚接触编程的菜鸟朋友；；
+请记住：成为一个编程高手的最佳有效途径，坚如磐石的基础 + 算法 + 10 万行代码实践 &#x3D; 大神
+
+地址 https://www.rookiew.com 这里面的问答是基于 StackOverflow 的数据，在一点点的翻译！</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;2
                                   min&hairsp;)</span>
                             </span>
@@ -637,15 +873,14 @@ Windows 上类似的东西有 https://github.com/bitrate16/Vebro</span>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="862039"
+                        data-accordion-key="862186"
                         open
                       >
-                        <summary class="article-expander__title">electron 官网的中文文档怎么全没了</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862039">
+                        <summary class="article-expander__title">一个高考生，他家长想了解他志愿选啥专业，他又不说。他家长想通过俺问他再转述他家长，感觉这样我里外不是人</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862186">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>xieqiqiang00: 
-选中文就会显示英文，有一小部分 UI 是中文，但正文全是英文的</span>
+                              <span>Er1c0:</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;1
                                   min&hairsp;)</span>
                             </span>
@@ -657,39 +892,23 @@ Windows 上类似的东西有 https://github.com/bitrate16/Vebro</span>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="862038"
+                        data-accordion-key="862183"
                         open
                       >
-                        <summary class="article-expander__title">在机构学软件测试，老师现在让自己找一个项目</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862038">
+                        <summary class="article-expander__title">Win11 系统和 Edge 出了个诡异的问题</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862183">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>jiyan5: 让自己找一个项目，先做个第一版的简历。老师发了几个产品大牛之类的网站，但是感觉上面的都不是太好。以前没做过互联网相关的项目，大家有什么好网站或者方法么🙏🏻</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862037"
-                        open
-                      >
-                        <summary class="article-expander__title">最近看新能源车有感</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862037">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>wxlwsy: 起因:本人车 6 年 12W 了想置换个新车,油车和新能源摇摆不定,于是了解了一下电车,各种平台包括 b 站都看了不少视频.
-于是发现一个怪现象:
-1 不能提电车的不好,一说就马上有人上来反驳.而且全网充斥对油车的优越感(这个优越感实在不明所以).
-2 最关键,都说电车省钱,确实现在油价这么高,电车优势确实大.但是,电车价格比油车贵好几万,却被故意忽略.而且几乎没人提一句电池成本, 电池也是损耗的,厂家不可能免费给你换,据我了解的&quot;免费&quot;更换的条件实在有点苛刻了,什么出不能出事故,只能 4s 保养,非运营,每年公里数不能超过多少等等.
-
-我算了下,花 20 万买电车,按照 10 年用车计算,10 年后电池费用起码好几万,而且 10 年后电车保值损失也相当惊人.这些钱算下来不必油车便宜. 
-网上各种内容看来,明显有人带节奏.只关注平时使用省钱,隐形成本就是没人提.</span>
+                              <span>EliteOtaku: 
+6 月 9 日手贱把 win10 升级到 win11 了，不是纯净安装，但使用正常，安装了 start11 用来调整任务栏，方便以前的使用习惯。
+25 日就是今天下午看到系统显示更新，刚好在打风暴英雄，就没管，出来后发现 Edge 的网页右键菜单不对劲，按下去后会闪一下，然后马上跳掉，然后打开系统设置的时候，发现菜单显示内容会自动下移，就如同键盘按住了方向键向下键和向右键。但是在 Chrome 里面一切正常，word 也没事，游戏也正常。
+打开任务管理器，窗口会自动向右滚动。
+进入 windows 设置-windows 更新-更新历史纪录的时候，也会出现自动下滚动到最下面的情况。
+但在 windows 设置的其他菜单项下，则是自动滚动向上……实在是莫名其妙。
+期间试过把键盘拔掉，无效，依然会出现该状况，所以基本排除键盘的问题。
+但是在以上会出现自动滚动的地方，按住 Ctrl 再移动鼠标则不会出现自动滚动。
+所以现在虽然没有特别大影响，但操作的时候就感觉不太对劲，不知道大家有没有遇到过类似的问题，该如何解决？
+已经试过回到还原点，但是都失败了，不知道怎么回事。</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;2
                                   min&hairsp;)</span>
                             </span>
@@ -701,499 +920,15 @@ Windows 上类似的东西有 https://github.com/bitrate16/Vebro</span>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="862036"
+                        data-accordion-key="862182"
                         open
                       >
-                        <summary class="article-expander__title">物理黑群晖迁移 ESXI 建议</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862036">
+                        <summary class="article-expander__title">话说现在内地的地上波信号是由哪个部门管理的</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862182">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>YongXMan: 自己组的 4 盘位 J4105 的黑群晖在客厅电视柜里默默运行有 4 年了，一直很稳，现在还在用 DSM6.2.1 版本，也不敢升级。
-由于近期入了 DELL R720xd ，打算把物理的黑群晖迁移到 ESXI 下，因为 R720xd 放在仓库，所以把黑群晖撤掉可以把电视柜的空间省出来。
-问一下，大家有在 ESXI 下用黑裙的吗，应用场景中稳定性怎么样？求过来人给点建议。
-因为 ESXI 毕竟不是物理机，折腾起来成本低，所以也更容易折腾出问题，也一定会折腾出问题。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;2
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862035"
-                        open
-                      >
-                        <summary class="article-expander__title">悠米助手 | 英雄联盟游戏利器</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862035">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>xrr2016: 
-迫于国服隐藏战绩，开发了一款查战绩的软件，主要功能是查询战绩, 使用官方客户端的接口, 没有封号风险~
-喜欢玩 LOL 的玩家可以关注一下~
-
-最新版本 V1.6.5, 欢迎下载体验~
-下载地址: 爱发电</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;2
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862034"
-                        open
-                      >
-                        <summary class="article-expander__title">WPF 如何将外部 xaml 文件通过 UserControl 显示</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862034">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>CrystalMoling: 
-如题，现在我有一个放了 xaml 文件的文件夹和一个 ListBox ，我需要将文件夹里的 xaml 文件全部当作 UserControl 添加到 ListBox 里面，有什么方法可以实现吗</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862033"
-                        open
-                      >
-                        <summary class="article-expander__title">请问升级到 macOS 13 的 MacBook Pro 14 寸用户， command（修饰键）+触摸板轻点失灵的问题修复了么？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862033">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>LUO12826: 如题，每次系统升级都有人关心这个。翻了一下似乎 macOS 13 后还没有人问。如果有相关主题了也麻烦告知一下，谢谢！</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862032"
-                        open
-                      >
-                        <summary class="article-expander__title">求一个 Windows10 下的命令行工具</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862032">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>ghmum: powershell 用起来不是很舒服，看起来也不太舒服
-想求一个 Windows10 下面的 shell 工具，用来写 vim ，希望颜值高，看起来舒服，跑起来快</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862031"
-                        open
-                      >
-                        <summary class="article-expander__title">NS 扩展包家庭车, 刚刚发车</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862031">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>liguanru: 
-还有七个车位</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862030"
-                        open
-                      >
-                        <summary class="article-expander__title">2022 年了，更换电信宽带套餐的体验依旧那么不愉快</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862030">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>EminemW: 
-我现在用的套餐是大概一年半以前的深圳电信城中村月付 169 的融合套餐，套餐是 1 主 2 副，200M+100M 提速包。
-上个星期发现电信新的 169 套餐是 1000M 的，而 300M 套餐只要 139 ，套餐内容与我之前 169 套餐基本一样，于是我就打算换成 139 的套餐，平时不下载啥东西 300M 足够使用了。然后就开始不愉快的换套餐体验。
-首先在电信网上营业厅，手机 APP ，微信公众号都找不到降低套餐的入口，只有什么升级 5g 新套餐之类的，资费都比现在旧套餐高。只能去营业厅，或者找人工客服扯皮。
-跟人工客服扯皮的过程更恼火，总共找了 3 个客服。
-上周五找的第一个客服 A ，这个客服还不错，没有让弯路，直接就说有 139 的套餐可以更换，但是要求新套餐在网 12 个月，套餐说要预存的 300 块钱可以申请不预存，套餐次月生效，但是本月在交旧套餐费用的同时需要交新套餐的一部分费用（按剩余天数折算），于是打算月底再换套餐。
-结果今天找个几个客服都很离谱，今天的第一个客服 B ，我跟她说要换套餐，她查询了一番说 239 ，269 的套餐可以换
-。好家伙，这样子肯定又要开始扯皮了，于是我让她再查查，查了半天说只有 169 的，还让我不要换套餐，气得我直接退出换个客服。
-于是换今天第二个客服 C ，客服 C 刚开始只说有 169 的套餐可以换，我就说已经问过好几次可以换 139 的套餐了，于是同意更换 139 套餐，结果必须预存 300 ，东扯西扯，扯了半天才说可以申请不预存。
-我心想这下可以成功换套餐了，结果更离谱费用的又来了。换套餐必须换光猫，并且收取一次性调测费用 99 。问题是我换的新套餐带宽跟以前的一样，以前的光猫完全够用，有什么理由换光猫，就算换个光猫还要收取调测费用又是什么鬼，于是我不同意更换，客服就帮我反馈问题，现在只能等上级部门回复了。
-什么时候才能引入其它运营商打破这种垄断的局面啊。我这里只能拉电信的，估计联通，移动也是这个尿性吧。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862028"
-                        open
-                      >
-                        <summary class="article-expander__title">2022 Apple 学生返校优惠今天开始了 最高可获得$150 Apple 礼品卡</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862028">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>SuperXX: 
-相比去年，今年参加活动的机型少了不少，主要就是 macbook 送$150 礼品卡，ipad 送 $100 礼品卡。
-活动时间：20220624-20220926
-参考： https://usdeal101.com/apple-back-to-school-2022/</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;2
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862027"
-                        open
-                      >
-                        <summary class="article-expander__title">思科 Meraki 的交换机能不能买？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862027">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>emma3: 
-昨天家中 POE 交换机罢工了一次，不知道是否准备挂了，于是萌生了买只交换机的想法。
-千兆+POE+网管，买新的价钱吓人，只能买二手企业淘汰了，看到有个思科的 MS220 ，需求都满足了，价格也不贵，请问有没有坑？是否值得入手？
-因为 Meraki 系列都是有云服务的，例如无线 AP ，如果在接入网络然后被自动下发配置，那就无法用了。不知道交换机有没有这种情况？有没有用过的大佬指点一下，谢谢。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862026"
-                        open
-                      >
-                        <summary class="article-expander__title">[排版布局] 请求各位巨佬，获取到多张宽高不一的图片，如何按照以下布局？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862026">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>OkabeRintaro: 
-问题：现在是要做一个以日期为锚点的成长相册，可以从后端接口那里获得到每个日期的对应的照片，以及一些文字。
-然后，照片一天有可能拍了很多张或者只有 1 张。
-一般来讲，一天的成长相册是 1 张照片 /2 张照片，再加点文字，直接就挤满一页了
-但是有时照片有很多张，前面的图文直接布满一页，剩下的照片就要放到下一页。
-要如何实现这种情况呢？
-现在想要差不多想要有着这样布局（图床可能加载有点慢）：
-
-
- 
- 三张图，有长的也有宽的，或者全部都是宽图
- 4 张图，有长的也有宽的
-
-
-  5 、6 、7 、8...张图以此类推。。。。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862025"
-                        open
-                      >
-                        <summary class="article-expander__title">基于 PHP 开发的外卖点餐网站</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862025">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>lovezww2011: 
-介绍
-一个基于 php 的外卖订餐网站，包括前端和后台。  
-运行环境：Apache+PHP+Mysql
-源码地址
-https://github.com/geeeeeeeek/dingfanzu
-代码说明
-htaccess Rewrite 配置文件，需要放入到项目根目录
-configs.php 需要配置数据库连接信息（主机、用户名、密码），系统常量，debug 模式等
-data.sql 位于 data 目录中，是数据库备份文件，需要提前导入到 mysql 中
-sendCode.php 短信接口，需要用到 appkey 和 secret ，可到 alidayu.com 申请。
-技术架构：
-后台 PHP+Mysql 前台 jQuery 、html 、CSS 、Bootstrap
-网站结构：
-网站首页 place.html
-菜品展示页 shop.html 
-个人中心：
-我的地址；余额；代金券；订单；我的积分；设置。
-网站目录
-account 个人中心（我的地址、余额、订单、积分、设置等）
-admin 商家后台系统（完整的后台系统）
-ajax 各种前台请求接口
-configs 各种配置文件
-core 各种核心函数
-data 数据库 sql 文件
-images 网站图片资源
-lib 各种常用函数库
-scripts 各种 js 文件
-style 各种 css 文件
-界面预览
-首页
-
-点餐页面</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;2
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862024"
-                        open
-                      >
-                        <summary class="article-expander__title">软路由 Docker 上装 HomeAssistant，添加设备成功但不能控制设备，如何解决？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862024">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>zzm88104: 安装了 hacs 和 xiaomi miot auto ，成功添加了设备，但控制不了。
-软路由是 192.168.2.1,接 ac+ap 面板，家里的设备都连接 ap 面板，所以 ip 都是 192.168.0.*. 
-HA 里收到了这个通知：
-----------------------------------------------
-Some devices cannot be connected in the LAN, please check their IP and make sure they are in the same subnet as the HA.
-一些设备无法通过局域网连接，请检查它们的 IP ，并确保它们和 HA 在同一子网。
-睡房窗帘(dooya.curtain.m1): 192.168.0.9
-纱帘(dooya.curtain.m1): 192.168.0.29
-客厅窗帘(dooya.curtain.m1): 192.168.0.2
-睡房纱帘(dooya.curtain.m1): 192.168.0.38
-...</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;2
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862023"
-                        open
-                      >
-                        <summary class="article-expander__title">版上有用 thinkpad 连接 ultrafine 5k 的同学吗？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862023">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>hello2090: 
-上班必须用公司的 thinkpad p14s, spec 上说 USB-C supports up to 5120x2880@60Hz, DP mode via USB-C to DP dongle 。
-现款的 ultrafine 5k 27MD5KL-B 手册上写着支持 USB-C 输入，最高到 3840×2160 @ 60 Hz ，不知道有没有人有实际这么用过，我只要他能跑到 4k 就行。
-谢谢</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862022"
-                        open
-                      >
-                        <summary class="article-expander__title">软件工程读研有必要吗</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862022">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>tade2028:</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862020"
-                        open
-                      >
-                        <summary class="article-expander__title">有哪些国外的图床可以整个文件夹上传，也不更改原文件名的</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862020">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>rulai: 
-付费免费都可以</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862018"
-                        open
-                      >
-                        <summary class="article-expander__title">微信电脑端的内容全量同步了</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862018">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>shizhouren: 
-不知道大家发现没有
-这两天发现电脑不在线时手机上的消息都可以同步到电脑上了</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862017"
-                        open
-                      >
-                        <summary class="article-expander__title">问下大家 m1 book air 的使用感受</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862017">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>CS666: 
-准备收个二手的 m1 air 16+256 或 512 配置的,价格预算 7500 左右,
-我主要工作场景用 pd 开一个 win 虚拟机,然后跑跑程序用 jmeter 做性能测试,
-mac 上用 pycharm 编译和运行代码.写文档,wps 文档平时开 4-5 个,谷歌浏览器页签平时常驻 10-20 个,外接一个 4k 显示器一起用,不知道 m1 air 是否能顶得住,卡不卡呢?想问下大家有类似使用情况的感受,蟹蟹</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862016"
-                        open
-                      >
-                        <summary class="article-expander__title">你们的 12 代 I7I9 对 Win10 友好吗？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862016">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>flypei: 
-想上 12 代 I7 了，但是有大小核，听说对 win10 不太友好？
-我不想放弃 win10 ，准备装完机后直接迁移整个系统过去新电脑
-看过有人说关小核心，那不就等于 11 代差不多吗</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862015"
-                        open
-                      >
-                        <summary class="article-expander__title">macos 13beta 是不是暂时还不支持手动配置 ip</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862015">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>juggtt213: 
-之前没试过用命令行配置(也不知道有没有),现在这个设置界面感觉网络那个部分少了好多内容,dns 和 dhcp 整个都没了</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862013"
-                        open
-                      >
-                        <summary class="article-expander__title">超短线炒股可行吗？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862013">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>vue666: 我在想，如果我能给自己定一个目标  10 年内实现股票收益 500%，20w 都有 640w 了，我算它一年交易日 200 天  也就是说一共有 2000 个交易日
-
-500/2000 ，每天是 0.25%，在加上可能会有亏损的情况，在✘2 ，也就是每天要有 0.5 的收益率，再加上各种印花税，手续费，我在加 0.1%吧，也就是说 10 年平均每天有 0.6%的收益率就可以了，这看起来很难，  20 年 ，就是 0.3%，只要我能坚持 20 年这笔钱不做另外的消费，保持平均 0.3%的收益，那看起来好像不是特别难实现，随便买个股票，涨跌 50%的几率去赌，当然中途会有跌得很惨的情况，但是也有涨得很不错的情况，那我买指数基金，稳妥一点
-
-而且如果中途赶上一个牛市，瞬间起飞，感觉炒股难在原始资本的积累，贪心欲望，还有能不能静下心来慢慢赚钱，不去消费，控制欲望</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="862012"
-                        open
-                      >
-                        <summary class="article-expander__title">老美那边已经开始返校活动了</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/862012">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>jlak: 
-买新电脑不送耳机反送 150 刀的礼品卡，新发布的都参加
-对我来说更好了，礼品卡可以买任意苹果东西
-包括耳机还有的找
-还好不是软件商店礼品卡，不然干什么用都不知道了
-其他地区应该也快了吧</span>
+                              <span>LOVOQ: 
+RT 发现本地 DTMB 信号少了一半的频道，重新搜索了也无济于事。不知道是哪里的问题，需要向谁反映。求教。</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;1
                                   min&hairsp;)</span>
                             </span>
@@ -1204,6 +939,201 @@ mac 上用 pycharm 编译和运行代码.写文档,wps 文档平时开 4-5 个,�
                 </section>
               </section>
             </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >iDaily 每日环球视野</button>
+                  <a class="source-heading__link" href="https://docs.rsshub.app">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://m.idai.ly/se/7e77S0"
+                        open
+                      >
+                        <summary class="article-expander__title">欧空局月球车测试</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/7e77S0">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>欧空局工程师正在埃特纳火山地区测试一辆远程遥控的交互式月球车（Interact rover），意大利西西里岛。这辆月球车配备机械爪臂、摄像头和力回馈系统，能够让遥控者感受到采集岩石的重量和物理特性，从而更精密地进行样本采集。该项目由德国航天中心设计，目标是通过远程操控的月球车和无人机实现月壤样本采集回收。摄影师：Giuseppe Di Stefano</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://m.idai.ly/se/e839IZ"
+                        open
+                      >
+                        <summary class="article-expander__title">美国推翻堕胎权判例</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/e839IZ">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>堕胎权支持者在美国最高法院前抗议示威，华盛顿特区。6月24日，美国最高法院宣布推翻1973年的「罗诉韦德案」裁决，5名保守派大法官在多数意见中指出「美国宪法并未提到堕胎，任何宪法条款都没有暗含对堕胎权的保护」。这意味着美国各州有权对堕胎权进行单独立法。当天密苏里州、阿肯色州等6个州的堕胎禁令即刻生效。美国总统 Joe Biden 发表讲话称「美国女性的健康和生命处于风险之中，这对美国来说是令人悲哀的一天」。摄影师：Anna Moneymaker</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://m.idai.ly/se/b99Zfd"
+                        open
+                      >
+                        <summary class="article-expander__title">拜登推进海上风电产业</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/b99Zfd">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>美国总统 Joe Biden 在白宫会议上展示一张风力发电涡轮机与全球地标建筑物的高度对比图，华盛顿特区。6月23日，白宫邀请地方政府、工会和企业代表讨论海上风电建设规划。Biden 宣布联邦政府将与东海岸11个州启动一个新的伙伴关系，旨在推动海上风电产业的基础建设与供应链投资，目标在2030年将海上风力发电量提升至30GW，满足1000万户家庭的电力需求，创造7.7万个工作岗位，每年吸引约120亿美元私人部门投资。摄影师：Shawn Thew</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://m.idai.ly/se/46d97R"
+                        open
+                      >
+                        <summary class="article-expander__title">古巴白犀牛繁育</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/46d97R">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>古巴国家动物园，一名饲养员正在给白犀牛喂水果，哈瓦那。6月9日，古巴动物园出生一只雄性白犀牛幼崽，初生体重为80千克，被命名为「Ale」。古巴国家动物园现有8只白犀牛，是拉丁美洲国家拥有犀牛数量最多的动物园。白犀牛主要生活在非洲中部与南部草原，受人类盗猎和栖息地减少威胁，全球现存数量仅剩约1.8万只，被列为近危物种。各地动物园正在通过人工繁育扩大犀牛种群的基因多样性以避免物种灭绝。摄影师：Yamil Lage</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://m.idai.ly/se/1941IX"
+                        open
+                      >
+                        <summary class="article-expander__title">孟加拉国严重洪灾</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/1941IX">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>孟加拉国东北部民众乘舟渡过积水区域，锡尔赫特区。6月24日，孟加拉国季节性强降雨引发的洪灾已造成73人遇难、超过450万人被困，约37.5万公顷农田遭到毁坏，公路等基础设施严重受损。锡尔赫特区是本次受灾最严重的地区，部分地区交通、电力和通讯依然处于中断状态。联合国粮食计划署警告洪灾将对孟加拉国粮食安全造成严重负面影响，该机构已提前向该国5500户家庭提供每户53美元现金汇款援助。摄影师：Monirul Alam</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://m.idai.ly/se/20d03n"
+                        open
+                      >
+                        <summary class="article-expander__title">哥伦比亚总统权力交接</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/20d03n">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>哥伦比亚总统 Ivan Duque 与新当选总统 Gustavo Petro 举行正式会晤沟通政府权力交接事宜，波哥大。6月23日，哥伦比亚国家选举委员会正式宣布左翼政治家 Gustavo Petro 在总统选举中获胜，预计于8月7日正式开启4年任期。Petro 提出的施政主张包括提高对富裕阶层的征税标准、进行土地改革、加大对医保和教育投入、加强环境保护和限制石油开采等，他还公开表示将重新开放与委内瑞拉的边境。摄影师：Colombian Presidency</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://m.idai.ly/se/82cABN"
+                        open
+                      >
+                        <summary class="article-expander__title">土耳其野生动物救助</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/82cABN">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>土耳其尤金库伊尔大学，一只失去母亲的跳鼠（Jerboa）幼崽正在接受人工照料，凡城。尤金库伊尔大学野生动物保护康复中心从2000年开始收治受伤和生病的野生动物，并将治疗康复的动物放归野外。跳鼠主要分布于北非和亚洲的干旱沙漠地带，以植物和昆虫为食，属夜行性动物，平时依靠敏锐的听力和超强的弹跳力躲避猎食者，奔跑速度可达每小时24公里。摄影师：Mesut Varol</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >小众软件</button>
+                  <a class="source-heading__link" href="https://www.appinn.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.appinn.com/?p&#x3D;42567"
+                        open
+                      >
+                        <summary class="article-expander__title">领讲台 – 无需注册、注重用户隐私的泛用型播客客户端[iPhone/Android/Web]</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.appinn.com/lingjiangtai/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://img3.appinn.net/static/wp-content/uploads/2022/06/lingjiangtai.jpgo_.jpg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>领讲台 是一款无需注册、注重用户隐私的泛用型播客客户端，拥有 iPhone、Android 客户端，以及一个 Web 客户端，所以你甚至可以无需下载任何应用就直接使用。@Appinn 在问题求助频道，</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;7
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-06-24 datetime="2022-06-24T20:00:29.000Z">2022-06-24</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-06-24 datetime="2022-06-24T20:00:29.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -1402,44 +1332,6 @@ Single Element Loaders: The Bars originally published on CSS-Tricks. You should 
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://m.idai.ly/se/6a1de7"
-                        open
-                      >
-                        <summary class="article-expander__title">LV 2023春夏男装秀</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/6a1de7">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>巴黎 2023 春夏男装周 Louis Vuitton 秀场，模特们在卢浮宫庭院展示新一季男装作品。本季时装作品由 Louis Vuitton 男装成衣工作室构想与创作，延续已故男装艺术总监 Virgil Abloh 充满想象力的设计哲学，在成衣和包袋作品中加入纸船、积木、钩针花卉等童趣元素，传递治愈、乐观、鼓舞人心的力量。时装秀结尾模特们手持巨型彩虹旗登台谢幕，再现 Virgil Abloh 首秀上的彩虹色T台场景，以此向已故艺术总监致敬并告别。摄影师：Laurent Zabulon</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;2
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://m.idai.ly/se/716w7L"
-                        open
-                      >
-                        <summary class="article-expander__title">瑞士零星级概念酒店</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/716w7L">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>瑞士概念艺术家在山林里建起一座临时营业的「零星级酒店」套房。这是瑞士概念艺术家 Frank 与 Patrik Riklin 兄弟在2016年设计的装置艺术作品，套房内仅有一张双人床、床头柜和台灯，入住者可以在露天观赏360°无遮挡风景，旨在鼓励人们对气候变化、战争、环境破坏等问题进行反思。酒店套房每晚价格约337美元，临时营业时间为7月1日至9月18日。摄影师：Jean-Christophe Bott</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -1520,120 +1412,11 @@ Single Element Loaders: The Bars originally published on CSS-Tricks. You should 
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-06-23 datetime="2022-06-23T11:59:00.000Z">2022-06-23</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-06-23 datetime="2022-06-23T11:59:00.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-06-23 datetime="2022-06-23T11:30:00.000Z">2022-06-23</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-06-23 datetime="2022-06-23T11:30:00.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >iDaily 每日环球视野</button>
-                  <a class="source-heading__link" href="https://docs.rsshub.app">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://m.idai.ly/se/d7aaa9"
-                        open
-                      >
-                        <summary class="article-expander__title">莫奈竖版睡莲拍卖</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/d7aaa9">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>一幅法国印象派画家 Claude Monet 1907年油画《睡莲》正在拍卖前预展，英国伦敦。这是莫奈创作的15幅竖版《睡莲》之一，画家以充满张力的竖构图呈现午后睡莲池的景色，多层叠色描摹出池塘水面不断变幻的光影并营造景深，睡莲荷叶使用厚涂法进行凸显。这幅标志性画作将于6月28日在伦敦拍卖，估价2000万至3000万英镑。摄影师：Wiktor Szymanowicz</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://m.idai.ly/se/db26tt"
-                        open
-                      >
-                        <summary class="article-expander__title">拜登呼吁停征汽油税</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/db26tt">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>美国总统 Joe Biden 针对高油价问题发表演讲，华盛顿白宫。6月22日，Biden 呼吁美国国会批准一项未来3个月暂停征收汽油税的临时法案，预计每加仑汽油价格将因此下降0.184美元。Biden 宣称高油价是美国对抗俄罗斯、捍卫世界自由而付出的代价。他强调美国每天生产约1200万桶原油，但是受限于炼油厂产能不足而无法提供足够成品汽油，认为美国炼油企业应扩大生产以帮助降低油价。摄影师：Jim Watson</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://m.idai.ly/se/cdc4zo"
-                        open
-                      >
-                        <summary class="article-expander__title">2022金砖国家工商论坛</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/cdc4zo">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>中国国家主席习近平在2022年金砖国家工商论坛开幕式上发表主旨演讲，北京。6月22日，习近平指出金砖合作机制是新兴市场和发展中国家合作的重要平台，他强调经济全球化是生产力发展的客观要求和不可阻挡的历史潮流，各国需要共同维护世界和平稳定、促进全球可持续发展、实现合作共赢和扩大开放融合。2022年金砖国家工商论坛以线上线下相结合方式举行，金砖国家经贸部长、驻华使节及工商界代表等共约1000人出席。摄影师：Yin Bogu</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://m.idai.ly/se/60ebSy"
-                        open
-                      >
-                        <summary class="article-expander__title">阿富汗20年最严重地震</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/60ebSy">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>阿富汗东部帕克蒂卡省发生6.1级强地震，当地村庄在地震中严重受损。本次地震发生于6月22日凌晨1点24分，是阿富汗20年来伤亡最严重的地震，已造成至少1100人遇难、1650人受伤，仍有数量不明的当地居民受困废墟中。塔利班临时政府宣布向灾区拨款1亿阿富汗尼（约合112万美元）紧急资金，并请求国际社会援助救灾。中国外交部宣布中方将根据阿富汗方面的需求提供紧急人道主义援助。摄影师：Bakhtar</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://m.idai.ly/se/2f3CHM"
-                        open
-                      >
-                        <summary class="article-expander__title">印尼经济稳定回升</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/2f3CHM">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>印尼民众在雅加达市中心的街道人行桥上穿行。6月22日，世界银行发布印度尼西亚经济展望报告，预测2022年印尼经济增速为4.6%至5.1%，主要增长因素包括国内需求回暖、消费者信心和贸易环境改善。世行报告指出，印尼政府的短期宏观经济政策已成功缓解疫情影响，但是仍面临全球经济下滑、大宗商品价格上涨和外部融资减少等风险。报告预测印尼2022年通货膨胀率将升至3.6%，摄影师：Bagus Indahono</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;2
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -1692,7 +1475,7 @@ Single Element Loaders: The Bars originally published on CSS-Tricks. You should 
                               <img src="https://img3.appinn.net/static/wp-content/uploads/2022/06/scrcpy-remote.jpgo_.jpg" loading="lazy" class="media-object__media article-image" />
                             <span class="media-object__text">
                               <span>Scrcpy Remote 是一款基于 Scrcpy 的 iPhone 应用，它可以实现在 iPhone 上通过 Wi-Fi 远程控制 Android 设备。@Appinn 来自开发者 @Ethan</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                &ensp;<span class="article-reading-time">(&hairsp;9
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -2088,27 +1871,7 @@ Different Ways to Write CSS in React originally published on CSS-Tricks. You sho
                               <img src="https://img3.appinn.net/static/wp-content/uploads/2022/06/appinn-2022-06-20t135935-179.jpgo_.jpg" loading="lazy" class="media-object__media article-image" />
                             <span class="media-object__text">
                               <span>微软电脑管家是由 Microsoft 微软官方自研的一款个人电脑安全管家类软件，旨在为用户的个人电脑提供更多的专业保护，及时排查电脑隐患风险，保护你的个人电脑。 来自发现频道，开发者自荐：https:</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.appinn.com/?p&#x3D;42522"
-                        open
-                      >
-                        <summary class="article-expander__title">Telegram Premium 付费会员正式发布，$4.99/月彰显尊贵</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.appinn.com/telegram-premium/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://img3.appinn.net/static/wp-content/uploads/2022/06/telegram-premium.jpgo_.jpg" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>Telegram Premium 付费会员是 TG 在赚钱道路上的第二步，目前已在最新版本客户端中正式发布，包括会员专属星标、4GB 大文件上传、专属贴纸、无广告等 10 多个功能，第一时间开通会员，</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                &ensp;<span class="article-reading-time">(&hairsp;7
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -3358,95 +3121,12 @@ Just How Long Should Alt Text Be? originally published on CSS-Tricks. You should
                 </section>
               </section>
             </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >Articles on Smashing Magazine — For Web Designers And Developers</button>
-                  <a class="source-heading__link" href="https://www.smashingmagazine.com/">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://smashingmagazine.com/2022/05/3dicons-open-source-library-case-study-download/"
-                        open
-                      >
-                        <summary class="article-expander__title">Open-Source 3dicons Library: Case Study And Free Downloads</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://smashingmagazine.com/2022/05/3dicons-open-source-library-case-study-download/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/af9b67f7-433c-421a-8fe6-14878b3f884d/3dicons-open-source-library-case-study-download.jpg" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>In this article, Vijay describes his learning experiences during the design stages of creating his 3dicons image library (a free library for product screens, social media posts and marketing campaigns), which you can download and use for free.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;17
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-        </ul>
-      </section>
-      <section class="daily-content js-toggle-accordions-scope">
-        <h2 class="daily-heading">
-          <button
-            class="daily-heading-toggle"
-            data-action="toggle-accordions"
-            title="Click to toggle the day, Ctrl + click to toggle all."
-          >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-05-26 datetime="2022-05-26T18:13:28.000Z">2022-05-26</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-05-26 datetime="2022-05-26T18:13:28.000Z"></time>
-          </button>
-        </h2>
-        <ul class="sources card">
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >CSS-Tricks</button>
-                  <a class="source-heading__link" href="https://css-tricks.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://css-tricks.com/?p&#x3D;366107"
-                        open
-                      >
-                        <summary class="article-expander__title">Beautify GitHub Profile</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://css-tricks.com/beautify-github-profile/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://css-tricks.com/wp-json/social-image-generator/v1/image/366107" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>It wasn’t long ago that Nick Sypteras showed us how to make custom badges for a GitHub repo. Well, Reza Shakeri put Beautify GitHub Profile together and it’s a huuuuuuge repo of different badges that pulls lots of examples …
-Beautify GitHub Profile originally published on CSS-Tricks. You should get the newsletter.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;3
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
         </ul>
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/zhanglun/newsnips/actions/runs/2558897782">
-        <time id="build-timestamp" datetime="2022-06-25T00:39:24.715Z">2022-06-25T00:39:24.715Z</time>
+      <a class="footer-link" href="https://github.com/zhanglun/newsnips/actions/runs/2562473697">
+        <time id="build-timestamp" datetime="2022-06-26T00:43:56.152Z">2022-06-26T00:43:56.152Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

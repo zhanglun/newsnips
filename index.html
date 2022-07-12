@@ -22,8 +22,8 @@
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-07-11 datetime="2022-07-11T00:23:06.000Z">2022-07-11</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-07-11 datetime="2022-07-11T00:23:06.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-07-12 datetime="2022-07-12T00:20:20.000Z">2022-07-12</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-07-12 datetime="2022-07-12T00:20:20.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -42,59 +42,42 @@
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="865331"
+                        data-accordion-key="865562"
                         open
                       >
-                        <summary class="article-expander__title">Go File: 基于 Go 的文件分享工具</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865331">
+                        <summary class="article-expander__title">微信 7.x.x 版本可「快捷指令」一键跳转健康码</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865562">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>JusticeIsHere: 
-概述
-基于 Go 的文件分享工具，仅单可执行文件，开箱即用，内置图床和视频播放页面。
-项目地址： https://github.com/songquanpeng/go-file
-在线演示： https://go-file.herokuapp.com/ (默认用户名 admin，密码 123456)
-特点
-无需配置环境，仅单个可执行文件，直接双击即可开始使用。
-自动打开浏览器，分享文件快人一步。
-提供二维码，可供移动端扫描下载文件，告别手动输入链接。
-支持分享本地文件夹。
-适配移动端。
-内置图床，支持直接粘贴上传图片，提供图片上传 API 。
-内置视频播放页面，可用于在其他设备上在线博客自己电脑上的视频，轻松跨设备在线看视频。
-支持拖拽上传，拷贝上传。
-允许对不同类型的用户设置文件访问权限限制。
-访问频率限制。
-使用方法
-v0.3.3 以及之前版本的使用方法请点击此处。
-直接双击即可使用，默认端口为 3000，程序在第一次启动时会自动创建管理员账户，用户名为 admin，密码为 password，记得登录后到 管理页面 下的 账户管理 标签页中更改你的用户密码。
-之后程序将自动为你打开浏览器，点击右上角的 上传 按钮即可上传，支持拖放上传，支持同时上传多个文件。
-进阶使用：
-如果要修改端口，动时请指定 port 参数：./go-file.exe --port 80。
-如果需要分享文件夹，启动时请指定 path 参数：./go-file.exe --path ./this/is/a/path，之后点击导航栏上的 文件 即可。
-如果需要分享本地的视频资源，加 video 参数：./go-file.exe --video ./this/is/a/path，之后点击导航栏上的 视频 即可。
-如果需要启用访问速率控制，需要在启动前设置 Redis 连接字符串环境变量 REDIS_CONN_STRING。 
-如果你不知道怎么加参数：
-打开 go-file 所在的文件夹，
-按住 shift 并右键空白区域，
-选择在此处打开 PowerShell（如果是 Windows 11 的话则需要先点击显示更多选项），
-在打开的终端中输入：./go-file --port 80 --video ./path/to/video
-注意：
-如果主机有多个 ip 地址，请使用 host 参数指定一个其他设备可访问的 ip 地址，如：go-file.exe --host xxx.xxx.xxx.xxx，否则二维码将生成错误。
-默认配置下访客可以上传和下载文件，可在 管理 -&gt; 系统设置 中修改权限配置。
-如果是公网部署，务必记得第一时间更改默认密码！
-演示
-在线试用（用户名为 admin，密码为 password）： https://go-file.herokuapp.com/
-
-
-
-
-
-
-其他
-项目地址： https://github.com/songquanpeng/go-file
-在线演示： https://go-file.herokuapp.com/ (默认用户名 admin，密码 123456)</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;2
+                              <span>airbotgo: iOS 系统用户。
+每天无数次要打开健康码，差不多搞疯了。健康码是本省自己开发的。
+（最新的健康码加了动态效果，所以截图不好使了）
+微信的健康码「快捷指令」早已经被封了，后来下载了几个通过 App 跳转的，基本上用两三天就又被封。
+支付宝虽然可以添加快捷方式到桌面，但是每次要多点两次，用起来也不算方便。
+抓狂……
+今天无意之中发现旧版本的微信没有封锁「快捷指令」的一键跳转，添加到负一屏，非常好用。还可以通过 Siri 呼叫「快捷指令」名称使用。
+目前测试 iOS 微信 7.x.x 版本没有被腾讯屏蔽跳转。
+我不明白，如此高频操作，对每个人又是刚需的功能，腾讯为什么要想方设法的屏蔽，既然不希望大家用，那干脆把所有的健康码小程序干掉不就得了，阿里巴巴被约谈被罚款，腾讯真的欠这一次。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865561"
+                        open
+                      >
+                        <summary class="article-expander__title">iOS/iPadOS 16 pb1 发布了</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865561">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>YoungKing6: 准备先拿 iPad 尝一尝</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -113,8 +96,8 @@ v0.3.3 以及之前版本的使用方法请点击此处。
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-07-10 datetime="2022-07-10T23:58:32.000Z">2022-07-10</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-07-10 datetime="2022-07-10T23:58:32.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-07-11 datetime="2022-07-11T22:08:03.000Z">2022-07-11</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-07-11 datetime="2022-07-11T22:08:03.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -133,27 +116,15 @@ v0.3.3 以及之前版本的使用方法请点击此处。
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="865330"
+                        data-accordion-key="865558"
                         open
                       >
-                        <summary class="article-expander__title">关于自己对 Go web 的包结构理解</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865330">
+                        <summary class="article-expander__title">求推荐：手机（数码）回收的网站程序</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865558">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Cola98: 
-不同语言的项目结构都不太一样的，就像 MVC 并不是 Java 的专属，但是现在提到 MVC 大家都会提到 Java ，从而到 spring/spring Boot 。
-这里推荐一个项目结构，它并不是 golang 官方的标准，再加上阿里的 Java 开发手册，如下所示:
-cmd: 主要是各种功能的入口，简单来说像 main.go 就可以放到这里。
-db: 数据库相关的配置。
-dao: 和数据库交互的都可以放在这里，我把 CRUD 之类的都放在这里了。
-model: 和数据库表对应。
-service: 具体逻辑实现。
-dto: 放一些和前端交互的参数
-controller: 做一些校验。
-pkg: 外部应用程序可以使用的库代码，其他项目会导入这些库。
-vendor: 这里就根据版本来了，一些老的 golang 项目还会有，存放一些第三方库，到后来 go mod 的出现这个就不需要有了。
-像 internal 这种就可以根据自己的需求来，我是参考了阿里的 Java 开发手册还有之前在上海实习的时候的项目结构。
-这是我写的博客中一部分，附上博客链接( https://shuimo03.github.io/)</span>
+                              <span>aayyooh2: 
+ 请问下：有没有爱回收这样的网站源码？</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;1
                                   min&hairsp;)</span>
                             </span>
@@ -165,15 +136,19 @@ vendor: 这里就根据版本来了，一些老的 golang 项目还会有，存�
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="865329"
+                        data-accordion-key="865556"
                         open
                       >
-                        <summary class="article-expander__title">软工类工作，面试考察底层知识是否合理？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865329">
+                        <summary class="article-expander__title">c++20 coroutine 实现的 generator 可以被优化成常数</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865556">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Richard14: 
-最近感觉首页很多在晒面试题的，想到一个问题是做互联网业务上与底层完全无关，但如果面试考察底层的话，（比如考察计算机系统、数电等知识），合理吗？</span>
+                              <span>GeruzoniAnsasu: 
+RT: https://godbolt.org/z/co9qTq1GP
+代码不是我写的，是更早的 https://godbolt.org/g/26viuZ
+ref:
+cppcon2016: c++ coroutines under the covers
+cppcon2018: nano-coroutines</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;1
                                   min&hairsp;)</span>
                             </span>
@@ -185,198 +160,22 @@ vendor: 这里就根据版本来了，一些老的 golang 项目还会有，存�
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="865328"
+                        data-accordion-key="865553"
                         open
                       >
-                        <summary class="article-expander__title">为什么那么多人教张小龙做微信?因为微信不够高效无法满足用户需求浪费了用户大量宝贵的时间?比如群二维码非要设置 200 人后必须人工拉进群,拉群的人的几十上百个...</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865328">
+                        <summary class="article-expander__title">基于 rsshub 搞了个抖音的 plmm 频道，欢迎关注</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865553">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>technet:</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;2
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="865326"
-                        open
-                      >
-                        <summary class="article-expander__title">淘宝网页版为什么中文使用冬青黑体</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865326">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>noble4cc: 冬青黑体不免费 windows 没有预装 导致网页版是现在显示宋体。。。 为什么使用一个冷门字体 不使用微软雅黑</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="865325"
-                        open
-                      >
-                        <summary class="article-expander__title">play 版支付宝没有 NFC?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865325">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>q15673355: 
-以前的支付宝是有 NFC 的，还用它给公交卡充值了，今天发现现在的支付宝找不到 NFC 的开关了。是给取消了吗？</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="865323"
-                        open
-                      >
-                        <summary class="article-expander__title">如何快速拍出高大上的照片/自拍？摄影和后期怎么做？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865323">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>wty95: 1.如题，俗称糖水片，最近想多记录自己和生活，但是直男瞎拍 都是黑照，有没有 小白入门百科全书的 up 主，类似健身 up 卓叔增重那种幼儿园一样细致耐心的？
-2.如果普通摄影师的水平是 100 分，我只想达到 60 分，没想整的很专业，当职业干，纯记录生活。
-3.设备只用手机够么？毕竟是爱好者，上来就 cannon,fuji,Nikon 是不是有点过了？</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="865322"
-                        open
-                      >
-                        <summary class="article-expander__title">bj 地区对 pcdn 的管控情况</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865322">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>keshawnhsieh: 
-坐标 bj ，目前挂 x 心云，bj 电信 4 拨之前一直稳定在叠加 100Mbps 上行，x 心云高峰期也能接近跑满，每天收益还不错，但是最近开始发现 4 拨叠加后 x 心云高峰期只能跑到 50Mbps 上行，连接数也只有之前的一半，但测速发现峰值还是可以到 100Mbps 的，不知道是不是运营商做了什么限制还是 x 心云自己的调度机制原因。
-同时想了解 bj 地区其他运营商对 pcdn 的管控力度，是否会遇到查水表。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="865319"
-                        open
-                      >
-                        <summary class="article-expander__title">关于 veracrypt 和 ntfs 的疑问,预分配空间问题?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865319">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>7RTDKSAK: 
-如题,使用 veracrypt 的虚拟加密卷,格式化为 ntfs  
-如果我想向卷内写入 100GiB 数据,显然在创建卷的时候不能只预分配 100GiB 的空间,因为 ntfs 本身的元数据还要占用一部分卷空间  
-那么我应该如何计算预分配空间的大小,保证下一步能够写入 100GiB 的数据呢?  
-更进一步,其它常用文件系统又该如何计算呢?</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="865318"
-                        open
-                      >
-                        <summary class="article-expander__title">想问下前端业务做多了，怎么提升自己技术</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865318">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>Xavier08:</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="865315"
-                        open
-                      >
-                        <summary class="article-expander__title">纯粹得让人心醉的纪录片《蒙古草原，天气晴》豆瓣 9.7</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865315">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>baox2: 「你好吗？我们都很好。有没有安然返回日本呢？我们今年冬天过得很开心。天气虽然冷，你的黑白花马却安然度过。我们还没找到失窃的马。普洁今年要上学了，她对你念念不忘。又是新的一年，祝你和你的亲友都健康快乐。请找人翻译成日文。下次再见咯！珍重。」</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="865314"
-                        open
-                      >
-                        <summary class="article-expander__title">索尼电视上的 Netflix 经常连不上或者显示使用了代理错误</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865314">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>ysn2233: 
-但是同环境下我的 PC 或者 XSX 上的 Netflix 从来没有报过错，看 Openclash 的连接也看不出什么问题，安卓 TV 的 Netflix APP 和其他终端上有什么区别么？</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="865313"
-                        open
-                      >
-                        <summary class="article-expander__title">请问 VS Code 深色主题背景色如何设置为纯色？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865313">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>panamera: 
-很长时间没用 VS Code ，今天打开升了个级后发现所有的深色主题背景色都变成下图这样了。Line number 和 Editor 都没对齐，这是个什么 feature ？我记得以前是纯色的？
+                              <span>Jackhuang: 
+今天看到大家在讨论 tg 的使用。
+感觉 channel 很好用，最近用来看 plmm :) 。
+抖音早期看 plmm 挺好，后来开始范社会化（老是推送社会新闻，我就想看看 plmm 不行吗？）
+最近甚至取消了看 plmm 的推送选项，实在不能忍了。
+基于 rsshub 搞了一个 channel ，基本替代了抖音的功能。:) 
+每天都要看妞，没有别的想法，只是为了心情愉悦～
 
-只在大屏幕上面，13&quot; 笔记本上无此现象。</span>
+https://t.me/look_at_girls_for_health</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;1
                                   min&hairsp;)</span>
                             </span>
@@ -388,52 +187,14 @@ vendor: 这里就根据版本来了，一些老的 golang 项目还会有，存�
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="865312"
+                        data-accordion-key="865552"
                         open
                       >
-                        <summary class="article-expander__title">Electron 的打包体积有点大</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865312">
+                        <summary class="article-expander__title">5 年 Android 求个上海,深圳,杭州 等地 965 的岗位内推</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865552">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>fstar: 
-最近用 Electron 和 CreateReactApp 写个小工具，打包后发现体积好大。
-用的苹果 M1 。
-生成的安装包 118 MB ，安装后的应用程序大小为 390 MB 。
-另外，Typora 应用程序大小才 34 MB ，我一度以为它是用 Electron 做的呢，毕竟支持自定义 CSS 。看来没这么简单。
-看看怎么优化一下。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;2
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="865311"
-                        open
-                      >
-                        <summary class="article-expander__title">PreSonus Eris E3.5 音箱使用咨询</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865311">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>howe670: 
-背景
-之前用显示器音箱播放声音，感觉听音乐和看电影时，音响效果明显比耳机差（ QC35 插电脑）。于是，想着买一对音箱，用于改善音质，由于预算不高（低于一千），且非忠实音箱爱好者，所以挑了网上推荐的 PreSonus Eris E3.5。当然，买之前也了解过，监听音箱跟普通的音箱不一样，对音乐的修饰“更少更原汁原味”，也抱着听听看的想法。现在，感觉使用这对音箱，并没有太理想的感受，所以，请教下各位大佬，尤其是音箱忠实爱好者，如何提高使用体验？
-目前的感受
-1 、低音听着有点恶心
-刚用 E3.5 的时候，就感觉明显有些恶心头晕。看网上说可能跟低音有关，把均衡器 500Hz 及以下的频率的强度调得比较低了，目前总体感受好一些了，但听一两小时以上时，仍感觉有点不适。
-我的音箱摆放方式：音箱左右放置于显示器旁，间隔 80cm ，下面放着减震海绵。人坐在电脑前半米。
-2 、音乐中的人声听着有点小，听起来效果还没有显示器音响好 : (
-3 、看电影时，人声、背景音乐和音效，搭配起来有点奇怪
-正面感受：
-1 、监听音箱确实感觉，乐曲中各部分更清晰。
-比如，周杰伦的《听妈妈的话》，0:52 ~ 1:30 的部分，第一次发现还有很低沉的和声。我带耳机直插电脑，也听不见这个，但直接用 E3.5 或者耳机插 E3.5 听，能听到这个和声。
-请教一下，
-是我用监听音箱听音乐和看电影，用途不太合适吗？还是说没有调节好音箱设置？
-低音恶心的问题，有办法再优化一下吗？</span>
+                              <span>AtlantisZ: 有合适的岗位大佬,欢迎推荐,字节 小红书 蔚来 soul 这几家有渠道了</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;1
                                   min&hairsp;)</span>
                             </span>
@@ -445,43 +206,17 @@ vendor: 这里就根据版本来了，一些老的 golang 项目还会有，存�
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="865309"
+                        data-accordion-key="865551"
                         open
                       >
-                        <summary class="article-expander__title">吐槽：到底什么是“优雅”？ PHP 的新名词真是含义莫名……</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865309">
+                        <summary class="article-expander__title">分布式环境下，不借助任何第三方存储的前提下，是不是必须要自己实现一个“存储”</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865551">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>uiosun: 
-本周工作日的某一天，
-翻开一篇博客园文章：“……这样写更优雅……”、
-打开一篇 Laravel 某个特性的介绍：“……这个框架……以优雅著称……”。
-优雅到底是什么？小布尔乔亚？是我漏了什么吗？
-去逛 Stackoverflow 、去大佬们的独立博客、去 Github 讨论问题，大家都直接讲“稳定”、“安全”、“性能”、“可读性”、“模块化”……
-我记得，Yii2 那时的 Slogan 是 “安全、稳定、高效”，现在竟然给我一种“都在吹优雅”的感觉。
-（ Ps：上一次给我留下印象的“优雅”，还是小红书里的名媛）</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;2
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="865308"
-                        open
-                      >
-                        <summary class="article-expander__title">iPhone 也偷偷录音石锤了…</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865308">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>linhongye: 
-iPhone 一直一副白莲花样子… 每次有软件使用话筒，他都会显示一个点告诉你话筒被调用了…
-但是今天，我连着蓝牙音箱，有人发微信信息给我，我打开手机，然后蓝牙音箱开始发出有延迟的现场录音，延迟大概 500ms 左右，而且右上角没有那个黄点…
-我的 hey siri 也没开启… 反正应该就 bug 暴露了些什么…</span>
+                              <span>dzdh: 
+不借助 redis 、mysql 等第三方存储。
+想维护一个集群的当前连接，是不是只能靠 raft 等机制实现自己的一个存储，而且一定是依靠主从的？
+比如一个 websocket 集群环境。我想知道当前整个集群中一共有多少连接活跃和连接详情（假设是 map[uid:string]server-ip ）而不借助第三方存储（比如 redis 计数）是不是只能自己把每个节点的连接信息上报到当前集群的 leader 中（所谓 metadata ）同时所有节点除了维护自身连接外，同样也接受备份存储。</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;1
                                   min&hairsp;)</span>
                             </span>
@@ -493,18 +228,17 @@ iPhone 一直一副白莲花样子… 每次有软件使用话筒，他都会显
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="865307"
+                        data-accordion-key="865550"
                         open
                       >
-                        <summary class="article-expander__title">Spek-X 频谱仪 Apple Silicon 原生可用了🎉</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865307">
+                        <summary class="article-expander__title">腾讯 QQ 与 iOS 16 全新 Lockdown Mode 不兼容</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865550">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>mikewang: 
-Spek-X
-https://github.com/MikeWang000000/spek-X/
-Spek-X 可以用于看频谱图识别真假无损，是否是由 mp3 转回的 flac ，或者识别升频的假 Hi-Res 等等。
-Fork 自 Spek，看起来这个仓库有好几年没有维护了。我对它做了苹果硅的移植，构建了 Windows on Arm 的原生程序，并且修了一些老 bug 。</span>
+                              <span>RiverYKB: 
+启用 iOS 16 Beta 3 上的 Lockdown Mode 后，打开 QQ ，进入好友动态，App 会直接闪退。
+使用 QQ 内建浏览器打开任意网页也会有同样现象。
+目前没有任何解决办法。本来 iOS 的 Lockdown Mode 可以针对 App 做单独的开关，然而进入设置发现 QQ 并没有出现在列表中，即 iOS 不认为 Lockdown Mode 对 QQ 有影响。</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;1
                                   min&hairsp;)</span>
                             </span>
@@ -516,231 +250,16 @@ Fork 自 Spek，看起来这个仓库有好几年没有维护了。我对它做�
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="865306"
+                        data-accordion-key="865547"
                         open
                       >
-                        <summary class="article-expander__title">账户验证真的上头</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865306">
+                        <summary class="article-expander__title">Rust 前端被 GCC 接受</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865547">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>v2tudnew: 
-已经设置了 TOTP ，就因为安卓备用机登录了账户，死活必须让验证（那你还弹出 TOTP 让我验证干叼），都关机半月了，本机也没暂停过使用服务，就这么智障？？都能和国内大厂一拼了。
-如果 TOTP 不能作为验证手段，那就关了吧。
-而且开机的 IOS 就这么视而不见？？</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;2
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="865305"
-                        open
-                      >
-                        <summary class="article-expander__title">macOS 的快捷指令有啥比较亮眼的用法？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865305">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>lovepplforever:</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="865303"
-                        open
-                      >
-                        <summary class="article-expander__title">睡觉质量</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865303">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>fy1206: 
-最近睡觉质量不是很好，睡觉经常做梦，每天差不多 12 点就睡了，第二天起来感觉精气神不好。自己压力也没有大，自己也尝试过调整，但是没有好转。
-大家有同样的状况嘛，是怎么解决的...</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="865302"
-                        open
-                      >
-                        <summary class="article-expander__title">北京发郊区旅游券啦，只能周日到周四使用</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865302">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>461da73c: 
-这是什么操作？
-民宿很多都是 1000+，2000+ 的，太 6 了。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="865300"
-                        open
-                      >
-                        <summary class="article-expander__title">夏天室外用手机烫的吓人怎么办</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865300">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>pista: 中午出去吃饭，路上看两眼都烫得吓人，放兜里还怕炸了，可那却是唯一降温的办法？不知道有没有别的方案，搞个黑域啥的会好吗？</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;2
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="865298"
-                        open
-                      >
-                        <summary class="article-expander__title">不用注册表怎么添加 windows 右键菜单的选项?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865298">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>jsjcjsjc: 
-我发现 shareX 操作的时候是不需要 admin 权限的~</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="865297"
-                        open
-                      >
-                        <summary class="article-expander__title">B 站 [本弹幕用于增加热度]</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865297">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>luohechen: 
-最近 B 站看视频的时候莫名其妙多了巨多这种弹幕。习惯性会漏半屏弹幕出来观看视频，开一个热榜视频直接就被这种弹幕刷屏了，观看体验极差。最近是发生了啥</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="865295"
-                        open
-                      >
-                        <summary class="article-expander__title">网易云音乐账号突然被封禁。。</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865295">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>ArianX: 
-没有任何通知，突然任何途径都登陆不了。
-七年用户，还剩一年 vip ，最近唯一的发言是昨天在梁静茹的歌里复读了一句歌名。。😰</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;2
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="865294"
-                        open
-                      >
-                        <summary class="article-expander__title">安徽电信 199 老套餐 500M，可以免费升级 1000M 了</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865294">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>wizzer: 免费升级，上门更换设备。需签 2 年在网协议（老套路了）。
-ps：老套餐含 4 张副卡、2iTv  + 第二个宽带、1iTV 。</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="865292"
-                        open
-                      >
-                        <summary class="article-expander__title">广东电信游戏宽带问题咨询</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865292">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>yfqh: 
-广东电信还可以办理游戏宽带吗？我咨询客服，客服说办理不了了。还有想问一下，这个宽带是不是接入了 CN2 网络？</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="865291"
-                        open
-                      >
-                        <summary class="article-expander__title">trzsz.js 发布了新版本，浏览器和 tabby 都支持拖目录直接上传了。</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865291">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>LonnyWong: 
-trzsz.js 项目地址： https://github.com/trzsz/trzsz.js
-在浏览器中使用以下代码，即可实现拖文件和目录上传。
-terminalHtmlElement.addEventListener(&quot;dragover&quot;, (event) &#x3D;&gt; event.preventDefault());
-terminalHtmlElement.addEventListener(&quot;drop&quot;, (event) &#x3D;&gt; {
-  event.preventDefault();
-  trzszFilter
-    .uploadFiles(event.dataTransfer.items)
-    .then(() &#x3D;&gt; console.log(&quot;upload success&quot;))
-    .catch((err) &#x3D;&gt; console.log(err));
-});
+                              <span>hsfzxjy: https://gcc.gnu.org/pipermail/gcc/2022-July/239057.html
 
-需要在服务器上安装 trzsz 或 trzsz-go ，将 trz 程序放到某个 PATH 路径下即可。
-tabby 终端安装一个插件就可以用了（需要在配置中启用拖文件和目录的功能）。
-插件项目地址： https://github.com/trzsz/tabby-trzsz</span>
+HN: https://news.ycombinator.com/item?id&#x3D;32057116</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;1
                                   min&hairsp;)</span>
                             </span>
@@ -752,15 +271,20 @@ tabby 终端安装一个插件就可以用了（需要在配置中启用拖文�
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="865290"
+                        data-accordion-key="865546"
                         open
                       >
-                        <summary class="article-expander__title">macOS Monterey 12.5 访达边栏中英文混杂</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865290">
+                        <summary class="article-expander__title">用 Rust 写了一个 Dokcer/OCI 打包构建工具</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865546">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>Lufs: 
-之前装过一次虚拟机，然后「下载」文件夹在侧栏变成了 &quot;Downloads&quot;，有什么办法弄回原来那样吗？</span>
+                              <span>jelipo: 
+为了练手 Rust ，也为了加深 容器 Image 底层 的了解，写了这个工具。
+在 Docker 和 Containerd 试了都可以正常使用。
+
+
+https://github.com/jelipo/ocipack-rs
+PS: Rust 写的不多，轻喷</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;1
                                   min&hairsp;)</span>
                             </span>
@@ -772,14 +296,17 @@ tabby 终端安装一个插件就可以用了（需要在配置中启用拖文�
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="865289"
+                        data-accordion-key="865544"
                         open
                       >
-                        <summary class="article-expander__title">北京有人少点的一日游地点吗</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865289">
+                        <summary class="article-expander__title">我开发收费程序/插件，用到大公司 API，图标用他们的算侵权吗？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865544">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>vanxx: 坐标海淀，宅家太久了想找个地方自己过去拍拍照，自然的山水或者其他好看的地方都可以，博物馆之类的就算了，感想各位</span>
+                              <span>Felldeadbird: 
+例如，我用到微信、支付、百度这些企业 API ，我二次封装成一套成品程序或者插件。
+为了宣传作用，我会用到他们的图标，进行简单的布局。例如一个图标 环形包含微信、支付宝等等图标。
+不知道在这个过程，我会不会侵权呢？如果侵权的话，我自己设计一套类似这些企业的图标，不也是侵权吗？毕竟我的目的是强调，我整合了他们的 API （ API 的费用不是支付给我，而是目标公司，我只是卖代码）。</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;1
                                   min&hairsp;)</span>
                             </span>
@@ -791,19 +318,15 @@ tabby 终端安装一个插件就可以用了（需要在配置中启用拖文�
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="865288"
+                        data-accordion-key="865543"
                         open
                       >
-                        <summary class="article-expander__title">广州 100 兆光纤转让，有人需要吗？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865288">
+                        <summary class="article-expander__title">苹果 Apple 的 cdn 是抽风了吗</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865543">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>txwd: 
-1 、下行 100 兆，上行 20 兆。纯光纤，没有手机套餐。
-2 、刚安装好的，本月按天付费（ 100 元 /31 天），包年从 8 月 1 号开始到 2023 年 8 月 31 号。
-3 、需要双方到营业厅办理过户手续，本人在天河。
-4 、价格方便，我是 1199 元装好的，暂标 700 元出吧，有想法可再聊。过户后你报装应该要 200 元左右的费用哦。
-5 、因报装前没有充分征得房东的意见，所以...</span>
+                              <span>echooo0: 
+美区 id ，登录 App store 应用商店 ，提示 验证失败，无法连接服务器 ，电信的网络连不上，换移动的网络可以</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;1
                                   min&hairsp;)</span>
                             </span>
@@ -815,36 +338,17 @@ tabby 终端安装一个插件就可以用了（需要在配置中启用拖文�
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="865285"
+                        data-accordion-key="865542"
                         open
                       >
-                        <summary class="article-expander__title">如何获取设备的名字</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865285">
+                        <summary class="article-expander__title">电脑蓝屏和死机问题能不能根治？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865542">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>cutepig: 如何获取设备的名字
-我发现有些设备，比如小米 iot 设备，在路由器下面能显示出名字，但是用命令行不能获取名字
-比如下面 192.168.1.50 是电脑，能获取到名字
-但是 192.168.1.120 是小米盒子，就不行
-➜  ~ nbtscan 192.168.1.50
-Doing NBT name scan for addresses from 192.168.1.50
-IP address       NetBIOS Name     Server    User             MAC address
-------------------------------------------------------------------------------
-192.168.1.50     DESKTOP-CM4NK5L            08:1f:71:34:87:bc
-➜  ~ nbtscan 192.168.1.120
-Doing NBT name scan for addresses from 192.168.1.120
-IP address       NetBIOS Name     Server    User             MAC address
-------------------------------------------------------------------------------
-➜  ~ nmblookup -A 192.168.1.50
-Looking up status of 192.168.1.50
-        DESKTOP-CM4NK5L  -         M 
-        DESKTOP-CM4NK5L  -         M 
-        WORKGROUP        -  M 
-        WORKGROUP        -  M 
-        MAC Address &#x3D; 08-1F-71-34-87-BC
-➜  ~ nmblookup -A 192.168.1.120
-Looking up status of 192.168.1.120
-No reply from 192.168.1.120</span>
+                              <span>dregode: 
+买了一年的 r9000p 前段时间突然频繁蓝屏，重做系统后好了一段时间，这两天文件和应用又多了起来，又开始蓝屏了
+想起小时候家里的电脑也是一直蓝屏，却没有什么好方法直接定位问题所在
+搜索之后了解到可以查看系统的蓝屏记录，好像大部分蓝屏问题都是内存导致的？彻底修复蓝屏问题就是用控制变量法更换内存吗？</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;2
                                   min&hairsp;)</span>
                             </span>
@@ -856,23 +360,390 @@ No reply from 192.168.1.120</span>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="865284"
+                        data-accordion-key="865541"
                         open
                       >
-                        <summary class="article-expander__title">请教个问题，将 excel 中的数据生成折线图并保存在 excel 中，要求手动打开 excel 时还可以操作该折线图</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865284">
+                        <summary class="article-expander__title">[深圳] 招聘 1-5 年经验的 golang 开发工程师</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865541">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>XiaoCilang: 
-各位大佬，我现在需要根据 excel 中的某些数据生成折线图，然后将折线图保存到该 sheet 中。网上的方式都是 save 到本地或 io 里，保存成一个图片，再插入到 excel 。但是我的需求是插入到 excel 的图表还能操作，比如显示数据标签，数据表。请教下该怎么操作？
-比如：
-import pandas as pd
-df &#x3D; pd.read_excel(&quot;.SS.xlsx&quot;)
-df.plot(x&#x3D;[&quot;test-row&quot;], y&#x3D;[&quot;test_col&quot;])
-plt.save(&quot;test.jpg&quot;)
-plt.close()
-worksheet &#x3D; writer.sheets[&quot;sheet&quot;]
-worksheet.insert_image(&quot;C2&quot;, r&quot;.\test.jpg&quot;)</span>
+                              <span>OswinZheng: 岗位要求：
+1 、具备至少两年以上后台开发经验，熟练理解使用基本的数据结构和算法；
+2 、有 Linux 系统编程和网络编程经验，清晰理解 TCP/IP 协议，熟练使用 Golang/C++等编程语言；
+3 、在分布式后端系统上有项目开发经验，熟悉微服务架构，熟悉一种以上 RPC 框架；
+4 、熟悉 Redis ，MYSQL ，NGINX ，Docker 等开源项目，理解其原理和使用场景的优先；
+5 、有过互联网业务系统或相关技术产品开发经验，具备分布式系统开发经验的优先。
+
+工作职责：
+1 、采用 Go 语言(Golang)开发稳定，高性能，可扩展的后端服务；
+2 、通过单元测试、自动化以及代码审查等提升优化代码质量；
+3 、持续优化和重构现有系统，高效支撑业务快速发展；
+4 、深入发掘和分析业务需求，归纳功能用例，并转化为高效的技术解决方案。
+福利：每日下午茶，全额五险一金，12%公积金。16 寸 M1 MBP  WLB  
+简历邮箱： k.jinwei.zheng@gmail.com</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865540"
+                        open
+                      >
+                        <summary class="article-expander__title">「北京、上海」小红书研发、运营、销售多岗位急聘</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865540">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>KeyFrame: 有没有需要找工作的小伙伴，可以看下小红书内推哦，岗位多多
+15.5 薪；大小周，周六双倍；免费三餐。
+内推链接  https://pegasus.xiaohongshu.com/recommend/job-list/XHSTOKEN-LzB5S01pc1hLK2dQRGxzb2pVN3k5dDN0amhtS1dqOEFQdDdFTE5uZkdnbz0&#x3D; 
+投递后可以查进展😄</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865539"
+                        open
+                      >
+                        <summary class="article-expander__title">mac kindle 同步</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865539">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>foxtalk: 
+最近发现 kindle 已经不支持 mac kindle 同步内容了，哎</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865538"
+                        open
+                      >
+                        <summary class="article-expander__title">有偿请教关于 smpp 的问题</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865538">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>hcheng: 最近对接 smpp 遇到了一些问题. 希望有位大佬能指点指点. 
+我的 V: amFwbGIwMDA&#x3D;</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865537"
+                        open
+                      >
+                        <summary class="article-expander__title">家人们 学 go 标准库通过写标准库的结构体/函数 demo 有用吗，或者有效率更高的？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865537">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>proxytoworld:</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865536"
+                        open
+                      >
+                        <summary class="article-expander__title">由于经济原因，进了一家非自研的公司(软件服务)，但公司的技术深度太浅，应该咋办？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865536">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>MEIerer: 
+地点：广州
+身份职位：前端应届
+专科学历，之前投简历投到心慌，才找到一个工资还算过得去的(现在这家)，但是公司(分公司)没有前端老员工，平时只写写业务，因为上家实习公司是有自研项目的，相对比下，感觉待在目前公司提升很缓慢(各方面都是)。
+目前只能在不忙的时候看会书，周末写写自己的代码(但如果这周干得累可能就坚持不下来)
+前辈们有什么建议吗？技术上、生活上、职业方面的都可以 /(ㄒoㄒ)/~~</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865535"
+                        open
+                      >
+                        <summary class="article-expander__title">onedrive for business 如何看手机上备份的照片？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865535">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>sepwolves: 
+我在微软提问上提过这个问题。没有解决。
+其他文件同步什么的都没有问题。
+但是独独备份照片的，我在电脑端怎么也找不到。
+难道是因为 5T 的问题?</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865534"
+                        open
+                      >
+                        <summary class="article-expander__title">在日剧中看到，高中的择校指南大概有五厘米那么厚的一本书，国内有没有类似的出版物，如果想要写一本来出版的话可行吗</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865534">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>treblex: 
+可以从大学择校指南开始写，高中没有太多的选择，大家都想要成绩好的，重点的
+是这样的，前段时间想要做游戏，学了一段时间发现做不出什么有趣的玩法，算法也差
+于是想要了解一下游戏剧本，看了觉得有意思就又去看了专门的写作指南
+于是想要写网文，网文对更新频率的要求太高，写不来
+就又想要了解一下传统作者怎么投稿出版
+思绪发散起来没完没了，都是蜻蜓点水般的了解一下，想来这也是我不成事的原因之一哈哈</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865532"
+                        open
+                      >
+                        <summary class="article-expander__title">昨天刚注册的，今天我的发帖按钮不见了是为啥？可以正常回复</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865532">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>MEIerer:</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865531"
+                        open
+                      >
+                        <summary class="article-expander__title">请问大佬们一个数据迁移问题</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865531">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>aoxg2019: 
+ db2 历史表数据导入到 es 里面去大家有什么推荐的方法没？目前考虑的有传统的 select db 然后 bulk insert 到 es.还有 datax 这种实现方式。flink cdc 貌似不支持 db2 。最求速度快！</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865530"
+                        open
+                      >
+                        <summary class="article-expander__title">怎么才能读懂康德</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865530">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>faust24601: 
+纯粹理性批判看了几个月了，才看了三分之一，好像懂了又好像什么都不懂。西方哲学史也读过，康德之前的基本都能理解。现在已经快读不下去了，严重怀疑自己智商</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865529"
+                        open
+                      >
+                        <summary class="article-expander__title">如何在双系统（或更多）的带 T2 的 Mac 上面重置系统？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865529">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>xuegy: Mac 上面安装了 Monterey ，Catalina ，Windows 三个系统。打算等 Ventura Public Beta 发布以后把 Monterey 给升级了。
+按照官方的文档，https://support.apple.com/zh-cn/guide/mac-help/mchl7676b710/12.0/mac/12.0 ，会要求先删除其他分区之后才能抹掉。如果把 Monterey 里面的软件一个个卸载的话，一大票 pkg 安装的软件也卸不干净。所以正确的重置姿势应该是什么呢？</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865528"
+                        open
+                      >
+                        <summary class="article-expander__title">求推荐能跑 500M 到 1000M 上传的纯路由器， 7621 已被拉爆</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865528">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>metadx: 想不到 7621 这么拉跨，300M 上传 CPU 就爆了，晚高峰 CPU 动不动就 100%了。
+目前家里电信联通移动三线接入，上行带宽&gt;300M ，用小娱刷高恪做主路由，5 个千兆口中，3 个口作为 WAN 分别接 3 个运营商光猫，2 个口做 LAN 。
+求推荐靠谱路由器，能支持多线多拨，支持策略路由，最好便宜、小巧。
+谢谢各位大人</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865527"
+                        open
+                      >
+                        <summary class="article-expander__title">[网站功能建议] 正文图片无法点击放大，不方便浏览细节</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865527">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>isbase: 
+类似 medium 和 mirror.xyz 这些现代化的写作平台，他们都支持在正文点击图片后弹框放大显示。这个功能在看一些高分辨率的图片时非常有用。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865526"
+                        open
+                      >
+                        <summary class="article-expander__title">消息队列 MQ 怎么做削峰填谷</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865526">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>kangmf: 作为初学开发者，总是能看到消息队列 mq 可以做削峰填谷，但是具体不知道是怎么做的，有人可以简单说下嘛</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865524"
+                        open
+                      >
+                        <summary class="article-expander__title">haskell 菜鸟的问题</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865524">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>lqcc: 
+quicksort :: (Ord a) &#x3D;&gt; [a] -&gt; [a]
+quicksort [] &#x3D; []
+quicksort (x:xs) &#x3D;
+        let smallerOrEqual &#x3D; [a | a  x]
+        in quicksort smallerOrEqual ++ [x] ++ quicksort larger
+
+初学菜鸟。请问这个示例程序，迭代是怎么停止的？</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865523"
+                        open
+                      >
+                        <summary class="article-expander__title">有一台 ios 10.3.3 系统的 iPhone7</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865523">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>Apple2023: 
+现在用是一种怎样的体验，系统一直是 10.3.3 ，停留在 17 年夏天，至今没有升级过系统，那么，换一块电池，是不是很能打？</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865521"
+                        open
+                      >
+                        <summary class="article-expander__title">求推荐低价 type-c 反向供电 4k60Hz 的显示器</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865521">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>leverestfish: 
+刚需如题：
+type-c 且反向供电
+4k60Hz
+连接 MacBook 使用，颜色要求不高，自带支架最好是升降的，最好带 HDR
+故事背景：前几天尝试狗东买了个攀升（ IPASON ） E2726U-T 的，似乎是满足刚需最低价了（ 1.3k ），结果品控过于垃圾，用 USB4 的线还是 4k60Hz 画面抖动，换货换得心累。</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;2
                                   min&hairsp;)</span>
                             </span>
@@ -884,18 +755,16 @@ worksheet.insert_image(&quot;C2&quot;, r&quot;.\test.jpg&quot;)</span>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="865283"
+                        data-accordion-key="865520"
                         open
                       >
-                        <summary class="article-expander__title">现在大家都用什么软件或者工具存储和使用 Code Snippets?</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865283">
+                        <summary class="article-expander__title">老哥们，预算 8-9k， 想弄个二手 mac</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865520">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>YuiTH: 最近 C#写的不多，主要是 SQL ，shell 脚本和 Spark （用 VS 写），以后应该会写 C#。
-软件用的比较多的是 powershell ，DataGrip ，SSMS ，VS 和 VSCode 。mac 和 windows 都用（ Mac 只用 JB 家）。
-有没有什么软件可以方便的存储和使用 code snippets ？最好可以方便的查看和复制，可以给不方便用的机器复制过去。
-一般是用一个和 IDE 无关的软件来做这件事还是想办法同步几个 IDE 之间的 CodeSnippets?</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;2
+                              <span>ShadowFiendYan: 
+2018 款 15 寸 32g+512  还是 M1 16+512 呢，选 m1 怕内存不够。。预算真的有限，求各位老哥给点建议</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -906,23 +775,157 @@ worksheet.insert_image(&quot;C2&quot;, r&quot;.\test.jpg&quot;)</span>
                       <details
                         class="article-expander"
                         data-action="toggle-native-accordion"
-                        data-accordion-key="865282"
+                        data-accordion-key="865519"
                         open
                       >
-                        <summary class="article-expander__title">六年前端准备重学 JS，有啥路线吗？</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865282">
+                        <summary class="article-expander__title">兄弟们听说过自愈嘛？</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865519">
                           <div class="article-summary-box-inner media-object">
                             <span class="media-object__text">
-                              <span>caisanli: 
-RT
-一开始从培训班出来的
-混到到现在业务代码没问题
-感觉遇到瓶颈期了
-期间觉得自己基础不扎实
-想重学 JS 及其周边技术
-给自己半年时间
-麻烦老哥们个路线
-（防吐槽</span>
+                              <span>microxiaoxiao: 
+是这样的，最近有人告诉我说，为了避免消息丢失，状态不更新的问题，然后啥都搞个一直轮询的逻辑。比如 redis 的消息订阅，kafka 的消息等，大家都是这样设计的嘛？是不是太自愈。</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865517"
+                        open
+                      >
+                        <summary class="article-expander__title">程序员的最终归宿就是</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865517">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>bosskwei: 
+提桶去修长城，走半路上突然下大雨赶不上 ddl
+引用 https://v2ex.com/t/865217</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865516"
+                        open
+                      >
+                        <summary class="article-expander__title">Gumori - 支持 React/Svelte/Vue 组件的极简静态博客模板</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865516">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>M9l7chlLGv: 
+GitHub: https://github.com/importantimport/gumori
+Demo: https://gumori.netlify.app
+特征
+基于 Astro 。
+行内高亮
+Astro 没有 MDsveX 的兼容性问题，就用了最时髦的 rehype-pretty-code，它可以给行内代码高亮。
+还有一些额外的功能比如单词突出显示之类，但我没写对应的样式。
+最小样式
+必要 CSS 不到 1KB （用来适配上面的代码高亮），模板本身就只是语义化 HTML 。
+现代生态
+如题，不过目前在一些方面会比较简陋
+完整的兼容框架列表：React, Preact, Svelte, Vue, SolidJS, AlpineJS, Lit
+深度定制
+由于上面这些特点，可以基于它写一个自己的分支（或者叫主题），也能搭配无类 CSS 主题使用（比如演示站默认引用的是 new.css ）
+使用
+也可以点 README 的 &quot;Open in StackBlitz&quot; 按钮体验
+npx degit importantimport/gumori my-blog &amp;&amp; cd my-blog # 下载到当前路径的 my-blog 文件夹下
+npm i -g pnpm # 安装 pnpm ，已有则跳过此段
+pnpm i # 安装依赖
+pnpm dev # 开发
+pnpm build # 构建
+
+配置：./src/config/gumori.ts
+帖文：./src/posts/
+静态文件：./public/
+还可以看看
+https://github.com/importantimport/gumori-you
+https://github.com/importantimport/urara</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865515"
+                        open
+                      >
+                        <summary class="article-expander__title">[成都美团] 🔥HOT！急！内推资深前端｜ Java ｜数据开发</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865515">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>nanau2016: 
+一句话介绍：做餐饮 SAAS 系统
+直接组内内推，效率高，最快一周内走完流程，招聘目标职级 L8 ，优秀的 L7 也考虑，机会难得，有竞争力的薪资（从一线城市回来薪资可以持平），不错的福利，领导 nice ，工作氛围好，不盲目加班
+招聘 JD 就不细说了，反正 d 翻来覆去都那几条，主要明确以下两点：
+做的是 SAAS 产品，希望你有相关经验；
+经验相对资深，至少 5 年以上；
+满足以上条件的小伙伴赶紧行动起来，发简历给我，在一线城市的同学想回来的可以考虑一下，进来后咱们可以做同事
+欢迎邮件垂询: b2lsaW5vcmxsQGdtYWlsLmNvbQ&#x3D;&#x3D;</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865514"
+                        open
+                      >
+                        <summary class="article-expander__title">为什么现实的某些瞬间是梦里出现过的，是多维空间存在吗?</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865514">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>snake811017: 
+好像有些人不会？</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="865513"
+                        open
+                      >
+                        <summary class="article-expander__title">有没有觉得罗老师最近在拿各种热门话题为新公司蹭热度</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.v2ex.com/t/865513">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>mikeshinoda: 
+结合最近几个热搜 or 新闻
+罗永浩称拿火烤钟薛高精神有问题
+罗永浩谈钟薛高卖得贵
+罗永浩官宣新公司了？这两个岗位正在大量招人
+罗永浩官宣新创业公司 Thin Red Line （细红线），目标 AR 行业
+罗永浩：电动汽车时代传统车企明显落后，国内除蔚小理外仅小米华为有机会
+罗永浩：不看好苹果 AR ，新世界的霸主永远不是之前旧世界的霸主
+是不是老罗给新公司造势了（苦笑）
+有无插件可以屏蔽全网某些关键词的内容？</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;2
                                   min&hairsp;)</span>
                             </span>
@@ -933,6 +936,270 @@ RT
                 </section>
               </section>
             </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >CSS-Tricks</button>
+                  <a class="source-heading__link" href="https://css-tricks.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://css-tricks.com/?p&#x3D;366609"
+                        open
+                      >
+                        <summary class="article-expander__title">Technical Writing for Developers</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://css-tricks.com/technical-writing-for-developers/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://css-tricks.com/wp-json/social-image-generator/v1/image/366609" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>HTML, CSS, JavaScript, Python, PHP, C++, Dart — there are so many programming languages out there and you may even be totally fluent in several of them! But as we aim to write more and better code, the way we …
+Technical Writing for Developers originally published on CSS-Tricks. You should get the newsletter.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;18
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >iDaily 每日环球视野</button>
+                  <a class="source-heading__link" href="https://docs.rsshub.app">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://m.idai.ly/se/4fdM4q"
+                        open
+                      >
+                        <summary class="article-expander__title">莫斯科庆祝交通日</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/4fdM4q">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>芭蕾舞者正在地铁站为庆祝表演做准备。7月9日，莫斯科举行「地铁芭蕾舞之夜」庆祝活动，俄罗斯古典芭蕾舞剧院的舞蹈演员们在地铁站内表演「天鹅湖」片段，现场约300名乘客观看表演。莫斯科交通日设立于2017年，旨在鼓励人们积极乘坐公共交通出行。莫斯科拥有欧洲最繁忙的地铁系统，现有14条线路、250个车站，总长度达438.6公里，日均客运量超过900万人次。摄影师：Ilya Pitalev</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://m.idai.ly/se/2c2vVa"
+                        open
+                      >
+                        <summary class="article-expander__title">日本修宪派获国会优势</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/2c2vVa">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>日本首相岸田文雄在自民党总部确认参议院选举计票结果，东京。7月10日，日本第26届参院选举结果公布，岸田文雄领导的「自民党-公民党」执政联盟共赢得125个改选席位中的76席，比上一届增加7席，创下2013年迄今最大席位优势。支持修宪的自民党、公民党、维新会、国民民主党和无党派议员已获得超过三分二以上参议院席位。岸田文雄在胜选演讲中呼吁各政党团结一致应对新冠疫情、俄乌冲突、通货膨胀等挑战，誓言加快推进修宪进程，包括修改「放弃发动战争」的宪法第9条。摄影师：Toru Hanai</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://m.idai.ly/se/4b2El6"
+                        open
+                      >
+                        <summary class="article-expander__title">澳门赌场关闭一周</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/4b2El6">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>澳门市民正在参加新冠核酸采样，中国。7月10日，澳门特别行政区新增本土确诊59例，其中17例为社会面阳性感染病例，本轮疫情自6月18日迄今累计确诊已达1526例。澳门特区政府宣布从7月11日至18日暂停所有非必要工商业活动，赌场等非必要营业场所暂停营业，所有居民非必要不外出，未来一周将进行4轮全员核酸检测。这是2020年2月以来澳门赌博业首次全面停业，金沙、澳博、银娱等主要博彩业股票当天跌幅均超过6%。摄影师：iDaily Media</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://m.idai.ly/se/6b9ho0"
+                        open
+                      >
+                        <summary class="article-expander__title">斯里兰卡总统辞职</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/6b9ho0">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>斯里兰卡抗议者占领总理官邸后在房间内打扑克，科伦坡。7月11日，斯里兰卡总统正式宣布辞职。根据斯里兰卡宪法，总统辞职后将由议长代为行使总统职权，议会在30天内投票选出新总统。斯里兰卡政府目前外债总额达到510亿美元，外汇储备已消耗殆尽，粮食、燃料、药品等民生物资严重不足。斯里兰卡央行警告称通货膨胀率可能在未来数个月内飙升至70%以上。国际货币基金组织（IMF）呼吁斯里兰卡尽快解决政治动荡以恢复紧急财政援助谈判。摄影师：Eranga Jayawardena</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://m.idai.ly/se/b70KkQ"
+                        open
+                      >
+                        <summary class="article-expander__title">阿根廷抗议通货膨胀</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/b70KkQ">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>阿根廷民众在总统府外抗议物价飙升，布宜诺斯艾利斯。7月9日，阿根廷首都爆发反政府示威游行，抗议者指责政府应对疫情不力导致物价飙升、经济陷入困境。阿根廷目前面临通货膨胀、货币贬值和进口燃料价格上涨等多重危机，该国5月通货膨胀率已飙升至60.7%。当天阿根廷总统呼吁民众「在最困难的时刻保持团结」，民调显示总统支持率已跌至25%，为2019年以来最低水平。摄影师：Luis Robayo</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://m.idai.ly/se/730g84"
+                        open
+                      >
+                        <summary class="article-expander__title">美国务卿访问泰国</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/730g84">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>美国国务卿 Antony Blinken 与泰国总理巴育举行会晤，曼谷。7月10日，美国务卿 Blinken 对泰国进行首次正式访问，本次行程旨在加强美国与东南亚国家的盟友关系以应对中国。双方就经贸合作、气候变化和清洁能源发展、打击人口贩卖、区域合作以及缅甸局势等问题交换意见，并签署《美泰战略联盟和伙伴关系公报》和一份供应链合作备忘录。美国是泰国第3大贸易伙伴和最大的出口市场，2021年两国双边贸易额达到637亿美元。摄影师：Stefani Reynolds</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://m.idai.ly/se/d36wQj"
+                        open
+                      >
+                        <summary class="article-expander__title">北爱尔兰新教节日</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/d36wQj">
+                          <div class="article-summary-box-inner media-object">
+                            <span class="media-object__text">
+                              <span>北爱尔兰民众点燃巨型篝火迎接「第十一夜」（Eleventh Night），波塔当。7月11日是北爱尔兰传统节日「第十一夜」，燃放巨型篝火是为了纪念英格兰国王威廉三世军队在新教徒篝火的指引下登陆爱尔兰岛，经过长达两年战争最终确立新教的主导地位。目前北爱尔兰48.4%人口为新教徒，45.1%人口为天主教徒。摄影师：Clodagh Kilcoyne</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;1
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >Articles on Smashing Magazine — For Web Designers And Developers</button>
+                  <a class="source-heading__link" href="https://www.smashingmagazine.com/">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://smashingmagazine.com/2022/07/look-remix-differences-next/"
+                        open
+                      >
+                        <summary class="article-expander__title">A Look At Remix And The Differences With Next.js</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://smashingmagazine.com/2022/07/look-remix-differences-next/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/8e925a90-8fec-44cb-92c0-2ab03d13a2ea/look-remix-differences-next-sharing-card.jpg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Let’s talk about Remix, the framework to create JavaScript projects using server-side rendering. Let’s go through its main features and concepts and see the similarities and differences with Next.js.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;14
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+            <li class="card__section">
+              <section class="js-toggle-accordions-scope">
+                <h3 class="source-heading">
+                  <button
+                    class="source-heading__name"
+                    data-action="toggle-accordions"
+                    title="Click to toggle the source, Ctrl + click to toggle all."
+                  >小众软件</button>
+                  <a class="source-heading__link" href="https://www.appinn.com">Open</a>
+                </h3>
+                <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://www.appinn.com/?p&#x3D;42701"
+                        open
+                      >
+                        <summary class="article-expander__title">Youglish – 从 YouTube 搜索母语发音者，练习口语，支持英文、中文、手语在内的 18 种语言</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://www.appinn.com/youglish/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://img3.appinn.net/static/wp-content/uploads/2022/07/youglish.jpgo_.jpg" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Youglish 是一款利用视频网站 YouTube 海量资源的绝佳例子，只需要搜索关键词，就能找出该关键词的母语发音者片段，用来重复收听、学习。它支持英文、德文、日文、中文、手语在内的 18 种语言</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;7
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
+                </section>
+              </section>
+            </li>
+        </ul>
+      </section>
+      <section class="daily-content js-toggle-accordions-scope">
+        <h2 class="daily-heading">
+          <button
+            class="daily-heading-toggle"
+            data-action="toggle-accordions"
+            title="Click to toggle the day, Ctrl + click to toggle all."
+          >
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-07-10 datetime="2022-07-10T03:59:00.000Z">2022-07-10</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-07-10 datetime="2022-07-10T03:59:00.000Z"></time>
+          </button>
+        </h2>
+        <ul class="sources card">
             <li class="card__section">
               <section class="js-toggle-accordions-scope">
                 <h3 class="source-heading">
@@ -1124,139 +1391,6 @@ RT
                         </a>
                       </details>
                     </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://m.idai.ly/se/3e7bad"
-                        open
-                      >
-                        <summary class="article-expander__title">星舰发射准备</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/3e7bad">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>SpaceX 星舰原型机「S24」正在转运至发射台，美国得州。7月6日，星舰原型机「S24」与超重型火箭完成垂直堆叠组装。这枚火箭飞船组合体预计在未来数天内进行一次静态点火测试，为星舰首次轨道试飞做准备。目前 SpaceX 正在等待美国联邦航空管理局（FAA）审批发射许可，预计最早发射时间在7月底。摄影师：SpaceX</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://m.idai.ly/se/a0455k"
-                        open
-                      >
-                        <summary class="article-expander__title">拜登签署堕胎权令</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/a0455k">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>美国总统 Joe Biden 签署一项保护女性堕胎和避孕权的行政令，华盛顿白宫。7月8日，Biden 正式签署行政令指示联邦机构扩大女性获得堕胎和避孕医疗护理服务的机会，保护堕胎者、医疗服务提供者和第三方诊所药房的安全和隐私。Biden 呼吁美国选民在11月中期选举中投票给支持堕胎权的民主派候选人，强调「通过国会立法是恢复堕胎权的最快方法」。摄影师：Evan Vucci</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://m.idai.ly/se/3c6srv"
-                        open
-                      >
-                        <summary class="article-expander__title">日本民众悼念安倍</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/3c6srv">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>日本民众在前首相安倍晋三遇袭地点献花悼念，奈良。7月9日，奈良县警方公布安倍晋三死因为「左上臂中枪损伤锁骨下动脉导致失血过多」。根据警方公布信息，嫌疑人山上彻也供述称，因母亲沉迷宗教团体而心生恨意，认为安倍与该团体有关而实施犯罪，并非针对安倍的政治信念。日本首相岸田文雄表示「非常遗憾，无法言表，将切实继承安倍的想法」。美英法印俄中等多国领导人均致唁电表示哀悼，印度总理宣布7月9日设为全国哀悼日表达对安倍晋三的敬意。摄影师：iDaily Media</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://m.idai.ly/se/afaovP"
-                        open
-                      >
-                        <summary class="article-expander__title">俄罗斯经济趋稳</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/afaovP">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>俄罗斯总统 Vladimir Putin 会见国家杜马与各党派领导人，莫斯科。7月7日，Putin 指出西方国家对俄罗斯发起的经济闪电战已经失败，标志着美国中心主义的世界秩序开始彻底崩溃并过渡到真正的多极世界。俄罗斯6月年化通胀率放缓至15.6%，卢布兑美元汇率上涨逾15%，成为全球表现最好的货币。俄罗斯国家杜马于7月5日通过两项战时经济措施法案，允许政府要求企业提供商品和服务以支持特别军事行动。摄影师：Aleksey Nikolskyi</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://m.idai.ly/se/cd91Y0"
-                        open
-                      >
-                        <summary class="article-expander__title">美日韩三边会谈</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/cd91Y0">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>二十国集团（G20）外长会期间，美国国务卿 Antony Blinken、日本外务大臣林芳正与韩国外交部长朴振举行三边会谈，印尼巴厘岛。7月8日，美日韩外长共同讨论应对朝鲜核威胁、供应链危机、新冠疫情、气候变化等问题的合作方案。三方商定一致且坚决地应对朝鲜的挑衅行为，为重启无核化谈判保持紧密合作。本届 G20 外长会于7月7日至8日举办，主要议题包括全球经济复苏、乌克兰局势和粮食能源供应，会后未能发表联合声明。摄影师：Stefani Reynolds</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://m.idai.ly/se/5dd8Y4"
-                        open
-                      >
-                        <summary class="article-expander__title">世界最大暗物质探测器</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/5dd8Y4">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>世界上最大的暗物质探测器「勒克斯-泽普林」（LUX-ZEPLIN）实验正式启动运行，美国南达科他州。7月7日，勒克斯-泽普林实验公布首份数据报告，证实其能够正常运行且具有足够灵敏度。这座实验设施建于地下1.5公里矿井内，通过岩层和高纯度钛金属壳隔绝宇宙辐射和粒子干扰。设施最核心部分是装有7吨液态氙的实验桶，主要原理是利用液态氙与暗物质之间的相互作用来寻找暗物质。摄影师：Matthew Kapust</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://m.idai.ly/se/6e61N9"
-                        open
-                      >
-                        <summary class="article-expander__title">康定斯基画作返俄</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://m.idai.ly/se/6e61N9">
-                          <div class="article-summary-box-inner media-object">
-                            <span class="media-object__text">
-                              <span>俄罗斯国家博物馆的工作人员正在检查一幅俄19世纪抽象主义画家 Wassily Kandinsky 作品《构图》（Composition），圣彼得堡。这是俄国博借展意大利罗韦雷利亚宫的画作之一，展期结束后被送回圣彼得堡。罗韦雷利亚宫于2022年2月至6月举办 Kandinsky 特展，共展出80件艺术家画作及相关书籍、档案、照片、物品，其中49件画作借自俄罗斯国家博物馆、特列季亚科夫画廊、普希金造型艺术博物馆等机构。摄影师：Alexander Demianchuk</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;1
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
                 </section>
               </section>
             </li>
@@ -1284,7 +1418,7 @@ RT
                               <img src="https://img3.appinn.net/static/wp-content/uploads/2022/07/appinn-2022-07-09t152202-434.jpgo_.jpg" loading="lazy" class="media-object__media article-image" />
                             <span class="media-object__text">
                               <span>MyComputerManager 是一款用来删除「此电脑」里面其他区域快捷方式的小工具，此区域绝大多数情况下被各大网盘自动占据，手动删除一般需要动用注册表，极其繁琐。@Appinn 来自发现频道，开</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                &ensp;<span class="article-reading-time">(&hairsp;7
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -1448,7 +1582,7 @@ RT
                               <img src="https://img3.appinn.net/static/wp-content/uploads/2022/07/pikpak.jpgo_.jpg" loading="lazy" class="media-object__media article-image" />
                             <span class="media-object__text">
                               <span>PikPak 是一款私人网盘应用，支持离线下载、秒存、网盘、在线播放等功能，目前已支持 iOS、Android 客户端、网页版、Chrome 扩展和 Telegram 机器人。使用流畅，免费</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;10
+                                &ensp;<span class="article-reading-time">(&hairsp;9
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -1596,7 +1730,7 @@ RT
                         data-accordion-key="https://smashingmagazine.com/2022/07/designing-better-pricing-page/"
                         open
                       >
-                        <summary class="article-expander__title">Designing A Better Pricing Page</summary>
+                        <summary class="article-expander__title">Designing A Perfect Pricing Page UX</summary>
                         <a class="article-summary-link article-summary-box-outer" href="https://smashingmagazine.com/2022/07/designing-better-pricing-page/">
                           <div class="article-summary-box-inner media-object">
                               <img src="http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/37c160fe-99a6-4e3f-b754-dda006ff84fa/designing-better-pricing-page-sharing-card.jpg" loading="lazy" class="media-object__media article-image" />
@@ -1814,7 +1948,7 @@ RT
                               <img src="https://img3.appinn.net/static/wp-content/uploads/2022/07/appinn-2022-07-03t115649-847.jpgo_.jpg" loading="lazy" class="media-object__media article-image" />
                             <span class="media-object__text">
                               <span>Typing Learner 是一款能够从字幕中生成的词库（单词本）的 Windows、macOS 工具，它通过分析、过滤，洗掉熟悉的单词，只保留生词，然后进行键盘记忆背单词的过程，与众不同之处在于，</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
+                                &ensp;<span class="article-reading-time">(&hairsp;7
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -1833,8 +1967,8 @@ RT
             data-action="toggle-accordions"
             title="Click to toggle the day, Ctrl + click to toggle all."
           >
-            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-07-01 datetime="2022-07-01T13:24:09.000Z">2022-07-01</time>
-            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-07-01 datetime="2022-07-01T13:24:09.000Z"></time>
+            <time class="daily-heading-toggle__weekday js-offset-weekday" data-offset-date=2022-07-01 datetime="2022-07-01T19:15:00.000Z">2022-07-01</time>
+            <time class="daily-heading-toggle__date js-offset-date" data-offset-date=2022-07-01 datetime="2022-07-01T19:15:00.000Z"></time>
           </button>
         </h2>
         <ul class="sources card">
@@ -1849,6 +1983,28 @@ RT
                   <a class="source-heading__link" href="https://css-tricks.com">Open</a>
                 </h3>
                 <section class="articles-per-source">
+                    <article>
+                      <details
+                        class="article-expander"
+                        data-action="toggle-native-accordion"
+                        data-accordion-key="https://css-tricks.com/?p&#x3D;366689"
+                        open
+                      >
+                        <summary class="article-expander__title">Collective Nouns for the Web</summary>
+                        <a class="article-summary-link article-summary-box-outer" href="https://css-tricks.com/collective-nouns-for-the-web/">
+                          <div class="article-summary-box-inner media-object">
+                              <img src="https://css-tricks.com/wp-json/social-image-generator/v1/image/366689" loading="lazy" class="media-object__media article-image" />
+                            <span class="media-object__text">
+                              <span>Melanie Sumner has this super-specific collection of web-related nouns for describing a group or set of something. You know how there’s a school or fish or a herd of cows? Same sort of thing, but for funny web jargon.
+Things …
+Collective Nouns for the Web originally published on CSS-Tricks. You should get the newsletter.</span>
+                                &ensp;<span class="article-reading-time">(&hairsp;3
+                                  min&hairsp;)</span>
+                            </span>
+                          </div>
+                        </a>
+                      </details>
+                    </article>
                     <article>
                       <details
                         class="article-expander"
@@ -1897,7 +2053,7 @@ Single Element Loaders: Going 3D! originally published on CSS-Tricks. You should
                               <img src="https://img3.appinn.net/static/wp-content/uploads/2022/07/youxiao-calendar.jpgo_.jpg" loading="lazy" class="media-object__media article-image" />
                             <span class="media-object__text">
                               <span>优效日历 是一款可以用来替换 Windows 10 原生日历的日历工具，拥有超多功能（专业日历、排班日历、抢票日历、节日管理、日历订阅、任务提醒、桌面嵌入日历等），安装包仅 6.49MB。近日发布了移</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;9
+                                &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -2006,40 +2162,6 @@ Text-overflow: ellipsis considered harmful originally published on CSS-Tricks. Y
                             <span class="media-object__text">
                               <span>Let’s welcome the new month with some inspiring desktop wallpapers. Created by artists and designers from across the globe, they come in versions with and without a calendar for July 2022. Enjoy!</span>
                                 &ensp;<span class="article-reading-time">(&hairsp;14
-                                  min&hairsp;)</span>
-                            </span>
-                          </div>
-                        </a>
-                      </details>
-                    </article>
-                </section>
-              </section>
-            </li>
-            <li class="card__section">
-              <section class="js-toggle-accordions-scope">
-                <h3 class="source-heading">
-                  <button
-                    class="source-heading__name"
-                    data-action="toggle-accordions"
-                    title="Click to toggle the source, Ctrl + click to toggle all."
-                  >小众软件</button>
-                  <a class="source-heading__link" href="https://www.appinn.com">Open</a>
-                </h3>
-                <section class="articles-per-source">
-                    <article>
-                      <details
-                        class="article-expander"
-                        data-action="toggle-native-accordion"
-                        data-accordion-key="https://www.appinn.com/?p&#x3D;42630"
-                        open
-                      >
-                        <summary class="article-expander__title">BGmi – 自动追番的工具：同步最新番剧数据、追番日历、自动下载，适合所有追番懒人</summary>
-                        <a class="article-summary-link article-summary-box-outer" href="https://www.appinn.com/bgmi/">
-                          <div class="article-summary-box-inner media-object">
-                              <img src="https://img3.appinn.net/static/wp-content/uploads/2022/06/appinn-2022-06-29t202618-430.jpgo_.jpg" loading="lazy" class="media-object__media article-image" />
-                            <span class="media-object__text">
-                              <span>BGmi 是一款开源的自动追番的工具，通过多个数据源订阅番剧更新，使用 aria2、transmission 等工具下载，Web 管理界面，全平台适用。折腾一次，永久使用，适合所有正在追番的懒人。@A</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;8
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -2620,7 +2742,7 @@ Different Ways to Write CSS in React originally published on CSS-Tricks. You sho
                               <img src="http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/942ab9f6-c68c-4eab-9dba-b98905b2b8b7/precise-timing-web-animations-api.jpg" loading="lazy" class="media-object__media article-image" />
                             <span class="media-object__text">
                               <span>In JavaScript, it’s natural to reach for timers when something is to happen on time. But when something is to happen at the exact moment because other things depend on it, you quickly learn timers are more of a problem than a solution. They are never on time, really. Web Animations API could eliminate the need for timers in certain cases while being precise.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;19
+                                &ensp;<span class="article-reading-time">(&hairsp;18
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -2754,7 +2876,7 @@ Single Element Loaders: The Dots originally published on CSS-Tricks. You should 
                               <img src="http://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/47932465-87b0-41aa-97c3-4a2690860dd8/easy-build-support-tables-figma.jpg" loading="lazy" class="media-object__media article-image" />
                             <span class="media-object__text">
                               <span>In this article, Andrii shares his approach to managing tables in Figma in an easier, more streamlined way when there is a need to support different screen resolutions, change the order of columns, and use real-life content.</span>
-                                &ensp;<span class="article-reading-time">(&hairsp;16
+                                &ensp;<span class="article-reading-time">(&hairsp;15
                                   min&hairsp;)</span>
                             </span>
                           </div>
@@ -3067,8 +3189,8 @@ Useful Tools for Visualizing Databases on a Budget originally published on CSS-T
       </section>
 
     <footer>
-      <a class="footer-link" href="https://github.com/zhanglun/newsnips/actions/runs/2646548881">
-        <time id="build-timestamp" datetime="2022-07-11T00:38:53.692Z">2022-07-11T00:38:53.692Z</time>
+      <a class="footer-link" href="https://github.com/zhanglun/newsnips/actions/runs/2653385376">
+        <time id="build-timestamp" datetime="2022-07-12T00:42:09.569Z">2022-07-12T00:42:09.569Z</time>
       </a>
       <a class="footer-link" href="https://github.com/osmoscraft/osmosfeed">osmosfeed 1.15.1</a>
     </footer>

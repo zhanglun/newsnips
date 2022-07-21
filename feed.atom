@@ -1,663 +1,837 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>urn:2022-07-20T00:38:46.276Z</id>
+    <id>urn:2022-07-21T00:42:11.051Z</id>
     <title>osmos::feed</title>
-    <updated>2022-07-20T00:38:46.276Z</updated>
+    <updated>2022-07-21T00:42:11.051Z</updated>
     <generator>osmosfeed 1.15.1</generator>
     <link rel="alternate" href="index.html"/>
     <entry>
-        <title type="html"><![CDATA[为什么套用网格搜索找到的最佳参数列表，得到的准确率与网格搜索显示的准确率不一致]]></title>
-        <id>867418</id>
-        <link href="https://www.v2ex.com/t/867418"/>
-        <updated>2022-07-19T22:42:56.000Z</updated>
-        <summary type="html"><![CDATA[0yster:]]></summary>
-        <author>
-            <name>0yster</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[密码管理软件 RememBear 将停止运营]]></title>
-        <id>867417</id>
-        <link href="https://www.v2ex.com/t/867417"/>
-        <updated>2022-07-19T22:36:16.000Z</updated>
-        <summary type="html"><![CDATA[february2: 今天收到一封 RememBear 发来的邮件，通知 2023 年 7 月将结束运营转到网站： https://www.remembear.com/blog/saying-goodbye-to-remembear/。
-看到详细说明，大意是现在这个时间节点，密码管理软件很成熟了，RememBear 用户基数小，很难再做大，考虑到用户未来的密码管理安全，决定逐步停掉服务。给用户一年的时间用来备份及导出密码。
-我在 2017-2018 年曾经深度用过一阵子这个密码管理软件，我记得好像是俄罗斯的开发团队，因为当时使用的是安卓机，试用了几个软件之后，决定 RememBear 还挺合我口味的。后来转移到 iPhone 上之后，试用了很多人推荐的 1Password ，也挺好，就是挺贵的。
-再后来就是深度使用苹果官方的钥匙串了。现在是使用苹果钥匙串+微软 Authenticator+Keepass 。
-感觉现在大厂开始做这个之后，第三方的公司挺难做的，收费低了活不下去，收费高了拿不住用户，还挺困难的。虽然像 1Password 、Enpass 、Lastpass 之类的主打安全，但是很多像我这样的普通用户分不清各种安全策略的不同。自然更倾向于大厂的免费服务。]]></summary>
-        <author>
-            <name>february2</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Apple 花费 5000 万美元就蝶式键盘可靠性问题与美国多州消费者集体诉讼进行和解]]></title>
-        <id>867416</id>
-        <link href="https://www.v2ex.com/t/867416"/>
-        <updated>2022-07-19T20:19:16.000Z</updated>
-        <summary type="html"><![CDATA[Tony4ee: 
-Under the agreement, people who had to get their butterfly keyboard repaired should be eligible for some sort of payout if the settlement is approved — as long as they live in California, New York, Florida, Illinois, New Jersey, Washington, or Michigan. People in other states aren’t included in the class for this settlement.
-The settlement breaks payments down into three tiers: People who got at least two top case replacements (fixing issues with the keyboard basically meant taking the entire laptop apart) will get the most money, with people who got one or more keycap replacements will get the least. If you got a single top case replacement, you’ll be somewhere in the middle.
-The estimated payouts range from “up to $50” to $395, though the actual amounts will depend on how many people sign up to be part of the settlement. It’s also worth noting that up to 30 percent of the $50 million will be going toward attorneys’ fees, and more will be siphoned off for other costs and expenses.
-https://www.theverge.com/2022/7/19/23270157/apple-butterfly-keyboard-settlement-class-action-lawsuit]]></summary>
+        <title type="html"><![CDATA[Apple 是出于什么考量，在 macOS 上禁用了中国地区的 Apple Pay？]]></title>
+        <id>867665</id>
+        <link href="https://www.v2ex.com/t/867665"/>
+        <updated>2022-07-20T23:05:01.000Z</updated>
+        <summary type="html"><![CDATA[Tony4ee: 如题，今天翻到 https://developer.apple.com/documentation/apple_pay_on_the_web/ 发现 China 是单独列出的，区别在于 Apple Pay JS iOS 的版本支持不同，以及 macOS 不支持 Apple Pay 。
+翻了翻论坛的帖子 发现 
+ /t/616235 
+ /t/462926 都有提到这一问题，但是没找到 Apple 这样做的原因。]]></summary>
         <author>
             <name>Tony4ee</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[C++14 中如何方便地将 tuple 展开成为另一个 class 的 variadic template]]></title>
-        <id>867415</id>
-        <link href="https://www.v2ex.com/t/867415"/>
-        <updated>2022-07-19T20:02:35.000Z</updated>
-        <summary type="html"><![CDATA[dangyuluo: 
-比如有一个 tuple, std::tuple<int, int, float>, 另一个类接受 variadic template
-template <typename... Ts>
-class MyClass{};
-
-请问这种情况下如何方便地将int, int, float传入MyClass，以实现MyClass<int, int ,float>呢？
-我能想到的办法就是写一个自己的TupleWrapper然后在类里包装一下 MyClass ，这里也可以做到模板。但是这样太麻烦了，请问有没有更简洁的办法呢？
-详见： https://godbolt.org/z/zMbPTT8Mz]]></summary>
+        <title type="html"><![CDATA[安卓 11 支持 DNS-over-HTTP/3 啦]]></title>
+        <id>867663</id>
+        <link href="https://www.v2ex.com/t/867663"/>
+        <updated>2022-07-20T20:38:04.000Z</updated>
+        <summary type="html"><![CDATA[of2: 
+DNS-over-HTTP/3 in Android
+DNS-over-HTTP/3 (DoH3) support was released as part of a Google Play system update, so by the time you’re reading this, Android devices from Android 11 onwards1 will use DoH3 instead of DoT for well-known2 DNS servers which support it.
+可是试试了～]]></summary>
         <author>
-            <name>dangyuluo</name>
+            <name>of2</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[老车库翻修，预留一个 220v 的插座，方便之后有电动汽车充电需求，需要怎么安排]]></title>
-        <id>867414</id>
-        <link href="https://www.v2ex.com/t/867414"/>
-        <updated>2022-07-19T19:49:28.000Z</updated>
-        <summary type="html"><![CDATA[sekisui: 十多年前家里买房子的时候，买了一个一楼的轿车库，后来几乎就当杂物间使用，门口能把车开过来。
-最近因为年老失修计划翻修一下，电路也准备改造，计划在靠门口的地方预留一个插座（或者说接口），分线箱里单独引出一路，方便以后可以用来临时给电动汽车充个电什么的。
-目前没车，也没买车的计划，但是从长远的角度来看，电动汽车迟早是要买的。
-初步了解一下，单相电（即 220v ）目前用的比较多的最大电流是 32A ，七千瓦的充电功率也不错了。
-抛开线路不谈,线够粗就行。插座该选择什么方案，方可达到最大的通用性。还是说先留一个线路在暗盒里，其他的等买了车再说？]]></summary>
+        <title type="html"><![CDATA[刚释出的 iOS15.6 修复了 Safari 书签同步的问题]]></title>
+        <id>867662</id>
+        <link href="https://www.v2ex.com/t/867662"/>
+        <updated>2022-07-20T20:13:04.000Z</updated>
+        <summary type="html"><![CDATA[Sting: 
+但各设备书签次序混乱没有解决]]></summary>
         <author>
-            <name>sekisui</name>
+            <name>Sting</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[跟风买了喵喵机，发现 app 是国区特供]]></title>
-        <id>867413</id>
-        <link href="https://www.v2ex.com/t/867413"/>
-        <updated>2022-07-19T18:55:46.000Z</updated>
-        <summary type="html"><![CDATA[Zien: 好歹背英语单词相关，公司名起的英文名，不上架原因是强习惯了还是监管越来越严了？]]></summary>
-        <author>
-            <name>Zien</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[恭喜苹果率先成功制造出永动机]]></title>
-        <id>867412</id>
-        <link href="https://www.v2ex.com/t/867412"/>
-        <updated>2022-07-19T17:51:30.000Z</updated>
-        <summary type="html"><![CDATA[CallmeDredd: 
-https://mobile.twitter.com/GregoryMcFadden/status/1549169897573343232]]></summary>
-        <author>
-            <name>CallmeDredd</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[微信小程序搜索排名问题]]></title>
-        <id>867411</id>
-        <link href="https://www.v2ex.com/t/867411"/>
-        <updated>2022-07-19T17:44:09.000Z</updated>
-        <summary type="html"><![CDATA[chenda: 
-最近我的小程序搜索全名一直排在末位，是不是被针对了？
-有遇到过同样问题的老师们吗]]></summary>
-        <author>
-            <name>chenda</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Edge for mac 的双指左右滑动延迟 bug 一直没有修复]]></title>
-        <id>867410</id>
-        <link href="https://www.v2ex.com/t/867410"/>
-        <updated>2022-07-19T17:38:00.000Z</updated>
-        <summary type="html"><![CDATA[forgetlight: 
-具体表现是是在开了十几个 tab 后, 合上盖子进入休眠后, 打开 Mac, 有一定几率触发. 触发后,双指左右滑动出现的左右小箭头动画会有 1 秒左右的延迟. command+[] 或者鼠标 button4/5 不会有延迟. 一旦触发就只有重启浏览器才能修复. (这里的几率指的是大约每用 5-6 个小时就会偶然触发) 
-link1 
-link2 
-从 2020 年开始就发现这个 bug, 但是以为是自己设置问题. 后来发现不少人都有,还有 reddit 上一些帖子才发现可能不是个例. 自己尝试过卸载所有插件, 开关硬件加速, 尝试一些 flag, 但是都会用着用着出现这个问题. 
-请问大家有什么解决方法吗?]]></summary>
-        <author>
-            <name>forgetlight</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[都有哪些无污染 DNS 方案(去广告等)？]]></title>
-        <id>867409</id>
-        <link href="https://www.v2ex.com/t/867409"/>
-        <updated>2022-07-19T17:23:34.000Z</updated>
-        <summary type="html"><![CDATA[Bingchunmoli: 
-smart dns 返回最快(可做国内 DNS 解析但不支持添加光猫分配 DNS)
-AdGuard Home 去广告但无去污染等功能
-chinadns 曾经的无污染 Dns 结局方案
-overture 配置简单去污染的 dns 解决方法
-目前最好用的有哪些？
-有去广告，无污染需求，国内解析又想尽可能的快，
-目前代理使用 clash ，目前方案是本地使用 clash 指向 adguardhome 节点(国内国外均指向)，aduardhome 指向 overture 保证无污染后解析去广告。 缺点是服务多个费内存，dns 链路较长。（ openwrt 需要 Dnsmasq 转发 53 致 clash 否则 openwrt 自己无法解析 dns ）
-client(windows or linux) -> Dnsmasq(监听 53) -> clash(监听 7053) -> adguardhome （监听 5533 ）-> overture(监听 53 ，远程服务器) + 其他无污染 dns]]></summary>
-        <author>
-            <name>Bingchunmoli</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[一个疑惑问题: 尝试解决电脑插电会更烫的问题, 知道如何降温后, 更看不懂 Windows 10/11 的电源策略了]]></title>
-        <id>867408</id>
-        <link href="https://www.v2ex.com/t/867408"/>
-        <updated>2022-07-19T17:22:18.000Z</updated>
-        <summary type="html"><![CDATA[Osk: 
-不知道自己有没有搞错: 
-intel 6 代 skylake (实际部分 broadwell 似乎就有了) 带来了新的 CPU 频率调整方案, Windows 里面管他叫 HWP, 频率调整不再由操作系统负责, 而交给 CPU 自己决定频率.
-我平板在插电时发热会大不少, 我能理解充电和电源管理电路在外接时负载大一点会更热, 但 CPU 明显热得不对, 就算没有后台维护任务时, 也是感觉更烫的.
-最终, 发现了一个明显的地方, 就是 PerfEPP 策略在插电和电池时的不同.
-但是, Windows 10 的电源管理策略就很让我迷惑了:
-感觉节电模式并没有我想象的节电...
-可通过调整 "Processor energy performance preference policy" (PerfEPP)选项来降频
-我解锁了隐藏的电源选项, 在电源设置中更改 PerfEPP 的值.
-默认情况下插电是 33, 使用电池是 50. 
-不说这个选项的技术背景, 只说实际效果: 越高的值, CPU 频率掉的越快, 同样负载下 CPU 频率会尽量低, CPU 最大睿频速度会受限制.
-这个选项感觉比节电模式好用多了, 我发狠调整到 100, 效果就是感觉平板不再是铁板烧, 缺点是延迟肉眼可见; CPU 频率不容易上去. 但设置 70-80 能得到很满意的结果.
-迷惑之处
-PerfEPP 重启后感觉没用, 需要重新设置 (Windows 10 + 11 代笔记本).
-节电模式会让 PerfEPP 的设置无效 (windows 11 + 8 代笔记本).
-perfEPP 完全无效 (Windows 11 22H2 + 6 代笔记本).
-Windows 的电源性能滑杆到底影响了哪些地方?
-电源选项的 overlay_schem_min 等是什么意思?
-废话
-感觉 Windows 平板电源管理很灾难, 一个是 intel 现在摆烂, 本身功耗高;
-再者, 感觉 Wintel 喜欢整高性能偏向的优化, 比如默认的 PerfEPP = 33 (插电), 会导致 CPU "动若疯兔", 跑起来会动不动睿频上去, 哪怕你只是滚动下网页.
-而实际上, 我将 PerfEpp 设置为 60 以上, 就不会有明显的延迟, 能降低一些发热. 再进一步, 如果能接受一定的延迟感, 100 的 PerfEPP 可以让 CPU 及时降频到最低, 保证了设备的凉快和续航.
-我个人大部分时候谁能接受更高的 perfEPP 的.
-最后就是, 感觉现在的电源管理选项越来越不清楚了, 比如: 节电模式是如何节电的? 我希望节电模式下, 自动将 perfEPP 设置为较高值, 延迟就延迟吧...省电才是王道.
-顺便, 很讨厌微软越来越倾向把一些控制权收回的行为, 让用户失去了便利调整的机会.]]></summary>
-        <author>
-            <name>Osk</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[🪺 Hugo 主题 Paper 6.0 发布！]]></title>
-        <id>867407</id>
-        <link href="https://www.v2ex.com/t/867407"/>
-        <updated>2022-07-19T17:05:15.000Z</updated>
-        <summary type="html"><![CDATA[nanxiaobei: 
-Paper
-hugo-paper 是一个 Hugo 主题，以纸张阅读体验为灵感，提供对文字最好的呈现。
-目前 GitHub Star 数 900+，有来自世界各地 13 个国家的用户提交了语言包。
-现正式发布 Paper 6.0 ，使用 Tailwind CSS 重构，并重新设计。
-Demo
-先来看看效果吧：hugo-paper.vercel.app
-GitHub
-查看主题的源码：github.com/nanxiaobei/hugo-paper
-6.0
-彻底使用 Tailwind CSS 重构，拥抱最新的开发体验
-重新设计 UI ，单栏式 + 圆角 + 阴影，增强页面灵动感
-支持在首页展示个人信息（头像、昵称与简介），更加定制化
-可选的单色 Dark Mode 按钮
-增加对 RSS 链接图标的支持
-总之，在保留已有设计元素的同时，提供全新的 UI 体验，以及更多的定制化。
-Screenshots
+        <title type="html"><![CDATA[__attribute__((destructor)) 函数中的 if 语句无法执行]]></title>
+        <id>867661</id>
+        <link href="https://www.v2ex.com/t/867661"/>
+        <updated>2022-07-20T18:52:35.000Z</updated>
+        <summary type="html"><![CDATA[Noicdi: 
+我这里有一个双向链表，还有一个删除结点的函数。这个函数在整个程序中被调用了三次，前两次是在执行期间，通过打印if表示它的 if 判断是正常运行的；但是第三次在__attribute__((destructor))函数中调用时，if 判断被跳过了，哪怕判断条件是true。
+图片一是相关函数，图片二是前两次正常调用。视频可以看到前两次调用都正常调用了printf，第三次调用在条件为 true 的情况下直接跳过了判断。
+这是什么情况啊？我和朋友都没琢磨懂。
 
 
-
-The End
-hugo-paper 6.0 ，欢迎 Star ，欢迎尝试。
-▷ 6.0 github.com/nanxiaobei/hugo-paper]]></summary>
+视频]]></summary>
         <author>
-            <name>nanxiaobei</name>
+            <name>Noicdi</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[请教下关于拷贝构造函数的问题]]></title>
-        <id>867406</id>
-        <link href="https://www.v2ex.com/t/867406"/>
-        <updated>2022-07-19T16:53:22.000Z</updated>
-        <summary type="html"><![CDATA[frankmdong: 
-最近在看 Professional C++, Fifth Edition 入门，看到 rule of five 和移动构造函数的时候写了个示例测了下，发现一个奇怪的问题。
-为什么 std::vector<Data> myDatas{data}; 这行会调两次 Data 的拷贝构造函数呢？是复制初始化导致的吗？
-如果我改成 std::vector<Data> myDatas; 然后 push_back(data), 这里就只会打印一次 "Copy constructor"。
-另外：C++ 一般这种问题应该怎么分析？一般是看汇编还是断点？
-int main() {
-    DataHolder wrapper;
-    Data data{11};                  // Normal constructor
-    std::vector<Data> myDatas{data};// Copy constructor * 2
-    wrapper.setDatas(myDatas);      // Copy constructor
+        <title type="html"><![CDATA[分享两个机器翻译工具]]></title>
+        <id>867660</id>
+        <link href="https://www.v2ex.com/t/867660"/>
+        <updated>2022-07-20T18:32:43.000Z</updated>
+        <summary type="html"><![CDATA[fox: 第一个是腾讯的腾讯交互翻译 TranSmart：
+https://transmart.qq.com/zh-CN/index
+跟以前的腾讯翻译君不是一个产品，似乎采用了一些新的技术。有的翻译软件（比如 GT4T ）已经内置了这个机器引擎的 api 。
+第二个是日本的 mirai 翻译：
+https://miraitranslate.com/en/trial/
+因为是日本的公司，所以据说处理日语的能力很强。有一些在日留学的学生很推崇这个工具。]]></summary>
+        <author>
+            <name>fox</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[现在还有什么市场是上架 App 不需要软著的？]]></title>
+        <id>867659</id>
+        <link href="https://www.v2ex.com/t/867659"/>
+        <updated>2022-07-20T18:31:32.000Z</updated>
+        <summary type="html"><![CDATA[Aoonthetop: 在今年入了独立开发的坑，先后学习了 Flutter 和注册了个体工商户。
+在今天完善产品时发现很多应用商店上架都需要软件著作权，而个人办理这个业务的周期需要 3 个月 起步
+想问问各位在没有软著的前提下能够上架到哪些应用平台？（包括可以使用免责函等等也可以
+感激不尽！]]></summary>
+        <author>
+            <name>Aoonthetop</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[感觉 uber/fx 并不比 getInstance 工厂好用]]></title>
+        <id>867658</id>
+        <link href="https://www.v2ex.com/t/867658"/>
+        <updated>2022-07-20T17:32:02.000Z</updated>
+        <summary type="html"><![CDATA[a132811: 
+感觉 uber/fx 并不比 getInstance 工厂好用
+不好用的点：
+写单元测试有点麻烦
+需要额外管理属性（这里的属性是：用于存储注入的依赖）
+不完美的按需初始化
+通过反射实现的注入，如果有依赖问题可能要在运行时才能被发现
+性能损失
+调试、维护略复杂(主要是调试 fx 生命周期+反射，调用链就拉得比较长的, 其它都还好)
+下面就前面几点展开解释一下吧（伪代码）, 看看 V 友怎么看
+手动维护依赖属性
+fx 只能在顶层方法(app 初始化时)实现自动依赖注入(invoke 调用)，非 invoke 调用则不能直接自动注入
+比如要实现调用链server->service->db
+// main.go
+fx.Invoke(func(s *Server){
+      s.start()
+})
+
+为了让 service 调用依赖 db, 我们一般需要在顶层用Provide/Module等方法生成一份依赖关系module.Main，比如：
+func NewDb() *Db{
+    return initDb()
+}
+func NewService(db *Db) *Service{
+    return &Service(db) //注入 db
+}
+func NewServer(s *Service) *Server{
+    return &Server(s)   //注入 service
 }
 
-全代码在：https://godbolt.org/z/EE5vnG3Kz
-菜鸟问题有点多，不好意思]]></summary>
-        <author>
-            <name>frankmdong</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[5950X PVE 家庭服务器 开机了]]></title>
-        <id>867405</id>
-        <link href="https://www.v2ex.com/t/867405"/>
-        <updated>2022-07-19T16:26:52.000Z</updated>
-        <summary type="html"><![CDATA[avv: 
+// 用 module 管理维护依赖关系
+module.Main := fx.Module("main",
+    fx.Provide(
+        NewDb,
+        NewService,
+        NewServer,
+    ),
+)
 
-刚接触 PVE 虚拟化方案；折腾起来！！！]]></summary>
+同时，由于非 invoke 调用不可直接自动注入，所以需要手动增加属性, 用来存储所注入的依赖…]]></summary>
         <author>
-            <name>avv</name>
+            <name>a132811</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[G Suite legacy free edition 升级后已成功降级]]></title>
-        <id>867404</id>
-        <link href="https://www.v2ex.com/t/867404"/>
-        <updated>2022-07-19T16:12:36.000Z</updated>
-        <summary type="html"><![CDATA[huguadao: 
-喜大普奔～
-Google 原来是这么处理原 G Suite 免费用户升级降级问题的：保留在了 Google Workspace starter 新手版，并从原 10 用户升级成了 300 用户，我的 G Suite 已经成功转为免费版。
-并趁着这怎么看都是最后最后最后的免费机会，升级降级的过程中也成功把主域名改了✌️]]></summary>
+        <title type="html"><![CDATA[5 年 UI 设计师找工作，作品详见链接。]]></title>
+        <id>867656</id>
+        <link href="https://www.v2ex.com/t/867656"/>
+        <updated>2022-07-20T17:06:10.000Z</updated>
+        <summary type="html"><![CDATA[spdanny: 
+站酷作品链接： https://www.zcool.com.cn/work/ZNjAxOTgwNzY=.html]]></summary>
         <author>
-            <name>huguadao</name>
+            <name>spdanny</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[请教一个关于用户换绑手机号/邮箱这种操作的技术问题]]></title>
-        <id>867403</id>
-        <link href="https://www.v2ex.com/t/867403"/>
-        <updated>2022-07-19T16:05:54.000Z</updated>
-        <summary type="html"><![CDATA[voidless: 类似用户换绑手机号或者邮箱之类的，一般业内会保留一个旧字段存储旧手机号 /邮箱吗，还是直接用换绑的新手机号 /邮箱覆盖旧的，或者是有别的处理手段吗]]></summary>
+        <title type="html"><![CDATA[Mac 下有没有好用的文件夹比对软件]]></title>
+        <id>867655</id>
+        <link href="https://www.v2ex.com/t/867655"/>
+        <updated>2022-07-20T16:59:56.000Z</updated>
+        <summary type="html"><![CDATA[unt: 之前用的 beyond compare ，比较单个文件非常好用。但是比较一整个文件夹用着就很不舒服]]></summary>
         <author>
-            <name>voidless</name>
+            <name>unt</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[这是我的新 Mac。]]></title>
-        <id>867402</id>
-        <link href="https://www.v2ex.com/t/867402"/>
-        <updated>2022-07-19T15:59:54.000Z</updated>
-        <summary type="html"><![CDATA[meta575: 
-MacBook Air (配备 M2 芯片) - 星光色
-硬件：
-配件套件
-1080p FaceTime 高清摄像头
-13.6 英寸 Liquid 视网膜显示屏，支持原彩显示
-24GB 统一内存
-MagSafe 3 充电端口
-带有触控 ID 的背光妙控键盘 - 美式英语
+        <title type="html"><![CDATA[发现一个 listary 的替代品，或者说以后的 listary6 会长这样]]></title>
+        <id>867654</id>
+        <link href="https://www.v2ex.com/t/867654"/>
+        <updated>2022-07-20T16:33:58.000Z</updated>
+        <summary type="html"><![CDATA[mgy309502059: 软件名: fluent search
+官网:https://www.fluentsearch.net/
+
+功能已经很丰富了，还有工作流，
+一个亮点是屏幕快捷键(图像识别可点击区域或识别控件，屏幕显示快捷字符)
+刚发了版本完美支持中文，包括拼音。
+还没到 1.0 版，用起来还是会有些小 bug,期待完善]]></summary>
+        <author>
+            <name>mgy309502059</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[做解析接入的时候，能只接入一个子域名吗？]]></title>
+        <id>867652</id>
+        <link href="https://www.v2ex.com/t/867652"/>
+        <updated>2022-07-20T16:19:08.000Z</updated>
+        <summary type="html"><![CDATA[Ljcbaby: 
+也就是按规范，为子域名添加接入商的 ns 记录
+问题是，有多少接入商允许这么干]]></summary>
+        <author>
+            <name>Ljcbaby</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Logical Properties for Useful Shorthands]]></title>
+        <id>https://css-tricks.com/?p=367064</id>
+        <link href="https://css-tricks.com/logical-properties-for-useful-shorthands/"/>
+        <updated>2022-07-20T16:16:34.000Z</updated>
+        <summary type="html"><![CDATA[Michelle Barker with my favorite sorta blog post: short, practical, and leaves you with a valuable nugget for your time. Here, she gets into logical property shorthands in CSS, particularly those that set lengths just on a single axis, …
+Logical Properties for Useful Shorthands originally published on CSS-Tricks. You should get the newsletter.]]></summary>
+        <author>
+            <name>Geoff Graham</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[腾讯云的对象存储有内容审查吗？（观[创作没了，心凉]有感）]]></title>
+        <id>867651</id>
+        <link href="https://www.v2ex.com/t/867651"/>
+        <updated>2022-07-20T16:05:03.000Z</updated>
+        <summary type="html"><![CDATA[anxn: 
+如题，从这个帖子 https://www.v2ex.com/t/867078?p=2 中联想到的问题。
+目前有在用腾讯云的对象存储，主要是用来同步一些私人笔记和私人照片，想问下各位 v 友,使用腾讯云的对象存储时是否遇到有内容审查的情况?（因为同步的图片里面可能有 18+的图，markdown 笔记里面可能也会有一些 VPN 之类的文字，都是私人笔记，不涉及分享），所以有一些担忧，在考虑是否需要更换服务商.]]></summary>
+        <author>
+            <name>anxn</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Google Domains 注册的域名如何在国内用作 DDNS 域名]]></title>
+        <id>867650</id>
+        <link href="https://www.v2ex.com/t/867650"/>
+        <updated>2022-07-20T16:02:20.000Z</updated>
+        <summary type="html"><![CDATA[zhihuichan: 
+最近 Google Domains 注册 /转入的价格很低，我把手里的几个域名都转了过来，其中一个是我一直在给家里的 ubnt 路由器做 DDNS 域名用的。
+但是转到 Google 后因为众所周知的原因，Google 自带的 DDNS 在国内不能正常使用，有什么其他办法可以继续用这个域名做 DDNS 么？
+Google 域名转出要等到 60 天以后了。]]></summary>
+        <author>
+            <name>zhihuichan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[如果突破端口白名单网络封锁？]]></title>
+        <id>867649</id>
+        <link href="https://www.v2ex.com/t/867649"/>
+        <updated>2022-07-20T16:00:36.000Z</updated>
+        <summary type="html"><![CDATA[157003892: 
+有一台家宽公网下的黑裙，未洗全白，qc 不可用，想在公司内同步文件。公司网络有端口白名单，不限制访问的网站（当然 404 网站不能），但只能访问网站的 80.443 端口。公司内 ping 黑裙可用，但 tcping 任何端口均超时。现在有一台阿里云小鸡，一个公网 ip ，但没有备案域名，反代不可用，这种情况有较为好用的解决方案吗？]]></summary>
+        <author>
+            <name>157003892</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[推荐博客和论坛！]]></title>
+        <id>867648</id>
+        <link href="https://www.v2ex.com/t/867648"/>
+        <updated>2022-07-20T15:42:20.000Z</updated>
+        <summary type="html"><![CDATA[gordon96: 
+本人博客和论坛的爱好者，博客和论坛声音越来越极端，闲暇时间最喜欢来 V 站看看，不知道大家还有没有什么比较推荐的网站和博客，闲暇时光经常去逛逛]]></summary>
+        <author>
+            <name>gordon96</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[nodejs 如何在单元测试中 mock path.basename 的运行环境]]></title>
+        <id>867647</id>
+        <link href="https://www.v2ex.com/t/867647"/>
+        <updated>2022-07-20T15:38:18.000Z</updated>
+        <summary type="html"><![CDATA[Win78: 
+nodejs basename 方法会依据运行环境的不同选择不同的实现。
+    it('can get basename correctly', () => {
+        expect(path.win32.basename('C:\\foo\\bar\\baz.txt')).toBe('baz.txt')
+        expect(path.posix.basename('C:\\foo\\bar\\baz.txt')).toBe('C:\\foo\\bar\\baz.txt')
+    })
+
+上面的测试用例无论在那个平台执行都是正确的。
+    it('can get basename correctly on windows', () => {
+        expect(path.basename('C:\\foo\\bar\\baz.txt')).toBe('baz.txt')
+    })
+
+上面的测试用例只有在 Windows 系统执行时，才是通过的。问题来了，如何在 mac 上 mock nodejs 的运行环境，指定其为 Windows ，让这个测试用例通过？
+朋友们有没有想法，一直没找到解决思路，困扰好久了。]]></summary>
+        <author>
+            <name>Win78</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[微博怎么下载无水印原图]]></title>
+        <id>867646</id>
+        <link href="https://www.v2ex.com/t/867646"/>
+        <updated>2022-07-20T15:37:26.000Z</updated>
+        <summary type="html"><![CDATA[qiubangzhu: 
+好像没什么人讨论这个问题]]></summary>
+        <author>
+            <name>qiubangzhu</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Pixel 1 代 Google 备份照片过热问题]]></title>
+        <id>867645</id>
+        <link href="https://www.v2ex.com/t/867645"/>
+        <updated>2022-07-20T15:35:59.000Z</updated>
+        <summary type="html"><![CDATA[djgreat: 
+今天用古董 pixel1 代备份 Google 相册，提示过热停止备份了，后来物理降温了一会，就又没事了。用软件看了下大概 43°左右。 
+有遇到此类问题的吗？如何解？还是就等凉了再继续？]]></summary>
+        <author>
+            <name>djgreat</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[你是在什么时候意识到自己应该多陪伴父母？]]></title>
+        <id>867642</id>
+        <link href="https://www.v2ex.com/t/867642"/>
+        <updated>2022-07-20T14:29:14.000Z</updated>
+        <summary type="html"><![CDATA[corot2a: 读大学期间某个夜里失眠，突然意识到父母老了，在这之前跟父母聊天还会感觉他们啰嗦，第二天感觉心里像有一块石头压着，赶紧跟父母视频聊聊天。想到年过半百的父母，按照标准寿命（ 70-80 ）来说，最多也就只有二十来年，但陪在他们身边一年能有几天呢？报志愿时想着离家越远越好，想去闯荡这个世界，如今却后悔当时的决定，一年只有寒暑假才能回家。
+今年大学毕业，找了个本省离家近一点的工作，计划每周给父母视频一次，每个月至少回家一趟，即使这样还是感觉内心愧疚，不能陪伴父母太久。]]></summary>
+        <author>
+            <name>corot2a</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[请问大家在 mac 上都用什么中文输入法？]]></title>
+        <id>867641</id>
+        <link href="https://www.v2ex.com/t/867641"/>
+        <updated>2022-07-20T14:28:55.000Z</updated>
+        <summary type="html"><![CDATA[codefever: 
+默认的，还是第三方的？
+如果是第三方的，用什么比较好呢？]]></summary>
+        <author>
+            <name>codefever</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[造轮子问题请教，如何实现 xx xxx 这种命令格式]]></title>
+        <id>867640</id>
+        <link href="https://www.v2ex.com/t/867640"/>
+        <updated>2022-07-20T14:22:30.000Z</updated>
+        <summary type="html"><![CDATA[placeholder: 
+如题，
+找到的教程大多都是 xxx-cli 这种单一命令的格式，
+想实现 xx xxx 这种命令该如何实现呢？比如 ng new 这种，
+不想进步只想抄代码，请各位大佬指教。]]></summary>
+        <author>
+            <name>placeholder</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[腾讯云香港服务器会被封嘛？]]></title>
+        <id>867639</id>
+        <link href="https://www.v2ex.com/t/867639"/>
+        <updated>2022-07-20T14:13:05.000Z</updated>
+        <summary type="html"><![CDATA[yym6868686: 
+准备搭一个 BBS ，图的就是不需要备案，域名腾讯云买的，DNS 在 CF 。]]></summary>
+        <author>
+            <name>yym6868686</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[广州] [汇丰银行][内推] 招聘中高级 Java 工程师[14 薪， 18-30K+]]]></title>
+        <id>867638</id>
+        <link href="https://www.v2ex.com/t/867638"/>
+        <updated>2022-07-20T14:12:09.000Z</updated>
+        <summary type="html"><![CDATA[perry666: 
+公司： https://www.teksystems.com/
+福利待遇：
+薪资：18K -30k+(具体视面试评级而定) * 14 薪
+双休 不加班（如果加班算加班费 [平时 1.5 倍，周末 2 倍，节假日 3 倍] ），拒绝 996
+工作绝对轻松， 每天可安心的喝喝下午茶以及每日水果 超级 nice
+六险一金（公积金基本工资全额购买） 弹性上班，不打卡！不打卡！ 不打卡！ 重要的事说三遍
+5A 级写字楼， 超多漂亮小姐姐
+试用期不打折，不押工资 当月工资当月发放（当月最后一个工作日发放）
+入职即送 5 天年假
+支持在家办公， 一周去公司一两天就可以。其余时间可在家办公 超爽超自由
+不调休 周六周日永不上班， 其他法定假期正常放
+外企文化，拒绝 PUA ，不用看领导脸色，不爽领导可以直接屌
+办公地点： 广州天河区太古汇 Or 广州海珠区琶洲
+岗位要求：
+硬性条件： 学历必须大专及以上并且学信网可查
+Java 开发攻城狮 ：
+3 年以上 Java 开发工作经历
+扎实 Java 基础，对 jvm 原理有一定了解
+良好的 JavaIO ，多线程，网络等方面的编程能力
+熟悉常规的分布式架构，熟悉缓存，消息队列等开源中间件
+英语基本的听说读写
+面试： 腾讯会议或者 ZOOM MEETING 远程语音或者视频面试
+说明： 公司是外企 TEK ，主要是汇丰服务商。工作是去到汇丰银行负责汇丰银行或者股票系统方面的工作，介意者勿扰。鄙人前端，已内推十余人，从我亲身体验来讲，其实真的没什么太大差别，一样的工作， 一样的环境， 一样的食堂， 一样的聚会 工作都是一样轻松 工资甚至比汇丰高一丢丢。
+简历内推： 有兴趣的 V 友加微信内推：LD-19900818]]></summary>
+        <author>
+            <name>perry666</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[有人用 Cloudflare pages 做过站吗？效果如何]]></title>
+        <id>867637</id>
+        <link href="https://www.v2ex.com/t/867637"/>
+        <updated>2022-07-20T14:11:57.000Z</updated>
+        <summary type="html"><![CDATA[tenstone: 
+国内访问速度
+百度 SEO 效果]]></summary>
+        <author>
+            <name>tenstone</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[你们有没有遇到 idea 中 gradle 调用 build，然后启动进程又 build 一遍？]]></title>
+        <id>867635</id>
+        <link href="https://www.v2ex.com/t/867635"/>
+        <updated>2022-07-20T14:09:37.000Z</updated>
+        <summary type="html"><![CDATA[weiweiwitch: 
+多个子工程的项目，想启动多个进程调试时不用再编译。就手动点了 gradle 面板中的 clean 和 build ，但进程启动时还是会触发整体的编译。
+项目语言是 kotlin 。
+项目配置中已经设置为 gradle 编译了。]]></summary>
+        <author>
+            <name>weiweiwitch</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[求一款 Mac 窗口管理软件, 支持 3/4 覆盖]]></title>
+        <id>867634</id>
+        <link href="https://www.v2ex.com/t/867634"/>
+        <updated>2022-07-20T14:05:41.000Z</updated>
+        <summary type="html"><![CDATA[dhou45: 
+万能的 V2 老哥, 求一款 Mac 窗口管理软件, 刚需是支持快捷键一键覆盖"四分之三"的显示面积. (其实我的需求就是尽可能大的显示目前的 App 的窗口, 但是还留出最右边一小部分给桌面, 因为要频繁用到桌面文件)
+要原生支持 Silicon, 可以是付费, 但是别超过 10 刀就好.. 尝试过 Spectacle, Rectangle, 发现不支持. 不喜欢 BetterSnapTool.
+目前在用 Magnet, 但是它家只支持三分之二的覆盖. 虽然凑活能用, 但还是想要个最优解.
+谢谢大家]]></summary>
+        <author>
+            <name>dhou45</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[uniapp 微信小程序端有啥低代码平台推荐吗？]]></title>
+        <id>867633</id>
+        <link href="https://www.v2ex.com/t/867633"/>
+        <updated>2022-07-20T13:42:16.000Z</updated>
+        <summary type="html"><![CDATA[MEIerer: 
+都是一些简单的表格表单图表等业务，重复性比较高，所以想问一下，目前感觉绝大部分低代码平台都是 web 的]]></summary>
+        <author>
+            <name>MEIerer</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[谷歌发布开源开发语言 Carbon : 号称将替代 C++]]></title>
+        <id>867631</id>
+        <link href="https://www.v2ex.com/t/867631"/>
+        <updated>2022-07-20T13:22:10.000Z</updated>
+        <summary type="html"><![CDATA[charlieethan: 
+项目的 Github 地址为： https://github.com/carbon-language/carbon-lang
+在近日举行的 CppNorth 开发者大会上，谷歌工程师 Chandler Carruth 宣布了名为 “Carbon” 的全新开源开发语言，并称它将是 C++ 的继任者。Chandler Carruth 表示，Carbon 拥有与 C++ 的“双向互操作性”，也就是说开发者可以直接在 Carbon 语言的程序中使用 C++，这大大提升了项目迁移的便捷性。
+谷歌在开发该语言的时候，就将接替 C++ 作为了核心目标，它拥有大量与 C++ 相契合的特性，一个熟练的 C++ 开发者将能够迅速上手 Carbon ，并熟练进行程序的编辑
+C++
+// C++:
+#include <math.h>
+#include <iostream>
+#include <span>
+#include <vector>
+
+struct Circle {
+  float r;
+};
+
+void PrintTotalArea(std::span<Circle> circles) {
+  float area = 0;
+  for (const Circle& c : circles) {
+    area += M_PI * c.r * c.r;
+  }
+  std::cout << "Total area: " << area << "\n";
+}
+
+auto main(int argc, char** argv) -> int {
+  std::vector<Circle> circles = {{1.0}, {2.0}};
+  // Implicitly constructors `span` from `vector`.
+  PrintTotalArea(circles);
+  return 0;
+}
+
+Carbon
+// Carbon:
+package Geometry api;
+import Math;
+
+class Circle {
+  var r: f32;
+}
+
+fn PrintTotalArea(circles: Slice(Circle)) {
+  var area: f32 = 0;
+  for (c: Circle in circles) {
+    area += Math.Pi * c.r * c.r;
+  }
+  Print("Total area: {0}", area);
+}
+
+fn Main() -> i32 {
+  // A dynamically sized array, like `std::vector`.
+  var circles: Array(Circle) = ({.r = 1.0}, {.r = 2.0});
+  // Implicitly constructs `Slice` from `Array`.
+  PrintTotalArea(circles);
+  return 0;
+}
+
+Mixed
+// C++ code used in both Carbon and C++:
+struct Circle {
+  float r;
+};
+
+// Carbon exposing a function for C++:
+package Geometry api;
+import Cpp library "circle.h";
+import Math;
+
+fn PrintTotalArea(circles: Slice(Cpp.Circle)) {
+  var area: f32 = 0;
+  for (c: Cpp.Circle in circles) {
+    area += Math.Pi * c.r * c.r;
+  }
+  Print("Total area: {0}", area);
+}
+
+// C++ calling Carbon:
+#include <vector>
+#include "circle.h"
+#include "geometry.carbon.h"
+
+auto main(int argc, char** argv) -> int {
+  std::vector<Circle> circles = {{1.0}, {2.0}};
+  // Carbon's `Slice` supports implicit construction from `std::vector`,
+  // similar to `std::span`.
+  Geometry::PrintTotalArea(circles);
+  return 0;
+}]]></summary>
+        <author>
+            <name>charlieethan</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[你们那有办宽带送电动车的活动吗？]]></title>
+        <id>867630</id>
+        <link href="https://www.v2ex.com/t/867630"/>
+        <updated>2022-07-20T13:15:31.000Z</updated>
+        <summary type="html"><![CDATA[kimigaooo: 
+坐标广州，今天看到电信合作营业厅外面的海报，大概意思是办理 129 以上的套餐，合约期两年以上，就可以送一辆电动车，不过要在花呗冻结相应金额，有没有兄弟办过的，这种有什么坑吗？]]></summary>
+        <author>
+            <name>kimigaooo</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[直接上 mac studio 还是等 10 月份的 MacMini 或看看有没有 imac27 寸? 大家帮忙参考下]]></title>
+        <id>867629</id>
+        <link href="https://www.v2ex.com/t/867629"/>
+        <updated>2022-07-20T13:03:15.000Z</updated>
+        <summary type="html"><![CDATA[xiaoker: 
+手里的这台 2014 年的 MBP 实在有点慢了。因为 PD 装了 win10 。因为要看股票行情，所以要外接显示器。
+之前接的是 dell 得 2K 显示器，感觉还好。最近接 4k 显示器，明显力不从心了。
+本来想着等 imac27 寸 M1 出来，结果直接下架了。最近在纠结是继续等呢，还是升级设备算了，大家帮忙参考下。
+先说一下我现在的设备
+1.2014 年中的 MBP 13 寸的，16G 内存
+2.dell 4K 显示器 U2723QX
+3.dell 2k 显示器 P2423D
+4.罗技的蓝牙键盘。鼠标是罗技的 MX Vertical.
+再说一下我的需求和场景
+1.必须 PD 装 Windows 系统，用来看股票行情。
+2.至少外接 2 个显示器
+3.现在的 MBP 可以当备用机，外出移动用。感觉至少还能再战 2 年。
+4.未来也许可能有中度视频剪辑需求（不确定）
+现在纠结的是
+方案 1 mac studio 方案 教育优惠 13,499
+Apple M1 Max (10 核中央处理器、24 核图形处理器和 16 核神经网络引擎)
+32GB 统一内存
 512GB 固态硬盘
-30W USB‑C 电源适配器
-两个雷雳 / USB 4 端口
-Apple M2 芯片 (8 核中央处理器、8 核图形处理器和 16 核神经网络引擎)
-刚买的二手 32g pro, 确实没什么大应用场景, 主要开发也只能用公司电脑, 自己的就摸鱼和用些 IDE, 教育优惠 12949 带个耳机感觉不错了, 换掉节流一波.]]></summary>
+正面：两个 USB-C 端口，一个 SDXC 卡插槽
+背面：四个雷雳 4 端口，两个 USB-A 端口，一个 HDMI 端口，一个 10Gb 以太网端口，一个 3.5 毫米耳机插孔
+问题是
+1 、这个我觉得好的是足够冗余，可以接 4 块显示器。但是我担心我用不上，浪费了。
+2 、Mac studio 连这个 2K 的显示器，会不会糊？ 2k 显示器不行？
+3 、在 4K 和 2k 显示器之间切换，会不会分辨率之类不同的原因很不习惯？体验很差？
+方案 2  Macmini 方案
+等 10 月份 Macmini 看看更新不，预期是能不能上 M2 或者 M1 PRO 的 CPU ，32G 内存。
+价格比 Mac studio 便宜 3000 块左右。有可能吗？如果配置升级上来，价格也上来了，就没有必要等它了。
+方案 3 iMac 27 方案
+也是等 10 月份。
+各位怎么看？特别是 Mac studio 方案的 2k 显示器问题。
+另外 10 月份发布会，拿到机器都要 11 月了吧？首发蹲着应该能赶上，就是不知道会不上发布会之后就上教育优惠
+现在库克刀法太狠了~]]></summary>
         <author>
-            <name>meta575</name>
+            <name>xiaoker</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[bash 脚本问题：如果调用一个函数并且把输出保存到一个变量里，那么就会丢失这个函数运行期间对全局变量的修改，这是为什么？]]></title>
-        <id>867401</id>
-        <link href="https://www.v2ex.com/t/867401"/>
-        <updated>2022-07-19T15:51:37.000Z</updated>
-        <summary type="html"><![CDATA[kgdb00: 
-比如下面这个程序，counter 函数将 count 的值+1 ，但程序最后的输出确还是 1 ，我觉得输出 2 才应该是正常的。
-#!/bin/bash
+        <title type="html"><![CDATA[也开始定制自己的编程语言……]]></title>
+        <id>867628</id>
+        <link href="https://www.v2ex.com/t/867628"/>
+        <updated>2022-07-20T12:56:32.000Z</updated>
+        <summary type="html"><![CDATA[chai2010: 
+凹语言™（凹读音“Wa”）是披着 Go 和 Rust 语法外衣的 C++ 语言
+https://github.com/wa-lang/wa]]></summary>
+        <author>
+            <name>chai2010</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[淘宝订单系统崩了]]></title>
+        <id>867627</id>
+        <link href="https://www.v2ex.com/t/867627"/>
+        <updated>2022-07-20T12:54:24.000Z</updated>
+        <summary type="html"><![CDATA[spadger: 
+几个小时前，淘宝订单系统崩了，卖家看不到订单数据。这会儿恢复了，但是原来付过款的订单丢了。卖家这边看不到订单信息。难道是数据库回滚了?]]></summary>
+        <author>
+            <name>spadger</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[加密的 exe 如何运行？]]></title>
+        <id>867625</id>
+        <link href="https://www.v2ex.com/t/867625"/>
+        <updated>2022-07-20T12:44:17.000Z</updated>
+        <summary type="html"><![CDATA[XiiLii: 
+今天我用 pyinstaller 加密打包了一个小脚本成 exe 文件，然后把该 exe 文件解包出来，发现解包出来的 pyimod00_crypto_key 文件中包含未加密的前 16 个明文密码。为何必须将明文密码也放进 exe 呢？是不是没有明文密码，exe 就无法正常执行？]]></summary>
+        <author>
+            <name>XiiLii</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[MacOS 的快捷键，有没有什么舒适的操作方法]]></title>
+        <id>867624</id>
+        <link href="https://www.v2ex.com/t/867624"/>
+        <updated>2022-07-20T12:41:35.000Z</updated>
+        <summary type="html"><![CDATA[Elaina: 
+从 Win10 切换到 MacOS 后，原本的操作方法：
+左手小拇指 + 无名指：ctrl + A 、ctrl + Z
+左手小拇指 + 中指：ctrl + X
+左手小拇指 + 食指：ctrl + C 、ctrl + V
+现在切换到 MacOS 后:
+左手大拇指 + 食指：ctrl + A 、ctrl + Z
+左手小拇指 + （无名指、中指、食指） 分别管：ctrl + X 、ctrl + C ctrl + V
+例如：每次使用 ctrl + A 、ctrl + Z ，然后需要使用到 ctrl + V 时都需要不停移动两次手的位置。
+想问问大家有没有什么比较舒适的操作方法，让手不移动键盘就能完成快捷键组合操作的方法呢]]></summary>
+        <author>
+            <name>Elaina</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[[内推] [北京/深圳/成都]「字节跳动 - 智能创作」招(高级)前端开发(含实习)]]></title>
+        <id>867623</id>
+        <link href="https://www.v2ex.com/t/867623"/>
+        <updated>2022-07-20T12:25:27.000Z</updated>
+        <summary type="html"><![CDATA[mrcode: 部门介绍：提供音视频创作能力到公司各个平台，还有 toB 业务(未来可能会提供成都岗位)
+提供简历修改指导，面试进度查询等私人服务。邮箱：bGl5dW5oYW5nQGJ5dGVkYW5jZS5jb20=
 
-count=1
+内推链接： https://job.toutiao.com/s/2yCsR1C]]></summary>
+        <author>
+            <name>mrcode</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[分享一款程序员工具箱 CodeGen，集成了许多常用的功能，同时还支持全局夜间模式和 Windows/ Linux /OSX 三端系统]]></title>
+        <id>867621</id>
+        <link href="https://www.v2ex.com/t/867621"/>
+        <updated>2022-07-20T12:11:06.000Z</updated>
+        <summary type="html"><![CDATA[lstz: 
+正文
+Hi ，大家好！我是 CodeGen 工具箱的开发者，今天想给大家分享一下这个工具箱，先给大家看一下我们的官网与其他地址：   
+离线工具箱: https://codegen.cc
+在线工具箱: https://cloud.codegen.cc 
+B 站 /视频讲解(欢迎关注): https://space.bilibili.com/1343908691?spm_id_from=333.1007.0.0 
+开发者邮箱： work7z@outlook.com 
+Github 仓库：https://github.com/work7z/CodeGen
+1.为什么要做这个工具箱？
+其实像是代码格式化、JWT 解码编码、格式加密解密，剪切板管理、二维码生成等功能，已经有很多前辈提供了在线版本，而且也是很好用的。但我工作这几年有一些执念，想要做一个开箱即用、可离线、方便可依赖且无广告的工具箱，于是我在几个月就开始一直在做这款工具箱，不是为了钱，只是希望能像 frp/gogs 那样做一个比较受人喜欢的工具箱，在自己的人生简历上也能增添色彩。   
+2.是否会植入广告、安装捆绑软件、或者突然收费？
+开发者在这里向大家承诺：我们不会插入任何广告或者捆绑软件，也不会对一些功能突然就收费了，我们只想做一个干净可依赖的工具箱。
+3.功能预览
 
-counter()
-{
-count=$((count + 1))
-echo test
-}
-
-str=$(counter)
-
-echo $count
 
 
-如果我调用 counter 的时候没有把输出保存在 str 里，那么程序最后的输出就是 2]]></summary>
+
+
+
+ 
+4.是否会开源
+会的，我们已经开源了部分客户端代码，后续等功能都稳定完善之后，我们会把剩余的代码都开源出去的(因为考虑到是客户端程序，所以很多代码怕有被利用来攻击的地方，我们还在积极审查中） 
+5.怎么合力一起开发？
+开发者已经正在努力调整插件，并且在写相关的扩展文档了，只是时机还不成熟。我们后期会进行扩展功能开发，从而能够方便大家一起来写插件，增加 CodeGen 工具箱的可用性！
+6.已经有了 UTools 和其他工具箱，你怎么还重复造轮子？你能确保不会鸽，一直开发下去吗？
+我们是希望能专注于代码开发这一块，能够在差异化的需求里找到 CodeGen 的位置，我们也明白很多前辈有很多经验，我们会努力学习，然后因为是非盈利的，所以也没有很大动力去替代其他工具箱。尽管 CodeGen 工具箱刚起步还不是很完善，但相信只要一直迭代下去，CodeGen 会越来越好的。
+是否支持 IDE 插件开发？
+我们会的，其实在一两个月前的架构调整，就是在为 IDE 插件化功能做准备，届时我们将支持在代码里就能 Base64 转换，以及各种实时功能，敬请关注哈(可以 B 站关注 up 主，有新版本推送，都会及时发视频讲解的)  
+遇到问题怎么解决？
+您可以加群 106038310 ，或者在 Github 发起 Issue 。涉及到数据隐私的，可以发送邮件给开发者。工具箱所有功能包括技术排查都不需任何费用，能够解决用户的疑问，是我们荣幸之至的事情。
+支持 Deepin/UOS/Ubuntu 和其他平台吗？
+支持的，我们初衷就是跨平台 Windows/Linux/OSX 。如果您的平台不支持的话，我们也有在线服务，能够提供非本地化的功能的。
+文章的最后
+我知道 V 站有很多技术大佬，恳请前辈们能提出宝贵意见和改进建议。也许 CodeGen 工具箱还不够成熟，但作为开发者，我会努力完善这个工具箱，让它涵盖更多好用的功能，之前在 B 站有很多技术前辈的建议也很不错，我已经有在积极去实现，比如 JWT 编码和解码之类的，也希望能听到大家的建议！如果您愿意将 CodeGen 工具箱分享给您的朋友，这是对我们最大的帮助，thanks ！      
+最后，感谢您花时间阅读本篇文章！衷心的祝您工作顺利，心想事成，平平安安!]]></summary>
         <author>
-            <name>kgdb00</name>
+            <name>lstz</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[请问下本地起个 node 服务如何能让远程通过 ip 访问?]]></title>
-        <id>867400</id>
-        <link href="https://www.v2ex.com/t/867400"/>
-        <updated>2022-07-19T15:39:22.000Z</updated>
-        <summary type="html"><![CDATA[pdog18: 
-我用 node / express 起了个服务，通过 127.0.0.1 / localhost 是可以访问的。
-但是我想用 「本机 ip:端口号」访问，却不能访问。
-搜索了一下，改成 0.0.0.0 ，确认防火墙是关闭的，也还是不能访问，会和 macOS 有关吗?]]></summary>
+        <title type="html"><![CDATA[为什么 chrome 控制台获取 cookie 不完整？]]></title>
+        <id>867619</id>
+        <link href="https://www.v2ex.com/t/867619"/>
+        <updated>2022-07-20T11:49:20.000Z</updated>
+        <summary type="html"><![CDATA[nyxsonsleep: 比如说 v2 的 cookie 里面没有 A2 、gat 等值，但是又可以从应用中找到。
+应该用什么指令获取目标网站的所有 cookie 呢]]></summary>
         <author>
-            <name>pdog18</name>
+            <name>nyxsonsleep</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[连续看视频合集时，无限重复的片头文案有无办法跳过]]></title>
-        <id>867399</id>
-        <link href="https://www.v2ex.com/t/867399"/>
-        <updated>2022-07-19T15:32:47.000Z</updated>
-        <summary type="html"><![CDATA[voidless: 最近看 B 站上的长篇漫画解说，发现 UP 主在每个视频开头都放了一模一样的片头，等于每集都要手动跳过，不知道有没有方法或者插件能够自动自定义跳到视频的某个时间点]]></summary>
+        <title type="html"><![CDATA[windows 是创建文件的过程是怎样的？]]></title>
+        <id>867618</id>
+        <link href="https://www.v2ex.com/t/867618"/>
+        <updated>2022-07-20T11:48:10.000Z</updated>
+        <summary type="html"><![CDATA[xlzyxxn: 
+之前在哪本书还是在哪里看到的，windows 创建文件，现在记不清了，好像是先创建一个空文件，然后创建一个临时文件，最后把临时文件重命名什么的；忘记在哪看到的了想不起来了（这种感觉太挠人了），有没有懂的兄弟或者看过类似东西的兄弟唠两句]]></summary>
         <author>
-            <name>voidless</name>
+            <name>xlzyxxn</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[领英对不同设备显示不同信息是为什么？]]></title>
-        <id>867397</id>
-        <link href="https://www.v2ex.com/t/867397"/>
-        <updated>2022-07-19T15:26:47.000Z</updated>
-        <summary type="html"><![CDATA[WaterWestBolus: 
-通过 mac big sur 下的最新版 chrome ，可以在无登录的情况下访问到我某位同事的所有信息。包括学校、一直以来的工作经历。
-通过 windows 11 下的最新版 chrome ，必须登录才能访问同一人信息，且信息不全，只有最早的一条工作信息。无法看到学校和其他工作信息。
-使用 Android 下载的中国特供版看到的信息量和 windows 一致。
-使用 Android 下载的 Linkedin 在界面最上层加了一层弹窗不让中国区用户用，但也能使用华为密码箱登录。不过进去后仍有相同弹窗，会被屏蔽。
-4 尚可理解，但 123 这样设计的初衷是什么？？？真恶心人啊]]></summary>
+        <title type="html"><![CDATA[阿里云的云企业网服务 , 走的联通的哪个线路?]]></title>
+        <id>867617</id>
+        <link href="https://www.v2ex.com/t/867617"/>
+        <updated>2022-07-20T11:42:55.000Z</updated>
+        <summary type="html"><![CDATA[kenshin912: 
+公司打算在东南亚部署一套前端 , 直接通过阿里云的云企业网回到杭州的后端服务器上.
+不知这样是否可行?
+阿里云的帮助页面上提示 , 带宽走的联通 , 但是没说具体线路 ; 工单也没问出来 .
+啥都不知道也不敢直接买 , 有没有哪个大佬知道的呢 ?]]></summary>
         <author>
-            <name>WaterWestBolus</name>
+            <name>kenshin912</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[[上海]-[不加班]-[外企] 招 Java 、C++、安卓、中级测试、支持工程师、初级 devOps， Java 和 测试有残疾人岗位]]></title>
-        <id>867395</id>
-        <link href="https://www.v2ex.com/t/867395"/>
-        <updated>2022-07-19T15:19:44.000Z</updated>
-        <summary type="html"><![CDATA[xsldebugger0030: 
-重要的事情
-内推别人给我，成功送 5000 内推费！
-公司简介
-MicroFocus 成立于 1976 年，于 2017 年完成了与 HPE 的合并，是全球性的软件专营公司之一。
-上海研发中心位于浦东新区张江高科技园（中科路地铁站），是 Micro Focus 在全球几个主要的研发中心之一，成立于 2008 年 11 月。现在有 600 多位工程师, 致力于多款主打软件产品的研发，产品主要包含 LoadRunner Professional, LoadRunner Cloud, ALM, UFT(QTP), Service Manager, 等，其中一些如 UFT ，LoadRunner 是目前市场占有率第一的软件。
-福利
-不加班（ 9-6-5 ，周末从不加班，建议具体部门面试时再次确认）
-固定 14 薪+ 年薪 5% 左右浮动的奖金
-14 天年假
-可申请人才引进落沪
-可申请人才公寓
-公司给员工配意外险，医疗险，寿险，重疾险, 看病基本不花钱
-补充公积金
-部分工资可以 85 折内购公司股票，最低年化收益 7.5%
-简历投递（联系方式请通过 base64 转换）
-请直接将简历发送到 xiansheng.lu@microfocus.com 格式如下：
-邮件标题: 平台或渠道-内推-应聘职位-期望年包-姓名, 如 v2ex-内推-PPM Java Engineer-35W-张三
-xiansheng Lu 内推-应聘职位-姓名, 如 xiansheng Lu 内推-PPM Java Engineer-张三
-若没有收到回复，请加微信 MTgyMjE1MDg5MjE= 备注 平台或渠道-内推-职级职位，如 v2ex-内推-PPM Java Engineer-Expert。
-职位列表-简介（职位详细要求戳我跳转）
-/ QA Engineer / 月薪 …]]></summary>
+        <title type="html"><![CDATA[上市公司的你公积金缴费基数是多少？还是最低标准？]]></title>
+        <id>867616</id>
+        <link href="https://www.v2ex.com/t/867616"/>
+        <updated>2022-07-20T11:38:12.000Z</updated>
+        <summary type="html"><![CDATA[dejavv: 
+有在上市公司上班的，你的公积金基数是按照实际工资缴纳，还是最低标准？]]></summary>
         <author>
-            <name>xsldebugger0030</name>
+            <name>dejavv</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[上海徐汇漕河泾前端实习，现在建议去吗，不知道那边什么情况了]]></title>
-        <id>867394</id>
-        <link href="https://www.v2ex.com/t/867394"/>
-        <updated>2022-07-19T15:17:14.000Z</updated>
-        <summary type="html"><![CDATA[NGUP915: 
-公司是鱼耳直播，也不是很了解，这倒没啥，就怕去了有疫情给我封在那里，毕竟前段时间啥情况都知道]]></summary>
+        <title type="html"><![CDATA[英国破纪录高温]]></title>
+        <id>https://m.idai.ly/se/80d45a</id>
+        <link href="https://m.idai.ly/se/80d45a"/>
+        <updated>2022-07-20T10:59:00.000Z</updated>
+        <summary type="html"><![CDATA[伦敦市民搭乘地铁出行。7月19日，英格兰东部录得40.3°C高温，刷新英国有史以来最高温纪录，伦敦市最高气温有史以来首次突破40℃。英国政府本周已宣布进入国家紧急状态并发布首个「极端高温红色预警」。世界气象组织指出，全球气候变暖导致极端高温天气灾害频发，负面影响将至少持续至本世纪60年代。摄影师：Tolga Akmen]]></summary>
         <author>
-            <name>NGUP915</name>
+            <name>iDaily 每日环球视野</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[见老丈人了，买点啥好呢，老丈人不抽烟，不喝酒，平时喝点茶。]]></title>
-        <id>867393</id>
-        <link href="https://www.v2ex.com/t/867393"/>
-        <updated>2022-07-19T15:13:51.000Z</updated>
-        <summary type="html"><![CDATA[2liuqi: 最好是对身体好的真正有效的保健品，或者有逼格且实用的单品～～～～]]></summary>
+        <title type="html"><![CDATA[画图本 – 简单美观的在线思维导图工具]]></title>
+        <id>https://www.appinn.com/?p=42792</id>
+        <link href="https://www.appinn.com/huatuben-net/"/>
+        <updated>2022-07-20T10:05:34.000Z</updated>
+        <summary type="html"><![CDATA[画图本是一款简单美观的在线思维导图工具，还拥有一个画板功能，可以很方便的制作思维导图。@Appinn 画图本 – huatuben.net 画图本 就是这两天在风口浪尖的那款服务，已经更换]]></summary>
         <author>
-            <name>2liuqi</name>
+            <name>青小蛙</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[升级 iOS16 后的位置提醒应用]]></title>
-        <id>867390</id>
-        <link href="https://www.v2ex.com/t/867390"/>
-        <updated>2022-07-19T15:04:30.000Z</updated>
-        <summary type="html"><![CDATA[terryl: 
-在升级到了 iOS16 Public Beta 以后，常常会看到 OneTravel 在使用位置信息，但是找不到 OneTravel 属于哪个 app 。能否给点建议？谢谢。]]></summary>
+        <title type="html"><![CDATA[Powerful Image Optimization Tools]]></title>
+        <id>https://smashingmagazine.com/2022/07/powerful-image-optimization-tools/</id>
+        <link href="https://smashingmagazine.com/2022/07/powerful-image-optimization-tools/"/>
+        <updated>2022-07-20T10:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Optimizing the size of images can have a bigger impact on performance than all other areas combined. In this article, Louis Lazaris covers different tools available for reducing the size of images.]]></summary>
         <author>
-            <name>terryl</name>
+            <name>hello@smashingmagazine.com (Louis Lazaris)</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[写的一手好字，硬笔和软笔，如何快速变现呢？除了去当老师]]></title>
-        <id>867389</id>
-        <link href="https://www.v2ex.com/t/867389"/>
-        <updated>2022-07-19T14:57:37.000Z</updated>
-        <summary type="html"><![CDATA[DadLearnpython:]]></summary>
+        <title type="html"><![CDATA[俄伊土三边会谈]]></title>
+        <id>https://m.idai.ly/se/774Q18</id>
+        <link href="https://m.idai.ly/se/774Q18"/>
+        <updated>2022-07-20T09:57:00.000Z</updated>
+        <summary type="html"><![CDATA[俄罗斯总统 Vladimir Putin、伊朗总统 Ebrahim Raisi 与土耳其总统 Recep Tayyip Erdogan 举行叙利亚问题三边会议，德黑兰。7月19日，俄土伊领导人发表联合声明，宣布坚定支持叙利亚的主权、独立、统一和领土完整，强调「无外国干涉的政治解决方案」是解决叙利亚危机的唯一途径。三方同意加强合作共同打击恐怖主义、维护地区安全与稳定、推进叙利亚难民返家和战后重建工作，反对任何第三方非法攫取叙利亚的石油天然气等资源。摄影师：Sergei Savostyanov]]></summary>
         <author>
-            <name>DadLearnpython</name>
+            <name>iDaily 每日环球视野</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[不用洗的杯子推荐？]]></title>
-        <id>867388</id>
-        <link href="https://www.v2ex.com/t/867388"/>
-        <updated>2022-07-19T14:51:58.000Z</updated>
-        <summary type="html"><![CDATA[znwindy: 办公室用杯子，主要用来喝咖啡，但是苦于懒癌，每次用完必须要洗，一次不洗那么就有污垢在底部，下次就不想用了。想请问有没有一种可以不用洗的杯子，比如光滑或者特殊的材料制作的，每次倒完杯子里的液体不留一点残留，也就不用洗了。]]></summary>
+        <title type="html"><![CDATA[清凉一夏正版放肆购，Fences、Snipaste 多款软件冰点低价来袭]]></title>
+        <id>https://www.appinn.com/?p=42783</id>
+        <link href="https://www.appinn.com/lizhi-2022-summer/"/>
+        <updated>2022-07-20T08:18:21.000Z</updated>
+        <summary type="html"><![CDATA[数码荔枝开启清凉一夏活动，正版软件畅享冰点低价，包括 Fences、Snipaste、BitDock、Start11、Effie、优效日历、优效文件助手、扫描全能王、MenubarX、Manico、G]]></summary>
         <author>
-            <name>znwindy</name>
+            <name>青小蛙</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[双屏显示器支架（屏幕+笔记本款）推荐]]></title>
-        <id>867387</id>
-        <link href="https://www.v2ex.com/t/867387"/>
-        <updated>2022-07-19T14:48:48.000Z</updated>
-        <summary type="html"><![CDATA[n2l: RT ，有合适的推荐一下嘛？]]></summary>
+        <title type="html"><![CDATA[巴基斯坦卢比贬值危机]]></title>
+        <id>https://m.idai.ly/se/1fb368</id>
+        <link href="https://m.idai.ly/se/1fb368"/>
+        <updated>2022-07-20T06:55:00.000Z</updated>
+        <summary type="html"><![CDATA[白沙瓦一家外币兑换店展示卢比和美元纸钞。7月19日，巴基斯坦卢比兑美元汇率盘中一度跌至224:1，创下历史新低。受新冠疫情和政局不稳定影响，巴基斯坦卢比兑美元汇率过去一年下跌近30%，该国外汇储备已降至98亿美元，仅能满足约45天进口贸易需求。国际评级机构惠誉当天宣布将巴基斯坦展望从「稳定」下调至「负面」，理由为外部流动性不足和融资状况恶化。摄影师：Arshad Arbab]]></summary>
         <author>
-            <name>n2l</name>
+            <name>iDaily 每日环球视野</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[一个惨痛的使用时间机器教训]]></title>
-        <id>867386</id>
-        <link href="https://www.v2ex.com/t/867386"/>
-        <updated>2022-07-19T14:45:12.000Z</updated>
-        <summary type="html"><![CDATA[VincentYoung: 
-我的 Mac mini 出现了某些问题，我需要重装系统。因为平时一直接着移动硬盘，会自动一小时备份一次。所以当时就想反正我装完了直接恢复备份就行了。
-抹盘安装完，在激活的时候，跳出迁移助理，选择时间机器恢复，但是选择任何一个备份，都显示空间不够。每一个备份的 /Users/用户名 /Library 扫描出来都是将近 5T 的。而我的 Mac 是 512G 的，我的移动硬盘是 1T 的，我只分配了 600G 给时间机器。
-我把移动硬盘插到另一台 MBP 上，发现这个非常大的文件是在 /Users/用户名 /Library/Group Containers 里面，一个与 OneDrive 相关的文件。而我的 E3 订阅的 OD ，的确用了近 5T （快用满了，但是我的文件都在云端。应该就是 Mac 的文件系统误认了。
-由于时间机器无法删除某个文件夹，所以只能选择恢复除了用户之外的应用和系统设置，但这会导致丢失软件的所有设置和缓存。最后只能这样，重装系统恢复应用之后，逐个恢复软件的数据。还好，微信什么的聊天记录都在。
-请大家不要在有 OneDrive 的情况下使用时间机器，如果你的 OneDrive 用量比较大的话，恢复时就一定是空间不够的。Google Drive 没有任何问题。]]></summary>
+        <title type="html"><![CDATA[美国财长访问韩国]]></title>
+        <id>https://m.idai.ly/se/30cfZH</id>
+        <link href="https://m.idai.ly/se/30cfZH"/>
+        <updated>2022-07-20T06:53:00.000Z</updated>
+        <summary type="html"><![CDATA[美国财政部长 Janet Yellen 与韩国总统尹锡悦举行会晤，首尔。7月19日，美国财长 Yellen 首次访问韩国，主要目的就通货膨胀、全球能源价格和半导体供应链等议题与韩方进行讨论。Yellen 表示「美韩正在动力电池、半导体芯片等关键零部件领域合作建立更具韧性的供应链」，呼吁美国盟友国家通过「友岸外包」（friend-shoring）战略阻止中国在半导体技术领域取得主导地位。摄影师：iDaily Media]]></summary>
         <author>
-            <name>VincentYoung</name>
+            <name>iDaily 每日环球视野</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[关于移动硬盘对于虚拟机软路由系统的影响猜测]]></title>
-        <id>867385</id>
-        <link href="https://www.v2ex.com/t/867385"/>
-        <updated>2022-07-19T14:39:32.000Z</updated>
-        <summary type="html"><![CDATA[Smallsun1231: 如题，OP 目前使用一台 Z4G4 通过安装 Unraid 的系统作为家庭虚拟化环境的宿主机，迫于供电压力，除了直通给群晖的机械硬盘，实在是没有多余的供电再给 unraid 做为阵列的基础，只能通过 USB 接入一块 1T 的移动硬盘作为阵列唯一的容量来源。
-  近日，也是机缘巧合，有机会接入两条联通的千兆线路（ UP30M ），想着能否尝试性通过链路聚合跑满运营商给的冗余带宽（ PS:其中一台光猫为自有的 HN8346Q,通过组 Bond 的方式，可以跑满单条线路。具体见下面的详情图）。
-  
-  测试中遇到的故障表现为上行链路叠加正常,但是下载只能峰值到 1600M 左右，怀疑是否是因为宿主盘是移动硬盘通过 USB 接入的原因导致无法跑满实际链路带宽。仅有的两个 M2 接口被窝接了两块固态作为群晖的缓存盘，实在没有办法再接入高速存储。
-  希望有经验的彦祖可以提供多些解题思路~~~
-  感谢~~~]]></summary>
+        <title type="html"><![CDATA[杭州亚运会延期一年]]></title>
+        <id>https://m.idai.ly/se/4f8ZbM</id>
+        <link href="https://m.idai.ly/se/4f8ZbM"/>
+        <updated>2022-07-20T06:51:00.000Z</updated>
+        <summary type="html"><![CDATA[俯瞰杭州亚运会会徽图案的园艺景观，中国浙江省。7月19日，亚洲奥林匹克理事会宣布第19届亚运会举办日期更改为2023年9月23日至10月8日，名称依然为「杭州2022年第19届亚运会」。本届亚运会改期主要受新冠疫情影响，赛程共设游泳、射箭、田径、羽毛球、棒垒球、篮球、拳击等40个大项，包括首次入选正式竞赛项目的电子竞技，预计共产生482枚金牌。摄影师：iDaily Media]]></summary>
         <author>
-            <name>Smallsun1231</name>
+            <name>iDaily 每日环球视野</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[GitHub 大陆地区下架了？]]></title>
-        <id>867384</id>
-        <link href="https://www.v2ex.com/t/867384"/>
-        <updated>2022-07-19T14:35:19.000Z</updated>
-        <summary type="html"><![CDATA[fengziyun: 旧手机有装，拿了一个备用机也想装一个。
-开始没搜到以为我输入的问题，然后在旧手机上分享也不行。最后没办法搜网页，通过链接跳转 Apple store ，结果显示该地区不提供我尼玛。
-至于这么封闭吗？]]></summary>
+        <title type="html"><![CDATA[大阪世博倒数1000天]]></title>
+        <id>https://m.idai.ly/se/c8c37E</id>
+        <link href="https://m.idai.ly/se/c8c37E"/>
+        <updated>2022-07-20T06:49:00.000Z</updated>
+        <summary type="html"><![CDATA[东京晴空塔举行2025年大阪世博会开幕倒计时1000天庆祝活动。7月18日，日本政府宣布2025大阪世博会官方吉祥物的命名为「脉脉」（MYAKU-MYAKU），寓意将日本历史、文化、智慧和科技连绵不断地传承至未来。日本首相岸田文雄表示「希望大阪世博会成为以最新尖端技术开创时代、解决社会课题的契机」。大阪世博会将于2025年4月13日开幕，主题为「让生命绽放光彩的未来社会设计」，观众目标人数为2800万。摄影师：Kotaro Numata]]></summary>
         <author>
-            <name>fengziyun</name>
+            <name>iDaily 每日环球视野</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[Little Snitch 的 Alert Mode 弹窗太狠了……但是 Slient Mode 又好像摆设……]]></title>
-        <id>867383</id>
-        <link href="https://www.v2ex.com/t/867383"/>
-        <updated>2022-07-19T14:33:31.000Z</updated>
-        <summary type="html"><![CDATA[neochen13: 
-如题，今天入了这个 App ，体验不错，就是 Alert Mode 几乎啥都弹……都快没法用了
-Slient Mode 呢，不停提示有网络链接，但是直接放行，这不是摆设吗……
-还是说我使用姿势不对头额……]]></summary>
+        <title type="html"><![CDATA[哥伦比亚土著博物馆]]></title>
+        <id>https://m.idai.ly/se/3a6H9s</id>
+        <link href="https://m.idai.ly/se/3a6H9s"/>
+        <updated>2022-07-20T06:47:00.000Z</updated>
+        <summary type="html"><![CDATA[哥伦比亚穆伊斯卡原住民博物馆展出一件古美洲文明石像，瓜塔维塔。穆伊斯卡文明起源于哥伦比亚东部的昆迪博亚卡高原，历史可追溯至公元600至1600年，是与玛雅、印加和阿茲特克文明齐名的古美洲四大文明之一。穆伊斯卡人因崇拜太阳神而迷恋黄金，并有在瓜塔维塔湖中向神明献祭黄金的习俗。这项习俗后来引发穆伊斯卡存在「黄金国」的传说。摄影师：Juancho Torres]]></summary>
         <author>
-            <name>neochen13</name>
+            <name>iDaily 每日环球视野</name>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[iPhone 13 pro 的移动 5G 体验快不快]]></title>
-        <id>867381</id>
-        <link href="https://www.v2ex.com/t/867381"/>
-        <updated>2022-07-19T14:08:27.000Z</updated>
-        <summary type="html"><![CDATA[YoungKing6:]]></summary>
+        <title type="html"><![CDATA[RM UP-01 Ferrari 超薄腕表]]></title>
+        <id>https://m.idai.ly/se/38dkG8</id>
+        <link href="https://m.idai.ly/se/38dkG8"/>
+        <updated>2022-07-20T06:40:00.000Z</updated>
+        <summary type="html"><![CDATA[RICHARD MILLE 与法拉利（Ferrari）携手推出全新 RM UP-01 Ferrari 腕表，1.75mm 纤薄表壳能承受高达5000g的重力加速度，搭载获得专利的超薄擒纵结构，融合尖端制表技术和极致美学构想，彰显对创新与完美的永恒追求。]]></summary>
         <author>
-            <name>YoungKing6</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[群晖 Synology DSM7 系统软件使用问题讨论（集中贴，新问题也再次回帖便于大家汇总）]]></title>
-        <id>867380</id>
-        <link href="https://www.v2ex.com/t/867380"/>
-        <updated>2022-07-19T13:59:55.000Z</updated>
-        <summary type="html"><![CDATA[Apol1oBelvedere: 
-这是我汇总的一些群晖 DSM7 系统软件使用问题，目前没有得到解决，大家有新问题可以一起在这发布，便于集中交流：
-群晖视频（含 Video Station ）不能窗口播放，且 300M 内网拖动进度条时视频播放有卡顿。
-File Station 网页端无法直接新建文本文件或 office 文件，不方便，有时需要在网页上文件夹内快速新建备忘 txt 文件。
-文件夹树下的子文件夹顺序不能任意调节固定，有的中文文件夹顺序不是想要的排列方式。
-地址栏不能在整个长度上通过单击激活复制，需要很靠近地址的最后一个字符处才能激活复制地址栏文字，很不方便。
-Synology Contacts 联系人不能添加名片图片，功能不完善。
-不能从本地资源管理器直接拖拽文件到网页浏览器的 File station 文件夹里，需要用上传按钮但是只能上传文件，不方便。
-File station 文件夹缺少向上按钮，不能便捷地返回上一级，只能点击地址栏，不方便。
-网页没有夜间模式，希望增加这个模式或夜间主题。
-没有收藏文件夹功能，每次到很深的文件夹，一个一个点击跳转很麻烦。]]></summary>
-        <author>
-            <name>Apol1oBelvedere</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[英语流利说这个课程的实际价格是多少？]]></title>
-        <id>867379</id>
-        <link href="https://www.v2ex.com/t/867379"/>
-        <updated>2022-07-19T13:59:04.000Z</updated>
-        <summary type="html"><![CDATA[estk: 
-本来我觉得这个 App 还行，但是天天被客服催着付款反而不想买了
-此外就是感觉没什么隐私，客服后台可以听我的录音（虽然号称是指派的老师，但是我没授权任何人听我的录音）
-价格的话，按照这个趋势，感觉明天会更便宜？你们多少钱入手？]]></summary>
-        <author>
-            <name>estk</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[哪位老哥办了广电手机号，求一枚验证码，帮忙下一单靓号。。]]></title>
-        <id>867377</id>
-        <link href="https://www.v2ex.com/t/867377"/>
-        <updated>2022-07-19T13:50:25.000Z</updated>
-        <summary type="html"><![CDATA[xiaobinim:]]></summary>
-        <author>
-            <name>xiaobinim</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[求支持 pfsense 的多口 pcie 有线网卡推荐]]></title>
-        <id>867376</id>
-        <link href="https://www.v2ex.com/t/867376"/>
-        <updated>2022-07-19T13:39:19.000Z</updated>
-        <summary type="html"><![CDATA[szzonly: 
-求推荐适合 pfsense 的 pcie 多口网卡，新的或二手的都行。我预算大概是 400-500 rmb 左右。
-我预期是买 2-4 口的网卡，然后通过 proxmox ve passthrough 给 pfsense, 我台式机目前只有一个 intel i210 网卡。 
-我目前做的功课：
-目前 pfsense 最新的 community edition 2.6.x 是基于 freebsd 12.3 stable ，freebsd 硬件支持  网页下搜索 Ethernet Interfaces ， 看到没有螃蟹卡，只有其他品牌。
-我搜了别的网页，看到 pfsense 对 intel 的网卡支持比较好，而螃蟹卡是不推荐的，但是 jd 上 4 口的 pcie 网卡，螃蟹卡有 300 多的，一些 intel 的都要 6 ，700 或者上千，买不起。
-现在想着是在淘宝上买一块拆机的网卡之类的，之前想买 intel i350 t4, 然后看了一篇 Comparison: Intel i350-T4 Genuine vs Fake 的比较，就担心买到假卡。]]></summary>
-        <author>
-            <name>szzonly</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[给各位开了一个自由服]]></title>
-        <id>867375</id>
-        <link href="https://www.v2ex.com/t/867375"/>
-        <updated>2022-07-19T13:26:55.000Z</updated>
-        <summary type="html"><![CDATA[Aloento: 跟这个帖子 https://www.v2ex.com/t/866837
-点击链接加入群聊 [CraftServer] ： https://jq.qq.com/?_wv=1027&k=u6JnRrp1
-没有腐竹，你们爱怎么玩怎么玩，社区运营
-服务器除了有延迟以外，配置管够
-op 想当的，我观察一下觉得没问题就给
-需要什么插件想要什么 mod 的告诉我
-嘛，就这样，just for fun]]></summary>
-        <author>
-            <name>Aloento</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[27 寸 4K 144 显示器推荐]]></title>
-        <id>867373</id>
-        <link href="https://www.v2ex.com/t/867373"/>
-        <updated>2022-07-19T13:23:13.000Z</updated>
-        <summary type="html"><![CDATA[ikn0wzxc: 
-手里目前在用的是 AOC U2790PQU ，4K60 。想再入一个 4K144 的显示器，不太懂参数这些，手里现在这个显示效果自觉不错，希望新入的这个显示效果相当或更好，就是看文档打游戏，没有 HDR 等特殊需求。大伙有推荐的型号吗，AOC U28G2X/D 这款怎么样]]></summary>
-        <author>
-            <name>ikn0wzxc</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[[吐槽] 我踏马好气啊，死活不能重命名，“操作无法完成，因为其中的文件夹或文件已在另一程序中打开”]]></title>
-        <id>867372</id>
-        <link href="https://www.v2ex.com/t/867372"/>
-        <updated>2022-07-19T13:21:59.000Z</updated>
-        <summary type="html"><![CDATA[fyxtc: unlocker 直接看啥都没有，但是就是死活不能重命名，等了 5 分钟，还不行，unlocker 重命名也不行，但是里面的所有东西都可以剪切出来到另一个文件夹，这踏马都啥事啊]]></summary>
-        <author>
-            <name>fyxtc</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[请教大佬们一个 Java 轻量级锁的基础问题]]></title>
-        <id>867371</id>
-        <link href="https://www.v2ex.com/t/867371"/>
-        <updated>2022-07-19T13:02:40.000Z</updated>
-        <summary type="html"><![CDATA[shenhualv7: 轻量级锁遇到递归锁问题时是否会多次在栈内分配空间来备份 mark word 呢？
-如果是这样的话不是会比用锁计数器的 monitor 更加重量吗？]]></summary>
-        <author>
-            <name>shenhualv7</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[南京 | 内推 | 股权激励 | 外企 WLB |慧咨环球 | 混合办公 | 程序员招聘 | 行业领袖 扁平管理 可移民澳洲]]></title>
-        <id>867370</id>
-        <link href="https://www.v2ex.com/t/867370"/>
-        <updated>2022-07-19T13:01:49.000Z</updated>
-        <summary type="html"><![CDATA[Just1n: 
-这是对之前帖子的一个补充。
-具体 JD 可以看这里： https://www.zhipin.com/gongsir/e6dff117d134f9651nJ93921EVM~.html
-回答Joel Test ： https://www.zhihu.com/question/493751767/answer/2282085657 
-内推可加 VX ，VX 同 V2 用户名。
-关于慧咨环球：
-官网： https://www.wisetechglobal.com/
-成立于 1994 年，总部在澳大利亚悉尼
-旗舰产品 CargoWise One 为许多世界领先的国际物流公司提供了卓越的业务管理和操作系统
-全球物流排名前 50 的公司最少有 45 家在用慧咨的产品，比如 DHL ，DSV ，GEODIS ，UPS 等
-技术，硬件，福利以及工作环境：
-位置：南京建邺区华新城 T6 办公楼（地库直通华采天地和元通地铁站）
-混合办公模式，3 天在家办公，2 天在办公室办公
-每人标配 Dell Precision 5570 工作站笔记本（ 64G 内存，2T SSD ，i9-12 处理器）+ 43 寸 4K 显示器 x 2 + 升降办公桌 + 开放式办公桌，没有隔断也没有单独办公室
-为了提高效率，我们买了 ReSharper 和Entrian Source Search的企业授权
-完全没有加班和打卡，题主本人每天基本 4 点多下班，偶尔下了班会和同事一起去奥体打打篮球
-工程师文化，没有政治，也没有工作 PUA
-每周 Fruit Day ，每月 Cake Day ，免费零食
-股权激励
-入职有 10 天年假，满 3 年有 15 天年假，满 10 年有 20 天年假
-工作满三年可申请移民澳洲（已经有小伙伴过去了）
-PS. 非常赞同这个招聘帖里说的每一句话，慧咨是一家非常典型的深耕细分供应链行业并提供几乎物流全链路功能的管理操作系统的公司，我们的工作不像国内主流的互联网公司，没有那么高的并发也没有那么大的流量，但是用优美的代码和精巧的设计去解决非常复杂的业务问题也是一个优秀的软件工程师的价值体现。
-学英语，而不是用英语。所以我们对英语的要求是能做到基本的读写，可以阅读大部分的英文技术文档，口语不至于一句话都说不出来。如果一定要更详细的要求的话，英语四级应该就可以了，LOL 。当然如果你要应聘的是一个非常资深的岗位，需要频繁跟悉尼总部对接和沟通的话，光读写肯定不够的。    
-PPS. 最后依然贴一些公司办公环境的照片。]]></summary>
-        <author>
-            <name>Just1n</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[小黄鱼真神奇，什么都有。。。]]></title>
-        <id>867369</id>
-        <link href="https://www.v2ex.com/t/867369"/>
-        <updated>2022-07-19T12:58:14.000Z</updated>
-        <summary type="html"><![CDATA[baleeny: 刚到货的 y9000x ，想着近几年品控不太好，准备买延保。。小黄鱼随便搜了下。。竟然这么便宜。。官网价 3.1 折买了 5 年 lenovo care 智享 5 年保。。。每年一次清灰换硅脂。。爽歪歪]]></summary>
-        <author>
-            <name>baleeny</name>
+            <name>iDaily 每日环球视野</name>
         </author>
     </entry>
     <entry>
@@ -678,6 +852,16 @@ PPS. 最后依然贴一些公司办公环境的照片。]]></summary>
         <summary type="html"><![CDATA[俄总统 Vladimir Putin 通过视频主持国家战略发展会议，莫斯科。7月18日，Putin 针对高通胀率、养老金、就业、教育、医疗、住房等民生问题提出一系列改善指示。Putin 表示，俄罗斯2022年第二季度人口死亡率已降至新冠疫情前水平，人均预期寿命超过73岁，目标在2030年前提高预期寿命至78岁。Putin 要求政府部门通过提高养老金和最低工资标准、扩大教育补贴、改善就业、增加住房贷款等措施，为国民创造更舒适的生活条件。摄影师：Mikhael Klimentyev]]></summary>
         <author>
             <name>iDaily 每日环球视野</name>
+        </author>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[制作动画PPT演示/微课/的软件 – Focusky 动画演示大师，送会员激活码]]></title>
+        <id>https://www.appinn.com/?p=36839</id>
+        <link href="https://www.appinn.com/focusky-27/"/>
+        <updated>2022-07-19T10:26:18.000Z</updated>
+        <summary type="html"><![CDATA[Focusky是一款免费简单易上手的3D动态PPT、动画宣传片、微课等制作软件，多种输出格式，多种功能用途，界面简洁，易于操作，可以让你轻松的创作出炫酷而高大上的PPT演示，且动感十足，就像动画一样！]]></summary>
+        <author>
+            <name>青小蛙</name>
         </author>
     </entry>
     <entry>
@@ -741,46 +925,6 @@ PPS. 最后依然贴一些公司办公环境的照片。]]></summary>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[马来西亚最大象牙走私案]]></title>
-        <id>https://m.idai.ly/se/27c656</id>
-        <link href="https://m.idai.ly/se/27c656"/>
-        <updated>2022-07-19T08:45:00.000Z</updated>
-        <summary type="html"><![CDATA[马来西亚海关展示一批缴获的非法走私象牙、穿山甲鳞片和野生动物制品，巴生港。7月18日，马来西亚宣布破获该国史上规模最大的一起象牙走私案，查获包括约6000公斤象牙、100公斤穿山甲鳞片和25公斤犀牛角，总价值约1800万美元。这批走私保护动物制品来自非洲，被藏匿于装载木材的集装箱内，途径马来巴生港时被海关拦截。初步调查显示马来西亚并非这批货物的最终目的地。摄影师：Zahim Mohd]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[RM UP-01 Ferrari 超薄腕表]]></title>
-        <id>https://m.idai.ly/se/38dkG8</id>
-        <link href="https://m.idai.ly/se/38dkG8"/>
-        <updated>2022-07-19T08:40:00.000Z</updated>
-        <summary type="html"><![CDATA[RICHARD MILLE 与法拉利（Ferrari）携手推出全新 RM UP-01 Ferrari 腕表，1.75mm 纤薄表壳能承受高达5000g的重力加速度，搭载获得专利的超薄擒纵结构，融合尖端制表技术和极致美学构想，彰显对创新与完美的永恒追求。]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[制作动画PPT演示/微课/的软件 – Focusky 动画演示大师，送会员激活码]]></title>
-        <id>https://www.appinn.com/?p=36839</id>
-        <link href="https://www.appinn.com/focusky-27/"/>
-        <updated>2022-07-19T04:26:18.000Z</updated>
-        <summary type="html"><![CDATA[Focusky是一款免费简单易上手的3D动态PPT、动画宣传片、微课等制作软件，多种输出格式，多种功能用途，界面简洁，易于操作，可以让你轻松的创作出炫酷而高大上的PPT演示，且动感十足，就像动画一样！]]></summary>
-        <author>
-            <name>青小蛙</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[问天实验舱即将发射]]></title>
-        <id>https://m.idai.ly/se/becrCf</id>
-        <link href="https://m.idai.ly/se/becrCf"/>
-        <updated>2022-07-18T11:59:00.000Z</updated>
-        <summary type="html"><![CDATA[中国长征五号火箭与「问天」实验舱组合体抵达发射区，海南文昌。7月18日，「问天」实验舱与火箭组合体从总装测试厂房垂直转运至发射区，计划近日择机发射。「问天」是中国空间站的第2个大型舱段，重约22吨，全长17.9米、最大直径4.2米，主要设施包括生命生态、生物技术和变重力科学实验柜，未来将主要用于空间生命科学研究，开展植物、动物、微生物在太空无重力条件下的实验研究。摄影师：iDaily Media]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[A New Pattern For The Jamstack: Segmented Rendering]]></title>
         <id>https://smashingmagazine.com/2022/07/new-pattern-jamstack-segmented-rendering/</id>
         <link href="https://smashingmagazine.com/2022/07/new-pattern-jamstack-segmented-rendering/"/>
@@ -791,16 +935,6 @@ PPS. 最后依然贴一些公司办公环境的照片。]]></summary>
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[日本新冠确诊破1000万]]></title>
-        <id>https://m.idai.ly/se/692aQ8</id>
-        <link href="https://m.idai.ly/se/692aQ8"/>
-        <updated>2022-07-18T10:58:00.000Z</updated>
-        <summary type="html"><![CDATA[东京银座商业区行人穿梭。7月17日，日本累计新冠确诊突破1000万例，单日新增10.5万例，奥密克戎 BA.5 变异毒株引起的第7波疫情呈快速传播趋势。日本政府称将在不限制商业和社会活动的前提下遏制疫情，具体措施包括扩大第4剂新冠疫苗接种范围、提高核酸检测能力和改进密闭空间通风条件等措施。日本新冠病毒对策部门警告8月上旬单日新增确诊可能超过40万例。摄影师：iDaily Media]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Calctus – 62KB，电子工程师的计算神器[Windows]]]></title>
         <id>https://www.appinn.com/?p=42758</id>
         <link href="https://www.appinn.com/calctus-for-windows/"/>
@@ -808,46 +942,6 @@ PPS. 最后依然贴一些公司办公环境的照片。]]></summary>
         <summary type="html"><![CDATA[Calctus 是一个具有变量计算、多种进制混合运算、逻辑运算位运算等电子工程师刚需功能的强大计算器。@Appinn 来自发现频道，@Nigh 同学的推荐：https://meta.appinn.ne]]></summary>
         <author>
             <name>青小蛙</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[中国疫情防控常态]]></title>
-        <id>https://m.idai.ly/se/502LPO</id>
-        <link href="https://m.idai.ly/se/502LPO"/>
-        <updated>2022-07-18T09:57:00.000Z</updated>
-        <summary type="html"><![CDATA[医护人员身穿防护服进行核酸采样，身后是用于降温的冰块，广西北海市。7月17日，中国31省报告本土新增确诊117例，新增无症状感染者393例，无死亡病例。受全球疫情持续反弹影响，中国外防输入压力不断增大，自7月以来共报告发现9种奥密克戎亚分支，疫情呈现多点散发、部分地区局部暴发态势。广西本轮本土疫情主要集中在北海市，当天该市新增本土确诊59例、无症状感染者51例。摄影师：Zhai Liqiang]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[田径世锦赛中国首金]]></title>
-        <id>https://m.idai.ly/se/d60geF</id>
-        <link href="https://m.idai.ly/se/d60geF"/>
-        <updated>2022-07-18T09:55:00.000Z</updated>
-        <summary type="html"><![CDATA[2022年世界田径锦标赛男子跳远决赛，中国跳远运动员王嘉男飞跃沙坑，美国俄勒冈州。7月17日，王嘉男凭借最后一跳8.36米成绩夺得世界田径锦标赛男子跳远冠军，为中国队赢得本届世锦赛第一枚金牌。现年25岁的王嘉男成为历史上第一位赢得世锦赛男子跳远冠军的亚洲选手，亦是继刘翔、王浩之后中国第3位获得田径世锦赛冠军的男子运动员。目前中国队以1金1银1铜暂列奖牌榜第4位。摄影师：Charlie Riedel]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[西班牙渔民守护神节]]></title>
-        <id>https://m.idai.ly/se/49fo8e</id>
-        <link href="https://m.idai.ly/se/49fo8e"/>
-        <updated>2022-07-18T09:53:00.000Z</updated>
-        <summary type="html"><![CDATA[西班牙加尔默罗圣母节（Virgen del Carmen），当地民众抬着一座圣母雕像参加游行，马拉加。7月16日，西班牙港口城市马拉加时隔2年首次恢复举办「加尔默罗圣母节」巡游活动。这项传统最早可追溯至15世纪，是为了纪念西班牙渔民和海军的守护圣人「加尔默罗圣母」。受能源和食品价格上涨影响，2022年6月西班牙消费价格指数（CPI）同比上涨达10.2%，创下37年来最高纪录，政府预计全年通胀率将达到6.1%。摄影师：Jorge Guerrero]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[印度主办国际象棋奥赛]]></title>
-        <id>https://m.idai.ly/se/9e1W2R</id>
-        <link href="https://m.idai.ly/se/9e1W2R"/>
-        <updated>2022-07-18T09:51:00.000Z</updated>
-        <summary type="html"><![CDATA[第44届国际象棋奥林匹克赛将在印度金奈举行，当地一座大桥被漆成黑白棋盘色。国际象棋奥林匹克赛每两年举办一次，是全球最高水平的国际象棋赛事。这是印度首次主办该赛事，本届赛程从7月28日持续至8月10日，预计吸引187个国家的2000名顶尖棋手参加。受俄乌战争影响，国际棋联理事会将本届主办国从俄罗斯更改为印度，并禁止俄罗斯和白俄罗斯国家队棋手参赛。摄影师：Idrees Mohammed]]></summary>
-        <author>
-            <name>iDaily 每日环球视野</name>
         </author>
     </entry>
     <entry>
@@ -981,16 +1075,6 @@ In Praise of Shadows originally published on CSS-Tricks. You should get the news
         </author>
     </entry>
     <entry>
-        <title type="html"><![CDATA[小而美备份站 – 自动备份自己通过「微信PC版」发出的文件]]></title>
-        <id>https://www.appinn.com/?p=42705</id>
-        <link href="https://www.appinn.com/wechat-send-files-backup/"/>
-        <updated>2022-07-12T09:05:39.000Z</updated>
-        <summary type="html"><![CDATA[来自问题频道的问题：【求助】能否自动备份自己通过微信发出的文件： 公司使用微信 PC 版作为日常办公的工具，别人发送的文件会自动归档在聊天记录文件中，但是自己发出的文件，引用的是文件的位置。随手清理掉]]></summary>
-        <author>
-            <name>青小蛙</name>
-        </author>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[Kendo UI For Angular Data Grid And Angular Material: Have Your Cake And Eat It Too]]></title>
         <id>https://smashingmagazine.com/2022/07/kendo-ui-angular-data-grid-material/</id>
         <link href="https://smashingmagazine.com/2022/07/kendo-ui-angular-data-grid-material/"/>
@@ -1019,16 +1103,6 @@ Technical Writing for Developers originally published on CSS-Tricks. You should 
         <summary type="html"><![CDATA[Let’s talk about Remix, the framework to create JavaScript projects using server-side rendering. Let’s go through its main features and concepts and see the similarities and differences with Next.js.]]></summary>
         <author>
             <name>hello@smashingmagazine.com (Facundo Giuliani)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Youglish – 从 YouTube 搜索母语发音者，练习口语，支持英文、中文、手语在内的 18 种语言]]></title>
-        <id>https://www.appinn.com/?p=42701</id>
-        <link href="https://www.appinn.com/youglish/"/>
-        <updated>2022-07-11T08:10:21.000Z</updated>
-        <summary type="html"><![CDATA[Youglish 是一款利用视频网站 YouTube 海量资源的绝佳例子，只需要搜索关键词，就能找出该关键词的母语发音者片段，用来重复收听、学习。它支持英文、德文、日文、中文、手语在内的 18 种语言]]></summary>
-        <author>
-            <name>青小蛙</name>
         </author>
     </entry>
     <entry>
@@ -1254,17 +1328,6 @@ Single Element Loaders: The Bars originally published on CSS-Tricks. You should 
         <summary type="html"><![CDATA[In this article, we will enhance the Gantt Chart component with some interaction possibilities for editing the jobs. In doing so, we will continue to work with Vanilla JS and Web Components and look at some JavaScript libraries that can greatly simplify the effort of developing a fully functional Gantt Chart.]]></summary>
         <author>
             <name>hello@smashingmagazine.com (Anna Prenzel)</name>
-        </author>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[Different Ways to Write CSS in React]]></title>
-        <id>https://css-tricks.com/?p=366452</id>
-        <link href="https://css-tricks.com/different-ways-to-write-css-in-react/"/>
-        <updated>2022-06-22T14:24:37.000Z</updated>
-        <summary type="html"><![CDATA[We’re all familiar with the standard way of linking up a stylesheet to the <head> of an HTML doc, right? That’s just one of several ways we’re able to write CSS. But what does it look like to style things …
-Different Ways to Write CSS in React originally published on CSS-Tricks. You should get the newsletter.]]></summary>
-        <author>
-            <name>Saleh Mubashar</name>
         </author>
     </entry>
     <entry>
